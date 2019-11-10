@@ -12,21 +12,28 @@
     
     
     <item>
-      <title>Hello2</title>
-      <link>https://huijunchen9260.github.io/post/hello2/</link>
+      <title>Shell Scripting Tips</title>
+      <link>https://huijunchen9260.github.io/post/shelltips/</link>
       <pubDate>Sat, 09 Nov 2019 18:46:16 -0500</pubDate>
       
-      <guid>https://huijunchen9260.github.io/post/hello2/</guid>
-      <description>My second post use different theme</description>
+      <guid>https://huijunchen9260.github.io/post/shelltips/</guid>
+      <description>fff
+ Can add the following function to the /usr/bin/fff, put them in the case key() {: Toggle executable flag.
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;amp;&amp;amp; -w ${list[scroll]} ]] &amp;amp;&amp;amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &amp;quot;${list[scroll]}&amp;quot; status_line &amp;quot;Unset executable.&amp;quot; else chmod +x &amp;quot;${list[scroll]}&amp;quot; status_line &amp;quot;Set executable.&amp;quot; fi } ;;  Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;quot;Open all image in sxiv.&amp;quot; ;;  Extract files.</description>
     </item>
     
     <item>
-      <title>Hello!</title>
-      <link>https://huijunchen9260.github.io/post/hello/</link>
+      <title>Arch Tips</title>
+      <link>https://huijunchen9260.github.io/post/archtips/</link>
       <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
       
-      <guid>https://huijunchen9260.github.io/post/hello/</guid>
-      <description>Hello. This is my first post.</description>
+      <guid>https://huijunchen9260.github.io/post/archtips/</guid>
+      <description>Firefox cannot paste anything on facebook manager:
+ Solution Type about:config in New Tab Search for dom.event.clipboardevents.enabled, and change the value to enable.  Get system info on command line
+ uname -a  Clean orphan packages
+ sudo pacman -Rns $(pacman -Qtdq)  Clean pacman cache
+ Safe way:  Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: Delete all except three recent package: sudo paccache -r  Direct way:  Delete all: sudo pacman -Scc   Printer:</description>
     </item>
     
   </channel>
