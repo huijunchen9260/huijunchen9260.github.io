@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<div class="container">
+  <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +8,7 @@
 
 
 
-<title>Arch Tips | Charaka</title>
+<title>Categories | Charaka</title>
 
 <link rel="stylesheet" href="https://example.com/css/styles.css">
 
@@ -29,7 +31,7 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
 
 
 
-<div class="container">
+  <div class="container">
     <nav class="navbar level">
       <div class="navbar-brand">
           <a class="nav-item" href="https://example.com"><h1 class="title is-3">Charaka</h1></a>
@@ -66,93 +68,50 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
     </nav>
   </div>
 
-<div class="container">
-  <h2 class="subtitle is-6">November 9, 2019</h2>
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Arch Tips</h1>
-  <div class="content">
-    <ul>
-<li><p>Firefox cannot paste anything on facebook manager:</p>
-
-<ul>
-<li><a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></li>
-<li>Type <code>about:config</code> in New Tab</li>
-<li>Search for <code>dom.event.clipboardevents.enabled</code>, and change the value
-to enable.</li>
-</ul></li>
-
-<li><p>Get system info on command line</p>
-
-<ul>
-<li><code>uname -a</code></li>
-</ul></li>
-
-<li><p>Clean orphan packages</p>
-
-<ul>
-<li><code>sudo pacman -Rns $(pacman -Qtdq)</code></li>
-</ul></li>
-
-<li><p>Clean pacman cache</p>
-
-<ul>
-<li>Safe way:
-
-<ul>
-<li>Install pacchace first: <code>sudo pacman -S pacman-contrib</code></li>
-<li>Then run paccache:</li>
-<li>Delete all except three recent package: <code>sudo paccache -r</code></li>
-</ul></li>
-<li>Direct way:
-
-<ul>
-<li>Delete all: <code>sudo pacman -Scc</code></li>
-</ul></li>
-</ul></li>
-
-<li><p>Printer:</p>
-
-<ul>
-<li>HP Printers:
-
-<ul>
-<li>Reference: <a href="https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/">Link(Second Answer)</a></li>
-<li>Plug-in printer.</li>
-<li>GUI configuration for printers: <code>sudo pacman -S system-config-printer</code></li>
-<li>Install CUPS, Common UNIX Printing System, and HP Linux-imaging and printing:
-
-<ul>
-<li><code>sudo pacman -S cups hplip</code></li>
-</ul></li>
-<li>Install driver with root priviledge: <code>sudo hp-setup -i</code></li>
-<li>Check your printer is ready in <code>system-config-printer</code></li>
-<li>Go to <code>zathura</code> and print your file!</li>
-<li>If the printer says &ldquo;unplugged or turned off&rdquo;, then delete the printer in the <code>system-config-printer</code> and add it again.</li>
-</ul></li>
-</ul></li>
-</ul>
-
+  <main class="container">
+      
+      
+      <h1 class="title is-3">2019</h1>
+      
+      
+      
+  </main>
+  <section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-rounded" disabled>
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button is-rounded" disabled>
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
   </div>
-</div>
-<div class="container has-text-centered">
-    
-    <aside><div id="share"></div></aside>
-    <script type="text/javascript">
-        $("#share").jsSocials({
-            showLabel: false,
-            showCount: false,
-            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
-        });
-    </script>
-    
-</div>
+</section>
 
-<div class="container has-text-centered">
-  
-</div>
-<section class="section">
+  <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://github.com/natarajmb">Nataraj Basappa</a> 2018</p>
   </div>
 </section>
 
 
+</div>
