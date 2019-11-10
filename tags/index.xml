@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Hui-Jun Chen 2019</copyright>
-    <lastBuildDate>Sat, 09 Nov 2019 18:46:16 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 11:41:15 -0500</lastBuildDate>
     
 	<atom:link href="https://huijunchen9260.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Research</title>
+      <link>https://huijunchen9260.github.io/tags/research/</link>
+      <pubDate>Sun, 10 Nov 2019 11:41:15 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://huijunchen9260.github.io/tags/hugo/</link>
+      <pubDate>Sun, 10 Nov 2019 11:39:23 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Shell Scripting</title>

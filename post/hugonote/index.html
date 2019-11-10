@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'U-12345678-0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Notes on Hugo &ndash; Hui-Jun Chen
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
+GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
+After signed up, you can press the icon on the top-right cornor and enter your profile.|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    
+
+    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
+    
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:title" content="Notes on Hugo | Hui-Jun Chen">
+    <meta name="twitter:description" content="As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
+GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
+After signed up, you can press the icon on the top-right cornor and enter your profile.|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
+    Hui-Jun Chen
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>About</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/research/">
+      
+      <span>Research</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>Blog</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Notes on Hugo</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
+
+
+
+<a href='/tags/hugo' class="muted-link">
+  <span class="Label Label--gray">Hugo</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2019-11-10. Published at: 2019-11-10.">
+        
+          Lastmod: 2019-11-10
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+<article>
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<p>As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.</p>
+
+<h2 id="github-part">GitHub part</h2>
+
+<p>First of all, you need to sign up an account on GitHub. <a href="https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">Details</a> is on official website.</p>
+
+<p>After signed up, you can press the icon on the top-right cornor and enter your profile.</p>
+
+<p>Then create two new repository: <code>website</code> (or any name that store your raw content of your website) and <code>&lt;username&gt;.github.io</code> (the actuall repository to host your website).
+If you use other name for the repository to host your website, the website url would be <code>https://github.com/&lt;username&gt;/&lt;repository_name&gt;/</code>.</p>
+
+<p>Use <code>git clone</code> to copy both repository to your local directories. I suggest it to be in two distinct directories. The url for repository can be found at the green buttom <code>Clone or download</code>. The code would be:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone &lt;resitory_url&gt;</code></pre></div>
+<h2 id="local-file-part">Local file part</h2>
+
+<p>Now you need to install <code>hugo</code> and <code>git</code> to generate your static website and upload your website to github, respectively.</p>
+
+<p>You can refer to <a href="https://gohugo.io/getting-started/installing/">the officien webste of hugo</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a> to know how to install both of them on your OS. If you use Arch, then you can install them by</p>
+<div class="highlight"><pre class="chroma"><code class="language-terminal" data-lang="terminal">sudo pacman -S hugo git</code></pre></div>
+<p>Enter or <code>cd</code> to your <code>website</code> directory, and generate your new website by</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site <span class="o">[</span>new-site-name<span class="o">]</span></code></pre></div>
+<p>There will be a new directory in your <code>website</code> directory. Move all the content in the new directory to your <code>website</code>, and delete the new directory. The structure of the <code>website</code> directory will be</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">website
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+
+<span class="m">6</span> directories, <span class="m">2</span> files</code></pre></div>
+<p>Congratulation! You already built the skeleton of website!</p>
+
+<h3 id="explanation-on-directory-tree">Explanation on directory tree</h3>
+
+<p>The <code>default.md</code> in <code>archetypes</code> directory is the default format that generated by hugo.</p>
+
+<p><code>config.toml</code> is the configuration for the whole website. Should cooperate with <code>themes</code></p>
+
+<p><code>themes</code> contains all the themes you downloaded. You can download themes from github using <code>git clone</code>.</p>
+
+<p>You put all your posts in <code>content</code>.</p>
+
+<h3 id="hugo-command">Hugo command</h3>
+
+<p><code>hugo new &lt;directory&gt;/&lt;posts&gt;</code> will create a new markdown file <code>posts</code> inside <code>./content/&lt;directory&gt;/</code>. For example, <code>hugo new post/HugoNote.md</code> will create a new posts called <code>HugoNote.md</code> inside <code>./content/post/</code>. If you want to post in <code>content</code> directory, you can use <code>hugo new content/&lt;posts&gt;</code>.</p>
+
+<p><code>hugo server</code> generates your website at <code>http://localhost:1313/</code>.</p>
+
+<p><code>hugo -d &lt;directory&gt;</code> outputs all the html and css files to the directory.</p>
+
+<h2 id="host-website-on-github">Host website on GitHub</h2>
+
+<p>Now we are going to transform your markdown content into html and css and host on github.</p>
+
+<ol>
+<li>Use <code>hugo -d ../&lt;username&gt;.github.io/</code> to output your website.</li>
+<li>Move to <code>&lt;username&gt;.github.io/</code> or <code>cd ../&lt;username&gt;.github.io/</code>.</li>
+<li>In the <code>&lt;username&gt;.github.io/</code>, type <code>git status</code> to check the difference between local file and remote github file.</li>
+<li><code>git add --all</code> or <code>git add .</code> to add all difference into commit.</li>
+<li><code>git commit -m &quot;&lt;message&gt;&quot;</code> to commit all the difference with comment message.</li>
+<li><code>git push origin master</code> to push all the difference to remote github file.</li>
+<li>Open browser and go to your <code>&lt;username&gt;.github.io</code> repository, go to <code>setting</code> and in the &ldquo;GitHub Pages&rdquo; section, choose &ldquo;source&rdquo; as <code>master branch</code>. Wait for a couple of minutes, and your website is established!</li>
+</ol>
+
+  </section>
+
+  <section>
+    
+      
+    
+  </section>
+</article>
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Notes on Hugo</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#github-part">GitHub part</a></li>
+<li><a href="#local-file-part">Local file part</a>
+<ul>
+<li><a href="#explanation-on-directory-tree">Explanation on directory tree</a></li>
+<li><a href="#hugo-command">Hugo command</a></li>
+</ul></li>
+<li><a href="#host-website-on-github">Host website on GitHub</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    
+    
+      <div>
+        
+
+        
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=61&height=20&appId" width="61" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+
+        
+          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        
+
+        
+          <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
+          <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+        
+
+      </div>
+    
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    &copy; Hui-Jun Chen 2019 &middot; 
+
+    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
+    
+    
+    
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  </body>
+</html>
