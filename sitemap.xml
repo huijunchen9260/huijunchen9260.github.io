@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/</loc>
-    <lastmod>2019-11-09T18:46:16-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://example.com/post/</loc>
     <lastmod>2019-11-09T18:46:16-05:00</lastmod>
   </url>
@@ -18,16 +13,17 @@
   </url>
   
   <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2019-11-09T18:46:16-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/post/archtips/</loc>
     <lastmod>2019-11-09T18:11:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://example.com/series/</loc>
   </url>
   
 </urlset>

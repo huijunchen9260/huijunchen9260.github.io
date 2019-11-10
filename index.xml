@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Charaka</title>
+    <title>Site Title</title>
     <link>https://example.com/</link>
-    <description>Recent content on Charaka</description>
+    <description>Recent content on Site Title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/natarajmb&#34;&gt;Nataraj Basappa&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Sat, 09 Nov 2019 18:46:16 -0500</lastBuildDate>
     
 	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
