@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Your Blog</title>
-    <link>https://your_web_site/tags/</link>
-    <description>Recent content in Tags on Your Blog</description>
+    <title>Tags on Hui-Jun Chen</title>
+    <link>https://huijunchen9260.github.io/tags/</link>
+    <description>Recent content in Tags on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-TW</language>
-    <copyright>&amp;copy;Your Name 2019</copyright>
+    <language>en-us</language>
+    <copyright>&amp;copy; Hui-Jun Chen 2019</copyright>
+    <lastBuildDate>Sat, 09 Nov 2019 18:46:16 -0500</lastBuildDate>
     
-	<atom:link href="https://your_web_site/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://huijunchen9260.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shell Scripting</title>
+      <link>https://huijunchen9260.github.io/tags/shell-scripting/</link>
+      <pubDate>Sat, 09 Nov 2019 18:46:16 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/shell-scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arch</title>
+      <link>https://huijunchen9260.github.io/tags/arch/</link>
+      <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/arch/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

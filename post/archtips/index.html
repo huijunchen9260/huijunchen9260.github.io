@@ -19,19 +19,21 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-  Arch Tips &ndash; Your Blog
+  Arch Tips &ndash; Hui-Jun Chen
 
     </title>
     
     
-    <meta name="description" property="og:description" content="Firefox cannot paste anything on facebook manager:
- Solution Type about:config in New Tab Search for dom.event.clipboardevents.enabled, and change the value to enable.  Get system info on command line
- uname -a  Clean orphan packages
- sudo pacman -Rns $(pacman -Qtdq)  Clean pacman cache
- Safe way:  Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: Delete all except three recent package: sudo paccache -r  Direct way:  Delete all: sudo pacman -Scc   Printer:|Describe what your web page is about">
+    <meta name="description" property="og:description" content="Firefox cannot paste anything on facebook manager Reference: Solution
+Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+Get system info on command line uname -a
+Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
+Clean pacman cache Safe way:
+Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
+Direct way: - Delete all: sudo pacman -Scc|Life notes for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
     
 
-    <meta name="apple-mobile-web-app-title" content="Your Blog">
+    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
     
     
     <link rel="icon" href="/favicon-64.png">
@@ -43,13 +45,15 @@ if (!doNotTrack) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@your_twitter_id">
     <meta name="twitter:creator" content="@your_twitter_id">
-    <meta name="twitter:title" content="Arch Tips | Your Blog">
-    <meta name="twitter:description" content="Firefox cannot paste anything on facebook manager:
- Solution Type about:config in New Tab Search for dom.event.clipboardevents.enabled, and change the value to enable.  Get system info on command line
- uname -a  Clean orphan packages
- sudo pacman -Rns $(pacman -Qtdq)  Clean pacman cache
- Safe way:  Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: Delete all except three recent package: sudo paccache -r  Direct way:  Delete all: sudo pacman -Scc   Printer:|Describe what your web page is about">
-    <meta name="twitter:image" content="https://your_web_sitetwitter-card.png">
+    <meta name="twitter:title" content="Arch Tips | Hui-Jun Chen">
+    <meta name="twitter:description" content="Firefox cannot paste anything on facebook manager Reference: Solution
+Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+Get system info on command line uname -a
+Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
+Clean pacman cache Safe way:
+Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
+Direct way: - Delete all: sudo pacman -Scc|Life notes for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
     
 
 
@@ -64,11 +68,31 @@ if (!doNotTrack) {
 
       <div id="header" class="px-1 bg-white">
         <nav class="UnderlineNav UnderlineNav--right px-2">
-  <a class="UnderlineNav-actions muted-link h2" href="https://your_web_site">
-    Your Blog
+  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
+    Hui-Jun Chen
   </a>
 
   
+  
+  <div class="UnderlineNav-body">
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/about/">
+      
+      <span>About</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>Blog</span>
+    </a>
+    
+    
+  </div>
   
 </nav>
 
@@ -85,15 +109,23 @@ if (!doNotTrack) {
     
 
 
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
 
+
+
+<a href='/tags/arch' class="muted-link">
+  <span class="Label Label--gray">Arch</span>
+</a>
 
 
 
     
     <div class="float-md-right">
-      <span title="Lastmod: 2019-11-09. Published at: 2019-11-09.">
+      <span title="Lastmod: 2019-11-10. Published at: 2019-11-09.">
         
-          Lastmod: 2019-11-09
+          Lastmod: 2019-11-10
         
       </span>
     </div>
@@ -103,66 +135,46 @@ if (!doNotTrack) {
 <article>
   
   <section class="pb-6 mb-3 border-bottom">
-    <ul>
-<li><p>Firefox cannot paste anything on facebook manager:</p>
+    
 
-<ul>
-<li><a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></li>
-<li>Type <code>about:config</code> in New Tab</li>
-<li>Search for <code>dom.event.clipboardevents.enabled</code>, and change the value
-to enable.</li>
-</ul></li>
+<h2 id="firefox-cannot-paste-anything-on-facebook-manager">Firefox cannot paste anything on facebook manager</h2>
 
-<li><p>Get system info on command line</p>
+<p>Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></p>
 
-<ul>
-<li><code>uname -a</code></li>
-</ul></li>
+<p>Type <code>about:config</code> in New Tab, and search for <code>dom.event.clipboardevents.enabled</code>, and change the value to enable.</p>
 
-<li><p>Clean orphan packages</p>
+<h2 id="get-system-info-on-command-line">Get system info on command line</h2>
 
-<ul>
-<li><code>sudo pacman -Rns $(pacman -Qtdq)</code></li>
-</ul></li>
+<p><code>uname -a</code></p>
 
-<li><p>Clean pacman cache</p>
+<h2 id="clean-orphan-packages">Clean orphan packages</h2>
 
-<ul>
-<li>Safe way:
+<p><code>sudo pacman -Rns $(pacman -Qtdq)</code></p>
 
-<ul>
-<li>Install pacchace first: <code>sudo pacman -S pacman-contrib</code></li>
-<li>Then run paccache:</li>
-<li>Delete all except three recent package: <code>sudo paccache -r</code></li>
-</ul></li>
-<li>Direct way:
+<h2 id="clean-pacman-cache">Clean pacman cache</h2>
 
-<ul>
-<li>Delete all: <code>sudo pacman -Scc</code></li>
-</ul></li>
-</ul></li>
+<p>Safe way:</p>
 
-<li><p>Printer:</p>
+<p>Install pacchace first: <code>sudo pacman -S pacman-contrib</code>
+Then run paccache:
+        - Delete all except three recent package: <code>sudo paccache -r</code></p>
 
-<ul>
-<li>HP Printers:
+<p>Direct way:
+        - Delete all: <code>sudo pacman -Scc</code></p>
 
-<ul>
-<li>Reference: <a href="https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/">Link(Second Answer)</a></li>
-<li>Plug-in printer.</li>
-<li>GUI configuration for printers: <code>sudo pacman -S system-config-printer</code></li>
-<li>Install CUPS, Common UNIX Printing System, and HP Linux-imaging and printing:
+<h2 id="printer">Printer:</h2>
 
-<ul>
-<li><code>sudo pacman -S cups hplip</code></li>
-</ul></li>
-<li>Install driver with root priviledge: <code>sudo hp-setup -i</code></li>
-<li>Check your printer is ready in <code>system-config-printer</code></li>
-<li>Go to <code>zathura</code> and print your file!</li>
-<li>If the printer says &ldquo;unplugged or turned off&rdquo;, then delete the printer in the <code>system-config-printer</code> and add it again.</li>
-</ul></li>
-</ul></li>
-</ul>
+<pre><code>- HP Printers:
+    - Reference: [Link(Second Answer)](https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/)
+    - Plug-in printer.
+    - GUI configuration for printers: `sudo pacman -S system-config-printer`
+    - Install CUPS, Common UNIX Printing System, and HP Linux-imaging and printing:
+        - `sudo pacman -S cups hplip`
+    - Install driver with root priviledge: `sudo hp-setup -i`
+    - Check your printer is ready in `system-config-printer`
+    - Go to `zathura` and print your file!
+    - If the printer says &quot;unplugged or turned off&quot;, then delete the printer in the `system-config-printer` and add it again.
+</code></pre>
 
   </section>
 
@@ -181,7 +193,18 @@ to enable.</li>
   
     <div id="toc" class="Box Box--blue mb-3">
       <b>Arch Tips</b>
-      
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#firefox-cannot-paste-anything-on-facebook-manager">Firefox cannot paste anything on facebook manager</a></li>
+<li><a href="#get-system-info-on-command-line">Get system info on command line</a></li>
+<li><a href="#clean-orphan-packages">Clean orphan packages</a></li>
+<li><a href="#clean-pacman-cache">Clean pacman cache</a></li>
+<li><a href="#printer">Printer:</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
   
 
@@ -189,8 +212,6 @@ to enable.</li>
     
     
       <div>
-        
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         
 
         
@@ -217,11 +238,12 @@ to enable.</li>
         
 
   <span class="text-small text-gray">
-    &copy;Your Name 2019 &middot; 
+    &copy; Hui-Jun Chen 2019 &middot; 
 
-    Powered by the
-    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
-    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
+    
+    
+    
   </span>
 
 
