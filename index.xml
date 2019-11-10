@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Site Title</title>
-    <link>https://example.com/</link>
-    <description>Recent content on Site Title</description>
+    <title>Your Blog</title>
+    <link>https://your_web_site/</link>
+    <description>Recent content on Your Blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <copyright>&amp;copy;Your Name 2019</copyright>
     <lastBuildDate>Sat, 09 Nov 2019 18:46:16 -0500</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://your_web_site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Shell Scripting Tips</title>
-      <link>https://example.com/post/shelltips/</link>
+      <link>https://your_web_site/post/shelltips/</link>
       <pubDate>Sat, 09 Nov 2019 18:46:16 -0500</pubDate>
       
-      <guid>https://example.com/post/shelltips/</guid>
+      <guid>https://your_web_site/post/shelltips/</guid>
       <description>fff
  Can add the following function to the /usr/bin/fff, put them in the case key() {: Toggle executable flag.
-${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;amp;&amp;amp; -w ${list[scroll]} ]] &amp;amp;&amp;amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &amp;quot;${list[scroll]}&amp;quot; status_line &amp;quot;Unset executable.&amp;quot; else chmod +x &amp;quot;${list[scroll]}&amp;quot; status_line &amp;quot;Set executable.&amp;quot; fi } ;;  Open all Images
-${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;quot;Open all image in sxiv.&amp;quot; ;;  Extract files.</description>
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;amp;&amp;amp; -w ${list[scroll]} ]] &amp;amp;&amp;amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Unset executable.&amp;#34; else chmod +x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Set executable.&amp;#34; fi } ;; Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;#34;Open all image in sxiv.&amp;#34; ;; Extract files.</description>
     </item>
     
     <item>
       <title>Arch Tips</title>
-      <link>https://example.com/post/archtips/</link>
+      <link>https://your_web_site/post/archtips/</link>
       <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
       
-      <guid>https://example.com/post/archtips/</guid>
+      <guid>https://your_web_site/post/archtips/</guid>
       <description>Firefox cannot paste anything on facebook manager:
  Solution Type about:config in New Tab Search for dom.event.clipboardevents.enabled, and change the value to enable.  Get system info on command line
  uname -a  Clean orphan packages

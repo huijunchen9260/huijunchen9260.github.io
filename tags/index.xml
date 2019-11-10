@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Charaka</title>
-    <link>https://example.com/tags/</link>
-    <description>Recent content in Tags on Charaka</description>
+    <title>Tags on Your Blog</title>
+    <link>https://your_web_site/tags/</link>
+    <description>Recent content in Tags on Your Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/natarajmb&#34;&gt;Nataraj Basappa&lt;/a&gt; 2018</copyright>
+    <language>zh-TW</language>
+    <copyright>&amp;copy;Your Name 2019</copyright>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://your_web_site/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
