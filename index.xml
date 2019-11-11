@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hui-Jun Chen</title>
+    <title>About on Hui-Jun Chen</title>
     <link>https://huijunchen9260.github.io/</link>
-    <description>Recent content on Hui-Jun Chen</description>
+    <description>Recent content in About on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Hui-Jun Chen 2019</copyright>
-    <lastBuildDate>Sun, 10 Nov 2019 11:41:15 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 00:01:10 -0500</lastBuildDate>
     
 	<atom:link href="https://huijunchen9260.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://huijunchen9260.github.io/about/</link>
-      <pubDate>Sun, 10 Nov 2019 00:01:10 -0500</pubDate>
-      
-      <guid>https://huijunchen9260.github.io/about/</guid>
-      <description>About me Hi! I am Hui-Jun Chen(陳惠鈞), an first-year Ph.D. student in Department of Economics, The Ohio State University. My research interests is mainly on industrial organization. Before I came here, I got my undergraduate and master degree in Economics at National Tsing Hua University, Taiwan (R.O.C.). My master thesis is about how multi-product firms allocate their R&amp;amp;D resources in two</description>
-    </item>
     
     <item>
       <title>Research</title>
