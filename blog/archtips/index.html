@@ -19,12 +19,18 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-  Research &ndash; Hui-Jun Chen
+  Arch Tips &ndash; Hui-Jun Chen
 
     </title>
     
     
-    <meta name="description" property="og:description" content="Under construction|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    <meta name="description" property="og:description" content="Firefox cannot paste anything on facebook manager Reference: Solution
+Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+Get system info on command line uname -a
+Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
+Clean pacman cache Safe way:
+Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
+Direct way: - Delete all: sudo pacman -Scc|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
     
 
     <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
@@ -35,8 +41,14 @@ if (!doNotTrack) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="Research | Hui-Jun Chen">
-    <meta name="twitter:description" content="Under construction|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    <meta name="twitter:title" content="Arch Tips | Hui-Jun Chen">
+    <meta name="twitter:description" content="Firefox cannot paste anything on facebook manager Reference: Solution
+Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+Get system info on command line uname -a
+Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
+Clean pacman cache Safe way:
+Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
+Direct way: - Delete all: sudo pacman -Scc|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
     <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
     
 
@@ -70,7 +82,7 @@ if (!doNotTrack) {
     
     
     
-    <a class="UnderlineNav-item selected" href="/research/">
+    <a class="UnderlineNav-item " href="/research/">
       
       <span>Research</span>
     </a>
@@ -95,27 +107,27 @@ if (!doNotTrack) {
 
 <div class="Subhead">
   <div class="Subhead-heading">
-    <div class="h1 mt-3 mb-1">Research</div>
+    <div class="h1 mt-3 mb-1">Arch Tips</div>
   </div>
   <div class="Subhead-description">
     
 
 
-<a href='/categories/economics' class="muted-link">
-  <span class="Label Label--gray-darker">Economics</span>
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
 </a>
 
 
 
-<a href='/tags/research' class="muted-link">
-  <span class="Label Label--gray">Research</span>
+<a href='/tags/arch' class="muted-link">
+  <span class="Label Label--gray">Arch</span>
 </a>
 
 
 
     
     <div class="float-md-right">
-      <span title="Lastmod: 2019-11-10. Published at: 2019-11-10.">
+      <span title="Lastmod: 2019-11-10. Published at: 2019-11-09.">
         
           Lastmod: 2019-11-10
         
@@ -127,7 +139,45 @@ if (!doNotTrack) {
 <article>
   
   <section class="pb-6 mb-3 border-bottom">
-    <p>Under construction</p>
+    
+
+<h2 id="firefox-cannot-paste-anything-on-facebook-manager">Firefox cannot paste anything on facebook manager</h2>
+
+<p>Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></p>
+
+<p>Type <code>about:config</code> in New Tab, and search for <code>dom.event.clipboardevents.enabled</code>, and change the value to enable.</p>
+
+<h2 id="get-system-info-on-command-line">Get system info on command line</h2>
+
+<p><code>uname -a</code></p>
+
+<h2 id="clean-orphan-packages">Clean orphan packages</h2>
+
+<p><code>sudo pacman -Rns $(pacman -Qtdq)</code></p>
+
+<h2 id="clean-pacman-cache">Clean pacman cache</h2>
+
+<p>Safe way:</p>
+
+<p>Install pacchace first: <code>sudo pacman -S pacman-contrib</code>
+Then run paccache:
+        - Delete all except three recent package: <code>sudo paccache -r</code></p>
+
+<p>Direct way:
+        - Delete all: <code>sudo pacman -Scc</code></p>
+
+<h2 id="printer">Printer:</h2>
+
+<pre><code>- HP Printers:
+    - Reference: [Link(Second Answer)](https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/)
+    - Plug-in printer.
+    - GUI configuration for printers: `sudo pacman -S system-config-printer`
+    - Install CUPS, Common UNIX Printing System, and HP Linux-imaging and printing:
+        - `sudo pacman -S cups hplip`
+    - Install driver with root priviledge: `sudo hp-setup -i`
+    - Check your printer is ready in `system-config-printer` - Go to `zathura` and print your file!
+    - If the printer says &quot;unplugged or turned off&quot;, then delete the printer in the `system-config-printer` and add it again.
+</code></pre>
 
   </section>
 
@@ -145,8 +195,19 @@ if (!doNotTrack) {
           
   
     <div id="toc" class="Box Box--blue mb-3">
-      <b>Research</b>
-      
+      <b>Arch Tips</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#firefox-cannot-paste-anything-on-facebook-manager">Firefox cannot paste anything on facebook manager</a></li>
+<li><a href="#get-system-info-on-command-line">Get system info on command line</a></li>
+<li><a href="#clean-orphan-packages">Clean orphan packages</a></li>
+<li><a href="#clean-pacman-cache">Clean pacman cache</a></li>
+<li><a href="#printer">Printer:</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
   
 

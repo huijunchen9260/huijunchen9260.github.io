@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'U-12345678-0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+  Shell Scripting Tips &ndash; Hui-Jun Chen
+
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
+Toggle executable flag.
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;amp;&amp;amp; -w ${list[scroll]} ]] &amp;amp;&amp;amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Unset executable.&amp;#34; else chmod &#43;x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Set executable.&amp;#34; fi } ;; Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;#34;Open all image in sxiv.&amp;#34; ;; Extract files.|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    
+
+    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
+    
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:title" content="Shell Scripting Tips | Hui-Jun Chen">
+    <meta name="twitter:description" content="fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
+Toggle executable flag.
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod &#43;x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
+    Hui-Jun Chen
+  </a>
+
+  
+  
+  <div class="UnderlineNav-body">
+    
+    
+    
+    <a class="UnderlineNav-item " href="/">
+      
+      <span>About</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/research/">
+      
+      <span>Research</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/blog/">
+      
+      <span>Blog</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Shell Scripting Tips</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
+
+
+
+<a href='/tags/shell-scripting' class="muted-link">
+  <span class="Label Label--gray">Shell Scripting</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2019-11-10. Published at: 2019-11-09.">
+        
+          Lastmod: 2019-11-10
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+<article>
+  
+  <section class="pb-6 mb-3 border-bottom">
+    
+
+<h2 id="fff">fff</h2>
+
+<p>Can add the following function to the <code>/usr/bin/fff</code>, put them in the case <code>key() {</code>:</p>
+
+<p>Toggle executable flag.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_KEY_EXECUTABLE</span><span class="p">:=X</span><span class="si">}</span><span class="o">)</span>
+    <span class="o">[[</span> -f <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">&amp;&amp;</span> -w <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">[[</span> -x <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            chmod -x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Unset executable.&#34;</span>
+        <span class="k">else</span>
+            chmod +x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Set executable.&#34;</span>
+        <span class="k">fi</span>
+    <span class="o">}</span>
+<span class="p">;;</span></code></pre></div>
+<p>Open all Images</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_IMAGE_OPEN</span><span class="p">:=I</span><span class="si">}</span><span class="o">)</span>
+    sxiv -ft * <span class="m">2</span>&gt;/dev/null <span class="p">&amp;</span>
+    status_line <span class="s2">&#34;Open all image in sxiv.&#34;</span>
+<span class="p">;;</span></code></pre></div>
+<p>Extract files.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_EXTRACTION</span><span class="p">:=O</span><span class="si">}</span><span class="o">)</span>
+    ext <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span> &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+    open <span class="s2">&#34;</span><span class="nv">$PWD</span><span class="s2">&#34;</span>
+    status_line <span class="s2">&#34;Extraction complete.&#34;</span></code></pre></div>
+  </section>
+
+  <section>
+    
+      
+    
+  </section>
+</article>
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Shell Scripting Tips</b>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#fff">fff</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+  
+    
+    
+      <div>
+        
+
+        
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=61&height=20&appId" width="61" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+
+        
+          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        
+
+        
+          <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
+          <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+        
+
+      </div>
+    
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    &copy; Hui-Jun Chen 2019 &middot; 
+
+    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
+    
+    
+    
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  </body>
+</html>

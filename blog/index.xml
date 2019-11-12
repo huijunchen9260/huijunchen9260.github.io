@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Hui-Jun Chen</title>
-    <link>https://huijunchen9260.github.io/</link>
-    <description>Recent content in About on Hui-Jun Chen</description>
+    <title>Blog on Hui-Jun Chen</title>
+    <link>https://huijunchen9260.github.io/blog/</link>
+    <description>Recent content in Blog on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Hui-Jun Chen 2019</copyright>
-    <lastBuildDate>Sun, 10 Nov 2019 00:01:10 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 00:13:58 -0500</lastBuildDate>
     
-	<atom:link href="https://huijunchen9260.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://huijunchen9260.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Research</title>
-      <link>https://huijunchen9260.github.io/research/</link>
-      <pubDate>Sun, 10 Nov 2019 11:41:15 -0500</pubDate>
-      
-      <guid>https://huijunchen9260.github.io/research/</guid>
-      <description>Under construction</description>
-    </item>
     
     <item>
       <title>Notes on Hugo</title>
