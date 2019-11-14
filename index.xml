@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Demo</title>
+      <link>https://huijunchen9260.github.io/blog/demo/</link>
+      <pubDate>Thu, 14 Nov 2019 16:12:05 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/blog/demo/</guid>
+      <description>Link to pdf file</description>
+    </item>
+    
+    <item>
       <title>Notes on Hugo</title>
       <link>https://huijunchen9260.github.io/blog/hugonote/</link>
       <pubDate>Sun, 10 Nov 2019 11:39:23 -0500</pubDate>
@@ -50,8 +59,7 @@ ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;#
       <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
       
       <guid>https://huijunchen9260.github.io/blog/archtips/</guid>
-      <description>Firefox cannot paste anything on facebook manager Reference: Solution
-Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+      <description>Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
 Get system info on command line uname -a
 Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
 Clean pacman cache Safe way:
