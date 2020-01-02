@@ -104,6 +104,50 @@ if (!doNotTrack) {
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
+      <a href="/blog/dmenufm_bugs/">
+        <div class="h2 mt-1 mb-1">Dmenufm Interesting Bugs</div>
+      </a>
+    </div>
+    <div class="Subhead-description">
+      
+
+
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
+
+
+
+<a href='/tags/dmenu' class="muted-link">
+  <span class="Label Label--gray">Dmenu</span>
+</a>
+
+<a href='/tags/dmenufm' class="muted-link">
+  <span class="Label Label--gray">Dmenufm</span>
+</a>
+
+
+      <div class="float-md-right">
+        <span>2019-12-27</span>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray">
+    
+    Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
+This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
+The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
+The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&quot;placeholder&quot;.
+    <a class="muted-link" href="/blog/dmenufm_bugs/">…</a>
+  </div>
+</div>
+
+  
+    
+    
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+  <div class="Subhead mb-2">
+    <div class="Subhead-heading">
       <a href="/blog/hugonote/hugonote/">
         <div class="h2 mt-1 mb-1">Notes on Hugo</div>
       </a>
@@ -173,6 +217,7 @@ After signed up, you can press the icon on the top-right cornor and enter your p
 Toggle executable flag.
 ${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod +x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
 ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
+${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.
     <a class="muted-link" href="/blog/shelltips/">…</a>
   </div>
 </div>
@@ -248,6 +293,16 @@ Direct way: - Delete all: sudo pacman -Scc
     </span>
     
     <span class="css-truncate no-wrap m-1 pl-1">
+      <a href="/tags/dmenu" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenu</span></a>
+      <span class="text-right Counter">1</span>
+    </span>
+    
+    <span class="css-truncate no-wrap m-1 pl-1">
+      <a href="/tags/dmenufm" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenufm</span></a>
+      <span class="text-right Counter">1</span>
+    </span>
+    
+    <span class="css-truncate no-wrap m-1 pl-1">
       <a href="/tags/hugo" class="link-gray text-emphasized css-truncate-target"><span class="">Hugo</span></a>
       <span class="text-right Counter">1</span>
     </span>
@@ -279,7 +334,7 @@ Direct way: - Delete all: sudo pacman -Scc
     
     <span class="css-truncate no-wrap m-1 pl-1">
       <a href="/categories/linux" class="link-gray text-emphasized css-truncate-target"><span class="">Linux</span></a>
-      <span class="text-right Counter">3</span>
+      <span class="text-right Counter">4</span>
     </span>
     
   </div>
@@ -293,7 +348,7 @@ Direct way: - Delete all: sudo pacman -Scc
         
 
   <span class="text-small text-gray">
-    &copy; Hui-Jun Chen 2019 &middot; 
+    © Hui-Jun Chen 2019 &middot; 
 
     <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
     

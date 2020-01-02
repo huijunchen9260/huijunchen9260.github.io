@@ -19,7 +19,7 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-  Linux &ndash; Hui-Jun Chen
+  Dmenu &ndash; Hui-Jun Chen
 
     </title>
     
@@ -35,7 +35,7 @@ if (!doNotTrack) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="Linux | Hui-Jun Chen">
+    <meta name="twitter:title" content="Dmenu | Hui-Jun Chen">
     <meta name="twitter:description" content="|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
     <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
     
@@ -95,7 +95,7 @@ if (!doNotTrack) {
 
 <div>
 
-  <h1>Linux</h1>
+  <h1>Dmenu</h1>
   
 
   
@@ -139,128 +139,6 @@ This bug is the one I encounter when I try to implementing BulkListMass function
 The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
 The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&quot;placeholder&quot;.
     <a class="muted-link" href="/blog/dmenufm_bugs/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/hugonote/hugonote/">
-        <div class="h2 mt-1 mb-1">Notes on Hugo</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/hugo' class="muted-link">
-  <span class="Label Label--gray">Hugo</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-10</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
-GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
-After signed up, you can press the icon on the top-right cornor and enter your profile.
-    <a class="muted-link" href="/blog/hugonote/hugonote/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/shelltips/">
-        <div class="h2 mt-1 mb-1">Shell Scripting Tips</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/shell-scripting' class="muted-link">
-  <span class="Label Label--gray">Shell Scripting</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-09</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
-Toggle executable flag.
-${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod +x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
-${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
-${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.
-    <a class="muted-link" href="/blog/shelltips/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/archtips/">
-        <div class="h2 mt-1 mb-1">Arch Tips</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/arch' class="muted-link">
-  <span class="Label Label--gray">Arch</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-09</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
-Get system info on command line uname -a
-Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
-Clean pacman cache Safe way:
-Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
-Direct way: - Delete all: sudo pacman -Scc
-    <a class="muted-link" href="/blog/archtips/">…</a>
   </div>
 </div>
 
