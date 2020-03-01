@@ -32,13 +32,6 @@ if (!doNotTrack) {
     
     
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="Blog | Hui-Jun Chen">
-    <meta name="twitter:description" content="|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
-    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
-    
 
 
     <link rel="stylesheet" href="/assets/syntax.css">
@@ -62,7 +55,7 @@ if (!doNotTrack) {
     
     
     
-    <a class="UnderlineNav-item " href="/">
+    <a class="UnderlineNav-item " href="/about/">
       
       <span>About</span>
     </a>
@@ -104,7 +97,51 @@ if (!doNotTrack) {
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
-      <a href="/post/hugonote/">
+      <a href="/post/dmenufm_bugs/">
+        <div class="h2 mt-1 mb-1">Dmenufm Interesting Bugs</div>
+      </a>
+    </div>
+    <div class="Subhead-description">
+      
+
+
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
+
+
+
+<a href='/tags/dmenu' class="muted-link">
+  <span class="Label Label--gray">Dmenu</span>
+</a>
+
+<a href='/tags/dmenufm' class="muted-link">
+  <span class="Label Label--gray">Dmenufm</span>
+</a>
+
+
+      <div class="float-md-right">
+        <span>2019-12-27</span>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray">
+    
+    Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
+This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
+The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
+The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&quot;placeholder&quot;.
+    <a class="muted-link" href="/post/dmenufm_bugs/">…</a>
+  </div>
+</div>
+
+  
+    
+    
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+  <div class="Subhead mb-2">
+    <div class="Subhead-heading">
+      <a href="/post/hugonote/hugonote/">
         <div class="h2 mt-1 mb-1">Notes on Hugo</div>
       </a>
     </div>
@@ -133,7 +170,7 @@ if (!doNotTrack) {
     As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
 GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
 After signed up, you can press the icon on the top-right cornor and enter your profile.
-    <a class="muted-link" href="/post/hugonote/">…</a>
+    <a class="muted-link" href="/post/hugonote/hugonote/">…</a>
   </div>
 </div>
 
@@ -173,6 +210,7 @@ After signed up, you can press the icon on the top-right cornor and enter your p
 Toggle executable flag.
 ${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod +x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
 ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
+${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.
     <a class="muted-link" href="/post/shelltips/">…</a>
   </div>
 </div>
@@ -209,8 +247,7 @@ ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all 
   </div>
   <div class="text-gray">
     
-    Firefox cannot paste anything on facebook manager Reference: Solution
-Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+    Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
 Get system info on command line uname -a
 Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
 Clean pacman cache Safe way:
@@ -249,6 +286,16 @@ Direct way: - Delete all: sudo pacman -Scc
     </span>
     
     <span class="css-truncate no-wrap m-1 pl-1">
+      <a href="/tags/dmenu" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenu</span></a>
+      <span class="text-right Counter">1</span>
+    </span>
+    
+    <span class="css-truncate no-wrap m-1 pl-1">
+      <a href="/tags/dmenufm" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenufm</span></a>
+      <span class="text-right Counter">1</span>
+    </span>
+    
+    <span class="css-truncate no-wrap m-1 pl-1">
       <a href="/tags/hugo" class="link-gray text-emphasized css-truncate-target"><span class="">Hugo</span></a>
       <span class="text-right Counter">1</span>
     </span>
@@ -280,7 +327,7 @@ Direct way: - Delete all: sudo pacman -Scc
     
     <span class="css-truncate no-wrap m-1 pl-1">
       <a href="/categories/linux" class="link-gray text-emphasized css-truncate-target"><span class="">Linux</span></a>
-      <span class="text-right Counter">3</span>
+      <span class="text-right Counter">4</span>
     </span>
     
   </div>
@@ -294,7 +341,7 @@ Direct way: - Delete all: sudo pacman -Scc
         
 
   <span class="text-small text-gray">
-    &copy; Hui-Jun Chen 2019 &middot; 
+    © Hui-Jun Chen 2019 &middot; 
 
     <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
     

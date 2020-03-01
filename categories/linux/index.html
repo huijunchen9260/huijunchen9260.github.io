@@ -32,13 +32,6 @@ if (!doNotTrack) {
     
     
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="Linux | Hui-Jun Chen">
-    <meta name="twitter:description" content="|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
-    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
-    
 
 
     <link rel="stylesheet" href="/assets/syntax.css">
@@ -62,7 +55,7 @@ if (!doNotTrack) {
     
     
     
-    <a class="UnderlineNav-item " href="/">
+    <a class="UnderlineNav-item " href="/about/">
       
       <span>About</span>
     </a>
@@ -78,7 +71,7 @@ if (!doNotTrack) {
     
     
     
-    <a class="UnderlineNav-item " href="/blog/">
+    <a class="UnderlineNav-item " href="/post/">
       
       <span>Blog</span>
     </a>
@@ -104,7 +97,7 @@ if (!doNotTrack) {
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
-      <a href="/blog/dmenufm_bugs/">
+      <a href="/post/dmenufm_bugs/">
         <div class="h2 mt-1 mb-1">Dmenufm Interesting Bugs</div>
       </a>
     </div>
@@ -138,7 +131,7 @@ if (!doNotTrack) {
 This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
 The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
 The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&quot;placeholder&quot;.
-    <a class="muted-link" href="/blog/dmenufm_bugs/">…</a>
+    <a class="muted-link" href="/post/dmenufm_bugs/">…</a>
   </div>
 </div>
 
@@ -148,7 +141,7 @@ The reason for crashing is that I forgot to set the initial value for the $masse
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
-      <a href="/blog/hugonote/hugonote/">
+      <a href="/post/hugonote/hugonote/">
         <div class="h2 mt-1 mb-1">Notes on Hugo</div>
       </a>
     </div>
@@ -177,7 +170,7 @@ The reason for crashing is that I forgot to set the initial value for the $masse
     As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
 GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
 After signed up, you can press the icon on the top-right cornor and enter your profile.
-    <a class="muted-link" href="/blog/hugonote/hugonote/">…</a>
+    <a class="muted-link" href="/post/hugonote/hugonote/">…</a>
   </div>
 </div>
 
@@ -187,7 +180,7 @@ After signed up, you can press the icon on the top-right cornor and enter your p
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
-      <a href="/blog/shelltips/">
+      <a href="/post/shelltips/">
         <div class="h2 mt-1 mb-1">Shell Scripting Tips</div>
       </a>
     </div>
@@ -218,7 +211,7 @@ Toggle executable flag.
 ${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod +x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
 ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
 ${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.
-    <a class="muted-link" href="/blog/shelltips/">…</a>
+    <a class="muted-link" href="/post/shelltips/">…</a>
   </div>
 </div>
 
@@ -228,7 +221,7 @@ ${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 o
 <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
   <div class="Subhead mb-2">
     <div class="Subhead-heading">
-      <a href="/blog/archtips/">
+      <a href="/post/archtips/">
         <div class="h2 mt-1 mb-1">Arch Tips</div>
       </a>
     </div>
@@ -260,7 +253,7 @@ Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
 Clean pacman cache Safe way:
 Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
 Direct way: - Delete all: sudo pacman -Scc
-    <a class="muted-link" href="/blog/archtips/">…</a>
+    <a class="muted-link" href="/post/archtips/">…</a>
   </div>
 </div>
 

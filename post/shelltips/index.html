@@ -1,475 +1,220 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'U-12345678-0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
     <meta charset="utf-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
-    
-
-    
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
-    
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-      
-         Shell Scripting Tips 
-      
+  Shell Scripting Tips &ndash; Hui-Jun Chen
+
     </title>
-    <link rel="canonical" href="https://huijunchen9260.github.io/post/shelltips/">
-
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, .date {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content .date {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
-</style>
-
-
-    </head>
-
-  <body>
-    <section id=nav>
-      <h1><a href="/">Hui-Jun Chen</a></h1>
-      <ul>
-        
-          <li><a href="https://huijunchen9260.github.io/about">About</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/blog/">Blog</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/research/">Research</a></li>
-        
-      </ul>
-    </section>
-
-
-<section id=content>
-  <h1> Shell Scripting Tips </h1>
+    
+    
+    <meta name="description" property="og:description" content="fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
+Toggle executable flag.
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;amp;&amp;amp; -w ${list[scroll]} ]] &amp;amp;&amp;amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Unset executable.&amp;#34; else chmod &#43;x &amp;#34;${list[scroll]}&amp;#34; status_line &amp;#34;Set executable.&amp;#34; fi } ;; Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&amp;gt;/dev/null &amp;amp; status_line &amp;#34;Open all image in sxiv.&amp;#34; ;; Extract files.
+${FFF_EXTRACTION:=O}) ext &amp;#34;${list[scroll]}&amp;#34; &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 open &amp;#34;$PWD&amp;#34; status_line &amp;#34;Extraction complete.|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+    
+
+    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
+    Hui-Jun Chen
+  </a>
 
   
-    <div id=sub-header>
-      November 2019 · 1 minute read
+  
+  <div class="UnderlineNav-body">
+    
+    
+    
+    <a class="UnderlineNav-item " href="/about/">
+      
+      <span>About</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/research/">
+      
+      <span>Research</span>
+    </a>
+    
+    
+    
+    
+    <a class="UnderlineNav-item " href="/post/">
+      
+      <span>Blog</span>
+    </a>
+    
+    
+  </div>
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1">Shell Scripting Tips</div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+<a href='/categories/linux' class="muted-link">
+  <span class="Label Label--gray-darker">Linux</span>
+</a>
+
+
+
+<a href='/tags/shell-scripting' class="muted-link">
+  <span class="Label Label--gray">Shell Scripting</span>
+</a>
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2019-11-10. Published at: 2019-11-09.">
+        
+          Lastmod: 2019-11-10
+        
+      </span>
     </div>
+    
+  </div>
+</div>
+<article>
   
-
-  <div class="entry-content">
+  <section class="pb-6 mb-3 border-bottom">
     <h2 id="fff">fff</h2>
 <p>Can add the following function to the <code>/usr/bin/fff</code>, put them in the case <code>key() {</code>:</p>
 <p>Toggle executable flag.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_KEY_EXECUTABLE:=X<span style="font-weight:bold;font-style:italic">}</span>)
-    [[ -f <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> &amp;&amp; -w <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> ]] &amp;&amp; {
-        <span style="font-weight:bold">if</span> [[ -x <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> ]]; <span style="font-weight:bold">then</span>
-            chmod -x <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span>
-            status_line <span style="font-style:italic">&#34;Unset executable.&#34;</span>
-        <span style="font-weight:bold">else</span>
-            chmod +x <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span>
-            status_line <span style="font-style:italic">&#34;Set executable.&#34;</span>
-        <span style="font-weight:bold">fi</span>
-    }
-;;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_KEY_EXECUTABLE</span><span class="p">:=X</span><span class="si">}</span><span class="o">)</span>
+    <span class="o">[[</span> -f <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">&amp;&amp;</span> -w <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">[[</span> -x <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            chmod -x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Unset executable.&#34;</span>
+        <span class="k">else</span>
+            chmod +x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Set executable.&#34;</span>
+        <span class="k">fi</span>
+    <span class="o">}</span>
+<span class="p">;;</span>
 </code></pre></div><p>Open all Images</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_IMAGE_OPEN:=I<span style="font-weight:bold;font-style:italic">}</span>)
-    sxiv -ft * 2&gt;/dev/null &amp;
-    status_line <span style="font-style:italic">&#34;Open all image in sxiv.&#34;</span>
-;;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_IMAGE_OPEN</span><span class="p">:=I</span><span class="si">}</span><span class="o">)</span>
+    sxiv -ft * 2&gt;/dev/null <span class="p">&amp;</span>
+    status_line <span class="s2">&#34;Open all image in sxiv.&#34;</span>
+<span class="p">;;</span>
 </code></pre></div><p>Extract files.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_EXTRACTION:=O<span style="font-weight:bold;font-style:italic">}</span>)
-    ext <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span> &gt; /dev/null 2&gt;&amp;1
-    open <span style="font-style:italic">&#34;</span>$PWD<span style="font-style:italic">&#34;</span>
-    status_line <span style="font-style:italic">&#34;Extraction complete.&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_EXTRACTION</span><span class="p">:=O</span><span class="si">}</span><span class="o">)</span>
+    ext <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span> &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+    open <span class="s2">&#34;</span><span class="nv">$PWD</span><span class="s2">&#34;</span>
+    status_line <span class="s2">&#34;Extraction complete.&#34;</span>
 </code></pre></div>
-  </div>
+  </section>
 
-  <div id=links>
+  <section>
     
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/post/archtips/">&laquo; Arch Tips</a>
+      
     
-    
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/post/hugonote/hugonote/">Notes on Hugo &raquo;</a>
-    
-  </div>
-</section>
+  </section>
+</article>
+
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
+  
+    <div id="toc" class="Box Box--blue mb-3">
+      <b>Shell Scripting Tips</b>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#fff">fff</a></li>
+  </ul>
+</nav>
+    </div>
+  
 
   
-</body>
+    
+    
+      <div>
+        
+
+        
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=61&height=20&appId" width="61" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+
+        
+
+        
+
+      </div>
+    
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    © Hui-Jun Chen 2019 &middot; 
+
+    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
+    
+    
+    
+  </span>
+
+
+      </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  </body>
 </html>
-
-
-
