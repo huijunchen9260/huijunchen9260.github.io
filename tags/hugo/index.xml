@@ -14,10 +14,10 @@
     
     <item>
       <title>Notes on Hugo</title>
-      <link>https://huijunchen9260.github.io/blog/hugonote/hugonote/</link>
+      <link>https://huijunchen9260.github.io/post/hugonote/hugonote/</link>
       <pubDate>Sun, 10 Nov 2019 11:39:23 -0500</pubDate>
       
-      <guid>https://huijunchen9260.github.io/blog/hugonote/hugonote/</guid>
+      <guid>https://huijunchen9260.github.io/post/hugonote/hugonote/</guid>
       <description>As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
 GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
 After signed up, you can press the icon on the top-right cornor and enter your profile.</description>

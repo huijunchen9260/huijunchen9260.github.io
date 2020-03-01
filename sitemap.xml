@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://huijunchen9260.github.io/</loc>
+    <loc>https://huijunchen9260.github.io/about/</loc>
     <lastmod>2019-11-12T23:50:44-05:00</lastmod>
   </url>
   
@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/blog/</loc>
+    <loc>https://huijunchen9260.github.io/post/</loc>
     <lastmod>2019-11-10T00:15:54-05:00</lastmod>
   </url>
   
@@ -33,7 +33,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/blog/dmenufm_bugs/</loc>
+    <loc>https://huijunchen9260.github.io/post/dmenufm_bugs/</loc>
     <lastmod>2020-01-01T23:13:37-05:00</lastmod>
   </url>
   
@@ -53,6 +53,11 @@
   </url>
   
   <url>
+    <loc>https://huijunchen9260.github.io/</loc>
+    <lastmod>2019-11-12T23:50:44-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://huijunchen9260.github.io/tags/research/</loc>
     <lastmod>2019-11-10T11:42:21-05:00</lastmod>
   </url>
@@ -63,7 +68,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/blog/hugonote/hugonote/</loc>
+    <loc>https://huijunchen9260.github.io/post/hugonote/hugonote/</loc>
     <lastmod>2019-11-15T01:41:42-05:00</lastmod>
   </url>
   
@@ -73,7 +78,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/blog/shelltips/</loc>
+    <loc>https://huijunchen9260.github.io/post/shelltips/</loc>
     <lastmod>2019-11-10T00:25:54-05:00</lastmod>
   </url>
   
@@ -83,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/blog/archtips/</loc>
+    <loc>https://huijunchen9260.github.io/post/archtips/</loc>
     <lastmod>2019-11-14T15:27:45-05:00</lastmod>
   </url>
   

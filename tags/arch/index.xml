@@ -14,10 +14,10 @@
     
     <item>
       <title>Arch Tips</title>
-      <link>https://huijunchen9260.github.io/blog/archtips/</link>
+      <link>https://huijunchen9260.github.io/post/archtips/</link>
       <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
       
-      <guid>https://huijunchen9260.github.io/blog/archtips/</guid>
+      <guid>https://huijunchen9260.github.io/post/archtips/</guid>
       <description>Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
 Get system info on command line uname -a
 Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
