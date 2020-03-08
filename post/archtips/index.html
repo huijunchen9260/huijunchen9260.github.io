@@ -1,131 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'U-12345678-0', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      
-  Arch Tips &ndash; Hui-Jun Chen
-
-    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <title>Arch Tips - Hui-Jun Chen</title>
     
-    <meta name="description" property="og:description" content="Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+    <meta name="description" content="Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
 Get system info on command line uname -a
 Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
 Clean pacman cache Safe way:
 Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
-Direct way: - Delete all: sudo pacman -Scc|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
+Direct way: - Delete all: sudo pacman -Scc">
+    <meta name="author" content="">
     
+    <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://huijunchen9260.github.io/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://huijunchen9260.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://huijunchen9260.github.io/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.66.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://huijunchen9260.github.io/index.xml" title="Hui-Jun Chen">
+    
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
 
-    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
-    
-    
-    
-    
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
 
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
 
-    <link rel="stylesheet" href="/assets/syntax.css">
-    <link rel="stylesheet" href="/assets/primer-build.css">
-    <link rel="stylesheet" href="/assets/style.css">
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
   </head>
-
-
-  <body class="bg-gray">
-    <div id="holy" class="container-lg bg-white h-100">
-
-      <div id="header" class="px-1 bg-white">
-        <nav class="UnderlineNav UnderlineNav--right px-2">
-  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
-    Hui-Jun Chen
-  </a>
-
-  
-  
-  <div class="UnderlineNav-body">
-    
-    
-    
-    <a class="UnderlineNav-item " href="/about/">
-      
-      <span>About</span>
-    </a>
-    
-    
-    
-    
-    <a class="UnderlineNav-item " href="/research/">
-      
-      <span>Research</span>
-    </a>
-    
-    
-    
-    
-    <a class="UnderlineNav-item " href="/post/">
-      
-      <span>Blog</span>
-    </a>
-    
-    
-  </div>
-  
-</nav>
-
-      </div>
-
-      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
         
-
-<div class="Subhead">
-  <div class="Subhead-heading">
-    <div class="h1 mt-3 mb-1">Arch Tips</div>
-  </div>
-  <div class="Subhead-description">
-    
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/arch' class="muted-link">
-  <span class="Label Label--gray">Arch</span>
-</a>
-
-
-
-    
-    <div class="float-md-right">
-      <span title="Lastmod: 2019-11-14. Published at: 2019-11-09.">
+        <p class="logo"><a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></p>
         
-          Lastmod: 2019-11-14
         
-      </span>
-    </div>
-    
-  </div>
-</div>
-<article>
-  
-  <section class="pb-6 mb-3 border-bottom">
-    <h2 id="firefox-cannot-paste-anything-on-facebook-manager-reference-solutionhttpswebappsstackexchangecomquestions73068why-cant-i-paste-into-comments-in-facebook-in-firefox75989">Firefox cannot paste anything on facebook manager Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></h2>
+        <ul class="menu">
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          <li>
+            <a href="/research/">Research</a>
+          </li>
+          
+          <li>
+            <a href="/post/">Blog</a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Arch Tips</h1>
+    <div class="post-meta">November 9, 2019</div>
+  </header>
+  <div class="post-content"><h2 id="firefox-cannot-paste-anything-on-facebook-manager-reference-solutionhttpswebappsstackexchangecomquestions73068why-cant-i-paste-into-comments-in-facebook-in-firefox75989">Firefox cannot paste anything on facebook manager Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></h2>
 <p>Type <code>about:config</code> in New Tab, and search for <code>dom.event.clipboardevents.enabled</code>, and change the value to enable.</p>
 <h2 id="get-system-info-on-command-line">Get system info on command line</h2>
 <p><code>uname -a</code></p>
@@ -149,77 +130,35 @@ Then run paccache:
     - Check your printer is ready in `system-config-printer` - Go to `zathura` and print your file!
     - If the printer says &quot;unplugged or turned off&quot;, then delete the printer in the `system-config-printer` and add it again.
 </code></pre>
-
-  </section>
-
-  <section>
-    
+</div>
+  
+  <footer class="post-footer">
+    <ul class="post-tags">
       
-    
-  </section>
+      
+      <li><a href="https://huijunchen9260.github.io/tags/arch">Arch</a></li>
+      
+    </ul>
+  </footer>
+  
+  
+  
+  
+  
 </article>
 
-      </div>
-
-      <div id="side" class="pr-1 bg-white">
-        <aside class="pr-3">
-          
-  
-    <div id="toc" class="Box Box--blue mb-3">
-      <b>Arch Tips</b>
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#firefox-cannot-paste-anything-on-facebook-manager-reference-solutionhttpswebappsstackexchangecomquestions73068why-cant-i-paste-into-comments-in-facebook-in-firefox75989">Firefox cannot paste anything on facebook manager Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></a></li>
-    <li><a href="#get-system-info-on-command-line">Get system info on command line</a></li>
-    <li><a href="#clean-orphan-packages">Clean orphan packages</a></li>
-    <li><a href="#clean-pacman-cache">Clean pacman cache</a></li>
-    <li><a href="#printer">Printer:</a></li>
-  </ul>
-</nav>
-    </div>
-  
-
-  
-    
-    
-      <div>
-        
-
-        
-          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=61&height=20&appId" width="61" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        
-
-        
-
-        
-
-      </div>
-    
-  
-
-        </aside>
-      </div>
-
-      <div id="footer" class="pt-2 pb-3 bg-white text-center">
-        
-
-  <span class="text-small text-gray">
-    © Hui-Jun Chen 2019 &middot; 
-
-    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
-    
-    
-    
-  </span>
-
-
-      </div>
-    </div>
-
-
-    
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
-  </body>
+</main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://huijunchen9260.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>
+
