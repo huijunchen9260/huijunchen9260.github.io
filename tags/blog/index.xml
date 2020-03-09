@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Hui-Jun Chen</title>
+    <link>https://huijunchen9260.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Hui-Jun Chen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Nov 2019 00:13:58 -0500</lastBuildDate>
+    
+	<atom:link href="https://huijunchen9260.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://huijunchen9260.github.io/blog/</link>
+      <pubDate>Sun, 10 Nov 2019 00:13:58 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

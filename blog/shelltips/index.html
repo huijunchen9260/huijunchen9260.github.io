@@ -2,474 +2,140 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-
+    <title>Shell Scripting Tips - Hui-Jun Chen</title>
     
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
+    <meta name="description" content="fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
+Toggle executable flag.
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod &#43;x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
+${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
+${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.">
+    <meta name="author" content="">
     
-
-    <title>
-      
-      
-         Shell Scripting Tips 
-      
-    </title>
-    <link rel="canonical" href="https://huijunchen9260.github.io/blog/shelltips/">
-
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, .date {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content .date {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
-</style>
-
-
-    </head>
-
-  <body>
-    <section id=nav>
-      <h1><a href="/">Hui-Jun Chen</a></h1>
-      <ul>
-        
-          <li><a href="https://huijunchen9260.github.io/about">About</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/blog/">Blog</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/research/">Research</a></li>
-        
-      </ul>
-    </section>
-
-
-<section id=content>
-  <h1> Shell Scripting Tips </h1>
-
-  
-    <div id=sub-header>
-      November 2019 · 1 minute read
-    </div>
-  
-
-  <div class="entry-content">
-    <h2 id="fff">fff</h2>
+    <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://huijunchen9260.github.io/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://huijunchen9260.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://huijunchen9260.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.66.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://huijunchen9260.github.io/index.xml" title="Hui-Jun Chen">
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
+
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></p>
+        <ul class="menu">
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/research/">Research</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Shell Scripting Tips</h1>
+    <div class="post-meta">November 9, 2019</div>
+  </header>
+  <div class="post-content"><h2 id="fff">fff</h2>
 <p>Can add the following function to the <code>/usr/bin/fff</code>, put them in the case <code>key() {</code>:</p>
 <p>Toggle executable flag.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_KEY_EXECUTABLE:=X<span style="font-weight:bold;font-style:italic">}</span>)
-    [[ -f <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> &amp;&amp; -w <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> ]] &amp;&amp; {
-        <span style="font-weight:bold">if</span> [[ -x <span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span> ]]; <span style="font-weight:bold">then</span>
-            chmod -x <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span>
-            status_line <span style="font-style:italic">&#34;Unset executable.&#34;</span>
-        <span style="font-weight:bold">else</span>
-            chmod +x <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span>
-            status_line <span style="font-style:italic">&#34;Set executable.&#34;</span>
-        <span style="font-weight:bold">fi</span>
-    }
-;;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_KEY_EXECUTABLE</span><span class="p">:=X</span><span class="si">}</span><span class="o">)</span>
+    <span class="o">[[</span> -f <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">&amp;&amp;</span> -w <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">[[</span> -x <span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            chmod -x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Unset executable.&#34;</span>
+        <span class="k">else</span>
+            chmod +x <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span>
+            status_line <span class="s2">&#34;Set executable.&#34;</span>
+        <span class="k">fi</span>
+    <span class="o">}</span>
+<span class="p">;;</span>
 </code></pre></div><p>Open all Images</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_IMAGE_OPEN:=I<span style="font-weight:bold;font-style:italic">}</span>)
-    sxiv -ft * 2&gt;/dev/null &amp;
-    status_line <span style="font-style:italic">&#34;Open all image in sxiv.&#34;</span>
-;;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_IMAGE_OPEN</span><span class="p">:=I</span><span class="si">}</span><span class="o">)</span>
+    sxiv -ft * 2&gt;/dev/null <span class="p">&amp;</span>
+    status_line <span class="s2">&#34;Open all image in sxiv.&#34;</span>
+<span class="p">;;</span>
 </code></pre></div><p>Extract files.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="font-weight:bold;font-style:italic">${</span>FFF_EXTRACTION:=O<span style="font-weight:bold;font-style:italic">}</span>)
-    ext <span style="font-style:italic">&#34;</span><span style="font-weight:bold;font-style:italic">${</span>list[scroll]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#34;</span> &gt; /dev/null 2&gt;&amp;1
-    open <span style="font-style:italic">&#34;</span>$PWD<span style="font-style:italic">&#34;</span>
-    status_line <span style="font-style:italic">&#34;Extraction complete.&#34;</span>
-</code></pre></div>
-  </div>
-
-  <div id=links>
-    
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/blog/archtips/">&laquo; Arch Tips</a>
-    
-    
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/blog/hugonote/hugonote/">Notes on Hugo &raquo;</a>
-    
-  </div>
-</section>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="si">${</span><span class="nv">FFF_EXTRACTION</span><span class="p">:=O</span><span class="si">}</span><span class="o">)</span>
+    ext <span class="s2">&#34;</span><span class="si">${</span><span class="nv">list</span><span class="p">[scroll]</span><span class="si">}</span><span class="s2">&#34;</span> &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+    open <span class="s2">&#34;</span><span class="nv">$PWD</span><span class="s2">&#34;</span>
+    status_line <span class="s2">&#34;Extraction complete.&#34;</span>
+</code></pre></div></div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huijunchen9260.github.io/tags/shell-scripting">Shell Scripting</a></li>
+    </ul>
+  </footer>
   
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
+  <span>&middot;</span>
+  <span>OSU <a href="https://economics.osu.edu/" rel="noopener" target="_blank">ECON</a>️</span>
+</footer>
+<script src="https://huijunchen9260.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>
-
-
 

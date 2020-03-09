@@ -6,7 +6,6 @@
     <description>Recent content in Dmenu on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Hui-Jun Chen 2019</copyright>
     <lastBuildDate>Fri, 27 Dec 2019 23:22:41 -0500</lastBuildDate>
     
 	<atom:link href="https://huijunchen9260.github.io/tags/dmenu/index.xml" rel="self" type="application/rss+xml" />
@@ -14,10 +13,10 @@
     
     <item>
       <title>Dmenufm Interesting Bugs</title>
-      <link>https://huijunchen9260.github.io/post/dmenufm_bugs/</link>
+      <link>https://huijunchen9260.github.io/blog/dmenufm_bugs/</link>
       <pubDate>Fri, 27 Dec 2019 23:22:41 -0500</pubDate>
       
-      <guid>https://huijunchen9260.github.io/post/dmenufm_bugs/</guid>
+      <guid>https://huijunchen9260.github.io/blog/dmenufm_bugs/</guid>
       <description>Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
 This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
 The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.

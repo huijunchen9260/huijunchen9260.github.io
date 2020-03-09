@@ -1,369 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'U-12345678-0', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      
-  Blog &ndash; Hui-Jun Chen
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Tags - Hui-Jun Chen</title>
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://huijunchen9260.github.io/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://huijunchen9260.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://huijunchen9260.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.66.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://huijunchen9260.github.io/index.xml" title="Hui-Jun Chen">
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
 
-    </title>
-    
-    
-    <meta name="description" property="og:description" content="Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
-    
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
 
-    <meta name="apple-mobile-web-app-title" content="Hui-Jun Chen">
-    
-    
-    
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:creator" content="@">
-    <meta name="twitter:title" content="Blog | Hui-Jun Chen">
-    <meta name="twitter:description" content="|Homepage for Hui-Jun Chen, Ph.D. student in Economics, The Ohio State University">
-    <meta name="twitter:image" content="https://huijunchen9260.github.io/twitter-card.png">
-    
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
 
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
 
-    <link rel="stylesheet" href="/assets/syntax.css">
-    <link rel="stylesheet" href="/assets/primer-build.css">
-    <link rel="stylesheet" href="/assets/style.css">
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
   </head>
+  <body class="list">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></p>
+        <ul class="menu">
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/research/">Research</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
 
-
-  <body class="bg-gray">
-    <div id="holy" class="container-lg bg-white h-100">
-
-      <div id="header" class="px-1 bg-white">
-        <nav class="UnderlineNav UnderlineNav--right px-2">
-  <a class="UnderlineNav-actions muted-link h2" href="https://huijunchen9260.github.io/">
-    Hui-Jun Chen
-  </a>
-
-  
-  
-  <div class="UnderlineNav-body">
-    
-    
-    
-    <a class="UnderlineNav-item " href="/">
-      
-      <span>About</span>
-    </a>
-    
-    
-    
-    
-    <a class="UnderlineNav-item " href="/research/">
-      
-      <span>Research</span>
-    </a>
-    
-    
-    
-    
-    <a class="UnderlineNav-item selected" href="/blog/">
-      
-      <span>Blog</span>
-    </a>
-    
-    
-  </div>
-  
-</nav>
-
-      </div>
-
-      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
-        
-
-<div>
-
-  <h1>Blog</h1>
-  
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/dmenufm_bugs/">
-        <div class="h2 mt-1 mb-1">Dmenufm Interesting Bugs</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/dmenu' class="muted-link">
-  <span class="Label Label--gray">Dmenu</span>
-</a>
-
-<a href='/tags/dmenufm' class="muted-link">
-  <span class="Label Label--gray">Dmenufm</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-12-27</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
+<header class="page-header">
+  <h1>Tags</h1>
+</header>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>Dmenufm Interesting Bugs</h2>
+  </header>
+  <section class="entry-content">
+   <p>Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
 This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
 The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
-The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&quot;placeholder&quot;.
-    <a class="muted-link" href="/blog/dmenufm_bugs/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/hugonote/hugonote/">
-        <div class="h2 mt-1 mb-1">Notes on Hugo</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/hugo' class="muted-link">
-  <span class="Label Label--gray">Hugo</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-10</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
+The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&#34;placeholder&#34;....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>December 27, 2019</time>
+  </footer>
+  <a class="entry-link" href="https://huijunchen9260.github.io/blog/dmenufm_bugs/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>Notes on Hugo</h2>
+  </header>
+  <section class="entry-content">
+   <p>As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
 GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
-After signed up, you can press the icon on the top-right cornor and enter your profile.
-    <a class="muted-link" href="/blog/hugonote/hugonote/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/shelltips/">
-        <div class="h2 mt-1 mb-1">Shell Scripting Tips</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/shell-scripting' class="muted-link">
-  <span class="Label Label--gray">Shell Scripting</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-09</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
+After signed up, you can press the icon on the top-right cornor and enter your profile....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>November 10, 2019</time>
+  </footer>
+  <a class="entry-link" href="https://huijunchen9260.github.io/blog/hugonote/hugonote/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>Shell Scripting Tips</h2>
+  </header>
+  <section class="entry-content">
+   <p>fff Can add the following function to the /usr/bin/fff, put them in the case key() {:
 Toggle executable flag.
-${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod +x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
+${FFF_KEY_EXECUTABLE:=X}) [[ -f ${list[scroll]} &amp;&amp; -w ${list[scroll]} ]] &amp;&amp; { if [[ -x ${list[scroll]} ]]; then chmod -x &#34;${list[scroll]}&#34; status_line &#34;Unset executable.&#34; else chmod &#43;x &#34;${list[scroll]}&#34; status_line &#34;Set executable.&#34; fi } ;; Open all Images
 ${FFF_IMAGE_OPEN:=I}) sxiv -ft * 2&gt;/dev/null &amp; status_line &#34;Open all image in sxiv.&#34; ;; Extract files.
-${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete.
-    <a class="muted-link" href="/blog/shelltips/">…</a>
-  </div>
-</div>
-
-  
-    
-    
-<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
-  <div class="Subhead mb-2">
-    <div class="Subhead-heading">
-      <a href="/blog/archtips/">
-        <div class="h2 mt-1 mb-1">Arch Tips</div>
-      </a>
-    </div>
-    <div class="Subhead-description">
-      
-
-
-<a href='/categories/linux' class="muted-link">
-  <span class="Label Label--gray-darker">Linux</span>
-</a>
-
-
-
-<a href='/tags/arch' class="muted-link">
-  <span class="Label Label--gray">Arch</span>
-</a>
-
-
-      <div class="float-md-right">
-        <span>2019-11-09</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-gray">
-    
-    Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
+${FFF_EXTRACTION:=O}) ext &#34;${list[scroll]}&#34; &gt; /dev/null 2&gt;&amp;1 open &#34;$PWD&#34; status_line &#34;Extraction complete....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>November 9, 2019</time>
+  </footer>
+  <a class="entry-link" href="https://huijunchen9260.github.io/blog/shelltips/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>Arch Tips</h2>
+  </header>
+  <section class="entry-content">
+   <p>Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
 Get system info on command line uname -a
 Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
 Clean pacman cache Safe way:
 Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
-Direct way: - Delete all: sudo pacman -Scc
-    <a class="muted-link" href="/blog/archtips/">…</a>
-  </div>
-</div>
-
-  
-
-  
-  
-
-
-
-
-</div>
-
-
-      </div>
-
-      <div id="side" class="pr-1 bg-white">
-        <aside class="pr-3">
-          
-  
-
-  <div class="Box Box--blue p-2 mb-3 mt-5">
-    <a href="/tags/" class="link-gray-dark">
-      <h4>Tags</h4>
-    </a>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/arch" class="link-gray text-emphasized css-truncate-target"><span class="">Arch</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/dmenu" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenu</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/dmenufm" class="link-gray text-emphasized css-truncate-target"><span class="">Dmenufm</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/hugo" class="link-gray text-emphasized css-truncate-target"><span class="">Hugo</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/research" class="link-gray text-emphasized css-truncate-target"><span class="">Research</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/tags/shell-scripting" class="link-gray text-emphasized css-truncate-target"><span class="">Shell scripting</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-  </div>
-
-
-
-
-  <div class="Box Box--blue p-2 mb-3">
-    <a href="/categories/" class="link-gray-dark">
-      <h4>Categories</h4>
-    </a>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/categories/economics" class="link-gray text-emphasized css-truncate-target"><span class="">Economics</span></a>
-      <span class="text-right Counter">1</span>
-    </span>
-    
-    <span class="css-truncate no-wrap m-1 pl-1">
-      <a href="/categories/linux" class="link-gray text-emphasized css-truncate-target"><span class="">Linux</span></a>
-      <span class="text-right Counter">4</span>
-    </span>
-    
-  </div>
-
-
-
-        </aside>
-      </div>
-
-      <div id="footer" class="pt-2 pb-3 bg-white text-center">
-        
-
-  <span class="text-small text-gray">
-    © Hui-Jun Chen 2019 &middot; 
-
-    <a href="https://economics.osu.edu/" class="link-gray-dark">Department of Economics, The Ohio State University</a>
-    
-    
-    
-  </span>
-
-
-      </div>
-    </div>
-
-
-    
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
-  </body>
+Direct way: - Delete all: sudo pacman -Scc...</p>
+  </section>
+  <footer class="entry-footer">
+    <time>November 9, 2019</time>
+  </footer>
+  <a class="entry-link" href="https://huijunchen9260.github.io/blog/archtips/"></a>
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
+  <span>&middot;</span>
+  <span>OSU <a href="https://economics.osu.edu/" rel="noopener" target="_blank">ECON</a>️</span>
+</footer>
+<script src="https://huijunchen9260.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>
+

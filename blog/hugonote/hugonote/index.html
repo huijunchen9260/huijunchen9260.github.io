@@ -2,435 +2,98 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-
+    <title>Notes on Hugo - Hui-Jun Chen</title>
     
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
+    <meta name="description" content="As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.
+GitHub part First of all, you need to sign up an account on GitHub. Details is on official website.
+After signed up, you can press the icon on the top-right cornor and enter your profile.">
+    <meta name="author" content="">
     
-
-    <title>
-      
-      
-         Notes on Hugo 
-      
-    </title>
-    <link rel="canonical" href="https://huijunchen9260.github.io/blog/hugonote/hugonote/">
-
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, .date {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content .date {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
-</style>
-
-
-    </head>
-
-  <body>
-    <section id=nav>
-      <h1><a href="/">Hui-Jun Chen</a></h1>
-      <ul>
-        
-          <li><a href="https://huijunchen9260.github.io/about">About</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/blog/">Blog</a></li>
-        
-          <li><a href="https://huijunchen9260.github.io/research/">Research</a></li>
-        
-      </ul>
-    </section>
-
-
-<section id=content>
-  <h1> Notes on Hugo </h1>
-
-  
-    <div id=sub-header>
-      November 2019 · 5 minute read
-    </div>
-  
-
-  <div class="entry-content">
-    <p>As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.</p>
+    <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://huijunchen9260.github.io/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://huijunchen9260.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://huijunchen9260.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.66.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://huijunchen9260.github.io/index.xml" title="Hui-Jun Chen">
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
+
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></p>
+        <ul class="menu">
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/research/">Research</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Notes on Hugo</h1>
+    <div class="post-meta">November 10, 2019</div>
+  </header>
+  <div class="post-content"><p>As a Ph.D. student, we all need to build or website to show our research and to introduce ourselves to the world. This post is my note on how to use Hugo, a static website generator, to build your own website and host it on GitHub.</p>
 <h2 id="github-part">GitHub part</h2>
 <p>First of all, you need to sign up an account on GitHub. <a href="https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">Details</a> is on official website.</p>
 <p>After signed up, you can press the icon on the top-right cornor and enter your profile.</p>
@@ -438,15 +101,15 @@
 <p>Then create two new repository: <code>website</code> (or any name that store your raw content of your website) and <code>&lt;username&gt;.github.io</code> (the actuall repository to host your website).
 If you use other name for the repository to host your website, the website url would be <code>https://github.com/&lt;username&gt;/&lt;repository_name&gt;/</code>.</p>
 <p>Use <code>git clone</code> to copy both repository to your local directories. I suggest it to be in two distinct directories. The url for repository can be found at the green buttom <code>Clone or download</code>. The code would be:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone &lt;resitory_url&gt;
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone &lt;resitory_url&gt;
 </code></pre></div><h2 id="local-file-part">Local file part</h2>
 <p>Now you need to install <code>hugo</code> and <code>git</code> to generate your static website and upload your website to github, respectively.</p>
 <p>You can refer to <a href="https://gohugo.io/getting-started/installing/">the officien webste of hugo</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a> to know how to install both of them on your OS. If you use Arch, then you can install them by</p>
 <pre><code class="language-terminal" data-lang="terminal">sudo pacman -S hugo git
 </code></pre><p>Enter or <code>cd</code> to your <code>website</code> directory, and generate your new website by</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site [new-site-name]
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site <span class="o">[</span>new-site-name<span class="o">]</span>
 </code></pre></div><p>There will be a new directory in your <code>website</code> directory. Move all the content in the new directory to your <code>website</code>, and delete the new directory. The structure of the <code>website</code> directory will be</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">website
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">website
 ├── archetypes
 │   └── default.md
 ├── config.toml
@@ -456,7 +119,7 @@ If you use other name for the repository to host your website, the website url w
 ├── static
 └── themes
 
-6 directories, 2 files
+<span class="m">6</span> directories, <span class="m">2</span> files
 </code></pre></div><p>Congratulation! You already built the skeleton of website!</p>
 <h3 id="explanation-on-directory-tree">Explanation on directory tree</h3>
 <p>The <code>default.md</code> in <code>archetypes</code> directory is the default format that generated by hugo.</p>
@@ -512,8 +175,8 @@ If you use other name for the repository to host your website, the website url w
 <p>If you put the pdf file in the <code>/content/blog/</code> directory, then the corresponding url for it would be <code>yourwebsite.github.io/blog/nameofpdf.pdf</code>.</p>
 <p>For example, if I put a file called <code>HugoNote.pdf</code> in the <code>/content/blog/</code> directory, then my url would be <code>https://huijunchen9260.github.io/blog/HugoNote.pdf</code>.</p>
 <p>After figuring out the url of pdf file, we can use google drive pdf viewer to embed the pdf file. Use the url example above, the html code would be</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">embed</span> src=<span style="font-style:italic">&#34;https://drive.google.com/viewerng/
-</span><span style="font-style:italic">viewer?embedded=true&amp;url=https://huijunchen9260.github.io/blog/HugoNote.pdf&#34;</span> width=<span style="font-style:italic">&#34;100%&#34;</span> height=<span style="font-style:italic">&#34;800px&#34;</span>&gt;
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">embed</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://drive.google.com/viewerng/
+</span><span class="s">viewer?embedded=true&amp;url=https://huijunchen9260.github.io/blog/HugoNote.pdf&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;800px&#34;</span><span class="p">&gt;</span>
 </code></pre></div><p>Description of code:</p>
 <ul>
 <li><code>src</code> is the source of display. we use google drive viewer to show pdf file inside the webpage.</li>
@@ -522,22 +185,23 @@ If you use other name for the repository to host your website, the website url w
 </ul>
 <p>The following is the pdf version of this note generated by Pandoc:</p>
 <p><!-- raw HTML omitted --></p>
-
-  </div>
-
-  <div id=links>
-    
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/blog/shelltips/">&laquo; Shell Scripting Tips</a>
-    
-    
-      <a class="basic-alignment left" href="https://huijunchen9260.github.io/blog/dmenufm_bugs/">Dmenufm Interesting Bugs &raquo;</a>
-    
-  </div>
-</section>
-
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huijunchen9260.github.io/tags/hugo">Hugo</a></li>
+    </ul>
+  </footer>
   
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
+  <span>&middot;</span>
+  <span>OSU <a href="https://economics.osu.edu/" rel="noopener" target="_blank">ECON</a>️</span>
+</footer>
+<script src="https://huijunchen9260.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>
-
-
 
