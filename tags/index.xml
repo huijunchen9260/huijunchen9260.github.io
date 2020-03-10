@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Dec 2019 23:22:41 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 21:27:33 -0400</lastBuildDate>
     
 	<atom:link href="https://huijunchen9260.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux</title>
+      <link>https://huijunchen9260.github.io/tags/linux/</link>
+      <pubDate>Mon, 09 Mar 2020 21:27:33 -0400</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://huijunchen9260.github.io/tags/projects/</link>
+      <pubDate>Mon, 09 Mar 2020 21:27:33 -0400</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/projects/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Dmenu</title>
@@ -26,6 +44,15 @@
       <pubDate>Fri, 27 Dec 2019 23:22:41 -0500</pubDate>
       
       <guid>https://huijunchen9260.github.io/tags/dmenufm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economics</title>
+      <link>https://huijunchen9260.github.io/tags/economics/</link>
+      <pubDate>Sun, 10 Nov 2019 11:41:15 -0500</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/economics/</guid>
       <description></description>
     </item>
     
@@ -53,15 +80,6 @@
       <pubDate>Sat, 09 Nov 2019 18:46:16 -0500</pubDate>
       
       <guid>https://huijunchen9260.github.io/tags/shell-scripting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://huijunchen9260.github.io/tags/linux/</link>
-      <pubDate>Sat, 09 Nov 2019 18:11:12 -0500</pubDate>
-      
-      <guid>https://huijunchen9260.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Arch Tips - Hui-Jun Chen</title>
+    <title>Projects - Hui-Jun Chen</title>
     
-    <meta name="description" content="Firefox cannot paste anything on facebook manager Reference: Solution Type about:config in New Tab, and search for dom.event.clipboardevents.enabled, and change the value to enable.
-Get system info on command line uname -a
-Clean orphan packages sudo pacman -Rns $(pacman -Qtdq)
-Clean pacman cache Safe way:
-Install pacchace first: sudo pacman -S pacman-contrib Then run paccache: - Delete all except three recent package: sudo paccache -r
-Direct way: - Delete all: sudo pacman -Scc">
+    <meta name="description" content="The following computer programs are those I have written. Most (or all) of them are Linux-based programs, so they might not work on Windows, or even on MacOS. They are sorted in order on the frequency I use them and/or my priority to promote them.
+ Dmenufm:  a simple file manager using dmenu and written in POSIX-compliant shell script. able to manage files with bulk selection mode corresponding vim plugin   Dmenubib  a simple bibliography manager using dmenu and written in POSIX-compliant shell script.">
     <meta name="author" content="">
     
     <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
@@ -96,37 +92,29 @@ Direct way: - Delete all: sudo pacman -Scc">
 
 <article class="post-single">
   <header class="post-header">
-    <h1 class="post-title">Arch Tips</h1>
-    <div class="post-meta">November 9, 2019</div>
+    <h1 class="post-title">Projects</h1>
+    <div class="post-meta">March 9, 2020</div>
   </header>
-  <div class="post-content"><h2 id="firefox-cannot-paste-anything-on-facebook-manager-reference-solutionhttpswebappsstackexchangecomquestions73068why-cant-i-paste-into-comments-in-facebook-in-firefox75989">Firefox cannot paste anything on facebook manager Reference: <a href="https://webapps.stackexchange.com/questions/73068/why-cant-i-paste-into-comments-in-facebook-in-firefox#75989">Solution</a></h2>
-<p>Type <code>about:config</code> in New Tab, and search for <code>dom.event.clipboardevents.enabled</code>, and change the value to enable.</p>
-<h2 id="get-system-info-on-command-line">Get system info on command line</h2>
-<p><code>uname -a</code></p>
-<h2 id="clean-orphan-packages">Clean orphan packages</h2>
-<p><code>sudo pacman -Rns $(pacman -Qtdq)</code></p>
-<h2 id="clean-pacman-cache">Clean pacman cache</h2>
-<p>Safe way:</p>
-<p>Install pacchace first: <code>sudo pacman -S pacman-contrib</code>
-Then run paccache:
-- Delete all except three recent package: <code>sudo paccache -r</code></p>
-<p>Direct way:
-- Delete all: <code>sudo pacman -Scc</code></p>
-<h2 id="printer">Printer:</h2>
-<pre><code>- HP Printers:
-    - Reference: [Link(Second Answer)](https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/)
-    - Plug-in printer.
-    - GUI configuration for printers: `sudo pacman -S system-config-printer`
-    - Install CUPS, Common UNIX Printing System, and HP Linux-imaging and printing:
-        - `sudo pacman -S cups hplip`
-    - Install driver with root priviledge: `sudo hp-setup -i`
-    - Check your printer is ready in `system-config-printer` - Go to `zathura` and print your file!
-    - If the printer says &quot;unplugged or turned off&quot;, then delete the printer in the `system-config-printer` and add it again.
-</code></pre>
+  <div class="post-content"><p>The following computer programs are those I have written. Most (or all) of them are Linux-based programs, so they might not work on Windows, or even on MacOS. They are sorted in order on the frequency I use them  and/or my priority to promote them.</p>
+<ul>
+<li><a href="https://github.com/huijunchen9260/dmenufm">Dmenufm</a>:
+<ul>
+<li>a simple file manager using dmenu and written in POSIX-compliant shell script.</li>
+<li>able to manage files with <strong>bulk selection</strong> mode</li>
+<li>corresponding <a href="https://github.com/VebbNix/dmenufm.vim">vim plugin</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/huijunchen9260/dmenubib">Dmenubib</a>
+<ul>
+<li>a simple bibliography manager using dmenu and written in POSIX-compliant shell script.</li>
+</ul>
+</li>
+</ul>
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://huijunchen9260.github.io/tags/linux">Linux</a></li>
+      <li><a href="https://huijunchen9260.github.io/tags/projects">Projects</a></li>
     </ul>
   </footer>
   

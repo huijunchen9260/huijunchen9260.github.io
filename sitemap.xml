@@ -8,8 +8,33 @@
   </url>
   
   <url>
+    <loc>https://huijunchen9260.github.io/project/</loc>
+    <lastmod>2020-03-09T21:27:33-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://huijunchen9260.github.io/research/</loc>
     <lastmod>2019-11-10T11:41:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://huijunchen9260.github.io/</loc>
+    <lastmod>2020-03-09T21:27:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://huijunchen9260.github.io/tags/linux/</loc>
+    <lastmod>2020-03-09T21:27:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://huijunchen9260.github.io/tags/projects/</loc>
+    <lastmod>2020-03-09T21:27:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://huijunchen9260.github.io/tags/</loc>
+    <lastmod>2020-03-09T21:27:33-04:00</lastmod>
   </url>
   
   <url>
@@ -28,22 +53,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/tags/</loc>
-    <lastmod>2019-12-27T23:22:41-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://huijunchen9260.github.io/categories/</loc>
-    <lastmod>2019-11-10T11:41:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://huijunchen9260.github.io/categories/economics/</loc>
-    <lastmod>2019-11-10T11:41:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://huijunchen9260.github.io/</loc>
+    <loc>https://huijunchen9260.github.io/tags/economics/</loc>
     <lastmod>2019-11-10T11:41:15-05:00</lastmod>
   </url>
   
@@ -83,8 +93,7 @@
   </url>
   
   <url>
-    <loc>https://huijunchen9260.github.io/tags/linux/</loc>
-    <lastmod>2019-11-09T18:11:12-05:00</lastmod>
+    <loc>https://huijunchen9260.github.io/categories/</loc>
   </url>
   
 </urlset>
