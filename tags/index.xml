@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Hui-Jun Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 21:27:33 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 23:07:10 -0400</lastBuildDate>
     
 	<atom:link href="https://huijunchen9260.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Linux</title>
       <link>https://huijunchen9260.github.io/tags/linux/</link>
-      <pubDate>Mon, 09 Mar 2020 21:27:33 -0400</pubDate>
+      <pubDate>Tue, 10 Mar 2020 23:07:10 -0400</pubDate>
       
       <guid>https://huijunchen9260.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://huijunchen9260.github.io/tags/vim/</link>
+      <pubDate>Tue, 10 Mar 2020 23:07:10 -0400</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/tags/vim/</guid>
       <description></description>
     </item>
     

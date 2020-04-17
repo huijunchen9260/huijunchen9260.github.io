@@ -27,7 +27,7 @@
       
       <guid>https://huijunchen9260.github.io/project/</guid>
       <description>The following computer programs are those I have written. Most (or all) of them are Linux-based programs, so they might not work on Windows, or even on MacOS. They are sorted in order on the frequency I use them and/or my priority to promote them.
- Dmenufm:  a simple file manager using dmenu and written in POSIX-compliant shell script. able to manage files with bulk selection mode corresponding vim plugin   Dmenubib  a simple bibliography manager using dmenu and written in POSIX-compliant shell script.</description>
+ Dmenufm:  a simple file manager using dmenu and written in POSIX-compliant shell script. able to manage files with bulk selection mode corresponding vim plugin   Dmenubib:  a simple bibliography manager using dmenu and written in POSIX-compliant shell script.</description>
     </item>
     
     <item>
@@ -37,6 +37,15 @@
       
       <guid>https://huijunchen9260.github.io/research/</guid>
       <description>Under construction</description>
+    </item>
+    
+    <item>
+      <title>Vimtips</title>
+      <link>https://huijunchen9260.github.io/blog/vimtips/</link>
+      <pubDate>Tue, 10 Mar 2020 23:07:10 -0400</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/blog/vimtips/</guid>
+      <description>Tips for vim Vim-slime:  Turning vim into a interactive script runner Vim-slime Install:  add Plug &#39;jpalardy/vim-slime&#39; in vim-plug   Usage:  To use with neovim terminal, add let g:slime_target = &amp;quot;neovim&amp;quot; to .vimrc. Default shortcut: &amp;lt;C-c&amp;gt;&amp;lt;C-c&amp;gt; to send this paragraph (vip) to terminal. To use with tmux, add the following code to .vimrc: let g:slime_target = &amp;quot;tmux&amp;quot; let g:slime_paste_file = &amp;quot;$HOME/.slime_paste&amp;quot; For more details, go to .vimrc and Shelbyvimrc.</description>
     </item>
     
     <item>

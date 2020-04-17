@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Dmenufm - Hui-Jun Chen</title>
+    <title>Vimtips - Hui-Jun Chen</title>
     
-    <meta name="description" content="">
+    <meta name="description" content="Tips for vim Vim-slime:  Turning vim into a interactive script runner Vim-slime Install:  add Plug &#39;jpalardy/vim-slime&#39; in vim-plug   Usage:  To use with neovim terminal, add let g:slime_target = &quot;neovim&quot; to .vimrc. Default shortcut: &lt;C-c&gt;&lt;C-c&gt; to send this paragraph (vip) to terminal. To use with tmux, add the following code to .vimrc: let g:slime_target = &quot;tmux&quot; let g:slime_paste_file = &quot;$HOME/.slime_paste&quot; For more details, go to .vimrc and Shelbyvimrc.">
     <meta name="author" content="">
     
     <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
@@ -63,7 +63,7 @@
       }
     </script>
   </head>
-  <body class="list">
+  <body class="single">
     <script>
       setTheme();
     </script>
@@ -88,22 +88,67 @@
     </header>
     <main class="main">
 
-<header class="page-header"><h1>Dmenufm</h1></header>
 
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>Dmenufm Interesting Bugs</h2>
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Vimtips</h1>
+    <div class="post-meta">March 10, 2020</div>
   </header>
-  <section class="entry-content">
-   <p>Dmenufm Interesting Bugs This is the interesting bugs that I encountered today.
-This bug is the one I encounter when I try to implementing BulkListMass function after I finished implementing FM_EYE function.
-The BulkListMass function is activated by selecting the variable $masselection in the ActionMenu. The functionality is good, but somehow FM_EYE seems to enter an endless loop, maximizes the usage of CPU, and eventually crash the whole system.
-The reason for crashing is that I forgot to set the initial value for the $masselection variable, like masselection=&#34;placeholder&#34;....</p>
-  </section>
-  <footer class="entry-footer">
-    <time>December 27, 2019</time>
+  <div class="post-content"><h1 id="tips-for-vim">Tips for vim</h1>
+<h2 id="vim-slime">Vim-slime:</h2>
+<ul>
+<li>Turning vim into a interactive script runner</li>
+<li><a href="https://github.com/jpalardy/vim-slime">Vim-slime</a></li>
+<li>Install:
+<ul>
+<li>add <code>Plug 'jpalardy/vim-slime'</code> in vim-plug</li>
+</ul>
+</li>
+<li>Usage:
+<ul>
+<li>To use with neovim terminal, add <code>let g:slime_target = &quot;neovim&quot;</code> to <code>.vimrc</code>.</li>
+<li>Default shortcut: <code>&lt;C-c&gt;&lt;C-c&gt;</code> to send this paragraph (<code>vip</code>) to terminal.</li>
+<li>To use with tmux, add the following code to <code>.vimrc</code>:</li>
+<li><code>let g:slime_target = &quot;tmux&quot;</code></li>
+<li><code>let g:slime_paste_file = &quot;$HOME/.slime_paste&quot;</code></li>
+<li>For more details, go to <code>.vimrc</code> and <code>Shelbyvimrc.vim</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tmux">Tmux:</h2>
+<ul>
+<li>Solve for the cursor shape not changing when switch mode:
+<ul>
+<li>add <code>set -g -a terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'</code> to <code>$HOME/.tmux.conf</code></li>
+</ul>
+</li>
+<li>Solve for lag when switch mode:
+<ul>
+<li>add <code>set ttimeoutlen=100</code> in <code>$HOME/.vimrc</code>.</li>
+<li>add <code>set-option -sg escape-time 0</code> to <code>$HOME/.tmux.conf</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="auto-wrap-text">Auto wrap text:</h2>
+<ul>
+<li><code>autocmd BufRead,BufNewFile *.md,*.tex setlocal textwidth=80 fo-=l fo+=t</code></li>
+<li>if vim read an old / create a new markdown / tex file, then
+<ol>
+<li>set text width as 80</li>
+<li>ensure <code>t</code> option is added =&gt; wrap text by text width</li>
+<li>delete <code>l</code> option =&gt; long lines are also wrapped.</li>
+</ol>
+</li>
+<li>press <code>gqq</code> to manually wrap a line, <code>gqip</code> for a paragraph.</li>
+</ul>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huijunchen9260.github.io/tags/vim">Vim</a></li>
+      <li><a href="https://huijunchen9260.github.io/tags/linux">Linux</a></li>
+    </ul>
   </footer>
-  <a class="entry-link" href="https://huijunchen9260.github.io/blog/dmenufm_bugs/"></a>
+  
 </article></main>
 <footer class="footer">
   <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
@@ -112,7 +157,7 @@ The reason for crashing is that I forgot to set the initial value for the $masse
   <span>&middot;</span>
   <span><a href="https://github.com/huijunchen9260" rel="noopener" target="_blank">GitHub</a>️</span>
   <span>&middot;</span>
-  <span>Modified December 27, 2019</span>
+  <span>Modified March 10, 2020</span>
   <br/>
   <span>Email: <a href="mailto:chen.9260@osu.edu" rel="noopener" target="_blank">chen.9260@osu.edu</a>️</span>
 </footer>

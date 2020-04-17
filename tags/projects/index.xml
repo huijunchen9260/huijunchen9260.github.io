@@ -18,7 +18,7 @@
       
       <guid>https://huijunchen9260.github.io/project/</guid>
       <description>The following computer programs are those I have written. Most (or all) of them are Linux-based programs, so they might not work on Windows, or even on MacOS. They are sorted in order on the frequency I use them and/or my priority to promote them.
- Dmenufm:  a simple file manager using dmenu and written in POSIX-compliant shell script. able to manage files with bulk selection mode corresponding vim plugin   Dmenubib  a simple bibliography manager using dmenu and written in POSIX-compliant shell script.</description>
+ Dmenufm:  a simple file manager using dmenu and written in POSIX-compliant shell script. able to manage files with bulk selection mode corresponding vim plugin   Dmenubib:  a simple bibliography manager using dmenu and written in POSIX-compliant shell script.</description>
     </item>
     
   </channel>
