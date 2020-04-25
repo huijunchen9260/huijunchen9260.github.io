@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Beautiful One Line - Hui-Jun Chen</title>
+    
+    <meta name="description" content="I gradually realize that the essence of shell scripts is probably using one beautiful one-line of code to express all the logic correctly and elegantly. However, this sacrifices readability of the shell script. Therefore, this beautiful one line characteristic of shell script can only apply to very small scale project, probably as small as just one line.
+Recently, I build my own version of the suckless tabbed, and having a new repository on GitHub called tabbed-hjc.">
+    <meta name="author" content="">
+    
+    <link href="https://huijunchen9260.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://huijunchen9260.github.io/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://huijunchen9260.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://huijunchen9260.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://huijunchen9260.github.io/index.xml" title="Hui-Jun Chen">
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
+
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></p>
+        <ul class="menu">
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/project/">Projects</a>
+          </li>
+          <li>
+            <a href="/research/">Research</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Beautiful One Line</h1>
+    <div class="post-meta">April 25, 2020</div>
+  </header>
+  <div class="post-content"><p>I gradually realize that the essence of shell scripts is probably using one beautiful one-line of code to express all the logic correctly and elegantly. However, this sacrifices readability of the shell script. Therefore, this beautiful one line characteristic of shell script can only apply to very small scale project, probably as small as <strong>just one line</strong>.</p>
+<p>Recently, I build my own version of the <a href="https://tools.suckless.org/tabbed/">suckless tabbed</a>, and having a new repository on GitHub called <a href="https://github.com/huijunchen9260/tabbed-hjc">tabbed-hjc</a>. I developed a script called <code>tabbedize</code> to create a new tabbed window and embed any non-tabbed window into it. The original version of is problematic, then I realize the correct logic just by modify four characters of it.</p>
+<p>The purpose of the <code>tabbedize</code> code is threefold:</p>
+<ol>
+<li>When the current window is already tabbed, do nothing.</li>
+<li>When there is no current window, i.e., no window open in current workspace, do nothing.</li>
+<li>Otherwise, generate a tabbed window and embed current window into it.</li>
+</ol>
+<p>First, let me show the wrong one:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">xprop -id <span class="k">$(</span>xdotool getactivewindow<span class="k">)</span> <span class="p">|</span> grep <span class="s1">&#39;WM_CLASS(STRING) = &#34;tabbed&#34;&#39;</span> <span class="o">||</span> tabbed -c -d <span class="p">|</span> xargs -I <span class="o">{}</span> xdotool windowreparent <span class="k">$(</span>xdotool getactivewindow<span class="k">)</span> <span class="s2">&#34;{}&#34;</span>
+</code></pre></div><p>The wrong code satisfies point 1 and 3, but not 2. The problem of the above code is that when there is no window opened, <code>xdotool getactivewindow</code> will generate nothing, which will still activate the code after <code>||</code> and create a tabbed with nothing in it.</p>
+<p>Therefore, if we change the code into</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">xprop -id <span class="s2">&#34;</span><span class="k">$(</span>xdotool getactivewindow<span class="k">)</span><span class="s2">&#34;</span> <span class="p">|</span> grep -v <span class="s1">&#39;WM_CLASS(STRING) = &#34;tabbed&#34;&#39;</span> <span class="o">&amp;&amp;</span> tabbed -c -d <span class="p">|</span> xargs -I <span class="o">{}</span> xdotool windowreparent <span class="k">$(</span>xdotool getactivewindow<span class="k">)</span> <span class="s2">&#34;{}&#34;</span>
+</code></pre></div><p>The difference is that <code>grep</code> has <code>-v</code> option, which means not match for that pattern, and the logic operator changes from <code>||</code> to <code>&amp;&amp;</code>.</p>
+<p>The correct code satisfy three purpose by the following logic:</p>
+<ol>
+<li>Only when <code>grep</code> cannot find the <code>WM_CLASS</code> is <code>tabbed</code>, we create a new tabbed window and embed current window into it.</li>
+<li><code>xdotool getactivewindow</code> is empty when no window open. Therefore by <code>&amp;&amp;</code> operator, the main code after <code>&amp;&amp;</code> will not be activated.</li>
+<li><code>xdotool getactivewindow</code> is correct when there is a window open, and we know it is not already tabbed by <code>grep -v</code>, then we embed this window into a newly opened tabbed window, i.e., create a tab for current window.</li>
+</ol>
+<p>As the development of the tabbed-hjc, I gradually realize the fact that beautiful one line is the essence of shell scripting. The whole logic difference can be represented by just a few change in characters. I would say this is probably the best and the worst part of this language, the beauty and ugliness of this language. Verbose yet consistent as python may be super useful and gain a lot of popularity, but somehow I always find shell scripting is concise and beautiful. It is just like a swiss knife. It is light, it is handy, but it is probably very difficult to use swiss knife to build a house.</p>
+<p>But of course I choose and deserve the suffering to build the house with just swiss knife.</p>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huijunchen9260.github.io/tags/linux">Linux</a></li>
+    </ul>
+  </footer>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://huijunchen9260.github.io/">Hui-Jun Chen</a></span>
+  <span>&middot;</span>
+  <span>OSU <a href="https://economics.osu.edu/" rel="noopener" target="_blank">ECON</a>️</span>
+  <span>&middot;</span>
+  <span><a href="https://github.com/huijunchen9260" rel="noopener" target="_blank">GitHub</a>️</span>
+  <span>&middot;</span>
+  <span>Modified April 25, 2020</span>
+  <br/>
+  <span>Email: <a href="mailto:chen.9260@osu.edu" rel="noopener" target="_blank">chen.9260@osu.edu</a>️</span>
+</footer>
+<script src="https://huijunchen9260.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+

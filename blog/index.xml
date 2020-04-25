@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Beautiful One Line</title>
+      <link>https://huijunchen9260.github.io/blog/oneline/</link>
+      <pubDate>Sat, 25 Apr 2020 00:13:26 -0400</pubDate>
+      
+      <guid>https://huijunchen9260.github.io/blog/oneline/</guid>
+      <description>I gradually realize that the essence of shell scripts is probably using one beautiful one-line of code to express all the logic correctly and elegantly. However, this sacrifices readability of the shell script. Therefore, this beautiful one line characteristic of shell script can only apply to very small scale project, probably as small as just one line.
+Recently, I build my own version of the suckless tabbed, and having a new repository on GitHub called tabbed-hjc.</description>
+    </item>
+    
+    <item>
       <title>Dmenufm Interesting Bugs</title>
       <link>https://huijunchen9260.github.io/blog/dmenufm_bugs/</link>
       <pubDate>Fri, 27 Dec 2019 23:22:41 -0500</pubDate>
