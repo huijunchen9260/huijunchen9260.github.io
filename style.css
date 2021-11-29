@@ -47,6 +47,24 @@ img[alt="XMR Logo"] {
 	display: inline ;
 }
 
+img[alt="thefool"] {
+	max-width: 1em ;
+	max-height: 1em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+}
+
+img[alt="thefoolflip"] {
+	max-width: 1em ;
+	max-height: 1em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+    transform: scale(-1, 1);
+    transform-origin: center;
+}
+
 @media (prefers-color-scheme: light) {
 	body {
 		background: white ;

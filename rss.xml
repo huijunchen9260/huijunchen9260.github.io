@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-<title>Hui-Jun Chen</title>
+<title>Hui-Jun Chen's Webpage</title>
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
+<item>
+<title>Capital Irreversibility</title>
+<link>https://huijunchen9260.github.io/CapitalIrreversibility.html</link>
+<guid>https://huijunchen9260.github.io/CapitalIrreversibility.html</guid>
+<pubDate>Mon, 29 Nov 2021 00:56:38 -0500</pubDate>
+<description><![CDATA[<h1>Capital Irreversibility</h1>
+
+<p>;tags: Working</p>]]></description>
+</item>
+<item>
+<title>Uncertain Taxation, Government Transfer, and Household Inequality</title>
+<link>https://huijunchen9260.github.io/TaxUncertainty.html</link>
+<guid>https://huijunchen9260.github.io/TaxUncertainty.html</guid>
+<pubDate>Mon, 29 Nov 2021 00:56:38 -0500</pubDate>
+<description><![CDATA[<h1>Uncertain Taxation, Government Transfer, and Household Inequality</h1>
+
+<p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
+
+<p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
+
+<h3>Abstract</h3>
+
+<p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
+Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
+Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
+Labor tax suppresses the major income sources of the poor: labor wage.
+The effect of tax policy uncertainty on the wealth distribution and inequality depends on households' degree of risk aversion.
+When risk aversion is higher, the rich maintain similar levels of consumption by slowing down their capital accumulation process, while this relationship is reversed for the poor, resulting in decreasing wealth inequality.
+Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
+Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
+As a result, lump-sum transfer mitigates some effects of the uncertainty but worsens wealth inequality.</p>
+
+<p>;tags: Working</p>]]></description>
+</item>
+<item>
+<title>Machine Learning, Autumn 2021</title>
+<link>https://huijunchen9260.github.io/CSE5523Notes.html</link>
+<guid>https://huijunchen9260.github.io/CSE5523Notes.html</guid>
+<pubDate>Sun, 28 Nov 2021 09:15:05 -0500</pubDate>
+<description><![CDATA[<h1>Machine Learning, Autumn 2021</h1>
+
+<p>CSE 5523, The Ohio State University, Autumn 2021</p>
+
+<p><a href="https://www.asc.ohio-state.edu/schuler.77/courses/5523/">Course Website</a></p>
+
+<p>;tags: Miscellaneous</p>]]></description>
+</item>
 <item>
 <title>Principle of Macroeconomics, Summer 2021</title>
 <link>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</link>
@@ -11,7 +58,7 @@
 <pubDate>Sun, 28 Nov 2021 00:32:14 -0500</pubDate>
 <description><![CDATA[<h1>Principle of Macroeconomics, Summer 2021</h1>
 
-<p>ECON 2002.01, The Ohio State University, Autumn 2021</p>
+<p>ECON 2002.01, The Ohio State University, Summer 2021</p>
 
 <p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
 
@@ -20,8 +67,8 @@
 <ul>
 <li><a href="https://youtu.be/j2xNxtsa2Uk">Unit 1</a></li>
 <li><a href="https://youtu.be/bmlgp_Pqecw">Unit 2</a></li>
-<li><a href="">Unit 3</a></li>
-<li><a href="">Unit 6 Part 1</a></li>
+<li><a href="https://youtu.be/CBSHbUHcvY4">Unit 3</a></li>
+<li><a href="https://youtu.be/WnCUIAaRwrQ">Unit 6 Part 1</a></li>
 <li><a href="https://youtu.be/41vHVk0yL-4">Unit 6 Part 2</a></li>
 <li><a href="https://youtu.be/UgF-HO1If3w">Unit 7</a></li>
 <li><a href="https://youtu.be/tdM3XLQt76A">Unit 9</a></li>
@@ -38,17 +85,6 @@
 
 
 <p>;tags: Teaching</p>]]></description>
-</item>
-<item>
-<title>Research</title>
-<link>https://huijunchen9260.github.io/Research.html</link>
-<guid>https://huijunchen9260.github.io/Research.html</guid>
-<pubDate>Sat, 27 Nov 2021 22:34:02 -0500</pubDate>
-<description><![CDATA[<h1>Research</h1>
-
-<p>My research interests are mainly lies in Macroeconomics.</p>
-
-<p>;tags: Research</p>]]></description>
 </item>
 </channel>
 </rss>
