@@ -1,11 +1,18 @@
+/* body { */
+/* 	background: #151515 ; */
+/* 	color: #ccc ; */
+/* 	max-width: 800px ; */
+/* 	margin: auto ; */
+/* 	padding: 0 16px ; */
+/* 	margin-bottom: 500px ; */
+/*     font-family: 'Libertinus'; */
+/* } */
+
 body {
-	background: #151515 ;
-	color: #ccc ;
-	max-width: 800px ;
-	margin: auto ;
-	padding: 0 16px ;
-	margin-bottom: 500px ;
-	font-family: sans-serif ;
+	color: beige ;
+	background: #111 ;
+	margin-bottom: 200px ;
+    font-family: sans-serif ;
 }
 
 a {
@@ -45,6 +52,24 @@ img[alt="XMR Logo"] {
 	max-width: 1em ;
 	max-height: 1em ;
 	display: inline ;
+}
+
+img[alt="thefool"] {
+	max-width: 1em ;
+	max-height: 1em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+}
+
+img[alt="thefoolflip"] {
+	max-width: 1em ;
+	max-height: 1em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+    transform: scale(-1, 1);
+    transform-origin: center;
 }
 
 @media (prefers-color-scheme: light) {
