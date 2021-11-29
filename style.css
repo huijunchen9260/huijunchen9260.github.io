@@ -1,11 +1,18 @@
+/* body { */
+/* 	background: #151515 ; */
+/* 	color: #ccc ; */
+/* 	max-width: 800px ; */
+/* 	margin: auto ; */
+/* 	padding: 0 16px ; */
+/* 	margin-bottom: 500px ; */
+/*     font-family: 'Libertinus'; */
+/* } */
+
 body {
-	background: #151515 ;
-	color: #ccc ;
-	max-width: 800px ;
-	margin: auto ;
-	padding: 0 16px ;
-	margin-bottom: 500px ;
-    font-family: 'Libertinus';
+	color: beige ;
+	background: #111 ;
+	margin-bottom: 200px ;
+    font-family: sans-serif ;
 }
 
 a {
