@@ -21,19 +21,6 @@
 
 <p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260/websrc</a> repository.</p>
 
-<!-- vim-markdown-toc GFM -->
-
-
-<ul>
-<li><a href="#the-reason">The Reason</a></li>
-<li><a href="#why-blogit">Why blogit?</a></li>
-<li><a href="#butblogit-is-only-for-blogs">But&hellip;blogit is only for blogs!</a></li>
-</ul>
-
-
-<!-- vim-markdown-toc -->
-
-
 <h2>The Reason</h2>
 
 <p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
