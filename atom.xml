@@ -2,10 +2,128 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2021-11-29T18:54:15Z</updated>
+<updated>2021-12-01T10:09:31Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">How do I create this website</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/WebsiteCreation.html"/>
+<id>https://huijunchen9260.github.io/WebsiteCreation.html</id>
+<published>2021-12-01T00:20:19Z</published>
+<updated>2021-12-01T10:09:22Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1>How do I create this website</h1>
+
+<p>I have two goals to share with you in this blog post:</p>
+
+<ol>
+<li>How to use a <a href="https://pedantic.software/git/blogit">blogit</a> to systematically build your website, and</li>
+<li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blog it</a>.</li>
+</ol>
+
+
+<p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260/websrc</a> repository.</p>
+
+<!-- vim-markdown-toc GFM -->
+
+
+<ul>
+<li><a href="#the-reason">The Reason</a></li>
+<li><a href="#why-blogit">Why blogit?</a></li>
+<li><a href="#butblogit-is-only-for-blogs">But&hellip;blogit is only for blogs!</a></li>
+</ul>
+
+
+<!-- vim-markdown-toc -->
+
+
+<h2>The Reason</h2>
+
+<p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
+
+<p>Long story short, it is mainly because the conflict between my desire to customize everything to the way I like and my laziness to not really make such repeatable effort in terms of customization.
+On the one hand, decent blog post <a href="http://john.ankarstrom.se/html/">Write HTML in HTML</a> shows probably the final stage of a Linux user who just cannot stop but customize everything in their website: write everything in HTML.
+However, I don&rsquo;t want to write my own website in HTML.
+Probably I am not in that stage yet.</p>
+
+<p>On the other hand, to avoid writing in HTML, most of the current static site generators are full of fancy themes and JavaScript.
+All the outcome of contemporary static site generators are great.
+They are dedicated designed to look great without any effort.
+To be honest, before making this website using <a href="https://pedantic.software/git/blogit">blogit</a>, I actually used <a href="https://gohugo.io/">Hugo</a> to generate my website.
+If you are lucky and find a theme that do everything for you, and probably not a needy person as I do, then congratulations, the customization that confined by the author of themes works for you.
+Sadly, I <em>AM</em> a very needy person.
+I really want everything to be exactly as the way I want them to be, and such restriction made by the theme author just drives me crazy when I try to update my website.
+Eventually, I realize that the upfront cost to customize my website is too large, and I just don&rsquo;t update my blog for like two years.</p>
+
+<p>That is to say, I fall into a paradox.
+On one side of the spectrum, I really want to customize everything.
+On the other side, I really don&rsquo;t want to pay the effort.
+That&rsquo;s why I need to find a sweet spot between these two extremes.</p>
+
+<h2>Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
+
+<p>Because it is simple.</p>
+
+<p>It is simple enough for me to understand every detail, but do the heavy-duty for me.
+(still not <em>every</em> to be honest, that is exaggeration)
+<a href="https://pedantic.software/git/blogit">blogit</a> is nothing but just a Makefile which insert HTML tags into the Markdown file to make it become a HTML page.
+I don&rsquo;t know what&rsquo;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
+Thankfully, once it is done, it is so simple and magic.
+Every tags are precisely placed in corresponding webpages, and automatically generate a list of articles that every blog need.</p>
+
+<p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &ldquo;settings&rdquo; just confuses me.</p>
+
+<h2>But&hellip;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
+
+<p>Yes, that is true, and I am not satisfied with that.
+A good personal website in my opinion should include individual pages for specific purposes.
+For example, pages for <a href="research.html">Research</a>, <a href="teaching.html">Teaching</a>, and last link for <a href="blog.html">Blog</a> are necessary for a Ph.D. student website.
+In order to achieve this, I rewrite the code to generate <code>blog/index.html</code> in the Makefile to also generate <code>blog/teaching.html</code>.
+The logic to generate this page is to use the existing tags system:</p>
+
+<ol>
+<li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
+<li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &ldquo;Under Construction&rdquo;.</li>
+<li>Otherwise, if there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
+</ol>
+
+
+<p>The corresponding code block is also listed below:</p>
+
+<p><code>make
+for f in $(ARTICLES); do \
+    grep -qE "; *tags: .*Teaching.*" "$$f" &amp;&amp; { "$$f1" &amp;&amp; ="$$f" || WP="$$WP $$f"; f1=false; }; \
+done ; \
+[ -z "$$WP" ] &amp;&amp; { \
+    echo "&lt;h1&gt;Under Construction&lt;/h1&gt;" &gt;&gt; $@ ; \
+    envsubst &lt; templates/teaching_footer.html &gt;&gt; $@ ; \
+    envsubst &lt; templates/footer.html &gt;&gt; $@ ; \
+    exit ; \
+} ; \
+[ -n "$$WP" ] &amp;&amp; { \
+    first=true; \
+    echo "&lt;h2&gt;Teaching&lt;/h2&gt;" &gt;&gt; $@ ; \
+    envsubst &lt; templates/article_list_header.html &gt;&gt; $@; \
+    for f in $$WP; do \
+        printf '%s ' "$$f"; \
+        git log -n 1 --diff-filter=A --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
+    done | sort -k2 | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
+        "$$first" || envsubst &lt; templates/article_separator.html; \
+        URL="`printf '%s' "\$$FILE" | sed 's,^$(BLOG_SRC)/\(.*\).md,\1,'`.html" \
+        DATE="$$DATE" \
+        TITLE="`head -n1 "\$$FILE" | sed -e 's/^# //g'`" \
+        envsubst &lt; templates/article_entry.html; \
+        first=false; \
+    done &gt;&gt; $@; \
+    envsubst &lt; templates/article_list_footer.html &gt;&gt; $@; \
+};  \
+</code></p>
+
+<p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
+
+<p>;tags: Miscellaneous Technology</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Capital Irreversibility</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/CapitalIrreversibility.html"/>
@@ -49,7 +167,7 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/CSE5523Notes.html"/>
 <id>https://huijunchen9260.github.io/CSE5523Notes.html</id>
 <published>2021-11-28T09:15:05Z</published>
-<updated>2021-11-28T14:15:18Z</updated>
+<updated>2021-12-01T00:20:19Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Machine Learning, Autumn 2021</h1>
 
@@ -66,7 +184,7 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSummer2021.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</id>
 <published>2021-11-28T00:32:14Z</published>
-<updated>2021-11-29T00:56:38Z</updated>
+<updated>2021-12-01T00:20:19Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Summer 2021</h1>
 
