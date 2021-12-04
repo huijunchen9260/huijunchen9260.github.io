@@ -572,3 +572,21 @@ h5,
 h6 {
   margin-bottom: 0.8rem;
 }
+
+img[alt="thefool"] {
+	max-width: 1.5em ;
+	max-height: 1.5em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+}
+
+img[alt="thefoolflip"] {
+	max-width: 1.5em ;
+	max-height: 1.5em ;
+    vertical-align: middle;
+	display: inline ;
+    filter: invert(1) ;
+    transform: scale(-1, 1);
+    transform-origin: center;
+}

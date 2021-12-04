@@ -6,6 +6,13 @@ html {
 }
 
 :root {
+	/* --bg: #222; */
+	/* --fg: #fefefe; */
+	/* --link: #4d7dcb; */
+	/* --link_v: #99a5d3; */
+	/* --link_h: #4c7ecf; */
+	/* --bg_grey: #333; */
+	/* --dark_grey: #333; */
 	--bg: #fefefe;
 	--fg: #444;
 	--link: #0645ad;
@@ -340,22 +347,23 @@ article img {
 }
 
 img[alt="thefool"] {
-	max-width: 1em ;
-	max-height: 1em ;
+	max-width: 1.5em ;
+	max-height: 1.5em ;
     vertical-align: middle;
 	display: inline ;
-    filter: invert(1) ;
+    /* filter: invert(1) ; */
 }
 
 img[alt="thefoolflip"] {
-	max-width: 1em ;
-	max-height: 1em ;
+	max-width: 1.5em ;
+	max-height: 1.5em ;
     vertical-align: middle;
 	display: inline ;
-    filter: invert(1) ;
+    /* filter: invert(1) ; */
     transform: scale(-1, 1);
     transform-origin: center;
 }
+
 p.date {
 	font-size: 13px;
 	color: var(--fg);
