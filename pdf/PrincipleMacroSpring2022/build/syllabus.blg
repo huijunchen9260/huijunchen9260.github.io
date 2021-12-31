@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build/syllabus.blg'
+[100] biber:340> INFO - === Thu Dec 30, 2021, 19:26:25
+[129] Biber.pm:415> INFO - Reading 'build/syllabus.bcf'
+[213] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[221] Utils.pm:395> WARN - The file 'build/syllabus.bcf' does not contain any citations!
+[231] bbl.pm:654> INFO - Writing 'build/syllabus.bbl' with encoding 'UTF-8'
+[231] bbl.pm:757> INFO - Output to build/syllabus.bbl
+[231] Biber.pm:128> INFO - WARNINGS: 1
