@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.26)  30 DEC 2021 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.26)  30 DEC 2021 22:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -751,75 +751,35 @@ LaTeX Info: Redefining \nameref on input line 50.
 \@outlinefile=\write5
 \openout5 = `syllabus.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 64.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 65.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 71.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 81.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+) [1
 
-./syllabus.tex:78: LaTeX Error: Lonely \item--perhaps a missing list environment.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\q=\skip81
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78     \item O
-                ffice hour:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 78
-[][]
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 97--116
+[]
  []
 
+[2]
+\qq=\skip82
+\pp=\skip83
 
-./syllabus.tex:79: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79     \item P
-                rinciples of macroeconomics will cover the following general...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 79
-[][]
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 144--296
+[] 
  []
 
+[3] [4] [5]
 
-./syllabus.tex:80: LaTeX Error: \begin{document} ended by \end{itemize}.
+LaTeX Warning: Empty bibliography on input line 401.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.80 \end{itemize}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./syllabus.tex:80: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.80 \end{itemize}
-                  
-Things are pretty mixed up, but I think the worst is over.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-
-LaTeX Warning: Empty bibliography on input line 155.
-
-[3] (./build/syllabus.aux)
+[6] (./build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
@@ -827,18 +787,18 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26131 strings out of 478994
- 485328 string characters out of 5864750
- 1183351 words of memory out of 5000000
- 43181 multiletter control sequences out of 15000+600000
+ 26141 strings out of 478994
+ 485418 string characters out of 5864750
+ 1188351 words of memory out of 5000000
+ 43184 multiletter control sequences out of 15000+600000
  422174 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,5n,116p,1477b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,8n,116p,1477b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ./build/syllabus.pdf (3 pages, 62750 bytes).
+Output written on ./build/syllabus.pdf (6 pages, 73164 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
