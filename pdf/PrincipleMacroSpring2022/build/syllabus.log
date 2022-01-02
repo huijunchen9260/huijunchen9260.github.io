@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.26)  30 DEC 2021 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.26)  2 JAN 2022 16:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -755,7 +755,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 65
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 81.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 82.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
@@ -763,21 +763,51 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \q=\skip81
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 97--116
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 98--117
 []
  []
 
-[2]
-\qq=\skip82
-\pp=\skip83
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 144--296
+Underfull \hbox (badness 3965) in paragraph at lines 123--125
+\OT1/ptm/m/n/12 There are two cat-e-gories of Weekly quizzes in this class: $[]$ and
+ []
+
+[2]
+\bb=\skip82
+\qq=\skip83
+\rr=\skip84
+\pp=\skip85
+
+Overfull \hbox (1.4426pt too wide) in paragraph at lines 161--161
+[]|\OT1/ptm/m/n/12 Week| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+[]|\OT1/ptm/m/n/12 02/21,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+[]|\OT1/ptm/m/n/12 03/14,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+[]|\OT1/ptm/m/n/12 04/18,
+ []
+
+
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 159--417
 [] 
  []
 
-[3] [4] [5]
 
-LaTeX Warning: Empty bibliography on input line 401.
+Overfull \vbox (2.40916pt too high) has occurred while \output is active []
+
+ [3] [4] [5]
+
+LaTeX Warning: Empty bibliography on input line 517.
 
 [6] (./build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
@@ -787,18 +817,18 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26141 strings out of 478994
- 485418 string characters out of 5864750
- 1188351 words of memory out of 5000000
- 43184 multiletter control sequences out of 15000+600000
+ 26142 strings out of 478994
+ 485420 string characters out of 5864750
+ 1196351 words of memory out of 5000000
+ 43185 multiletter control sequences out of 15000+600000
  422174 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,8n,116p,1477b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ./build/syllabus.pdf (6 pages, 73150 bytes).
+Output written on ./build/syllabus.pdf (6 pages, 74477 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  27 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
