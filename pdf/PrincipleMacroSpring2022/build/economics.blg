@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build/economics.blg'
+[111] biber:340> INFO - === Sun Jan  9, 2022, 22:41:29
+[130] Biber.pm:415> INFO - Reading 'build/economics.bcf'
+[226] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[234] Utils.pm:395> WARN - The file 'build/economics.bcf' does not contain any citations!
+[243] bbl.pm:654> INFO - Writing 'build/economics.bbl' with encoding 'UTF-8'
+[244] bbl.pm:757> INFO - Output to build/economics.bbl
+[244] Biber.pm:128> INFO - WARNINGS: 1

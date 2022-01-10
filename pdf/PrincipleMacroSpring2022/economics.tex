@@ -1,0 +1,119 @@
+\documentclass{beamer}
+\usefonttheme[onlymath]{serif}
+\usetheme[numbering=fraction, progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsthm}
+
+\usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+\addbibresource{$BIB} % bibtex location
+%%% Small bibliography slide
+\setbeamertemplate{bibliography item}[triangle]
+\makeatletter
+\newcommand{\srcsize}{\@setfontsize{\srcsize}{6.5pt}{6.5pt}}
+\makeatother
+\renewcommand*{\bibfont}{\srcsize}
+
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\graphicspath{ {./figures} }
+\newcommand{\inkfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+%%%%%% Template
+\usepackage{hyperref}
+\definecolor{links}{HTML}{2A1B81}
+
+%% beaver (red) style:
+% \usecolortheme{beaver}
+% \setbeamercolor{block body}{bg=gray!30!white}
+% \setbeamercolor{block title}{bg=darkred!70, fg=black!2}
+% \hypersetup{colorlinks=true,allcolors=red}
+
+%% seahorse style:
+\usecolortheme{seahorse}
+\setbeamercolor{block body}{bg=mDarkTeal!30}
+\setbeamercolor{block title}{bg=mDarkTeal,fg=black!2}
+\hypersetup{colorlinks=true,allcolors=links}
+%%%%%% Template
+
+\pdfsuppresswarningpagegroup=1
+
+\title{Economics in my eyes}
+\author{Hui-Jun Chen}
+\institute{The Ohio State University}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[standout]
+    This is only plastic.
+
+    It's just something made up by people.
+
+    Truly meaningless until we put out faith in it.
+
+    Faith is what makes an Economy exists.
+
+    Without faith...it is only plastic cards and paper money.
+
+    -- \href{https://youtu.be/YWva4HqVVw0}{South Park S13E3 Margaritaville}
+\end{frame}
+
+\begin{frame}{Are you...serious?!}
+\label{slide:Are_you___serious__}
+    Yes.
+
+    Macroeconomics is a study on \textit{aggregate} behavior, and what the majority believes (not) to be valuable will eventually become (not) valuable.
+
+    E.g. Value of Bitcoin in 2008 v.s. now.
+
+    \href{https://en.wikipedia.org/wiki/Rational_expectations}{Rational Expectation}: agents inside the model are assumed to ``know the model'' and on average take the model's predictions as valid.
+    Agents' some particular expectations may be wrong, but are correct \textit{on average} over time.
+\end{frame}
+
+\begin{frame}{The rational assumption is nonesense}
+\label{slide:The_rational_assumption_is_nonesense}
+    First of all, rational expectation $ \neq $ individual rationality.
+
+    Your suspicion is probably valid in individual level.
+
+    At aggregate level, \textbf{I believe} that the irrational behavior between each individual will average out, and eventualy the \textbf{aggregate behavior} can be rational.
+
+    I wish I can prove this point using the great history of United State...
+\end{frame}
+
+\begin{frame}[standout]
+
+    \href{https://youtu.be/QLq6GEiHqR8?t=520}{The Oregon Treaty (1846)}: 8:40-10:15
+
+    \href{https://youtu.be/QLq6GEiHqR8?t=1016}{The Pig shooting}: 16:56-19:45
+
+    \href{https://youtu.be/QLq6GEiHqR8?t=1213}{William S. Harney}: 20:22-23:08
+
+    \href{https://youtu.be/QLq6GEiHqR8?t=1579}{Royal Navy Refuse Landing on San Juan Island}: 26:19-28:30
+
+    \href{https://youtu.be/QLq6GEiHqR8?t=1794}{Winfield Scott \& Resolution}: 29:54-
+
+    -- The Pig War (Video by \href{https://youtu.be/QLq6GEiHqR8}{Oversimplified})
+
+\end{frame}
+
+
+\end{document}
+
+
