@@ -15,7 +15,7 @@
 
 <ol>
 <li>How to use a <a href="https://pedantic.software/git/blogit">blogit</a> to systematically build your website, and</li>
-<li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blog it</a>.</li>
+<li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blogit</a>.</li>
 </ol>
 
 
@@ -68,41 +68,89 @@ The logic to generate this page is to use the existing tags system:</p>
 <ol>
 <li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
 <li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &ldquo;Under Construction&rdquo;.</li>
-<li>Otherwise, if there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
+<li>Otherwise, we enter the stage of creating <a href="teaching.html">Teaching</a> page:
+
+<ol>
+<li>Using <code>git</code> command to extract the modified date for each markdown file, and update <code>DATE_EDITED</code>.
+
+<ul>
+<li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"</code>
+
+<ul>
+<li><code>git log</code> create a log file and enter a pager.</li>
+<li><code>git log -1</code> shows the log file on last commit (<code>-1</code> part).</li>
+<li><code>--date</code> and <code>format:</code> shows the format of date to show. I use <code>%F</code> and result in the format <code>%Y-%M-%D</code>.</li>
+<li><code>--pretty</code> and <code>format:</code> shows the format for pretty print. <code>%ad</code> outputs author date, and <code>%n</code> means newline.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
+</ol>
+</li>
 </ol>
 
 
 <p>The corresponding code block is also listed below:</p>
 
-<pre><code class="make">for f in $(ARTICLES); do \
-    grep -qE "; *tags: .*Teaching.*" "$$f" &amp;&amp; { "$$f1" &amp;&amp; ="$$f" || WP="$$WP $$f"; f1=false; }; \
-done ; \
-[ -z "$$WP" ] &amp;&amp; { \
-    echo "&lt;h1&gt;Under Construction&lt;/h1&gt;" &gt;&gt; $@ ; \
-    envsubst &lt; templates/teaching_footer.html &gt;&gt; $@ ; \
-    envsubst &lt; templates/footer.html &gt;&gt; $@ ; \
-    exit ; \
-} ; \
-[ -n "$$WP" ] &amp;&amp; { \
-    first=true; \
-    echo "&lt;h2&gt;Teaching&lt;/h2&gt;" &gt;&gt; $@ ; \
-    envsubst &lt; templates/article_list_header.html &gt;&gt; $@; \
-    for f in $$WP; do \
-        printf '%s ' "$$f"; \
-        git log -n 1 --diff-filter=A --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
-    done | sort -k2 | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
-        "$$first" || envsubst &lt; templates/article_separator.html; \
-        URL="`printf '%s' "\$$FILE" | sed 's,^$(BLOG_SRC)/\(.*\).md,\1,'`.html" \
-        DATE="$$DATE" \
-        TITLE="`head -n1 "\$$FILE" | sed -e 's/^# //g'`" \
-        envsubst &lt; templates/article_entry.html; \
-        first=false; \
-    done &gt;&gt; $@; \
-    envsubst &lt; templates/article_list_footer.html &gt;&gt; $@; \
-};  \
+<pre><code class="make">blog/teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates/,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
+    mkdir -p blog
+    TITLE="$(BLOG_TITLE)"; \
+    PAGE_TITLE="Teaching -- $(BLOG_TITLE)"; \
+    DATE_EDITED="$(shell git log -1 --date="format:$(BLOG_DATE_FORMAT)" --pretty=format:'%ad' -- "$&lt;")"; \
+    export TITLE; \
+    export PAGE_TITLE; \
+    export DATE_EDITED; \
+    envsubst &lt; templates/header.html &gt; $@; \
+    envsubst &lt; templates/teaching_header.html &gt;&gt; $@; \
+    markdown &lt; teaching.md &gt;&gt; $@; \
+    f1=true; \
+    # grep for the markdown files with Teaching tag
+    for f in $(ARTICLES); do \
+        grep -qE "; *tags: .*Teaching.*" "$$f" &amp;&amp; { "$$f1" &amp;&amp; WP="$$f" || WP="$$WP $$f"; f1=false; }; \
+    done ; \
+    # If no files with Teaching tag, output Under Construction
+    [ -z "$$WP" ] &amp;&amp; { \
+        echo "&lt;h1&gt;Under Construction&lt;/h1&gt;" &gt;&gt; $@ ; \
+        envsubst &lt; templates/teaching_footer.html &gt;&gt; $@ ; \
+        envsubst &lt; templates/footer.html &gt;&gt; $@ ; \
+        exit ; \
+    } ; \
+    # If there's Teaching tag, find modified dates for all files and update DATE_EDITED
+    [ -n "$$WP" ] &amp;&amp; { \
+        articleNewestDate="$$(for f in $$WP; do \
+            git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
+        done | sort -rk2 | head -n 1)"; \
+        tmpNewest=$$(echo $$articleNewestDate | tr -d '-'); \
+        tmpEdit=$$(echo $$DATE_EDITED | tr -d '-'); \
+        [ "$$tmpNewest" -ge "$$tmpEdit" ] &amp;&amp; DATE_EDITED="$$articleNewestDate"
+        export DATE_EDITED; \
+    };  \
+    # IF there's file with Teaching tag, add hyperlink to each file on this Teaching page
+    [ -n "$$WP" ] &amp;&amp; { \
+        first=true; \
+        echo "&lt;h2&gt;Teaching&lt;/h2&gt;" &gt;&gt; $@ ; \
+        envsubst &lt; templates/article_list_header.html &gt;&gt; $@; \
+        for f in $$WP; do \
+            printf '%s ' "$$f"; \
+            git log -1 --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
+        done | sort -rk2 | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
+            "$$first" || envsubst &lt; templates/article_separator.html; \
+            URL="`printf '%s' "\$$FILE" | sed 's,^$(BLOG_SRC)/\(.*\).md,\1,'`.html" \
+            DATE="$$DATE" \
+            TITLE="`head -n1 "\$$FILE" | sed -e 's/^# //g'`" \
+            envsubst &lt; templates/article_entry.html; \
+            first=false; \
+        done &gt;&gt; $@; \
+        envsubst &lt; templates/article_list_footer.html &gt;&gt; $@; \
+    };  \
+    envsubst &lt; templates/teaching_footer.html &gt;&gt; $@; \
+    envsubst &lt; templates/footer.html &gt;&gt; $@
 </code></pre>
 
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
+
+<p>Updates 2022-02-10: added methods to add modified dates</p>
 <p><i> Article tags:
 <a href="./@Miscellaneous.html">Miscellaneous</a> 
 <a href="./@Technology.html">Technology</a> 
