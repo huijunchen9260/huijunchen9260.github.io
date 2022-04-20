@@ -298,15 +298,6 @@ blog/teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates/,$
 <p>;tags: Miscellaneous Technology</p>]]></description>
 </item>
 <item>
-<title>Capital Irreversibility</title>
-<link>https://huijunchen9260.github.io/CapitalIrreversibility.html</link>
-<guid>https://huijunchen9260.github.io/CapitalIrreversibility.html</guid>
-<pubDate>Mon, 29 Nov 2021 00:56:38 -0500</pubDate>
-<description><![CDATA[<h1>Capital Irreversibility</h1>
-
-<p>;tags: Working</p>]]></description>
-</item>
-<item>
 <title>Uncertain Taxation, Government Transfer, and Household Inequality</title>
 <link>https://huijunchen9260.github.io/TaxUncertainty.html</link>
 <guid>https://huijunchen9260.github.io/TaxUncertainty.html</guid>
