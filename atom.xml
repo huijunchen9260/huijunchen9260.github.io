@@ -2,18 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-04-20T15:24:36Z</updated>
+<updated>2022-04-20T15:26:37Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
 <entry>
-<title type="text">The Effects of Loan-to-value Ratio Ceilings on House Prices (with [Sungmin Park](https://www.sungminparkecon.com/))</title>
+<title type="text">The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
 <id>https://huijunchen9260.github.io/LTVHousingPrice.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2022-04-20T15:10:29Z</updated>
+<updated>2022-04-20T15:24:36Z</updated>
 <author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1>The Effects of Loan-to-value Ratio Ceilings on House Prices (with <a href="https://www.sungminparkecon.com/">Sungmin Park</a>)</h1>
+<summary type="html"><![CDATA[<h1>The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
+
+<p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
 
 <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
 <a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a></p>
