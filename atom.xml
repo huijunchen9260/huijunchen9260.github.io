@@ -2,10 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-04-21T23:15:43Z</updated>
+<updated>2022-04-21T23:16:46Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">X220 Tablet Disassembly</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/X220TDiassembly.html"/>
+<id>https://huijunchen9260.github.io/X220TDiassembly.html</id>
+<published>2022-04-21T23:15:43Z</published>
+<updated>2022-04-21T23:15:43Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1>X220 Tablet Disassembly</h1>
+
+<p>X220 Tablet is such a lovely laptop I bought.
+Although its CPU is pretty weak in the standard of 2022 (i7-2640M), it is still a pretty decent Linux laptop that even have touch screen and integrated stylus.</p>
+
+<p>There is a serious question for this laptop though.
+Since the fan is dusted, and the thermopaste on the CPU are all dried out, the CPU temperture are constantly 90 degree of Celsius, which is always really hot.</p>
+
+<p>Today I dissembled the whole laptop to clean the dust on the fan and repaste the thermopaste.
+I am mainly following this <a href="https://www.youtube.com/watch?v=ZsNcVV4jMPw">video</a> for step-by-step tutorial.</p>
+
+<p>First of all, it is easy to disassemble the keyboard by unscrew the screws locates at the back of the laptop.
+<img src="pix/X220TDiassembly/screwout.webp" alt="screwout" /></p>
+
+<p>The following image also include the tools I am using for this disassembly.
+<img src="pix/X220TDiassembly/keyboardout.webp" alt="keyboardout" /></p>
+
+<p>Another image for the closer look on how the palmrest and those cables.
+Notice that at this stage, we can see the fan is extremely dirty.
+<img src="pix/X220TDiassembly/keyboardout2.webp" alt="keyboardout2" /></p>
+
+<p>Next step is to remove the palmrest.
+Notice that although the both sides of the palmrest are easier to detach, it took some techniques to really take out the palmrest.
+Some angle is required to remove the palmrest from the front side of the laptop.
+<img src="pix/X220TDiassembly/palmrest180.webp" alt="palmrest180" /></p>
+
+<p>We can see the Wifi card at the right-buttom corner of the laptop.
+Zoom in,
+<img src="pix/X220TDiassembly/wificard.webp" alt="wificard" />
+We need to unscrew to take out the wifi card.</p>
+
+<p>To take out the remaining plastic cover in the following image, I need to use the blue triangle plastic tools to stick into the connection of the cover and the buttom, and then detach the plastic cover.
+<img src="pix/X220TDiassembly/frontcover.webp" alt="frontcover" /></p>
+
+<p>Take out, we get
+<img src="pix/X220TDiassembly/frontcoverout.webp" alt="frontcoverout" /></p>
+
+<p>At this stage and remember to unscrew all necessary, we can take the whole motherboard out.
+<img src="pix/X220TDiassembly/mboardout.webp" alt="mboardout" /></p>
+
+<p>Clean the fan, repaste, and reassembly everything, I successfully decrease the CPU temperture to 60 degree.</p>
+
+<p>It shows again that the importance of maintainence of the laptop and prevent it from overheating.</p>
+
+<p>;tags: Miscellaneous Technology</p>]]></summary>
+</entry>
 <entry>
 <title type="text">The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
