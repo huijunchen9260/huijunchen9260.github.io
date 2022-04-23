@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  22 APR 2022 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  22 APR 2022 23:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -757,7 +757,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 66
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 88.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 85.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
@@ -765,13 +765,8 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \q=\skip81
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 104--123
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 101--120
 []
- []
-
-
-Underfull \hbox (badness 3965) in paragraph at lines 129--131
-\OT1/ptm/m/n/12 There are two cat-e-gories of Weekly quizzes in this class: $[]$ and
  []
 
 [2] [3]
@@ -780,33 +775,18 @@ Underfull \hbox (badness 3965) in paragraph at lines 129--131
 \rr=\skip84
 \pp=\skip85
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 181--181
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 183--183
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 298--299
-[]|\OT1/ptm/m/n/12 02/21,23,25| 
- []
-
-
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 337--338
-[]|\OT1/ptm/m/n/12 03/14,16,18| 
- []
-
-
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 424--425
-[]|\OT1/ptm/m/n/12 04/18,20,22| 
- []
-
-
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 179--441
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 181--359
 [] 
  []
 
 [4] [5] [6]
 
-LaTeX Warning: Empty bibliography on input line 541.
+LaTeX Warning: Empty bibliography on input line 459.
 
 [7] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
@@ -816,18 +796,18 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27008 strings out of 478276
- 513424 string characters out of 5853013
- 1201649 words of memory out of 5000000
- 44777 multiletter control sequences out of 15000+600000
+ 27009 strings out of 478276
+ 513438 string characters out of 5853013
+ 1195680 words of memory out of 5000000
+ 44778 multiletter control sequences out of 15000+600000
  488003 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (7 pages, 81663 bytes).
+Output written on build/syllabus.pdf (7 pages, 77861 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  29 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
