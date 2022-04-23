@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-04-22T09:40:16Z</updated>
+<updated>2022-04-23T14:28:17Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Intermediate Macroeconomics Theory, Summer 2022</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2022.html"/>
+<id>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</id>
+<published>2022-04-23T14:27:53Z</published>
+<updated>2022-04-23T14:27:53Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Summer 2022</h1>
+
+<p>;tags: Teaching</p>]]></summary>
+</entry>
 <entry>
 <title type="text">X220 Tablet Disassembly</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/X220TDiassembly.html"/>
@@ -118,7 +129,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
 <published>2021-12-30T20:19:06Z</published>
-<updated>2022-04-20T09:29:35Z</updated>
+<updated>2022-04-22T09:40:16Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Spring 2022</h1>
 
