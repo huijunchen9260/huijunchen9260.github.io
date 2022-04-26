@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  25 APR 2022 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  25 APR 2022 22:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,40 +1021,34 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/GDPMeasurement.png, id=123, 544.63268pt x 108.03247pt>
 File: ./figures/GDPMeasurement.png Graphic file (type png)
 <use ./figures/GDPMeasurement.png>
-Package pdftex.def Info: ./figures/GDPMeasurement.png  used on input line 232.
+Package pdftex.def Info: ./figures/GDPMeasurement.png  used on input line 230.
 (pdftex.def)             Requested size: 342.43532pt x 67.92563pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [10 <./figures/GDPMeasurement.png (PNG copy)>]
-<./figures/Figure2_1.png, id=143, 512.59546pt x 409.77835pt>
+ <./figures/GDPMeasurement.png (PNG copy)>]
+<./figures/Figure2_1.png, id=134, 512.59546pt x 409.77835pt>
 File: ./figures/Figure2_1.png Graphic file (type png)
 <use ./figures/Figure2_1.png>
-Package pdftex.def Info: ./figures/Figure2_1.png  used on input line 251.
+Package pdftex.def Info: ./figures/Figure2_1.png  used on input line 249.
 (pdftex.def)             Requested size: 239.70367pt x 191.62042pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [11
+ [10
 
  <./figures/Figure2_1.png (PNG copy)>]
-<./figures/employmentPop.jpg, id=155, 1303.87125pt x 441.65pt>
+<./figures/employmentPop.jpg, id=145, 1303.87125pt x 441.65pt>
 File: ./figures/employmentPop.jpg Graphic file (type jpg)
 <use ./figures/employmentPop.jpg>
-Package pdftex.def Info: ./figures/employmentPop.jpg  used on input line 265.
+Package pdftex.def Info: ./figures/employmentPop.jpg  used on input line 263.
 (pdftex.def)             Requested size: 342.43532pt x 115.99214pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [12
+ [11
 
  <./figures/employmentPop.jpg>]
 \tf@nav=\write6
@@ -1071,18 +1065,18 @@ Package rerunfilecheck Info: File `Lecture_02.out' has not changed.
 (rerunfilecheck)             Checksum: 476E3A6FA3898A497898F1864A895608;297.
  ) 
 Here is how much of TeX's memory you used:
- 31854 strings out of 478276
- 643803 string characters out of 5853013
- 886110 words of memory out of 5000000
+ 31852 strings out of 478276
+ 643784 string characters out of 5853013
+ 886109 words of memory out of 5000000
  49333 multiletter control sequences out of 15000+600000
  568550 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,441b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_02.pdf (12 pages, 1110283 bytes).
+Output written on build/Lecture_02.pdf (11 pages, 1109171 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
