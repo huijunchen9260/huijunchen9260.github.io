@@ -100,6 +100,170 @@
 }
 %------------------------------------------
 
+\section{Three Approach}
+\label{sec:Three_Approach}
+
+\begin{frame}{$3$ Approach to Measure GDP}
+\label{slide:_3__Approach_to_Measure_GDP}
+Source: National Income and Product Accounts (NIPA)
+\begin{enumerate}
+    \item \textbf{Product (value-added) approach}: sum of \alert{value added} to all goods and services across all productive units in the economy
+    \item \textbf{Expenditure approach}: sum of \alert{spending} on all final goods and services produced in the economy
+    \item \textbf{Income approach}: sum of all \alert{income received} by economic agents contributing to production
+\end{enumerate}
+If no measurement error, all should give the same answer!
+\end{frame}
+
+\begin{frame}{$3$ Approach to Measure GDP: Example}
+\label{slide:_3__Approach_to_Measure_GDP__Example}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{./figures/ThreeApproachTable1.png}
+    \end{figure}
+    \alert{Question}: how to calculate GDP?
+\end{frame}
+
+\begin{frame}{The Product Approach}
+\label{slide:The_Product_Approach}
+\textbf{Question}: \alert{What is the value added by each agent?}
+
+\begin{itemize}
+    \item \textbf{Coconut Producer}: Final good $ \$20M $, no intermediate input
+    \item \textbf{Restaurant}: Final goods $ \$30M $, with intermediate input $ \$12M $ from Coconut Producer
+    \begin{itemize}
+        \item value added: $ 30 - 12 = 18M $
+    \end{itemize}
+    \item \textbf{Government}: Defence services, valued at cost $ \$5.5M $
+    \item \textbf{GDP}: $ 20 + 18 + 5.5 = 43.5M $
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Expenditure Approach}
+\label{slide:The_Expenditure_Approach}
+
+\textbf{Question}: \alert{What is the total spending?}
+
+\begin{itemize}
+    \item \textbf{Formula}: $ Y = C + I + G + NX $
+    \item \textbf{Consumption} ($C$): ``sale for consumption'' row
+    \begin{itemize}
+        \item To Coconut Producer: $ 8M $
+        \item To Restaurant: $ 30M $
+    \end{itemize}
+    \item No investment ($ I $) and net export ($ NX $).
+    \item \textbf{Government} ($G$): defense service $ 5.5M $
+    \item \textbf{GDP} ($Y$): $ 38 + 5.5 = 43.5M $
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Income Approach}
+\label{slide:Income_Approach}
+    \textbf{Question}: \alert{how much does agent earn?}
+    \begin{itemize}
+        \item \textbf{Workers}: wages $ 5M $ from Coconut Producer, $ 4M $ from Restaurant and $ 5.5M $ from Government
+        \item \textbf{Firms}:
+        \begin{itemize}
+            \item After-tax Profits: $ 13M $ to Coconut Producer and $ 11M $ to Restaurant
+            \item Interest on loan: $ 0.5M $ for Coconut Producer
+        \end{itemize}
+        \item \textbf{Government}: Taxes $ 1.5M $ from Coconut Producer and $ 3M $ from Restaurant
+        \begin{itemize}
+            \item Expenditure is $ 5.5M $ $ \Rightarrow  $ \alert{budget deficit}
+        \end{itemize}
+        \item \textbf{GDP}: $5 + 4 + 5.5 + 13 + 11 + 0.5 + 1.5 + 3 = 43.5M$
+    \end{itemize}
+    \textbf{Income-Expenditure Identity}: Income earned goes to expenditure
+\end{frame}
+
+\section{Inflation}
+\label{sec:Inflation}
+
+\begin{frame}{Prices in GDP measurement}
+\label{slide:Prices_in_GDP_measurement}
+    The \alert{revenue} row is calculated by $ 10M $ coconuts $ \times $ $ \$2 $ each
+    \begin{itemize}
+        \item What if coconut price increases to $ \$3 $ next year?
+    \end{itemize}
+    \textbf{Solution}: common \alert{price index} across different time
+
+    Two ways to build common price index:
+
+    \begin{enumerate}
+        \item GDP deflator: common \alert{GDP} standard
+        \item Consumer Price Index (CPI): common \alert{consumption basket} ($Q$)
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Prices in GDP measurement (Cont.)}
+\label{slide:Prices_in_GDP_measurement__Cont__}
+    \begin{itemize}
+        \item GDP deflator: normalize \alert{GDP} of \alert{base year} as $ 100 $, relative to \alert{other year}
+        \begin{itemize}
+            \item E.g. $ RealGDP_{2020} = \frac{GDP_{2020}}{GDP_{2000}} \times 100 $, use $ GDP_{2000} $ as base year
+            \item \alert{Problem}: choose which year? $ \Rightarrow  $ ``\alert{chain-weighting}'' (rolling base)
+        \end{itemize}
+        \item CPI: normalize \alert{consumption basket} of \alert{base year} as $ 100 $, relative to \alert{other year}
+        \begin{itemize}
+            \item E.g. $ CPI_{2020} = \frac{\text{Cost of } Q_{2000} \text{ at } P_{2020}}{\text{Cost of } Q_{2000} \text{ at } P_{2000}} \times 100 $, use $ 2000 $ as base year
+            \item \alert{Problem}:
+            \begin{enumerate}
+                \item $ \Delta P $ outside of consumption basket \&  not accounted
+                \item new goods \& services introduced, old goods \& services obsolete
+            \end{enumerate}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+<++>
+
+
+\begin{frame}{Example: Nominal v.s. Real GDP}
+\label{slide:Example__Nominal_v_s__Real_GDP}
+    \begin{itemize}
+        \item \textbf{Nominal GDP}: value of goods \& services at current price
+        \item \textbf{Real GDP}: value of goods \& services at base year price
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{./figures/GDPMeasurement.png}
+    \end{figure}
+
+    Choice of base year affects the GDP measure!
+
+    alternative: chain-weighting
+
+\end{frame}
+
+\begin{frame}{Data: Nominal v.s. Real GDP}
+\label{slide:Data__Nominal_v_s__Real_GDP}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \item inflation growth $ + $ economics growth $ = $ nominal grows faster than real
+                \item \textbf{Question}: \alert{What year is the base year} on this graph?
+                \item Ans: 2009, when Nominal $ = $ Real
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{figure}
+                \caption{Figure 2.1 Nominal GDP and Chain-Weighted Real GDP}
+                \includegraphics[width=\textwidth]{./figures/Figure2_1.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Employment}
+\label{sec:Employment}
+
+\begin{frame}{Population Composition}
+\label{slide:Population_Composition}
+    \hspace{11em} N \hspace{7em} LF \hspace{5em} E/U
+    \includegraphics[width=\textwidth]{./figures/employmentPop.jpg}
+    \begin{itemize}
+        \item participation rate $ = \frac{LF}{N} $
+        \item unemployment rate $ = \frac{U}{\alert{LF}} $
+        \item employment rate $ = \frac{E}{\alert{N}} $
+    \end{itemize}
+\end{frame}
+
 
 \end{document}
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-04-25T14:19:37Z</updated>
+<updated>2022-04-25T22:31:29Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -40,6 +40,7 @@
 </li>
 </ul>
 </li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_02/build/Lectire_02.pdf">Lecture 2</a></li>
 </ul>
 
 
@@ -157,7 +158,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
 <published>2021-12-30T20:19:06Z</published>
-<updated>2022-04-22T09:40:16Z</updated>
+<updated>2022-04-25T14:19:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Spring 2022</h1>
 

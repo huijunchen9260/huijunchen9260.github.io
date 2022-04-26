@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  25 APR 2022 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  25 APR 2022 22:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -931,6 +931,132 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 115.
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 115.
+ (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 115.
+ (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 115.
+ (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 115.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 115.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 115.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 115.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 115.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 115.
+ (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [2
+
+]
+<./figures/ThreeApproachTable1.png, id=51, 1473.71196pt x 703.32866pt>
+File: ./figures/ThreeApproachTable1.png Graphic file (type png)
+<use ./figures/ThreeApproachTable1.png>
+Package pdftex.def Info: ./figures/ThreeApproachTable1.png  used on input line 123.
+(pdftex.def)             Requested size: 342.43532pt x 163.42563pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [3
+
+ <./figures/ThreeApproachTable1.png (PNG copy)>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 138.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 138.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 138.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 138.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [4
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [5
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [6
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [7
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 214.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [8
+
+]
+<./figures/GDPMeasurement.png, id=123, 544.63268pt x 108.03247pt>
+File: ./figures/GDPMeasurement.png Graphic file (type png)
+<use ./figures/GDPMeasurement.png>
+Package pdftex.def Info: ./figures/GDPMeasurement.png  used on input line 232.
+(pdftex.def)             Requested size: 342.43532pt x 67.92563pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [9
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [10 <./figures/GDPMeasurement.png (PNG copy)>]
+<./figures/Figure2_1.png, id=143, 512.59546pt x 409.77835pt>
+File: ./figures/Figure2_1.png Graphic file (type png)
+<use ./figures/Figure2_1.png>
+Package pdftex.def Info: ./figures/Figure2_1.png  used on input line 251.
+(pdftex.def)             Requested size: 239.70367pt x 191.62042pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [11
+
+ <./figures/Figure2_1.png (PNG copy)>]
+<./figures/employmentPop.jpg, id=155, 1303.87125pt x 441.65pt>
+File: ./figures/employmentPop.jpg Graphic file (type jpg)
+<use ./figures/employmentPop.jpg>
+Package pdftex.def Info: ./figures/employmentPop.jpg  used on input line 265.
+(pdftex.def)             Requested size: 342.43532pt x 115.99214pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
+
+ <./figures/employmentPop.jpg>]
 \tf@nav=\write6
 \openout6 = `Lecture_02.nav'.
 
@@ -940,28 +1066,23 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 \tf@snm=\write8
 \openout8 = `Lecture_02.snm'.
 
-
-
-Package caption Warning: Unused \captionsetup[figure] on input line 26.
-See the caption package documentation for explanation.
-
-(build/Lecture_02.aux)
+ (build/Lecture_02.aux)
 Package rerunfilecheck Info: File `Lecture_02.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 476E3A6FA3898A497898F1864A895608;297.
  ) 
 Here is how much of TeX's memory you used:
- 31316 strings out of 478276
- 631758 string characters out of 5853013
- 879649 words of memory out of 5000000
- 48911 multiletter control sequences out of 15000+600000
- 484610 words of font info for 37 fonts, out of 8000000 for 9000
+ 31854 strings out of 478276
+ 643803 string characters out of 5853013
+ 886110 words of memory out of 5000000
+ 49333 multiletter control sequences out of 15000+600000
+ 568550 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,441b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb>
-Output written on build/Lecture_02.pdf (1 page, 56849 bytes).
+ 128i,15n,122p,441b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Lecture_02.pdf (12 pages, 1110283 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

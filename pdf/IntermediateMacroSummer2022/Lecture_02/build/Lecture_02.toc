@@ -1,1 +1,4 @@
 \babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Three Approach}{2}{0}{1}
+\beamer@sectionintoc {2}{Inflation}{7}{0}{2}
+\beamer@sectionintoc {3}{Employment}{12}{0}{3}
