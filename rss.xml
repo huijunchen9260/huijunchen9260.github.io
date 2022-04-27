@@ -5,6 +5,87 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Note on Tikz</title>
+<link>https://huijunchen9260.github.io/TikzNote.html</link>
+<guid>https://huijunchen9260.github.io/TikzNote.html</guid>
+<pubDate>Wed, 27 Apr 2022 12:47:01 -0400</pubDate>
+<description><![CDATA[<h1>Note on Tikz</h1>
+
+<h2>Create a &ldquo;bezier curve&rdquo;</h2>
+
+<p><code>tex
+\draw (0, 0) to[bend right=40] (5, 5);
+</code></p>
+
+<p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
+
+<p><code>bend right=40</code> means the degree of bending.</p>
+
+<h2>Define points on arbitrary curve</h2>
+
+<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+
+<p><code>tex
+\draw (0, 0) to[bend right=40]
+    node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
+    (5, 5);
+</code></p>
+
+<p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
+This <code>node</code> is defined as <code>a</code>.</p>
+
+<h2>Get x and y coordinate of arbitrary point</h2>
+
+<p>Let the arbitrary be <code>a</code>.</p>
+
+<p><code>tex
+\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
+\coordinate (a_x) at (\xcoord, 0);
+\coordinate (a_y) at (0, \ycoord);
+</code></p>
+
+<p>First, let the <code>path</code> be on the point <code>a</code> so that <code>pgf</code> can remember it.</p>
+
+<p>Second, <code>\pgfgetlastxy</code> outputs the x-coordinate <code>\xcoord</code> and y-coordinate <code>\ycoord</code> of the last path, which we define as point <code>a</code>.</p>
+
+<p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
+
+<h2>Draw &ldquo;tangent line&rdquo; on curve</h2>
+
+<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+
+<p><code>tex
+\draw (0, 0) to[bend right=40]
+    node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
+    node[pos=0.51] (b) {}
+    (5, 5);
+\draw[shorten &gt;=-1cm, shorten &lt;=-1cm, thick, red] (a) -- (b);
+</code></p>
+
+<p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
+
+<p>Notice that I didn&rsquo;t draw the inner point at point <code>b</code>.</p>
+
+<p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
+
+<h2>Decoration: brace</h2>
+
+<p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
+
+<p><code>tex
+%%% brace on up/right
+\draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
+       (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
+%%% brace on down/left (mirror)
+\draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=3pt]
+       (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
+</code></p>
+
+<p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
+
+<p>;tags: Miscellaneous</p>]]></description>
+</item>
+<item>
 <title>Intermediate Macroeconomics Theory, Summer 2022</title>
 <link>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</link>
 <guid>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</guid>
