@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  28 APR 2022 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  28 APR 2022 17:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lecture_05.tex
-(./Lecture_05.tex
+**Lecture_06.tex
+(./Lecture_06.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -810,8 +810,8 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count369
 \l__pdf_internal_box=\box97
-) (build/Lecture_05.aux)
-\openout1 = `Lecture_05.aux'.
+) (build/Lecture_06.aux)
+\openout1 = `Lecture_06.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -898,9 +898,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (build/Lecture_05.out) (build/Lecture_05.out)
+ (build/Lecture_06.out) (build/Lecture_06.out)
 \@outlinefile=\write5
-\openout5 = `Lecture_05.out'.
+\openout5 = `Lecture_06.out'.
 
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -923,7 +923,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (build/Lecture_05.nav)
+ (build/Lecture_06.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 72.
@@ -977,97 +977,124 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [2
 
 ]
-<./figures/Figure4_2.jpg, id=57, 359.82852pt x 360.58926pt>
-File: ./figures/Figure4_2.jpg Graphic file (type jpg)
-<use ./figures/Figure4_2.jpg>
-Package pdftex.def Info: ./figures/Figure4_2.jpg  used on input line 150.
-(pdftex.def)             Requested size: 171.21765pt x 171.58429pt.
+<./figures/1Var.png, id=53, 526.96875pt x 451.6875pt>
+File: ./figures/1Var.png Graphic file (type png)
+<use ./figures/1Var.png>
+Package pdftex.def Info: ./figures/1Var.png  used on input line 150.
+(pdftex.def)             Requested size: 205.46327pt x 176.11606pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 150.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
 
- <./figures/Figure4_2.jpg>]
+ <./figures/1Var.png (PNG copy)>]
+<./figures/2Var.png, id=69, 526.96875pt x 451.6875pt>
+File: ./figures/2Var.png Graphic file (type png)
+<use ./figures/2Var.png>
+Package pdftex.def Info: ./figures/2Var.png  used on input line 182.
+(pdftex.def)             Requested size: 205.46327pt x 176.11606pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
 
-]
-<./figures/Figure4_5.jpg, id=83, 385.71068pt x 381.65056pt>
-File: ./figures/Figure4_5.jpg Graphic file (type jpg)
-<use ./figures/Figure4_5.jpg>
-Package pdftex.def Info: ./figures/Figure4_5.jpg  used on input line 198.
-(pdftex.def)             Requested size: 171.21765pt x 169.41757pt.
+ <./figures/2Var.png (PNG copy)>]
+<./figures/2VarContours.png, id=80, 526.96875pt x 451.6875pt>
+File: ./figures/2VarContours.png Graphic file (type png)
+<use ./figures/2VarContours.png>
+Package pdftex.def Info: ./figures/2VarContours.png  used on input line 211.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [5
 
- <./figures/Figure4_5.jpg>]
-<./figures/Figure4_6.jpg, id=94, 379.016pt x 372.592pt>
-File: ./figures/Figure4_6.jpg Graphic file (type jpg)
-<use ./figures/Figure4_6.jpg>
-Package pdftex.def Info: ./figures/Figure4_6.jpg  used on input line 222.
-(pdftex.def)             Requested size: 171.21765pt x 168.31865pt.
+ <./figures/2VarContours.png (PNG copy)>]
+<./figures/2VarOptimize.png, id=93, 526.96875pt x 451.6875pt>
+File: ./figures/2VarOptimize.png Graphic file (type png)
+<use ./figures/2VarOptimize.png>
+Package pdftex.def Info: ./figures/2VarOptimize.png  used on input line 241.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [6
 
- <./figures/Figure4_6.jpg>]
+ <./figures/2VarOptimize.png (PNG copy)>]
+<./figures/Utility.png, id=104, 526.96875pt x 451.6875pt>
+File: ./figures/Utility.png Graphic file (type png)
+<use ./figures/Utility.png>
+Package pdftex.def Info: ./figures/Utility.png  used on input line 265.
+(pdftex.def)             Requested size: 239.70367pt x 205.46298pt.
+
+Overfull \vbox (9.98535pt too high) detected at line 265
+ []
+
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [7
 
-]
+ <./figures/Utility.png (PNG copy)>]
+<./figures/UtilityBudget.png, id=116, 526.96875pt x 451.6875pt>
+File: ./figures/UtilityBudget.png Graphic file (type png)
+<use ./figures/UtilityBudget.png>
+Package pdftex.def Info: ./figures/UtilityBudget.png  used on input line 287.
+(pdftex.def)             Requested size: 205.46327pt x 176.11606pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [8
 
-]
+ <./figures/UtilityBudget.png (PNG copy)>]
+<./figures/UtilityBudget2C.png, id=127, 526.96875pt x 451.6875pt>
+File: ./figures/UtilityBudget2C.png Graphic file (type png)
+<use ./figures/UtilityBudget2C.png>
+Package pdftex.def Info: ./figures/UtilityBudget2C.png  used on input line 323.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
+
+Overfull \hbox (12.60286pt too wide) detected at line 323
+[]
+ []
+
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
-]
-<./figures/Figure4_7.jpg, id=150, 355.27121pt x 370.8059pt>
-File: ./figures/Figure4_7.jpg Graphic file (type jpg)
-<use ./figures/Figure4_7.jpg>
-Package pdftex.def Info: ./figures/Figure4_7.jpg  used on input line 312.
-(pdftex.def)             Requested size: 171.21765pt x 178.70337pt.
+ <./figures/UtilityBudget2C.png (PNG copy)>]
+<./figures/UtilityBudget2DContour.png, id=138, 526.96875pt x 451.6875pt>
+File: ./figures/UtilityBudget2DContour.png Graphic file (type png)
+<use ./figures/UtilityBudget2DContour.png>
+Package pdftex.def Info: ./figures/UtilityBudget2DContour.png  used on input line 356.
+(pdftex.def)             Requested size: 205.46327pt x 176.11606pt.
+
+Overfull \hbox (9.34198pt too wide) detected at line 356
+[]
+ []
+
+
+Overfull \vbox (7.69133pt too high) detected at line 356
+ []
+
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [10
 
- <./figures/Figure4_7.jpg>]
-<./figures/Figure4_8.jpg, id=162, 342.954pt x 362.664pt>
-File: ./figures/Figure4_8.jpg Graphic file (type jpg)
-<use ./figures/Figure4_8.jpg>
-Package pdftex.def Info: ./figures/Figure4_8.jpg  used on input line 338.
-(pdftex.def)             Requested size: 171.21765pt x 181.05486pt.
-
+ <./figures/UtilityBudget2DContour.png (PNG copy)>]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [11
 
- <./figures/Figure4_8.jpg>]
-<./figures/Figure4_10.jpg, id=173, 385.16624pt x 326.8575pt>
-File: ./figures/Figure4_10.jpg Graphic file (type jpg)
-<use ./figures/Figure4_10.jpg>
-Package pdftex.def Info: ./figures/Figure4_10.jpg  used on input line 361.
-(pdftex.def)             Requested size: 171.21765pt x 145.299pt.
-
+]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [12
 
- <./figures/Figure4_10.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 366.
-
-
+]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [13
@@ -1078,32 +1105,79 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [14
 
 ]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+]
+<./figures/Experiment1IC.png, id=207, 526.96875pt x 451.6875pt>
+File: ./figures/Experiment1IC.png Graphic file (type png)
+<use ./figures/Experiment1IC.png>
+Package pdftex.def Info: ./figures/Experiment1IC.png  used on input line 497.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
+<./figures/Experiment1Utility.png, id=208, 526.96875pt x 451.6875pt>
+File: ./figures/Experiment1Utility.png Graphic file (type png)
+<use ./figures/Experiment1Utility.png>
+Package pdftex.def Info: ./figures/Experiment1Utility.png  used on input line 497.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+ <./figures/Experiment1IC.png (PNG copy)> <./figures/Experiment1Utility.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+]
+<./figures/Experiment2IC.png, id=239, 526.96875pt x 451.6875pt>
+File: ./figures/Experiment2IC.png Graphic file (type png)
+<use ./figures/Experiment2IC.png>
+Package pdftex.def Info: ./figures/Experiment2IC.png  used on input line 565.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
+<./figures/Experiment2IncomeSubEffect.png, id=240, 526.96875pt x 451.6875pt>
+File: ./figures/Experiment2IncomeSubEffect.png Graphic file (type png)
+<use ./figures/Experiment2IncomeSubEffect.png>
+Package pdftex.def Info: ./figures/Experiment2IncomeSubEffect.png  used on input line 565.
+(pdftex.def)             Requested size: 171.21765pt x 146.75534pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+ <./figures/Experiment2IC.png (PNG copy)> <./figures/Experiment2IncomeSubEffect.png (PNG copy)>]
 \tf@nav=\write6
-\openout6 = `Lecture_05.nav'.
+\openout6 = `Lecture_06.nav'.
 
 \tf@toc=\write7
-\openout7 = `Lecture_05.toc'.
+\openout7 = `Lecture_06.toc'.
 
 \tf@snm=\write8
-\openout8 = `Lecture_05.snm'.
+\openout8 = `Lecture_06.snm'.
 
- (build/Lecture_05.aux)
-Package rerunfilecheck Info: File `Lecture_05.out' has not changed.
-(rerunfilecheck)             Checksum: B0FF8C39CBBCF598F99DD4E2168AAD4C;360.
+ (build/Lecture_06.aux)
+Package rerunfilecheck Info: File `Lecture_06.out' has not changed.
+(rerunfilecheck)             Checksum: 71D7523FB391A7ADB82EEE8BD041F2C6;360.
  ) 
 Here is how much of TeX's memory you used:
- 31875 strings out of 478276
- 643990 string characters out of 5853013
- 886344 words of memory out of 5000000
- 49351 multiletter control sequences out of 15000+600000
- 548277 words of font info for 102 fonts, out of 8000000 for 9000
+ 31913 strings out of 478276
+ 645490 string characters out of 5853013
+ 889445 words of memory out of 5000000
+ 49370 multiletter control sequences out of 15000+600000
+ 554250 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,441b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_05.pdf (14 pages, 342934 bytes).
+ 128i,19n,122p,441b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Lecture_06.pdf (19 pages, 1166475 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  28 APR 2022 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  28 APR 2022 18:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lecture_05.tex
-(./Lecture_05.tex
+**Lecture_07.tex
+(./Lecture_07.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -810,8 +810,8 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count369
 \l__pdf_internal_box=\box97
-) (build/Lecture_05.aux)
-\openout1 = `Lecture_05.aux'.
+) (build/Lecture_07.aux)
+\openout1 = `Lecture_07.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -898,9 +898,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (build/Lecture_05.out) (build/Lecture_05.out)
+ (build/Lecture_07.out) (build/Lecture_07.out)
 \@outlinefile=\write5
-\openout5 = `Lecture_05.out'.
+\openout5 = `Lecture_07.out'.
 
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -923,7 +923,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (build/Lecture_05.nav)
+ (build/Lecture_07.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 72.
@@ -977,133 +977,60 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [2
 
 ]
-<./figures/Figure4_2.jpg, id=57, 359.82852pt x 360.58926pt>
-File: ./figures/Figure4_2.jpg Graphic file (type jpg)
-<use ./figures/Figure4_2.jpg>
-Package pdftex.def Info: ./figures/Figure4_2.jpg  used on input line 150.
-(pdftex.def)             Requested size: 171.21765pt x 171.58429pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 132.
+
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
 
- <./figures/Figure4_2.jpg>]
+] (build/Lecture_07.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 11.
+
+
+Package natbib Warning: Empty `thebibliography' environment on input line 13.
+
+)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
 
 ]
-<./figures/Figure4_5.jpg, id=83, 385.71068pt x 381.65056pt>
-File: ./figures/Figure4_5.jpg Graphic file (type jpg)
-<use ./figures/Figure4_5.jpg>
-Package pdftex.def Info: ./figures/Figure4_5.jpg  used on input line 198.
-(pdftex.def)             Requested size: 171.21765pt x 169.41757pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [5
-
- <./figures/Figure4_5.jpg>]
-<./figures/Figure4_6.jpg, id=94, 379.016pt x 372.592pt>
-File: ./figures/Figure4_6.jpg Graphic file (type jpg)
-<use ./figures/Figure4_6.jpg>
-Package pdftex.def Info: ./figures/Figure4_6.jpg  used on input line 222.
-(pdftex.def)             Requested size: 171.21765pt x 168.31865pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [6
-
- <./figures/Figure4_6.jpg>]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [7
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [8
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [9
-
-]
-<./figures/Figure4_7.jpg, id=150, 355.27121pt x 370.8059pt>
-File: ./figures/Figure4_7.jpg Graphic file (type jpg)
-<use ./figures/Figure4_7.jpg>
-Package pdftex.def Info: ./figures/Figure4_7.jpg  used on input line 312.
-(pdftex.def)             Requested size: 171.21765pt x 178.70337pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [10
-
- <./figures/Figure4_7.jpg>]
-<./figures/Figure4_8.jpg, id=162, 342.954pt x 362.664pt>
-File: ./figures/Figure4_8.jpg Graphic file (type jpg)
-<use ./figures/Figure4_8.jpg>
-Package pdftex.def Info: ./figures/Figure4_8.jpg  used on input line 338.
-(pdftex.def)             Requested size: 171.21765pt x 181.05486pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [11
-
- <./figures/Figure4_8.jpg>]
-<./figures/Figure4_10.jpg, id=173, 385.16624pt x 326.8575pt>
-File: ./figures/Figure4_10.jpg Graphic file (type jpg)
-<use ./figures/Figure4_10.jpg>
-Package pdftex.def Info: ./figures/Figure4_10.jpg  used on input line 361.
-(pdftex.def)             Requested size: 171.21765pt x 145.299pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [12
-
- <./figures/Figure4_10.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 366.
-
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [13
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [14
-
-]
 \tf@nav=\write6
-\openout6 = `Lecture_05.nav'.
+\openout6 = `Lecture_07.nav'.
 
 \tf@toc=\write7
-\openout7 = `Lecture_05.toc'.
+\openout7 = `Lecture_07.toc'.
 
 \tf@snm=\write8
-\openout8 = `Lecture_05.snm'.
+\openout8 = `Lecture_07.snm'.
 
- (build/Lecture_05.aux)
-Package rerunfilecheck Info: File `Lecture_05.out' has not changed.
-(rerunfilecheck)             Checksum: B0FF8C39CBBCF598F99DD4E2168AAD4C;360.
+
+
+Package caption Warning: Unused \captionsetup[figure] on input line 26.
+See the caption package documentation for explanation.
+
+(build/Lecture_07.aux)
+Package rerunfilecheck Info: File `Lecture_07.out' has not changed.
+(rerunfilecheck)             Checksum: 50D9906A6AA794B272BD4DBD3BA10204;358.
  ) 
 Here is how much of TeX's memory you used:
- 31875 strings out of 478276
- 643990 string characters out of 5853013
- 886344 words of memory out of 5000000
- 49351 multiletter control sequences out of 15000+600000
- 548277 words of font info for 102 fonts, out of 8000000 for 9000
+ 31676 strings out of 478276
+ 639388 string characters out of 5853013
+ 881778 words of memory out of 5000000
+ 49194 multiletter control sequences out of 15000+600000
+ 545509 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,441b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_05.pdf (14 pages, 342934 bytes).
+ 128i,15n,122p,441b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Lecture_07.pdf (4 pages, 99434 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

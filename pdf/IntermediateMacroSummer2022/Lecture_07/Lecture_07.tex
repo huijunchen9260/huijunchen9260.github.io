@@ -1,0 +1,156 @@
+\documentclass[11pt,aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\begin{document}
+    \title[Lecture 7]{Lecture 7 \\ Representative Firm}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\begin{frame}{Overview: Lecture 4 - 7}
+\label{slide:Overview__Lecture_4_7}
+
+\begin{center}
+Provide \alert{micro-foundation} for the \alert{macro implication} (\alert{Lucas critique})
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Representative Consumer}:
+    \begin{itemize}
+        \item Lecture 4: \alert{preference}, \alert{constraints}
+        \item Lecture 5: \alert{optimization}, \alert{application}
+        \item Lecture 6: Numerical Examples
+    \end{itemize}
+    \item \textbf{Representative Firm}:
+    \begin{itemize}
+        \item Lecture 7: \alert{production}, \alert{optimization}, \alert{application}
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Technology}
+\label{sec:Technology}
+
+
+
+\section{Appendix}
+\label{sec:Appendix}
+
+\appendix
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+\begin{frame}\frametitle{}
+\begin{columns}
+\label{Appendix}
+\column{1\linewidth}
+\centering
+{\Large \alert{Appendix}}
+\end{columns}
+\end{frame}
+%------------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\bibliographystyle{$BIB_STYLE}
+\bibliography{$BIBFILE}
+\end{frame}
+
+\end{document}
+
