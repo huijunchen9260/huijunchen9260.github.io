@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-04-28T18:43:44Z</updated>
+<updated>2022-04-29T23:20:31Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -105,7 +105,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <h2>Lecture Notes</h2>
 
 <ul>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_01/build/Lecture_01.pdf">Lecture 1</a>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_01/build/Lecture_01.pdf">Lecture 1: Introduction</a>
 
 <ul>
 <li>Lucas critique:
@@ -123,11 +123,11 @@ This <code>node</code> is defined as <code>a</code>.</p>
 </li>
 </ul>
 </li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_02/build/Lecture_02.pdf">Lecture 2</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_03/build/Lecture_03.pdf">Lecture 3</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_04/build/Lecture_04.pdf">Lecture 4</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_05/build/Lecture_05.pdf">Lecture 5</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_06/build/Lecture_06.pdf">Lecture 6</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_02/build/Lecture_02.pdf">Lecture 2: Economic Aggregates</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_03/build/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_04/build/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_05/build/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_06/build/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_07/build/Lecture_07.pdf">Lecture 7</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_08/build/Lecture_08.pdf">Lecture 8</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_09/build/Lecture_09.pdf">Lecture 9</a></li>
@@ -261,7 +261,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
 <published>2021-12-30T20:19:06Z</published>
-<updated>2022-04-25T14:19:37Z</updated>
+<updated>2022-04-28T18:43:44Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Spring 2022</h1>
 

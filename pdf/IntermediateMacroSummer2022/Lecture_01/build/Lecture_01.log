@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  26 APR 2022 08:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  29 APR 2022 15:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -982,22 +982,22 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [3
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 164.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 169.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 164.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 169.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
 
 ]
-<./figures/Williamson.jpg, id=79, 525.965pt x 650.43pt>
+<./figures/Williamson.jpg, id=80, 525.965pt x 650.43pt>
 File: ./figures/Williamson.jpg Graphic file (type jpg)
 <use ./figures/Williamson.jpg>
-Package pdftex.def Info: ./figures/Williamson.jpg  used on input line 189.
+Package pdftex.def Info: ./figures/Williamson.jpg  used on input line 194.
 (pdftex.def)             Requested size: 136.97203pt x 169.3857pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1025,15 +1025,15 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [9
 
 ]
-<./figures/Figure1_1.jpg, id=130, 368.577pt x 310.761pt>
+<./figures/Figure1_1.jpg, id=131, 368.577pt x 310.761pt>
 File: ./figures/Figure1_1.jpg Graphic file (type jpg)
 <use ./figures/Figure1_1.jpg>
-Package pdftex.def Info: ./figures/Figure1_1.jpg  used on input line 291.
+Package pdftex.def Info: ./figures/Figure1_1.jpg  used on input line 296.
 (pdftex.def)             Requested size: 171.21765pt x 144.36485pt.
-<./figures/Figure1_3.jpg, id=131, 383.031pt x 321.8424pt>
+<./figures/Figure1_3.jpg, id=132, 383.031pt x 321.8424pt>
 File: ./figures/Figure1_3.jpg Graphic file (type jpg)
 <use ./figures/Figure1_3.jpg>
-Package pdftex.def Info: ./figures/Figure1_3.jpg  used on input line 291.
+Package pdftex.def Info: ./figures/Figure1_3.jpg  used on input line 296.
 (pdftex.def)             Requested size: 171.21765pt x 143.8701pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1041,15 +1041,15 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [10
 
  <./figures/Figure1_1.jpg> <./figures/Figure1_3.jpg>]
-<./figures/Figure1_4.jpg, id=142, 433.62pt x 361.35pt>
+<./figures/Figure1_4.jpg, id=144, 433.62pt x 361.35pt>
 File: ./figures/Figure1_4.jpg Graphic file (type jpg)
 <use ./figures/Figure1_4.jpg>
-Package pdftex.def Info: ./figures/Figure1_4.jpg  used on input line 309.
+Package pdftex.def Info: ./figures/Figure1_4.jpg  used on input line 314.
 (pdftex.def)             Requested size: 171.21765pt x 142.6793pt.
-<./figures/Figure1_13.jpg, id=143, 403.7484pt x 349.305pt>
+<./figures/Figure1_13.jpg, id=145, 403.7484pt x 349.305pt>
 File: ./figures/Figure1_13.jpg Graphic file (type jpg)
 <use ./figures/Figure1_13.jpg>
-Package pdftex.def Info: ./figures/Figure1_13.jpg  used on input line 309.
+Package pdftex.def Info: ./figures/Figure1_13.jpg  used on input line 314.
 (pdftex.def)             Requested size: 171.21765pt x 148.13019pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1063,7 +1063,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 341.
+(Font)              <14.4> on input line 346.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
@@ -1096,16 +1096,16 @@ Package rerunfilecheck Info: File `Lecture_01.out' has not changed.
 Here is how much of TeX's memory you used:
  31908 strings out of 478276
  644624 string characters out of 5853013
- 885293 words of memory out of 5000000
+ 886293 words of memory out of 5000000
  49379 multiletter control sequences out of 15000+600000
  560470 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,441b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_01.pdf (15 pages, 615297 bytes).
+Output written on build/Lecture_01.pdf (15 pages, 615492 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
+ 266 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  49 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

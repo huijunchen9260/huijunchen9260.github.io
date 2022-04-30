@@ -1,0 +1,344 @@
+\documentclass[11pt,aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\begin{document}
+    \title[Lecture 8]{Lecture 8 \\ Competitive Equilibrium \\ One-Period Model}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\begin{frame}{Overview}
+\label{slide:Overview}
+    After constructing both \alert{consumers'} and \alert{firms'} problem, we start to bring them together in \alert{one-period model}:
+    \begin{itemize}
+        \item Lecture 8: \alert{competitive equilibrium} (CE)
+        \begin{itemize}
+            \item each agent solve their problems individually
+            \item aggregate decision determines ``prices'' (wage, rent, etc.)
+        \end{itemize}
+        \item Lecture 9: \alert{social planer's problem} (SPP)
+        \begin{itemize}
+            \item imaginary and benevolent social planner determines the allocation
+            \item should be the most efficient outcome
+        \end{itemize}
+        \item Lecture 10: CE and SPP examples
+    \end{itemize}
+\end{frame}
+
+\section{Structure}
+\label{sec:Structure}
+
+\begin{frame}{Review: Structure of Macro Model: $ 4 $ elements}
+\label{slide:Structure_of_Macro_Model____4___elements}
+\begin{enumerate}
+    \item \textbf{agent}: who is involved?
+    \begin{itemize}
+        \item e.g. consumers, firms, \alert{government}
+    \end{itemize}
+    \item \textbf{preferences}: how and what is consumed/valued/invested?
+    \begin{itemize}
+        \item \alert{consumers}: monotone, convex, consumption $+$ leisure normal
+        \item \alert{firms}: profit maximization
+        \item \alert{government}: passive (for now)
+    \end{itemize}
+    \item \textbf{resources}: availability and distribution
+    \begin{itemize}
+        \item \alert{consumer}: $ h $ unit of time endowment
+        \item \alert{firm}: production technology $ z F( K, N^{d} ) $
+    \end{itemize}
+    \item \textbf{technology}: objective limitation at given period of time
+    \begin{itemize}
+        \item CRS production function, government tax decision
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Government and Budget Balance}
+\label{slide:Government_and_Budget_Balance}
+    Government provide $ G $ unit of gov. spending by imposing \alert{lump-sum tax} $ T $ to representative consumer.
+
+    Assumptions:
+    \begin{enumerate}
+        \item Gov. spending requires resources but with no benefit
+        \begin{itemize}
+            \item not \alert{public goods}
+        \end{itemize}
+        \item no transfers between consumers
+        \item \textbf{gov. budget balance}: $ G = T $, must run balanced budget
+        \begin{itemize}
+            \item special case: $ G=0 $ means no government!
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Using a Macro Model}
+\label{slide:Using_a_Macro_Model}
+        \textit{\scriptsize ``Making use of the model is a process of running experiments to determine how changes in the exogenous variables change the endogenous variables.'' – Williamson, p.144}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{./figures/MacroModelStructure.jpg}
+    \end{figure}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Exogenous variables}: determined \alert{outside} the model
+            \begin{enumerate}
+                \item $ G $: gov. spending
+                \item $ K $: firms' capital stock
+                \item $ z $: level of TFP
+            \end{enumerate}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Endogenous variables}: determined \alert{inside} the model
+            \begin{itemize}
+                \item $ C, Y$: consumption, output
+                \item $ N^{s}, N^{d} $: labor supply \& demand
+                \item \red{$ T, w, \pi $: tax level, wage rate, dividends}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Competitive Equilibrium}
+\label{sec:Competitive_Equilibrium}
+
+\begin{frame}{Concept: Competitive Equilibrium}
+\label{slide:Concept__Competitive_Equilibrium}
+\begin{itemize}
+    \item Agents in the economy behave for a \alert{given} set of \alert{exogenous variables} and \alert{parameters}
+    \item Both consumer and firm \alert{took the wage rate as given}.
+    \item But this wage is \alert{endogenous}! How is this wage determined?
+    \item Solution: in competitive equilibrium,
+    \begin{itemize}
+        \item prices are \alert{exogenous to agent} (``taken as given''), but
+        \item \alert{endogenous to the model} (NOT parameter and need to be solved)
+    \end{itemize}
+    \item \textbf{Market clear}: wage rate is determined by $ N^{s} = N^{d} $ (``endogenous'')
+    \item other examples: dividend income, taxes
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Analysis on Competitive Equilibrium}
+\label{slide:Analysis_on_Competitive_Equilibrium}
+\begin{itemize}
+    \item How many markets exist in this economy?
+    \begin{itemize}
+        \item There are $ 2 $ goods: consumption goods and leisure
+        \item While there is only $ 1 $ market: leisure is traded for consumption with wage rate $ w $
+    \end{itemize}
+    \item \textbf{Walras' Law}: with $ N $ goods, can only have $ N-1 $ prices
+    \begin{itemize}
+        \item All prices are \alert{relative prices}:
+        \begin{itemize}
+            \item \alert{normalize} price of consumption as $ 1 $, the relative price of leisure is $ w $
+        \end{itemize}
+        \item Trade consumption goods for consumption goods?
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Competitive Equilibrium in Words}
+\label{slide:Competitive_Equilibrium_in_Words}
+    \footnotesize
+    A competitive equilibrium given \textit{exogenous levels of government spending, TFP, and capital} is a set of \alert{endogenous quantities of output, consumption, labor demand, labor supply, dividends, and taxes and an endogenous wage rate} such that the following properties are satisfied:
+    \begin{enumerate}
+        \item the representative consumer chooses \alert{consumption and labor supply} to make herself as well off as possible subject to her budget constraint, taking as \alert{given the wage, taxes, and dividend income}
+        \item the representative firm chooses \alert{labor demand} to maximize profits taking \alert{capital, TFP, and the wage as given}.
+        \item output (profits) are total (net) revenues, determined ``residually''
+        \item the government imposes the \alert{taxes} required by its budget constraint
+        \item the \alert{labor market clears}, i.e., the quantity of labor supplied by the consumer is equal to the quantity of labor demanded by the firm.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Competitive Equilibrium in Math}
+\label{slide:Competitive_Equilibrium_in_Math}
+    A \alert{competitive equilibrium} given \alert{$ \{ G, z, K \} $} is a set of allocations \red{$ \{ C^{*}, l^{*}, N^{s*}, N^{d*}, \pi^{*}, T^{*} \}$} and prices $ \orange{\{ w^{*} \}} $ such that
+    \begin{enumerate}
+        \item Taken prices \orange{$w$} and \orange{$\pi, T$} as given, representative consumer solves
+        %
+        \begin{equation}
+        \label{eq:consumer_problem}
+            \max_{\red{C}, \red{l} \in [ 0, \alert{h} ]} U( \red{C, l} ) \quad \text{ subject to } \quad \red{C} \le \orange{w} ( \alert{h} - \red{l} ) + \orange{\pi} - \orange{T}
+        \end{equation}
+        %
+        \item Taken \orange{$w$} as given, the representative firm solves
+        %
+        \begin{equation}
+        \label{eq:firm_problem}
+            \max_{\red{N^{d}} \ge 0} \alert{z} F( \alert{K}, \red{N^{d}} ) - \orange{w} \red{N^{d}}
+        \end{equation}
+        %
+        \item Government set taxes to balance budget: $ \red{T^{*}} = \alert{G} $
+        \item Labor market clears: $ \red{w^{*}} $ such that $ \red{N^{s*} = N^{d*}} $
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Does it All Add Up?}
+\framesubtitle{Revisiting the Income-Expenditure Identity}
+\label{slide:Does_it_All_Add_Up_}
+\begin{itemize}
+    \item \textbf{Expenditure approach}: $ Y = C + I + G + NX $
+    \begin{itemize}
+        \item one period $ \Rightarrow I = 0 $; closed economy $ \Rightarrow NX = 0 \Rightarrow  \alert{Y = C + G}$
+    \end{itemize}
+    \item \textbf{Income approach}:
+    \begin{itemize}
+        \item \alert{consumer budget constraint}: $ C = w N^{s} + \pi - T $
+        \item \alert{government budget balance}: $ G = T \Rightarrow C = w N^{s} + \pi - G $
+        \item \alert{profit}: $ \pi = z F( K, N^{d} ) - w N^{d} = Y - w N^{d} \Rightarrow C = w N^{s} + Y - wN^{d} - G $
+        \item \alert{labor market clear}: $ N^{s} = N^{d} \Rightarrow C = Y - G$
+    \end{itemize}
+    \item \textbf{Income-Expenditure Identity holds!}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+\label{slide:Example}
+    Assume
+    \begin{enumerate}
+        \item no government: $ G = T = 0 $
+        \item utility function: $ U( C, l ) = \ln C + \ln l $
+        \item production function: $ F( K, N ) = K^{\alpha}N^{1-\alpha} $, where $ \alpha = \frac{1}{2} $
+        \item $ z = K = 1 $; $ h = 1 $
+    \end{enumerate}
+    Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( h-l ) + \pi $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{C}{l} = w
+            \label{eq:consumerFOC}
+        \\
+        \text{Binding budget constraint} \quad
+            & C = w ( 1-l ) + \pi
+            \label{eq:binding_budget}
+        \\
+        \text{Time constraint} \quad
+            & N^{s} = 1 - l
+            \label{eq:time_budget}
+    \end{align}
+    %
+\end{frame}
+
+\begin{frame}{Example (Cont.)}
+\label{slide:Example__Cont__}
+    Firm: $ \max_{N^{d}} ( N^{d} )^{\frac{1}{2}} - w N^{d} $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{1}{2} ( N^{d} )^{- \frac{1}{2}} = w
+            \label{eq:firmFOC}
+        \\
+        \text{Output definition} \quad
+            & Y = ( N^{d} )^{\frac{1}{2}}
+            \label{eq:outputDef}
+        \\
+        \text{Profit definition} \quad
+            & \pi = Y - w N^{d}
+            \label{eq:profitDef}
+    \end{align}
+    %
+    Market clear:
+    %
+    \begin{align}
+        N^{s} & = N^{d}
+        \label{eq:laborClear}
+    \end{align}
+    %
+$ 7 $ equations (\eqref{eq:consumerFOC}-\eqref{eq:laborClear}), $ 7  $ unknowns ($C, l, N^{s}, N^{d}, Y, \pi, w$), can solve entirely!
+\end{frame}
+
+
+\end{document}
+
