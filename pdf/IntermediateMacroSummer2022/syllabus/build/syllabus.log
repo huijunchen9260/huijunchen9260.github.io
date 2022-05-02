@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  29 APR 2022 09:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  2 MAY 2022 17:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -753,11 +753,11 @@ LaTeX Info: Redefining \nameref on input line 50.
 \@outlinefile=\write5
 \openout5 = `syllabus.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 66.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 90.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 91.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
@@ -765,7 +765,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \q=\skip81
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 106--125
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 107--126
 []
  []
 
@@ -775,18 +775,18 @@ Overfull \hbox (1.19997pt too wide) in paragraph at lines 106--125
 \rr=\skip84
 \pp=\skip85
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 188--188
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 192--192
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 186--384
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 190--388
 [] 
  []
 
 [4] [5] [6]
 
-LaTeX Warning: Empty bibliography on input line 484.
+LaTeX Warning: Empty bibliography on input line 488.
 
 [7] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
@@ -797,17 +797,17 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  27009 strings out of 478276
- 513438 string characters out of 5853013
- 1196680 words of memory out of 5000000
+ 513442 string characters out of 5853013
+ 1196684 words of memory out of 5000000
  44778 multiletter control sequences out of 15000+600000
  488003 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (7 pages, 78397 bytes).
+Output written on build/syllabus.pdf (7 pages, 78297 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  29 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

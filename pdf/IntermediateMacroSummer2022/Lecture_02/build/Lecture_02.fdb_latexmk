@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1650940666 "Lecture_02.tex" "build/Lecture_02.pdf" "Lecture_02" 1650940668
+["pdflatex"] 1651503640 "Lecture_02.tex" "build/Lecture_02.pdf" "Lecture_02" 1651503642
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1647844622 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1647844622 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1647844622 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -70,6 +70,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1647844622 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1647844622 113634 f99c44d58bae0863375faf0e1d74d612 ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb" 1647844622 120387 212cad1e763d510fc9c3ce2466274a57 ""
+  "/usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb" 1647844622 123394 d390152bb30feeb496aaaa93299ee9ba ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb" 1647844622 121145 68312a933e2c689ed40ec0aba373e279 ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb" 1647844622 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb" 1647844622 97408 f595704ec2a07246c2d6f7b602587452 ""
@@ -78,6 +79,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb" 1647844622 95954 039cb8d6009e8fc5ea194e3e167ecc5f ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb" 1647844622 119663 e82fa1a58f98ccd89bdbd77311ac9cf1 ""
   "/usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1647844622 27863 09ce3735688ffde955e72da27c95b61a ""
+  "/usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb" 1647844622 27835 16c2fa83351d4ef8cf5aebfab8a44bc1 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1647844622 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1647844622 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/babel/babel.sty" 1647844622 147649 823237dc86e8acfaa45204ca8085a60e ""
@@ -297,10 +299,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1647844622 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1650170220 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1650170215 2924509 28dc5c9af12c8628b56acdfdc0f4589c ""
-  "Lecture_02.tex" 1650940663 9674 c050ae62745292a126b6a59ad47be6ad ""
-  "build/Lecture_02.aux" 1650940668 5108 61f5a8c07dc3946fe78e0e6cd6bbeef2 "pdflatex"
-  "build/Lecture_02.nav" 1650940668 1667 ee1b9a6192ec81fcff978a7d2b2275ba "pdflatex"
-  "build/Lecture_02.out" 1650940668 297 476e3a6fa3898a497898f1864a895608 "pdflatex"
+  "Lecture_02.tex" 1651503639 9985 029f1c942f11ad92fddd6ee787676045 ""
+  "build/Lecture_02.aux" 1651503641 5108 61f5a8c07dc3946fe78e0e6cd6bbeef2 "pdflatex"
+  "build/Lecture_02.nav" 1651503641 1667 ee1b9a6192ec81fcff978a7d2b2275ba "pdflatex"
+  "build/Lecture_02.out" 1651503641 297 476e3a6fa3898a497898f1864a895608 "pdflatex"
   "figures/Figure2_1.png" 1650938502 33284 65d64d5247af715f77611bfa39737298 ""
   "figures/GDPMeasurement.png" 1650938180 24895 6a30209d1feb96af04acb97a382f30d1 ""
   "figures/ThreeApproachTable1.png" 1650917308 119564 23050337fa7c71bc72434d334fdce8d4 ""

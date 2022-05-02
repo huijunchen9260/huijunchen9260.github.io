@@ -196,11 +196,16 @@ If no measurement error, all should give the same answer!
 \begin{frame}{Prices in GDP measurement (Cont.)}
 \label{slide:Prices_in_GDP_measurement__Cont__}
     \begin{itemize}
-        \item GDP deflator: normalize \alert{GDP} of \alert{base year} as $ 100 $, relative to \alert{other year}
-        \begin{itemize}
-            \item E.g. $ RealGDP_{2020} = \frac{GDP_{2020}}{GDP_{2000}} \times 100 $, use $ GDP_{2000} $ as base year
-            \item \alert{Problem}: choose which year? $ \Rightarrow  $ ``\alert{chain-weighting}'' (rolling base)
-        \end{itemize}
+        \item GDP deflator: ratio between nominal and real GDP
+        \begin{enumerate}
+            \item Calculate real GDP relative to base year by base year \alert{price level}
+            \begin{itemize}
+                \item E.g. $ RealGDP_{2020} = \text{Cost of } Q_{2020} \text{ at } P_{\alert{2000}} $, use $ 2000 $ as base year
+                \item While $ NominalGDP_{2020} = \text{Cost of } Q_{2020} \text{ at } P_{\alert{2020}} $
+                \item \alert{Problem}: choose which year? $ \Rightarrow  $ ``\alert{chain-weighting}'' (rolling base)
+            \end{itemize}
+            \item Calculate ratio: $ \frac{NominalGDP_{2020}}{RealGDP_{2020}} \times 100 $
+        \end{enumerate}
         \item CPI: normalize \alert{consumption basket} of \alert{base year} as $ 100 $, relative to \alert{other year}
         \begin{itemize}
             \item E.g. $ CPI_{2020} = \frac{\text{Cost of } Q_{2000} \text{ at } P_{2020}}{\text{Cost of } Q_{2000} \text{ at } P_{2000}} \times 100 $, use $ 2000 $ as base year
