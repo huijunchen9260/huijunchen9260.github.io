@@ -1,0 +1,4 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Real Interest Rate $ \uparrow $}{2}{0}{1}
+\beamer@sectionintoc {2}{Competitive Equilibrium}{6}{0}{2}
+\beamer@sectionintoc {3}{Ricardian Equivalence}{11}{0}{3}
