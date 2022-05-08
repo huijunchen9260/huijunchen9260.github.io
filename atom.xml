@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-05-06T21:08:54Z</updated>
+<updated>2022-05-08T15:44:12Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -87,6 +87,41 @@ This <code>node</code> is defined as <code>a</code>.</p>
 
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
 
+<h2>Intersection between two curves</h2>
+
+<p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
+
+<p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
+
+<p><code>tex
+\documentclass[tikz, margin = 1mm]{standalone}
+\usetikzlibrary{intersections}
+\begin{document}
+\begin{tikzpicture}
+    \draw[name path=a] (0, 0) to[bend right = 40] (2, 0);
+    \draw[name path=b] (0, -.5) to[bend left = 40] (2, -.5);
+    \path[name intersections={of=a and b, by=e}];
+    \node[draw,fill=red,circle,inner sep=1pt] at (e) {};
+\end{tikzpicture}
+\end{document}
+</code></p>
+
+<p>Explanation:
+1. Need to add <code>name path=name</code> as argument to call this path.
+2. Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.
+3. Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</p>
+
+<h2>Change the font size of all node/label</h2>
+
+<p>Simply use <code>\tikzstyle</code> is suffice:</p>
+
+<p><code>tex
+\begin{tikzpicture}
+    \tikzstyle{every node}=[font=\scriptsize]
+    ...
+\end{tikzpicture}
+</code></p>
+
 <p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 <entry>
@@ -94,7 +129,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</id>
 <published>2022-04-23T14:27:53Z</published>
-<updated>2022-05-05T15:46:40Z</updated>
+<updated>2022-05-06T21:08:54Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Summer 2022</h1>
 
@@ -138,8 +173,8 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_13/build/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_14/build/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_15/build/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_16/build/Lecture_16.pdf">Lecture 16</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_17/build/Lecture_17.pdf">Lecture 17</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_16/build/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_17/build/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_18/build/Lecture_18.pdf">Lecture 18</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_19/build/Lecture_19.pdf">Lecture 19</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_20/build/Lecture_20.pdf">Lecture 20</a></li>

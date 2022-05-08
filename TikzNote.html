@@ -77,6 +77,41 @@ This <code>node</code> is defined as <code>a</code>.</p>
 </code></pre>
 
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
+
+<h2>Intersection between two curves</h2>
+
+<p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
+
+<p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
+
+<pre><code class="tex">\documentclass[tikz, margin = 1mm]{standalone}
+\usetikzlibrary{intersections}
+\begin{document}
+\begin{tikzpicture}
+    \draw[name path=a] (0, 0) to[bend right = 40] (2, 0);
+    \draw[name path=b] (0, -.5) to[bend left = 40] (2, -.5);
+    \path[name intersections={of=a and b, by=e}];
+    \node[draw,fill=red,circle,inner sep=1pt] at (e) {};
+\end{tikzpicture}
+\end{document}
+</code></pre>
+
+<p>Explanation:
+1. Need to add <code>name path=name</code> as argument to call this path.
+2. Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.
+3. Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</p>
+
+<h2>Change the font size of all node/label</h2>
+
+<p>Simply use <code>\tikzstyle</code> is suffice:</p>
+
+<pre><code class="tex">\begin{tikzpicture}
+    \tikzstyle{every node}=[font=\scriptsize]
+    ...
+\end{tikzpicture}
+</code></pre>
+
+
 <p><i> Article tags:
 <a href="./@Miscellaneous.html">Miscellaneous</a> 
 </i></p>
