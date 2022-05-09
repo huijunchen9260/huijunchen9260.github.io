@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  8 MAY 2022 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  9 MAY 2022 11:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **Lecture_17.tex
 (./Lecture_17.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -807,7 +807,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 70
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count369
 \l__pdf_internal_box=\box97
 ) (build/Lecture_17.aux)
@@ -992,10 +992,10 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [5
 
 ]
-<./figures/LaborDemandTFP.png, id=95, 451.6875pt x 451.6875pt>
+<./figures/LaborDemandTFP.png, id=96, 451.6875pt x 451.6875pt>
 File: ./figures/LaborDemandTFP.png Graphic file (type png)
 <use ./figures/LaborDemandTFP.png>
-Package pdftex.def Info: ./figures/LaborDemandTFP.png  used on input line 228.
+Package pdftex.def Info: ./figures/LaborDemandTFP.png  used on input line 231.
 (pdftex.def)             Requested size: 171.21765pt x 171.2226pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1003,7 +1003,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [6
 
  <./figures/LaborDemandTFP.png (PNG copy)>]
-Overfull \vbox (5.00404pt too high) detected at line 255
+Overfull \vbox (5.00404pt too high) detected at line 258
  []
 
 
@@ -1012,40 +1012,112 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [7
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 305.
+
+Overfull \vbox (1.65259pt too high) detected at line 305
+ []
+
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [8
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 270.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<./figures/LaborSupplyInterestRateWealth.png, id=132, 451.6875pt x 451.6875pt>
+File: ./figures/LaborSupplyInterestRateWealth.png Graphic file (type png)
+<use ./figures/LaborSupplyInterestRateWealth.png>
+Package pdftex.def Info: ./figures/LaborSupplyInterestRateWealth.png  used on input line 326.
+(pdftex.def)             Requested size: 171.21765pt x 171.2226pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
-]
+ <./figures/LaborSupplyInterestRateWealth.png (PNG copy)>]
+<./figures/LaborMarketClear.png, id=143, 451.6875pt x 451.6875pt>
+File: ./figures/LaborMarketClear.png Graphic file (type png)
+<use ./figures/LaborMarketClear.png>
+Package pdftex.def Info: ./figures/LaborMarketClear.png  used on input line 345.
+(pdftex.def)             Requested size: 171.21765pt x 171.2226pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [10] (build/Lecture_17.bbl
+ [10
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
-
-
-Package natbib Warning: Empty `thebibliography' environment on input line 13.
-
-)
+ <./figures/LaborMarketClear.png (PNG copy)>]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [11
 
 ]
+<./figures/OutputSupply.png, id=165, 903.375pt x 225.84375pt>
+File: ./figures/OutputSupply.png Graphic file (type png)
+<use ./figures/OutputSupply.png>
+Package pdftex.def Info: ./figures/OutputSupply.png  used on input line 392.
+(pdftex.def)             Requested size: 342.43532pt x 85.6113pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
+
+ <./figures/OutputSupply.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
+
+]
+Overfull \vbox (11.49057pt too high) detected at line 451
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
+<./figures/InvestmentDemand.png, id=197, 451.6875pt x 451.6875pt>
+File: ./figures/InvestmentDemand.png Graphic file (type png)
+<use ./figures/InvestmentDemand.png>
+Package pdftex.def Info: ./figures/InvestmentDemand.png  used on input line 478.
+(pdftex.def)             Requested size: 171.21765pt x 171.2226pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+ <./figures/InvestmentDemand.png (PNG copy)>]
+<./figures/OutputDemand.png, id=208, 451.6875pt x 451.6875pt>
+File: ./figures/OutputDemand.png Graphic file (type png)
+<use ./figures/OutputDemand.png>
+Package pdftex.def Info: ./figures/OutputDemand.png  used on input line 499.
+(pdftex.def)             Requested size: 171.21765pt x 171.2226pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+ <./figures/OutputDemand.png (PNG copy)>]
+File: ./figures/OutputDemand.png Graphic file (type png)
+<use ./figures/OutputDemand.png>
+Package pdftex.def Info: ./figures/OutputDemand.png  used on input line 519.
+(pdftex.def)             Requested size: 188.34047pt x 188.34279pt.
+<./figures/OutputDemand_2.png, id=219, 451.6875pt x 451.6875pt>
+File: ./figures/OutputDemand_2.png Graphic file (type png)
+<use ./figures/OutputDemand_2.png>
+Package pdftex.def Info: ./figures/OutputDemand_2.png  used on input line 519.
+(pdftex.def)             Requested size: 188.34047pt x 188.34279pt.
+
+Overfull \hbox (12.48558pt too wide) detected at line 519
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+ <./figures/OutputDemand_2.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `Lecture_17.nav'.
 
@@ -1057,21 +1129,21 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  (build/Lecture_17.aux)
 Package rerunfilecheck Info: File `Lecture_17.out' has not changed.
-(rerunfilecheck)             Checksum: 6B3622E0D5550E3202830BE35AC02832;381.
+(rerunfilecheck)             Checksum: DD3BB3DD6C1F7C43F06C7919D9D43916;285.
  ) 
 Here is how much of TeX's memory you used:
- 31777 strings out of 478276
- 641845 string characters out of 5853013
- 892007 words of memory out of 5000000
- 49272 multiletter control sequences out of 15000+600000
- 545509 words of font info for 101 fonts, out of 8000000 for 9000
+ 31895 strings out of 478238
+ 645309 string characters out of 5850457
+ 893285 words of memory out of 5000000
+ 49392 multiletter control sequences out of 15000+600000
+ 557026 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,441b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_17.pdf (11 pages, 261762 bytes).
+ 128i,15n,122p,441b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Lecture_17.pdf (17 pages, 552644 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
