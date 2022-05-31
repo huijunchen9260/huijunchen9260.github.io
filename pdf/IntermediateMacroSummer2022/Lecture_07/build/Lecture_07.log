@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  29 APR 2022 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  31 MAY 2022 13:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **Lecture_07.tex
 (./Lecture_07.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -807,7 +807,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 71
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count369
 \l__pdf_internal_box=\box97
 ) (build/Lecture_07.aux)
@@ -997,54 +997,58 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [6
 
 ]
-<./figures/Figure4_14.jpg, id=104, 335.13441pt x 340.80264pt>
-File: ./figures/Figure4_14.jpg Graphic file (type jpg)
-<use ./figures/Figure4_14.jpg>
-Package pdftex.def Info: ./figures/Figure4_14.jpg  used on input line 230.
-(pdftex.def)             Requested size: 171.21765pt x 174.11385pt.
-<./figures/Figure4_15.jpg, id=105, 336.55147pt x 333.00882pt>
-File: ./figures/Figure4_15.jpg Graphic file (type jpg)
-<use ./figures/Figure4_15.jpg>
-Package pdftex.def Info: ./figures/Figure4_15.jpg  used on input line 230.
-(pdftex.def)             Requested size: 171.21765pt x 169.41557pt.
+Overfull \vbox (11.72165pt too high) detected at line 239
+ []
+
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [7
 
- <./figures/Figure4_14.jpg> <./figures/Figure4_15.jpg>]
-<./figures/Figure4_16.jpg, id=117, 335.84294pt x 349.305pt>
-File: ./figures/Figure4_16.jpg Graphic file (type jpg)
-<use ./figures/Figure4_16.jpg>
-Package pdftex.def Info: ./figures/Figure4_16.jpg  used on input line 249.
-(pdftex.def)             Requested size: 171.21765pt x 178.08455pt.
-<./figures/Figure4_17.jpg, id=118, 335.13441pt x 340.80264pt>
-File: ./figures/Figure4_17.jpg Graphic file (type jpg)
-<use ./figures/Figure4_17.jpg>
-Package pdftex.def Info: ./figures/Figure4_17.jpg  used on input line 249.
+]
+<./figures/Figure4_14.jpg, id=115, 335.13441pt x 340.80264pt>
+File: ./figures/Figure4_14.jpg Graphic file (type jpg)
+<use ./figures/Figure4_14.jpg>
+Package pdftex.def Info: ./figures/Figure4_14.jpg  used on input line 259.
 (pdftex.def)             Requested size: 171.21765pt x 174.11385pt.
+<./figures/Figure4_15.jpg, id=116, 336.55147pt x 333.00882pt>
+File: ./figures/Figure4_15.jpg Graphic file (type jpg)
+<use ./figures/Figure4_15.jpg>
+Package pdftex.def Info: ./figures/Figure4_15.jpg  used on input line 259.
+(pdftex.def)             Requested size: 171.21765pt x 169.41557pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [8
 
- <./figures/Figure4_16.jpg> <./figures/Figure4_17.jpg>]
-<./figures/Figure4_18.jpg, id=129, 469.755pt x 383.5128pt>
-File: ./figures/Figure4_18.jpg Graphic file (type jpg)
-<use ./figures/Figure4_18.jpg>
-Package pdftex.def Info: ./figures/Figure4_18.jpg  used on input line 274.
-(pdftex.def)             Requested size: 205.46327pt x 167.73961pt.
+ <./figures/Figure4_14.jpg> <./figures/Figure4_15.jpg>]
+<./figures/Figure4_16.jpg, id=127, 335.84294pt x 349.305pt>
+File: ./figures/Figure4_16.jpg Graphic file (type jpg)
+<use ./figures/Figure4_16.jpg>
+Package pdftex.def Info: ./figures/Figure4_16.jpg  used on input line 278.
+(pdftex.def)             Requested size: 171.21765pt x 178.08455pt.
+<./figures/Figure4_17.jpg, id=128, 335.13441pt x 340.80264pt>
+File: ./figures/Figure4_17.jpg Graphic file (type jpg)
+<use ./figures/Figure4_17.jpg>
+Package pdftex.def Info: ./figures/Figure4_17.jpg  used on input line 278.
+(pdftex.def)             Requested size: 171.21765pt x 174.11385pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
- <./figures/Figure4_18.jpg>]
+ <./figures/Figure4_16.jpg> <./figures/Figure4_17.jpg>]
+<./figures/Figure4_18.jpg, id=139, 469.755pt x 383.5128pt>
+File: ./figures/Figure4_18.jpg Graphic file (type jpg)
+<use ./figures/Figure4_18.jpg>
+Package pdftex.def Info: ./figures/Figure4_18.jpg  used on input line 303.
+(pdftex.def)             Requested size: 205.46327pt x 167.73961pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [10
 
-]
+ <./figures/Figure4_18.jpg>]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [11
@@ -1053,6 +1057,11 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [12
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
 
 ]
 \tf@nav=\write6
@@ -1069,18 +1078,18 @@ Package rerunfilecheck Info: File `Lecture_07.out' has not changed.
 (rerunfilecheck)             Checksum: C470E2BB4A3F6A3018324ED7B7D953BA;294.
  ) 
 Here is how much of TeX's memory you used:
- 31801 strings out of 478276
- 642550 string characters out of 5853013
- 888342 words of memory out of 5000000
- 49285 multiletter control sequences out of 15000+600000
+ 31872 strings out of 478238
+ 644619 string characters out of 5850457
+ 889349 words of memory out of 5000000
+ 49384 multiletter control sequences out of 15000+600000
  548277 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,441b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_07.pdf (12 pages, 429143 bytes).
+Output written on build/Lecture_07.pdf (13 pages, 432488 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

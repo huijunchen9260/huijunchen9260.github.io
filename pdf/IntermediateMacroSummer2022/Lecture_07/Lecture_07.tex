@@ -1,5 +1,4 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
+\documentclass[11pt,aspectratio=43]{beamer} \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -210,6 +209,35 @@ Provide \alert{micro-foundation} for the \alert{macro implication} (\alert{Lucas
         \end{itemize}
     \end{itemize}
 \end{frame}
+
+\begin{frame}{Example: Cobb-Douglas and Return to Scale}
+\label{slide:Example__Cobb_Douglas_and_Return_to_Scale}
+
+Let's assume that Cobb-Douglas production is $ z F( K, N ) = z K^{\alpha} N^{\beta} $
+
+So if both inputs are increasing by twice, then
+
+%
+\begin{align*}
+    zF( 2K, 2N )
+        & = z ( 2K )^{\alpha} ( 2N )^{\beta} = 2^{\alpha} \times 2^{\beta} z K^{\alpha} N^{\beta}
+    \\
+        & = 2^{\alpha+\beta} z K^{\alpha} N^{\beta} = 2^{\alpha+\beta} Y
+\end{align*}
+%
+\begin{enumerate}
+    \item If $ \alpha+\beta = 1 $, then $ zF( 2K, 2N ) = 2Y $, constant return to scale
+    \item If $ \alpha+\beta < 1 $, then $ zF( 2K, 2N ) = 2^{\alpha+\beta}Y < 2Y $, decreasing return to scale
+    \item If $ \alpha+\beta > 1 $, then $ zF( 2K, 2N ) = 2^{\alpha+\beta}Y > 2Y $, increasing return to scale
+\end{enumerate}
+<++>
+
+
+
+
+\end{frame}
+
+
 
 \begin{frame}{Visualization}
 \label{slide:Visualization}
