@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  2 MAY 2022 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 17:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **ProblemSet2_P1_sol.tex
 (./ProblemSet2_P1_sol.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
@@ -470,7 +470,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 56
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box72
 ) (build/ProblemSet2_P1_sol.aux
@@ -586,10 +586,10 @@ Package rerunfilecheck Info: File `ProblemSet2_P1_sol.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20443 strings out of 478276
- 380926 string characters out of 5853013
- 660067 words of memory out of 5000000
- 38267 multiletter control sequences out of 15000+600000
+ 20465 strings out of 478238
+ 381647 string characters out of 5850457
+ 660746 words of memory out of 5000000
+ 38320 multiletter control sequences out of 15000+600000
  481964 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,16n,104p,538b,408s stack positions out of 5000i,500n,10000p,200000b,80000s

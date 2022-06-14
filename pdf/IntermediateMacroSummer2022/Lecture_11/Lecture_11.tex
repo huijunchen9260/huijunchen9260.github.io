@@ -190,16 +190,16 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
 
 \begin{frame}{Competitive Equilibrium w/ Distorting Tax}
 \label{slide:Competitive_Equilibrium_w__Distortionary_Tax}
-    A competitive equilibrium, with $ \{ z, \alert{t}, K \} $ exogenous, is a list of endogenous prices and quantities $ \{ C, l, N^{s}, N^{d}, Y, \pi, w, \alert{G} \} $ such that:
+    A competitive equilibrium, with $ \{ z, \alert{G}, K \} $ exogenous, is a list of endogenous prices and quantities $ \{ C, l, N^{s}, N^{d}, Y, \pi, w, \alert{t} \} $ such that:
     \begin{enumerate}
-        \item  taking $ \{ w, T, \pi \} $ as given, the consumer solves
+        \item  taking $ \{ w, \pi \} $ as given, the consumer solves
         %
         %
         %
         \begin{equation*}
             \max_{C, l, N^{s}} U( C, l )
             \quad \text{subject to} \quad
-            C = w\alert{( 1-t )}N^{s} + \pi - T
+            C = w\alert{( 1-t )}N^{s} + \pi
             \quad \text{and} \quad
             N^{s} + l = h
         \end{equation*}
@@ -300,19 +300,22 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
 
 \begin{frame}{Full Model Elaboration}
 \label{slide:Full_Model_Elaboration}
-    Let $ U( C, l ) = \ln C + \ln l $, and $ h = z = 1 $. Consumer has some non-labor income denoted as $ x > 0 $. FOC leads to
+    Let $ U( C, l ) = \ln C + \ln l $, and $ h = z = 1 $, by firm's problem we know $ w = z = 1 $.
+    Consumer has some non-labor income denoted as $ x > 0 $. FOC leads to
     %
     \begin{align*}
         MRS_{l, C}
             & = \frac{C}{l}
         \\
-            & = \frac{( 1-t )( 1-l ) + x}{l} = 1 - t = MRT_{l, C}
+            & = \frac{( 1-t )( 1-l ) + x}{l} = 1 - t < 1 = MRT_{l, C}
         \\
             & \Rightarrow ( 1-t )( 1-l ) + x = ( 1-t )l
         \\
-            & \Rightarrow l = \frac{x + 1 - t}{2( 1-t )}
+            & \Rightarrow 1-l + \frac{x}{1-t} = l \Rightarrow 2 l = 1 + \frac{x}{(1-t)}
         \\
-            & \red{ \Rightarrow N^{s} ( t ) = 1-l = \frac{1}{2} \left( 1 - \frac{x}{1-t} \right)}
+            & \Rightarrow l = \frac{1}{2} + \frac{x}{2(1-t)}
+        \\
+            & \red{ \Rightarrow N^{s} ( t ) = 1-l = \frac{1}{2} - \frac{x}{2(1-t)} }
     \end{align*}
     %
 \end{frame}
@@ -328,25 +331,20 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
     and thus government's problem is
     %
     \begin{equation*}
-       \max_{t} \frac{1}{2} t \left(
-        1 - \frac{x}{1-t}
-       \right)
+       \max_{t} \frac{1}{2}t - \frac{tx}{2(1-t)}
     .\end{equation*}
     %
     FOC leads to
     %
     \begin{align*}
-        ( 1 - \frac{x}{1-t} ) + t \frac{(-1)( -1 )( -x )}{( 1-t )^{t}}
-            & = 0
+        \frac{1}{2} - \frac{x(1-t) + tx}{2(1-t)^{2}}
+            & = 0 \Rightarrow \frac{1}{2} - \frac{x}{2(1-t)^{2}} = 0
         \\
-        \frac{1-t-x}{1-t}
-            & = \frac{tx}{(1-t)^{2}}
+        \frac{1}{2}
+            & = \frac{x}{2(1-t)^{2}} \Rightarrow 1 = \frac{x}{(1-t)^{2}}
         \\
-        ( 1-t )( 1-t-x )
-            &= tx
-        \\
-        t^{*}
-            &= 1 - \sqrt{x}
+        t
+            & = 1 - \sqrt{x}
     \end{align*}
     %
 \end{frame}

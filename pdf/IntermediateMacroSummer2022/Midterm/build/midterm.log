@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 16:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ProblemSet2.tex
-(./ProblemSet2.tex
+**midterm.tex
+(./midterm.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
@@ -473,54 +473,8 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box72
-) (build/ProblemSet2.aux
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:time_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-)
-\openout1 = `ProblemSet2.aux'.
+) (build/midterm.aux)
+\openout1 = `midterm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -572,32 +526,40 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
- (build/ProblemSet2.out) (build/ProblemSet2.out)
+ (build/midterm.out) (build/midterm.out)
 \@outlinefile=\write4
-\openout4 = `ProblemSet2.out'.
+\openout4 = `midterm.out'.
 
- [1
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 88.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/b/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 88.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (build/ProblemSet2.aux)
+Underfull \hbox (badness 4266) in paragraph at lines 87--92
+\OT1/ptm/m/n/14.4 The com-pet-i-tive equi-lib-rium given []$[]$[] is a set of al-lo-ca-tions
+ []
 
-LaTeX Warning: There were multiply-defined labels.
+[1
 
-Package rerunfilecheck Info: File `ProblemSet2.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (build/midterm.aux)
+Package rerunfilecheck Info: File `midterm.out' has not changed.
+(rerunfilecheck)             Checksum: 667F1C18B0CBC97820BAE00057CDB03C;196.
  ) 
 Here is how much of TeX's memory you used:
- 20476 strings out of 478238
- 381667 string characters out of 5850457
- 660859 words of memory out of 5000000
- 38324 multiletter control sequences out of 15000+600000
- 481964 words of font info for 50 fonts, out of 8000000 for 9000
+ 20449 strings out of 478238
+ 381294 string characters out of 5850457
+ 653365 words of memory out of 5000000
+ 38333 multiletter control sequences out of 15000+600000
+ 483337 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,15n,104p,531b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/ProblemSet2.pdf (5 pages, 99357 bytes).
+ 100i,8n,104p,527b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on build/midterm.pdf (1 page, 110325 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

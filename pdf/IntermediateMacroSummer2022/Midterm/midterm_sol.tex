@@ -1,0 +1,268 @@
+\documentclass[14pt]{extarticle}
+% \documentclass[14pt]{article}
+
+% \usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+% \addbibresource{$BIB} % bibtex location
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+% Formatting how multiple choices Questions are formated.
+% \settasks{counter-format={tsk[A].}}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% \setcounter{section}{}
+\centerline{\huge\bf ECON 4002.01 Midterm Exam}
+\smallskip
+\centerline{\LARGE Hui-Jun Chen}
+
+\medskip
+\showAns
+
+\section*{Instruction}
+\label{sec:Instruction}
+\addcontentsline{toc}{section}{Instruction}
+Please submit your answer on Carmen Quiz ``Midterm Exam''.
+All numerical answers are supposed to \red{\textbf{round to the second decimal point}},%
+\footnote{round to the second decimal points means that if the third decimal point is a number between $ 0 $ to $ 4 $, then just get rid of the third decimal point. On the other hand, if the third decimal point is a number between $ 5 $ to $ 9 $, then round the second decimal point up by adding $ 1 $ to the second decimal point number. For example, if the answer you get is $ 0.534 $, then round it to $ 0.53 $. Yet, if the answer is $ 0.535 $, then round it up to $ 0.54 $.}
+and all algebraic answers are
+\begin{itemize}
+    \item the power has to form with bracket, i.e., if want to write $ K^{a} $, then you should type \verb|K^{a}|
+\end{itemize}
+
+You \textbf{may} consult any note and textbook, but you \textbf{cannot} discuss with your classmate or any other person about the exam.
+
+There will be one T/F choice question that worth 2 points in the Carmen Quiz ``Midterm Exam''. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
+
+\begin{Exercise}
+
+\section*{Question 1}
+\label{sec:Question_1}
+\addcontentsline{toc}{section}{Question 1}
+Considering an one-period general equilibrium model similar to Example in Lecture 08, slide 11 and 12.
+Also the Experiment 2 from Lecture 07, slide 13 is also a good reference.
+However, in this model economy, there are two differences:
+\begin{enumerate}
+    \item firm rent capital from consumer, and consumers are \textbf{endowed} with $ 2 $ units of capital ($ K^{s} = 2 $).
+    \item consumer's utility function is $ U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d} $
+\end{enumerate}
+
+\Question The competitive equilibrium given $ \{ G, z,  $~\answer{$K^{s}$} $ \} $
+\Question is a set of allocations $\{ Y^{*},C^{*},l^{*},N^{s}, N^{d}, \pi^{*},T^{*}, $~\answer{$K^{d*}$} $ \} $
+\Question and prices $ \{ w^{*},$ \answer{$r^{*}$} $ \} $ such that
+
+1. Taken prices and $ \pi, T $ as given, the representative consumer solves
+
+\Question $ \displaystyle \max_{\text{~\answer{$C, l$}}} U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
+
+\Question subject to $ \displaystyle C \le w(h-l) + \text{~\answer{$r K^{s}$}} + \pi - T $
+
+2. Taken prices as given, the representative firm solves
+
+\Question $ \displaystyle \max_{ \text{~\answer{$K^{d}, N^{d}$}} }$
+
+\Question $z K^{a} N^{1-a} - w N^{d} - \text{~\answer{$r K^{d}$}}$
+
+3. Government collect taxes to balance budget:
+
+\Question  ~\answer{$T^{*} = G$}
+
+4. Labor market clear means that the equilibrium wage is $ w^{*} $ such that labor supply equals to labor demand:
+
+\Question ~\answer{$N^{s} = N^{d}$}
+
+5. Capital market clear means that the equilibrium rental rate is $ r^{*} $ such that capital supply equals to capital demand:
+
+\Question ~\answer{$K^{s} = K^{d}$}
+
+To solve this model economy, we reformulate the competitive equilibrium into the social planner's problem.
+
+First of all, in social planner's problem, all markets must clear, and thus $ N^{s} = N^{d} = N $, and $ K_{s} = K^{d} = K = 2 $.
+
+Through firm's FOC with respect to $ N $ and $ K $, we know $ w $ and $ r $ are
+
+\Question $ w = z K^{a} $~\answer{$(1-a) N^{-a}$}
+
+\Question $ r = z N^{1-a} $~\answer{$a K^{a-1}$}
+
+which we can use to retrieve wage and rental rate after solving the social planner's problem.
+
+The social planner problem is given by:
+
+
+
+\Question \label{U} Objective function is the consumer's utility:
+
+$ \displaystyle  \max_{ C, l, N, Y, \text{~\answer{ $ K $ } } } U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
+
+subject to
+
+a. Aggregate resource constraint
+
+\Question \label{R}$ C + G =  $~\answer{$ Y $}
+
+b. production constraint
+
+\Question \label{Y} $ Y =  $~\answer{$z K^{a}N^{1-a}$}
+
+c. labor constraint
+
+\Question \label{N} $ N =  $~\answer{$1 - l$}
+
+d. capital constraint
+
+\Question \label{K} $ K =  $~\answer{$2$}
+
+To solve the social planner's problem, we start with substituting the constraints into utility function:
+
+a. Substituting \ref{N} and \ref{K} into \ref{Y}, we get
+
+\Question \label{Ysub} $ Y =  $~\answer{$z 2^{a}(1-l)^{1-a}$}
+
+b. Substituting \ref{Ysub} into \ref{R}, we get
+
+\Question \label{Rsub}$ C =  $~\answer{$ z 2^{a}(1-l)^{1-a} - G $}
+
+c. Finally, substituting \ref{Rsub} into \ref{U}, we get
+
+\Question $ \displaystyle \max_{ \text{~\answer{$l$}} } $
+
+\Question $ \displaystyle U(C(l), l) =  $ ~\answer{$ \frac{(z 2^{a}(1-l)^{1-a} - G)^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$}
+
+Let $ z = 1, G = 0, a = \frac{1}{2}, b = 2, d = \frac{3}{2}$ and solve for all unknowns,
+
+\Question \label{l} $ l =  $ ~\answer{$0.72$}
+\Question \label{N} $ N =  $ ~\answer{$0.28$}
+\Question \label{w} $ w^{*} =  $ ~\answer{$2.67$}
+\Question \label{r} $ r^{*} =  $ ~\answer{$0.19$}
+
+The following is the calculation for the answer from \ref{l} to \ref{r}:
+
+~\answer{FOC results in $ l^{-d} = z^{-b} 2^{-ab} (1-l)^{-b+ab} (1-a)z(1-l)^{-a}$}
+
+~\answer{$l^{-d} = z^{1-b} 2^{-ab} (1-a) (1-l)^{-a-b+ab}$}
+
+~\answer{$l^{-\frac{3}{2}} = \frac{1}{4z} (1-l)^{-\frac{3}{2}}$}
+
+~\answer{$ \left( \frac{1-l}{l} \right)^{\frac{3}{2}} = \frac{1}{4z} = \frac{1}{4}$}
+
+~\answer{$ \left( \frac{1-l}{l} \right) = \left( \frac{1}{4} \right)^{\frac{2}{3}} \approx 0.3968 \Rightarrow 1-l = 0.3968l \Rightarrow l \approx 0.7158 \approx 0.72$}
+
+\section*{Question 2}
+\label{sec:Question_2}
+\addcontentsline{toc}{section}{Question 2}
+
+
+
+
+\end{Exercise}
+
+\listofanswer
+
+\end{document}
+

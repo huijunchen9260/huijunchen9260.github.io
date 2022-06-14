@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 23:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ProblemSet2.tex
-(./ProblemSet2.tex
+**midterm_sol.tex
+(./midterm_sol.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
@@ -256,7 +256,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
  (/usr/share/texmf-dist/tex/latex/vmargin/vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
@@ -465,93 +465,148 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
  (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count309
-))
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 56.
+)) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip61
+\cftbeforetoctitleskip=\skip62
+\cftaftertoctitleskip=\skip63
+\cftbeforepartskip=\skip64
+\cftpartnumwidth=\skip65
+\cftpartindent=\skip66
+\cftbeforesecskip=\skip67
+\cftsecindent=\skip68
+\cftsecnumwidth=\skip69
+\cftbeforesubsecskip=\skip70
+\cftsubsecindent=\skip71
+\cftsubsecnumwidth=\skip72
+\cftbeforesubsubsecskip=\skip73
+\cftsubsubsecindent=\skip74
+\cftsubsubsecnumwidth=\skip75
+\cftbeforeparaskip=\skip76
+\cftparaindent=\skip77
+\cftparanumwidth=\skip78
+\cftbeforesubparaskip=\skip79
+\cftsubparaindent=\skip80
+\cftsubparanumwidth=\skip81
+\cftbeforeloftitleskip=\skip82
+\cftafterloftitleskip=\skip83
+\cftbeforefigskip=\skip84
+\cftfigindent=\skip85
+\cftfignumwidth=\skip86
+\c@lofdepth=\count310
+\c@lotdepth=\count311
+\cftbeforelottitleskip=\skip87
+\cftafterlottitleskip=\skip88
+\cftbeforetabskip=\skip89
+\cfttabindent=\skip90
+\cfttabnumwidth=\skip91
+
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing out. on input line 1156.
+
+) (/usr/share/texmf-dist/tex/latex/exercise/exercise.sty
+Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
+\ExerciseSkipBefore=\skip92
+\ExerciseSkipAfter=\skip93
+\AnswerSkipBefore=\skip94
+\AnswerSkipAfter=\skip95
+\Exesep=\skip96
+\Exetopsep=\skip97
+\Exeparsep=\skip98
+\Exepartopsep=\skip99
+\Exeleftmargin=\skip100
+\Exerightmargin=\skip101
+\Exelabelwidth=\skip102
+\Exelabelsep=\skip103
+\ExerciseBefore=\skip104
+\QuestionBefore=\skip105
+\subQuestionBefore=\skip106
+\subsubQuestionBefore=\skip107
+\QuestionIndent=\skip108
+\subQuestionIndent=\skip109
+\subsubQuestionIndent=\skip110
+\c@Exercise=\count312
+\c@Answer=\count313
+\c@ExePart=\count314
+\c@Question=\count315
+\c@subQuestion=\count316
+\c@subsubQuestion=\count317
+\c@savedQuestion=\count318
+\c@savedsubQuestion=\count319
+\c@savedsubsubQuestion=\count320
+\@QuestionLevel=\count321
+\@Exercisebox=\box72
+\all@Exercisebox=\box73
+\temp@Exercisebox=\box74
+\all@Answerbox=\box75
+\temp@Answerbox=\box76
+\ExerciseDifficulty=\count322
+\QuestionDifficulty=\count323
+\subQuestionDifficulty=\count324
+\subsubQuestionDifficulty=\count325
+\ExePartDifficulty=\count326
+\@Answerbox=\box77
+\colonnesLevel=\count327
+\tempskipa=\skip111
+\tempskipb=\skip112
+\@savedmathindent=\skip113
+)
+\answerlength=\skip114
+\c@answer=\count328
+\cftbeforeanswerskip=\skip115
+\cftanswerindent=\skip116
+\cftanswernumwidth=\skip117
+\c@Answersdepth=\count329
+\cftbeforeAnswerstitleskip=\skip118
+\cftafterAnswerstitleskip=\skip119
+\c@prevQ=\count330
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 117.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box72
-) (build/ProblemSet2.aux
+\l__color_backend_stack_int=\count331
+\l__pdf_internal_box=\box78
+) (build/midterm_sol.aux
 
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:time_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
+LaTeX Warning: Label `N' multiply defined.
 
 )
-\openout1 = `ProblemSet2.aux'.
+\openout1 = `midterm_sol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
+\scratchcounter=\count332
 \scratchdimen=\dimen271
-\scratchbox=\box73
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\scratchbox=\box79
+\nofMPsegments=\count333
+\nofMParguments=\count334
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count314
+\MPscratchCnt=\count335
 \MPscratchDim=\dimen272
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks38
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -559,7 +614,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 117.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -567,37 +622,56 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
- (build/ProblemSet2.out) (build/ProblemSet2.out)
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
+ (build/midterm_sol.out) (build/midterm_sol.out)
 \@outlinefile=\write4
-\openout4 = `ProblemSet2.out'.
+\openout4 = `midterm_sol.out'.
 
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 135.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 135.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 143.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 155.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (build/ProblemSet2.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (build/midterm_sol.Answers [4])
+\tf@Answers=\write5
+\openout5 = `midterm_sol.Answers'.
+
+ [5] (build/midterm_sol.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `ProblemSet2.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `midterm_sol.out' has not changed.
+(rerunfilecheck)             Checksum: 2C8748949BA59465BD1B11262E16372E;293.
  ) 
 Here is how much of TeX's memory you used:
- 20476 strings out of 478238
- 381667 string characters out of 5850457
- 660859 words of memory out of 5000000
- 38324 multiletter control sequences out of 15000+600000
- 481964 words of font info for 50 fonts, out of 8000000 for 9000
+ 21416 strings out of 478238
+ 396205 string characters out of 5850457
+ 683633 words of memory out of 5000000
+ 39216 multiletter control sequences out of 15000+600000
+ 487927 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,15n,104p,531b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/ProblemSet2.pdf (5 pages, 99357 bytes).
+ 100i,11n,104p,531b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on build/midterm_sol.pdf (5 pages, 138696 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
