@@ -128,16 +128,33 @@
 \label{sec:Instruction}
 \addcontentsline{toc}{section}{Instruction}
 Please submit your answer on Carmen Quiz ``Midterm Exam''.
-All numerical answers are supposed to \red{\textbf{round to the second decimal point}},%
+
+All numerical answers are supposed to \red{\textbf{round to the second decimal point}}%
 \footnote{round to the second decimal points means that if the third decimal point is a number between $ 0 $ to $ 4 $, then just get rid of the third decimal point. On the other hand, if the third decimal point is a number between $ 5 $ to $ 9 $, then round the second decimal point up by adding $ 1 $ to the second decimal point number. For example, if the answer you get is $ 0.534 $, then round it to $ 0.53 $. Yet, if the answer is $ 0.535 $, then round it up to $ 0.54 $.}
-and all algebraic answers are
+unless otherwise noted.
+
+For all algebraic answers,
 \begin{itemize}
+    \item There should be no space in your answer in the blank
     \item the power has to form with bracket, i.e., if want to write $ K^{a} $, then you should type \verb|K^{a}|
+    \item if you want to express the equilibrium quantity (the star $ * $) in the power while there's already something there, let's say $ K^{d*} $, then you should type \verb|K^{d*}|
 \end{itemize}
 
 You \textbf{may} consult any note and textbook, but you \textbf{cannot} discuss with your classmate or any other person about the exam.
 
-There will be one T/F choice question that worth 2 points in the Carmen Quiz ``Midterm Exam''. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
+For numerical answer, you are \textbf{recommended} to use software to calculate answers.
+
+There will be one T/F choice question that is worth 2 points in the Carmen Quiz ``Midterm Exam''. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
+
+\section*{Grades}
+\label{sec:Grades}
+\addcontentsline{toc}{section}{Grades}
+
+Question \ref{CEdef} to \ref{pinumeric} are worth \textbf{2} points, and Question \ref{G} to \ref{Rmax} are worth \textbf{5} points.
+The total grade is \textbf{102} points.
+
+
+\newpage
 
 \begin{Exercise}
 
@@ -152,8 +169,10 @@ However, in this model economy, there are two differences:
     \item consumer's utility function is $ U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d} $
 \end{enumerate}
 
-\Question The competitive equilibrium given $ \{ G, z,  $~\answer{$K^{s}$} $ \} $
+\Question \label{CEdef} The competitive equilibrium given $ \{ G, z,  $~\answer{$K^{s}$} $ \} $
+
 \Question is a set of allocations $\{ Y^{*},C^{*},l^{*},N^{s}, N^{d}, \pi^{*},T^{*}, $~\answer{$K^{d*}$} $ \} $
+
 \Question and prices $ \{ w^{*},$ \answer{$r^{*}$} $ \} $ such that
 
 1. Taken prices and $ \pi, T $ as given, the representative consumer solves
@@ -253,12 +272,76 @@ The following is the calculation for the answer from \ref{l} to \ref{r}:
 
 ~\answer{$ \left( \frac{1-l}{l} \right) = \left( \frac{1}{4} \right)^{\frac{2}{3}} \approx 0.3968 \Rightarrow 1-l = 0.3968l \Rightarrow l \approx 0.7158 \approx 0.72$}
 
+\newpage
+
 \section*{Question 2}
 \label{sec:Question_2}
 \addcontentsline{toc}{section}{Question 2}
+Consider a model economy with distorting labor taxes similar to Lecture 11, but having two difference: \begin{enumerate} \item the production function is Cobb-Douglas requiring only labor input, i.e., $ Y = z N^{a} $, and \item consumer get ``disutility'' from working, and the utility function is given by $ U(C, N^{s}) = \ln C - bN $, where $ b $ is a parameter. \end{enumerate} Other than the two changes mentioned above, the definition of the general equilibrium is exactly the same as slide 5 in Lecture 11. Therefore, this question focus mainly on algebraic calculation.
 
+\Question The derivative of utility function with respect to consumption $ C $ is ~\answer{ $\frac{1}{C}$}
 
+\Question The derivative of utility function with respect to leisure $ l $ is ~\answer{ $b$}
 
+\Question \label{MRS} The marginal rate of substitution between leisure and consumption ($MRS_{l, C}$) is ~\answer{ $b C$}
+
+\Question \label{eq} According to the slide 6 and 9, Lecture 11, in equilibrium MRS is going to be equal to ~\answer{$ w (1-t) $}
+
+\Question \label{budget} According to the slide 5, Lecture 11, consumer's budget constraint is saying that $ C =  $ ~\answer{ $ w(1-t) $} $ N^{s} + \pi $
+
+\Question \label{wN} Different from slide 5, Lecture 11, now the production function is $ Y = z N^{a} $, and thus by solving the firm's problem, the equilibrium wage as a function of labor demand $ N $ must be $ w =  $ ~\answer{$a z N^{a-1}$}
+
+\Question \label{pi} Following \ref{wN}, firm's profit $ \pi = $ ~\answer{$(1-a) z N^{a}$}
+
+\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, substitute consumption from your answer in \ref{budget}, and imposing labor market clearing condition so that $ N^{s} = N $, we get the optimal condition is $ b ($~\answer{$(w (1-t) N) + \pi$} $) = w(1-t) $
+
+The following three blanks are corresponds to \ref{wpart1} to \ref{wpart2}.
+Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ into your answer in \ref{sol1}, we get
+
+    $ b(  $
+    \label{wpart1} $ \underbrace{ \textrm{~\answer{ $ azN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    $+$
+    \label{pipart} $ \underbrace{ \textrm{~\answer{$(1-a) z N^{a} $}} }_{\pi \textrm{ part}}$
+    $) =$
+    \label{wpart2} $ \underbrace{ \textrm{~\answer{ $ azN^{a-1} $}} }_{w \textrm{ part 2}}$
+    $  (1-t)  $
+
+    \Question \label{wpart1} $ \underbrace{ \textrm{~\answer{ $ azN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    \Question \label{pipart} $ \underbrace{ \textrm{~\answer{$(1-a) z N^{a} $}} }_{\pi \textrm{ part}}$
+    \Question \label{wpart2} $ \underbrace{ \textrm{~\answer{ $ azN^{a-1} $}} }_{w \textrm{ part 2}}$
+
+\Question \label{sol3} Solve for $ N $ as a function of $ t $, we get
+    $ N =  $ ~\answer{ $ \frac{a (1-t)}{b (a (1-t) + (1-a))} $ }
+
+    Some calculation details:
+
+    ~\answer{ $ b( azN^{a} (1-t) + (1-a) z N^{a} ) = azN^{a-1} (1-t) $ }
+
+    ~\answer{ $ \Rightarrow  bzN^{a}( a (1-t) + (1-a) ) = azN^{a-1} (1-t) $ }
+
+    ~\answer{ $ \Rightarrow  bN( a (1-t) + (1-a) ) = a(1-t) $ }
+
+    ~\answer{ $ \Rightarrow  N = \frac{a(1-t)}{b( a (1-t) + (1-a) ) }  $ }
+
+\Question Now let $ z = 1$, $a = 0.33 $, $ b = 2.15 $ and $ t = 0.5 $, the $ N $ you calculated in \ref{sol3} is ~\answer{$0.0919 \approx 0.09$}
+
+\Question after calculate the approximated value for $ N $ to the second decimal point, you can also calculate
+    $ w =  $ ~\answer{$1.66$}
+
+\Question \label{pinumeric} Same for $ \pi =  $ ~\answer{$0.30$}
+
+\Question \label{G} For the tax revenue generate by $ t = 0.5 $, how much government spending $ G $ can the government pay off?
+    \textbf{For this question, please round to the fourth decimal point}
+    $ G = R(t) = w t N = $ ~\answer{$ 0.0746999 \approx 0.0747 $}
+
+\Question According to Laffer curve, there's also another tax rate $ t_{2} $ such that it can also generate same amount of revenue to pay for the government spending you've calculated \ref{G}. What is $ t_{2} $? $ t_{2} \approx $~\answer{$ 0.9387 \approx 0.94 $}
+
+Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$,
+
+\Question the optimal tax rate $ t^{*} =  $ ~\answer{$0.76768 \approx 0.77$},
+
+\Question \label{Rmax} and the optimal labor tax revenue $ R(t^{*}) =  $ ~\answer{$0.09285 \approx 0.0929$}
+    (\textbf{For this question, please round to the fourth decimal point})
 
 \end{Exercise}
 

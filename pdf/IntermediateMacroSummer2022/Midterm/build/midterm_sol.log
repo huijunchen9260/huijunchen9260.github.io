@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  13 JUN 2022 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  15 JUN 2022 10:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -574,6 +574,15 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `N' multiply defined.
 
+
+LaTeX Warning: Label `wpart1' multiply defined.
+
+
+LaTeX Warning: Label `pipart' multiply defined.
+
+
+LaTeX Warning: Label `wpart2' multiply defined.
+
 )
 \openout1 = `midterm_sol.aux'.
 
@@ -631,47 +640,47 @@ LaTeX Info: Redefining \nameref on input line 117.
 \@outlinefile=\write4
 \openout4 = `midterm_sol.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 135.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 138.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 135.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 139.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 143.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 155.
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 160.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 172.
  (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (build/midterm_sol.Answers [4])
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+ [2] [3] [4] [5] [6] [7] (build/midterm_sol.Answers [8] [9])
 \tf@Answers=\write5
 \openout5 = `midterm_sol.Answers'.
 
- [5] (build/midterm_sol.aux)
+ [10] (build/midterm_sol.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `midterm_sol.out' has not changed.
-(rerunfilecheck)             Checksum: 2C8748949BA59465BD1B11262E16372E;293.
+(rerunfilecheck)             Checksum: 83BA53BDB8C2CB17054A72F04E3571DD;367.
  ) 
 Here is how much of TeX's memory you used:
- 21416 strings out of 478238
- 396205 string characters out of 5850457
- 683633 words of memory out of 5000000
- 39216 multiletter control sequences out of 15000+600000
+ 21487 strings out of 478238
+ 396847 string characters out of 5850457
+ 695176 words of memory out of 5000000
+ 39234 multiletter control sequences out of 15000+600000
  487927 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,11n,104p,531b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,17n,104p,630b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/midterm_sol.pdf (5 pages, 138696 bytes).
+Output written on build/midterm_sol.pdf (10 pages, 154756 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
