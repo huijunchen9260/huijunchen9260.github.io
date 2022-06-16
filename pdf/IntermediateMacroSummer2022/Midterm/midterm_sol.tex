@@ -124,7 +124,7 @@
 \medskip
 
 \showAns
-\listofanswer
+% \listofanswer
 
 \section*{Instruction}
 \label{sec:Instruction}
@@ -138,6 +138,9 @@ unless otherwise noted.
 For all algebraic answers,
 \begin{itemize}
     \item There should be no space in your answer in the blank
+    \item The multiplication cannot be ignored, i.e., $ bC $ should be written as \verb|b*C|.
+    \item Fraction should typed as \verb|()/()| unless it is only one stuff in the numerator or demoninator.
+            For example, $ \frac{1}{C} $ can be written as \verb|(1)/(C)| or \verb|1/C|, since both numerator and denominator only have one element, while $ \frac{2K}{N^{a}} $ shold be written as \verb|(2*K)/(N^{a})| to avoid confusion.
     \item the power has to form with bracket, i.e., if want to write $ K^{a} $, then you should type \verb|K^{a}|
     \item if you want to express the equilibrium quantity (the star $ * $) in the power while there's already something there, let's say $ K^{d*} $, then you should type \verb|K^{d*}|
 \end{itemize}
@@ -146,7 +149,7 @@ You \textbf{may} consult any note and textbook, but you \textbf{cannot} discuss 
 
 For numerical answer, you are \textbf{recommended} to use software to calculate answers.
 
-There will be one T/F choice question that is worth 2 points in the Carmen Quiz ``Midterm Exam''. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
+There will be one T/F choice question that is worth 2 points in the Carmen Quiz ``Midterm Exam'' as the last question. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
 
 \section*{Grades}
 \label{sec:Grades}
@@ -187,7 +190,7 @@ However, in this model economy, there are two differences:
 
 \Question $ \displaystyle \max_{ \text{~\answer{$K^{d}, N^{d}$}} }$
 
-\Question $z K^{a} N^{1-a} - w N^{d} - \text{~\answer{$r K^{d}$}}$
+\Question $z (K^{d})^{a} (N^{d})^{1-a} - w N^{d} - \text{~\answer{$r K^{d}$}}$
 
 3. Government collect taxes to balance budget:
 
@@ -203,11 +206,11 @@ However, in this model economy, there are two differences:
 
 To solve this model economy, we reformulate the competitive equilibrium into the social planner's problem.
 
-First of all, in social planner's problem, all markets must clear, and thus $ N^{s} = N^{d} = N $, and $ K_{s} = K^{d} = K = 2 $.
+First of all, in social planner's problem, all markets must clear, and thus $ N^{s} = N^{d} = N $, and $ K^{s} = K^{d} = K $ (also $ K = 2 $, but for question \ref{wagealgebra} to \ref{K}, still remain the symbol $ K $).
 
 Through firm's FOC with respect to $ N $ and $ K $, we know $ w $ and $ r $ are
 
-\Question $ w = z K^{a} $~\answer{$(1-a) N^{-a}$}
+\Question \label{wagealgebra}$ w = z K^{a} $~\answer{$(1-a) N^{-a}$}
 
 \Question $ r = z N^{1-a} $~\answer{$a K^{a-1}$}
 
@@ -229,7 +232,7 @@ a. Aggregate resource constraint
 
 b. production constraint
 
-\Question \label{Y} $ Y =  $~\answer{$z K^{a}N^{1-a}$}
+\Question \label{Y} $ Y =  z$~\answer{$K^{a}N^{1-a}$}
 
 c. labor constraint
 
@@ -243,26 +246,26 @@ To solve the social planner's problem, we start with substituting the constraint
 
 a. Substituting \ref{N} and \ref{K} into \ref{Y}, we get
 
-\Question \label{Ysub} $ Y =  $~\answer{$z 2^{a}(1-l)^{1-a}$}
+\Question \label{Ysub} $ Y = z $~\answer{$2^{a}(1-l)^{1-a}$}
 
 b. Substituting \ref{Ysub} into \ref{R}, we get
 
-\Question \label{Rsub}$ C =  $~\answer{$ z 2^{a}(1-l)^{1-a} - G $}
+\Question \label{Rsub}$ C = z  $~\answer{$ 2^{a}(1-l)^{1-a} - G $}
 
 c. Finally, substituting \ref{Rsub} into \ref{U}, we get
 
 \Question $ \displaystyle \max_{ \text{~\answer{$l$}} } $
 
-\Question $ \displaystyle U(C(l), l) =  $ ~\answer{$ \frac{(z 2^{a}(1-l)^{1-a} - G)^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$}
+\Question $ \displaystyle U(C(l), l) =  $ $ \frac{\textrm{~\answer{$(z 2^{a}(1-l)^{1-a} - G)$}}^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
 
 Let $ z = 1, G = 0, a = \frac{1}{2}, b = 2, d = \frac{3}{2}$ and solve for all unknowns,
 
-\Question \label{l} $ l =  $ ~\answer{$0.72$}
-\Question \label{N} $ N =  $ ~\answer{$0.28$}
-\Question \label{w} $ w^{*} =  $ ~\answer{$2.67$}
-\Question \label{r} $ r^{*} =  $ ~\answer{$0.19$}
+\Question \label{lnumeric} $ l =  $ ~\answer{$0.72$}
+\Question \label{Nnumeric} $ N =  $ ~\answer{$0.28$}
+\Question \label{wnumeric} $ w^{*} =  $ ~\answer{$2.67$}
+\Question \label{rnumeric} $ r^{*} =  $ ~\answer{$0.19$}
 
-The following is the calculation for the answer from \ref{l} to \ref{r}:
+The following is the calculation for the answer from \ref{lnumeric} to \ref{rnumeric}:
 
 ~\answer{FOC results in $ l^{-d} = z^{-b} 2^{-ab} (1-l)^{-b+ab} (1-a)z(1-l)^{-a}$}
 
@@ -287,33 +290,33 @@ Consider a model economy with distorting labor taxes similar to Lecture 11, but 
 
 \Question \label{MRS} The marginal rate of substitution between leisure and consumption ($MRS_{l, C}$) is ~\answer{ $b C$}
 
-\Question \label{eq} According to the slide 6 and 9, Lecture 11, in equilibrium MRS is going to be equal to ~\answer{$ w (1-t) $}
+\Question \label{eq} According to the slide 6 and 9, Lecture 11, in equilibrium MRS is going to be equal to the after-tax wage, i.e., ~\answer{$ w (1-t) $}
 
-\Question \label{budget} According to the slide 5, Lecture 11, consumer's budget constraint is saying that $ C =  $ ~\answer{ $ w(1-t) $} $ N^{s} + \pi $
+\Question \label{budget} According to the slide 5, Lecture 11, consumer's budget constraint is saying that $ C =  $ ~\answer{ $ w(1-t) $} $ N + \pi $
 
-\Question \label{wN} Different from slide 5, Lecture 11, now the production function is $ Y = z N^{a} $, and thus by solving the firm's problem, the equilibrium wage as a function of labor demand $ N $ must be $ w =  $ ~\answer{$a z N^{a-1}$}
+\Question \label{wN} Different from slide 5, Lecture 11, now the production function is $ Y = z N^{a} $, and thus by solving the firm's problem, the equilibrium wage as a function of labor demand $ N $ must be $ w = z $ ~\answer{$a N^{a-1}$}
 
-\Question \label{pi} Following \ref{wN}, firm's profit $ \pi = $ ~\answer{$(1-a) z N^{a}$}
+\Question \label{pi} Following \ref{wN}, firm's profit $ \pi = z $ ~\answer{$(1-a) N^{a}$}
 
-\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, substitute consumption from your answer in \ref{budget}, and imposing labor market clearing condition so that $ N^{s} = N $, we get the optimal condition is $ b ($~\answer{$(w (1-t) N) + \pi$} $) = w(1-t) $
+\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, substitute consumption from your answer in \ref{budget}, and imposing labor market clearing condition so that $ N^{s} = N $, we get the optimal condition is $ b ($~\answer{$(w (1-t) $}$N) + \pi ) = w(1-t) $
 
 The following three blanks are corresponds to \ref{wpart1} to \ref{wpart2}.
 Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ into your answer in \ref{sol1}, we get
 
     $ b(  $
-    \label{wpart1} $ \underbrace{ \textrm{~\answer{ $ azN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    \label{wpart1} $ \underbrace{ z \textrm{~\answer{ $ aN^{a} (1-t)$}} }_{w \textrm{ part}}$
     $+$
-    \label{pipart} $ \underbrace{ \textrm{~\answer{$(1-a) z N^{a} $}} }_{\pi \textrm{ part}}$
+    \label{pipart} $ \underbrace{ z \textrm{~\answer{$(1-a) N^{a} $}} }_{\pi \textrm{ part}}$
     $) =$
-    \label{wpart2} $ \underbrace{ \textrm{~\answer{ $ azN^{a-1} $}} }_{w \textrm{ part 2}}$
+    \label{wpart2} $ \underbrace{ z\textrm{~\answer{ $ aN^{a-1} $}} }_{w \textrm{ part 2}}$
     $  (1-t)  $
 
-    \Question \label{wpart1} $ \underbrace{ \textrm{~\answer{ $ azN^{a} (1-t)$}} }_{w \textrm{ part}}$
-    \Question \label{pipart} $ \underbrace{ \textrm{~\answer{$(1-a) z N^{a} $}} }_{\pi \textrm{ part}}$
-    \Question \label{wpart2} $ \underbrace{ \textrm{~\answer{ $ azN^{a-1} $}} }_{w \textrm{ part 2}}$
+    \Question \label{wpart1} $ z\underbrace{ \textrm{~\answer{ $ aN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    \Question \label{pipart} $ z\underbrace{ \textrm{~\answer{$(1-a) N^{a} $}} }_{\pi \textrm{ part}}$
+    \Question \label{wpart2} $ z\underbrace{ \textrm{~\answer{ $ aN^{a-1} $}} }_{w \textrm{ part 2}}$
 
 \Question \label{sol3} Solve for $ N $ as a function of $ t $, we get
-    $ N =  $ ~\answer{ $ \frac{a (1-t)}{b (a (1-t) + (1-a))} $ }
+    $ N =  $ $ \frac{a (1-t)}{b (\textrm{~\answer{ $a (1-t)$}}  + (1-a)) }$
 
     Some calculation details:
 

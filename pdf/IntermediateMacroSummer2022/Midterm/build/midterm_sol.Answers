@@ -12,45 +12,45 @@
 \contentsline {answer}{\numberline {12}$a K^{a-1}$}{5}{Item.18}%
 \contentsline {answer}{\numberline {} $ K $ }{5}{Item.19}%
 \contentsline {answer}{\numberline {14}$ Y $}{5}{Item.21}%
-\contentsline {answer}{\numberline {15}$z K^{a}N^{1-a}$}{6}{Item.22}%
+\contentsline {answer}{\numberline {15}$K^{a}N^{1-a}$}{6}{Item.22}%
 \contentsline {answer}{\numberline {16}$1 - l$}{6}{Item.23}%
 \contentsline {answer}{\numberline {17}$2$}{6}{Item.24}%
-\contentsline {answer}{\numberline {18}$z 2^{a}(1-l)^{1-a}$}{6}{Item.25}%
-\contentsline {answer}{\numberline {19}$ z 2^{a}(1-l)^{1-a} - G $}{6}{Item.26}%
+\contentsline {answer}{\numberline {18}$2^{a}(1-l)^{1-a}$}{6}{Item.25}%
+\contentsline {answer}{\numberline {19}$ 2^{a}(1-l)^{1-a} - G $}{6}{Item.26}%
 \contentsline {answer}{\numberline {}$l$}{6}{Item.27}%
-\contentsline {answer}{\numberline {21}$ \frac {(z 2^{a}(1-l)^{1-a} - G)^{1-b}}{1-b} + \frac {l^{1-d}}{1-d}$}{6}{Item.29}%
-\contentsline {answer}{\numberline {22}$0.72$}{6}{Item.30}%
-\contentsline {answer}{\numberline {23}$0.28$}{6}{Item.31}%
-\contentsline {answer}{\numberline {24}$2.67$}{6}{Item.32}%
-\contentsline {answer}{\numberline {25}$0.19$}{7}{Item.33}%
+\contentsline {answer}{\numberline {}$(z 2^{a}(1-l)^{1-a} - G)$}{6}{Item.29}%
+\contentsline {answer}{\numberline {22}$0.72$}{6}{Item.31}%
+\contentsline {answer}{\numberline {23}$0.28$}{6}{Item.32}%
+\contentsline {answer}{\numberline {24}$2.67$}{6}{Item.33}%
+\contentsline {answer}{\numberline {25}$0.19$}{7}{Item.34}%
 \contentsline {answer}{\numberline {}FOC results in $ l^{-d} = z^{-b} 2^{-ab} (1-l)^{-b+ab} (1-a)z(1-l)^{-a}$}{7}{answer.1.25.2}%
 \contentsline {answer}{\numberline {}$l^{-d} = z^{1-b} 2^{-ab} (1-a) (1-l)^{-a-b+ab}$}{7}{answer.1.25.3}%
 \contentsline {answer}{\numberline {}$l^{-\frac {3}{2}} = \frac {1}{4z} (1-l)^{-\frac {3}{2}}$}{7}{answer.1.25.4}%
 \contentsline {answer}{\numberline {}$ \left ( \frac {1-l}{l} \right )^{\frac {3}{2}} = \frac {1}{4z} = \frac {1}{4}$}{7}{answer.1.25.5}%
 \contentsline {answer}{\numberline {}$ \left ( \frac {1-l}{l} \right ) = \left ( \frac {1}{4} \right )^{\frac {2}{3}} \approx 0.3968 \Rightarrow 1-l = 0.3968l \Rightarrow l \approx 0.7158 \approx 0.72$}{7}{answer.1.25.6}%
-\contentsline {answer}{\numberline {26} $\frac {1}{C}$}{8}{Item.36}%
-\contentsline {answer}{\numberline {27} $b$}{8}{Item.37}%
-\contentsline {answer}{\numberline {28} $b C$}{8}{Item.38}%
-\contentsline {answer}{\numberline {29}$ w (1-t) $}{8}{Item.39}%
-\contentsline {answer}{\numberline {30} $ w(1-t) $}{8}{Item.40}%
-\contentsline {answer}{\numberline {31}$a z N^{a-1}$}{8}{Item.41}%
-\contentsline {answer}{\numberline {32}$(1-a) z N^{a}$}{8}{Item.42}%
-\contentsline {answer}{\numberline {33}$(w (1-t) N) + \pi $}{9}{Item.43}%
-\contentsline {answer}{\numberline {} $ azN^{a} (1-t)$}{9}{answer.1.33.2}%
-\contentsline {answer}{\numberline {}$(1-a) z N^{a} $}{9}{answer.1.33.3}%
-\contentsline {answer}{\numberline {} $ azN^{a-1} $}{9}{answer.1.33.4}%
-\contentsline {answer}{\numberline {34} $ azN^{a} (1-t)$}{9}{Item.44}%
-\contentsline {answer}{\numberline {35}$(1-a) z N^{a} $}{9}{Item.46}%
-\contentsline {answer}{\numberline {36} $ azN^{a-1} $}{9}{Item.48}%
-\contentsline {answer}{\numberline {37} $ \frac {a (1-t)}{b (a (1-t) + (1-a))} $ }{9}{Item.50}%
-\contentsline {answer}{\numberline {} $ b( azN^{a} (1-t) + (1-a) z N^{a} ) = azN^{a-1} (1-t) $ }{9}{answer.1.37.2}%
+\contentsline {answer}{\numberline {26} $\frac {1}{C}$}{8}{Item.37}%
+\contentsline {answer}{\numberline {27} $b$}{8}{Item.38}%
+\contentsline {answer}{\numberline {28} $b C$}{8}{Item.39}%
+\contentsline {answer}{\numberline {29}$ w (1-t) $}{8}{Item.40}%
+\contentsline {answer}{\numberline {30} $ w(1-t) $}{8}{Item.41}%
+\contentsline {answer}{\numberline {31}$a N^{a-1}$}{8}{Item.42}%
+\contentsline {answer}{\numberline {32}$(1-a) N^{a}$}{8}{Item.43}%
+\contentsline {answer}{\numberline {33}$(w (1-t) $}{9}{Item.44}%
+\contentsline {answer}{\numberline {} $ aN^{a} (1-t)$}{9}{answer.1.33.2}%
+\contentsline {answer}{\numberline {}$(1-a) N^{a} $}{9}{answer.1.33.3}%
+\contentsline {answer}{\numberline {} $ aN^{a-1} $}{9}{answer.1.33.4}%
+\contentsline {answer}{\numberline {34} $ aN^{a} (1-t)$}{9}{Item.45}%
+\contentsline {answer}{\numberline {35}$(1-a) N^{a} $}{9}{Item.47}%
+\contentsline {answer}{\numberline {36} $ aN^{a-1} $}{9}{Item.49}%
+\contentsline {answer}{\numberline {} $a (1-t)$}{9}{Item.51}%
+\contentsline {answer}{\numberline {} $ b( azN^{a} (1-t) + (1-a) z N^{a} ) = azN^{a-1} (1-t) $ }{9}{Item.52}%
 \contentsline {answer}{\numberline {} $ \Rightarrow bzN^{a}( a (1-t) + (1-a) ) = azN^{a-1} (1-t) $ }{9}{answer.1.37.3}%
 \contentsline {answer}{\numberline {} $ \Rightarrow bN( a (1-t) + (1-a) ) = a(1-t) $ }{9}{answer.1.37.4}%
 \contentsline {answer}{\numberline {} $ \Rightarrow N = \frac {a(1-t)}{b( a (1-t) + (1-a) ) } $ }{9}{answer.1.37.5}%
-\contentsline {answer}{\numberline {38}$0.0919 \approx 0.09$}{9}{Item.51}%
-\contentsline {answer}{\numberline {39}$1.66$}{10}{Item.52}%
-\contentsline {answer}{\numberline {40}$0.30$}{10}{Item.53}%
-\contentsline {answer}{\numberline {41}$ 0.0746999 \approx 0.0747 $}{10}{Item.54}%
-\contentsline {answer}{\numberline {42}$ 0.9387 \approx 0.94 $}{10}{Item.55}%
-\contentsline {answer}{\numberline {43}$0.76768 \approx 0.77$}{10}{Item.56}%
-\contentsline {answer}{\numberline {44}$0.09285 \approx 0.0929$}{10}{Item.57}%
+\contentsline {answer}{\numberline {38}$0.0919 \approx 0.09$}{9}{Item.53}%
+\contentsline {answer}{\numberline {39}$1.66$}{9}{Item.54}%
+\contentsline {answer}{\numberline {40}$0.30$}{10}{Item.55}%
+\contentsline {answer}{\numberline {41}$ 0.0746999 \approx 0.0747 $}{10}{Item.56}%
+\contentsline {answer}{\numberline {42}$ 0.9387 \approx 0.94 $}{10}{Item.57}%
+\contentsline {answer}{\numberline {43}$0.76768 \approx 0.77$}{10}{Item.58}%
+\contentsline {answer}{\numberline {44}$0.09285 \approx 0.0929$}{10}{Item.59}%
