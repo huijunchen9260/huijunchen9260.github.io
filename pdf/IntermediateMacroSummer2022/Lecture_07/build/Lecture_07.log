@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  31 MAY 2022 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  17 JUN 2022 13:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -757,7 +757,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 23.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 22.
  (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -803,7 +803,7 @@ Package caption Info: threeparttable package is loaded.
 \c@proposition=\count366
 \c@thm=\count367
 \c@corol=\count368
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 71.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 70.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -813,24 +813,24 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 ) (build/Lecture_07.aux)
 \openout1 = `Lecture_07.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -885,7 +885,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 70.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -895,9 +895,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (build/Lecture_07.out) (build/Lecture_07.out)
 \@outlinefile=\write5
 \openout5 = `Lecture_07.out'.
@@ -926,51 +926,51 @@ Package caption Info: End \AtBeginDocument code.
  (build/Lecture_07.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 73.
+(hyperref)                setting the option has no effect on input line 72.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 123.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 122.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 123.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 122.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 123.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 122.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 123.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 122.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 123.
+(Font)              <10.95> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 123.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 123.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123.
+(Font)              <6> on input line 122.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 123.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 122.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 123.
+(Font)              <10> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 123.
+(Font)              <7> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 123.
+(Font)              <5> on input line 122.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
@@ -997,7 +997,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [6
 
 ]
-Overfull \vbox (11.72165pt too high) detected at line 239
+Overfull \vbox (11.72165pt too high) detected at line 238
  []
 
 
@@ -1009,12 +1009,12 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/Figure4_14.jpg, id=115, 335.13441pt x 340.80264pt>
 File: ./figures/Figure4_14.jpg Graphic file (type jpg)
 <use ./figures/Figure4_14.jpg>
-Package pdftex.def Info: ./figures/Figure4_14.jpg  used on input line 259.
+Package pdftex.def Info: ./figures/Figure4_14.jpg  used on input line 258.
 (pdftex.def)             Requested size: 171.21765pt x 174.11385pt.
 <./figures/Figure4_15.jpg, id=116, 336.55147pt x 333.00882pt>
 File: ./figures/Figure4_15.jpg Graphic file (type jpg)
 <use ./figures/Figure4_15.jpg>
-Package pdftex.def Info: ./figures/Figure4_15.jpg  used on input line 259.
+Package pdftex.def Info: ./figures/Figure4_15.jpg  used on input line 258.
 (pdftex.def)             Requested size: 171.21765pt x 169.41557pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1025,12 +1025,12 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/Figure4_16.jpg, id=127, 335.84294pt x 349.305pt>
 File: ./figures/Figure4_16.jpg Graphic file (type jpg)
 <use ./figures/Figure4_16.jpg>
-Package pdftex.def Info: ./figures/Figure4_16.jpg  used on input line 278.
+Package pdftex.def Info: ./figures/Figure4_16.jpg  used on input line 277.
 (pdftex.def)             Requested size: 171.21765pt x 178.08455pt.
 <./figures/Figure4_17.jpg, id=128, 335.13441pt x 340.80264pt>
 File: ./figures/Figure4_17.jpg Graphic file (type jpg)
 <use ./figures/Figure4_17.jpg>
-Package pdftex.def Info: ./figures/Figure4_17.jpg  used on input line 278.
+Package pdftex.def Info: ./figures/Figure4_17.jpg  used on input line 277.
 (pdftex.def)             Requested size: 171.21765pt x 174.11385pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1041,7 +1041,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/Figure4_18.jpg, id=139, 469.755pt x 383.5128pt>
 File: ./figures/Figure4_18.jpg Graphic file (type jpg)
 <use ./figures/Figure4_18.jpg>
-Package pdftex.def Info: ./figures/Figure4_18.jpg  used on input line 303.
+Package pdftex.def Info: ./figures/Figure4_18.jpg  used on input line 302.
 (pdftex.def)             Requested size: 205.46327pt x 167.73961pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1079,14 +1079,14 @@ Package rerunfilecheck Info: File `Lecture_07.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  31872 strings out of 478238
- 644619 string characters out of 5850457
+ 644621 string characters out of 5850457
  889349 words of memory out of 5000000
  49384 multiletter control sequences out of 15000+600000
  548277 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,441b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,15n,122p,485b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_07.pdf (13 pages, 432488 bytes).
+Output written on build/Lecture_07.pdf (13 pages, 432328 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  219 compressed objects within 3 object streams

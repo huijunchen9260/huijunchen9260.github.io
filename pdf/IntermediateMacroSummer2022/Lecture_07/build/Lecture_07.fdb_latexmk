@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1654018291 "Lecture_07.tex" "build/Lecture_07.pdf" "Lecture_07" 1654018293
+["pdflatex"] 1655486667 "Lecture_07.tex" "build/Lecture_07.pdf" "Lecture_07" 1655486668
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1650183167 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1650183167 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1650183167 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -289,10 +289,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651938238 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651938218 2927656 3678e06fb8d0369686d8a5b3450f6fb9 ""
-  "Lecture_07.tex" 1654018287 14405 333c3ca8831d4cacd3034db4d2dcd9e9 ""
-  "build/Lecture_07.aux" 1654018292 6285 815a5c9a166f7f318c797c13e3447582 "pdflatex"
-  "build/Lecture_07.nav" 1654018292 1856 cef3e1218b65b30bbfb5b5620fd71e91 "pdflatex"
-  "build/Lecture_07.out" 1654018292 294 c470e2bb4a3f6a3018324ed7b7d953ba "pdflatex"
+  "Lecture_07.tex" 1654018304 14405 bb7ad0bf4f0834698a2416f3cfaa94b4 ""
+  "build/Lecture_07.aux" 1655486668 6285 815a5c9a166f7f318c797c13e3447582 "pdflatex"
+  "build/Lecture_07.nav" 1655486668 1856 cef3e1218b65b30bbfb5b5620fd71e91 "pdflatex"
+  "build/Lecture_07.out" 1655486668 294 c470e2bb4a3f6a3018324ed7b7d953ba "pdflatex"
   "figures/Figure4_14.jpg" 1651246718 17267 640ca45c7e193d9144b455f0ead108b7 ""
   "figures/Figure4_15.jpg" 1651246742 21074 587b47073c3cedf87557397017c8f124 ""
   "figures/Figure4_16.jpg" 1651246900 20997 1ea523137c09bb8983362373fd4c73c8 ""

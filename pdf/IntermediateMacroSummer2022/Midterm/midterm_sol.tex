@@ -123,7 +123,7 @@
 
 \medskip
 
-\showAns
+% \showAns
 % \listofanswer
 
 \section*{Instruction}
@@ -282,13 +282,13 @@ The following is the calculation for the answer from \ref{lnumeric} to \ref{rnum
 \section*{Question 2}
 \label{sec:Question_2}
 \addcontentsline{toc}{section}{Question 2}
-Consider a model economy with distorting labor taxes similar to Lecture 11, but having two difference: \begin{enumerate} \item the production function is Cobb-Douglas requiring only labor input, i.e., $ Y = z N^{a} $, and \item consumer get ``disutility'' from working, and the utility function is given by $ U(C, N^{s}) = \ln C - bN $, where $ b $ is a parameter. \end{enumerate} Other than the two changes mentioned above, the definition of the general equilibrium is exactly the same as slide 5 in Lecture 11. Therefore, this question focus mainly on algebraic calculation.
+Consider a model economy with distorting labor taxes similar to Lecture 11, but having two difference: \begin{enumerate} \item the production function is Cobb-Douglas requiring only labor input, i.e., $ Y = z N^{a} $, and \item consumer get ``disutility'' from working, and the utility function is given by $ U(C, N) = \ln C - bN $, where $ b $ is a parameter. \end{enumerate} Other than the two changes mentioned above, the definition of the general equilibrium is exactly the same as slide 5 in Lecture 11. Therefore, this question focus mainly on algebraic calculation.
 
 \Question The derivative of utility function with respect to consumption $ C $ is ~\answer{ $\frac{1}{C}$}
 
-\Question The derivative of utility function with respect to leisure $ l $ is ~\answer{ $b$}
+\Question The derivative of utility function with respect to labor $ N $ is ~\answer{ $-b$}
 
-\Question \label{MRS} The marginal rate of substitution between leisure and consumption ($MRS_{l, C}$) is ~\answer{ $b C$}
+\Question \label{MRS} The marginal rate of substitution between labor and consumption ($MRS_{N, C}$) is ~\answer{ $- b C$}
 
 \Question \label{eq} According to the slide 6 and 9, Lecture 11, in equilibrium MRS is going to be equal to the after-tax wage, i.e., ~\answer{$ w (1-t) $}
 
@@ -298,7 +298,11 @@ Consider a model economy with distorting labor taxes similar to Lecture 11, but 
 
 \Question \label{pi} Following \ref{wN}, firm's profit $ \pi = z $ ~\answer{$(1-a) N^{a}$}
 
-\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, substitute consumption from your answer in \ref{budget}, and imposing labor market clearing condition so that $ N^{s} = N $, we get the optimal condition is $ b ($~\answer{$(w (1-t) $}$N) + \pi ) = w(1-t) $
+The $MRS_{N, C}$ we calculated above is MRS between labor and consumption.
+The equilibrium condition that in the lecture 11 is according to the $ MRS_{l, C} $, the MRS between leisure and consumption.
+Recall that $ l = 1 - N $, and thus $ MRS_{l, C} = - MRS_{N, C}  $.
+
+\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, let $ MRS_{l, C} = - MRS_{N, C} $, and substitute consumption from your answer in \ref{budget}, we get the optimal condition is $ b ($~\answer{$(w (1-t) $}$N) + \pi ) = w(1-t) $
 
 The following three blanks are corresponds to \ref{wpart1} to \ref{wpart2}.
 Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ into your answer in \ref{sol1}, we get
