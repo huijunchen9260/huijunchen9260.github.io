@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  21 JUN 2022 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  23 JUN 2022 15:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -664,13 +664,13 @@ Package rerunfilecheck Info: File `midterm_sol.out' has not changed.
 Here is how much of TeX's memory you used:
  21480 strings out of 478238
  396731 string characters out of 5850457
- 696244 words of memory out of 5000000
+ 692244 words of memory out of 5000000
  39232 multiletter control sequences out of 15000+600000
  486301 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,17n,104p,626b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/midterm_sol.pdf (9 pages, 154739 bytes).
+Output written on build/midterm_sol.pdf (9 pages, 150361 bytes).
 PDF statistics:
  287 PDF objects out of 1000 (max. 8388607)
  249 compressed objects within 3 object streams
