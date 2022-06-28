@@ -35,9 +35,9 @@ program q2
         w = wage(a, z, N)
         G = gov(w, t, N)
         Gvec(indt) = G
-        if (dabs(G - Gtarget) < 0.0001) then
+        ! if (dabs(G - Gtarget) < 0.0001) then
             print '(2(a, f9.6))', 't = ', tvec(indt), ', Gval = ', G
-        endif
+        ! endif
     enddo
 
     print '(2(a, f9.5))', 'Gmax = ', maxval(Gvec), ', tmax = ', tvec(maxloc(Gvec))
