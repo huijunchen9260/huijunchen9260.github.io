@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656018964 "midterm_sol.tex" "build/midterm_sol.pdf" "midterm_sol" 1656018964
+["pdflatex"] 1656992349 "midterm_sol.tex" "build/midterm_sol.pdf" "midterm_sol" 1656992350
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1650183167 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -131,6 +131,9 @@
   "/usr/share/texmf-dist/tex/latex/hyperref/puenc.def" 1650183167 117004 ed1c2cc82bb9836e9d59549dd8c33098 ""
   "/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1650183167 22521 d2fceb764a442a2001d257ef11db7618 ""
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1650183167 31644 9b75b7ffdb38fbd7bb4502cd6b086a3c ""
+  "/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty" 1650183167 6107 e4124ef96db512db87780f95c2a6b136 ""
+  "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1650183167 6758 7d9d899cbbfc962fbc4bb93f4c69eec2 ""
+  "/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty" 1650183167 47954 630a20f4097c4a058a3cd46693f91d20 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1650183167 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1650183167 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/share/texmf-dist/tex/latex/ltablex/ltablex.sty" 1650181202 6021 43ef4b327cd0a38df15482bafd67d6df ""
@@ -153,6 +156,8 @@
   "/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd" 1650183167 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty" 1650183167 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1650183167 9715 b051d5b493d9fe5f4bc251462d039e5f ""
+  "/usr/share/texmf-dist/tex/latex/tasks/tasks.cfg" 1650181202 1243 e62c3e9ce7f03f5534afdad3c1b736a2 ""
+  "/usr/share/texmf-dist/tex/latex/tasks/tasks.sty" 1650181202 32338 f6746a6ded873058b5462467aca8daf4 ""
   "/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty" 1650181202 36103 3e78d14f0f4b1a30560fea5e04de805d ""
   "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1650183167 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "/usr/share/texmf-dist/tex/latex/tools/longtable.sty" 1650183167 12892 3ffe092fc7f5d1cb9866f1bcb071d0d6 ""
@@ -163,9 +168,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651938238 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651938218 2927656 3678e06fb8d0369686d8a5b3450f6fb9 ""
-  "build/midterm_sol.aux" 1656018964 10156 7d615c50c430e3eb7f785ca4491e2f71 "pdflatex"
-  "build/midterm_sol.out" 1656018964 367 83ba53bdb8c2cb17054a72f04e3571dd "pdflatex"
-  "midterm_sol.tex" 1656018962 15533 f4ba805928ba9fb72e0f686d9f37c464 ""
+  "build/midterm_sol.aux" 1656992349 10156 7d615c50c430e3eb7f785ca4491e2f71 "pdflatex"
+  "build/midterm_sol.out" 1656992349 367 83ba53bdb8c2cb17054a72f04e3571dd "pdflatex"
+  "midterm_sol.tex" 1656992347 15558 b4f1fad48f902648b4ac90942fa93d83 ""
   (generated)
   "build/midterm_sol.aux"
   "build/midterm_sol.log"
