@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-07-12T14:16:43Z</updated>
+<updated>2022-07-19T15:35:50Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -129,7 +129,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</id>
 <published>2022-04-23T14:27:53Z</published>
-<updated>2022-07-08T11:31:43Z</updated>
+<updated>2022-07-12T14:16:43Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Summer 2022</h1>
 
@@ -151,6 +151,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
   <a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
   to fix typo and computational errors.</li>
 <li>July 07, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a> and <a href="pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a> to fix typo and expression</li>
+<li>July 19, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a> to fix wrong figure legend and wrong expression.</li>
 </ul>
 
 
@@ -228,6 +229,8 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="https://osu.zoom.us/rec/share/RN-EQV4qTB8_6F3HmwHU6A5etK1U-8MMdXTqEHEphoI7eq5W58MijEYVO6wEPlqf.o_Zu9jiVJUQV5cKG">Midterm review and Lecture 14 Part 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/fy4x4hifWSTGtKSRT497pkKcvxZlEZCDDSPBDjWFdLSa6ynl40My7BbzDuPCI9CA.HnWrgpPiw5eXC24I">Lecture 14 Part 2 and Lecture 15 Part 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/aoRH6BqoZOQFD-PdHWQSpOtZ1lKAAd2wQFzavhtElqN6Tccejp_Pw9a5ejhy-91K.AoqiIivVJfLN1JGt">Lecture 15 Part 2 and Lecture 16 Part 1</a></li>
+<li><a href="https://osu.zoom.us/rec/share/Vn0vNTOUFvA22dQPPyVanTdLKkuN1z4NAgutl7OtMYxKY6qjnLDHgATtxvirqMwZ.wnWI6WWB67vRL9m-">Lecture 16 Part 2</a></li>
+<li><a href="https://osu.zoom.us/rec/share/Vr5RzKbBa4org7PNlIe5qMcigoLqNlQz9JHFavjYNnk94VKO73pXDJh7XppT7anJ.5NSESGYj8fR9xc2B">Lecture 17 Part 1</a></li>
 </ul>
 
 
