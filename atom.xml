@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-07-19T15:35:50Z</updated>
+<updated>2022-07-24T17:46:52Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/TikzNote.html"/>
 <id>https://huijunchen9260.github.io/TikzNote.html</id>
 <published>2022-04-27T12:47:01Z</published>
-<updated>2022-05-08T15:44:13Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Note on Tikz</h1>
 
@@ -129,7 +129,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</id>
 <published>2022-04-23T14:27:53Z</published>
-<updated>2022-07-12T14:16:43Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Summer 2022</h1>
 
@@ -205,6 +205,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet2/Final/ProblemSet2.pdf">Problem Set 2</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 
 
@@ -241,7 +242,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/X220TDiassembly.html"/>
 <id>https://huijunchen9260.github.io/X220TDiassembly.html</id>
 <published>2022-04-21T23:15:43Z</published>
-<updated>2022-04-21T23:28:07Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>X220 Tablet Disassembly</h1>
 
@@ -302,7 +303,7 @@ We need to unscrew to take out the wifi card.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
 <id>https://huijunchen9260.github.io/LTVHousingPrice.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2022-04-20T15:26:38Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 
@@ -325,7 +326,7 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2022-04-20T15:10:29Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Debt Financing, Used Capital Market and Capital Reallocation</h1>
 
@@ -348,7 +349,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
 <published>2021-12-30T20:19:06Z</published>
-<updated>2022-05-10T09:46:17Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Spring 2022</h1>
 
@@ -590,7 +591,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/WebsiteCreation.html"/>
 <id>https://huijunchen9260.github.io/WebsiteCreation.html</id>
 <published>2021-12-01T00:20:19Z</published>
-<updated>2022-02-10T08:44:46Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>How do I create this website</h1>
 
@@ -743,7 +744,7 @@ blog/teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates/,$
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/TaxUncertainty.html"/>
 <id>https://huijunchen9260.github.io/TaxUncertainty.html</id>
 <published>2021-11-29T00:56:38Z</published>
-<updated>2021-11-29T00:56:38Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Uncertain Taxation, Government Transfer, and Household Inequality</h1>
 
@@ -770,7 +771,7 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/CSE5523Notes.html"/>
 <id>https://huijunchen9260.github.io/CSE5523Notes.html</id>
 <published>2021-11-28T09:15:05Z</published>
-<updated>2022-04-20T15:52:40Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Machine Learning, Autumn 2021</h1>
 
@@ -798,7 +799,7 @@ My result shows that
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSummer2021.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</id>
 <published>2021-11-28T00:32:14Z</published>
-<updated>2021-12-01T00:20:19Z</updated>
+<updated>2022-07-24T17:34:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Principle of Macroeconomics, Summer 2021</h1>
 
