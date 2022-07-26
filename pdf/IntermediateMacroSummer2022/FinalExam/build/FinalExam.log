@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  24 JUL 2022 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  26 JUL 2022 08:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -689,6 +689,12 @@ LaTeX Info: Redefining \nameref on input line 121.
 \@outlinefile=\write4
 \openout4 = `FinalExam.out'.
 
+ (build/FinalExam.Answers [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@Answers=\write5
+\openout5 = `FinalExam.Answers'.
+
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 134.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 164.
  (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -765,25 +771,23 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] (build/FinalExam.aux)
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] (build/FinalExam.aux)
 Package rerunfilecheck Info: File `FinalExam.out' has not changed.
 (rerunfilecheck)             Checksum: 49E7559E103F3588931D1FF521418A13;291.
  ) 
 Here is how much of TeX's memory you used:
- 23710 strings out of 478238
- 453025 string characters out of 5850457
- 951909 words of memory out of 5000000
- 41306 multiletter control sequences out of 15000+600000
- 489702 words of font info for 65 fonts, out of 8000000 for 9000
+ 23720 strings out of 478238
+ 453181 string characters out of 5850457
+ 949869 words of memory out of 5000000
+ 41311 multiletter control sequences out of 15000+600000
+ 491847 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,30n,412p,529b,1473s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/FinalExam.pdf (13 pages, 217395 bytes).
+Output written on build/FinalExam.pdf (14 pages, 219527 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 231 named destinations out of 1000 (max. 500000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 232 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
