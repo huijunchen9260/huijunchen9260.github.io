@@ -909,10 +909,10 @@ INPUT build/syllabus.out
 INPUT build/syllabus.out
 INPUT build/syllabus.out
 INPUT build/syllabus.out
+OUTPUT build/syllabus.pdf
 INPUT build/syllabus.out
 INPUT build/syllabus.out
 OUTPUT build/syllabus.out
-OUTPUT build/syllabus.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
