@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-09T16:29:09Z</updated>
+<updated>2022-08-09T16:33:44Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-08-09T16:27:33Z</updated>
+<updated>2022-08-09T16:29:10Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
@@ -64,121 +64,139 @@
 
 <table>
 <thead>
-<tr>
-<th> Wk </th>
-<th> Days      </th>
-<th> Quizzes and Deadlines                                           </th>
-<th> Topics and Readings</th>
+<tr class="header">
+<th style="text-align: left;">Wk</th>
+<th style="text-align: left;">Days</th>
+<th style="text-align: left;">Quizzes and Deadlines</th>
+<th style="text-align: left;">Topics and Readings</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td> 1  </td>
-<td> 08/24     </td>
-<td> Essence of Calculus Ch.1 Syllabus Deadline: 08/28 11:59pm       </td>
-<td> Topic: Introduction</td>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">08/24</td>
+<td style="text-align: left;">Essence of Calculus Ch.1 Syllabus
+Deadline: 08/28 11:59pm</td>
+<td style="text-align: left;">Topic: Introduction</td>
 </tr>
-<tr>
-<td> 2  </td>
-<td> 08/29 /31 </td>
-<td> Essence of Calculus Ch.2 Deadline: 09/04 11:59pm                </td>
-<td> Topic: Measurement I Topic: Measurement II</td>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">08/29 /31</td>
+<td style="text-align: left;">Essence of Calculus Ch.2 Deadline: 09/04
+11:59pm</td>
+<td style="text-align: left;">Topic: Measurement I Topic: Measurement
+II</td>
 </tr>
-<tr>
-<td> 3  </td>
-<td> 09/05 /07 </td>
-<td> Essence of Calculus Ch.3 Problem Set 1 Deadline: 09/11 11:59pm  </td>
-<td> Topic: Consumer Preference I Topic: Consumer Preference II</td>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">09/05 /07</td>
+<td style="text-align: left;">Essence of Calculus Ch.3 Problem Set 1
+Deadline: 09/11 11:59pm</td>
+<td style="text-align: left;">Topic: Consumer Preference I Topic:
+Consumer Preference II</td>
 </tr>
-<tr>
-<td> 4  </td>
-<td> 09/12 /14 </td>
-<td> Essence of Calculus Ch.4 Deadline: 09/18 11:59pm                </td>
-<td> Topic: Examples Topic: Firms</td>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">09/12 /14</td>
+<td style="text-align: left;">Essence of Calculus Ch.4 Deadline: 09/18
+11:59pm</td>
+<td style="text-align: left;">Topic: Examples Topic: Firms</td>
 </tr>
-<tr>
-<td> 5  </td>
-<td> 09/19 /21 </td>
-<td> Essence of Calculus Ch.5 Deadline: 09/25 11:59pm                </td>
-<td> Topic: Competitive Equilibrium Topic: Social Planer&rsquo;s Problem</td>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">09/19 /21</td>
+<td style="text-align: left;">Essence of Calculus Ch.5 Deadline: 09/25
+11:59pm</td>
+<td style="text-align: left;">Topic: Competitive Equilibrium Topic:
+Social Planer’s Problem</td>
 </tr>
-<tr>
-<td> 6  </td>
-<td> 09/26 /28 </td>
-<td> Essence of Calculus Ch.6 Problem Set 2 Deadline: 10/02 11:59pm  </td>
-<td> Topic: Examples Topic: Distorting Taxes</td>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">09/26 /28</td>
+<td style="text-align: left;">Essence of Calculus Ch.6 Problem Set 2
+Deadline: 10/02 11:59pm</td>
+<td style="text-align: left;">Topic: Examples Topic: Distorting
+Taxes</td>
 </tr>
-<tr>
-<td> 7  </td>
-<td> 10/03 /05 </td>
-<td> None                                                            </td>
-<td> TBA</td>
+<tr class="odd">
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">10/03 /05</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">TBA</td>
 </tr>
-<tr>
-<td> 8  </td>
-<td> 10/10     </td>
-<td> None                                                            </td>
-<td> Midterm Review</td>
+<tr class="even">
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">10/10</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Midterm Review</td>
 </tr>
-<tr>
-<td> 8  </td>
-<td> 10/12     </td>
-<td> None                                                            </td>
-<td> Midterm</td>
+<tr class="odd">
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">10/12</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Midterm</td>
 </tr>
-<tr>
-<td> 9  </td>
-<td> 10/17 /19 </td>
-<td> Essence of Calculus Ch.7 Deadline: 10/23 11:59pm                </td>
-<td> Topic: Two Period Consumer Problem Topic: Two Period Equilibrium</td>
+<tr class="even">
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">10/17 /19</td>
+<td style="text-align: left;">Essence of Calculus Ch.7 Deadline: 10/23
+11:59pm</td>
+<td style="text-align: left;">Topic: Two Period Consumer Problem Topic:
+Two Period Equilibrium</td>
 </tr>
-<tr>
-<td> 10 </td>
-<td> 10/24 /26 </td>
-<td> Essence of Calculus Ch.8 Deadline: 07/10 11:59pm                </td>
-<td> Topic: RBC Model Part 1: Consumer Topic: RBC Model Part 2: Firm</td>
+<tr class="odd">
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">10/24 /26</td>
+<td style="text-align: left;">Essence of Calculus Ch.8 Deadline: 07/10
+11:59pm</td>
+<td style="text-align: left;">Topic: RBC Model Part 1: Consumer Topic:
+RBC Model Part 2: Firm</td>
 </tr>
-<tr>
-<td> 11 </td>
-<td> 10/31 /02 </td>
-<td> Essence of Calculus Ch.9 Problem Set 3 Deadline: 11/06 11:59pm  </td>
-<td> Topic: RBC Model Part 3: Competitive Equilibrium</td>
+<tr class="even">
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">10/31 /02</td>
+<td style="text-align: left;">Essence of Calculus Ch.9 Problem Set 3
+Deadline: 11/06 11:59pm</td>
+<td style="text-align: left;">Topic: RBC Model Part 3: Competitive
+Equilibrium</td>
 </tr>
-<tr>
-<td> 12 </td>
-<td> 11/07 /09 </td>
-<td> Essence of Calculus Ch.10 Deadline: 11/13 11:59pm               </td>
-<td> Topic: RBC Model Part 4: Examples</td>
+<tr class="odd">
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">11/07 /09</td>
+<td style="text-align: left;">Essence of Calculus Ch.10 Deadline: 11/13
+11:59pm</td>
+<td style="text-align: left;">Topic: RBC Model Part 4: Examples</td>
 </tr>
-<tr>
-<td> 13 </td>
-<td> 11/14 /16 </td>
-<td> Essence of Calculus Ch.11 Problem Set 4 Deadline: 11/21 11:59pm </td>
-<td> Topic: RBC Model Part 5: Applications</td>
+<tr class="even">
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">11/14 /16</td>
+<td style="text-align: left;">Essence of Calculus Ch.11 Problem Set 4
+Deadline: 11/21 11:59pm</td>
+<td style="text-align: left;">Topic: RBC Model Part 5: Applications</td>
 </tr>
-<tr>
-<td> 14 </td>
-<td> 11/21     </td>
-<td> None                                                            </td>
-<td> TBA</td>
+<tr class="odd">
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">11/21</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">TBA</td>
 </tr>
-<tr>
-<td> 15 </td>
-<td> 11/28 /30 </td>
-<td> None                                                            </td>
-<td> TBA</td>
+<tr class="even">
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">11/28 /30</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">TBA</td>
 </tr>
-<tr>
-<td> 16 </td>
-<td> 12/05 /07 </td>
-<td> None                                                            </td>
-<td> TBA</td>
+<tr class="odd">
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">12/05 /07</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">TBA</td>
 </tr>
-<tr>
-<td> 17 </td>
-<td> 12/12     </td>
-<td> None                                                            </td>
-<td> Final Exam</td>
+<tr class="even">
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">12/12</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Final Exam</td>
 </tr>
 </tbody>
 </table>
