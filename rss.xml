@@ -58,28 +58,127 @@
 
 <h2>Course Schedule</h2>
 
-<p>  Wk   Days        Quizzes and Deadlines                                             Topics and Readings</p>
+<table>
+<thead>
+<tr>
+<th> Wk </th>
+<th> Days      </th>
+<th> Quizzes and Deadlines                                           </th>
+<th> Topics and Readings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 1  </td>
+<td> 08/24     </td>
+<td> Essence of Calculus Ch.1 Syllabus Deadline: 08/28 11:59pm       </td>
+<td> Topic: Introduction</td>
+</tr>
+<tr>
+<td> 2  </td>
+<td> 08/29 /31 </td>
+<td> Essence of Calculus Ch.2 Deadline: 09/04 11:59pm                </td>
+<td> Topic: Measurement I Topic: Measurement II</td>
+</tr>
+<tr>
+<td> 3  </td>
+<td> 09/05 /07 </td>
+<td> Essence of Calculus Ch.3 Problem Set 1 Deadline: 09/11 11:59pm  </td>
+<td> Topic: Consumer Preference I Topic: Consumer Preference II</td>
+</tr>
+<tr>
+<td> 4  </td>
+<td> 09/12 /14 </td>
+<td> Essence of Calculus Ch.4 Deadline: 09/18 11:59pm                </td>
+<td> Topic: Examples Topic: Firms</td>
+</tr>
+<tr>
+<td> 5  </td>
+<td> 09/19 /21 </td>
+<td> Essence of Calculus Ch.5 Deadline: 09/25 11:59pm                </td>
+<td> Topic: Competitive Equilibrium Topic: Social Planer&rsquo;s Problem</td>
+</tr>
+<tr>
+<td> 6  </td>
+<td> 09/26 /28 </td>
+<td> Essence of Calculus Ch.6 Problem Set 2 Deadline: 10/02 11:59pm  </td>
+<td> Topic: Examples Topic: Distorting Taxes</td>
+</tr>
+<tr>
+<td> 7  </td>
+<td> 10/03 /05 </td>
+<td> None                                                            </td>
+<td> TBA</td>
+</tr>
+<tr>
+<td> 8  </td>
+<td> 10/10     </td>
+<td> None                                                            </td>
+<td> Midterm Review</td>
+</tr>
+<tr>
+<td> 8  </td>
+<td> 10/12     </td>
+<td> None                                                            </td>
+<td> Midterm</td>
+</tr>
+<tr>
+<td> 9  </td>
+<td> 10/17 /19 </td>
+<td> Essence of Calculus Ch.7 Deadline: 10/23 11:59pm                </td>
+<td> Topic: Two Period Consumer Problem Topic: Two Period Equilibrium</td>
+</tr>
+<tr>
+<td> 10 </td>
+<td> 10/24 /26 </td>
+<td> Essence of Calculus Ch.8 Deadline: 07/10 11:59pm                </td>
+<td> Topic: RBC Model Part 1: Consumer Topic: RBC Model Part 2: Firm</td>
+</tr>
+<tr>
+<td> 11 </td>
+<td> 10/31 /02 </td>
+<td> Essence of Calculus Ch.9 Problem Set 3 Deadline: 11/06 11:59pm  </td>
+<td> Topic: RBC Model Part 3: Competitive Equilibrium</td>
+</tr>
+<tr>
+<td> 12 </td>
+<td> 11/07 /09 </td>
+<td> Essence of Calculus Ch.10 Deadline: 11/13 11:59pm               </td>
+<td> Topic: RBC Model Part 4: Examples</td>
+</tr>
+<tr>
+<td> 13 </td>
+<td> 11/14 /16 </td>
+<td> Essence of Calculus Ch.11 Problem Set 4 Deadline: 11/21 11:59pm </td>
+<td> Topic: RBC Model Part 5: Applications</td>
+</tr>
+<tr>
+<td> 14 </td>
+<td> 11/21     </td>
+<td> None                                                            </td>
+<td> TBA</td>
+</tr>
+<tr>
+<td> 15 </td>
+<td> 11/28 /30 </td>
+<td> None                                                            </td>
+<td> TBA</td>
+</tr>
+<tr>
+<td> 16 </td>
+<td> 12/05 /07 </td>
+<td> None                                                            </td>
+<td> TBA</td>
+</tr>
+<tr>
+<td> 17 </td>
+<td> 12/12     </td>
+<td> None                                                            </td>
+<td> Final Exam</td>
+</tr>
+</tbody>
+</table>
 
-<hr />
-
-<p>  1    08/24       Essence of Calculus Ch.1 Syllabus Deadline: 08/28 11:59pm         Topic: Introduction
-  2    08/29 /31   Essence of Calculus Ch.2 Deadline: 09/04 11:59pm                  Topic: Measurement I Topic: Measurement II
-  3    09/05 /07   Essence of Calculus Ch.3 Problem Set 1 Deadline: 09/11 11:59pm    Topic: Consumer Preference I Topic: Consumer Preference II
-  4    09/12 /14   Essence of Calculus Ch.4 Deadline: 09/18 11:59pm                  Topic: Examples Topic: Firms
-  5    09/19 /21   Essence of Calculus Ch.5 Deadline: 09/25 11:59pm                  Topic: Competitive Equilibrium Topic: Social Planer&rsquo;s Problem
-  6    09/26 /28   Essence of Calculus Ch.6 Problem Set 2 Deadline: 10/02 11:59pm    Topic: Examples Topic: Distorting Taxes
-  7    10/03 /05   None                                                              TBA
-  8    10/10       None                                                              Midterm Review
-  8    10/12       None                                                              Midterm
-  9    10/17 /19   Essence of Calculus Ch.7 Deadline: 10/23 11:59pm                  Topic: Two Period Consumer Problem Topic: Two Period Equilibrium
-  10   10/24 /26   Essence of Calculus Ch.8 Deadline: 07/10 11:59pm                  Topic: RBC Model Part 1: Consumer Topic: RBC Model Part 2: Firm
-  11   10/31 /02   Essence of Calculus Ch.9 Problem Set 3 Deadline: 11/06 11:59pm    Topic: RBC Model Part 3: Competitive Equilibrium
-  12   11/07 /09   Essence of Calculus Ch.10 Deadline: 11/13 11:59pm                 Topic: RBC Model Part 4: Examples
-  13   11/14 /16   Essence of Calculus Ch.11 Problem Set 4 Deadline: 11/21 11:59pm   Topic: RBC Model Part 5: Applications
-  14   11/21       None                                                              TBA
-  15   11/28 /30   None                                                              TBA
-  16   12/05 /07   None                                                              TBA
-  17   12/12       None                                                              Final Exam</p>
 
 <h2>Lecture Notes</h2>
 
