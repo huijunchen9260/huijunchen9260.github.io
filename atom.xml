@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-09T12:54:07Z</updated>
+<updated>2022-08-09T15:42:42Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -20,6 +20,44 @@
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
 
 <!-- ## Announcement -->
+
+
+<h2>Grade</h2>
+
+<table>
+<thead>
+<tr>
+<th> Categories                      </th>
+<th> Points     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Problem sets on course material </td>
+<td> 20 points  </td>
+</tr>
+<tr>
+<td> Qizzes on Calculus videos       </td>
+<td> 20 points  </td>
+</tr>
+<tr>
+<td> Midterm Exam                    </td>
+<td> 25 points  </td>
+</tr>
+<tr>
+<td> Final Exam                      </td>
+<td> 25 points  </td>
+</tr>
+<tr>
+<td> Attendance                      </td>
+<td> 10 points  </td>
+</tr>
+<tr>
+<td> Total                           </td>
+<td> 100 points </td>
+</tr>
+</tbody>
+</table>
 
 
 <h2>Lecture Notes</h2>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  9 AUG 2022 10:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  9 AUG 2022 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -757,7 +757,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 90.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 85.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
@@ -765,7 +765,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \q=\skip81
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 106--125
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 101--120
 []
  []
 
@@ -775,18 +775,31 @@ Overfull \hbox (1.19997pt too wide) in paragraph at lines 106--125
 \rr=\skip84
 \pp=\skip85
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 191--191
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 188--188
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 189--393
+./syllabus.tex:278: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278         \newline
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 186--424
 [] 
  []
 
 [3] [4] [5]
 
-LaTeX Warning: Empty bibliography on input line 493.
+LaTeX Warning: Empty bibliography on input line 524.
 
 [6] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
@@ -796,18 +809,18 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27029 strings out of 478238
- 514146 string characters out of 5850457
- 1198469 words of memory out of 5000000
- 44831 multiletter control sequences out of 15000+600000
- 488003 words of font info for 62 fonts, out of 8000000 for 9000
+ 27034 strings out of 478238
+ 514204 string characters out of 5850457
+ 1200469 words of memory out of 5000000
+ 44835 multiletter control sequences out of 15000+600000
+ 489748 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (6 pages, 78033 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/syllabus.pdf (6 pages, 104469 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  27 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
