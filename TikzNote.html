@@ -9,22 +9,22 @@
     </head>
 <body>
 <main>
-<h1>Note on Tikz</h1>
+<h1 id="note-on-tikz">Note on Tikz</h1>
 
-<h2>Create a &ldquo;bezier curve&rdquo;</h2>
+<h2 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h2>
 
-<pre><code class="tex">\draw (0, 0) to[bend right=40] (5, 5);
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
 </code></pre>
 
 <p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
 
 <p><code>bend right=40</code> means the degree of bending.</p>
 
-<h2>Define points on arbitrary curve</h2>
+<h2 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h2>
 
-<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
 
-<pre><code class="tex">\draw (0, 0) to[bend right=40]
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
     (5, 5);
 </code></pre>
@@ -32,11 +32,11 @@
 <p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
 This <code>node</code> is defined as <code>a</code>.</p>
 
-<h2>Get x and y coordinate of arbitrary point</h2>
+<h2 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h2>
 
 <p>Let the arbitrary be <code>a</code>.</p>
 
-<pre><code class="tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
+<pre><code class="language-tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
 \coordinate (a_x) at (\xcoord, 0);
 \coordinate (a_y) at (0, \ycoord);
 </code></pre>
@@ -47,44 +47,44 @@ This <code>node</code> is defined as <code>a</code>.</p>
 
 <p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
 
-<h2>Draw &ldquo;tangent line&rdquo; on curve</h2>
+<h2 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h2>
 
-<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
 
-<pre><code class="tex">\draw (0, 0) to[bend right=40]
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
     node[pos=0.51] (b) {}
     (5, 5);
-\draw[shorten &gt;=-1cm, shorten &lt;=-1cm, thick, red] (a) -- (b);
+\draw[shorten &#62;=-1cm, shorten &#60;=-1cm, thick, red] (a) -- (b);
 </code></pre>
 
 <p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
 
-<p>Notice that I didn&rsquo;t draw the inner point at point <code>b</code>.</p>
+<p>Notice that I didn&#8217;t draw the inner point at point <code>b</code>.</p>
 
 <p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
 
-<h2>Decoration: brace</h2>
+<h2 id="decoration-brace">Decoration: brace</h2>
 
 <p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
 
-<pre><code class="tex">%%% brace on up/right
+<pre><code class="language-tex">%%% brace on up&#47;right
 \draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
-%%% brace on down/left (mirror)
+%%% brace on down&#47;left (mirror)
 \draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
 </code></pre>
 
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
 
-<h2>Intersection between two curves</h2>
+<h2 id="intersection-between-two-curves">Intersection between two curves</h2>
 
 <p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
 
 <p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
 
-<pre><code class="tex">\documentclass[tikz, margin = 1mm]{standalone}
+<pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
 \usetikzlibrary{intersections}
 \begin{document}
 \begin{tikzpicture}
@@ -101,17 +101,15 @@ This <code>node</code> is defined as <code>a</code>.</p>
 2. Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.
 3. Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</p>
 
-<h2>Change the font size of all node/label</h2>
+<h2 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h2>
 
 <p>Simply use <code>\tikzstyle</code> is suffice:</p>
 
-<pre><code class="tex">\begin{tikzpicture}
+<pre><code class="language-tex">\begin{tikzpicture}
     \tikzstyle{every node}=[font=\scriptsize]
     ...
 \end{tikzpicture}
 </code></pre>
-
-
 <p><i> Article tags:
 <a href="./@Miscellaneous.html">Miscellaneous</a> 
 </i></p>

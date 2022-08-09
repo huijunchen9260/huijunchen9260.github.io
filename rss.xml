@@ -9,19 +9,13 @@
 <link>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</link>
 <guid>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</guid>
 <pubDate>Tue, 09 Aug 2022 12:50:08 -0400</pubDate>
-<description><![CDATA[<h1>Intermediate Macroeconomics Theory, Autumn 2022</h1>
+<description><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
 <p>ECON 4002.02, The Ohio State University, Autumn 2022</p>
 
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
 
-<!-- ## Announcement -->
-
-
-
-
 <!-- vim-markdown-toc GFM -->
-
 
 <ul>
 <li><a href="#grade">Grade</a></li>
@@ -30,49 +24,47 @@
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
 
-
 <!-- vim-markdown-toc -->
 
-
-<h2>Grade</h2>
+<h2 id="grade">Grade</h2>
 
 <table>
 <thead>
 <tr>
-<th> Categories                      </th>
-<th> Points     </th>
+<th>Categories</th>
+<th>Points</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td> Problem sets on course material </td>
-<td> 20 points  </td>
+<td>Problem sets on course material</td>
+<td>20 points</td>
 </tr>
 <tr>
-<td> Quizzes on Calculus videos      </td>
-<td> 20 points  </td>
+<td>Quizzes on Calculus videos</td>
+<td>20 points</td>
 </tr>
 <tr>
-<td> Midterm Exam                    </td>
-<td> 25 points  </td>
+<td>Midterm Exam</td>
+<td>25 points</td>
 </tr>
 <tr>
-<td> Final Exam                      </td>
-<td> 25 points  </td>
+<td>Final Exam</td>
+<td>25 points</td>
 </tr>
 <tr>
-<td> Attendance                      </td>
-<td> 10 points  </td>
+<td>Attendance</td>
+<td>10 points</td>
 </tr>
 <tr>
-<td> Total                           </td>
-<td> 100 points </td>
+<td>Total</td>
+<td>100 points</td>
 </tr>
 </tbody>
 </table>
 
-
-<h2>Course Schedule</h2>
+<h2 id="course-schedule">Course Schedule</h2>
 
 <table>
 <thead>
@@ -213,8 +205,7 @@ Deadline: 11/21 11:59pm</td>
 </tbody>
 </table>
 
-
-<h2>Lecture Notes</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
 
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2022/math/Final/math.pdf">Review for Math</a></li>
@@ -225,17 +216,14 @@ Deadline: 11/21 11:59pm</td>
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Lucas_critique">Wiki: Lucas critique</a></li>
-</ul>
-</li>
+</ul></li>
 <li>Friedman critique:
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
@@ -243,36 +231,23 @@ Deadline: 11/21 11:59pm</td>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&rsquo;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&rsquo;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a></li>
-</ul>
-
-
+<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
 <!-- - [Midterm Review 1](pdf/IntermediateMacroAutumn2022/midtermReview_1.pdf) -->
-
-
-<!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2022/midtermReview_2.pdf) -->
-
-
-<ul>
+<!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2022/midtermReview_2.pdf) --></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a>
+<!-- - [Final Review 1](pdf/IntermediateMacroAutumn2022/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacroAutumn2022/finalreview_2.pdf) --></li>
 </ul>
 
-
-<!-- - [Final Review 1](pdf/IntermediateMacroAutumn2022/finalreview_1.pdf) -->
-
-
-<!-- - [Final Review 2](pdf/IntermediateMacroAutumn2022/finalreview_2.pdf) -->
-
-
-<h2>Problem Sets</h2>
+<h2 id="problem-sets">Problem Sets</h2>
 
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
@@ -281,7 +256,6 @@ Deadline: 11/21 11:59pm</td>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -289,40 +263,37 @@ Deadline: 11/21 11:59pm</td>
 <link>https://huijunchen9260.github.io/TikzNote.html</link>
 <guid>https://huijunchen9260.github.io/TikzNote.html</guid>
 <pubDate>Wed, 27 Apr 2022 12:47:01 -0400</pubDate>
-<description><![CDATA[<h1>Note on Tikz</h1>
+<description><![CDATA[<h1 id="note-on-tikz">Note on Tikz</h1>
 
-<h2>Create a &ldquo;bezier curve&rdquo;</h2>
+<h2 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h2>
 
-<p><code>tex
-\draw (0, 0) to[bend right=40] (5, 5);
-</code></p>
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
+</code></pre>
 
 <p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
 
 <p><code>bend right=40</code> means the degree of bending.</p>
 
-<h2>Define points on arbitrary curve</h2>
+<h2 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h2>
 
-<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
 
-<p><code>tex
-\draw (0, 0) to[bend right=40]
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
     (5, 5);
-</code></p>
+</code></pre>
 
 <p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
 This <code>node</code> is defined as <code>a</code>.</p>
 
-<h2>Get x and y coordinate of arbitrary point</h2>
+<h2 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h2>
 
 <p>Let the arbitrary be <code>a</code>.</p>
 
-<p><code>tex
-\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
+<pre><code class="language-tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
 \coordinate (a_x) at (\xcoord, 0);
 \coordinate (a_y) at (0, \ycoord);
-</code></p>
+</code></pre>
 
 <p>First, let the <code>path</code> be on the point <code>a</code> so that <code>pgf</code> can remember it.</p>
 
@@ -330,47 +301,44 @@ This <code>node</code> is defined as <code>a</code>.</p>
 
 <p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
 
-<h2>Draw &ldquo;tangent line&rdquo; on curve</h2>
+<h2 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h2>
 
-<p>Here I use &ldquo;bezier curve&rdquo; as example.</p>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
 
-<p><code>tex
-\draw (0, 0) to[bend right=40]
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
     node[pos=0.51] (b) {}
     (5, 5);
-\draw[shorten &gt;=-1cm, shorten &lt;=-1cm, thick, red] (a) -- (b);
-</code></p>
+\draw[shorten &#62;=-1cm, shorten &#60;=-1cm, thick, red] (a) -- (b);
+</code></pre>
 
 <p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
 
-<p>Notice that I didn&rsquo;t draw the inner point at point <code>b</code>.</p>
+<p>Notice that I didn&#8217;t draw the inner point at point <code>b</code>.</p>
 
 <p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
 
-<h2>Decoration: brace</h2>
+<h2 id="decoration-brace">Decoration: brace</h2>
 
 <p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
 
-<p><code>tex
-%%% brace on up/right
+<pre><code class="language-tex">%%% brace on up&#47;right
 \draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
-%%% brace on down/left (mirror)
+%%% brace on down&#47;left (mirror)
 \draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
-</code></p>
+</code></pre>
 
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
 
-<h2>Intersection between two curves</h2>
+<h2 id="intersection-between-two-curves">Intersection between two curves</h2>
 
 <p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
 
 <p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
 
-<p><code>tex
-\documentclass[tikz, margin = 1mm]{standalone}
+<pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
 \usetikzlibrary{intersections}
 \begin{document}
 \begin{tikzpicture}
@@ -380,23 +348,22 @@ This <code>node</code> is defined as <code>a</code>.</p>
     \node[draw,fill=red,circle,inner sep=1pt] at (e) {};
 \end{tikzpicture}
 \end{document}
-</code></p>
+</code></pre>
 
 <p>Explanation:
 1. Need to add <code>name path=name</code> as argument to call this path.
 2. Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.
 3. Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</p>
 
-<h2>Change the font size of all node/label</h2>
+<h2 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h2>
 
 <p>Simply use <code>\tikzstyle</code> is suffice:</p>
 
-<p><code>tex
-\begin{tikzpicture}
+<pre><code class="language-tex">\begin{tikzpicture}
     \tikzstyle{every node}=[font=\scriptsize]
     ...
 \end{tikzpicture}
-</code></p>
+</code></pre>
 
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
@@ -405,31 +372,30 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</link>
 <guid>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</guid>
 <pubDate>Sat, 23 Apr 2022 14:27:53 -0400</pubDate>
-<description><![CDATA[<h1>Intermediate Macroeconomics Theory, Summer 2022</h1>
+<description><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2022">Intermediate Macroeconomics Theory, Summer 2022</h1>
 
 <p>ECON 4002.01, The Ohio State University, Summer 2022</p>
 
 <p><a href="pdf/IntermediateMacroSummer2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
 
-<h2>Announcement</h2>
+<h2 id="announcement">Announcement</h2>
 
 <ul>
 <li>May 31, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
 <li>June 02, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a> to fix some typo</li>
 <li>June 09, 2022: Update
-  <a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&rsquo;s Problem</a>
-  and
-  <a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&rsquo;s Problem</a>
-  to fix some typo</li>
+<a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a>
+and
+<a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a>
+to fix some typo</li>
 <li>June 14, 2022: Update
-  <a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-  to fix typo and computational errors.</li>
+<a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+to fix typo and computational errors.</li>
 <li>July 07, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a> and <a href="pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a> to fix typo and expression</li>
 <li>July 19, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a> to fix wrong figure legend and wrong expression.</li>
 </ul>
 
-
-<h2>Lecture Notes</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
 
 <ul>
 <li><a href="pdf/IntermediateMacroSummer2022/math/Final/math.pdf">Review for Math</a></li>
@@ -440,17 +406,14 @@ This <code>node</code> is defined as <code>a</code>.</p>
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Lucas_critique">Wiki: Lucas critique</a></li>
-</ul>
-</li>
+</ul></li>
 <li>Friedman critique:
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
@@ -458,8 +421,8 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&rsquo;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&rsquo;s Problem</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/midtermReview_1.pdf">Midterm Review 1</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/midtermReview_2.pdf">Midterm Review 2</a></li>
@@ -474,8 +437,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="pdf/IntermediateMacroSummer2022/finalreview_2.pdf">Final Review 2</a></li>
 </ul>
 
-
-<h2>Problem Sets</h2>
+<h2 id="problem-sets">Problem Sets</h2>
 
 <ul>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
@@ -484,8 +446,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 
-
-<h2>Lecture Recordings</h2>
+<h2 id="lecture-recordings">Lecture Recordings</h2>
 
 <ul>
 <li><a href="https://osu.zoom.us/rec/share/BEP6kfx9xMyke-tIZ58-VOanFmQnFRRAa9nvriGtCB-Md1dgCH4mH4QZhj4cWAjN.2gx4wG3jDn3M2DfI">Lecture 1</a></li>
@@ -513,7 +474,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="https://osu.zoom.us/rec/share/ES9LrJ2rcETagzPv52w30pIu659nHTy4-9voV2B3GWrX4Rbqvn0XOB1ijDl8jXpZ.18uPUtxx1_gRBKZw">Final Review Part 2</a></li>
 </ul>
 
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -521,7 +481,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link>https://huijunchen9260.github.io/X220TDiassembly.html</link>
 <guid>https://huijunchen9260.github.io/X220TDiassembly.html</guid>
 <pubDate>Thu, 21 Apr 2022 23:15:43 -0400</pubDate>
-<description><![CDATA[<h1>X220 Tablet Disassembly</h1>
+<description><![CDATA[<h1 id="x220-tablet-disassembly">X220 Tablet Disassembly</h1>
 
 <p>X220 Tablet is such a lovely laptop I bought.
 Although its CPU is pretty weak in the standard of 2022 (i7-2640M), it is still a pretty decent Linux laptop that even have touch screen and integrated stylus.</p>
@@ -580,17 +540,17 @@ We need to unscrew to take out the wifi card.</p>
 <link>https://huijunchen9260.github.io/LTVHousingPrice.html</link>
 <guid>https://huijunchen9260.github.io/LTVHousingPrice.html</guid>
 <pubDate>Wed, 20 Apr 2022 15:10:29 -0400</pubDate>
-<description><![CDATA[<h1>The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
+<description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
 
 <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
 <a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a></p>
 
-<p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households' mortgages relative to their house value, often intended to reduce booms in house prices.
+<p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
 In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
-The policy&rsquo;s positive effect on house prices is more severe with greater inequality.
+The policy&#8217;s positive effect on house prices is more severe with greater inequality.
 A strict ceiling is especially harmful to the poor.
 Taxes can only intensify the positive effect on house prices, although they can mitigate the adverse effects on welfare.</p>
 
@@ -601,7 +561,7 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link>https://huijunchen9260.github.io/UsedKCollateral.html</link>
 <guid>https://huijunchen9260.github.io/UsedKCollateral.html</guid>
 <pubDate>Wed, 20 Apr 2022 15:10:29 -0400</pubDate>
-<description><![CDATA[<h1>Debt Financing, Used Capital Market and Capital Reallocation</h1>
+<description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
 
 <p><a href="pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf">slides: candidacy exam</a></p>
 
@@ -612,7 +572,7 @@ This irreversibility creates two opposite forces affecting investment volatility
 (1) capital investment is relatively cheaper in the recession, and thus attracts firms to invest in capital, dampening the fall of aggregate investment.
 (2) In the downturn, irreversibility of capital increases, makes investment become riskier, which exacerbate the fall of aggregate investment.
 In my model, collateral constraints amplify the first force and dampen the response of aggregate investment to match the moments in the data.
-A collateral constraint based on the resale value of the capital unevenly affect firms' borrowing capacity by their upward-/downward-adjustment decision.
+A collateral constraint based on the resale value of the capital unevenly affect firms&#8217; borrowing capacity by their upward-&#47;downward-adjustment decision.
 Such decision determines a new price of investment goods, and thus endogenously alters the collateral constraint.</p>
 
 <p>;tags: Working</p>]]></description>
@@ -622,7 +582,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</link>
 <guid>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</guid>
 <pubDate>Thu, 30 Dec 2021 20:19:06 -0500</pubDate>
-<description><![CDATA[<h1>Principle of Macroeconomics, Spring 2022</h1>
+<description><![CDATA[<h1 id="principle-of-macroeconomics-spring-2022">Principle of Macroeconomics, Spring 2022</h1>
 
 <p>ECON 2002.01, The Ohio State University, Spring 2022</p>
 
@@ -632,162 +592,107 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li>Update Feb. 18, 2022: Revise course schedule due to my presentation in MEA annual meeting.</li>
 </ul>
 
-
 <!-- ## Lecture Videos -->
-
-
-
 
 <!-- - [Unit 1](https://youtu.be/j2xNxtsa2Uk) -->
 
-
 <!-- - [Unit 2](https://youtu.be/bmlgp_Pqecw) -->
-
 
 <!-- - [Unit 3](https://youtu.be/CBSHbUHcvY4) -->
 
-
 <!-- - [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ) -->
-
 
 <!-- - [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4) -->
 
-
 <!-- - [Unit 7](https://youtu.be/UgF-HO1If3w) -->
-
 
 <!-- - [Unit 9](https://youtu.be/tdM3XLQt76A) -->
 
-
 <!-- - [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o) -->
-
 
 <!-- - [Unit 10 Part 2](https://youtu.be/L_IcpcX372g) -->
 
-
 <!-- - [Unit 11](https://youtu.be/VkZXrPe6wG0) -->
-
 
 <!-- - [Unit 13](https://youtu.be/rbfoUkP_VCQ) -->
 
-
 <!-- - [Unit 14](https://youtu.be/1eEsTPxa5WQ) -->
-
 
 <!-- - [Unit 15](https://youtu.be/0HDBVajKozg) -->
 
-
 <!-- - [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI) -->
-
 
 <!-- - [Unit 16](https://youtu.be/auswkrj7OOM) -->
 
-
 <!-- - [Unit 17](https://youtu.be/tfpdEXwhnyY) -->
-
-
-
 
 <!-- ## Lecture Recording -->
 
-
 <!-- - [Math Supplement Part 1](https://youtu.be/4IEQ52Xl6Ig) (No audio) -->
-
 
 <!-- - [Math Supplement Part 2](https://youtu.be/CsipriW8zSc) -->
 
-
 <!-- - [Unit 1](https://youtu.be/WcO5rbA_U1s) -->
-
 
 <!-- - [Unit 2](https://youtu.be/B8GY0Sl4j_M) -->
 
-
 <!-- - [Quiz review and Unit 6 Part 1](https://youtu.be/BXI1GbEnpo4) -->
-
 
 <!-- - [Unit 6 Part 2](https://youtu.be/2DRAG1mN52I) -->
 
-
 <!-- - [Unit 7](https://youtu.be/JDFPuoK0mR0) -->
-
 
 <!-- - [Quiz review and Unit 9 Part 1](https://youtu.be/gyQ-JrzCg00) -->
 
-
 <!-- - [Unit 9 Part 2](https://youtu.be/gZrecQwyhuc) -->
-
 
 <!-- - [Unit 10 Part 1](https://youtu.be/GsNub6cKt90) -->
 
-
 <!-- - [Quiz review and Unit 3 Part 1](https://youtu.be/40U9lKCBzGE) -->
-
 
 <!-- - [Quiz review and Unit 3 Part 2](https://youtu.be/_v0fmlssKJc) -->
 
-
 <!-- - [Unit 10 Part 2](https://youtu.be/OdSrcRpextI) -->
-
 
 <!-- - [Quiz review and Unit 10 Part 3](https://youtu.be/nVMfm60p8As) -->
 
-
 <!-- - [Unit 10 Part 4 and Unit 13 Part 1](https://youtu.be/JU4L3JxUg3w) -->
-
 
 <!-- - [Unit 13 Part 2](https://youtu.be/qTP4Iov0N7s) -->
 
-
 <!-- - [Quiz review and Unit 14 Part 1](https://youtu.be/a92slHH9jxY) -->
-
 
 <!-- - [Unit 14 Part 2](https://youtu.be/ZCGKeH1eqBo) -->
 
-
 <!-- - [Unit 14 Part 3](https://youtu.be/YPs2WiDCdZc) -->
-
 
 <!-- - [Unit 15 Part 1](https://youtu.be/k6n3FEKy2q8) -->
 
-
 <!-- - [Unit 15 Part 2](https://youtu.be/xoqSSaLWt2k) -->
-
 
 <!-- - [Unit 15 Part 3](https://youtu.be/CMa_NlcOuRs) -->
 
-
 <!-- - [Quiz review and Unit 16 Part 2](https://youtu.be/jVM1LXJkjP4) -->
-
 
 <!-- - [Unit 16 Part 3](https://youtu.be/kD36fI4tUwo) -->
 
-
 <!-- - [Unit 16 Part 4](https://youtu.be/ZVlrsp3V7EI) -->
-
 
 <!-- - [Quiz review and Unit 11 Part 1](https://youtu.be/ewLoNMcfmEg) -->
 
-
 <!-- - [Unit 11 Part 2](https://youtu.be/nt4vrotLyTg) -->
-
 
 <!-- - [Unit 11 Part 3](https://youtu.be/tKyDQmF5SE8) -->
 
-
 <!-- - [Final Exam Review Part 1](https://youtu.be/tD_njPZHALQ) -->
-
 
 <!-- - [Final Exam Review Part 2](https://youtu.be/S6PGzhcJkkg) -->
 
-
 <!-- - [Final Exam Review Part 3](https://youtu.be/HkVrMEWlW8c) -->
-
 
 <!-- - [Final Exam Review Part 4](https://youtu.be/04bTN_tlOMU) -->
 
-
-<h2>Lecture Notes</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
 
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/selfintroduction.pdf">Know your Instructor</a></li>
@@ -800,8 +705,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 <li><a href="https://earth.esa.int/web/earth-watching/historical-views/content/-/article/kansai-and-kobe-international-airport-osaka-bay-japan-/">Example of Technological Progress: Kansai International Airport on artificial island</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
@@ -810,50 +714,41 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit9Supplement.pdf">Unit 9 Supplement</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit9QuizSupplement.pdf">Unit 9 Quiz Supplement: shift in wage-setting curve</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a>
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Exponential_discounting">Exponential Discounting</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Hyperbolic_discounting">Hyperbolic Discounting</a></li>
-<li><a href="https://youtu.be/Q_QPClXo5MU">Prudence: Why You Spend So Much Money At Trader Joe&rsquo;s</a></li>
+<li><a href="https://youtu.be/Q_QPClXo5MU">Prudence: Why You Spend So Much Money At Trader Joe&#8217;s</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Gini_coefficient#Definition">Gini Coefficient</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a>
 
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Alan_Greenspan#Housing_bubble">Alan Greenspan: the market value of global long-term securities is approaching \$100 trillion</a></li>
-</ul>
-</li>
+<li><a href="https://en.wikipedia.org/wiki/Alan_Greenspan#Housing_bubble">Alan Greenspan: the market value of global long-term securities is approaching $100 trillion</a></li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a>
 
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit13QuizSolution.pdf">Unit 13 Quiz Solution</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a>
 
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit14Supplement.pdf">Unit 14 Supplement</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a>
 
 <ul>
 <li><a href="https://www.youtube.com/watch?v=iG1U-Qb38z0">Swift Sanctions on Russia: How Cutting Off Banks Applies Pressure | WSJ</a></li>
 <li><a href="https://www.reddit.com/r/Unexpected/comments/t5vu5s/explaining_the_stock_market_in_russia_right_now/?utm_medium=android_app&amp;utm_source=share">Explaining the stock market in Russia right now</a></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/build/midterm_review.pdf">Midterm Review</a></li>
+<li><a href="pdf/PrincipleMacroSpring2022/build/midterm_review.pdf">Midterm Review</a>
+<!-- - [Why is Ukraine the West's Fault? Featuring John Mearsheimer](https://youtu.be/JrMiSQAGOS4?t=2618) --></li>
 </ul>
-
-
-<!-- - [Why is Ukraine the West's Fault? Featuring John Mearsheimer](https://youtu.be/JrMiSQAGOS4?t=2618) -->
-
 
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -862,7 +757,7 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <link>https://huijunchen9260.github.io/WebsiteCreation.html</link>
 <guid>https://huijunchen9260.github.io/WebsiteCreation.html</guid>
 <pubDate>Wed, 01 Dec 2021 00:20:19 -0500</pubDate>
-<description><![CDATA[<h1>How do I create this website</h1>
+<description><![CDATA[<h1 id="how-do-i-create-this-website">How do I create this website</h1>
 
 <p>I have two goals to share with you in this blog post:</p>
 
@@ -871,16 +766,15 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blogit</a>.</li>
 </ol>
 
+<p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260&#47;websrc</a> repository.</p>
 
-<p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260/websrc</a> repository.</p>
-
-<h2>The Reason</h2>
+<h2 id="the-reason">The Reason</h2>
 
 <p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
 
 <p>Long story short, it is mainly because the conflict between my desire to customize everything to the way I like and my laziness to not really make such repeatable effort in terms of customization.
 On the one hand, decent blog post <a href="http://john.ankarstrom.se/html/">Write HTML in HTML</a> shows probably the final stage of a Linux user who just cannot stop but customize everything in their website: write everything in HTML.
-However, I don&rsquo;t want to write my own website in HTML.
+However, I don&#8217;t want to write my own website in HTML.
 Probably I am not in that stage yet.</p>
 
 <p>On the other hand, to avoid writing in HTML, most of the current static site generators are full of fancy themes and JavaScript.
@@ -890,117 +784,112 @@ To be honest, before making this website using <a href="https://pedantic.softwar
 If you are lucky and find a theme that do everything for you, and probably not a needy person as I do, then congratulations, the customization that confined by the author of themes works for you.
 Sadly, I <em>AM</em> a very needy person.
 I really want everything to be exactly as the way I want them to be, and such restriction made by the theme author just drives me crazy when I try to update my website.
-Eventually, I realize that the upfront cost to customize my website is too large, and I just don&rsquo;t update my blog for like two years.</p>
+Eventually, I realize that the upfront cost to customize my website is too large, and I just don&#8217;t update my blog for like two years.</p>
 
 <p>That is to say, I fall into a paradox.
 On one side of the spectrum, I really want to customize everything.
-On the other side, I really don&rsquo;t want to pay the effort.
-That&rsquo;s why I need to find a sweet spot between these two extremes.</p>
+On the other side, I really don&#8217;t want to pay the effort.
+That&#8217;s why I need to find a sweet spot between these two extremes.</p>
 
-<h2>Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
+<h2 id="why-blogit">Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
 
 <p>Because it is simple.</p>
 
 <p>It is simple enough for me to understand every detail, but do the heavy-duty for me.
 (still not <em>every</em> to be honest, that is exaggeration)
 <a href="https://pedantic.software/git/blogit">blogit</a> is nothing but just a Makefile which insert HTML tags into the Markdown file to make it become a HTML page.
-I don&rsquo;t know what&rsquo;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
+I don&#8217;t know what&#8217;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
 Thankfully, once it is done, it is so simple and magic.
 Every tags are precisely placed in corresponding webpages, and automatically generate a list of articles that every blog need.</p>
 
-<p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &ldquo;settings&rdquo; just confuses me.</p>
+<p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &#8220;settings&#8221; just confuses me.</p>
 
-<h2>But&hellip;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
+<h2 id="butblogit-is-only-for-blogs">But&#8230;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
 
 <p>Yes, that is true, and I am not satisfied with that.
 A good personal website in my opinion should include individual pages for specific purposes.
 For example, pages for <a href="research.html">Research</a>, <a href="teaching.html">Teaching</a>, and last link for <a href="blog.html">Blog</a> are necessary for a Ph.D. student website.
-In order to achieve this, I rewrite the code to generate <code>blog/index.html</code> in the Makefile to also generate <code>blog/teaching.html</code>.
+In order to achieve this, I rewrite the code to generate <code>blog&#47;index.html</code> in the Makefile to also generate <code>blog&#47;teaching.html</code>.
 The logic to generate this page is to use the existing tags system:</p>
 
 <ol>
 <li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
-<li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &ldquo;Under Construction&rdquo;.</li>
+<li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &#8220;Under Construction&#8221;.</li>
 <li>Otherwise, we enter the stage of creating <a href="teaching.html">Teaching</a> page:
 
 <ol>
 <li>Using <code>git</code> command to extract the modified date for each markdown file, and update <code>DATE_EDITED</code>.
 
 <ul>
-<li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"</code>
+<li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"</code>
 
 <ul>
 <li><code>git log</code> create a log file and enter a pager.</li>
 <li><code>git log -1</code> shows the log file on last commit (<code>-1</code> part).</li>
 <li><code>--date</code> and <code>format:</code> shows the format of date to show. I use <code>%F</code> and result in the format <code>%Y-%M-%D</code>.</li>
 <li><code>--pretty</code> and <code>format:</code> shows the format for pretty print. <code>%ad</code> outputs author date, and <code>%n</code> means newline.</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>If there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
+</ol></li>
 </ol>
-</li>
-</ol>
-
 
 <p>The corresponding code block is also listed below:</p>
 
-<p><code>make
-blog/teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates/,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
+<pre><code class="language-make">blog&#47;teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates&#47;,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
     mkdir -p blog
     TITLE="$(BLOG_TITLE)"; \
     PAGE_TITLE="Teaching -- $(BLOG_TITLE)"; \
-    DATE_EDITED="$(shell git log -1 --date="format:$(BLOG_DATE_FORMAT)" --pretty=format:'%ad' -- "$&lt;")"; \
+    DATE_EDITED="$(shell git log -1 --date="format:$(BLOG_DATE_FORMAT)" --pretty=format:&#39;%ad&#39; -- "$&#60;")"; \
     export TITLE; \
     export PAGE_TITLE; \
     export DATE_EDITED; \
-    envsubst &lt; templates/header.html &gt; $@; \
-    envsubst &lt; templates/teaching_header.html &gt;&gt; $@; \
-    markdown &lt; teaching.md &gt;&gt; $@; \
+    envsubst &#60; templates&#47;header.html &#62; $@; \
+    envsubst &#60; templates&#47;teaching_header.html &#62;&#62; $@; \
+    markdown &#60; teaching.md &#62;&#62; $@; \
     f1=true; \
     # grep for the markdown files with Teaching tag
     for f in $(ARTICLES); do \
-        grep -qE "; *tags: .*Teaching.*" "$$f" &amp;&amp; { "$$f1" &amp;&amp; WP="$$f" || WP="$$WP $$f"; f1=false; }; \
+        grep -qE "; *tags: .*Teaching.*" "$$f" &#38;&#38; { "$$f1" &#38;&#38; WP="$$f" || WP="$$WP $$f"; f1=false; }; \
     done ; \
     # If no files with Teaching tag, output Under Construction
-    [ -z "$$WP" ] &amp;&amp; { \
-        echo "&lt;h1&gt;Under Construction&lt;/h1&gt;" &gt;&gt; $@ ; \
-        envsubst &lt; templates/teaching_footer.html &gt;&gt; $@ ; \
-        envsubst &lt; templates/footer.html &gt;&gt; $@ ; \
+    [ -z "$$WP" ] &#38;&#38; { \
+        echo "&#60;h1&#62;Under Construction&#60;&#47;h1&#62;" &#62;&#62; $@ ; \
+        envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@ ; \
+        envsubst &#60; templates&#47;footer.html &#62;&#62; $@ ; \
         exit ; \
     } ; \
-    # If there's Teaching tag, find modified dates for all files and update DATE_EDITED
-    [ -n "$$WP" ] &amp;&amp; { \
+    # If there&#39;s Teaching tag, find modified dates for all files and update DATE_EDITED
+    [ -n "$$WP" ] &#38;&#38; { \
         articleNewestDate="$$(for f in $$WP; do \
-            git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
+            git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"; \
         done | sort -rk2 | head -n 1)"; \
-        tmpNewest=$$(echo $$articleNewestDate | tr -d '-'); \
-        tmpEdit=$$(echo $$DATE_EDITED | tr -d '-'); \
-        [ "$$tmpNewest" -ge "$$tmpEdit" ] &amp;&amp; DATE_EDITED="$$articleNewestDate"
+        tmpNewest=$$(echo $$articleNewestDate | tr -d &#39;-&#39;); \
+        tmpEdit=$$(echo $$DATE_EDITED | tr -d &#39;-&#39;); \
+        [ "$$tmpNewest" -ge "$$tmpEdit" ] &#38;&#38; DATE_EDITED="$$articleNewestDate"
         export DATE_EDITED; \
     };  \
-    # IF there's file with Teaching tag, add hyperlink to each file on this Teaching page
-    [ -n "$$WP" ] &amp;&amp; { \
+    # IF there&#39;s file with Teaching tag, add hyperlink to each file on this Teaching page
+    [ -n "$$WP" ] &#38;&#38; { \
         first=true; \
-        echo "&lt;h2&gt;Teaching&lt;/h2&gt;" &gt;&gt; $@ ; \
-        envsubst &lt; templates/article_list_header.html &gt;&gt; $@; \
+        echo "&#60;h2&#62;Teaching&#60;&#47;h2&#62;" &#62;&#62; $@ ; \
+        envsubst &#60; templates&#47;article_list_header.html &#62;&#62; $@; \
         for f in $$WP; do \
-            printf '%s ' "$$f"; \
-            git log -1 --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:'%ad%n' -- "$$f"; \
+            printf &#39;%s &#39; "$$f"; \
+            git log -1 --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"; \
         done | sort -rk2 | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
-            "$$first" || envsubst &lt; templates/article_separator.html; \
-            URL="`printf '%s' "\$$FILE" | sed 's,^$(BLOG_SRC)/\(.*\).md,\1,'`.html" \
+            "$$first" || envsubst &#60; templates&#47;article_separator.html; \
+            URL="`printf &#39;%s&#39; "\$$FILE" | sed &#39;s,^$(BLOG_SRC)&#47;\(.*\).md,\1,&#39;`.html" \
             DATE="$$DATE" \
-            TITLE="`head -n1 "\$$FILE" | sed -e 's/^# //g'`" \
-            envsubst &lt; templates/article_entry.html; \
+            TITLE="`head -n1 "\$$FILE" | sed -e &#39;s&#47;^# &#47;&#47;g&#39;`" \
+            envsubst &#60; templates&#47;article_entry.html; \
             first=false; \
-        done &gt;&gt; $@; \
-        envsubst &lt; templates/article_list_footer.html &gt;&gt; $@; \
+        done &#62;&#62; $@; \
+        envsubst &#60; templates&#47;article_list_footer.html &#62;&#62; $@; \
     };  \
-    envsubst &lt; templates/teaching_footer.html &gt;&gt; $@; \
-    envsubst &lt; templates/footer.html &gt;&gt; $@
-</code></p>
+    envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@; \
+    envsubst &#60; templates&#47;footer.html &#62;&#62; $@
+</code></pre>
 
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
 
@@ -1013,19 +902,19 @@ blog/teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates/,$
 <link>https://huijunchen9260.github.io/TaxUncertainty.html</link>
 <guid>https://huijunchen9260.github.io/TaxUncertainty.html</guid>
 <pubDate>Mon, 29 Nov 2021 00:56:38 -0500</pubDate>
-<description><![CDATA[<h1>Uncertain Taxation, Government Transfer, and Household Inequality</h1>
+<description><![CDATA[<h1 id="uncertain-taxation-government-transfer-and-household-inequality">Uncertain Taxation, Government Transfer, and Household Inequality</h1>
 
 <p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
 
 <p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
 
-<h3>Abstract</h3>
+<h3 id="abstract">Abstract</h3>
 
 <p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
 Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
 Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
 Labor tax suppresses the major income sources of the poor: labor wage.
-The effect of tax policy uncertainty on the wealth distribution and inequality depends on households' degree of risk aversion.
+The effect of tax policy uncertainty on the wealth distribution and inequality depends on households&#8217; degree of risk aversion.
 When risk aversion is higher, the rich maintain similar levels of consumption by slowing down their capital accumulation process, while this relationship is reversed for the poor, resulting in decreasing wealth inequality.
 Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
 Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
@@ -1038,7 +927,7 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <link>https://huijunchen9260.github.io/CSE5523Notes.html</link>
 <guid>https://huijunchen9260.github.io/CSE5523Notes.html</guid>
 <pubDate>Sun, 28 Nov 2021 09:15:05 -0500</pubDate>
-<description><![CDATA[<h1>Machine Learning, Autumn 2021</h1>
+<description><![CDATA[<h1 id="machine-learning-autumn-2021">Machine Learning, Autumn 2021</h1>
 
 <p>CSE 5523, The Ohio State University, Autumn 2021</p>
 
@@ -1064,13 +953,13 @@ My result shows that
 <link>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</link>
 <guid>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</guid>
 <pubDate>Sun, 28 Nov 2021 00:32:14 -0500</pubDate>
-<description><![CDATA[<h1>Principle of Macroeconomics, Summer 2021</h1>
+<description><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
 
 <p>ECON 2002.01, The Ohio State University, Summer 2021</p>
 
 <p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
 
-<h2>Lecture Videos</h2>
+<h2 id="lecture-videos">Lecture Videos</h2>
 
 <ul>
 <li><a href="https://youtu.be/j2xNxtsa2Uk">Unit 1</a></li>
@@ -1091,8 +980,7 @@ My result shows that
 <li><a href="https://youtu.be/tfpdEXwhnyY">Unit 17</a></li>
 </ul>
 
-
-<h2>Lecture Notes</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
 
 <ul>
 <li><a href="pdf/PrincipleMacroSummer2021/math.pdf">Math Supplement</a></li>
@@ -1110,7 +998,6 @@ My result shows that
 <li><a href="pdf/PrincipleMacroSummer2021/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
 <li><a href="pdf/PrincipleMacroSummer2021/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
 </ul>
-
 
 <p>;tags: Teaching</p>]]></description>
 </item>
