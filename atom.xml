@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-09T16:33:44Z</updated>
+<updated>2022-08-09T16:55:23Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-08-09T16:29:10Z</updated>
+<updated>2022-08-09T16:33:45Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1>Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
@@ -20,6 +20,22 @@
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
 
 <!-- ## Announcement -->
+
+
+
+
+<!-- vim-markdown-toc GFM -->
+
+
+<ul>
+<li><a href="#grade">Grade</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+</ul>
+
+
+<!-- vim-markdown-toc -->
 
 
 <h2>Grade</h2>
