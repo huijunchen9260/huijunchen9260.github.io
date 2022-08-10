@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-10T11:03:54Z</updated>
+<updated>2022-08-10T14:51:02Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,13 +11,15 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-08-09T17:59:13Z</updated>
+<updated>2022-08-10T12:09:57Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
 <p>ECON 4002.02, The Ohio State University, Autumn 2022</p>
 
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
+
+<h2 id="announcement">Announcement</h2>
 
 <!-- vim-markdown-toc GFM -->
 
