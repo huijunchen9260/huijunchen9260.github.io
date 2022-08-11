@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-11T15:36:45Z</updated>
+<updated>2022-08-11T16:24:05Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-08-11T15:32:00Z</updated>
+<updated>2022-08-11T16:24:02Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
@@ -38,45 +38,11 @@
 
 <h2 id="grade">Grade</h2>
 
-<table>
-<thead>
-<tr>
-<th>Categories</th>
-<th>Points</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Problem sets on course material</td>
-<td>20 points</td>
-</tr>
-<tr>
-<td>Quizzes on Calculus videos</td>
-<td>20 points</td>
-</tr>
-<tr>
-<td>Midterm Exam</td>
-<td>25 points</td>
-</tr>
-<tr>
-<td>Final Exam</td>
-<td>25 points</td>
-</tr>
-<tr>
-<td>Attendance</td>
-<td>10 points</td>
-</tr>
-<tr>
-<td>Total</td>
-<td>100 points</td>
-</tr>
-</tbody>
-</table>
+<p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#grade">Course schedule</a></p>
 
 <h2 id="course-schedule">Course Schedule</h2>
 
-<p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus_html</a></p>
+<p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
 
 <h2 id="lecture-notes">Lecture Notes</h2>
 
