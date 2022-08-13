@@ -179,7 +179,6 @@ Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
 Css: div.array {text-align:center;}
 Css: .rotatebox{display: inline-block;}
-File: ../../../style.css
 Css: #TBL-1-1{border-left: 1px solid black;}
 Css: #TBL-1-1{border-right:1px solid black;}
 Css: #TBL-1-2{border-right:1px solid black;}
