@@ -1,10 +1,7 @@
-htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
-htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
-htfcss: cmmi font-style: italic;
-htfcss: cmmib font-style: italic; font-weight: bold;
 htfcss: ptmri7t font-style: italic;
 htfcss: ptmb7t  font-weight: bold;
 htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
+htfcss:  pcrbo7t  font-weight: bold; font-style: oblique; font-family: 'Nimbus Mono L', serif;
 htfcss: ptmr7t font-family: monospace,monospace;
 htfcss: ptmb7t  font-weight: bold;
 htfcss: ptmb7t  font-weight: bold;
@@ -179,19 +176,15 @@ Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
 Css: div.array {text-align:center;}
 Css: .rotatebox{display: inline-block;}
-File: custom.css
 Css: #TBL-1-1{border-left: 1px solid black;}
 Css: #TBL-1-1{border-right:1px solid black;}
 Css: #TBL-1-2{border-right:1px solid black;}
---- needs --- syllabus.idv[2] ==> syllabus0x.svg ---
---- needs --- syllabus.idv[3] ==> syllabus1x.svg ---
 Css: #TBL-2-1{border-left: 1px solid black;}
 Css: #TBL-2-1{border-right:1px solid black;}
 Css: #TBL-2-2{border-right:1px solid black;}
 Css: #TBL-2-3{border-right:1px solid black;}
 Css: #TBL-2-4{border-right:1px solid black;}
 --- characters ---
-Font("cmr","12","12","100")
 Font("ptmr7t","","10","120")
 Font("ptmb7t","","10","248")
 Font("ptmb7t","","10","207")
@@ -199,7 +192,3 @@ Font("ptmr7t","","10","172")
 Font("pcrr7t","","10","120")
 Font("ptmb7t","","10","120")
 Font("ptmri7t","","10","120")
-Font("cmr","8","8","100")
-Font("cmmi","12","12","100")
-Font("cmsy","10","10","120")
-Font("pcrr7t","","10","80")
