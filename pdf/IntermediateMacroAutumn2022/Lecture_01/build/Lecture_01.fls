@@ -1,4 +1,4 @@
-PWD /home/huijunchen/mnt/home/huijunchen/Documents/websrc/data/pdf/IntermediateMacroSummer2022/Lecture_01
+PWD /home/huijunchen/mnt/home/huijunchen/Documents/websrc/data/pdf/IntermediateMacroAutumn2022/Lecture_01
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT Lecture_01.tex
@@ -1747,15 +1747,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss9.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmtt9.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT ./figures/Williamson.jpg
 INPUT ./figures/Williamson.jpg
 INPUT ./figures/Williamson.jpg
@@ -1807,10 +1798,6 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
