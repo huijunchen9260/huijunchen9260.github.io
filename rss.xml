@@ -100,6 +100,31 @@
 <pubDate>Wed, 27 Apr 2022 12:47:01 -0400</pubDate>
 <description><![CDATA[<h1 id="note-on-tikz">Note on Tikz</h1>
 
+<h2 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h2>
+
+<ul>
+<li>We can separate the definition of the desired point from the label of the point, e.g.:
+<code>tex
+    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
+    \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
+</code>
+
+<ul>
+<li>Reason: I can have full control on the decoration of the node on <code>(0, 0)</code> and where I should put the label on.
+One can also use <code>\coordinate</code> to define points, i.e.,
+<code>tex
+\coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
+\node[below]  at (x00) {$x_{00}(a_1, a_2)$};
+</code>
+It seems that <code>\coordinate</code> cannot have labels, so there&#8217;s no need to include empty <code>{}</code> at the end of the <code>\node</code>.</li>
+</ul></li>
+<li>Define points first and give every point a reasonable name.
+
+<ul>
+<li>Reason: You can directly use those named points to create paths.</li>
+</ul></li>
+</ul>
+
 <h2 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h2>
 
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
@@ -198,6 +223,63 @@ This <code>node</code> is defined as <code>a</code>.</p>
     \tikzstyle{every node}=[font=\scriptsize]
     ...
 \end{tikzpicture}
+</code></pre>
+
+<h2 id="calculation-points">Calculation points</h2>
+
+<p>Need to add <code>\usetikzlibrary{calc}</code></p>
+
+<p>The syntax of <code>calc</code> library is</p>
+
+<pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
+\usetikzlibrary{calc, intersections}
+\begin{document}
+\begin{tikzpicture}
+
+    % The following figure shows how the golden section search separate the 2-D space.
+    \pgfmathsetmacro{\x}{5};
+    \pgfmathsetmacro{\y}{5};
+    \pgfmathsetmacro{\tau}{0.618};
+
+    \draw[-] (0, 0) -- (\x, 0) -- (\x, \y) -- (0, \y) -- (0, 0);
+
+    % define (a, b) points in both dimension
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x01) at ( $ (\x, 0) $ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x10) at ( $ (0, \y)$ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x11) at ( $ (\x, \y) $ );
+
+    % use calc library to calculate the coordinate of the (c, d) points in both dimension
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c1) at ( $ (x00)!1-\tau!(x01) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c1mirror) at ( $ (x10)!1-\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d1) at ( $ (x00)!\tau!(x01) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d1mirror) at ( $ (x10)!\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c2) at ( $ (x00)!1-\tau!(x10) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c2mirror) at ( $ (x01)!1-\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d2) at ( $ (x00)!\tau!(x10) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d2mirror) at ( $ (x01)!\tau!(x11) $ );
+
+    % draw dashed line to connect coordinates
+    \draw[dashed, name path = dashc1] (c1) -- (c1mirror);
+    \draw[dashed, name path = dashd1] (d1) -- (d1mirror);
+    \draw[dashed, name path = dashc2] (c2) -- (c2mirror);
+    \draw[dashed, name path = dashd2] (d2) -- (d2mirror);
+
+    % define the interior (c, d) points using coordinates
+    \path[name intersections={of=dashc1 and dashc2, by=y00}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y00) {};
+
+    \path[name intersections={of=dashc1 and dashd2, by=y10}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y10) {};
+
+    \path[name intersections={of=dashd1 and dashc2, by=y01}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y01) {};
+
+    \path[name intersections={of=dashd1 and dashd2, by=y11}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y11) {};
+
+\end{tikzpicture}
+\end{document}
 </code></pre>
 
 <p>;tags: Miscellaneous</p>]]></description>
