@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  24 AUG 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  24 AUG 2022 16:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -780,13 +780,13 @@ Overfull \hbox (1.14378pt too wide) in paragraph at lines 197--198
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 195--439
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 195--443
 [] 
  []
 
 [4] [5] [6]
 
-LaTeX Warning: Empty bibliography on input line 539.
+LaTeX Warning: Empty bibliography on input line 543.
 
 [7] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
@@ -798,13 +798,13 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 Here is how much of TeX's memory you used:
  27040 strings out of 478238
  514259 string characters out of 5850457
- 1201521 words of memory out of 5000000
+ 1202521 words of memory out of 5000000
  44839 multiletter control sequences out of 15000+600000
  489748 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (7 pages, 105467 bytes).
+Output written on build/syllabus.pdf (7 pages, 105593 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
