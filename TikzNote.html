@@ -14,22 +14,23 @@
 <h2 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h2>
 
 <ul>
-<li>We can separate the definition of the desired point from the label of the point, e.g.:
-<code>tex
-    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
+<li><p>We can separate the definition of the desired point from the label of the point, e.g.:</p>
+
+<pre><code class="language-tex">    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
     \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
-</code>
+</code></pre>
 
 <ul>
 <li>Reason: I can have full control on the decoration of the node on <code>(0, 0)</code> and where I should put the label on.
-One can also use <code>\coordinate</code> to define points, i.e.,
-<code>tex
-\coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
-\node[below]  at (x00) {$x_{00}(a_1, a_2)$};
-</code>
-It seems that <code>\coordinate</code> cannot have labels, so there&#8217;s no need to include empty <code>{}</code> at the end of the <code>\node</code>.</li>
-</ul></li>
-<li>Define points first and give every point a reasonable name.
+One can also use <code>\coordinate</code> to define points, i.e.,</li>
+</ul>
+
+<pre><code class="language-tex">    \coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
+    \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
+</code></pre>
+
+<p>It seems that <code>\coordinate</code> cannot have labels, so there&#8217;s no need to include empty <code>{}</code> at the end of the <code>\node</code>.</p></li>
+<li><p>Define points first and give every point a reasonable name.</p>
 
 <ul>
 <li>Reason: You can directly use those named points to create paths.</li>
