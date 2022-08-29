@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=latex 2022.5.7)  24 AUG 2022 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=latex 2022.5.7)  29 AUG 2022 08:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,7 +1312,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \pp=\skip87
 [5] [6] [7] [8] [9]
 
-LaTeX Warning: Empty bibliography on input line 543.
+LaTeX Warning: Empty bibliography on input line 541.
 
 [10] [11
 
@@ -1330,4 +1330,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  106i,8n,128p,1977b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on syllabus.dvi (11 pages, 76084 bytes).
+Output written on syllabus.dvi (11 pages, 76024 bytes).
