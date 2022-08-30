@@ -29,8 +29,18 @@
 \headcommand {\sectionentry {3}{Employment}{11}{Employment}{0}}
 \headcommand {\slideentry {3}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
+\headcommand {\gdef \insertmainframenumber {11}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
 \headcommand {\beamer@partpages {1}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
 \headcommand {\beamer@sectionpages {11}{11}}
-\headcommand {\beamer@documentpages {11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@appendixpages {12}}
+\headcommand {\slideentry {3}{0}{2}{12/12}{}{1}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\gdef \inserttotalframenumber {1}}
 \headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\gdef \appendixtotalframenumber {1}}
