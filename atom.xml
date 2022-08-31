@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-08-30T09:11:20Z</updated>
+<updated>2022-08-31T15:28:58Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-08-30T09:11:15Z</updated>
+<updated>2022-08-31T15:28:55Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
@@ -80,7 +80,16 @@ for changing course schedule (erase labor day)</li>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
+<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+
+<ul>
+<li>Answering Question: What&#8217;s the difference between correlation and beta in finance
+
+<ul>
+<li><a href="https://www.mackenzieinvestments.com/content/dam/mackenzie/en/insights/wp-alts-correlation-vs-beta-en.pdf">Correlation vs Beta: What is the difference and why does it matter?</a></li>
+<li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
+</ul></li>
+</ul></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
