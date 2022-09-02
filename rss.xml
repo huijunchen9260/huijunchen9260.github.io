@@ -236,10 +236,13 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \end{document}
 </code></pre>
 
-<p>Explanation:
-1. Need to add <code>name path=name</code> as argument to call this path.
-2. Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.
-3. Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</p>
+<p>Explanation:</p>
+
+<ul>
+<li>Need to add <code>name path=name</code> as argument to call this path.</li>
+<li>Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.</li>
+<li>Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</li>
+</ul>
 
 <h2 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h2>
 
