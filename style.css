@@ -14,7 +14,8 @@ MIT-License
 	--fg: #444;
 	--link: #0645ad;
 	/* --link_v: #c71585; */
-	--link_v: #0645ad;
+	/* --link_v: #0645ad; */
+	--link_v: #0056b3;
 	--link_h: #ff0000;
 	--bg_grey: #eee;
 	--dark_grey: #999;
@@ -39,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	color: var(--link);
+    text-decoration: none;
 }
 
 a:visited {
@@ -47,16 +49,19 @@ a:visited {
 
 a:hover {
 	color: var(--link_h);
+    text-decoration: underline;
 	cursor: pointer;
 	outline: 0;
 }
 
 a:active {
 	color: var(--link_h);
+    text-decoration: none;
 }
 
 a:focus {
 	outline: 0;
+    text-decoration: none;
 }
 
 ul {
