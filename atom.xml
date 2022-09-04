@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-09-04T12:03:46Z</updated>
+<updated>2022-09-04T12:32:14Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/JuliaNote.html"/>
 <id>https://huijunchen9260.github.io/JuliaNote.html</id>
 <published>2022-09-04T12:01:54Z</published>
-<updated>2022-09-04T12:01:54Z</updated>
+<updated>2022-09-04T12:03:46Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-julia">Note on Julia</h1>
 
@@ -66,14 +66,18 @@
 <h2 id="announcement">Announcement</h2>
 
 <ul>
-<li>Aug 24, 2022: Update
-<a href="pdf/IntermediateMacroAutumn2022/syllabus/build/syllabus.pdf">Syllabus: pdf version</a> and
-<a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus: html version</a>
-for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
+<li>Sep 04, 2022: Update the Instruction for
+<a href="pdf/IntermediateMacroAutumn2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a>
+on Problem 2.</li>
+<li>Sep 04, 2022: New Instruction on <a href="JuliaNote.html">Note on Julia</a>, which will also be updated in the future.</li>
 <li>Aug 29, 2022: Update
 <a href="pdf/IntermediateMacroAutumn2022/syllabus/build/syllabus.pdf">Syllabus: pdf version</a> and
 <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus: html version</a>
 for changing course schedule (erase labor day)</li>
+<li>Aug 24, 2022: Update
+<a href="pdf/IntermediateMacroAutumn2022/syllabus/build/syllabus.pdf">Syllabus: pdf version</a> and
+<a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus: html version</a>
+for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 </ul>
 
 <h2 id="table-of-content">Table of Content</h2>
