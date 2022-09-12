@@ -18,6 +18,11 @@
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#julia-introduction">Julia Introduction</a></li>
+<li><a href="#julia-tips">Julia Tips</a>
+
+<ul>
+<li><a href="#memory-allocations">Memory Allocations</a></li>
+</ul></li>
 </ul>
 
 <!-- vim-markdown-toc -->
@@ -40,6 +45,16 @@
 
 <ul>
 <li>100 Seconds Intro by Fireship: <a href="https://www.youtube.com/watch?v=JYs_94znYy0">video</a></li>
+</ul>
+
+<h2 id="julia-tips">Julia Tips</h2>
+
+<h3 id="memory-allocations">Memory Allocations</h3>
+
+<p>Due to the nature of LLVM, memory allocation in Julia can be very expensive. Especially in dynamic programming, we usually a lot of arrays to store our data. Therefore, tracking where the memory is allocated can fast computation a lot.</p>
+
+<ul>
+<li><a href="https://m3g.github.io/JuliaNotes.jl/stable/memory/">Tracking memory allocations: JuliaNotes.jl</a></li>
 </ul>
 
 <p>;tags: Miscellaneous</p>]]></description>
