@@ -1,23 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  24 SEP 2022 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  19 SEP 2022 09:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ProblemSet2.tex
-(./ProblemSet2.tex
+**ProblemSet2AnswerSheet.tex
+(./ProblemSet2AnswerSheet.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
-Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/extsizes/size14.clo
-File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
-) (/usr/share/texmf-dist/tex/latex/base/exscale.sty
-Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen138
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -29,7 +21,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen139
+\bibindent=\dimen138
 ) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
@@ -64,10 +56,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen140
+\ex@=\dimen139
 )) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen141
+\pmbraise@=\dimen140
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
@@ -83,7 +75,7 @@ LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box50
 \strutbox@=\box51
-\big@size=\dimen142
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count199
@@ -96,12 +88,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \column@=\count270
 \maxfields@=\count271
 \andhelp@=\toks18
-\eqnshift@=\dimen143
-\alignsep@=\dimen144
-\tagshift@=\dimen145
-\tagwidth@=\dimen146
-\totwidth@=\dimen147
-\lineht@=\dimen148
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
 \@envbody=\toks19
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -119,7 +111,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTpre=\skip56
 \LTpost=\skip57
 \LTchunksize=\count272
-\LTcapwidth=\dimen149
+\LTcapwidth=\dimen148
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
@@ -134,19 +126,19 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen150
+\col@sep=\dimen149
 \ar@mcellbox=\box57
-\extrarowheight=\dimen151
+\extrarowheight=\dimen150
 \NC@list=\toks22
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box58
 )
-\TX@col@width=\dimen152
-\TX@old@table=\dimen153
-\TX@old@col=\dimen154
-\TX@target=\dimen155
-\TX@delta=\dimen156
+\TX@col@width=\dimen151
+\TX@old@table=\dimen152
+\TX@old@col=\dimen153
+\TX@target=\dimen154
+\TX@delta=\dimen155
 \TX@cols=\count277
 \TX@ftn=\toks23
 )) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -181,7 +173,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen157
+\@linkdim=\dimen156
 \Hy@linkcounter=\count278
 \Hy@pagecounter=\count279
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -212,15 +204,15 @@ Package hyperref Info: Bookmarks ON on input line 4390.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen158
+\XeTeXLinkMargin=\dimen157
  (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count282
-\Field@Width=\dimen159
-\Fld@charsize=\dimen160
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -261,12 +253,12 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 17.
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-\PaperWidth=\dimen161
-\PaperHeight=\dimen162
+\PaperWidth=\dimen160
+\PaperHeight=\dimen161
 ) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box59
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -284,8 +276,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen165
-\Gin@req@width=\dimen166
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
 ) (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -294,16 +286,16 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen167
-\pgf@y=\dimen168
-\pgf@xa=\dimen169
-\pgf@ya=\dimen170
-\pgf@xb=\dimen171
-\pgf@yb=\dimen172
-\pgf@xc=\dimen173
-\pgf@yc=\dimen174
-\pgf@xd=\dimen175
-\pgf@yd=\dimen176
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count288
@@ -331,7 +323,7 @@ File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen177
+\pgfmath@dimen=\dimen176
 \pgfmath@count=\count295
 \pgfmath@box=\box60
 \pgfmath@toks=\toks32
@@ -342,28 +334,28 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 \c@pgfmathroundto@lastzeros=\count296
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen178
-\pgf@picmaxx=\dimen179
-\pgf@picminy=\dimen180
-\pgf@picmaxy=\dimen181
-\pgf@pathminx=\dimen182
-\pgf@pathmaxx=\dimen183
-\pgf@pathminy=\dimen184
-\pgf@pathmaxy=\dimen185
-\pgf@xx=\dimen186
-\pgf@xy=\dimen187
-\pgf@yx=\dimen188
-\pgf@yy=\dimen189
-\pgf@zx=\dimen190
-\pgf@zy=\dimen191
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen192
-\pgf@path@lasty=\dimen193
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen194
-\pgf@shorten@start@additional=\dimen195
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box61
@@ -372,12 +364,12 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picture@serial@count=\count297
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen196
+\pgflinewidth=\dimen195
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen197
-\pgf@pt@y=\dimen198
-\pgf@pt@temp=\dimen199
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -386,10 +378,10 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen256
+\pgfarrowsep=\dimen199
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen257
+\pgf@max=\dimen256
 \pgf@sys@shading@range@num=\count298
 \pgf@shadingcount=\count299
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -413,15 +405,15 @@ File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen258
-\pgf@nodesepend=\dimen259
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen260
-\pgffor@skip=\dimen261
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
@@ -429,16 +421,16 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count300
-\pgfplotmarksize=\dimen262
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen263
-\tikz@lasty=\dimen264
-\tikz@lastxsaved=\dimen265
-\tikz@lastysaved=\dimen266
-\tikz@lastmovetox=\dimen267
-\tikz@lastmovetoy=\dimen268
-\tikzleveldistance=\dimen269
-\tikzsiblingdistance=\dimen270
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
 \tikz@figbox=\box66
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
@@ -466,90 +458,44 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count309
 ))
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 56.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 55.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box72
-) (build/ProblemSet2.aux
+) (build/ProblemSet2AnswerSheet.aux)
+\openout1 = `ProblemSet2AnswerSheet.aux'.
 
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:time_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:outputDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-
-LaTeX Warning: Label `eq:consumerFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:binding_budget' multiply defined.
-
-
-LaTeX Warning: Label `eq:firmFOC' multiply defined.
-
-
-LaTeX Warning: Label `eq:profitDef' multiply defined.
-
-)
-\openout1 = `ProblemSet2.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
-\scratchdimen=\dimen271
+\scratchdimen=\dimen270
 \scratchbox=\box73
 \nofMPsegments=\count312
 \nofMParguments=\count313
 \everyMPshowfont=\toks37
 \MPscratchCnt=\count314
-\MPscratchDim=\dimen272
+\MPscratchDim=\dimen271
 \MPnumerator=\count315
 \makeMPintoPDFobject=\count316
 \everyMPtoPDFconversion=\toks38
@@ -559,7 +505,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 55.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -569,35 +515,32 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
- (build/ProblemSet2.out) (build/ProblemSet2.out)
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
+ (build/ProblemSet2AnswerSheet.out) (build/ProblemSet2AnswerSheet.out)
 \@outlinefile=\write4
-\openout4 = `ProblemSet2.out'.
+\openout4 = `ProblemSet2AnswerSheet.out'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (build/ProblemSet2.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `ProblemSet2.out' has not changed.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (build/ProblemSet2AnswerSheet.aux)
+Package rerunfilecheck Info: File `ProblemSet2AnswerSheet.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20476 strings out of 478238
- 381667 string characters out of 5850457
- 660859 words of memory out of 5000000
- 38324 multiletter control sequences out of 15000+600000
- 481964 words of font info for 50 fonts, out of 8000000 for 9000
+ 20360 strings out of 478238
+ 378287 string characters out of 5850457
+ 643149 words of memory out of 5000000
+ 38264 multiletter control sequences out of 15000+600000
+ 474860 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,15n,104p,531b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/ProblemSet2.pdf (5 pages, 99332 bytes).
+ 100i,5n,104p,542b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on build/ProblemSet2AnswerSheet.pdf (1 page, 19210 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 27 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

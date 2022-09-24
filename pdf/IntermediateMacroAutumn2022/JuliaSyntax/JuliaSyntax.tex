@@ -1,0 +1,176 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[outputdir=build,cache=true]{minted} % for code chuck and syntax highlighting
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\begin{document}
+    \title[Syntax \& Algorithm]{Julia Syntax and Algorithm}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\section{Basic Julia Usage}
+\label{sec:Basic_Julia_Usage}
+
+\begin{frame}{Resources on Syntax}
+\label{slide:Resources_on_Syntax}
+    \begin{itemize}
+        \item \blue{\href{https://docs.julialang.org/en/v1/manual/getting-started/}{Julia Official Tutorial}}: \tiny \url{https://julialang.org/learning/tutorials/}
+        \normalsize
+        \item \blue{\href{https://en.wikibooks.org/wiki/Introducing_Julia}{Wikibook on Introducing Julia}}: \tiny{\url{https://en.wikibooks.org/wiki/Introducing_Julia}}
+        \normalsize
+        \item \blue{\href{https://julia.quantecon.org/intro.html}{QuantEcon w/ Julia}}: \tiny{\url{https://julia.quantecon.org/intro.html}}
+        \normalsize
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The REPL}
+\label{slide:The_REPL}
+    REPL stands for \textbf{R}ead, \textbf{E}valuate, \textbf{P}rint, and \textbf{L}oops.
+
+    Julia's REPL is the best I have ever seen, includes
+    \begin{itemize}
+        \item
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Python Code listing in Beamer}
+The following Python code adds two numbers and display the result using \verb|print()| function:
+\rule{\textwidth}{1pt}
+\scriptsize
+\begin{minted}{python}
+    # This program adds two numbers
+    num1 = 1.5
+    num2 = 6.3
+    # Add two numbers
+    sum = num1 + num2
+    # Display the sum
+    print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+\end{minted}
+\rule{\textwidth}{1pt}
+\end{frame}
+
+\section{Appendix}
+\label{sec:Appendix}
+
+\appendix
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+\begin{frame}\frametitle{}
+\begin{columns}
+\label{Appendix}
+\column{1\linewidth}
+\centering
+{\Large \alert{Appendix}}
+\end{columns}
+\end{frame}
+%------------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\bibliographystyle{$BIB_STYLE}
+\bibliography{$BIBFILE}
+\end{frame}
+
+\end{document}
