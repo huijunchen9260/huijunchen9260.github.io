@@ -5,6 +5,36 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Note on Fortran</title>
+<link>https://huijunchen9260.github.io/FortranNote.html</link>
+<guid>https://huijunchen9260.github.io/FortranNote.html</guid>
+<pubDate>Sat, 24 Sep 2022 14:21:16 -0400</pubDate>
+<description><![CDATA[<h1 id="note-on-fortran">Note on Fortran</h1>
+
+<h2 id="table-of-content">Table of Content</h2>
+
+<!-- vim-markdown-toc GFM -->
+
+<ul>
+<li><a href="#fortran-package-manager">Fortran Package Manager</a>
+
+<ul>
+<li><a href="#change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</a></li>
+</ul></li>
+<li><a href="#fortran-compiler">Fortran Compiler</a></li>
+</ul>
+
+<!-- vim-markdown-toc -->
+
+<h2 id="fortran-package-manager">Fortran Package Manager</h2>
+
+<h3 id="change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</h3>
+
+<p>After changing all the corresponding code, like <code>module</code> name and <code>use</code> statement in the directory <code>src&#47;</code>, you need to go to <code>build&#47;</code> and update the <code>cache.toml</code> file to the new module name.</p>
+
+<h2 id="fortran-compiler">Fortran Compiler</h2>]]></description>
+</item>
+<item>
 <title>Note on Julia</title>
 <link>https://huijunchen9260.github.io/JuliaNote.html</link>
 <guid>https://huijunchen9260.github.io/JuliaNote.html</guid>
@@ -75,6 +105,9 @@
 <h2 id="announcement">Announcement</h2>
 
 <ul>
+<li>Add
+<a href="pdf/IntermediateMacroAutumn2022/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a>
+for students to upload on Carmen.</li>
 <li>Fix typo in
 <a href="pdf/IntermediateMacroAutumn2022/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
 <li>Sep 04, 2022: Update the Instruction for
