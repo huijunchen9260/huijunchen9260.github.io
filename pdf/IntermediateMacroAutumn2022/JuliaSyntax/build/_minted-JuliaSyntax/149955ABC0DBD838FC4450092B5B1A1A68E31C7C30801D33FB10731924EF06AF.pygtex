@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indl}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{lnum}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indc}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{cnum}
+\PYG{+w}{            }\PYG{c}{\PYGZsh{} the abs of u is close enough to 0.0}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{n}{abs}\PYG{p}{(}\PYG{n}{utility}\PYG{p}{[}\PYG{n}{indc}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{indl}\PYG{p}{])}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mf}{1e\PYGZhy{}2}
+\PYG{+w}{            }\PYG{c}{\PYGZsh{} \PYGZsq{}\PYGZdl{}\PYGZsq{}: string interpolation (IMO inefficient)}
+\PYG{+w}{                }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}U \PYGZti{} 0 at (C, l) = (}\PYG{l+s+si}{\PYGZdl{}indc}\PYG{l+s}{, }\PYG{l+s+si}{\PYGZdl{}indl}\PYG{l+s}{)\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{            }\PYG{k}{end}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{    }\PYG{k}{end}
+\end{Verbatim}

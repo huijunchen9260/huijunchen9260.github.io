@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  22 SEP 2022 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  29 SEP 2022 01:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -862,7 +862,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 24.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 30.
  (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -912,34 +912,38 @@ runsystem(which pygmentize && touch JuliaSyntax.aex)...executed.
 
 runsystem(rm JuliaSyntax.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 73.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 79.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count397
 \l__pdf_internal_box=\box106
-) (build/JuliaSyntax.aux)
+) (build/JuliaSyntax.aux
+
+LaTeX Warning: Label `slide:Grid_search__structure__cont__' multiply defined.
+
+)
 \openout1 = `JuliaSyntax.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -994,7 +998,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 79.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1004,9 +1008,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count404
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (build/JuliaSyntax.out) (build/JuliaSyntax.out)
 \@outlinefile=\write7
 \openout7 = `JuliaSyntax.out'.
@@ -1035,60 +1039,302 @@ Package caption Info: End \AtBeginDocument code.
  (build/JuliaSyntax.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 75.
+(hyperref)                setting the option has no effect on input line 81.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 119.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 127.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 119.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 127.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 119.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 127.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 119.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 127.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 119.
+(Font)              <10.95> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 119.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 119.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 119.
+(Font)              <6> on input line 127.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 127.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 119.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 127.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 119.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 127.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 119.
- (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 119.
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [2
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 141.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 141.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
+
+]
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/default.pygstyle) (./build/_minted-JuliaSyntax/0EF237E8BCF879F89A3F2B80DAE6741568E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/14006DB33769D2A211C4F39ABF12FFC268E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/F75D1ECD2FCD4DC44F478438E9BFAD0868E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/DC9C79278D17347005183FA2582D14E868E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/69A904AC9ADFBEFAA69A720E4C13780A68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/E2C942ABE10BCCD8B392AAF4D7F9832F68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/45B758A4F518F3FF31363696132F5F5A68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/0BC6E73987FE4D684DBCFA6117C72DF268E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/14006DB33769D2A211C4F39ABF12FFC268E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [4
+
+]
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/9F9F90DBE3E5EE1218C86B8839DB199568E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D2CD4AAF21EC908398737F330808A96D68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/304D82C0867E556F1B5E676E0D11F52068E31C7C30801D33FB10731924EF06AF.pygtex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
+)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/91E454EBA04C1ACA45D1EF5D17C6528568E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [5
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/B8B980419A4F1E13838E8A67BB00701968E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/5439E53FF10C983E27D09D7174EFC0BC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/5439E53FF10C983E27D09D7174EFC0BC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/889E0D7343405C079195E7B8903C8C9E68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/30D9529FF51C6977FA9FA57BC73FDDE368E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/9CF56F394795D96B937A6A5E9929EA9D68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/B8B980419A4F1E13838E8A67BB00701968E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/5439E53FF10C983E27D09D7174EFC0BC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/945E57B74FA7689BDCD557189AA7D44268E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [6
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/58E0494C51D30EB3494F7C9198986BB968E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/8958985ABE7275712FA32257F8ACAA2A68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/1C6369DE7D9E60C35632B993528525EE68E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [7
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/91E454EBA04C1ACA45D1EF5D17C6528568E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/2D3E2C306EDCE0284A25B8870A944CCB68E31C7C30801D33FB10731924EF06AF.pygtex))
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/91E454EBA04C1ACA45D1EF5D17C6528568E31C7C30801D33FB10731924EF06AF.pygtex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [8
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/F9F4E4D1462C633C63705BC1FD03E6CF68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D0A83A9A4E117A2EF4397C19E83EA56F68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/F75D1ECD2FCD4DC44F478438E9BFAD0868E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/41C06FF44891279CFEF670CCB5B2A09268E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/93AED46779D07DF781936AE7FC24D90768E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/26EF188B2F7ACDC76358B728A60152FE68E31C7C30801D33FB10731924EF06AF.pygtex)
+<./figures/utility.png, id=130, 1384.6932pt x 716.9184pt>
+File: ./figures/utility.png Graphic file (type png)
+<use ./figures/utility.png>
+Package pdftex.def Info: ./figures/utility.png  used on input line 13.
+(pdftex.def)             Requested size: 273.9493pt x 141.82776pt.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [9
+
+ <./figures/utility.png>]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/0B9F2E5943D92CA46EC1239684C4DFF968E31C7C30801D33FB10731924EF06AF.pygtex)
+<./figures/utility_contour.png, id=143, 1384.6932pt x 716.9184pt>
+File: ./figures/utility_contour.png Graphic file (type png)
+<use ./figures/utility_contour.png>
+Package pdftex.def Info: ./figures/utility_contour.png  used on input line 9.
+(pdftex.def)             Requested size: 273.9493pt x 141.82776pt.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [10
+
+ <./figures/utility_contour.png>]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/91E454EBA04C1ACA45D1EF5D17C6528568E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D325872535AA3529AE214C3FD3A1A4AC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/149955ABC0DBD838FC4450092B5B1A1A68E31C7C30801D33FB10731924EF06AF.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 6.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D325872535AA3529AE214C3FD3A1A4AC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/753474E1388FF8F32F2FB3B8B440AE6868E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D325872535AA3529AE214C3FD3A1A4AC68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/AC4C1A956B01A13AB36CBB7E5ADBB9B368E31C7C30801D33FB10731924EF06AF.pygtex))
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/D325872535AA3529AE214C3FD3A1A4AC68E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [11
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/304D82C0867E556F1B5E676E0D11F52068E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/44F274144FEFB2E9BD83675D3236EAAD68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/EAA80568E89172A4C67128A8D2FC11EE68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/B48B04E0AFF5C6A367002C734BAE79E568E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/E2533FDDD0850DA09E119368A106E0DE68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/A83AD3AC354BE658C1E5BF0EC862F81068E31C7C30801D33FB10731924EF06AF.pygtex))
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/304D82C0867E556F1B5E676E0D11F52068E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (10.11232pt too high) detected at line 318
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1096,40 +1342,144 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (build/JuliaSyntax.vrb
 \openout5 = `JuliaSyntax.pyg'.
 
- (./build/_minted-JuliaSyntax/default.pygstyle) (./build/_minted-JuliaSyntax/D842EB96197F17566863EFF5C2677B3094CFE2F6F4E58819C4B9DEB70CAE8C81.pygtex
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 8.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
-))
+ (./build/_minted-JuliaSyntax/55D2AA784DB70602FB0D7F31471314A468E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [4
+ [13
 
 ]
+\openout4 = `JuliaSyntax.vrb'.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 153.
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/CCFA1B66C5048F9F983B6A181D785D2068E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/0312E318CC071AF1166DC9CFB26A68CF68E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/CCFA1B66C5048F9F983B6A181D785D2068E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/1FA85C823D6B8A98FDD9A120F6076AE768E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/1745FE7523C6203823C196372C27CCA168E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/9FC13651A19D2674FE071661C73E21DB68E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/BDDEDA94D7C57999BDDA0BDD9735896768E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/F2CA5AF8F85C2B7D1993F20DF8B7921368E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/8395B272B25843C5C68CEF333B524E9C68E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/F0437A4E099C99C5D022B18143C395EE68E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+]
+<./figures/utilitygov_wrong.png, id=259, 1384.6932pt x 716.9184pt>
+File: ./figures/utilitygov_wrong.png Graphic file (type png)
+<use ./figures/utilitygov_wrong.png>
+Package pdftex.def Info: ./figures/utilitygov_wrong.png  used on input line 472.
+(pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [20
+
+ <./figures/utilityGov_wrong.png>]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+pdfTeX warning (ext4): destination with the same identifier (name{slide:Grid_search__structure__cont__}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2 \label{slide:Grid_search__structure__cont__}
+                                                
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/20FB6210106B342F485F1D462AB3B0FE68E31C7C30801D33FB10731924EF06AF.pygtex))
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/C56B775EDF4244C5CF0133E287CD5D8F68E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (10.1178pt too high) detected at line 493
+ []
 
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [5
+ [21
 
-] (build/JuliaSyntax.bbl
+]
+<./figures/utilitygov_correct.png, id=281, 1384.6932pt x 716.9184pt>
+File: ./figures/utilitygov_correct.png Graphic file (type png)
+<use ./figures/utilitygov_correct.png>
+Package pdftex.def Info: ./figures/utilitygov_correct.png  used on input line 498.
+(pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
-
-
-Package natbib Warning: Empty `thebibliography' environment on input line 13.
-
-)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [6
+ [22
+
+ <./figures/utilitygov_correct.png>]
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/809D20745C7A52F8C00E099460E08D6268E31C7C30801D33FB10731924EF06AF.pygtex)
+\openout6 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/51AE29D7D8C3C71FD812F29161EA2A5B68E31C7C30801D33FB10731924EF06AF.pygtex)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [23
 
 ]
 \tf@nav=\write8
@@ -1143,28 +1493,31 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
 
 
-Package caption Warning: Unused \captionsetup[figure] on input line 27.
+Package caption Warning: Unused \captionsetup[figure] on input line 33.
 See the caption package documentation for explanation.
 
 (build/JuliaSyntax.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `JuliaSyntax.out' has not changed.
-(rerunfilecheck)             Checksum: 2E049BF78F5A663F61471FC4010DD3C2;399.
+(rerunfilecheck)             Checksum: 5F4FFD96DBF6D7DDFE59BFF3F279716C;295.
 runsystem(rm build//JuliaSyntax.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 35319 strings out of 478238
- 720134 string characters out of 5850457
- 1003279 words of memory out of 5000000
- 52772 multiletter control sequences out of 15000+600000
- 527176 words of font info for 86 fonts, out of 8000000 for 9000
+ 36047 strings out of 478238
+ 767541 string characters out of 5850457
+ 1014907 words of memory out of 5000000
+ 53236 multiletter control sequences out of 15000+600000
+ 530288 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,463b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/JuliaSyntax.pdf (6 pages, 165131 bytes).
+ 128i,15n,122p,617b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/JuliaSyntax.pdf (23 pages, 1615618 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
