@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{ymat}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kt}{Array}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}(}\PYG{n+nb}{undef}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{znum}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{lnum}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indl}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{lnum}
+\PYG{+w}{        }\PYG{n}{lval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{lgrid}\PYG{p}{[}\PYG{n}{indl}\PYG{p}{]}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indz}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{znum}
+\PYG{+w}{            }\PYG{n}{zval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zgrid}\PYG{p}{[}\PYG{n}{indz}\PYG{p}{]}
+\PYG{+w}{            }\PYG{n}{ymat}\PYG{p}{[}\PYG{n}{indz}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{indl}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zval}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{lval}\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{    }\PYG{k}{end}
+\PYG{+w}{    }\PYG{n}{ymin}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{minimum}\PYG{p}{(}\PYG{n}{ymat}\PYG{p}{)}
+\end{Verbatim}

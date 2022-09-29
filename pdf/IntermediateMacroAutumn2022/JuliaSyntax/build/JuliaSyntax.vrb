@@ -1,5 +1,6 @@
-\frametitle{Grid search: revising (erase \juliainline {uval < -30.0})}
-\label{slide:Grid_search__structure__cont__}
+\frametitle{Grid search: do better (cont.)}
+\label{slide:Grid_search__do_better__cont_}
+
 \begin{juliacode}
     for indG = 1:1:Gnum
         Gval = Ggrid[indG]
@@ -8,12 +9,11 @@
             for indl = 1:1:lnum
                 lval = lgrid[indl]
                 cval = zval*(1-lval)^(1-a) - Gval
-                uval = utility(lval, zval, Gval)
-                uvec[indl] = ( (cval < 0.0 || uval < -30.0)
-                                ? -Inf : uval )
+                uvec[indl] = utility(lval, zval, Gval)
             end
             ustar[indz, indG] = maximum(uvec)
         end
     end
 \end{juliacode}
+
 

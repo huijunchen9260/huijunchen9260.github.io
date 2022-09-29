@@ -492,9 +492,76 @@ $ \because $ large negative point that drag down the scale of every point.
 
 \end{frame}
 
-\begin{frame}{grid search: correct figure}
-\label{slide:grid_search__correct_figure}
+\begin{frame}{Grid search: better figure}
+\label{slide:grid_search__better_figure}
     \includegraphics[width=\textwidth]{./figures/utilitygov_correct.png}
+\end{frame}
+
+\begin{frame}[fragile]{Grid search: Can we do better?}
+\label{slide:Grid_search__Can_we_do_better_}
+    All of the \juliainline{-Inf} stuff we are assigning manually is because $ C < 0 $.
+
+    Recall that $ C = Y - G $, and thus for $ C \ge 0 $, $ Y - G \ge 0 \Rightarrow Y > G $.
+
+\begin{juliacode}
+    ymat = Array{Float64, 2}(undef, znum, lnum)
+    for indl = 1:1:lnum
+        lval = lgrid[indl]
+        for indz = 1:1:znum
+            zval = zgrid[indz]
+            ymat[indz, indl] = zval * (1-lval)^(1-a)
+        end
+    end
+    ymin = minimum(ymat)
+\end{juliacode}
+
+You will get $ min(y) = 0.081 $, which means that if you choose the \juliainline{Ghigh = 0.08}, $ C > 0, \forall z, G $ assigned.
+
+\end{frame}
+
+\begin{frame}[fragile]{Grid search: do better}
+\label{slide:Grid_search__do_better}
+
+\begin{juliacode}
+    # lower bound should higher than 0.01
+    Glow = 0.0
+    Ghigh = 0.08
+    # build Ggrid
+    Gnum = 100
+    Ggrid = collect( range( Glow, Ghigh, length = Gnum ) )
+    # build lgrid
+    lnum = 100
+    lgrid = collect( range( 0.01, 0.99, length = lnum ) )
+\end{juliacode}
+
+and then find the optimal leisure using the value on this grid:
+
+\end{frame}
+
+\begin{frame}[fragile]{Grid search: do better (cont.)}
+\label{slide:Grid_search__do_better__cont_}
+
+\begin{juliacode}
+    for indG = 1:1:Gnum
+        Gval = Ggrid[indG]
+        for indz = 1:1:znum
+            zval = zgrid[indz]
+            for indl = 1:1:lnum
+                lval = lgrid[indl]
+                cval = zval*(1-lval)^(1-a) - Gval
+                uvec[indl] = utility(lval, zval, Gval)
+            end
+            ustar[indz, indG] = maximum(uvec)
+        end
+    end
+\end{juliacode}
+
+
+\end{frame}
+
+\begin{frame}{Grid search: better figure}
+\label{slide:grid_search__better_figure}
+    \includegraphics[width=\textwidth]{./figures/utilitygov_better.png}
 \end{frame}
 
 \begin{frame}{Grid search method: additional details}
