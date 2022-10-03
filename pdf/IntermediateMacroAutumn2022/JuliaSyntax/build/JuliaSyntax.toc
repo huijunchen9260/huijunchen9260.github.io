@@ -1,4 +1,5 @@
 \babel@toc {nil}{}\relax 
 \beamer@sectionintoc {1}{Basic Julia Usage}{2}{0}{1}
 \beamer@sectionintoc {2}{Syntax}{6}{0}{2}
-\beamer@sectionintoc {3}{Algorithm}{14}{0}{3}
+\beamer@sectionintoc {3}{Laffer curve}{14}{0}{3}
+\beamer@sectionintoc {4}{Gov Spending}{19}{0}{4}

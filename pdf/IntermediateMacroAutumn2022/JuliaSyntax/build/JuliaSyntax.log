@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  29 SEP 2022 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  3 OCT 2022 16:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1243,7 +1243,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 \openout5 = `JuliaSyntax.pyg'.
 
  (./build/_minted-JuliaSyntax/26EF188B2F7ACDC76358B728A60152FE68E31C7C30801D33FB10731924EF06AF.pygtex)
-<./figures/utility.png, id=130, 1384.6932pt x 716.9184pt>
+<./figures/utility.png, id=142, 1384.6932pt x 716.9184pt>
 File: ./figures/utility.png Graphic file (type png)
 <use ./figures/utility.png>
 Package pdftex.def Info: ./figures/utility.png  used on input line 13.
@@ -1260,7 +1260,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 \openout5 = `JuliaSyntax.pyg'.
 
  (./build/_minted-JuliaSyntax/0B9F2E5943D92CA46EC1239684C4DFF968E31C7C30801D33FB10731924EF06AF.pygtex)
-<./figures/utility_contour.png, id=143, 1384.6932pt x 716.9184pt>
+<./figures/utility_contour.png, id=157, 1384.6932pt x 716.9184pt>
 File: ./figures/utility_contour.png Graphic file (type png)
 <use ./figures/utility_contour.png>
 Package pdftex.def Info: ./figures/utility_contour.png  used on input line 9.
@@ -1351,6 +1351,57 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [13
 
 ]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
+Overfull \vbox (8.05963pt too high) detected at line 396
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+]
+Overfull \vbox (2.07228pt too high) detected at line 422
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/6DC4767B5E939F14F4D290234E93278968E31C7C30801D33FB10731924EF06AF.pygtex))
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+]
+\openout4 = `JuliaSyntax.vrb'.
+
+ (build/JuliaSyntax.vrb
+\openout5 = `JuliaSyntax.pyg'.
+
+ (./build/_minted-JuliaSyntax/C3003DB1938BA15C2EF7225EA3042D6568E31C7C30801D33FB10731924EF06AF.pygtex)
+<./figures/lafferCurve.png, id=255, 1384.6932pt x 716.9184pt>
+File: ./figures/lafferCurve.png Graphic file (type png)
+<use ./figures/lafferCurve.png>
+Package pdftex.def Info: ./figures/lafferCurve.png  used on input line 7.
+(pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+ <./figures/lafferCurve.png>]
 \openout4 = `JuliaSyntax.vrb'.
 
  (build/JuliaSyntax.vrb
@@ -1362,7 +1413,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/0312E318CC071AF1166DC9CFB26A68CF68E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [14
+ [19
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1376,7 +1427,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/1FA85C823D6B8A98FDD9A120F6076AE768E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [15
+ [20
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1387,7 +1438,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/1745FE7523C6203823C196372C27CCA168E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [16
+ [21
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1398,7 +1449,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/9FC13651A19D2674FE071661C73E21DB68E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [17
+ [22
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1409,7 +1460,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/BDDEDA94D7C57999BDDA0BDD9735896768E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [18
+ [23
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1426,18 +1477,18 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/F0437A4E099C99C5D022B18143C395EE68E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [19
+ [24
 
 ]
-<./figures/utilitygov_wrong.png, id=259, 1384.6932pt x 716.9184pt>
+<./figures/utilitygov_wrong.png, id=342, 1384.6932pt x 716.9184pt>
 File: ./figures/utilitygov_wrong.png Graphic file (type png)
 <use ./figures/utilitygov_wrong.png>
-Package pdftex.def Info: ./figures/utilitygov_wrong.png  used on input line 472.
+Package pdftex.def Info: ./figures/utilitygov_wrong.png  used on input line 590.
 (pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [20
+ [25
 
  <./figures/utilityGov_wrong.png>]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1454,24 +1505,24 @@ l.2 \label{slide:Grid_search__structure__cont__}
 \openout6 = `JuliaSyntax.pyg'.
 
  (./build/_minted-JuliaSyntax/C56B775EDF4244C5CF0133E287CD5D8F68E31C7C30801D33FB10731924EF06AF.pygtex)
-Overfull \vbox (10.1178pt too high) detected at line 493
+Overfull \vbox (10.1178pt too high) detected at line 611
  []
 
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [21
+ [26
 
 ]
-<./figures/utilitygov_correct.png, id=281, 1384.6932pt x 716.9184pt>
+<./figures/utilitygov_correct.png, id=366, 1384.6932pt x 716.9184pt>
 File: ./figures/utilitygov_correct.png Graphic file (type png)
 <use ./figures/utilitygov_correct.png>
-Package pdftex.def Info: ./figures/utilitygov_correct.png  used on input line 498.
+Package pdftex.def Info: ./figures/utilitygov_correct.png  used on input line 616.
 (pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [22
+ [27
 
  <./figures/utilitygov_correct.png>]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1486,13 +1537,13 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 \openout6 = `JuliaSyntax.pyg'.
 
  (./build/_minted-JuliaSyntax/A66341A855086350B8C087223AE5687E68E31C7C30801D33FB10731924EF06AF.pygtex))
-Overfull \vbox (2.70369pt too high) detected at line 520
+Overfull \vbox (2.70369pt too high) detected at line 638
  []
 
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [23
+ [28
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1503,7 +1554,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/F2D037775FB994E8FA43BDF948DC665E68E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [24
+ [29
 
 ]
 \openout4 = `JuliaSyntax.vrb'.
@@ -1514,23 +1565,23 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/1BF110D873B30AEE18A5954824C30E3168E31C7C30801D33FB10731924EF06AF.pygtex))
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [25
+ [30
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{slide:grid_search__better_figure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 \end{frame}
+l.683 \end{frame}
                  
-<./figures/utilitygov_better.png, id=324, 1384.6932pt x 716.9184pt>
+<./figures/utilitygov_better.png, id=413, 1384.6932pt x 716.9184pt>
 File: ./figures/utilitygov_better.png Graphic file (type png)
 <use ./figures/utilitygov_better.png>
-Package pdftex.def Info: ./figures/utilitygov_better.png  used on input line 565.
+Package pdftex.def Info: ./figures/utilitygov_better.png  used on input line 683.
 (pdftex.def)             Requested size: 342.43532pt x 177.29291pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [26
+ [31
 
  <./figures/utilitygov_better.png>]
 \openout6 = `JuliaSyntax.pyg'.
@@ -1541,7 +1592,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  (./build/_minted-JuliaSyntax/51AE29D7D8C3C71FD812F29161EA2A5B68E31C7C30801D33FB10731924EF06AF.pygtex)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [27
+ [32
 
 ]
 \tf@nav=\write8
@@ -1563,23 +1614,23 @@ See the caption package documentation for explanation.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `JuliaSyntax.out' has not changed.
-(rerunfilecheck)             Checksum: 5F4FFD96DBF6D7DDFE59BFF3F279716C;295.
+(rerunfilecheck)             Checksum: 6BCC2532D40F6F93BBF0455CAADA9887;419.
 runsystem(rm build//JuliaSyntax.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36122 strings out of 478238
- 771972 string characters out of 5850457
- 1015375 words of memory out of 5000000
- 53278 multiletter control sequences out of 15000+600000
+ 36217 strings out of 478238
+ 775286 string characters out of 5850457
+ 1017861 words of memory out of 5000000
+ 53343 multiletter control sequences out of 15000+600000
  530288 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,617b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,17n,122p,617b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/JuliaSyntax.pdf (27 pages, 2159647 bytes).
+Output written on build/JuliaSyntax.pdf (32 pages, 2214785 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 460 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
