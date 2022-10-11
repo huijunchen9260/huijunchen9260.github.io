@@ -8,7 +8,7 @@
   Name:\ 
 
   <\wide-tabular>
-    <tformat|<cwith|1|-1|1|-1|cell-halign|c>|<cwith|1|-1|1|-1|cell-tborder|1ln>|<cwith|1|-1|1|-1|cell-bborder|1ln>|<cwith|1|-1|1|-1|cell-lborder|1ln>|<cwith|1|-1|1|-1|cell-rborder|1ln>|<cwith|2|2|1|-1|cell-height|3cm>|<cwith|2|2|1|-1|cell-vmode|exact>|<cwith|4|4|1|-1|cell-height|3cm>|<cwith|4|4|1|-1|cell-vmode|exact>|<cwith|6|6|1|-1|cell-height|3cm>|<cwith|6|6|1|-1|cell-vmode|exact>|<cwith|8|8|1|-1|cell-height|3cm>|<cwith|8|8|1|-1|cell-vmode|exact>|<cwith|10|10|1|-1|cell-height|3cm>|<cwith|10|10|1|-1|cell-vmode|exact>|<table|<row|<\cell>
+    <tformat|<cwith|1|-1|1|-1|cell-halign|c>|<cwith|1|-1|1|-1|cell-tborder|1ln>|<cwith|1|-1|1|-1|cell-bborder|1ln>|<cwith|1|-1|1|-1|cell-lborder|1ln>|<cwith|1|-1|1|-1|cell-rborder|1ln>|<cwith|2|2|1|-1|cell-height|3cm>|<cwith|2|2|1|-1|cell-vmode|exact>|<cwith|4|4|1|-1|cell-height|3cm>|<cwith|4|4|1|-1|cell-vmode|exact>|<cwith|6|6|1|-1|cell-height|3cm>|<cwith|6|6|1|-1|cell-vmode|exact>|<cwith|8|8|1|-1|cell-height|3cm>|<cwith|8|8|1|-1|cell-vmode|exact>|<cwith|10|10|1|-1|cell-height|3cm>|<cwith|10|10|1|-1|cell-vmode|exact>|<cwith|2|-1|1|-1|cell-valign|c>|<cwith|6|6|5|6|cell-halign|c>|<cwith|6|6|5|6|cell-tborder|1ln>|<cwith|6|6|5|6|cell-bborder|1ln>|<cwith|6|6|5|6|cell-lborder|1ln>|<cwith|6|6|5|6|cell-rborder|1ln>|<cwith|6|6|5|6|cell-height|3cm>|<cwith|6|6|5|6|cell-vmode|exact>|<cwith|6|6|5|6|cell-valign|c>|<cwith|6|6|3|4|cell-halign|c>|<cwith|6|6|3|4|cell-tborder|1ln>|<cwith|6|6|3|4|cell-bborder|1ln>|<cwith|6|6|3|4|cell-lborder|1ln>|<cwith|6|6|3|4|cell-rborder|1ln>|<cwith|6|6|3|4|cell-height|3cm>|<cwith|6|6|3|4|cell-vmode|exact>|<cwith|6|6|3|4|cell-valign|c>|<table|<row|<\cell>
       1
     </cell>|<\cell>
       2
@@ -21,17 +21,17 @@
     </cell>|<\cell>
       6
     </cell>>|<row|<\cell>
-      \;
+      <math|6>
     </cell>|<\cell>
-      \;
+      <math|1-N>
     </cell>|<\cell>
-      \;
+      <math|N>
     </cell>|<\cell>
-      \;
+      <math|N<rsup|<frac|1|2>>>
     </cell>|<\cell>
-      \;
+      <math|N<rsup|<frac|1|2>>>
     </cell>|<\cell>
-      \;
+      <frac|1|2><math|N<rsup|-<frac|1|2>>>\ 
     </cell>>|<row|<\cell>
       7
     </cell>|<\cell>
@@ -45,17 +45,17 @@
     </cell>|<\cell>
       12
     </cell>>|<row|<\cell>
-      \;
+      <frac|1|3>
     </cell>|<\cell>
-      \;
+      <sqrt|<frac|1|3>><math|\<approx\>0.577>
     </cell>|<\cell>
-      \;
+      <math|<frac|2|3>\<approx\>0.666>
     </cell>|<\cell>
-      \;
+      <sqrt|<frac|1|3>><math|\<approx\>0.577>
     </cell>|<\cell>
-      \;
+      <math|<sqrt|<frac|1|3>>-<frac|1|6><sqrt|3>\<approx\>0.288>
     </cell>|<\cell>
-      \;
+      <math|<frac|<sqrt|3>|2>\<approx\>0.866>
     </cell>>|<row|<\cell>
       13
     </cell>|<\cell>
@@ -69,17 +69,17 @@
     </cell>|<\cell>
       18
     </cell>>|<row|<\cell>
-      \;
+      <frac|4|3><math|\<approx\>1.333>
     </cell>|<\cell>
-      \;
+      <frac|1|3>\<approx\>0.333
     </cell>|<\cell>
-      \;
+      <frac|4|3><math|\<approx\>1.333>
     </cell>|<\cell>
-      \;
+      <frac|1|3>\<approx\>0.333
     </cell>|<\cell>
-      \;
+      <frac|4000|3>
     </cell>|<\cell>
-      \;
+      <frac|8000|3>
     </cell>>|<row|<\cell>
       19
     </cell>|<\cell>
@@ -93,17 +93,17 @@
     </cell>|<\cell>
       24
     </cell>>|<row|<\cell>
-      \;
+      4000
     </cell>|<\cell>
-      \;
+      2
     </cell>|<\cell>
-      \;
+      1300
     </cell>|<\cell>
-      \;
+      2300
     </cell>|<\cell>
-      \;
+      -200
     </cell>|<\cell>
-      \;
+      3
     </cell>>|<row|<\cell>
       25
     </cell>|<\cell>
@@ -117,17 +117,17 @@
     </cell>|<\cell>
       30
     </cell>>|<row|<\cell>
-      \;
+      1200
     </cell>|<\cell>
-      \;
+      2400
     </cell>|<\cell>
-      \;
+      -200
     </cell>|<\cell>
-      \;
+      2.667
     </cell>|<\cell>
-      \;
+      1233
     </cell>|<\cell>
-      \;
+      2367
     </cell>>>>
   </wide-tabular>
 </body>

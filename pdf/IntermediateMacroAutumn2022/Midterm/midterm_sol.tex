@@ -6,6 +6,14 @@
 % \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
 \usepackage{natbib}
 
+\usepackage[outputdir=build,cache=true]{minted} % for code chuck and syntax highlighting
+% \colorlet{verylightgray}{gray!20}
+%% shortcuts for julia code chuck
+\newminted{julia}{}
+\newmintinline{julia}{}
+\setmintedinline[julia]{bgcolor=gray!20}
+\setminted[julia]{bgcolor=gray!20}
+
 \usepackage{xcolor}
 \usepackage{amsmath}
 \newcommand{\tuple}[1]{ \langle #1 \rangle }
@@ -352,7 +360,27 @@ Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ 
     \textbf{For this question, please round to the fourth decimal point}
     $ G = R(t) = w t N = $ ~\answer{$ 0.0746999 \approx 0.0747 $}
 
-\Question According to Laffer curve, there's also another tax rate $ t_{2} $ such that it can also generate same amount of revenue to pay for the government spending you've calculated \ref{G}. What is $ t_{2} $? $ t_{2} \approx $~\answer{$ 0.9387 \approx 0.94 $}
+\Question \label{taxnumerics} According to Laffer curve, there's also another tax rate $ t_{2} $ such that it can also generate same amount of revenue to pay for the government spending you've calculated \ref{G}. What is $ t_{2} $? $ t_{2} \approx $~\answer{$ 0.9387 \approx 0.94 $}
+
+If you want to solve \ref{taxnumerics} numerically, you can use the following code chuck and supplement the corresponding $ N $ and $ w $:
+
+\begin{juliacode}
+z = 1; a = 0.33; b = 2.15; tnum = 1000
+tgrid = collect( range(0.01, 0.99, length = tnum) )
+Gvec = Array{Float64, 1}(undef, tnum)
+for indt = 1:1:tnum
+    t = tgrid[indt]
+    N = your answer in 37
+    w = z * your answer in 31
+    Gtarget = your answer in 41
+    G = w*t*N
+    if abs(G - Gtarget) < 1e-4
+        println("another tax rate is $t at $indt")
+    end
+    Gvec[indt] = G
+end
+
+\end{juliacode}
 
 Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$,
 
@@ -360,6 +388,14 @@ Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximiz
 
 \Question \label{Rmax} and the optimal labor tax revenue $ R(t^{*}) =  $ ~\answer{$0.09285 \approx 0.0929$}
     (\textbf{For this question, please round to the fourth decimal point})
+
+If you want to solve the above two questions numerically, you can use the following code chuck (need to let the above code chuck to run first):
+
+\begin{juliacode}
+    Gmax = maximum(Gvec)
+    tmax = tgrid[argmax(Gvec)]
+    println("optimal t* = $tmax, optimal G* = $Gmax")
+\end{juliacode}
 
 \end{Exercise}
 
