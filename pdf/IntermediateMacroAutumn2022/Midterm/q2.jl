@@ -6,7 +6,7 @@ t = 0.5
 
 # implicit functions
 labor(a, b, t) = (a*(1-t)) / (b*(a*(1-t) + (1-a)))
-wage(a, z, N) = a*z*N^(a-z)
+wage(a, z, N) = a*z*N^(a-1)
 gov(w, t, N) = w*t*N
 
 ## find the G level at tax = 0.5
