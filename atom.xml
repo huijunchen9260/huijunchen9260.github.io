@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-11-02T21:06:20Z</updated>
+<updated>2022-11-03T21:40:51Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -100,7 +100,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-10-18T19:15:25Z</updated>
+<updated>2022-11-02T21:06:20Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 
@@ -626,7 +626,8 @@ We need to unscrew to take out the wifi card.</p>
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
 
 <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
-<a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a></p>
+<a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a>;
+<a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf">slide: NOE Workshop</a></p>
 
 <p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.

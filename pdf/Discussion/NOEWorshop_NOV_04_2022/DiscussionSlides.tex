@@ -1,0 +1,162 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+% mint: code chuck and syntax highlighting
+%% outputdir should change according to pdf build directory
+\usepackage[outputdir=build,cache=false]{minted}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\begin{document}
+    \title[FinTech]{Discussion: \\ The Impact of FinTech on \\ Discrimination in Mortgage Lending}
+    \author[Hui-Jun Chen]{Daniel Shoag}
+    % \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{Discussant: Hui-Jun Chen (OSU)}
+    % \date{\today}
+    \date[NOE Workshop]{NOE Workshop \\ November 04, 2022}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\begin{frame}{Summary}
+\label{slide:Summary}
+
+FinTech lenders are \alert{not discriminating} Black \& Hispanic borrowers after controlling for similar characteristics using \alert{matching analysis}, and may \alert{change discriminating behavior by traditional lenders}.
+
+\vspace{1em}
+
+Data used:
+\begin{enumerate}
+    \item Home Mortgage Disclosure Act (HMDA) public dynamic loan dataset
+    \item Optimal Blue data (OB) $ \Rightarrow  $ \underline{credit score} [\alert{proprietary}]
+\end{enumerate}
+
+\vspace{1em}
+
+Contribution: compare w/  Bartlett, Morse, Stanton, and Wallace (2019),
+\begin{enumerate}
+    \item HMDA-OB $ \Rightarrow  $ control for \alert{upfront mortgage cost}
+    \item HMDA-OB $ \Rightarrow  $ \alert{more precise} def of discrimination
+    \item matching analysis $ \Rightarrow  $ control for zip-code level characteristics
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{My take}
+\label{slide:My_opinion}
+    \begin{itemize}
+        \item Very positive opinion on FinTech regarding discrimination!
+        \item Clear and significant regression result on the discrimination!
+        \item Conclusion is the same as Bartlett et al. (2019)...
+        \begin{itemize}
+            \item contributions seems like only \alert{proprietary data}?
+        \end{itemize}
+        \item Possible extension:
+        \begin{itemize}
+            \item Policy implication: given benefit of FinTech, what policy gov should impose on FinTech?
+            \item Causal relationship: is FinTech not discriminating because it is \alert{intrinsically more open} to discriminated group OR the \alert{lack of regulation} allows FinTech willing to make more risky investment?
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Some details}
+\label{slide:Some_details}
+    \begin{itemize}
+        \item Figure 2a and 2b using color map yet difference between Black\&Hispanic v.s. White Fico range is not visually significant
+        \begin{itemize}
+            \item Aggregate one GSE price index?
+        \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+\end{document}
