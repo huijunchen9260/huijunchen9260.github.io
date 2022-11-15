@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  1 AUG 2022 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  14 NOV 2022 20:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -773,7 +773,7 @@ Package rerunfilecheck Info: File `FinalExam.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23710 strings out of 478238
- 453025 string characters out of 5850457
+ 453025 string characters out of 5850456
  952715 words of memory out of 5000000
  41306 multiletter control sequences out of 15000+600000
  489702 words of font info for 65 fonts, out of 8000000 for 9000

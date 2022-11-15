@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1657294619 "ProblemSet3.tex" "build/ProblemSet3.pdf" "ProblemSet3" 1657294620
+["pdflatex"] 1667860963 "ProblemSet3.tex" "build/ProblemSet3.pdf" "ProblemSet3" 1667860964
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1650183167 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -162,12 +162,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651938238 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651938218 2927656 3678e06fb8d0369686d8a5b3450f6fb9 ""
-  "ProblemSet3.tex" 1657294617 18355 06cc15cbcfb434009d2577399b78e289 ""
-  "build/ProblemSet3.Answers" 1657294620 2912 5979adba9ca45068fe9f908b8b2549a6 "pdflatex"
-  "build/ProblemSet3.aux" 1657294620 6474 d055ad7298a155ebe9bc3aed84d2c7e9 "pdflatex"
-  "build/ProblemSet3.out" 1657294620 675 05145d935f10b7a96688526707d7674a "pdflatex"
+  "ProblemSet3.tex" 1667860961 18352 3f92c6e73d6fff8973c264f7c582a374 ""
+  "build/ProblemSet3.aux" 1667860963 6473 380bd307fa84571d9e4aa781c3fed093 "pdflatex"
+  "build/ProblemSet3.out" 1667860963 675 05145d935f10b7a96688526707d7674a "pdflatex"
   (generated)
-  "build/ProblemSet3.Answers"
   "build/ProblemSet3.aux"
   "build/ProblemSet3.log"
   "build/ProblemSet3.out"

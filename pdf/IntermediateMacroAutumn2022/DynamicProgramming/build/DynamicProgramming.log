@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  14 NOV 2022 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  14 NOV 2022 23:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lecture_18.tex
-(./Lecture_18.tex
+**DynamicProgramming.tex
+(./DynamicProgramming.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -196,7 +196,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+ (/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -238,8 +240,7 @@ File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@temp=\dimen262
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -529,6 +530,118 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks46
 ) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texmf/tex/latex/minted/minted.sty
+Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
+ (/usr/share/texmf/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count333
+\FV@InFile=\read3
+\FV@TabBox=\box75
+\c@FancyVerbLine=\count334
+\FV@StepNumber=\count335
+\FV@OutFile=\write5
+) (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count336
+\output=\toks47
+\linenoprevgraf=\count337
+\linenumbersep=\dimen292
+\linenumberwidth=\dimen293
+\c@linenumber=\count338
+\c@pagewiselinenumber=\count339
+\c@LN@truepage=\count340
+\c@internallinenumber=\count341
+\c@internallinenumbers=\count342
+\quotelinenumbersep=\dimen294
+\bframerule=\dimen295
+\bframesep=\dimen296
+\bframebox=\box76
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count343
+\c@FV@TrueTabCounter=\count344
+\FV@TabBox@Group=\box77
+\FV@TmpLength=\skip64
+\c@FV@HighlightLinesStart=\count345
+\c@FV@HighlightLinesStop=\count346
+\FV@LoopCount=\count347
+\FV@NCharsBox=\box78
+\FV@BreakIndent=\dimen297
+\FV@BreakIndentNChars=\count348
+\FV@BreakSymbolSepLeft=\dimen298
+\FV@BreakSymbolSepLeftNChars=\count349
+\FV@BreakSymbolSepRight=\dimen299
+\FV@BreakSymbolSepRightNChars=\count350
+\FV@BreakSymbolIndentLeft=\dimen300
+\FV@BreakSymbolIndentLeftNChars=\count351
+\FV@BreakSymbolIndentRight=\dimen301
+\FV@BreakSymbolIndentRightNChars=\count352
+\c@FancyVerbLineBreakLast=\count353
+\FV@LineBox=\box79
+\FV@LineIndentBox=\box80
+\FV@LineWidth=\dimen302
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count354
+\calc@Bcount=\count355
+\calc@Adimen=\dimen303
+\calc@Bdimen=\dimen304
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count356
+\calc@Cskip=\skip67
+) (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+) (/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "DynamicProgramming.w18")...executed.
+
+ (./DynamicProgramming.w18)
+runsystem(rm -- "DynamicProgramming.w18")...executed.
+
+) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count357
+\decimalpart=\count358
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+) (/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip68
+\fb@frw=\dimen305
+\fb@frh=\dimen306
+\FrameRule=\dimen307
+\FrameSep=\dimen308
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count359
+\float@exts=\toks48
+\float@box=\box81
+\@float@everytoks=\toks49
+\@floatcapt=\box82
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box83
+\minted@code=\write6
+\c@minted@FancyVerbLineTemp=\count360
+\c@minted@pygmentizecounter=\count361
+\@float@every@listing=\toks50
+\c@listing=\count362
 ) (/usr/share/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -567,117 +680,115 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen292
-\lightrulewidth=\dimen293
-\cmidrulewidth=\dimen294
-\belowrulesep=\dimen295
-\belowbottomsep=\dimen296
-\aboverulesep=\dimen297
-\abovetopsep=\dimen298
-\cmidrulesep=\dimen299
-\cmidrulekern=\dimen300
-\defaultaddspace=\dimen301
-\@cmidla=\count333
-\@cmidlb=\count334
-\@aboverulesep=\dimen302
-\@belowrulesep=\dimen303
-\@thisruleclass=\count335
-\@lastruleclass=\count336
-\@thisrulewidth=\dimen304
+\heavyrulewidth=\dimen309
+\lightrulewidth=\dimen310
+\cmidrulewidth=\dimen311
+\belowrulesep=\dimen312
+\belowbottomsep=\dimen313
+\aboverulesep=\dimen314
+\abovetopsep=\dimen315
+\cmidrulesep=\dimen316
+\cmidrulekern=\dimen317
+\defaultaddspace=\dimen318
+\@cmidla=\count363
+\@cmidlb=\count364
+\@aboverulesep=\dimen319
+\@belowrulesep=\dimen320
+\@thisruleclass=\count365
+\@lastruleclass=\count366
+\@thisrulewidth=\dimen321
 ) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip64
-\multirow@cntb=\count337
-\multirow@dima=\skip65
-\bigstrutjot=\dimen305
+\multirow@colwidth=\skip69
+\multirow@cntb=\count367
+\multirow@dima=\skip70
+\bigstrutjot=\dimen322
 ) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box75
+\pgfnodeparttextbox=\box84
 ) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen306
-\pgf@nodesepend=\dimen307
+\pgf@nodesepstart=\dimen323
+\pgf@nodesepend=\dimen324
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen308
-\pgffor@skip=\dimen309
-\pgffor@stack=\toks47
-\pgffor@toks=\toks48
+\pgffor@iter=\dimen325
+\pgffor@skip=\dimen326
+\pgffor@stack=\toks51
+\pgffor@toks=\toks52
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count338
-\pgfplotmarksize=\dimen310
+\pgf@plot@mark@count=\count368
+\pgfplotmarksize=\dimen327
 )
-\tikz@lastx=\dimen311
-\tikz@lasty=\dimen312
-\tikz@lastxsaved=\dimen313
-\tikz@lastysaved=\dimen314
-\tikz@lastmovetox=\dimen315
-\tikz@lastmovetoy=\dimen316
-\tikzleveldistance=\dimen317
-\tikzsiblingdistance=\dimen318
-\tikz@figbox=\box76
-\tikz@figbox@bg=\box77
-\tikz@tempbox=\box78
-\tikz@tempbox@bg=\box79
-\tikztreelevel=\count339
-\tikznumberofchildren=\count340
-\tikznumberofcurrentchild=\count341
-\tikz@fig@count=\count342
+\tikz@lastx=\dimen328
+\tikz@lasty=\dimen329
+\tikz@lastxsaved=\dimen330
+\tikz@lastysaved=\dimen331
+\tikz@lastmovetox=\dimen332
+\tikz@lastmovetoy=\dimen333
+\tikzleveldistance=\dimen334
+\tikzsiblingdistance=\dimen335
+\tikz@figbox=\box85
+\tikz@figbox@bg=\box86
+\tikz@tempbox=\box87
+\tikz@tempbox@bg=\box88
+\tikztreelevel=\count369
+\tikznumberofchildren=\count370
+\tikznumberofcurrentchild=\count371
+\tikz@fig@count=\count372
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count343
-\pgfmatrixcurrentcolumn=\count344
-\pgf@matrix@numberofcolumns=\count345
+\pgfmatrixcurrentrow=\count373
+\pgfmatrixcurrentcolumn=\count374
+\pgf@matrix@numberofcolumns=\count375
 )
-\tikz@expandcount=\count346
+\tikz@expandcount=\count376
  (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen319
-\pgfdecoratedremainingdistance=\dimen320
-\pgfdecoratedinputsegmentcompleteddistance=\dimen321
-\pgfdecoratedinputsegmentremainingdistance=\dimen322
-\pgf@decorate@distancetomove=\dimen323
-\pgf@decorate@repeatstate=\count347
-\pgfdecorationsegmentamplitude=\dimen324
-\pgfdecorationsegmentlength=\dimen325
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen336
+\pgfdecoratedremainingdistance=\dimen337
+\pgfdecoratedinputsegmentcompleteddistance=\dimen338
+\pgfdecoratedinputsegmentremainingdistance=\dimen339
+\pgf@decorate@distancetomove=\dimen340
+\pgf@decorate@repeatstate=\count377
+\pgfdecorationsegmentamplitude=\dimen341
+\pgfdecorationsegmentlength=\dimen342
 )
-\tikz@lib@dec@box=\box80
+\tikz@lib@dec@box=\box89
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count348
-)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box81
-\UL@hyphenbox=\box82
-\UL@skip=\skip66
-\UL@hook=\toks49
-\UL@height=\dimen326
-\UL@pe=\count349
-\UL@pixel=\dimen327
-\ULC@box=\box83
+\pgf@intersect@solutions=\count378
+)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box90
+\UL@hyphenbox=\box91
+\UL@skip=\skip71
+\UL@hook=\toks53
+\UL@height=\dimen343
+\UL@pe=\count379
+\UL@pixel=\dimen344
+\ULC@box=\box92
 Package: ulem 2019/11/18
-\ULdepth=\dimen328
+\ULdepth=\dimen345
 ) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count350
-\U@D=\dimen329
+\babel@savecnt=\count380
+\U@D=\dimen346
 \l@unhyphenated=\language87
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read3
+\bbl@readstream=\read5
 LaTeX Info: Redefining \textlatin on input line 3969.
-\bbl@dirlevel=\count351
+\bbl@dirlevel=\count381
 Package babel Info: You haven't specified a language. I'll use 'nil'
 (babel)             as the main language. Reported on input line 4305.
  (/usr/share/texmf-dist/tex/generic/babel/nil.ldf
@@ -687,81 +798,68 @@ Language: nil 2022/02/26 3.73 Nil language
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
  (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen330
-\ar@mcellbox=\box84
-\extrarowheight=\dimen331
-\NC@list=\toks50
-\extratabsurround=\skip67
-\backup@length=\skip68
-\ar@cellbox=\box85
+\col@sep=\dimen347
+\ar@mcellbox=\box93
+\extrarowheight=\dimen348
+\NC@list=\toks54
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box94
 )
-\rotheadsize=\dimen332
-\c@nlinenum=\count352
-\TeXr@lab=\toks51
+\rotheadsize=\dimen349
+\c@nlinenum=\count382
+\TeXr@lab=\toks55
 ) (/usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box86
+\@tempboxb=\box95
 ) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
- (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count353
-\calc@Bcount=\count354
-\calc@Adimen=\dimen333
-\calc@Bdimen=\dimen334
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count355
-\calc@Cskip=\skip71
-) (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+ (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen335
-\ESO@tempdimb=\dimen336
+\ESO@tempdima=\dimen350
+\ESO@tempdimb=\dimen351
 )
-\AM@pagewidth=\dimen337
-\AM@pageheight=\dimen338
-\AM@fboxrule=\dimen339
- (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+\AM@pagewidth=\dimen352
+\AM@pageheight=\dimen353
+\AM@fboxrule=\dimen354
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count356
-\AM@pagebox=\box87
-\AM@global@opts=\toks52
-\AM@pagecnt=\count357
-\AM@toc@title=\toks53
-\c@AM@survey=\count358
-\AM@templatesizebox=\box88
+\pdfpages@includegraphics@status=\count383
+\AM@pagebox=\box96
+\AM@global@opts=\toks56
+\AM@pagecnt=\count384
+\AM@toc@title=\toks57
+\c@AM@survey=\count385
+\AM@templatesizebox=\box97
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
  (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks54
-\verbatim@line=\toks55
-\verbatim@in@stream=\read4
+\every@verbatim=\toks58
+\verbatim@line=\toks59
+\verbatim@in@stream=\read6
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box89
-\tcb@upperbox=\box90
-\tcb@lowerbox=\box91
-\tcb@phantombox=\box92
-\c@tcbbreakpart=\count359
-\c@tcblayer=\count360
-\c@tcolorbox@number=\count361
-\tcb@temp=\box93
-\tcb@temp=\box94
-\tcb@temp=\box95
-\tcb@temp=\box96
+\tcb@titlebox=\box98
+\tcb@upperbox=\box99
+\tcb@lowerbox=\box100
+\tcb@phantombox=\box101
+\c@tcbbreakpart=\count386
+\c@tcblayer=\count387
+\c@tcolorbox@number=\count388
+\tcb@temp=\box102
+\tcb@temp=\box103
+\tcb@temp=\box104
+\tcb@temp=\box105
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 23.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 26.
  (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -774,67 +872,71 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/share/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip72
-\bibsep=\skip73
+\bibhang=\skip74
+\bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count362
+\c@NAT@ctr=\count389
 ) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
  (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen340
-\captionmargin=\dimen341
-\caption@leftmargin=\dimen342
-\caption@rightmargin=\dimen343
-\caption@width=\dimen344
-\caption@indent=\dimen345
-\caption@parindent=\dimen346
-\caption@hangindent=\dimen347
+\caption@tempdima=\dimen355
+\captionmargin=\dimen356
+\caption@leftmargin=\dimen357
+\caption@rightmargin=\dimen358
+\caption@width=\dimen359
+\caption@indent=\dimen360
+\caption@parindent=\dimen361
+\caption@hangindent=\dimen362
 Package caption Info: beamer document class detected.
  (/usr/share/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
 ))
-\c@caption@flags=\count363
-\c@continuedfloat=\count364
+\c@caption@flags=\count390
+\c@continuedfloat=\count391
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 Package caption Info: threeparttable package is loaded.
-)
-(/usr/share/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)
-\c@assume=\count365
-\c@lem=\count366
-\c@proposition=\count367
-\c@thm=\count368
-\c@corol=\count369
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 69.
+) (/usr/share/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (/usr/share/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)
+\c@assume=\count392
+\c@lem=\count393
+\c@proposition=\count394
+\c@thm=\count395
+\c@corol=\count396
+runsystem(which pygmentize && touch DynamicProgramming.aex)...executed.
+
+runsystem(rm DynamicProgramming.aex)...executed.
+
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 76.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count370
-\l__pdf_internal_box=\box97
-) (build/Lecture_18.aux)
-\openout1 = `Lecture_18.aux'.
+\l__color_backend_stack_int=\count397
+\l__pdf_internal_box=\box106
+) (build/DynamicProgramming.aux)
+\openout1 = `DynamicProgramming.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -872,24 +974,24 @@ LaTeX Font Info:    ... okay on input line 69.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
-\scratchdimen=\dimen348
-\scratchbox=\box98
-\nofMPsegments=\count372
-\nofMParguments=\count373
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count374
-\MPscratchDim=\dimen349
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count398
+\scratchdimen=\dimen363
+\scratchbox=\box107
+\nofMPsegments=\count399
+\nofMParguments=\count400
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count401
+\MPscratchDim=\dimen364
+\MPnumerator=\count402
+\makeMPintoPDFobject=\count403
+\everyMPtoPDFconversion=\toks61
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 76.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -897,14 +999,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count377
+\c@section@level=\count404
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
- (build/Lecture_18.out) (build/Lecture_18.out)
-\@outlinefile=\write5
-\openout5 = `Lecture_18.out'.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
+ (build/DynamicProgramming.out) (build/DynamicProgramming.out)
+\@outlinefile=\write7
+\openout7 = `DynamicProgramming.out'.
 
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -927,99 +1029,65 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (build/Lecture_18.nav)
+ (build/DynamicProgramming.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 71.
+(hyperref)                setting the option has no effect on input line 78.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 116.
- (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 116.
- (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 116.
- (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 116.
- (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 116.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 116.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 116.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 116.
- (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 116.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 116.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 116.
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [2
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uparrow' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
-
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 152.
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 152.
+ (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 152.
+ (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 152.
+ (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 136.
+(Font)              <10.95> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 152.
+ (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 152.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
 
 ]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (14.24751pt too wide) in paragraph at lines 229--229
-[][]  
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (9.90802pt too wide) in paragraph at lines 229--229
-[][]  
- []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
@@ -1030,110 +1098,39 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [5
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uparrow' on input line 250.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
-
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [6
 
 ]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (14.04613pt too wide) in paragraph at lines 351--351
-[][]  
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (9.90802pt too wide) in paragraph at lines 351--351
-[][]  
- []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [7
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\downarrow' on input line 353.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 353.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 373.
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [8
 
 ]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (14.04613pt too wide) in paragraph at lines 474--474
-[][]  
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (9.90802pt too wide) in paragraph at lines 474--474
-[][]  
- []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uparrow' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 476.
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [10
 
 ]
+Overfull \vbox (4.93048pt too high) detected at line 342
+ []
+
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [11
@@ -1149,22 +1146,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [13
 
 ]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (20.42871pt too wide) in paragraph at lines 650--650
-[][]  
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (1.37674pt too wide) in paragraph at lines 650--650
-[][]  
+Overfull \vbox (7.14154pt too high) detected at line 424
  []
 
 
@@ -1178,42 +1160,37 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [15
 
 ]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+\tf@nav=\write8
+\openout8 = `DynamicProgramming.nav'.
 
- [16
+\tf@toc=\write9
+\openout9 = `DynamicProgramming.toc'.
 
-]
-\tf@nav=\write6
-\openout6 = `Lecture_18.nav'.
-
-\tf@toc=\write7
-\openout7 = `Lecture_18.toc'.
-
-\tf@snm=\write8
-\openout8 = `Lecture_18.snm'.
+\tf@snm=\write10
+\openout10 = `DynamicProgramming.snm'.
 
 
 
-Package caption Warning: Unused \captionsetup[figure] on input line 25.
+Package caption Warning: Unused \captionsetup[figure] on input line 29.
 See the caption package documentation for explanation.
 
-(build/Lecture_18.aux)
-Package rerunfilecheck Info: File `Lecture_18.out' has not changed.
-(rerunfilecheck)             Checksum: 099189D942147C64F69F88365151E638;237.
+(build/DynamicProgramming.aux)
+Package rerunfilecheck Info: File `DynamicProgramming.out' has not changed.
+(rerunfilecheck)             Checksum: 28DFB4EDB02CE5E2F814B48FBD9FFAF6;275.
  ) 
 Here is how much of TeX's memory you used:
- 32924 strings out of 478238
- 666910 string characters out of 5850456
- 933434 words of memory out of 5000000
- 50414 multiletter control sequences out of 15000+600000
- 563008 words of font info for 121 fonts, out of 8000000 for 9000
+ 35374 strings out of 478238
+ 722739 string characters out of 5850456
+ 1012930 words of memory out of 5000000
+ 52820 multiletter control sequences out of 15000+600000
+ 551042 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,391p,441b,1346s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_18.pdf (16 pages, 332070 bytes).
+ 128i,16n,122p,449b,935s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/DynamicProgramming.pdf (15 pages, 282986 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
