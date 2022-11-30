@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/AssetPricingProduction"] 1669777473 "build/AssetPricingProduction.aux" "build/AssetPricingProduction.bbl" "build/AssetPricingProduction" 1669777475
+["bibtex build/AssetPricingProduction"] 1669777473 "build/AssetPricingProduction.aux" "build/AssetPricingProduction.bbl" "build/AssetPricingProduction" 1669780787
   "$BIB_STYLE.bst" 0 -1 0 ""
   "/home/huijunchen/mnt/home/huijunchen/Documents/LaTeX/hjref.bib" 1669430168 136942 6bc60d7bcfbe53cbe525ee328f847aa7 ""
-  "build/AssetPricingProduction.aux" 1669777474 6730 3904fcc59c5ecc60d5020f105b885d2a "pdflatex"
+  "build/AssetPricingProduction.aux" 1669780787 6730 3904fcc59c5ecc60d5020f105b885d2a "pdflatex"
   (generated)
   "build/AssetPricingProduction.bbl"
   "build/AssetPricingProduction.blg"
-["pdflatex"] 1669777473 "AssetPricingProduction.tex" "build/AssetPricingProduction.pdf" "AssetPricingProduction" 1669777475
+["pdflatex"] 1669780786 "AssetPricingProduction.tex" "build/AssetPricingProduction.pdf" "AssetPricingProduction" 1669780787
   "/dev/null" 0 -1 0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1650179560 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc" 1650179560 3083 a707712f77b073b3833e4b1334a30e99 ""
@@ -340,11 +340,11 @@
   "/usr/share/texmf/tex/latex/minted/minted.sty" 1661850914 47156 7304be18b5469336f22dc013f16ae5cc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "AssetPricingProduction.tex" 1669777470 11661 b6e23fd6cd9b2e156059db97b8b979a8 ""
-  "build/AssetPricingProduction.aux" 1669777474 6730 3904fcc59c5ecc60d5020f105b885d2a "pdflatex"
+  "AssetPricingProduction.tex" 1669780785 11678 ce63fa3b014620c0a92770885b614c75 ""
+  "build/AssetPricingProduction.aux" 1669780787 6730 3904fcc59c5ecc60d5020f105b885d2a "pdflatex"
   "build/AssetPricingProduction.bbl" 1669777473 624 b25d50b5bc2f4275758d36fac4d69d26 "bibtex build/AssetPricingProduction"
-  "build/AssetPricingProduction.nav" 1669777474 2651 3b7ffd1b8d16ef885359a130c520e9ca "pdflatex"
-  "build/AssetPricingProduction.out" 1669777474 653 30973e5ad756e44e4a4c2de56d0c47d5 "pdflatex"
+  "build/AssetPricingProduction.nav" 1669780787 2651 3b7ffd1b8d16ef885359a130c520e9ca "pdflatex"
+  "build/AssetPricingProduction.out" 1669780787 653 30973e5ad756e44e4a4c2de56d0c47d5 "pdflatex"
   (generated)
   "build/AssetPricingProduction.aux"
   "build/AssetPricingProduction.log"
