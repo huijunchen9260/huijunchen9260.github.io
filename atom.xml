@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-12-25T22:24:06Z</updated>
+<updated>2022-12-26T01:33:10Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Principle of Macroeconomics, Spring 2023</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2023.html"/>
+<id>https://huijunchen9260.github.io/PrincipleMacroSpring2023.html</id>
+<published>2022-12-25T22:24:07Z</published>
+<updated>2022-12-25T22:24:07Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2023">Principle of Macroeconomics, Spring 2023</h1>
+
+<p>ECON 2002.01, The Ohio State University, Spring 2023</p>
+
+<p><a href="pdf/PrincipleMacroSpring2023/syllabus/build/syllabus.pdf">Syllabus: pdf version</a></p>
+
+<p><a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html">Syllabus: html version</a></p>
+
+<h2 id="table-of-content">Table of Content</h2>
+
+<h2 id="grades">Grades</h2>
+
+<p>See <a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html#grades">Grades</a></p>
+
+<h2 id="course-schedule">Course Schedule</h2>
+
+<p>See <a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
+
+<h2 id="lecture-notes">Lecture Notes</h2>
+
+<ul>
+<li><a href="pdf/PrincipleMacroSpring2023/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a></li>
+</ul>]]></summary>
+</entry>
 <entry>
 <title type="text">Discussion Slides</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/DiscussionSlides.html"/>
@@ -30,7 +61,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/FortranNote.html"/>
 <id>https://huijunchen9260.github.io/FortranNote.html</id>
 <published>2022-09-24T14:21:16Z</published>
-<updated>2022-09-24T14:21:16Z</updated>
+<updated>2022-12-25T22:24:07Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-fortran">Note on Fortran</h1>
 
