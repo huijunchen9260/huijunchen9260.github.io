@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2022-11-29T23:00:06Z</updated>
+<updated>2022-12-25T22:24:06Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -55,7 +55,9 @@
 
 <p>After changing all the corresponding code, like <code>module</code> name and <code>use</code> statement in the directory <code>src&#47;</code>, you need to go to <code>build&#47;</code> and update the <code>cache.toml</code> file to the new module name.</p>
 
-<h2 id="fortran-compiler">Fortran Compiler</h2>]]></summary>
+<h2 id="fortran-compiler">Fortran Compiler</h2>
+
+<p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Note on Julia</title>

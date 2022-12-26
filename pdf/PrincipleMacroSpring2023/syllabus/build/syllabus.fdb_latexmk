@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/syllabus"] 1660246018 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1671671606
-  "build/syllabus.bcf" 1671671606 107031 af502a4bdf1e61e2c43a9cd1f13acc56 "pdflatex"
+["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1672024718
+  "build/syllabus.bcf" 1672024718 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
   (generated)
   "build/syllabus.bbl"
   "build/syllabus.blg"
-["pdflatex"] 1671671605 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1671671606
+["pdflatex"] 1672024717 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1672024718
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1650183167 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -28,10 +28,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1650183167 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1650183167 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1650183167 1120 8b7d695260f3cff42e636090a8002094 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1650183167 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1650183167 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1650183167 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1650183167 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1650183167 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1650183167 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1650183167 46026 6dab18b61c907687b520c72847215a68 ""
@@ -183,11 +180,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "build/syllabus.aux" 1671671606 1073 a3847d88ebc09d68fed363df311d60e0 "pdflatex"
-  "build/syllabus.bbl" 1660246019 466 ee04f40f768daeed26442158e95aba61 "biber build/syllabus"
-  "build/syllabus.out" 1671671606 204 c3ded848db104802b1b32f2ccc293940 "pdflatex"
-  "build/syllabus.run.xml" 1671671606 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
-  "syllabus.tex" 1662992069 18866 e3b7172c6ca72e9ffdfaf90023a6f48e ""
+  "build/syllabus.aux" 1672024718 1299 39a7ae3d7a0b799e69fc88e3c22bf490 "pdflatex"
+  "build/syllabus.bbl" 1671672390 466 ee04f40f768daeed26442158e95aba61 "biber build/syllabus"
+  "build/syllabus.out" 1672024718 549 ae75e8af57a75b6042971b96dc83052b "pdflatex"
+  "build/syllabus.run.xml" 1672024718 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
+  "syllabus.tex" 1672024716 22231 21bbf7021ea00f380d270fccb7c99d32 ""
   (generated)
   "build/syllabus.aux"
   "build/syllabus.bcf"
