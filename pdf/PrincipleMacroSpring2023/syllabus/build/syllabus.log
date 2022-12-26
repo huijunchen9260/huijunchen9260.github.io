@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 02:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 02:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -775,29 +775,36 @@ Overfull \hbox (1.19997pt too wide) in paragraph at lines 99--118
 \rr=\skip84
 \pp=\skip85
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 187--187
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 189--189
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 358--359
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 187--340
+[][] 
+ []
+
+
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 343--343
+[]|\OT1/ptm/m/n/12 Wk| 
+ []
+
+
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 367--368
 []|\OT1/ptm/m/n/12 03/14,16,18| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 441--442
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 450--451
 []|\OT1/ptm/m/n/12 04/17,19,21| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 185--458
-[] 
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 341--467
+[][] 
  []
 
-
-Overfull \vbox (20.5059pt too high) has occurred while \output is active []
-
- [4] [5] [6] [7] [8] (build/syllabus.aux)
+[4] [5] [6] [7] [8] [9] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: AE75E8AF57A75B6042971B96DC83052B;549.
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
@@ -805,18 +812,18 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27044 strings out of 478238
- 514307 string characters out of 5850456
- 1202563 words of memory out of 5000000
+ 27045 strings out of 478238
+ 514313 string characters out of 5850456
+ 1198563 words of memory out of 5000000
  44836 multiletter control sequences out of 15000+600000
  488003 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (8 pages, 82374 bytes).
+Output written on build/syllabus.pdf (9 pages, 82760 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 37 named destinations out of 1000 (max. 500000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

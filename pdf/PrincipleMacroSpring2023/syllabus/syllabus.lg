@@ -184,6 +184,11 @@ Css: #TBL-2-1{border-right:1px solid black;}
 Css: #TBL-2-2{border-right:1px solid black;}
 Css: #TBL-2-3{border-right:1px solid black;}
 Css: #TBL-2-4{border-right:1px solid black;}
+Css: #TBL-3-1{border-left: 1px solid black;}
+Css: #TBL-3-1{border-right:1px solid black;}
+Css: #TBL-3-2{border-right:1px solid black;}
+Css: #TBL-3-3{border-right:1px solid black;}
+Css: #TBL-3-4{border-right:1px solid black;}
 --- characters ---
 Font("ptmr7t","","10","120")
 Font("ptmb7t","","10","248")
