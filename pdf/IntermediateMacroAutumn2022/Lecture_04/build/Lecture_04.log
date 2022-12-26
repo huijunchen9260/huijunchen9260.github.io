@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.17)  27 APR 2022 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 04:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **Lecture_04.tex
 (./Lecture_04.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -837,7 +837,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 72
  (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count376
 \l__pdf_internal_box=\box97
 ) (build/Lecture_04.aux)
@@ -1131,15 +1131,15 @@ Package rerunfilecheck Info: File `Lecture_04.out' has not changed.
 (rerunfilecheck)             Checksum: 06EC118059EC799FA846B8239569035C;446.
  ) 
 Here is how much of TeX's memory you used:
- 41717 strings out of 478276
- 973884 string characters out of 5853013
- 1315252 words of memory out of 5000000
- 59067 multiletter control sequences out of 15000+600000
+ 41739 strings out of 478238
+ 974611 string characters out of 5850456
+ 1316223 words of memory out of 5000000
+ 59120 multiletter control sequences out of 15000+600000
  557026 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,723b,1132s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_04.pdf (12 pages, 346435 bytes).
+Output written on build/Lecture_04.pdf (12 pages, 346527 bytes).
 PDF statistics:
  275 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams

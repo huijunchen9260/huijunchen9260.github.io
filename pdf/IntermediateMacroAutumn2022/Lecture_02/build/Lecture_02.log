@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  29 AUG 2022 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 04:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1061,6 +1061,16 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [12
 
 ]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
 \tf@nav=\write6
 \openout6 = `Lecture_02.nav'.
 
@@ -1075,18 +1085,18 @@ Package rerunfilecheck Info: File `Lecture_02.out' has not changed.
 (rerunfilecheck)             Checksum: 1D1257FF17DA214838326C567E7FCB3E;378.
  ) 
 Here is how much of TeX's memory you used:
- 31910 strings out of 478238
- 645224 string characters out of 5850457
- 890120 words of memory out of 5000000
- 49418 multiletter control sequences out of 15000+600000
+ 31918 strings out of 478238
+ 645328 string characters out of 5850456
+ 890153 words of memory out of 5000000
+ 49421 multiletter control sequences out of 15000+600000
  568550 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,441b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_02.pdf (12 pages, 1153460 bytes).
+Output written on build/Lecture_02.pdf (14 pages, 1155247 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

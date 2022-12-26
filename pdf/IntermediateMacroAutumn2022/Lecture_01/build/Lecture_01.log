@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.7)  24 AUG 2022 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 03:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,14 +1083,14 @@ Package rerunfilecheck Info: File `Lecture_01.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  31848 strings out of 478238
- 643654 string characters out of 5850457
- 886229 words of memory out of 5000000
+ 643658 string characters out of 5850456
+ 886228 words of memory out of 5000000
  49360 multiletter control sequences out of 15000+600000
  551482 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,441b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Lecture_01.pdf (14 pages, 528797 bytes).
+Output written on build/Lecture_01.pdf (14 pages, 529067 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  177 compressed objects within 2 object streams

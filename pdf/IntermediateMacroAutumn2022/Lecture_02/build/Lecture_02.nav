@@ -37,10 +37,12 @@
 \headcommand {\beamer@appendixpages {12}}
 \headcommand {\slideentry {3}{0}{2}{12/12}{}{1}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@partpages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@sectionpages {12}{12}}
-\headcommand {\beamer@documentpages {12}}
-\headcommand {\gdef \inserttotalframenumber {1}}
+\headcommand {\slideentry {3}{0}{3}{13/13}{}{1}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@partpages {12}{14}}
+\headcommand {\beamer@subsectionpages {12}{14}}
+\headcommand {\beamer@sectionpages {12}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {2}}
 \headcommand {\gdef \inserttotalframenumber {11}}
-\headcommand {\gdef \appendixtotalframenumber {1}}
+\headcommand {\gdef \appendixtotalframenumber {2}}

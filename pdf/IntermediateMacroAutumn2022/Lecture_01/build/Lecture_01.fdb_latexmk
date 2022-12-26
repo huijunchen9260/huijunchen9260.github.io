@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1661358378 "Lecture_01.tex" "build/Lecture_01.pdf" "Lecture_01" 1661358380
+["pdflatex"] 1672043130 "Lecture_01.tex" "build/Lecture_01.pdf" "Lecture_01" 1672043131
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1650183167 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1650183167 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1650183167 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -281,12 +281,12 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1650183167 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1650183167 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651938238 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651938218 2927656 3678e06fb8d0369686d8a5b3450f6fb9 ""
-  "Lecture_01.tex" 1661358376 16217 d6daf7cfc9aadd42b657865c07438846 ""
-  "build/Lecture_01.aux" 1661358379 5592 81518eba0ce66c1ff66bdb94b370267b "pdflatex"
-  "build/Lecture_01.nav" 1661358379 1802 df60e300f926313fa661344851fe121d "pdflatex"
-  "build/Lecture_01.out" 1661358379 250 036c44e86cffb678a76ded51ab2ee249 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
+  "Lecture_01.tex" 1661358466 16217 d6daf7cfc9aadd42b657865c07438846 ""
+  "build/Lecture_01.aux" 1672043131 5592 81518eba0ce66c1ff66bdb94b370267b "pdflatex"
+  "build/Lecture_01.nav" 1672043131 1802 df60e300f926313fa661344851fe121d "pdflatex"
+  "build/Lecture_01.out" 1672043131 250 036c44e86cffb678a76ded51ab2ee249 "pdflatex"
   "figures/Figure1_1.jpg" 1660054925 66888 f7a803e61a0ded161be07057eb5701be ""
   "figures/Figure1_13.jpg" 1660054925 83483 47bf3ba990be92004d07b56defe6890b ""
   "figures/Figure1_3.jpg" 1660054925 50370 15d920355a2e1d68e19c781b3459a53a ""
