@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1672039237
-  "build/syllabus.bcf" 1672039237 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
+["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1672368627
+  "build/syllabus.bcf" 1672368627 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
   (generated)
   "build/syllabus.bbl"
   "build/syllabus.blg"
-["pdflatex"] 1672039236 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1672039237
+["pdflatex"] 1672368626 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1672368627
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1650183167 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -180,11 +180,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "build/syllabus.aux" 1672039237 1299 b2ec1d9319bf88214b1b2b2f701ad63c "pdflatex"
+  "build/syllabus.aux" 1672368627 1299 b2ec1d9319bf88214b1b2b2f701ad63c "pdflatex"
   "build/syllabus.bbl" 1671672390 466 ee04f40f768daeed26442158e95aba61 "biber build/syllabus"
-  "build/syllabus.out" 1672039237 549 ae75e8af57a75b6042971b96dc83052b "pdflatex"
-  "build/syllabus.run.xml" 1672039237 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
-  "syllabus.tex" 1672039236 21650 a1c3d05f1fd9acdb6c44683e1525e3aa ""
+  "build/syllabus.out" 1672368627 549 ae75e8af57a75b6042971b96dc83052b "pdflatex"
+  "build/syllabus.run.xml" 1672368627 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
+  "syllabus.tex" 1672368625 21620 2d59c238271674e1e34f7ca47ea9fc17 ""
   (generated)
   "build/syllabus.aux"
   "build/syllabus.bcf"

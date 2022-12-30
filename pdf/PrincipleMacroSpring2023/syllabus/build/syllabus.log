@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 DEC 2022 02:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  29 DEC 2022 21:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -814,13 +814,13 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 Here is how much of TeX's memory you used:
  27045 strings out of 478238
  514313 string characters out of 5850456
- 1198563 words of memory out of 5000000
+ 1198564 words of memory out of 5000000
  44836 multiletter control sequences out of 15000+600000
  488003 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (9 pages, 82760 bytes).
+Output written on build/syllabus.pdf (9 pages, 82685 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams
