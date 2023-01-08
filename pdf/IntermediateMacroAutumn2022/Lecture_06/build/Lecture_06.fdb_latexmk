@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1661646391 "Lecture_06.tex" "build/Lecture_06.pdf" "Lecture_06" 1661646392
+["pdflatex"] 1672575423 "Lecture_06.tex" "build/Lecture_06.pdf" "Lecture_06" 1672575425
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1650183167 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1650183167 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1650183167 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -291,12 +291,12 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1650183167 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1650183167 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651938238 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651938218 2927656 3678e06fb8d0369686d8a5b3450f6fb9 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
   "Lecture_06.tex" 1660054925 20016 344f26dbf86192c3b602fa45a10e430a ""
-  "build/Lecture_06.aux" 1661646392 7680 5d962578ce1fc9fd4f9fabaee4776cf7 "pdflatex"
-  "build/Lecture_06.nav" 1661646392 2427 b36ad927d8d8869be640bcb60c590bec "pdflatex"
-  "build/Lecture_06.out" 1661646392 360 71d7523fb391a7adb82eee8bd041f2c6 "pdflatex"
+  "build/Lecture_06.aux" 1672575425 7680 5d962578ce1fc9fd4f9fabaee4776cf7 "pdflatex"
+  "build/Lecture_06.nav" 1672575425 2427 b36ad927d8d8869be640bcb60c590bec "pdflatex"
+  "build/Lecture_06.out" 1672575425 360 71d7523fb391a7adb82eee8bd041f2c6 "pdflatex"
   "figures/1Var.png" 1660054925 33831 665d2a7b408c579ce2126fb718fc83fd ""
   "figures/2Var.png" 1660054925 165788 2b4e3923ca85e9bdccaf446f5eeba2a3 ""
   "figures/2VarContours.png" 1660054925 55872 9612031e68abe1ae5e906a33d6f34b80 ""
