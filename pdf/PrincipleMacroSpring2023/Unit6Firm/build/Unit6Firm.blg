@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Unit6Firm.aux
+The style file: $BIB_STYLE.bst
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Database file #1: $BIBFILE.bib
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 1 entry,
+            6752 wiz_defined-function locations,
+            1293 strings with 9835 characters,
+and the built_in function-call counts, 1188 in all, are:
+= -- 200
+> -- 30
+< -- 3
++ -- 11
+- -- 8
+* -- 65
+:= -- 159
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 6
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 33
+empty$ -- 55
+format.name$ -- 8
+if$ -- 304
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 16
+num.names$ -- 11
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 94
+stack$ -- 0
+substring$ -- 95
+swap$ -- 7
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 17
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 26

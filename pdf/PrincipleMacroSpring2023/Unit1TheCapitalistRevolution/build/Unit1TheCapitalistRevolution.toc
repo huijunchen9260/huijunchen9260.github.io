@@ -4,4 +4,4 @@
 \beamer@sectionintoc {3}{Inequality}{7}{0}{3}
 \beamer@sectionintoc {4}{``Hockey-stick'' Growth}{10}{0}{4}
 \beamer@sectionintoc {5}{Capitalism}{14}{0}{5}
-\beamer@sectionintoc {6}{Economics}{20}{0}{6}
+\beamer@sectionintoc {6}{Economics}{21}{0}{6}
