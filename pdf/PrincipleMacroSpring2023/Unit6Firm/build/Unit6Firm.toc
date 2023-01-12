@@ -2,4 +2,5 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Internal Structure of the Firm}{4}{0}{2}
 \beamer@sectionintoc {3}{Labor Discipline Model}{8}{0}{3}
-\beamer@sectionintoc {4}{Appendix}{15}{0}{4}
+\beamer@sectionintoc {4}{Introduction for Principal-Agent Models}{15}{0}{4}
+\beamer@sectionintoc {5}{Appendix}{18}{0}{5}

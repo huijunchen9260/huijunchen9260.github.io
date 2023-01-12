@@ -11,23 +11,24 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{graphicx}
-\usepackage[mode=build]{standalone}
-\usepackage{tikz}
-% % \usetikzlibrary{decorations}
-% \usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage[mode=tex]{standalone}
 
-% \usepackage{pgfplots}
-% \usetikzlibrary{calc,positioning}
-% \pgfplotsset{compat=newest, scale only axis, width = 10cm}
-% \pgfplotsset{sciclean/.style={axis lines=left,
-%         axis x line shift=0.5em,
-%         axis y line shift=0.5em,
-%         axis line style={-,very thin},
-%         axis background/.style={draw,ultra thin,gray},
-%         tick align=outside,
-%         xtick distance=1,
-%         ytick distance=1,
-%         major tick length=2pt}}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
+\pgfplotsset{sciclean/.style={axis lines=left,
+        axis x line shift=0.5em,
+        axis y line shift=0.5em,
+        axis line style={-,very thin},
+        axis background/.style={draw,ultra thin,gray},
+        tick align=outside,
+        xtick distance=1,
+        ytick distance=1,
+        major tick length=2pt}}
+
 \usepackage{ulem}
 \usepackage{hyperref}
 \usepackage{booktabs}
@@ -303,7 +304,7 @@
                 \begin{itemize}
                     \item $ \because $ ensure employment rent is high enough for workers to put in effort.
                 \end{itemize}
-                \item Foreshadowing: is higher unemployment benefit leads to higher/lower unemployment rate?
+                \item Foreshadowing: How is unemployment rate $ \uparrow  $ affects the best response curve?
             \end{itemize}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -313,6 +314,44 @@
             \end{figure}
         \end{column}
     \end{columns}
+\end{frame}
+
+\section[P\&A]{Introduction for Principal-Agent Models}
+\label{sec:Introduction_for_Principal_Agent_Models}
+
+\begin{frame}{Incomplete Contracts in General}
+\label{slide:Incomplete_Contracts_in_General}
+    \begin{itemize}
+        \item Incomplete contracts do not only occur in employment relationships.
+        \item Incomplete contracts arise when:
+        \begin{itemize}
+            \item information is not verifiable
+            \item the relationship covers periods of time
+            \item there is uncertainty
+            \item there are difficulties with measurement
+            \item judiciary is absent
+            \item preferences for omitting some information
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Principal-Agent models}
+\label{slide:Principal_Agent_models}
+    \begin{itemize}
+        \item Principal-agent models capture interactions under incomplete contracts
+        \begin{itemize}
+            \item e.g. the firm is the principal and the worker is the agent
+        \end{itemize}
+        \item Agent takes action that is \alert{hidden} from the principal, which is why the principal cannot verify it.
+        \begin{itemize}
+            \item there is a conflict of interest between the principal and the agent
+            \item over some action that may be taken by the agent
+            \item and this action cannot be subjected to a complete contract.
+        \end{itemize}
+        \item The information about the action may be either asymmetric or unverifiable.
+    \end{itemize}
 \end{frame}
 
 

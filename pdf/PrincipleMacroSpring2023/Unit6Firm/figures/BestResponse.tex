@@ -25,10 +25,20 @@
 
 \begin{tikzpicture}
 
-\begin{axis}[sciclean, xmin = 0, xmax = 20, ymin = 0, ymax = 16, title = {Worker's Best Response Curve with different unemployment benefit}]
+\begin{axis}[sciclean, xmin = 0, xmax = 20, ymin = 0, ymax = 16, title = {Worker's Best Response Curve with different unemployment rate}]
 
-\draw[thick, blue] (3, 0) node[above, xshift = -0.2cm]{$u_{e}^{l}$} to[bend left = 20] (13, 15);
-\draw[thick, red, xshift = 3cm] (3, 0) node[above, xshift = -0.2cm]{$u_{e}^{h}$} to[bend left = 20] (13, 15);
+\draw[thick, blue]
+    (3, 0) node[above, xshift = -0.2cm]{$u_{e}^{l}$}
+    to[bend left = 20]
+    node[pos=0.6] (a) {}
+    (13, 15);
+\draw[thick, red, xshift = 3cm]
+    (3, 0)
+    node[above, xshift = -0.2cm]{$u_{e}^{h}$}
+    to[bend left = 20]
+    node[pos=0.6] (b) {}
+    (13, 15);
+\draw[->, thick, black] (b) -- node[below, align=left]{unemployment \\ rate $ \uparrow  $} (a);
 
 \end{axis}
 

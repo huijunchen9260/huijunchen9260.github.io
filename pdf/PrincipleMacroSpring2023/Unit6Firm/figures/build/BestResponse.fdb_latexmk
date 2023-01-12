@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1673547464 "BestResponse.tex" "build/BestResponse.pdf" "BestResponse" 1673547465
+["pdflatex"] 1673548522 "BestResponse.tex" "build/BestResponse.pdf" "BestResponse" 1673548523
   "/dev/null" 0 -1 0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1650183167 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1650183167 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1650183167 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1650183167 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1650183167 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty" 1650183167 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1650183167 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -140,8 +141,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "BestResponse.tex" 1673547458 1423 41fff48a7d11178466fc74d89ab20df5 ""
-  "build/BestResponse.aux" 1673547465 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "BestResponse.tex" 1673548521 1594 8ff155539f016f332a7a981b5cd372d2 ""
+  "build/BestResponse.aux" 1673548523 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "build/BestResponse.aux"
   "build/BestResponse.log"

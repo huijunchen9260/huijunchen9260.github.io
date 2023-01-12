@@ -35,24 +35,33 @@
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\beamer@sectionpages {8}{14}}
 \headcommand {\beamer@subsectionpages {8}{14}}
-\headcommand {\sectionentry {4}{Appendix}{15}{Appendix}{0}}
+\headcommand {\sectionentry {4}{P\&A}{15}{Introduction for Principal-Agent Models}{0}}
 \headcommand {\slideentry {4}{0}{1}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\gdef \insertmainframenumber {10}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{15}}
-\headcommand {\beamer@sectionpages {15}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@appendixpages {16}}
-\headcommand {\beamer@sectionpages {16}{15}}
-\headcommand {\beamer@subsectionpages {16}{15}}
-\headcommand {\sectionentry {5}{\translate {References}}{16}{\translate {References}}{1}}
-\headcommand {\slideentry {5}{0}{0}{16/16}{}{1}}
+\headcommand {\slideentry {4}{0}{2}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {16}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\beamer@sectionpages {16}{16}}
-\headcommand {\beamer@documentpages {16}}
+\headcommand {\slideentry {4}{0}{3}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@sectionpages {15}{17}}
+\headcommand {\beamer@subsectionpages {15}{17}}
+\headcommand {\sectionentry {5}{Appendix}{18}{Appendix}{0}}
+\headcommand {\slideentry {5}{0}{1}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\gdef \insertmainframenumber {12}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{18}}
+\headcommand {\beamer@sectionpages {18}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\beamer@appendixpages {19}}
+\headcommand {\beamer@sectionpages {19}{18}}
+\headcommand {\beamer@subsectionpages {19}{18}}
+\headcommand {\sectionentry {6}{\translate {References}}{19}{\translate {References}}{1}}
+\headcommand {\slideentry {6}{0}{0}{19/19}{}{1}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@partpages {19}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\beamer@sectionpages {19}{19}}
+\headcommand {\beamer@documentpages {19}}
 \headcommand {\gdef \inserttotalframenumber {1}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\gdef \inserttotalframenumber {12}}
 \headcommand {\gdef \appendixtotalframenumber {1}}
