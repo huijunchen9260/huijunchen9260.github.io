@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  8 JAN 2023 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  11 JAN 2023 19:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1288,7 +1288,7 @@ Overfull \hbox (11.94795pt too wide) in paragraph at lines 291--291
  []
 
 
-Overfull \vbox (8.04141pt too high) detected at line 291
+Overfull \vbox (6.12141pt too high) detected at line 291
  []
 
 
@@ -1489,15 +1489,15 @@ Package rerunfilecheck Info: File `Unit3Consumer.out' has not changed.
 (rerunfilecheck)             Checksum: 3A77918A81E245BE43AD619C29D7043B;880.
  ) 
 Here is how much of TeX's memory you used:
- 48584 strings out of 478238
- 1144491 string characters out of 5850456
- 1624819 words of memory out of 5000000
- 65784 multiletter control sequences out of 15000+600000
- 557661 words of font info for 114 fonts, out of 8000000 for 9000
+ 48585 strings out of 478238
+ 1144506 string characters out of 5850456
+ 1625820 words of memory out of 5000000
+ 65785 multiletter control sequences out of 15000+600000
+ 560429 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,767b,1601s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit3Consumer.pdf (33 pages, 2120480 bytes).
+Output written on build/Unit3Consumer.pdf (33 pages, 2120101 bytes).
 PDF statistics:
  556 PDF objects out of 1000 (max. 8388607)
  464 compressed objects within 5 object streams

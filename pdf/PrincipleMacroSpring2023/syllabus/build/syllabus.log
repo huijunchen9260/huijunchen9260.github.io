@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  29 DEC 2022 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  12 JAN 2023 13:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -764,43 +764,199 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \q=\skip81
+\y=\skip82
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 99--118
-[]
+Overfull \hbox (34.95924pt too wide) in paragraph at lines 103--103
+[]|\OT1/ptm/m/n/12 Categories| 
+ []
+
+
+Overfull \hbox (13.82741pt too wide) in paragraph at lines 103--104
+[]|\OT1/ptm/m/n/12 Points| 
+ []
+
+
+Overfull \hbox (24.48341pt too wide) in paragraph at lines 106--106
+[]|\OT1/ptm/m/n/12 Problem
+ []
+
+
+Overfull \hbox (1.81541pt too wide) in paragraph at lines 106--106
+\OT1/ptm/m/n/12 sets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+\OT1/ptm/m/n/12 on
+ []
+
+
+Overfull \hbox (15.13554pt too wide) in paragraph at lines 106--106
+\OT1/ptm/m/n/12 course
+ []
+
+
+Overfull \hbox (2.47562pt too wide) in paragraph at lines 106--106
+\OT1/ptm/m/n/12 ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+\OT1/ptm/m/n/12 te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[]|\OT1/ptm/m/n/12 20
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 106--107
+\OT1/ptm/m/n/12 points| 
+ []
+
+
+Overfull \hbox (22.46735pt too wide) in paragraph at lines 108--108
+[]|\OT1/ptm/m/n/12 Quizzes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/ptm/m/n/12 on
+ []
+
+
+Overfull \hbox (4.47952pt too wide) in paragraph at lines 108--108
+\OT1/ptm/m/n/12 Cal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/ptm/m/n/12 cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/ptm/m/n/12 lus
+ []
+
+
+Overfull \hbox (15.14754pt too wide) in paragraph at lines 108--108
+\OT1/ptm/m/n/12 videos| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[]|\OT1/ptm/m/n/12 20
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 108--109
+\OT1/ptm/m/n/12 points| 
+ []
+
+
+Overfull \hbox (25.81525pt too wide) in paragraph at lines 110--110
+[]|\OT1/ptm/m/n/12 Midterm
+ []
+
+
+Overfull \hbox (11.81165pt too wide) in paragraph at lines 110--110
+\OT1/ptm/m/n/12 Exam| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[]|\OT1/ptm/m/n/12 25
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 110--111
+\OT1/ptm/m/n/12 points| 
+ []
+
+
+Overfull \hbox (8.48746pt too wide) in paragraph at lines 112--112
+[]|\OT1/ptm/m/n/12 Final
+ []
+
+
+Overfull \hbox (11.81165pt too wide) in paragraph at lines 112--112
+\OT1/ptm/m/n/12 Exam| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[]|\OT1/ptm/m/n/12 25
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 112--113
+\OT1/ptm/m/n/12 points| 
+ []
+
+
+Overfull \hbox (38.46327pt too wide) in paragraph at lines 114--114
+[]|\OT1/ptm/m/n/12 Attendance| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+[]|\OT1/ptm/m/n/12 10
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 114--115
+\OT1/ptm/m/n/12 points| 
+ []
+
+
+Overfull \hbox (8.18759pt too wide) in paragraph at lines 116--116
+[]|\OT1/ptm/m/n/12 Total| 
+ []
+
+
+Overfull \hbox (1.81586pt too wide) in paragraph at lines 116--117
+[]|\OT1/ptm/m/n/12 100
+ []
+
+
+Overfull \hbox (13.15549pt too wide) in paragraph at lines 116--117
+\OT1/ptm/m/n/12 points| 
  []
 
 [2] [3]
-\bb=\skip82
-\qq=\skip83
-\rr=\skip84
-\pp=\skip85
+\bb=\skip83
+\qq=\skip84
+\rr=\skip85
+\pp=\skip86
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 189--189
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 191--191
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 187--340
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 189--342
 [][] 
  []
 
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 343--343
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 345--345
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 367--368
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 369--370
 []|\OT1/ptm/m/n/12 03/14,16,18| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 450--451
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 452--453
 []|\OT1/ptm/m/n/12 04/17,19,21| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 341--467
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 343--469
 [][] 
  []
 
@@ -820,7 +976,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (9 pages, 82685 bytes).
+Output written on build/syllabus.pdf (9 pages, 82815 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams

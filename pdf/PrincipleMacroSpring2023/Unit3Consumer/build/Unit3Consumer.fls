@@ -2111,6 +2111,7 @@ INPUT MP.tab
 INPUT MP.tab
 INPUT PPF.tab
 INPUT PPF.tab
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT PPF.tab
 INPUT PPF.tab
 OUTPUT build/Unit3Consumer.vrb

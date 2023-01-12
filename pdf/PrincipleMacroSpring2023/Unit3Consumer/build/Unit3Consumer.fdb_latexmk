@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1673157042 "Unit3Consumer.tex" "build/Unit3Consumer.pdf" "Unit3Consumer" 1673157048
+["pdflatex"] 1673482974 "Unit3Consumer.tex" "build/Unit3Consumer.pdf" "Unit3Consumer" 1673482980
   "/dev/null" 0 -1 0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1650179560 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1650183167 2375 baa924870cfb487815765f9094cf3728 ""
@@ -365,11 +365,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
   "MP.tab" 1672563643 91 9fa5f29fc90d3340463a99486b13f311 ""
   "PPF.tab" 1672563322 108 a7c5b765127b1998e4cb5dd3271831d5 ""
-  "Unit3Consumer.tex" 1673157036 30155 b654b2cc0f5b0d5f6e3e60677d797952 ""
-  "build/Unit3Consumer.aux" 1673157048 9327 e603bfb3bcfd86a8872ebdce9869ec8d "pdflatex"
-  "build/Unit3Consumer.nav" 1673157048 3438 e9a713a0236786f7dc9bb95a80c23dfa "pdflatex"
-  "build/Unit3Consumer.out" 1673157048 880 3a77918a81e245be43ad619c29d7043b "pdflatex"
-  "build/Unit3Consumer.vrb" 1673157047 1856 175b14afe3528f2f45a9600cf7361e62 "pdflatex"
+  "Unit3Consumer.tex" 1673482973 30166 2adbab8abdc06c88887bb5772b373715 ""
+  "build/Unit3Consumer.aux" 1673482980 9327 e603bfb3bcfd86a8872ebdce9869ec8d "pdflatex"
+  "build/Unit3Consumer.nav" 1673482980 3438 e9a713a0236786f7dc9bb95a80c23dfa "pdflatex"
+  "build/Unit3Consumer.out" 1673482980 880 3a77918a81e245be43ad619c29d7043b "pdflatex"
+  "build/Unit3Consumer.vrb" 1673482979 1856 175b14afe3528f2f45a9600cf7361e62 "pdflatex"
   "figures/IndiffCurve.png" 1672624696 83967 779e3d078adb5bf866d58fecf6a2987d ""
   "figures/MRSMRT.png" 1672627608 92957 a19dbbebe8aa65f3bd7ee1be1722d95e ""
   "figures/OptimalChange.png" 1672725739 140322 fb1141b71e17e8941915b78256008f11 ""

@@ -11,9 +11,23 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage[mode=build]{standalone}
 \usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing, intersections}
+% % \usetikzlibrary{decorations}
+% \usetikzlibrary{decorations.pathreplacing, intersections}
+
+% \usepackage{pgfplots}
+% \usetikzlibrary{calc,positioning}
+% \pgfplotsset{compat=newest, scale only axis, width = 10cm}
+% \pgfplotsset{sciclean/.style={axis lines=left,
+%         axis x line shift=0.5em,
+%         axis y line shift=0.5em,
+%         axis line style={-,very thin},
+%         axis background/.style={draw,ultra thin,gray},
+%         tick align=outside,
+%         xtick distance=1,
+%         ytick distance=1,
+%         major tick length=2pt}}
 \usepackage{ulem}
 \usepackage{hyperref}
 \usepackage{booktabs}
@@ -211,14 +225,94 @@
     \begin{itemize}
         \item \alert{Rent} in Economics: payment to the owner greater than the costs
         \item If workers being unemployed, they get unemployment benefits $ \Rightarrow  $ \textbf{reservation wage}
-        \item \alert{Employment rent}: benefit from employment $ - $ reservation wage, includes
+        \item \alert{Employment rent}: benefit from employment $ - $ disutility from work $ - $ reservation wage, includes
         \begin{itemize}
             \item lost income when searching
             \item cost to start a new job, e.g. relocation
             \item Loss of non-wage benefits
             \item Social costs (scarring effects, lost of company connections/skill)
         \end{itemize}
+        \item \alert{Larger employment rent (higher wage)} $ \Rightarrow  $ larger cost of job loss $ \Rightarrow  $ workers work hard to reduce chance of getting fired
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Employment Game}
+\label{slide:Employment_Game}
+    \begin{enumerate}
+        \item Employer: choose maximum wage to keep worker work hard enough
+        \begin{itemize}
+            \item payoff: output $ - $ wage
+        \end{itemize}
+        \item Worker: choose minimum effort to keep him/herself from firing
+        \begin{itemize}
+            \item payoff: employment rent
+        \end{itemize}
+        \item Workers are the \textbf{supply side} in labor market: trade off are \textbf{MRT}
+        \item Employers are the \textbf{demand side} in labor market: trade off are \textbf{MRS}
+        \item \alert{Best response curve}:
+        \begin{itemize}
+            \item for workers: optimal amount of effort workers will exert for each wage offered
+            \item for employers: optimal level of wage employers will offer for each targeted level of effort.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Best response curves}
+\label{slide:Best_response_curves}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Employers: \alert{assume revenue doesn't change}, firms minimize cost to max profit
+
+            $ \Rightarrow  $ find a \textbf{isocost} line that minimize wage spending
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{./figures/MRSEmployer.png}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            Workers: Feasible frontier for wage \& effort
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{./figures/MRTWorkers.png}
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Determining Wages}
+\label{slide:Determining_Wages}
+    Equilibrium is at MRS $ = $ MRT, efficiency wage $ = 12 >$ reservation wage
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{./figures/EquilibriumLaborMkt.png}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Involuntary Unemployment}
+\label{slide:Involuntary_Unemployment}
+    \begin{definition}
+        \textbf{Involuntary unemployment} is being out of work, but preferring to have a job at the wages/working conditions as other workers.
+    \end{definition}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Must have involuntary unemployment in the labor discipline model!
+                \begin{itemize}
+                    \item $ \because $ ensure employment rent is high enough for workers to put in effort.
+                \end{itemize}
+                \item Foreshadowing: is higher unemployment benefit leads to higher/lower unemployment rate?
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\linewidth]{./figures/BestResponse}
+            \end{figure}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 
