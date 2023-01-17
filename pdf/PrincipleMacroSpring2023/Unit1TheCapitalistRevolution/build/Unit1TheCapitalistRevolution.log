@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  11 JAN 2023 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  13 JAN 2023 16:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1087,16 +1087,16 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 448.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 430.
 <./figures/the-two-germanies-planning-and-capitalism.png, id=303, 3412.75pt x 2409.0pt>
 File: ./figures/the-two-germanies-planning-and-capitalism.png Graphic file (type png)
 <use ./figures/the-two-germanies-planning-and-capitalism.png>
-Package pdftex.def Info: ./figures/the-two-germanies-planning-and-capitalism.png  used on input line 448.
+Package pdftex.def Info: ./figures/the-two-germanies-planning-and-capitalism.png  used on input line 430.
 (pdftex.def)             Requested size: 273.9493pt x 193.34883pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 448.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 430.
 
-Overfull \vbox (4.19116pt too high) detected at line 448
+Overfull \vbox (4.19116pt too high) detected at line 430
  []
 
 
@@ -1108,10 +1108,10 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/divergence-of-gdp-per-capita-among-latecomers-to-the-capitalist-revolution-18002016.png, id=321, 3412.75pt x 2409.0pt>
 File: ./figures/divergence-of-gdp-per-capita-among-latecomers-to-the-capitalist-revolution-18002016.png Graphic file (type png)
 <use ./figures/divergence-of-gdp-per-capita-among-latecomers-to-the-capitalist-revolution-18002016.png>
-Package pdftex.def Info: ./figures/divergence-of-gdp-per-capita-among-latecomers-to-the-capitalist-revolution-18002016.png  used on input line 458.
+Package pdftex.def Info: ./figures/divergence-of-gdp-per-capita-among-latecomers-to-the-capitalist-revolution-18002016.png  used on input line 440.
 (pdftex.def)             Requested size: 256.82648pt x 181.25534pt.
 
-Overfull \vbox (8.41763pt too high) detected at line 458
+Overfull \vbox (8.41763pt too high) detected at line 440
  []
 
 
@@ -1128,7 +1128,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/Figure1_15.png, id=348, 959.72539pt x 378.91562pt>
 File: ./figures/Figure1_15.png Graphic file (type png)
 <use ./figures/Figure1_15.png>
-Package pdftex.def Info: ./figures/Figure1_15.png  used on input line 469.
+Package pdftex.def Info: ./figures/Figure1_15.png  used on input line 451.
 (pdftex.def)             Requested size: 308.18968pt x 121.67754pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1158,7 +1158,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,459b,833s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit1TheCapitalistRevolution.pdf (22 pages, 1564203 bytes).
+Output written on build/Unit1TheCapitalistRevolution.pdf (22 pages, 1564205 bytes).
 PDF statistics:
  448 PDF objects out of 1000 (max. 8388607)
  376 compressed objects within 4 object streams
