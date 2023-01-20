@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  18 JAN 2023 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  19 JAN 2023 23:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -703,12 +703,16 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count367
 \multirow@dima=\skip70
 \bigstrutjot=\dimen322
-) (/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
+) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+ (/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
 Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with preambles
  (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks51
 \XKV@tempa@toks=\toks52
 )
@@ -815,7 +819,8 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@matrix@numberofcolumns=\count379
 )
 \tikz@expandcount=\count380
- (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen350
@@ -828,8 +833,7 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecorationsegmentlength=\dimen356
 )
 \tikz@lib@dec@box=\box92
-)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 \pgf@intersect@solutions=\count382
 )) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -845,10 +849,10 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 ) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
 \c@pgfplotstable@counta=\count386
 \t@pgfplotstable@a=\toks58
-) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count387
- (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
-(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
 \pgfplots@numplots=\count388
 \pgfplots@xmin@reg=\dimen358
 \pgfplots@xmax@reg=\dimen359
@@ -864,8 +868,8 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex)))
-(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box93
 \UL@hyphenbox=\box94
 \UL@skip=\skip71
@@ -954,7 +958,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 53.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 58.
  (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -1004,34 +1008,39 @@ runsystem(which pygmentize && touch Unit9LaborMarket.aex)...executed.
 
 runsystem(rm Unit9LaborMarket.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 114.
- (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 119.
+
+(/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count407
 \l__pdf_internal_box=\box109
-) (build/Unit9LaborMarket.aux)
+) (build/Unit9LaborMarket.aux
+
+LaTeX Warning: Label `slide:Shift_in_wage_setting_curve' multiply defined.
+
+)
 \openout1 = `Unit9LaborMarket.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1086,7 +1095,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 114.
+Package hyperref Info: Link coloring OFF on input line 119.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1096,9 +1105,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count414
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
  (build/Unit9LaborMarket.out) (build/Unit9LaborMarket.out)
 \@outlinefile=\write7
 \openout7 = `Unit9LaborMarket.out'.
@@ -1130,7 +1139,7 @@ Package caption Info: End \AtBeginDocument code.
  (build/Unit9LaborMarket.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 116.
+(hyperref)                setting the option has no effect on input line 121.
 
 [1
 
@@ -1140,6 +1149,49 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [2
 
 ]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 175.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 175.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 175.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 175.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 175.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 175.
+ (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 175.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 175.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 175.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
@@ -1150,22 +1202,247 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [4
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 160.
-
-(build/Unit9LaborMarket.bbl
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
-
-
-Package natbib Warning: Empty `thebibliography' environment on input line 13.
-
-)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [5
+
+]
+<./figures/employmentPop.jpg, id=113, 1303.87125pt x 441.65pt>
+File: ./figures/employmentPop.jpg Graphic file (type jpg)
+<use ./figures/employmentPop.jpg>
+Package pdftex.def Info: ./figures/employmentPop.jpg  used on input line 204.
+(pdftex.def)             Requested size: 342.43532pt x 115.99214pt.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 204.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [6
+
+ <./figures/employmentPop.jpg>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [7
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [8
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [9
+
+]
+<../Unit6FirmLaborMarket/figures/BestResponse.pdf, id=171, 316.7273pt x 287.471pt>
+File: ../Unit6FirmLaborMarket/figures/BestResponse.pdf Graphic file (type pdf)
+<use ../Unit6FirmLaborMarket/figures/BestResponse.pdf>
+Package pdftex.def Info: ../Unit6FirmLaborMarket/figures/BestResponse.pdf  used on input line 243.
+(pdftex.def)             Requested size: 239.70367pt x 217.56345pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [10
+
+ <../Unit6FirmLaborMarket/figures/BestResponse.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [11
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{slide:Shift_in_wage_setting_curve}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.288 \end{frame}
+                 
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
+<./figures/build/shrug.pdf, id=267, 37.3104pt x 14.59052pt>
+File: ./figures/build/shrug.pdf Graphic file (type pdf)
+<use ./figures/build/shrug.pdf>
+Package pdftex.def Info: ./figures/build/shrug.pdf  used on input line 368.
+(pdftex.def)             Requested size: 32.84999pt x 12.8468pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+ <./figures/build/shrug.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 382.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+]
+<./figures/LaborMarketEq.png, id=330, 1251.17438pt x 649.93158pt>
+File: ./figures/LaborMarketEq.png Graphic file (type png)
+<use ./figures/LaborMarketEq.png>
+Package pdftex.def Info: ./figures/LaborMarketEq.png  used on input line 394.
+(pdftex.def)             Requested size: 342.43532pt x 177.8739pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+ <./figures/LaborMarketEq.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 422.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [20
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [21
+
+]
+<./figures/DemandDeficientUnemployment.png, id=385, 1250.17062pt x 607.5664pt>
+File: ./figures/DemandDeficientUnemployment.png Graphic file (type png)
+<use ./figures/DemandDeficientUnemployment.png>
+Package pdftex.def Info: ./figures/DemandDeficientUnemployment.png  used on input line 471.
+(pdftex.def)             Requested size: 342.43532pt x 166.41841pt.
+<./figures/build/MRMC.pdf, id=386, 337.92548pt x 303.11646pt>
+File: ./figures/build/MRMC.pdf Graphic file (type pdf)
+<use ./figures/build/MRMC.pdf>
+Package pdftex.def Info: ./figures/build/MRMC.pdf  used on input line 471.
+(pdftex.def)             Requested size: 205.46327pt x 184.29948pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [22
+
+ <./figures/DemandDeficientUnemployment.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [23
+
+
+ <./figures/build/MRMC.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [24
+
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [25
+
+
+]
+<./figures/build/GovIntervene.pdf, id=452, 337.92548pt x 301.06076pt>
+File: ./figures/build/GovIntervene.pdf Graphic file (type pdf)
+<use ./figures/build/GovIntervene.pdf>
+Package pdftex.def Info: ./figures/build/GovIntervene.pdf  used on input line 482.
+(pdftex.def)             Requested size: 205.46327pt x 183.04959pt.
+
+Overfull \vbox (10.82024pt too high) detected at line 482
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [26
+
+ <./figures/build/GovIntervene.pdf>]
+<./figures/Immigration.png, id=480, 1201.48875pt x 694.78883pt>
+File: ./figures/Immigration.png Graphic file (type png)
+<use ./figures/Immigration.png>
+Package pdftex.def Info: ./figures/Immigration.png  used on input line 492.
+(pdftex.def)             Requested size: 342.43532pt x 198.01686pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [27
+
+ <./figures/Immigration.png (PNG copy)>]
+<./figures/LaborUnion_1.png, id=494, 1222.06563pt x 634.97917pt>
+File: ./figures/LaborUnion_1.png Graphic file (type png)
+<use ./figures/LaborUnion_1.png>
+Package pdftex.def Info: ./figures/LaborUnion_1.png  used on input line 524.
+(pdftex.def)             Requested size: 205.46327pt x 106.75328pt.
+<./figures/LaborUnion_2.png, id=495, 1226.5825pt x 693.29358pt>
+File: ./figures/LaborUnion_2.png Graphic file (type png)
+<use ./figures/LaborUnion_2.png>
+Package pdftex.def Info: ./figures/LaborUnion_2.png  used on input line 524.
+(pdftex.def)             Requested size: 273.9493pt x 154.84181pt.
+File: ./figures/build/shrug.pdf Graphic file (type pdf)
+<use ./figures/build/shrug.pdf>
+Package pdftex.def Info: ./figures/build/shrug.pdf  used on input line 524.
+(pdftex.def)             Requested size: 32.84999pt x 12.8468pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [28
+
+ <./figures/LaborUnion_1.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [29
+
+
+ <./figures/LaborUnion_2.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [30
+
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [31
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [32
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 552.
+
+File: ./figures/build/shrug.pdf Graphic file (type pdf)
+<use ./figures/build/shrug.pdf>
+Package pdftex.def Info: ./figures/build/shrug.pdf  used on input line 589.
+(pdftex.def)             Requested size: 32.84999pt x 12.8468pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 589.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [33
 
 ]
 \tf@nav=\write8
@@ -1178,22 +1455,25 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 \openout10 = `Unit9LaborMarket.snm'.
 
  (build/Unit9LaborMarket.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Unit9LaborMarket.out' has not changed.
-(rerunfilecheck)             Checksum: 1EE5B10481744A4443BAA6B4BF061A3C;368.
+(rerunfilecheck)             Checksum: 92514CA3DDDA838CE0C04FEDFE15A9BA;932.
  ) 
 Here is how much of TeX's memory you used:
- 46067 strings out of 478238
- 1070503 string characters out of 5850456
- 1457946 words of memory out of 5000000
- 63402 multiletter control sequences out of 15000+600000
- 487387 words of font info for 38 fonts, out of 8000000 for 9000
+ 48389 strings out of 478238
+ 1109255 string characters out of 5850456
+ 1483353 words of memory out of 5000000
+ 65541 multiletter control sequences out of 15000+600000
+ 558451 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,745b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb>
-Output written on build/Unit9LaborMarket.pdf (5 pages, 62696 bytes).
+ 128i,15n,122p,745b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on build/Unit9LaborMarket.pdf (33 pages, 1845960 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 684 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
