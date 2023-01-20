@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  12 JAN 2023 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  19 JAN 2023 23:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -776,27 +776,27 @@ Overfull \hbox (1.14378pt too wide) in paragraph at lines 194--194
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 192--345
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 192--335
 [][] 
  []
 
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 348--348
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 338--338
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 372--373
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 360--361
 []|\OT1/ptm/m/n/12 03/14,16,18| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 455--456
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 435--436
 []|\OT1/ptm/m/n/12 04/17,19,21| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 346--472
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 336--452
 [][] 
  []
 
@@ -816,7 +816,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (9 pages, 82700 bytes).
+Output written on build/syllabus.pdf (9 pages, 82379 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams
