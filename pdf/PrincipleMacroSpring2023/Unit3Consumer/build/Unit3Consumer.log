@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  11 JAN 2023 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  23 JAN 2023 09:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1349,7 +1349,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/MRSMRT.png, id=284, 686.81769pt x 522.95375pt>
 File: ./figures/MRSMRT.png Graphic file (type png)
 <use ./figures/MRSMRT.png>
-Package pdftex.def Info: ./figures/MRSMRT.png  used on input line 370.
+Package pdftex.def Info: ./figures/MRSMRT.png  used on input line 371.
 (pdftex.def)             Requested size: 171.21765pt x 130.36307pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1357,7 +1357,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [20
 
  <./figures/MRSMRT.png (PNG copy)>]
-Overfull \hbox (2.1612pt too wide) in paragraph at lines 395--395
+Overfull \hbox (2.1612pt too wide) in paragraph at lines 396--396
 []  
  []
 
@@ -1370,10 +1370,10 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/OptimalChange.png, id=312, 764.64693pt x 540.51938pt>
 File: ./figures/OptimalChange.png Graphic file (type png)
 <use ./figures/OptimalChange.png>
-Package pdftex.def Info: ./figures/OptimalChange.png  used on input line 411.
+Package pdftex.def Info: ./figures/OptimalChange.png  used on input line 412.
 (pdftex.def)             Requested size: 222.58086pt x 157.34042pt.
 
-Overfull \vbox (3.95271pt too high) detected at line 411
+Overfull \vbox (3.95271pt too high) detected at line 412
  []
 
 
@@ -1448,7 +1448,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/WorkdayApplication.png, id=422, 957.19846pt x 504.88625pt>
 File: ./figures/WorkdayApplication.png Graphic file (type png)
 <use ./figures/WorkdayApplication.png>
-Package pdftex.def Info: ./figures/WorkdayApplication.png  used on input line 735.
+Package pdftex.def Info: ./figures/WorkdayApplication.png  used on input line 736.
 (pdftex.def)             Requested size: 342.43532pt x 180.61871pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1459,7 +1459,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 <./figures/WorkCountryDiff.png, id=437, 954.16615pt x 503.8825pt>
 File: ./figures/WorkCountryDiff.png Graphic file (type png)
 <use ./figures/WorkCountryDiff.png>
-Package pdftex.def Info: ./figures/WorkCountryDiff.png  used on input line 746.
+Package pdftex.def Info: ./figures/WorkCountryDiff.png  used on input line 747.
 (pdftex.def)             Requested size: 342.43532pt x 180.83629pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
@@ -1497,7 +1497,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,767b,1601s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit3Consumer.pdf (33 pages, 2120101 bytes).
+Output written on build/Unit3Consumer.pdf (33 pages, 2119962 bytes).
 PDF statistics:
  556 PDF objects out of 1000 (max. 8388607)
  464 compressed objects within 5 object streams
