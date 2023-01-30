@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 JAN 2023 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  28 JAN 2023 13:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -613,30 +613,30 @@ Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
 \cftbeforeAnswerstitleskip=\skip123
 \cftafterAnswerstitleskip=\skip124
 \c@prevQ=\count343
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 139.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 146.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (build/Unit3PS.aux)
 \openout1 = `Unit3PS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count344
@@ -656,7 +656,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 139.
+Package hyperref Info: Link coloring ON on input line 146.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -666,33 +666,157 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 146.
+LaTeX Info: Redefining \pageref on input line 146.
+LaTeX Info: Redefining \nameref on input line 146.
  (build/Unit3PS.out) (build/Unit3PS.out)
 \@outlinefile=\write4
 \openout4 = `Unit3PS.out'.
 
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 153.
- [1
+ (build/Unit3PS.Answers)
+\tf@Answers=\write5
+\openout5 = `Unit3PS.Answers'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (build/Unit3PS.aux)
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 153.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 154.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 154.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<../QuestionBankImage/OUP-U3-Q4-01.png, id=17, 419.5675pt x 310.15875pt>
+File: ../QuestionBankImage/OUP-U3-Q4-01.png Graphic file (type png)
+<use ../QuestionBankImage/OUP-U3-Q4-01.png>
+Package pdftex.def Info: ../QuestionBankImage/OUP-U3-Q4-01.png  used on input line 169.
+(pdftex.def)             Requested size: 469.75502pt x 347.26184pt.
+
+Underfull \hbox (badness 7685) in paragraph at lines 167--179
+[]\OT1/ptm/m/n/14.4 (OUP-U3-Q4) The fol-low-ing is a plot of GDP per capita against
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--179
+\OT1/ptm/m/n/14.4 av-er-age an-nual hours of free time per worker in dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 167--179
+\OT1/ptm/m/n/14.4 coun-tries. Which of the fol-low-ing state-ments is cor-rect? [][]$[]$[][]
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 167--179
+[] 
+ []
+
+<../QuestionBankImage/OUP-U3-Q9-01.png, id=19, 310.15875pt x 307.1475pt>
+File: ../QuestionBankImage/OUP-U3-Q9-01.png Graphic file (type png)
+<use ../QuestionBankImage/OUP-U3-Q9-01.png>
+Package pdftex.def Info: ../QuestionBankImage/OUP-U3-Q9-01.png  used on input line 183.
+(pdftex.def)             Requested size: 469.75502pt x 465.19589pt.
+
+Underfull \hbox (badness 4739) in paragraph at lines 181--193
+[]\OT1/ptm/m/n/14.4 (OUP-U3-Q9) The fig-ure shows the in-dif-fer-ence curves of a stu-dent
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 181--193
+\OT1/ptm/m/n/14.4 for the two `goods', free time and fi-nal grade. Based on this
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 181--193
+\OT1/ptm/m/n/14.4 in-for-ma-tion, which of the fol-low-ing state-ments is cor-rect? [][]$[]$[][]
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 181--193
+[] 
+ []
+
+<../QuestionBankImage/OUP-U3-Q18-01.png, id=20, 328.22626pt x 354.32375pt>
+File: ../QuestionBankImage/OUP-U3-Q18-01.png Graphic file (type png)
+<use ../QuestionBankImage/OUP-U3-Q18-01.png>
+Package pdftex.def Info: ../QuestionBankImage/OUP-U3-Q18-01.png  used on input line 210.
+(pdftex.def)             Requested size: 469.75502pt x 507.11163pt.
+
+Underfull \hbox (badness 3333) in paragraph at lines 208--211
+[]\OT1/ptm/m/n/14.4 (OUP-U3-Q18) The fig-ure shows a stu-dent's fea-si-ble fron-tier and her
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 208--211
+[] 
+ []
+
+<../QuestionBankImage/ECO-U3-Q4-01.png, id=21, 683.55376pt x 733.74126pt>
+File: ../QuestionBankImage/ECO-U3-Q4-01.png Graphic file (type png)
+<use ../QuestionBankImage/ECO-U3-Q4-01.png>
+Package pdftex.def Info: ../QuestionBankImage/ECO-U3-Q4-01.png  used on input line 264.
+(pdftex.def)             Requested size: 469.75502pt x 504.25555pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--274
+[]\OT1/ptm/m/n/14.4 (ECO-U3-Q4) Fig-ure 3.6 shows Alexei's in-dif-fer-ence curves for
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 262--274
+\OT1/ptm/m/n/14.4 free time and fi-nal grade. Which of the fol-low-ing is true? [][]$[]$[][]
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 262--274
+[] 
+ []
+
+<../QuestionBankImage/OUP-U3-Q15-01.png, id=22, 337.26pt x 317.185pt>
+File: ../QuestionBankImage/OUP-U3-Q15-01.png Graphic file (type png)
+<use ../QuestionBankImage/OUP-U3-Q15-01.png>
+Package pdftex.def Info: ../QuestionBankImage/OUP-U3-Q15-01.png  used on input line 278.
+(pdftex.def)             Requested size: 469.75502pt x 441.80057pt.
+
+Underfull \hbox (badness 1990) in paragraph at lines 276--288
+[]\OT1/ptm/m/n/14.4 (OUP-U3-Q15) The fol-low-ing di-a-gram is the fea-si-ble set of a stu-dent,
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 276--288
+\OT1/ptm/m/n/14.4 show-ing the com-bi-na-tions of her fi-nal grade and the hours of free
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 276--288
+\OT1/ptm/m/n/14.4 time per day. Based on this in-for-ma-tion, we can say that: [][]$[]$[][]
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 276--288
+[] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../QuestionBankImage/OUP-U3-Q4-01.png>] [3] [4 <../QuestionBankImage/OUP-U3-Q9-01.png>] [5] [6 <../QuestionBankImage/OUP-U3-Q18-01.png>] [7] [8] [9] [10 <../QuestionBankImage/ECO-U3-Q4-01.png>] [11] [12 <../QuestionBankImage/OUP-U3-Q15-01.png>] [13] (build/Unit3PS.aux)
 Package rerunfilecheck Info: File `Unit3PS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21801 strings out of 478238
- 409681 string characters out of 5850456
- 670188 words of memory out of 5000000
- 39670 multiletter control sequences out of 15000+600000
- 477232 words of font info for 39 fonts, out of 8000000 for 9000
+ 21973 strings out of 478238
+ 412582 string characters out of 5850456
+ 719856 words of memory out of 5000000
+ 39751 multiletter control sequences out of 15000+600000
+ 481888 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,5n,104p,527b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/Unit3PS.pdf (1 page, 21797 bytes).
+ 100i,8n,104p,527b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/Unit3PS.pdf (13 pages, 365889 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
