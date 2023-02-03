@@ -179,6 +179,7 @@ Css: .rotatebox{display: inline-block;}
 Css: #TBL-1-1{border-left: 1px solid black;}
 Css: #TBL-1-1{border-right:1px solid black;}
 Css: #TBL-1-2{border-right:1px solid black;}
+File: ./figures/Carmen_Q_Example.png
 Css: #TBL-2-1{border-left: 1px solid black;}
 Css: #TBL-2-1{border-right:1px solid black;}
 Css: #TBL-2-2{border-right:1px solid black;}
