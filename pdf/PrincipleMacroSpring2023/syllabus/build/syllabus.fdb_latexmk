@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1676047375
-  "build/syllabus.bcf" 1676047375 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
+["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1676403616
+  "build/syllabus.bcf" 1676403616 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
   (generated)
   "build/syllabus.bbl"
   "build/syllabus.blg"
-["pdflatex"] 1676047374 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1676047375
+["pdflatex"] 1676403615 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1676403616
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1650183167 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -180,12 +180,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "build/syllabus.aux" 1676047375 1575 ffc21036fd5bb071b0872c3789857d81 "pdflatex"
+  "build/syllabus.aux" 1676403616 1575 ffc21036fd5bb071b0872c3789857d81 "pdflatex"
   "build/syllabus.bbl" 1671672390 466 ee04f40f768daeed26442158e95aba61 "biber build/syllabus"
-  "build/syllabus.out" 1676047375 550 bfc5001d842da8fb19fa84cdb674f667 "pdflatex"
-  "build/syllabus.run.xml" 1676047375 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
+  "build/syllabus.out" 1676403616 550 bfc5001d842da8fb19fa84cdb674f667 "pdflatex"
+  "build/syllabus.run.xml" 1676403616 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
   "figures/Carmen_Q_Example.png" 1675452776 13177 4fdb1d78db78036e01eb6d8ea200f697 ""
-  "syllabus.tex" 1676047374 22434 767aaa0c39b4505e4c94ed880e541d5a ""
+  "syllabus.tex" 1676403614 22443 9c502af314fc4f81a3351e6ca82f652d ""
   (generated)
   "build/syllabus.aux"
   "build/syllabus.bcf"
