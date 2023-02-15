@@ -11,6 +11,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{fontawesome}
 
 \usepackage[mode=tex]{standalone}
 \usepackage{tikz}
@@ -59,6 +60,7 @@
 \usefonttheme[onlymath]{serif}
 
 \newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\extjump}[2]{\href{#1}{\beamerbutton{#2}}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
@@ -143,10 +145,10 @@
 }
 %------------------------------------------
 
-\section{Intro}
+\section[Intro]{Introduction}
 \label{sec:Intro}
 
-\begin{frame}{Introduction}
+\begin{frame}{Introduction \extjump{https://www.core-econ.org/the-economy/book/text/10.html}{Textbook}}
 \label{slide:Introduction}
 \begin{center}
 \begin{quote}
@@ -155,11 +157,83 @@
 \hfill - Paul Samuelson
 
 \begin{itemize}
-    \item All trades take \alert{time}, and \alert{inter-temporal assets} allow agents to \alert{carry value over time}.
-    \item
+    \item Food spoils, barrels leak, yet all trades take \alert{time}.
+    \item Time is both the friend and the foe: depreciation \& appreciation
+    \item \alert{Inter-temporal assets} allow agents to \alert{carry value over time}.
+    \item What are inter-temporal assets?
+    \begin{table}
+        \footnotesize
+        \begin{tabular}{r|lllll}
+            Examples
+                & Money
+                & Capital
+                & Bond / Debt
+                & Social Security
+                & Housing
+            \\
+            \hline
+            Value $ \uparrow /\downarrow  $
+                & $ \downarrow  $
+                & $ \downarrow  $
+                & $ \downarrow  $
+                & $ \uparrow  $
+                & $ \uparrow  $ (?)
+            \\
+            \hline
+            Cause (?)
+                & inflates
+                & tech
+                & default
+                & age
+                & develop
+            \\
+        \end{tabular}
+        \caption{Examples of Intertemporal Assets}
+    \end{table}
 \end{itemize}
-<++>
+
 \end{center}
+\end{frame}
+
+\section[Time \faClockO]{Income, Borrowing and Saving}
+\label{sec:Income__Borrowing_and_Saving}
+
+\begin{frame}{Money, Income and Wealth}
+\label{slide:Money__Income_and_Wealth}
+    \begin{itemize}
+        \item \textbf{Money}: medium of exchange, allow \alert{transfer} of purchasing power
+        \begin{itemize}
+            \item Whether a currency is \textbf{trust-worthy} is important
+        \end{itemize}
+        \item (Flow) \textbf{Income}: amount of money receive for a period of time
+        \begin{itemize}
+            \item wage bill, market earning, investment, gov transfer
+        \end{itemize}
+        \item (Stock) \textbf{Wealth}: inter-temporal assets carry values
+        \begin{itemize}
+            \item buildings, land, machinery, capital goods $ - $ debts $ + $ credit
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Other Key Concepts}
+\label{slide:Other_Key_Concepts}
+    \begin{itemize}
+        \item Depreciation / Appreciation: value of stock $ \downarrow / \uparrow  $ over time
+        \item Net income $ = $ gross income $ - $ depreciation
+        \item Savings: income not consumed
+        \item Investment: Expenditure on newly produced capital goods
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Inter-temporal Substitution}
+\label{slide:Inter_temporal_Substitution}
+    \begin{itemize}
+        \item As time is here, \alert{current you} and \alert{future you} are sharing for resources
+        \item The opportunity cost of \alert{more current goods} is \alert{less future gooes}
+        \item \textbf{Borrowing} and \textbf{Lending}
+    \end{itemize}
+    <++>
 \end{frame}
 <++>
 
