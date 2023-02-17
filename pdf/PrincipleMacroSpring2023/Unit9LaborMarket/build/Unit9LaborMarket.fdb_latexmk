@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1676304446 "Unit9LaborMarket.tex" "build/Unit9LaborMarket.pdf" "Unit9LaborMarket" 1676304449
+["pdflatex"] 1676574412 "Unit9LaborMarket.tex" "build/Unit9LaborMarket.pdf" "Unit9LaborMarket" 1676574414
   "../Unit6FirmLaborMarket/figures/BestResponse.pdf" 1673624001 45050 6ffb1c9b77a81e81d86a40f7f436bf1f ""
   "../Unit6FirmLaborMarket/figures/BestResponse.tex" 1673548521 1594 8ff155539f016f332a7a981b5cd372d2 ""
   "/dev/null" 0 -1 0 ""
@@ -395,16 +395,16 @@
   "/usr/share/texmf/tex/latex/minted/minted.sty" 1661850914 47156 7304be18b5469336f22dc013f16ae5cc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "Unit9LaborMarket.tex" 1676304444 22173 68991a85fd913a0663268ffc9e2332ac ""
-  "build/Unit9LaborMarket.aux" 1676304449 11558 a5ef42e8041ec1f7b10200c4ba1f42d2 "pdflatex"
-  "build/Unit9LaborMarket.nav" 1676304449 4568 054ce4720534c28a326f303ffdc2cb94 "pdflatex"
-  "build/Unit9LaborMarket.out" 1676304449 932 92514ca3ddda838ce0c04fedfe15a9ba "pdflatex"
+  "Unit9LaborMarket.tex" 1676304461 22173 68991a85fd913a0663268ffc9e2332ac ""
+  "build/Unit9LaborMarket.aux" 1676574414 11558 a5ef42e8041ec1f7b10200c4ba1f42d2 "pdflatex"
+  "build/Unit9LaborMarket.nav" 1676574414 4568 054ce4720534c28a326f303ffdc2cb94 "pdflatex"
+  "build/Unit9LaborMarket.out" 1676574414 932 92514ca3ddda838ce0c04fedfe15a9ba "pdflatex"
   "figures/DemandDeficientUnemployment.png" 1674183672 152390 23298a823c5c55417447b1114af310c3 ""
   "figures/Immigration.png" 1674188335 177132 4453fa026ff3b1b924ddf4de8fc73522 ""
   "figures/LaborMarketEq.png" 1674182978 137447 bd5db336611255f36c810cc481562d74 ""
   "figures/LaborUnion_1.png" 1674188726 126380 0c48702d915e95bd6a6fde549989f8f5 ""
   "figures/LaborUnion_2.png" 1674188797 170449 60e6dba518872d558e80cf9343d0716a ""
-  "figures/build/GovIntervene.pdf" 1674188184 40921 673e54c87b9958148393ba5edc15be1a ""
+  "figures/build/GovIntervene.pdf" 1676574410 40922 d05be8ef4729efb474ef73491b0e10f1 ""
   "figures/build/MRMC.pdf" 1674188139 39888 79fd5c86a6a03acbcb156de28720d8c7 ""
   "figures/build/shrug.pdf" 1674195115 14939 485a9a2eeec59a6d6d81d115bbe87989 ""
   "figures/employmentPop.jpg" 1674093499 692125 2082ef7b8e2539c99a36cd41ba993218 ""

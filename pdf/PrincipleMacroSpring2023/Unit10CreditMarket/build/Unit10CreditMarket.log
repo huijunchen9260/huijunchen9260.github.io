@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  14 FEB 2023 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  17 FEB 2023 10:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1230,12 +1230,74 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [7
 
 ]
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 296.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+<./figures/Figure1.png, id=120, 604.75937pt x 530.98375pt>
+File: ./figures/Figure1.png Graphic file (type png)
+<use ./figures/Figure1.png>
+Package pdftex.def Info: ./figures/Figure1.png  used on input line 296.
+(pdftex.def)             Requested size: 171.21765pt x 150.32727pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [8
+
+ <./figures/Figure1.png (PNG copy)>]
+File: ./figures/Figure1.png Graphic file (type png)
+<use ./figures/Figure1.png>
+Package pdftex.def Info: ./figures/Figure1.png  used on input line 296.
+(pdftex.def)             Requested size: 171.21765pt x 150.32727pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [9
+
+]
+<./figures/Figure2.png, id=144, 605.76312pt x 527.47063pt>
+File: ./figures/Figure2.png Graphic file (type png)
+<use ./figures/Figure2.png>
+Package pdftex.def Info: ./figures/Figure2.png  used on input line 296.
+(pdftex.def)             Requested size: 171.21765pt x 149.0912pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [10
+
+ <./figures/Figure2.png (PNG copy)>]
+<./figures/Figure3.png, id=155, 601.24625pt x 525.965pt>
+File: ./figures/Figure3.png Graphic file (type png)
+<use ./figures/Figure3.png>
+Package pdftex.def Info: ./figures/Figure3.png  used on input line 316.
+(pdftex.def)             Requested size: 171.21765pt x 149.78119pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [11
+
+ <./figures/Figure3.png (PNG copy)>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
+
+]
+File: ./figures/Figure3.png Graphic file (type png)
+<use ./figures/Figure3.png>
+Package pdftex.def Info: ./figures/Figure3.png  used on input line 355.
+(pdftex.def)             Requested size: 171.21765pt x 149.78119pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [8
+ [14
 
 ]
 Overfull \vbox (12.90884pt too high) has occurred while \output is active []
@@ -1243,10 +1305,10 @@ Overfull \vbox (12.90884pt too high) has occurred while \output is active []
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [9]
+ [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 244.
+(hyperref)                removing `\translate ' on input line 361.
 
 (build/Unit10CreditMarket.bbl
 
@@ -1259,7 +1321,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 13.
 )
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [10
+ [16
 
 ]
 \tf@nav=\write8
@@ -1276,18 +1338,18 @@ Package rerunfilecheck Info: File `Unit10CreditMarket.out' has not changed.
 (rerunfilecheck)             Checksum: 88FCD713BD5DA2F8E20A9FC61B679A92;560.
  ) 
 Here is how much of TeX's memory you used:
- 47996 strings out of 478238
- 1100805 string characters out of 5850456
- 1482687 words of memory out of 5000000
- 65234 multiletter control sequences out of 15000+600000
- 560009 words of font info for 114 fonts, out of 8000000 for 9000
+ 48085 strings out of 478238
+ 1102750 string characters out of 5850456
+ 1482806 words of memory out of 5000000
+ 65298 multiletter control sequences out of 15000+600000
+ 560325 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,747b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit10CreditMarket.pdf (10 pages, 199796 bytes).
+ 128i,15n,122p,747b,1052s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Unit10CreditMarket.pdf (16 pages, 463470 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
