@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  17 FEB 2023 10:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  18 FEB 2023 22:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1144,6 +1144,14 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomethree on in
  (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 148.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
+)
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 148.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [2
@@ -1230,11 +1238,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [7
 
 ]
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 296.
- (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
-File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
-)
-<./figures/Figure1.png, id=120, 604.75937pt x 530.98375pt>
+<./figures/Figure1.png, id=125, 604.75937pt x 530.98375pt>
 File: ./figures/Figure1.png Graphic file (type png)
 <use ./figures/Figure1.png>
 Package pdftex.def Info: ./figures/Figure1.png  used on input line 296.
@@ -1255,7 +1259,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [9
 
 ]
-<./figures/Figure2.png, id=144, 605.76312pt x 527.47063pt>
+<./figures/Figure2.png, id=150, 605.76312pt x 527.47063pt>
 File: ./figures/Figure2.png Graphic file (type png)
 <use ./figures/Figure2.png>
 Package pdftex.def Info: ./figures/Figure2.png  used on input line 296.
@@ -1266,7 +1270,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [10
 
  <./figures/Figure2.png (PNG copy)>]
-<./figures/Figure3.png, id=155, 601.24625pt x 525.965pt>
+<./figures/Figure3.png, id=162, 601.24625pt x 525.965pt>
 File: ./figures/Figure3.png Graphic file (type png)
 <use ./figures/Figure3.png>
 Package pdftex.def Info: ./figures/Figure3.png  used on input line 316.
@@ -1282,48 +1286,202 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [12
 
 ]
-File: ./figures/Figure3.png Graphic file (type png)
-<use ./figures/Figure3.png>
-Package pdftex.def Info: ./figures/Figure3.png  used on input line 355.
-(pdftex.def)             Requested size: 171.21765pt x 149.78119pt.
+<./figures/Figure5.png, id=185, 604.57593pt x 533.49312pt>
+File: ./figures/Figure5.png Graphic file (type png)
+<use ./figures/Figure5.png>
+Package pdftex.def Info: ./figures/Figure5.png  used on input line 374.
+(pdftex.def)             Requested size: 205.46327pt x 181.30385pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [13
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+ <./figures/Figure5.png (PNG copy)>]
+<./figures/Figure6.png, id=198, 1225.57875pt x 1071.00125pt>
+File: ./figures/Figure6.png Graphic file (type png)
+<use ./figures/Figure6.png>
+Package pdftex.def Info: ./figures/Figure6.png  used on input line 374.
+(pdftex.def)             Requested size: 205.46327pt x 179.53477pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [14
 
-]
-Overfull \vbox (12.90884pt too high) has occurred while \output is active []
+ <./figures/Figure6.png>]
 
+pdfTeX warning: pdflatex (file ./figures/Figure8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure8.pdf, id=211, 722.7pt x 542.025pt>
+File: ./figures/Figure8.pdf Graphic file (type pdf)
+<use ./figures/Figure8.pdf>
+Package pdftex.def Info: ./figures/Figure8.pdf  used on input line 403.
+(pdftex.def)             Requested size: 205.46327pt x 147.21642pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [15]
+ [15
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 361.
+ <./figures/Figure8.pdf>]
+File: ./figures/Figure8.pdf Graphic file (type pdf)
+<use ./figures/Figure8.pdf>
+Package pdftex.def Info: ./figures/Figure8.pdf  used on input line 403.
+(pdftex.def)             Requested size: 205.46327pt x 147.21642pt.
 
-(build/Unit10CreditMarket.bbl
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
-
-
-Package natbib Warning: Empty `thebibliography' environment on input line 13.
-
-)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [16
 
 ]
+
+pdfTeX warning: pdflatex (file ./figures/Figure7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure7.pdf, id=256, 722.7pt x 542.025pt>
+File: ./figures/Figure7.pdf Graphic file (type pdf)
+<use ./figures/Figure7.pdf>
+Package pdftex.def Info: ./figures/Figure7.pdf  used on input line 423.
+(pdftex.def)             Requested size: 205.46327pt x 147.21642pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+ <./figures/Figure7.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/Figure21.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure21.pdf, id=296, 722.7pt x 542.025pt>
+File: ./figures/Figure21.pdf Graphic file (type pdf)
+<use ./figures/Figure21.pdf>
+Package pdftex.def Info: ./figures/Figure21.pdf  used on input line 435.
+(pdftex.def)             Requested size: 342.43532pt x 218.23566pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+ <./figures/Figure21.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/Figure13.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure13.pdf, id=324, 722.7pt x 542.025pt>
+File: ./figures/Figure13.pdf Graphic file (type pdf)
+<use ./figures/Figure13.pdf>
+Package pdftex.def Info: ./figures/Figure13.pdf  used on input line 451.
+(pdftex.def)             Requested size: 205.46327pt x 147.21642pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [20
+
+ <./figures/Figure13.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/Figure14.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure14.pdf, id=346, 722.7pt x 542.025pt>
+File: ./figures/Figure14.pdf Graphic file (type pdf)
+<use ./figures/Figure14.pdf>
+Package pdftex.def Info: ./figures/Figure14.pdf  used on input line 467.
+(pdftex.def)             Requested size: 277.36882pt x 211.12892pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [21
+
+ <./figures/Figure14.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [22
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/Figure22.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure22.pdf, id=386, 722.7pt x 542.025pt>
+File: ./figures/Figure22.pdf Graphic file (type pdf)
+<use ./figures/Figure22.pdf>
+Package pdftex.def Info: ./figures/Figure22.pdf  used on input line 492.
+(pdftex.def)             Requested size: 342.43532pt x 236.60506pt.
+
+Overfull \vbox (12.67833pt too high) detected at line 492
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [23
+
+ <./figures/Figure22.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [24
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [25
+
+]
+\pp=\skip76
+
+Overfull \hbox (0.39998pt too wide) in paragraph at lines 571--571
+ [] 
+ []
+
+
+Overfull \vbox (3.10194pt too high) detected at line 571
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [26
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [27
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/Figure25.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure25.pdf, id=455, 722.7pt x 542.025pt>
+File: ./figures/Figure25.pdf Graphic file (type pdf)
+<use ./figures/Figure25.pdf>
+Package pdftex.def Info: ./figures/Figure25.pdf  used on input line 604.
+(pdftex.def)             Requested size: 239.70367pt x 164.13159pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [28
+
+ <./figures/Figure25.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [29
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [30
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [31
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/Figure28.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/Figure28.pdf, id=523, 722.7pt x 542.025pt>
+File: ./figures/Figure28.pdf Graphic file (type pdf)
+<use ./figures/Figure28.pdf>
+Package pdftex.def Info: ./figures/Figure28.pdf  used on input line 656.
+(pdftex.def)             Requested size: 205.46327pt x 213.86151pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [32
+
+ <./figures/Figure28.pdf>]
 \tf@nav=\write8
 \openout8 = `Unit10CreditMarket.nav'.
 
@@ -1335,21 +1493,21 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  (build/Unit10CreditMarket.aux)
 Package rerunfilecheck Info: File `Unit10CreditMarket.out' has not changed.
-(rerunfilecheck)             Checksum: 88FCD713BD5DA2F8E20A9FC61B679A92;560.
+(rerunfilecheck)             Checksum: E68A921B8250C6E9A0A450AB781C21B4;545.
  ) 
 Here is how much of TeX's memory you used:
- 48085 strings out of 478238
- 1102750 string characters out of 5850456
- 1482806 words of memory out of 5000000
- 65298 multiletter control sequences out of 15000+600000
- 560325 words of font info for 115 fonts, out of 8000000 for 9000
+ 48264 strings out of 478238
+ 1106895 string characters out of 5850456
+ 1483255 words of memory out of 5000000
+ 65419 multiletter control sequences out of 15000+600000
+ 560957 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,747b,1052s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit10CreditMarket.pdf (16 pages, 463470 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Unit10CreditMarket.pdf (32 pages, 1524600 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 653 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

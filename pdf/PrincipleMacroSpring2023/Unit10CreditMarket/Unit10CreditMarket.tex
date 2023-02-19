@@ -265,7 +265,7 @@
                         & 1
                     \\
                 \end{tabular}
-                \item Slope: $ \frac{1}{1+r} $, since future $ C $ on $ y $-axis and current on $ x $-axis
+                % \item Slope: $ \frac{1}{1+r} $, since future $ C $ on $ y $-axis and current on $ x $-axis
             \end{itemize}
             }
             \only<3>{
@@ -336,49 +336,324 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Optimal Decision-Making}
+\begin{frame}{Optimal Decision-Making for Borrowers}
 \label{slide:Optimal_Decision_Making}
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \only<1>{
+                \item In equilibrium $ MRS = MRT $, i.e., $ 1+\rho = 1+r $
+                \item At $ 10\% $ interest rate, Julia is happy at point $ E $ (intersection of IC and FF)
+                }
+                \only<2>{
+                \item $ r: 10\% \rightarrow 78\% $, optimal decision: $ E \rightarrow G $ \faFrownO.
+                \item Julia hurts since she is \alert{borrowers}:
+                \begin{itemize}
+                    \item Point $ F $ is when Julia only wants $ 35 $ consumption now under $ 10\% $ of interest rate.
+                \end{itemize}
+                \item \alert{Income} and \alert{substitution} effects also applies. How?
+                }
+            \end{itemize}
 
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=\textwidth]{./figures/Figure3.png}
+                \only<1>{
+                \includegraphics[width=\textwidth]{./figures/Figure5.png}
+                }
+                \only<2>{
+                \includegraphics[width=\textwidth]{./figures/Figure6.png}
+                }
             \end{figure}
 
         \end{column}
     \end{columns}
-    <++>
+
 
 \end{frame}
-<++>
 
-\section{Appendix}
-\label{sec:Appendix}
+\begin{frame}{Saving}
+\label{slide:Saving}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \only<1>{
+            \begin{itemize}
+                \item Marco is a \alert{saver} with $ 100 $ endowment \alert{today}
+                \item Macro store his grain: $ 20\% $ of loss
+                \item Macro lend to Julia: achieve \alert{medium} utility w/o grain loss
+            \end{itemize}
+            }
+            \only<2>{
+            \begin{itemize}
+                \item \alert{Reservation indifference curve}: outside option for Marco
+                \item What is reservation IC for Julia?
+            \end{itemize}
+            }
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[trim={1.5cm 1.5cm 1.5cm 1.5cm}, clip, width=\textwidth]{./figures/Figure8.pdf}
+            \end{figure}
 
-\appendix
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
-% \begin{frame}\frametitle{}
-% \begin{columns}
-% \label{Appendix}
-% \column{1\linewidth}
-% \centering
-% {\Large \alert{Appendix}}
-% \end{columns}
-% \end{frame}
-%------------------------------------------
-\begin{frame}[allowframebreaks]{References}
-\footnotesize
-\bibliographystyle{$BIB_STYLE}
-\bibliography{$BIBFILE}
+        \end{column}
+    \end{columns}
+
 \end{frame}
+
+\begin{frame}{Reservation Indifference Curve}
+\label{slide:Reservation_Indifference_Curve}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \item Reservation indifference curve: all of the points at which the individual would be just as well off as at the reservation position (endowment).
+                \item \alert{Room for trade} lies in \alert{between} two indifference curve; o/w not beneficial!
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[trim={1.5cm 1.5cm 1.5cm 1.5cm}, clip, width=\textwidth]{./figures/Figure7.pdf}
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section[\faBank \& \faMoney]{Banks and Money}
+\label{sec:Banks_and_Money}
+
+\begin{frame}{The Financial System}
+\label{slide:The_Financial_System}
+    \begin{figure}
+        \centering
+        \includegraphics[trim={1cm 1cm 0cm 2.5cm}, clip, width=\textwidth]{./figures/Figure21.pdf}
+    \end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Balance Sheet}
+\label{slide:Balance_Sheet}
+    \begin{figure}
+        \centering
+        \includegraphics[trim={1.5cm 1.5cm 1.5cm 1.5cm}, clip, width=0.6\textwidth]{./figures/Figure13.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item \alert{Assets}: Anything of value that is owned.
+        \item \alert{Liabilities}: Anything of value that is owed.
+        \item \alert{Net worth}: assets $ - $ liabilities
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Balance Sheet and Wealth}
+\label{slide:Balance_Sheet_and_Wealth}
+    \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.9\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[trim={1.5cm 0.5cm 1.5cm 1.5cm}, clip, width=0.9\textwidth]{./figures/Figure14.pdf}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+
+\end{frame}
+
+\begin{frame}{Banks}
+\label{slide:Banks}
+    \begin{itemize}
+        \item Banks: firm that makes profits by lending and borrowing
+        \item \alert{Borrow} from households (\textbf{deposits}), other banks, and the central bank at a \alert{lower} interest rate
+        \item \alert{Lend} out loans at a \alert{higher} interest rate
+        \item \alert{Cost}:
+        \begin{itemize}
+            \item operational: the salaries of bank officers, branch rents
+            \item interest costs: paying interest on their deposits and other borrowing
+        \end{itemize}
+        \item \alert{Revenue}: interest and repayment of loans
+        \item \alert{Expected return}: The return on the loans, taking into account \textbf{the default risk}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Bank's Balance Sheet}
+\label{slide:Bank_s_Balance_Sheet}
+    \begin{figure}
+        \centering
+        \includegraphics[trim = {0cm 0cm 0cm 1.5cm}, clip, width=\textwidth]{./figures/Figure22.pdf}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Bank's Net Worth}
+\label{slide:Bank_s_Net_Worth}
+    \begin{center}
+        Net worth = assets $ - $ liabilities
+    \end{center}
+    \begin{itemize}
+        \item means what is owed to the shareholders/ owners
+        \item also called \textbf{equity}
+        \item net worth $ < 0$ means bank is \textbf{insolvent}
+        \begin{itemize}
+            \item i.e., unable to repay debt
+        \end{itemize}
+        \item Leverage describes the reliance of a company on debt:
+        %
+        \begin{equation*}
+            \text{leverage} = \frac{\text{total assets}}{\text{net worth}}
+        \end{equation*}
+        %
+
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Central Banks}
+\label{slide:Central_Banks}
+    \begin{itemize}
+        \item \textbf{Legal tender} has to be accepted as payment by law
+        \item \textbf{Base money/high-powered money}: notes and coins. Money as legal tender
+        \item The central bank is the only bank that can \alert{create} legal tender.
+        \begin{itemize}
+            \item the central bank is usually owned by the government.
+            \begin{itemize}
+                \item Or not! e.g. \alert{Federal Reserve}
+            \end{itemize}
+            \item acts as the banker for the commercial banks, who have accounts at the central bank that hold legal tender.
+            \item by crediting these accounts, the central bank can create money.
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Bank Money}
+\label{slide:Bank_Money}
+    \begin{center}
+        \textit{Commercial banks create money by making loans}
+    \end{center}
+    \begin{itemize}
+        \item this is called bank money $ \neq $ legal tender
+        \item it is a liability to the bank, not an asset
+        \item banks earn profits by charging interest on bank money
+    \end{itemize}
+    \begin{table}
+        \newlength\pp
+        \setlength\pp{\dimexpr .5\textwidth -2\tabcolsep}
+        \begin{tabular}{p{\pp}|p{\pp}}
+            Bonus Bank’s assets
+                & Bonus Bank’s liabilities
+            \\
+            \hline
+            \$20 base money
+            \newline
+            \$100 bank loan
+            \newline
+            Total: \$120
+                & \$120 payable on
+                \newline
+                demand to Gino
+            \\
+        \end{tabular}
+        \caption{Bonus Bank gives Gino a loan of \$100}
+    \end{table}
+
+    \begin{center}
+        Broad money $ = $ base money $ + $ bank money
+    \end{center}
+\end{frame}
+
+\begin{frame}{The Money Market}
+\label{slide:The_Money_Market}
+    \begin{itemize}
+        \item Banks need enough base money to cover their net transactions.
+        \item They borrow base money on the money market at the short-term interest rate.
+        \begin{itemize}
+            \item The demand for base money depends on how many transactions commercial banks have to make.
+            \item The supply of base money is a decision by the central bank.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Application: central bank's policy rate impact}
+\label{slide:Application__central_bank_s_policy_rate_impact}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \item The central bank's policy rate affects the level of spending in the economy, because households and firms borrow to spend.
+                \item \textbf{higher interest rate $ \rightarrow  $ low spending today}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[trim = {0cm 0.5cm 0.5cm 1.5cm}, clip, width=\textwidth]{./figures/Figure25.pdf}
+                \caption{Right: Credit market, Left: Loan Demand for Julia}
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section[ \faCreditCard \faLock ]{Credit Rationing}
+\label{sec:Credit_Rationing}
+
+
+\begin{frame}{Recall: Principal-agent Problem}
+\label{slide:Recall__Principal_agent_Problem}
+    \begin{itemize}
+        \item Def: conflict of interest between principal (\alert{lender}) and agent (\alert{borrower})
+        \begin{itemize}
+            \item Lender has no info on borrower's effort in financial project $ \Rightarrow  $ loan may not repay
+        \end{itemize}
+        \item Resolution: \alert{equity constraint} and/or \alert{collateral constraint}
+        \begin{itemize}
+            \item Equity: require the borrower to put some of her wealth into the project
+            \item Collateral: set aside property that will be transferred loan not repaid
+        \end{itemize}
+        \item Lender's rick $ \downarrow \downarrow  $, but at what cost?
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Credit Rationing}
+\label{slide:Credit_Rationing}
+    \begin{itemize}
+        \item Those with less wealth find it more difficult to provide equity or collateral
+        \item \alert{Credit-constrained}: borrow on unfavourable terms compared with those with more wealth
+        \item \alert{Credit-excluded}: refused loan entirely
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Credit Rationing \& Inequality}
+\label{slide:Credit_Rationing____Inequality}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \item Inequality may increase when some people are in a position to profit by \textbf{lending} money to others.
+                \item Credit-rationing increases inequality: people with \alert{limited wealth} are \alert{not able to profit from the investment} opportunities that are open to those with more
+assets.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[trim = {1cm 0cm 8.5cm 2.5cm}, clip, width=\textwidth]{./figures/Figure28.pdf}
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
 
 \end{document}
