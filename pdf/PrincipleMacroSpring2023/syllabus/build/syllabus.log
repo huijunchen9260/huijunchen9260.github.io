@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  17 FEB 2023 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  19 FEB 2023 11:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -753,78 +753,83 @@ LaTeX Info: Redefining \nameref on input line 50.
 \@outlinefile=\write5
 \openout5 = `syllabus.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 66.
+ (build/syllabus.toc)
+\tf@toc=\write6
+\openout6 = `syllabus.toc'.
+
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 72.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 84.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 90.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+) [2]
 \q=\skip81
 \y=\skip82
-<./figures/Carmen_Q_Example.png, id=33, 468.99692pt x 217.31187pt>
+<./figures/Carmen_Q_Example.png, id=114, 468.99692pt x 217.31187pt>
 File: ./figures/Carmen_Q_Example.png Graphic file (type png)
 <use ./figures/Carmen_Q_Example.png>
-Package pdftex.def Info: ./figures/Carmen_Q_Example.png  used on input line 155.
+Package pdftex.def Info: ./figures/Carmen_Q_Example.png  used on input line 167.
 (pdftex.def)             Requested size: 469.75502pt x 217.67274pt.
- [2] [3 <./figures/Carmen_Q_Example.png (PNG copy)>]
+ [3] [4 <./figures/Carmen_Q_Example.png (PNG copy)>]
 \bb=\skip83
 \qq=\skip84
 \rr=\skip85
 \pp=\skip86
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 212--212
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 227--227
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 210--361
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 225--376
 [][] 
  []
 
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 364--364
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 379--379
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 386--387
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 401--402
 []|\OT1/ptm/m/n/12 03/14,16,18| 
  []
 
 
-Overfull \hbox (3.57047pt too wide) in paragraph at lines 461--462
+Overfull \hbox (3.57047pt too wide) in paragraph at lines 476--477
 []|\OT1/ptm/m/n/12 04/17,19,21| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 362--478
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 377--493
 [][] 
  []
 
-[4] [5] [6] [7] [8] [9] (build/syllabus.aux)
+[5] [6] [7] [8] [9] [10] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
-(rerunfilecheck)             Checksum: BFC5001D842DA8FB19FA84CDB674F667;550.
+(rerunfilecheck)             Checksum: B38865B9417394B7674D70FF6084C2C1;3222.
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
 \openout1 = `syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27059 strings out of 478238
- 514619 string characters out of 5850456
- 1198650 words of memory out of 5000000
- 44845 multiletter control sequences out of 15000+600000
+ 27082 strings out of 478238
+ 514907 string characters out of 5850456
+ 1198652 words of memory out of 5000000
+ 44863 multiletter control sequences out of 15000+600000
  488003 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (9 pages, 96666 bytes).
+Output written on build/syllabus.pdf (10 pages, 99259 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

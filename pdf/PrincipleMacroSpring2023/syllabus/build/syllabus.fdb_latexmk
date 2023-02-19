@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1676653436
-  "build/syllabus.bcf" 1676653436 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
+["biber build/syllabus"] 1671672390 "build/syllabus.bcf" "build/syllabus.bbl" "build/syllabus" 1676825623
+  "build/syllabus.bcf" 1676825623 106681 c71a8e1c2eb5025a4d7004a82093b80e "pdflatex"
   (generated)
   "build/syllabus.bbl"
   "build/syllabus.blg"
-["pdflatex"] 1676653435 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1676653436
+["pdflatex"] 1676825622 "syllabus.tex" "build/syllabus.pdf" "syllabus" 1676825623
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1650183167 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -180,12 +180,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "build/syllabus.aux" 1676653436 1575 ffc21036fd5bb071b0872c3789857d81 "pdflatex"
+  "build/syllabus.aux" 1676825623 3216 de9c7a73c38fb21523bd3fb3a724039c "pdflatex"
   "build/syllabus.bbl" 1671672390 466 ee04f40f768daeed26442158e95aba61 "biber build/syllabus"
-  "build/syllabus.out" 1676653436 550 bfc5001d842da8fb19fa84cdb674f667 "pdflatex"
-  "build/syllabus.run.xml" 1676653436 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
+  "build/syllabus.out" 1676825623 3222 b38865b9417394b7674d70ff6084c2c1 "pdflatex"
+  "build/syllabus.run.xml" 1676825623 2329 5cf6c380ac350fd5836102d1db169e61 "pdflatex"
+  "build/syllabus.toc" 1676825623 1200 ab796de52d38e2ed41d0be00627d7afb "pdflatex"
   "figures/Carmen_Q_Example.png" 1675452776 13177 4fdb1d78db78036e01eb6d8ea200f697 ""
-  "syllabus.tex" 1676653433 22492 2ea8f1b5e9faad6b978db7f1314fbc28 ""
+  "syllabus.tex" 1676825621 23403 f26c5df756ec54988bd4566ebb5f1f45 ""
   (generated)
   "build/syllabus.aux"
   "build/syllabus.bcf"
@@ -193,3 +194,4 @@
   "build/syllabus.out"
   "build/syllabus.pdf"
   "build/syllabus.run.xml"
+  "build/syllabus.toc"

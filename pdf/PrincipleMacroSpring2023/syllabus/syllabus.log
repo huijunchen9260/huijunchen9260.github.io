@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=latex 2022.11.9)  17 FEB 2023 12:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=latex 2022.11.9)  19 FEB 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,34 +1296,34 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 3.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-6.
-(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1
-
-] [2]
-\q=\skip83
-\y=\skip84
-[3] [4] [5
+) (./syllabus.4ct) [1
 
 ]
-l.155 --- TeX4ht warning --- File `"./figures/Carmen_Q_Example.xbb"' not found 
----
-l.155 --- TeX4ht warning --- Cannot determine size of graphic in "./figures/Car
-men_Q_Example.xbb" (no BoundingBox) ---
-l. 155 --- needs --- ./figures/Carmen_Q_Example.png ---
-[6
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
+2.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2] [3]
+\q=\skip83
+\y=\skip84
+[4] [5] [6
 
-] [7
+]
+l.167 --- TeX4ht warning --- File `"./figures/Carmen_Q_Example.xbb"' not found 
+---
+l.167 --- TeX4ht warning --- Cannot determine size of graphic in "./figures/Car
+men_Q_Example.xbb" (no BoundingBox) ---
+l. 167 --- needs --- ./figures/Carmen_Q_Example.png ---
+[7
+
+] [8
 
 ]
 \bb=\skip85
 \qq=\skip86
 \rr=\skip87
 \pp=\skip88
-[8] [9] [10] [11] [12] [13] [14] [15] [16] [17
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19
 
 ] (./syllabus.aux)
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
@@ -1331,12 +1331,12 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31601 strings out of 478239
- 575684 string characters out of 5850482
- 1322805 words of memory out of 5000000
- 49123 multiletter control sequences out of 15000+600000
+ 31639 strings out of 478239
+ 576153 string characters out of 5850482
+ 1322853 words of memory out of 5000000
+ 49159 multiletter control sequences out of 15000+600000
  478877 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,8n,128p,1977b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on syllabus.dvi (17 pages, 85172 bytes).
+Output written on syllabus.dvi (19 pages, 89248 bytes).
