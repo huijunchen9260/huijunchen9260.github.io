@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1676776361 "Unit10CreditMarket.tex" "build/Unit10CreditMarket.pdf" "Unit10CreditMarket" 1676776363
+["pdflatex"] 1676908564 "Unit10CreditMarket.tex" "build/Unit10CreditMarket.pdf" "Unit10CreditMarket" 1676908569
   "/dev/null" 0 -1 0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1650179560 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1650179560 2437 443c81fb50993bacedc5f9a206c322b0 ""
@@ -387,10 +387,10 @@
   "/usr/share/texmf/tex/latex/minted/minted.sty" 1661850914 47156 7304be18b5469336f22dc013f16ae5cc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667998329 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667998312 2927659 1d32e5dc06ca8513b64498ee5f946ab2 ""
-  "Unit10CreditMarket.tex" 1676776358 23094 217cc241f83831e8f8482f7a80c956fe ""
-  "build/Unit10CreditMarket.aux" 1676776363 9750 79bb0890a703dc2464ddd8d1f36fc031 "pdflatex"
-  "build/Unit10CreditMarket.nav" 1676776363 3517 898aac0768ecc6cd90a84285a390afc3 "pdflatex"
-  "build/Unit10CreditMarket.out" 1676776363 545 e68a921b8250c6e9a0a450ab781c21b4 "pdflatex"
+  "Unit10CreditMarket.tex" 1676908563 23094 4d9d21eaee5a404d0ed228e233bc87fc ""
+  "build/Unit10CreditMarket.aux" 1676908568 9750 79bb0890a703dc2464ddd8d1f36fc031 "pdflatex"
+  "build/Unit10CreditMarket.nav" 1676908568 3517 898aac0768ecc6cd90a84285a390afc3 "pdflatex"
+  "build/Unit10CreditMarket.out" 1676908568 545 e68a921b8250c6e9a0a450ab781c21b4 "pdflatex"
   "figures/Figure1.png" 1676575174 63614 e840de99b6cffaa1d24750a40e201b77 ""
   "figures/Figure13.pdf" 1676729310 75852 108eacd93a8e99fb2042d318ad116ee0 ""
   "figures/Figure14.pdf" 1676729310 79148 e7b50bc1f097491536966981472382da ""
