@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  8 FEB 2023 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 FEB 2023 17:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -684,17 +684,17 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 236.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 235.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 <../QuestionBankImage/OUP-U6-Q15-01.png, id=17, 346.29375pt x 245.91875pt>
 File: ../QuestionBankImage/OUP-U6-Q15-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U6-Q15-01.png>
-Package pdftex.def Info: ../QuestionBankImage/OUP-U6-Q15-01.png  used on input line 297.
+Package pdftex.def Info: ../QuestionBankImage/OUP-U6-Q15-01.png  used on input line 295.
 (pdftex.def)             Requested size: 469.75502pt x 333.60452pt.
 
-Overfull \hbox (8.0pt too wide) in paragraph at lines 297--319
+Overfull \hbox (8.0pt too wide) in paragraph at lines 295--317
 [][] 
  []
 
@@ -707,7 +707,7 @@ Package rerunfilecheck Info: File `Unit6PS.out' has not changed.
 Here is how much of TeX's memory you used:
  21942 strings out of 478238
  411478 string characters out of 5850456
- 720361 words of memory out of 5000000
+ 720363 words of memory out of 5000000
  39727 multiletter control sequences out of 15000+600000
  483147 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

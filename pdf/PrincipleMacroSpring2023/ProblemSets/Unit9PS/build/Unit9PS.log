@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  23 FEB 2023 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  26 FEB 2023 18:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -673,6 +673,10 @@ LaTeX Info: Redefining \nameref on input line 147.
 \@outlinefile=\write4
 \openout4 = `Unit9PS.out'.
 
+ (build/Unit9PS.Answers)
+\tf@Answers=\write5
+\openout5 = `Unit9PS.Answers'.
+
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 155.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 156.
  (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -680,7 +684,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
-<../QuestionBankImage/OUP-U9-Q3-01.png, id=7, 407.5225pt x 324.21124pt>
+<../QuestionBankImage/OUP-U9-Q3-01.png, id=17, 407.5225pt x 324.21124pt>
 File: ../QuestionBankImage/OUP-U9-Q3-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U9-Q3-01.png>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U9-Q3-01.png  used on input line 158.
@@ -700,14 +704,14 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 156--169
 []
  []
 
-<../QuestionBankImage/OUP-U9-Q14-01.png, id=9, 409.53pt x 303.1325pt>
+<../QuestionBankImage/OUP-U9-Q14-01.png, id=19, 409.53pt x 303.1325pt>
 File: ../QuestionBankImage/OUP-U9-Q14-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U9-Q14-01.png>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U9-Q14-01.png  used on input line 176.
 (pdftex.def)             Requested size: 469.75502pt x 347.73471pt.
 
 Underfull \hbox (badness 3158) in paragraph at lines 173--177
-[]\OT1/ptm/m/n/14.4 (OUP-U9-Q14) []$[]$[] The fol-low-ing di-a-gram de-picts a firm's de-mand
+[]\OT1/ptm/m/n/14.4 (OUP-U9-Q14) [][]$[]$[][] The fol-low-ing di-a-gram de-picts a firm's de-mand
  []
 
 
@@ -727,7 +731,10 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 187.
 
-<../QuestionBankImage/OUP-U9-Q22-01.png, id=10, 407.5225pt x 323.2075pt>
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 187.
+
+<../QuestionBankImage/OUP-U9-Q22-01.png, id=20, 407.5225pt x 323.2075pt>
 File: ../QuestionBankImage/OUP-U9-Q22-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U9-Q22-01.png>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U9-Q22-01.png  used on input line 291.
@@ -757,7 +764,7 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 289--292
 [] 
  []
 
-<../QuestionBankImage/OUP-U9-Q17-01.png, id=11, 396.48125pt x 279.0425pt>
+<../QuestionBankImage/OUP-U9-Q17-01.png, id=21, 396.48125pt x 279.0425pt>
 File: ../QuestionBankImage/OUP-U9-Q17-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U9-Q17-01.png>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U9-Q17-01.png  used on input line 327.
@@ -774,7 +781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--337
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 324--337
-\OT1/ptm/m/n/14.4 Which of the fol-low-ing state-ments is cor-rect? []$[]$[]
+\OT1/ptm/m/n/14.4 Which of the fol-low-ing state-ments is cor-rect? [][]$[]$[][]
  []
 
 
@@ -784,23 +791,23 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 324--337
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../QuestionBankImage/OUP-U9-Q3-01.png>] [2 <../QuestionBankImage/OUP-U9-Q14-01.png>] [3] [4] [5 <../QuestionBankImage/OUP-U9-Q22-01.png>] [6 <../QuestionBankImage/OUP-U9-Q17-01.png>] (build/Unit9PS.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../QuestionBankImage/OUP-U9-Q3-01.png>] [3 <../QuestionBankImage/OUP-U9-Q14-01.png>] [4] [5] [6] [7 <../QuestionBankImage/OUP-U9-Q22-01.png>] [8] [9 <../QuestionBankImage/OUP-U9-Q17-01.png>] (build/Unit9PS.aux)
 Package rerunfilecheck Info: File `Unit9PS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21950 strings out of 478238
- 412125 string characters out of 5850456
- 696235 words of memory out of 5000000
- 39739 multiletter control sequences out of 15000+600000
- 481002 words of font info for 48 fonts, out of 8000000 for 9000
+ 21962 strings out of 478238
+ 412284 string characters out of 5850456
+ 710520 words of memory out of 5000000
+ 39744 multiletter control sequences out of 15000+600000
+ 483147 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,8n,104p,527b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/Unit9PS.pdf (6 pages, 220526 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/Unit9PS.pdf (9 pages, 241987 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 70 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
