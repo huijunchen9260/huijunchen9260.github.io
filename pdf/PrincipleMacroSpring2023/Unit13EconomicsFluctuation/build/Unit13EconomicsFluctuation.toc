@@ -4,4 +4,3 @@
 \beamer@sectionintoc {3}{Measuring the Aggregate Economy}{7}{0}{3}
 \beamer@sectionintoc {4}{Economics Fluctuation}{12}{0}{4}
 \beamer@sectionintoc {5}{Inflation}{24}{0}{5}
-\beamer@sectionintoc {6}{Appendix}{32}{0}{6}

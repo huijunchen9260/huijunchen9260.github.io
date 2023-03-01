@@ -1,12 +1,5 @@
 # Fdb version 3
-["bibtex build/Unit13EconomicsFluctuation"] 1677611372 "build/Unit13EconomicsFluctuation.aux" "build/Unit13EconomicsFluctuation.bbl" "build/Unit13EconomicsFluctuation" 1677611374
-  "$BIB_STYLE.bst" 0 -1 0 ""
-  "/home/huijunchen/mnt/home/huijunchen/Documents/LaTeX/hjref.bib" 1677601041 152505 5ec82e5c2de9ec42bce3db62ab52595f ""
-  "build/Unit13EconomicsFluctuation.aux" 1677611374 10121 4d03f2b2a0fe3f7a644ddde74dc6fe4c "pdflatex"
-  (generated)
-  "build/Unit13EconomicsFluctuation.bbl"
-  "build/Unit13EconomicsFluctuation.blg"
-["pdflatex"] 1677611372 "Unit13EconomicsFluctuation.tex" "build/Unit13EconomicsFluctuation.pdf" "Unit13EconomicsFluctuation" 1677611374
+["pdflatex"] 1677687664 "Unit13EconomicsFluctuation.tex" "build/Unit13EconomicsFluctuation.pdf" "Unit13EconomicsFluctuation" 1677687667
   "/dev/null" 0 -1 0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1650179560 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1650179560 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -31,7 +24,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm" 1650183167 11176 53ebf7a171df1f9447b387b178768bb5 ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss12.tfm" 1650183167 11232 955a7245396175d9219648eadc654ac9 ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss8.tfm" 1650183167 11180 705632ac6b4fb69204ad970192cdf4e5 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss9.tfm" 1650183167 11204 6ae1acdb5c7b9e57dc25853230e3cdae ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm" 1650183167 11168 06d87f5698fd1b642d96449b7c8d90b0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm" 1650183167 11316 701b7748a8cc1abea04b4bcc027674ae ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm" 1650183167 1300 2df9da0fc09d4a8c772b3dd386a47c6a ""
@@ -382,11 +374,10 @@
   "/usr/share/texmf/tex/latex/minted/minted.sty" 1661850914 47156 7304be18b5469336f22dc013f16ae5cc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1677530701 4408397 d6a6d94e747928704a6f10fa51bcaa95 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1677530658 2927663 3d3fc2fb1cc6673f931c95113b79745a ""
-  "Unit13EconomicsFluctuation.tex" 1677611367 16519 fdb140044d143ca140f2c47ef821ef8f ""
-  "build/Unit13EconomicsFluctuation.aux" 1677611374 10121 4d03f2b2a0fe3f7a644ddde74dc6fe4c "pdflatex"
-  "build/Unit13EconomicsFluctuation.bbl" 1677611372 384 148f871602d1b96b4b9968432dcc41e0 "bibtex build/Unit13EconomicsFluctuation"
-  "build/Unit13EconomicsFluctuation.nav" 1677611374 4064 0ad29c55de79d0cb38adeb3d75f649ed "pdflatex"
-  "build/Unit13EconomicsFluctuation.out" 1677611374 953 60c8dd1352a966b62104053a9598f9b7 "pdflatex"
+  "Unit13EconomicsFluctuation.tex" 1677687659 16543 e427fb3629192041bd76b0068376ee62 ""
+  "build/Unit13EconomicsFluctuation.aux" 1677687666 8552 1c3248ac242bc20aff7163dade6f897d "pdflatex"
+  "build/Unit13EconomicsFluctuation.nav" 1677687666 3165 25f39f44c12ba281923bf68d98369f17 "pdflatex"
+  "build/Unit13EconomicsFluctuation.out" 1677687666 688 d4f290d4f52e95bb1da286d9dbdcf0f5 "pdflatex"
   "figures/10.pdf" 1677556328 864367 dc969578bba9e2f805031801c7b761b3 ""
   "figures/11.pdf" 1677556328 861657 62fdba58299e6efb5183264e9709fd18 ""
   "figures/12.pdf" 1677556328 865560 3483d67a3bf84b29ecd864a9b278ceee ""

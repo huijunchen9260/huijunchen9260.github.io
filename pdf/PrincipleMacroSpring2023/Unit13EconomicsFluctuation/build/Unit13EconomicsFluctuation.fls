@@ -2311,11 +2311,6 @@ INPUT ./figures/15.pdf
 INPUT ./figures/15.pdf
 INPUT ./figures/15.pdf
 INPUT ./figures/15.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss9.tfm
-INPUT build/Unit13EconomicsFluctuation.bbl
-INPUT build/Unit13EconomicsFluctuation.bbl
-INPUT build/Unit13EconomicsFluctuation.bbl
-INPUT build/Unit13EconomicsFluctuation.bbl
 OUTPUT build/Unit13EconomicsFluctuation.nav
 OUTPUT build/Unit13EconomicsFluctuation.toc
 OUTPUT build/Unit13EconomicsFluctuation.snm
