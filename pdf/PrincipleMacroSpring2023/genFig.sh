@@ -2,5 +2,6 @@
 
 name="$1"
 base="${name%%.*}"
-soffice --headless --convert-to pdf "$1"
-pdfseparate "$base.pdf" %d.pdf
+workdir="${name%/*}/"
+soffice --headless --convert-to pdf --outdir "$workdir" "$1"
+pdfseparate "$base.pdf" "$workdir"%d.pdf
