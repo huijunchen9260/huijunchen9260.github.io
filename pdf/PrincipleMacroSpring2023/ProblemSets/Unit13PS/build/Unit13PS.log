@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  9 MAR 2023 20:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  9 MAR 2023 20:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -673,6 +673,10 @@ LaTeX Info: Redefining \nameref on input line 147.
 \@outlinefile=\write4
 \openout4 = `Unit13PS.out'.
 
+ (build/Unit13PS.Answers)
+\tf@Answers=\write5
+\openout5 = `Unit13PS.Answers'.
+
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 155.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 156.
  (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -680,7 +684,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
-<../QuestionBankImage/OUP-U13-Q04-01.png, id=7, 421.575pt x 255.95625pt>
+<../QuestionBankImage/OUP-U13-Q04-01.png, id=17, 421.575pt x 255.95625pt>
 File: ../QuestionBankImage/OUP-U13-Q04-01.png Graphic file (type png)
 <use ../QuestionBankImage/OUP-U13-Q04-01.png>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U13-Q04-01.png  used on input line 158.
@@ -704,7 +708,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 24
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<../QuestionBankImage/OUP-U13-Q7-01.jpg, id=9, 813.0375pt x 775.89874pt>
+<../QuestionBankImage/OUP-U13-Q7-01.jpg, id=19, 813.0375pt x 775.89874pt>
 File: ../QuestionBankImage/OUP-U13-Q7-01.jpg Graphic file (type jpg)
 <use ../QuestionBankImage/OUP-U13-Q7-01.jpg>
 Package pdftex.def Info: ../QuestionBankImage/OUP-U13-Q7-01.jpg  used on input line 307.
@@ -741,23 +745,23 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 305--308
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../QuestionBankImage/OUP-U13-Q04-01.png>] [2] [3] [4] [5 <../QuestionBankImage/OUP-U13-Q7-01.jpg>] [6] (build/Unit13PS.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../QuestionBankImage/OUP-U13-Q04-01.png>] [3] [4] [5] [6] [7] [8] [9 <../QuestionBankImage/OUP-U13-Q7-01.jpg>] [10] (build/Unit13PS.aux)
 Package rerunfilecheck Info: File `Unit13PS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21938 strings out of 478238
- 411616 string characters out of 5850456
- 706806 words of memory out of 5000000
- 39727 multiletter control sequences out of 15000+600000
- 481002 words of font info for 48 fonts, out of 8000000 for 9000
+ 21951 strings out of 478238
+ 411786 string characters out of 5850456
+ 730005 words of memory out of 5000000
+ 39732 multiletter control sequences out of 15000+600000
+ 483147 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,8n,104p,636b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,8n,104p,636b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/Unit13PS.pdf (6 pages, 264990 bytes).
+Output written on build/Unit13PS.pdf (10 pages, 276997 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 72 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
