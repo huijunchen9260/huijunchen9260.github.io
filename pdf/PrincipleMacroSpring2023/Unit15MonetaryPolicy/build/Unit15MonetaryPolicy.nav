@@ -9,24 +9,62 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@sectionpages {2}{3}}
 \headcommand {\beamer@subsectionpages {2}{3}}
-\headcommand {\sectionentry {2}{Appendix}{4}{Appendix}{0}}
+\headcommand {\sectionentry {2}{{{\FAtwo \symbol {199}}}}{4}{Inflation}{0}}
 \headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\gdef \insertmainframenumber {2}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@sectionpages {4}{5}}
-\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\beamer@appendixpages {6}}
-\headcommand {\beamer@sectionpages {6}{5}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\sectionentry {3}{\translate {References}}{6}{\translate {References}}{1}}
-\headcommand {\slideentry {3}{0}{0}{6/6}{}{1}}
+\headcommand {\slideentry {2}{0}{2}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@partpages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@documentpages {6}}
+\headcommand {\slideentry {2}{0}{4}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{0}{5}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {4}{8}}
+\headcommand {\beamer@subsectionpages {4}{8}}
+\headcommand {\sectionentry {3}{{{\FAone \symbol {157}}}}{9}{Phillips Curve}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {3}{0}{2}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {3}{0}{3}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{0}{4}{12/14}{}{0}}
+\headcommand {\beamer@framepages {12}{14}}
+\headcommand {\slideentry {3}{0}{5}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{0}{6}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {3}{0}{7}{17/18}{}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\slideentry {3}{0}{8}{19/20}{}{0}}
+\headcommand {\beamer@framepages {19}{20}}
+\headcommand {\slideentry {3}{0}{9}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{0}{10}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{0}{11}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@sectionpages {9}{23}}
+\headcommand {\beamer@subsectionpages {9}{23}}
+\headcommand {\sectionentry {4}{Appendix}{24}{Appendix}{0}}
+\headcommand {\slideentry {4}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\gdef \insertmainframenumber {16}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{24}}
+\headcommand {\beamer@sectionpages {24}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\beamer@appendixpages {25}}
+\headcommand {\beamer@sectionpages {25}{24}}
+\headcommand {\beamer@subsectionpages {25}{24}}
+\headcommand {\sectionentry {5}{\translate {References}}{25}{\translate {References}}{1}}
+\headcommand {\slideentry {5}{0}{0}{25/25}{}{1}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@partpages {25}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@documentpages {25}}
 \headcommand {\gdef \inserttotalframenumber {1}}
-\headcommand {\gdef \inserttotalframenumber {2}}
+\headcommand {\gdef \inserttotalframenumber {16}}
 \headcommand {\gdef \appendixtotalframenumber {1}}

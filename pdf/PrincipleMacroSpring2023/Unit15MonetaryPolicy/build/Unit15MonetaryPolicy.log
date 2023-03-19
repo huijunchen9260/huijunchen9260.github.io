@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  19 MAR 2023 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  19 MAR 2023 15:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -703,12 +703,16 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count367
 \multirow@dima=\skip70
 \bigstrutjot=\dimen322
-) (/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
+) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+ (/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
 Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with preambles
  (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks51
 \XKV@tempa@toks=\toks52
 )
@@ -815,7 +819,8 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@matrix@numberofcolumns=\count379
 )
 \tikz@expandcount=\count380
- (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen350
@@ -828,8 +833,7 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecorationsegmentlength=\dimen356
 )
 \tikz@lib@dec@box=\box92
-)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 \pgf@intersect@solutions=\count382
 )) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -845,10 +849,10 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 ) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
 \c@pgfplotstable@counta=\count386
 \t@pgfplotstable@a=\toks58
-) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count387
- (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
-(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
 \pgfplots@numplots=\count388
 \pgfplots@xmin@reg=\dimen358
 \pgfplots@xmax@reg=\dimen359
@@ -864,8 +868,8 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex)))
-(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box93
 \UL@hyphenbox=\box94
 \UL@skip=\skip71
@@ -954,7 +958,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 52.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 53.
  (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -1004,8 +1008,9 @@ runsystem(which pygmentize && touch Unit15MonetaryPolicy.aex)...executed.
 
 runsystem(rm Unit15MonetaryPolicy.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 114.
- (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 115.
+
+(/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
@@ -1014,24 +1019,24 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 ) (build/Unit15MonetaryPolicy.aux)
 \openout1 = `Unit15MonetaryPolicy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1086,7 +1091,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 114.
+Package hyperref Info: Link coloring OFF on input line 115.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1096,9 +1101,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count414
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
  (build/Unit15MonetaryPolicy.out) (build/Unit15MonetaryPolicy.out)
 \@outlinefile=\write7
 \openout7 = `Unit15MonetaryPolicy.out'.
@@ -1130,72 +1135,305 @@ Package caption Info: End \AtBeginDocument code.
  (build/Unit15MonetaryPolicy.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 116.
+(hyperref)                setting the option has no effect on input line 117.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 147.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 147.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
+)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 157.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 166.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 157.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 166.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 157.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 166.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 157.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 166.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 157.
+(Font)              <10.95> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 157.
+(Font)              <8> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 157.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 157.
+(Font)              <6> on input line 166.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 166.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 157.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 166.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 157.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 166.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 166.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 166.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 166.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
 
 ]
-Overfull \vbox (12.90884pt too high) has occurred while \output is active []
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [5
+
+]
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 203.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
+File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 203.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [6
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [7
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/2.pdf, id=130, 722.7pt x 542.025pt>
+File: ./figures/2.pdf Graphic file (type pdf)
+<use ./figures/2.pdf>
+Package pdftex.def Info: ./figures/2.pdf  used on input line 224.
+(pdftex.def)             Requested size: 308.18968pt x 231.13914pt.
+
+Overfull \vbox (7.21242pt too high) detected at line 224
+ []
 
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [5]
+ [8
+
+ <./figures/2.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [9
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [10
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [11
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/4.pdf, id=191, 722.7pt x 542.025pt>
+File: ./figures/4.pdf Graphic file (type pdf)
+<use ./figures/4.pdf>
+Package pdftex.def Info: ./figures/4.pdf  used on input line 288.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (1.22925pt too high) detected at line 288
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [12
+
+ <./figures/4.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/5.pdf, id=215, 722.7pt x 542.025pt>
+File: ./figures/5.pdf Graphic file (type pdf)
+<use ./figures/5.pdf>
+Package pdftex.def Info: ./figures/5.pdf  used on input line 288.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (1.22925pt too high) detected at line 288
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [13
+
+ <./figures/5.pdf>]
+File: ./figures/5.pdf Graphic file (type pdf)
+<use ./figures/5.pdf>
+Package pdftex.def Info: ./figures/5.pdf  used on input line 288.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (1.22925pt too high) detected at line 288
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [14
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [15
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/6.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/6.pdf, id=268, 722.7pt x 542.025pt>
+File: ./figures/6.pdf Graphic file (type pdf)
+<use ./figures/6.pdf>
+Package pdftex.def Info: ./figures/6.pdf  used on input line 307.
+(pdftex.def)             Requested size: 308.18968pt x 231.13914pt.
+
+Overfull \vbox (7.21242pt too high) detected at line 307
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [16
+
+ <./figures/6.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/7.pdf, id=295, 722.7pt x 542.025pt>
+File: ./figures/7.pdf Graphic file (type pdf)
+<use ./figures/7.pdf>
+Package pdftex.def Info: ./figures/7.pdf  used on input line 319.
+(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
+
+Overfull \vbox (7.98122pt too high) detected at line 319
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+ <./figures/7.pdf>]
+File: ./figures/7.pdf Graphic file (type pdf)
+<use ./figures/7.pdf>
+Package pdftex.def Info: ./figures/7.pdf  used on input line 319.
+(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
+
+Overfull \vbox (7.98122pt too high) detected at line 319
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/8.pdf, id=336, 722.7pt x 542.025pt>
+File: ./figures/8.pdf Graphic file (type pdf)
+<use ./figures/8.pdf>
+Package pdftex.def Info: ./figures/8.pdf  used on input line 340.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+ <./figures/8.pdf>]
+File: ./figures/8.pdf Graphic file (type pdf)
+<use ./figures/8.pdf>
+Package pdftex.def Info: ./figures/8.pdf  used on input line 340.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [20
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/9.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/9.pdf, id=382, 722.7pt x 542.025pt>
+File: ./figures/9.pdf Graphic file (type pdf)
+<use ./figures/9.pdf>
+Package pdftex.def Info: ./figures/9.pdf  used on input line 352.
+(pdftex.def)             Requested size: 273.9493pt x 156.92526pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [21
+
+ <./figures/9.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/10.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/10.pdf, id=413, 722.7pt x 542.025pt>
+File: ./figures/10.pdf Graphic file (type pdf)
+<use ./figures/10.pdf>
+Package pdftex.def Info: ./figures/10.pdf  used on input line 372.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [22
+
+ <./figures/10.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/13.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/13.pdf, id=446, 722.7pt x 542.025pt>
+File: ./figures/13.pdf Graphic file (type pdf)
+<use ./figures/13.pdf>
+Package pdftex.def Info: ./figures/13.pdf  used on input line 381.
+(pdftex.def)             Requested size: 342.43532pt x 256.8277pt.
+
+Overfull \vbox (32.90097pt too high) detected at line 381
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [23
+
+ <./figures/13.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [24
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 163.
+(hyperref)                removing `\translate ' on input line 387.
 
 (build/Unit15MonetaryPolicy.bbl
 
@@ -1208,7 +1446,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 13.
 )
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [6
+ [25
 
 ]
 \tf@nav=\write8
@@ -1222,21 +1460,21 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  (build/Unit15MonetaryPolicy.aux)
 Package rerunfilecheck Info: File `Unit15MonetaryPolicy.out' has not changed.
-(rerunfilecheck)             Checksum: 1EE5B10481744A4443BAA6B4BF061A3C;368.
+(rerunfilecheck)             Checksum: DC4F6DE481D3DB9276A8CB7AFF518555;572.
  ) 
 Here is how much of TeX's memory you used:
- 46299 strings out of 478238
- 1076217 string characters out of 5850456
- 1458013 words of memory out of 5000000
- 63586 multiletter control sequences out of 15000+600000
- 513798 words of font info for 69 fonts, out of 8000000 for 9000
+ 48168 strings out of 478238
+ 1104511 string characters out of 5850456
+ 1483001 words of memory out of 5000000
+ 65348 multiletter control sequences out of 15000+600000
+ 550143 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,749b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit15MonetaryPolicy.pdf (6 pages, 73866 bytes).
+ 128i,15n,122p,749b,1246s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Unit15MonetaryPolicy.pdf (25 pages, 1004273 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 565 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

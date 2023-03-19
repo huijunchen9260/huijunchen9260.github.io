@@ -11,6 +11,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{fontawesome}
 
 \usepackage[mode=tex]{standalone}
 \usepackage{tikz}
@@ -146,16 +147,239 @@
 \section[Intro]{Introduction}
 \label{sec:Introduction}
 
-\begin{frame}{Introduction \extjump{https://www.core-econ.org/the-economy/book/text/15.html}{Textbook}}
+\begin{frame}{Introduction \extjump{https://www.core-econ.org/the-economy/book/text/15.html}{Textbook} \extjump{https://www.youtube.com/watch?v=EpMLAQbSYAw}{Age of Easy Money}}
 \label{slide:Introduction}
 
 \begin{itemize}
     \item \alert{Stable} economy is desirable, and the stabilizing \alert{price level} is the key
+    \item \alert{Inflation} as the result of price level rises
+    \item \alert{Phillips curve}: the trade-off between inflation and unemployment
+    \item Central bank use \alert{monetary policy} in response to inflation
+    \item Yet, there's some \alert{consequences} regarding Quantitative Easing:
+    \begin{itemize}
+        \item 2008 Great Recession $ \rightarrow  $ QE policy $ \rightarrow $ Money goes to financial mkt
+        \item Moral Hazard: profit goes to my pocket, loss bailed out by Fed
+        \item $ \Rightarrow  $ Too much money facilitates speculation: fragile financial system
+        \item $ \Rightarrow  $ crypto hype \& crash (FTX); Silicon Valley Bank bank run
+    \end{itemize}
 \end{itemize}
-<++>
+\end{frame}
+
+\section[\faMoney]{Inflation}
+\label{sec:Inflation}
+
+\begin{frame}{Key Concepts}
+\label{slide:Key_Concepts}
+    \begin{itemize}
+        \item \textbf{Inflation}:  an increase in the general price level
+        \item \textbf{Zero inflation}:  A constant price level from year to year
+        \item \textbf{Deflation}:  A decrease in the general price level
+        \item \textbf{Disinflation}:  A decrease in the rate of inflation
+    \end{itemize}
+
+    %
+    \begin{equation*}
+        \tag{The Fisher Equation}
+        r = i - \pi
+    ,\end{equation*}
+    %
+    where $ r $ is real interest rate, $ i $ is nominal interest rate, and $ \pi $ is inflation rate
+\end{frame}
+
+\begin{frame}{What's wrong with inflation?}
+\label{slide:What_s_wrong_with_inflation_}
+    \begin{itemize}
+        \item Workers paid with fixed nominal income, $ \pi \uparrow  $ $ \Rightarrow  $ real income $ \downarrow  $.
+        \item Inflation \alert{reduces the real} value of debt: borrowers \faSmileO \hspace{2pt} yet creditors \faFrownO .
+        \item High rate of inflation makes the economy work less well:
+        \begin{itemize}
+            \item High inflation is often volatile → uncertainty
+            \item Harder for producers: changes in \textbf{relative prices} or inflation?
+            \item \textbf{menu costs} as firms have to update their prices more frequently
+        \end{itemize}
+
+    \end{itemize}
 
 \end{frame}
-<++>
+
+\begin{frame}{What's wrong with deflation?}
+\label{slide:What_s_wrong_with_deflation_}
+    \begin{itemize}
+        \item Deflation could cause worse consequences than high inflation.
+        \item When price $ \downarrow  $, HH postpone consumption
+        \begin{itemize}
+            \item $ \because $ \alert{expect} goods to be cheaper in the future
+            \item \alert{Increase} real debt burden, cut consumption for target wealth
+        \end{itemize}
+        \item $ \Rightarrow  $ negative shock to aggregate demand
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Causes of inflation}
+\label{slide:Causes_of_inflation}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.9\textwidth]{./figures/2.pdf}
+    \end{figure}
+\end{frame}
+
+\section[\faObjectGroup]{Phillips Curve}
+\label{sec:Phillips_Curve}
+
+\begin{frame}{Inflation and unemployment}
+\label{slide:Inflation_and_unemployment}
+
+\begin{center}
+    Unemployment $ \uparrow  $ $ \approx $ inflation $ \downarrow  $
+\end{center}
+
+\begin{itemize}
+    \item increases workers' bargaining position → higher wages → higher cost of production → higher prices
+\end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}{Inflation and Aggregate Demand}
+\label{slide:Inflation_and_Aggregate_Demand}
+    \begin{center}
+         upswing in business cycle is often associated with rising inflation.
+    \end{center}
+    \begin{itemize}
+        \item higher aggregate demand → higher employment → higher wages → higher cost of production → higher prices
+        \item the economy experiences (nominal) price and wage inflation, but the \alert{real wage ($W/P$)} has not increased
+        \item constant real wage means that employment stays high
+        \item \ldots and the wage-price spiral continues
+
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Stable price level}
+\label{slide:Stable_price_level}
+    \begin{center}
+        Prices are stable ($\pi = 0$) when the labor market is in equilibrium.
+    \end{center}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \item <only@1> Recall the labor productivity \& share of pie between worker and firm
+                \item <only@1> Point $ A $ is labor market equilibrium
+                \item <only@2> Point $ B $ is unemployment too low $ \Rightarrow  $ employment rent too low
+                \item <only@2> Point $ C $ is unemployment too high $ \Rightarrow  $ firms hold too high bargaining power
+                \item <only@3> Pt $ B $: workers' claims to real wages $ + $ firms' claims to real profits $ > $ total productivity → upward pressure on wages and prices
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{figure}
+                \centering
+                \only<1>{
+                \includegraphics[width=\textwidth]{./figures/4.pdf}
+                }
+                \only<2-3>{
+                \includegraphics[width=\textwidth]{./figures/5.pdf}
+                }
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{The bargaining gap}
+\label{slide:The_bargaining_gap}
+    \begin{itemize}
+        \item \textbf{Bargaining gap}: The difference between the real wage required to incentivize effort, and the real wage that gives firms enough profits to stay in business.
+        \item Unemployment is below equilibrium: a positive bargaining gap and inflation.
+        \item Unemployment is above equilibrium: a negative bargaining gap and deflation.
+        \item Labour market equilibrium: the bargaining gap is zero and the price level is constant.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Phillips Curve}
+\label{slide:Phillips_Curve}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.9\textwidth]{./figures/6.pdf}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Phillips Curve and the Business Cycle}
+\label{slide:Phillips_Curve_and_the_Business_Cycle}
+    \begin{center}
+        \only<1>{A positive bargaining gap in boom → inflation}
+        \only<2>{A negative bargaining gap in recession → deflation}
+    \end{center}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.8\textwidth]{./figures/7.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Central Bank's Decision}
+\label{slide:Central_Bank_s_Decision}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \item<only@1> Phillips Curve determines the \alert{feasible trade-offs} between inflation and unemployment. (\textbf{MRT})
+                \item<only@2> Indifference curves show \alert{policymaker’s preferred tradeoffs} between inflation and unemployment. (\textbf{MRS})
+                \item<only@2> Target at $ 0\% $ unemployment $ \checkmark $
+                \item<only@2> Target at $ 2\% $ inflation rate???
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{./figures/8.pdf}
+                \only<2>{\caption{\extjump{https://youtu.be/UN-O6oNes0I}{What’s So Special About 2\% Inflation?}}}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Phillips Curve Over Time}
+\label{slide:Phillips_Curve_Over_Time}
+            \begin{itemize}
+                \item Phillips Curve shifts over time
+                \item Keeping unemployment ``too low'' leads to higher prices \& rising inflation
+            \end{itemize}
+            \begin{figure}
+                \centering
+                \includegraphics[trim={0cm 0cm 0cm 4.5cm}, clip, width=.8\textwidth]{./figures/9.pdf}
+            \end{figure}
+\end{frame}
+
+\begin{frame}{The role of expectations}
+\label{slide:The_role_of_expectations}
+\begin{columns}
+    \begin{column}{0.3\textwidth}
+        \begin{itemize}
+            \item Inflation $ = $ expected inflation $ + $ bargaining gap
+            \item If bargaining gap $ = 0 $, i.e., labor market in equilibrium, then inflation is constant
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{./figures/10.pdf}
+        \end{figure}
+
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Expected Inflation Evolves with Positive Bargaining Gap}
+\label{slide:Expected_Inflation_Evolves_with_Positive_Bargaining_Gap}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{./figures/13.pdf}
+    \end{figure}
+
+\end{frame}
+
 
 \section{Appendix}
 \label{sec:Appendix}
