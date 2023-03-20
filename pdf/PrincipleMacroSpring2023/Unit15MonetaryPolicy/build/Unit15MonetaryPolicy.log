@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  19 MAR 2023 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  19 MAR 2023 22:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,7 +1229,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 ]
 
 pdfTeX warning: pdflatex (file ./figures/2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/2.pdf, id=130, 722.7pt x 542.025pt>
+<./figures/2.pdf, id=123, 722.7pt x 542.025pt>
 File: ./figures/2.pdf Graphic file (type pdf)
 <use ./figures/2.pdf>
 Package pdftex.def Info: ./figures/2.pdf  used on input line 224.
@@ -1261,7 +1261,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 ]
 
 pdfTeX warning: pdflatex (file ./figures/4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/4.pdf, id=191, 722.7pt x 542.025pt>
+<./figures/4.pdf, id=184, 722.7pt x 542.025pt>
 File: ./figures/4.pdf Graphic file (type pdf)
 <use ./figures/4.pdf>
 Package pdftex.def Info: ./figures/4.pdf  used on input line 288.
@@ -1278,7 +1278,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  <./figures/4.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/5.pdf, id=215, 722.7pt x 542.025pt>
+<./figures/5.pdf, id=208, 722.7pt x 542.025pt>
 File: ./figures/5.pdf Graphic file (type pdf)
 <use ./figures/5.pdf>
 Package pdftex.def Info: ./figures/5.pdf  used on input line 288.
@@ -1314,7 +1314,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 ]
 
 pdfTeX warning: pdflatex (file ./figures/6.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/6.pdf, id=268, 722.7pt x 542.025pt>
+<./figures/6.pdf, id=260, 722.7pt x 542.025pt>
 File: ./figures/6.pdf Graphic file (type pdf)
 <use ./figures/6.pdf>
 Package pdftex.def Info: ./figures/6.pdf  used on input line 307.
@@ -1331,7 +1331,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  <./figures/6.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/7.pdf, id=295, 722.7pt x 542.025pt>
+<./figures/7.pdf, id=288, 722.7pt x 542.025pt>
 File: ./figures/7.pdf Graphic file (type pdf)
 <use ./figures/7.pdf>
 Package pdftex.def Info: ./figures/7.pdf  used on input line 319.
@@ -1362,7 +1362,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 ]
 
 pdfTeX warning: pdflatex (file ./figures/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/8.pdf, id=336, 722.7pt x 542.025pt>
+<./figures/8.pdf, id=329, 722.7pt x 542.025pt>
 File: ./figures/8.pdf Graphic file (type pdf)
 <use ./figures/8.pdf>
 Package pdftex.def Info: ./figures/8.pdf  used on input line 340.
@@ -1385,7 +1385,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 ]
 
 pdfTeX warning: pdflatex (file ./figures/9.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/9.pdf, id=382, 722.7pt x 542.025pt>
+<./figures/9.pdf, id=375, 722.7pt x 542.025pt>
 File: ./figures/9.pdf Graphic file (type pdf)
 <use ./figures/9.pdf>
 Package pdftex.def Info: ./figures/9.pdf  used on input line 352.
@@ -1398,7 +1398,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  <./figures/9.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/10.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/10.pdf, id=413, 722.7pt x 542.025pt>
+<./figures/10.pdf, id=406, 722.7pt x 542.025pt>
 File: ./figures/10.pdf Graphic file (type pdf)
 <use ./figures/10.pdf>
 Package pdftex.def Info: ./figures/10.pdf  used on input line 372.
@@ -1411,7 +1411,7 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  <./figures/10.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/13.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/13.pdf, id=446, 722.7pt x 542.025pt>
+<./figures/13.pdf, id=439, 722.7pt x 542.025pt>
 File: ./figures/13.pdf Graphic file (type pdf)
 <use ./figures/13.pdf>
 Package pdftex.def Info: ./figures/13.pdf  used on input line 381.
@@ -1426,29 +1426,114 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [23
 
  <./figures/13.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/14.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/14.pdf, id=466, 722.7pt x 542.025pt>
+File: ./figures/14.pdf Graphic file (type pdf)
+<use ./figures/14.pdf>
+Package pdftex.def Info: ./figures/14.pdf  used on input line 410.
+(pdftex.def)             Requested size: 205.46327pt x 154.09827pt.
+
+Overfull \vbox (43.25276pt too high) detected at line 410
+ []
+
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [24
 
-]
+ <./figures/14.pdf>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 387.
+pdfTeX warning: pdflatex (file ./figures/15.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/15.pdf, id=490, 722.7pt x 542.025pt>
+File: ./figures/15.pdf Graphic file (type pdf)
+<use ./figures/15.pdf>
+Package pdftex.def Info: ./figures/15.pdf  used on input line 419.
+(pdftex.def)             Requested size: 308.18968pt x 231.13914pt.
 
-(build/Unit15MonetaryPolicy.bbl
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
+Overfull \vbox (7.21242pt too high) detected at line 419
+ []
 
 
-Package natbib Warning: Empty `thebibliography' environment on input line 13.
-
-)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [25
 
+ <./figures/15.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [26
+
 ]
+
+pdfTeX warning: pdflatex (file ./figures/17.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/17.pdf, id=527, 722.7pt x 542.025pt>
+File: ./figures/17.pdf Graphic file (type pdf)
+<use ./figures/17.pdf>
+Package pdftex.def Info: ./figures/17.pdf  used on input line 432.
+(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [27
+
+ <./figures/17.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [28
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [29
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [30
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [31
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [32
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/18.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/18.pdf, id=604, 722.7pt x 542.025pt>
+File: ./figures/18.pdf Graphic file (type pdf)
+<use ./figures/18.pdf>
+Package pdftex.def Info: ./figures/18.pdf  used on input line 497.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [33
+
+ <./figures/18.pdf>]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [34
+
+]
+
+pdfTeX warning: pdflatex (file ./figures/20.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/20.pdf, id=662, 722.7pt x 542.025pt>
+File: ./figures/20.pdf Graphic file (type pdf)
+<use ./figures/20.pdf>
+Package pdftex.def Info: ./figures/20.pdf  used on input line 536.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [35
+
+ <./figures/20.pdf>]
 \tf@nav=\write8
 \openout8 = `Unit15MonetaryPolicy.nav'.
 
@@ -1460,21 +1545,21 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  (build/Unit15MonetaryPolicy.aux)
 Package rerunfilecheck Info: File `Unit15MonetaryPolicy.out' has not changed.
-(rerunfilecheck)             Checksum: DC4F6DE481D3DB9276A8CB7AFF518555;572.
+(rerunfilecheck)             Checksum: 479EC8317AEB4F509CA56CCB8300804D;428.
  ) 
 Here is how much of TeX's memory you used:
- 48168 strings out of 478238
- 1104511 string characters out of 5850456
- 1483001 words of memory out of 5000000
- 65348 multiletter control sequences out of 15000+600000
- 550143 words of font info for 108 fonts, out of 8000000 for 9000
+ 48251 strings out of 478238
+ 1106181 string characters out of 5850456
+ 1483302 words of memory out of 5000000
+ 65401 multiletter control sequences out of 15000+600000
+ 547366 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,749b,1246s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit15MonetaryPolicy.pdf (25 pages, 1004273 bytes).
+Output written on build/Unit15MonetaryPolicy.pdf (35 pages, 1569611 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 76 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 776 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
