@@ -1,0 +1,5 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Job Creation and Unemployment}{6}{0}{2}
+\beamer@sectionintoc {3}{Long-run Labor Market Model}{14}{0}{3}
+\beamer@sectionintoc {4}{Appendix}{16}{0}{4}

@@ -1,0 +1,323 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+% mint: code chuck and syntax highlighting
+%% outputdir should change according to pdf build directory
+\usepackage[outputdir=build,cache=false]{minted}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
+
+% ---------------------------------------------------------------------
+% Coordinate extraction
+% #1: node name
+% #2: output macro name: x coordinate
+% #3: output macro name: y coordinate
+\newcommand{\Getxycoords}[3]{%
+    \pgfplotsextra{%
+        % using `\pgfplotspointgetcoordinates' stores the (axis)
+        % coordinates in `data point' which then can be called by
+        % `\pgfkeysvalueof' or `\pgfkeysgetvalue'
+        \pgfplotspointgetcoordinates{(#1)}%
+        % `\global' (a TeX macro and not a TikZ/PGFPlots one) allows to
+        % store the values globally
+         \global\pgfkeysgetvalue{/data point/x}{#2}%
+         \global\pgfkeysgetvalue{/data point/y}{#3}%
+     }%
+}
+% ---------------------------------------------------------------------
+
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\extjump}[2]{\href{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+
+\renewcommand{\square}{\scalebox{0.7}{$\blacksquare$ \hspace{0.5em}}}
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering]
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsection\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\begin{document}
+    \title[Unit 16]{Unit 16 \\ Technological Progress, Unemployment, and Living Standards in the Long Run}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\section[Intro]{Introduction}
+\label{sec:Introduction}
+
+\begin{frame}{Introduction \extjump{https://www.core-econ.org/the-economy/book/text/16.html}{Textbook}}
+\label{slide:Introduction}
+
+\begin{columns}
+    \begin{column}{0.3\textwidth}
+        \begin{itemize}
+            \item<only@1> Tech change long-run living standards $ \uparrow  $ yet cause short-run unemployment
+            \item<only@1> Cross-countries of unemployment cannot be explained by innovation
+            \item<only@2> Production has become more capital intensive, without resulting in mass unemployment. How could this outcome occur?
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{./figures/2.pdf}
+        \end{figure}
+
+    \end{column}
+\end{columns}
+
+    \begin{center}
+        How can institutions and policies explain these differences?
+    \end{center}
+
+\end{frame}
+
+\begin{frame}{Structure of Units}
+\label{slide:Structure_of_Units}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.85\textwidth]{./figures/20.pdf}
+    \end{figure}
+
+\end{frame}
+
+\section[\faIndustry]{Job Creation and Unemployment}
+\label{sec:Job_Creation_and_Unemployment}
+
+\begin{frame}{Technological progress and living standards}
+\label{slide:Technological_progress_and_living_standards}
+    \begin{itemize}
+        \item Firms can earn \textbf{innovation rents} by introducing new technology.
+        \item Firms that cannot keep up with innovation eventually fail
+        \begin{itemize}
+            \item $ \Rightarrow  $ Schumpeter: creative destruction
+        \end{itemize}
+        \item New technologies require new machines
+        \item Technological advance relies on capital-intensive methods of production to be profitable.
+        \item This process allows a sustained increase in average living standards.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Classical Growth Model: Decreasing MPK}
+\label{slide:Classical_Growth_Model__Decreasing_MPK}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.9\textwidth]{./figures/3.pdf}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Technological progress over time}
+\label{slide:Technological_progress_over_time}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.8\textwidth]{./figures/4.pdf}
+        \caption{capital productivity remained roughly constant, why?}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Job creation/destruction}
+\label{slide:Job_creation_destruction}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.6\textwidth]{./figures/6.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item Labour-saving technological progress can also create jobs
+        \item e.g. reallocation of work from low- to high-productivity firms
+        \item Net employment change = job creation – job destruction
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The Beveridge Curve}
+\label{slide:The_Beveridge_Curve}
+\begin{columns}
+    \begin{column}{0.4\textwidth}
+        \begin{itemize}
+            \item<only@1> \textbf{Def}: inverse relationship between the \alert{unemployment rate} and the \alert{job vacancy rate}
+            \item<only@1> Recession:  post fewer vacancies and lay off more workers
+            \item<only@1> Boom:  post more vacancies and need more workers
+            \item<only@2> German Beveridge curve shifted closer to the origin due to reforms that helped unemployed workers find jobs.
+            \item<only@2>  US curve shifted away from the origin due to a skill-based mismatch and limited worker mobility.
+        \end{itemize}
+
+
+    \end{column}
+    \begin{column}{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{./figures/pic-selected-230326-2202-54.png}
+        \end{figure}
+
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Labor Market Matching}
+\label{slide:Labor_Market_Matching}
+    \begin{center}
+        Beveridge curve can shift over time!
+    \end{center}
+    \begin{itemize}
+        \item $ \because $ changes in the labour market matching efficiency
+        \item \alert{Skill Mismatch}: the unemployed may not have the \alert{skills required} for the job jobseekers
+        \item \alert{Geographical constraint}: vacancies may be located in different parts of the country
+        \item Policies and technology can improve efficiency
+    \end{itemize}
+
+\end{frame}
+
+\section[\faWrench]{Long-run Labor Market Model}
+\label{sec:Long_run_Labor_Market_Model}
+
+\begin{frame}{Long-run unemployment}
+\label{slide:Long_run_unemployment}
+\begin{itemize}
+    \item In the long run, firms can enter/exit (so capital stock can change)
+    \item \alert{Work incentives}: depend on \textbf{wage-setting curve}
+    \item \alert{Investment incentives}: depend on \textbf{price-setting curve}
+    \item \alert{Long-run equilibrium} in the labour market is when
+    \begin{enumerate}
+        \item wages,
+        \item employment level, and
+        \item the number of firms are constant
+    \end{enumerate}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{Appendix}
+\label{sec:Appendix}
+
+\appendix
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+% \begin{frame}\frametitle{}
+% \begin{columns}
+% \label{Appendix}
+% \column{1\linewidth}
+% \centering
+% {\Large \alert{Appendix}}
+% \end{columns}
+% \end{frame}
+%------------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\bibliographystyle{$BIB_STYLE}
+\bibliography{$BIBFILE}
+\end{frame}
+
+\end{document}

@@ -486,6 +486,47 @@
 
 \end{frame}
 
+\begin{frame}{What is the multiplier with both MPC and MPI?}
+\label{slide:What_is_the_multiplier_with_both_MPC_and_MPI_}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \item<only@1> $ MPC $: propensity to consume
+                \item<only@1> $ MPI $: propensity to consume \alert{imported goods}
+                \item<only@1> $ ? $ is propensity to consume \alert{domestic goods}:
+                \item<only@2> For every $\$x$ increase in income, total consumption increase by $ \$x \times MPC $, while consumption for imported goods increase by $ \$x \times MPI $
+                \item<only@2> $ \Rightarrow $ consumption for \alert{domestic goods} increase by $\$x \times (MPC - MPI) $ amount.
+                \item<only@3> Following the same iterative process, the multiplier of the economy is
+                %
+                \begin{equation*}
+                    \frac{1}{1 - (MPC - MPI)}
+                .\end{equation*}
+                %
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{tikzpicture}
+                \pgfmathsetmacro{\x}{5}
+                \pgfmathsetmacro{\y}{5}
+                % \draw[very thin,color=gray, step=1] (0,0) grid (\x, \y); % gray grid
+                \draw[very thick, blue, ->] (1, 0.3) to[bend left=50] node[above]{\$x} (5, 0.3);
+                \draw[very thick, blue, <-] (1, 0) to[bend right=50] node[below]{\$x $\times$ ?} (5, 0);
+                \draw[very thick, orange, ->] (1, 0.2) to[bend left=30] node[below]{\$x $\times$ ?$^2$} (5, 0.2);
+                \draw[very thick, orange, <-] (1, 0.1) to[bend right=30] node[above]{\$x $\times$ ?$^3$} (5, 0.1);
+                \fill (1, 0.15) circle (2pt) node[above, rotate=90]{A};
+                \fill (5, 0.15) circle (2pt) node[above, rotate=270]{B};
+                \fill (3.0, 2.85) circle (2pt) node[above]{C};
+                \draw[very thick, red, ->] (1, 0.4) to[bend left = 50] node[above, rotate=45] {\$x $\times $ MPI} (3, 2.85);
+                \draw[very thick, red, ->] (5, 0.4) to[bend right = 50] node[above, rotate=315] {\$x $\times $ MPI} (3, 2.85);
+            \end{tikzpicture}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+
+
 \begin{frame}{The paradox of thrift}
 \label{slide:The_paradox_of_thrift}
     \begin{itemize}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  26 MAR 2023 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  26 MAR 2023 23:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Unit14FiscalPolicy.tex
-(./Unit14FiscalPolicy.tex
+**Unit16LongRunEconomy.tex
+(./Unit16LongRunEconomy.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -610,10 +610,10 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 ) (/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "Unit14FiscalPolicy.w18")...executed.
+runsystem(uname -s > "Unit16LongRunEconomy.w18")...executed.
 
- (./Unit14FiscalPolicy.w18)
-runsystem(rm -- "Unit14FiscalPolicy.w18")...executed.
+ (./Unit16LongRunEconomy.w18)
+runsystem(rm -- "Unit16LongRunEconomy.w18")...executed.
 
 ) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count357
@@ -1004,9 +1004,9 @@ Package caption Info: threeparttable package is loaded.
 \c@proposition=\count404
 \c@thm=\count405
 \c@corol=\count406
-runsystem(which pygmentize && touch Unit14FiscalPolicy.aex)...executed.
+runsystem(which pygmentize && touch Unit16LongRunEconomy.aex)...executed.
 
-runsystem(rm Unit14FiscalPolicy.aex)...executed.
+runsystem(rm Unit16LongRunEconomy.aex)...executed.
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 115.
 
@@ -1016,8 +1016,8 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count407
 \l__pdf_internal_box=\box109
-) (build/Unit14FiscalPolicy.aux)
-\openout1 = `Unit14FiscalPolicy.aux'.
+) (build/Unit16LongRunEconomy.aux)
+\openout1 = `Unit16LongRunEconomy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
 LaTeX Font Info:    ... okay on input line 115.
@@ -1104,9 +1104,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 115.
 LaTeX Info: Redefining \pageref on input line 115.
 LaTeX Info: Redefining \nameref on input line 115.
- (build/Unit14FiscalPolicy.out) (build/Unit14FiscalPolicy.out)
+ (build/Unit16LongRunEconomy.out) (build/Unit16LongRunEconomy.out)
 \@outlinefile=\write7
-\openout7 = `Unit14FiscalPolicy.out'.
+\openout7 = `Unit16LongRunEconomy.out'.
 
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1132,7 +1132,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (build/Unit14FiscalPolicy.nav)
+ (build/Unit16LongRunEconomy.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 117.
@@ -1140,131 +1140,132 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 147.
- (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 148.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 147.
- (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 147.
- (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 147.
- (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 147.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 147.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 147.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 147.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 147.
- (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 147.
- (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
-File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 148.
+ (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
+File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [2
 
 ]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 175.
+ (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 171.
+(Font)              <10.95> on input line 175.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 171.
+(Font)              <8> on input line 175.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 171.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 171.
+(Font)              <6> on input line 175.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 175.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 175.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 175.
+ (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+
+pdfTeX warning: pdflatex (file ./figures/2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/2.pdf, id=64, 722.7pt x 542.025pt>
+File: ./figures/2.pdf Graphic file (type pdf)
+<use ./figures/2.pdf>
+Package pdftex.def Info: ./figures/2.pdf  used on input line 175.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [3
 
-]
-
-pdfTeX warning: pdflatex (file ./figures/1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/1.pdf, id=101, 722.7pt x 542.025pt>
-File: ./figures/1.pdf Graphic file (type pdf)
-<use ./figures/1.pdf>
-Package pdftex.def Info: ./figures/1.pdf  used on input line 180.
-(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
-
-Overfull \vbox (7.53212pt too high) detected at line 180
- []
-
+ <./figures/2.pdf>]
+File: ./figures/2.pdf Graphic file (type pdf)
+<use ./figures/2.pdf>
+Package pdftex.def Info: ./figures/2.pdf  used on input line 175.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [4
 
- <./figures/1.pdf>]
+]
+
+pdfTeX warning: pdflatex (file ./figures/20.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/20.pdf, id=107, 722.7pt x 542.025pt>
+File: ./figures/20.pdf Graphic file (type pdf)
+<use ./figures/20.pdf>
+Package pdftex.def Info: ./figures/20.pdf  used on input line 184.
+(pdftex.def)             Requested size: 291.0721pt x 218.30313pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [5
 
-]
-
-pdfTeX warning: pdflatex (file ./figures/2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/2.pdf, id=338, 722.7pt x 542.025pt>
-File: ./figures/2.pdf Graphic file (type pdf)
-<use ./figures/2.pdf>
-Package pdftex.def Info: ./figures/2.pdf  used on input line 205.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
-
+ <./figures/20.pdf>]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [6
 
- <./figures/2.pdf>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 221.
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 202.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 202.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 202.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [7
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 246.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 
-pdfTeX warning: pdflatex (file ./figures/4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/4.pdf, id=395, 722.7pt x 542.025pt>
-File: ./figures/4.pdf Graphic file (type pdf)
-<use ./figures/4.pdf>
-Package pdftex.def Info: ./figures/4.pdf  used on input line 246.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+pdfTeX warning: pdflatex (file ./figures/3.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/3.pdf, id=164, 722.7pt x 542.025pt>
+File: ./figures/3.pdf Graphic file (type pdf)
+<use ./figures/3.pdf>
+Package pdftex.def Info: ./figures/3.pdf  used on input line 211.
+(pdftex.def)             Requested size: 308.18968pt x 231.13914pt.
+
+Overfull \vbox (7.21242pt too high) detected at line 211
+ []
+
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [8
 
- <./figures/4.pdf>]
+ <./figures/3.pdf>]
 
-pdfTeX warning: pdflatex (file ./figures/5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/5.pdf, id=438, 722.7pt x 542.025pt>
-File: ./figures/5.pdf Graphic file (type pdf)
-<use ./figures/5.pdf>
-Package pdftex.def Info: ./figures/5.pdf  used on input line 318.
-(pdftex.def)             Requested size: 205.46327pt x 158.4848pt.
+pdfTeX warning: pdflatex (file ./figures/4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/4.pdf, id=223, 722.7pt x 542.025pt>
+File: ./figures/4.pdf Graphic file (type pdf)
+<use ./figures/4.pdf>
+Package pdftex.def Info: ./figures/4.pdf  used on input line 221.
+(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
 
-Overfull \hbox (12.48557pt too wide) detected at line 318
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+Overfull \vbox (7.53212pt too high) detected at line 221
  []
 
 
@@ -1272,9 +1273,16 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [9
 
- <./figures/5.pdf>]
-Overfull \hbox (12.48557pt too wide) detected at line 318
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ <./figures/4.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/6.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/6.pdf, id=513, 722.7pt x 542.025pt>
+File: ./figures/6.pdf Graphic file (type pdf)
+<use ./figures/6.pdf>
+Package pdftex.def Info: ./figures/6.pdf  used on input line 234.
+(pdftex.def)             Requested size: 205.46327pt x 154.09827pt.
+
+Overfull \vbox (4.16055pt too high) detected at line 234
  []
 
 
@@ -1282,285 +1290,92 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [10
 
-]
-Overfull \hbox (12.48557pt too wide) detected at line 318
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
+ <./figures/6.pdf>]
+<./figures/pic-selected-230326-2202-54.png, id=534, 2257.43375pt x 1376.14125pt>
+File: ./figures/pic-selected-230326-2202-54.png Graphic file (type png)
+<use ./figures/pic-selected-230326-2202-54.png>
+Package pdftex.def Info: ./figures/pic-selected-230326-2202-54.png  used on input line 259.
+(pdftex.def)             Requested size: 205.46327pt x 125.23325pt.
 
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [11
 
-]
+ <./figures/pic-selected-230326-2202-54.png>]
+File: ./figures/pic-selected-230326-2202-54.png Graphic file (type png)
+<use ./figures/pic-selected-230326-2202-54.png>
+Package pdftex.def Info: ./figures/pic-selected-230326-2202-54.png  used on input line 259.
+(pdftex.def)             Requested size: 205.46327pt x 125.23325pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [12
 
 ]
-
-pdfTeX warning: pdflatex (file ./figures/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/7.pdf, id=530, 722.7pt x 542.025pt>
-File: ./figures/7.pdf Graphic file (type pdf)
-<use ./figures/7.pdf>
-Package pdftex.def Info: ./figures/7.pdf  used on input line 346.
-(pdftex.def)             Requested size: 308.18968pt x 231.13914pt.
-
-Overfull \vbox (33.21242pt too high) detected at line 346
- []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [13
 
- <./figures/7.pdf>]
+]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [14
 
 ]
-
-pdfTeX warning: pdflatex (file ./figures/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/8.pdf, id=582, 722.7pt x 542.025pt>
-File: ./figures/8.pdf Graphic file (type pdf)
-<use ./figures/8.pdf>
-Package pdftex.def Info: ./figures/8.pdf  used on input line 360.
-(pdftex.def)             Requested size: 273.9493pt x 205.45885pt.
-
-Overfull \vbox (7.53212pt too high) detected at line 360
- []
-
-
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [15
 
- <./figures/8.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/9.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/9.pdf, id=614, 722.7pt x 542.025pt>
-File: ./figures/9.pdf Graphic file (type pdf)
-<use ./figures/9.pdf>
-Package pdftex.def Info: ./figures/9.pdf  used on input line 381.
-(pdftex.def)             Requested size: 205.46327pt x 154.09827pt.
-
+]
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [16
 
- <./figures/9.pdf>]
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 300.
+
+(build/Unit16LongRunEconomy.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 11.
+
+
+Package natbib Warning: Empty `thebibliography' environment on input line 13.
+
+)
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [17
 
 ]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [18
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [19
-
-]
-
-pdfTeX warning: pdflatex (file ./figures/13.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/13.pdf, id=684, 722.7pt x 542.025pt>
-File: ./figures/13.pdf Graphic file (type pdf)
-<use ./figures/13.pdf>
-Package pdftex.def Info: ./figures/13.pdf  used on input line 441.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [20
-
- <./figures/13.pdf>]
-File: ./figures/13.pdf Graphic file (type pdf)
-<use ./figures/13.pdf>
-Package pdftex.def Info: ./figures/13.pdf  used on input line 441.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [21
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [22
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [23
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [24
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [25
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [26
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [27
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [28
-
-]
-
-pdfTeX warning: pdflatex (file ./figures/14.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/14.pdf, id=827, 722.7pt x 542.025pt>
-File: ./figures/14.pdf Graphic file (type pdf)
-<use ./figures/14.pdf>
-Package pdftex.def Info: ./figures/14.pdf  used on input line 565.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [29
-
- <./figures/14.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/15.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/15.pdf, id=869, 722.7pt x 542.025pt>
-File: ./figures/15.pdf Graphic file (type pdf)
-<use ./figures/15.pdf>
-Package pdftex.def Info: ./figures/15.pdf  used on input line 589.
-(pdftex.def)             Requested size: 205.46327pt x 154.09827pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [30
-
- <./figures/15.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/16.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/16.pdf, id=911, 722.7pt x 542.025pt>
-File: ./figures/16.pdf Graphic file (type pdf)
-<use ./figures/16.pdf>
-Package pdftex.def Info: ./figures/16.pdf  used on input line 598.
-(pdftex.def)             Requested size: 342.43532pt x 256.8277pt.
-
-Overfull \vbox (32.90097pt too high) detected at line 598
- []
-
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [31
-
- <./figures/16.pdf>]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [32
-
-]
-
-pdfTeX warning: pdflatex (file ./figures/17.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/17.pdf, id=958, 722.7pt x 542.025pt>
-File: ./figures/17.pdf Graphic file (type pdf)
-<use ./figures/17.pdf>
-Package pdftex.def Info: ./figures/17.pdf  used on input line 647.
-(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [33
-
- <./figures/17.pdf>]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [34
-
-]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [35
-
-]
-
-pdfTeX warning: pdflatex (file ./figures/19.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/19.pdf, id=1009, 722.7pt x 542.025pt>
-File: ./figures/19.pdf Graphic file (type pdf)
-<use ./figures/19.pdf>
-Package pdftex.def Info: ./figures/19.pdf  used on input line 691.
-(pdftex.def)             Requested size: 205.46327pt x 154.09827pt.
-
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [36
-
- <./figures/19.pdf>]
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [37
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 697.
-
-(build/Unit14FiscalPolicy.bbl
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 11.
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 17.
-(/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 17.
-)
-Overfull \vbox (13.37485pt too high) has occurred while \output is active []
-
- [38
-
-]
 \tf@nav=\write8
-\openout8 = `Unit14FiscalPolicy.nav'.
+\openout8 = `Unit16LongRunEconomy.nav'.
 
 \tf@toc=\write9
-\openout9 = `Unit14FiscalPolicy.toc'.
+\openout9 = `Unit16LongRunEconomy.toc'.
 
 \tf@snm=\write10
-\openout10 = `Unit14FiscalPolicy.snm'.
+\openout10 = `Unit16LongRunEconomy.snm'.
 
- (build/Unit14FiscalPolicy.aux)
-Package rerunfilecheck Info: File `Unit14FiscalPolicy.out' has not changed.
-(rerunfilecheck)             Checksum: D124AFA35C2230BD81F48057503B4DFE;1300.
+ (build/Unit16LongRunEconomy.aux)
+Package rerunfilecheck Info: File `Unit16LongRunEconomy.out' has not changed.
+(rerunfilecheck)             Checksum: 58506C02AEDBCAC7BC4BEB48D0C30E3A;752.
  ) 
 Here is how much of TeX's memory you used:
- 48450 strings out of 478238
- 1109542 string characters out of 5850456
- 1485378 words of memory out of 5000000
- 65580 multiletter control sequences out of 15000+600000
- 563647 words of font info for 117 fonts, out of 8000000 for 9000
+ 48079 strings out of 478238
+ 1103004 string characters out of 5850456
+ 1479849 words of memory out of 5000000
+ 65291 multiletter control sequences out of 15000+600000
+ 546003 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,26n,122p,747b,1139s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit14FiscalPolicy.pdf (38 pages, 2078121 bytes).
+ 128i,15n,122p,749b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Unit16LongRunEconomy.pdf (17 pages, 882952 bytes).
 PDF statistics:
- 1204 PDF objects out of 1440 (max. 8388607)
- 949 compressed objects within 10 object streams
- 118 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
