@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  26 MAR 2023 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  29 MAR 2023 09:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,14 +1327,71 @@ Overfull \vbox (13.37485pt too high) has occurred while \output is active []
  [15
 
 ]
+
+pdfTeX warning: pdflatex (file ./figures/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/7.pdf, id=592, 722.7pt x 542.025pt>
+File: ./figures/7.pdf Graphic file (type pdf)
+<use ./figures/7.pdf>
+Package pdftex.def Info: ./figures/7.pdf  used on input line 328.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
  [16
 
+ <./figures/7.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/8.pdf, id=628, 722.7pt x 542.025pt>
+File: ./figures/8.pdf Graphic file (type pdf)
+<use ./figures/8.pdf>
+Package pdftex.def Info: ./figures/8.pdf  used on input line 328.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (10.6209pt too high) detected at line 328
+ []
+
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [17
+
+ <./figures/8.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/9.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figures/9.pdf, id=662, 722.7pt x 542.025pt>
+File: ./figures/9.pdf Graphic file (type pdf)
+<use ./figures/9.pdf>
+Package pdftex.def Info: ./figures/9.pdf  used on input line 356.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [18
+
+ <./figures/9.pdf>]
+Overfull \hbox (7.72395pt too wide) in paragraph at lines 356--356
+\T1/lmss/m/n/10 capital/infrastructure  
+ []
+
+File: ./figures/9.pdf Graphic file (type pdf)
+<use ./figures/9.pdf>
+Package pdftex.def Info: ./figures/9.pdf  used on input line 356.
+(pdftex.def)             Requested size: 239.70367pt x 179.77856pt.
+
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [19
+
+]
+Overfull \vbox (13.37485pt too high) has occurred while \output is active []
+
+ [20
+
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 300.
+(hyperref)                removing `\translate ' on input line 362.
 
 (build/Unit16LongRunEconomy.bbl
 
@@ -1347,7 +1404,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 13.
 )
 Overfull \vbox (13.37485pt too high) has occurred while \output is active []
 
- [17
+ [21
 
 ]
 \tf@nav=\write8
@@ -1364,18 +1421,18 @@ Package rerunfilecheck Info: File `Unit16LongRunEconomy.out' has not changed.
 (rerunfilecheck)             Checksum: 58506C02AEDBCAC7BC4BEB48D0C30E3A;752.
  ) 
 Here is how much of TeX's memory you used:
- 48079 strings out of 478238
- 1103004 string characters out of 5850456
- 1479849 words of memory out of 5000000
- 65291 multiletter control sequences out of 15000+600000
+ 48116 strings out of 478238
+ 1103682 string characters out of 5850456
+ 1480901 words of memory out of 5000000
+ 65315 multiletter control sequences out of 15000+600000
  546003 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,749b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on build/Unit16LongRunEconomy.pdf (17 pages, 882952 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on build/Unit16LongRunEconomy.pdf (21 pages, 1252713 bytes).
 PDF statistics:
- 662 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 54 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 689 compressed objects within 7 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
