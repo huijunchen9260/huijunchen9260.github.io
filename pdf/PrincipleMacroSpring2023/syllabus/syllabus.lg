@@ -29,6 +29,15 @@ Css: td center { margin-top:0em; margin-bottom:0em; }
 Css: .Canvas { position:relative; }
 Css: img.math{vertical-align:middle;}
 Css: div.par-math-display, div.math-display{text-align:center;}
+Css: body{ margin:1em auto; max-width:80ch; padding:0 .62em; }
+Css: h1,h2,h3,h4,h5 { line-height:1.2; }
+Css: @media print{ body{ max-width:none } }
+Css: .partHead, likepartHead { font-size: 2em; }
+Css: .chapterHead, likechapterHead { font-size: 1.7411em; }
+Css: .sectionHead, likesectionHead { font-size: 1.5157em; }
+Css: .subsectionHead, likesubsectionHead { font-size: 1.3195em; }
+Css: .subsubsectionHead, likesubsubsectionHead { font-size: 1.1487em; }
+Css:  @media (prefers-color-scheme: dark) { img[src^="syllabus"]{filter: invert(1); } } 
 Css: li p.indent { text-indent: 0em }
 Css: li p:first-child{ margin-top:0em; }
 Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -84,6 +93,8 @@ Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
 Css: .hline td, .cline td{ padding: 0; }
 Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
+Css: .hline + .vspace:last-child{display:none;}
+Css: .hline:first-child{border-bottom:1px solid black;border-top:none;}
 Css: .tabbing-right {text-align:right;}
 Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
 Css: div.float img {text-align:center;}
@@ -115,6 +126,7 @@ Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
 Css: h1.partHead{text-align: center}
 Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
 Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .subsubsectionHead, .likesubsubsectionHead { font-size: 1em; }
 Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
 Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
 Css: .verse{white-space:nowrap; margin-left:2em}
@@ -155,6 +167,7 @@ Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt
 Css: table.longtable{border-collapse: collapse; border-spacing: 0;}
 Css: div.longtable{text-align:center;}
 Css: table.longtable{margin-left:auto; margin-right: auto;}
+Css: caption.longtable .id{font-weight:bold;}
 Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
 Css: table.tabular td p{margin-top:0em;}
 Css: table.tabular {margin-left: auto; margin-right: auto;}
@@ -174,6 +187,8 @@ Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
 Css: .hline td, .cline td{ padding: 0; }
 Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
+Css: .hline + .vspace:last-child{display:none;}
+Css: .hline:first-child{border-bottom:1px solid black;border-top:none;}
 Css: div.array {text-align:center;}
 Css: .rotatebox{display: inline-block;}
 Css: #TBL-1-1{border-left: 1px solid black;}

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2023-04-06T20:20:26Z</updated>
+<updated>2023-04-09T11:21:30Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2023.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2023.html</id>
 <published>2022-12-25T22:24:07Z</published>
-<updated>2023-03-27T09:51:04Z</updated>
+<updated>2023-04-06T20:20:28Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2023">Principle of Macroeconomics, Spring 2023</h1>
 
@@ -72,6 +72,7 @@
 <li><a href="https://youtu.be/UN-O6oNes0I">What’s So Special About 2% Inflation?</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit16LongRunEconomy/build/Unit16LongRunEconomy.pdf">Unit 16: Technological Progress, Unemployment and Living Standards in the Long Run</a></li>
+<li><a href="pdf/PrincipleMacroSpring2023/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
 </ul>
 
 <h2 id="problem-sets">Problem Sets</h2>
