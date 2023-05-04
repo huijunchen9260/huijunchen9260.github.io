@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  4 MAY 2023 00:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  4 MAY 2023 00:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -757,61 +757,65 @@ Package hyperref Info: Link coloring ON on input line 50.
 \@outlinefile=\write5
 \openout5 = `syllabus.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67.
+ (build/syllabus.toc)
+\tf@toc=\write6
+\openout6 = `syllabus.toc'.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 70.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 84.
- (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 87.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [2]
 \q=\skip82
 
-Overfull \hbox (1.19997pt too wide) in paragraph at lines 99--118
+Overfull \hbox (1.19997pt too wide) in paragraph at lines 103--122
 []
  []
 
-[2] [3]
+[3] [4]
 \bb=\skip83
 \qq=\skip84
 \rr=\skip85
 \pp=\skip86
 
-Overfull \hbox (1.14378pt too wide) in paragraph at lines 195--195
+Overfull \hbox (1.14378pt too wide) in paragraph at lines 205--205
 []|\OT1/ptm/m/n/12 Wk| 
  []
 
 
-Overfull \hbox (1.99994pt too wide) in paragraph at lines 193--397
+Overfull \hbox (1.99994pt too wide) in paragraph at lines 203--407
 [] 
  []
 
-[4] [5] [6]
+[5] [6] [7]
 
-LaTeX Warning: Empty bibliography on input line 498.
+LaTeX Warning: Empty bibliography on input line 508.
 
-[7] (build/syllabus.aux)
+[8] (build/syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
-(rerunfilecheck)             Checksum: C3DED848DB104802B1B32F2CCC293940;204.
+(rerunfilecheck)             Checksum: F562294D488CF944219573EC2121D5A6;1315.
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
 \openout1 = `syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27146 strings out of 476025
- 516763 string characters out of 5796533
+ 27162 strings out of 476025
+ 516959 string characters out of 5796533
  1868388 words of memory out of 5000000
- 47159 multiletter control sequences out of 15000+600000
+ 47170 multiletter control sequences out of 15000+600000
  532776 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,8n,104p,1477b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/syllabus.pdf (7 pages, 105401 bytes).
+Output written on build/syllabus.pdf (8 pages, 107299 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

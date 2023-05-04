@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.4.3)  4 MAY 2023 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.4.3)  4 MAY 2023 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,36 +1307,36 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 4.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-7.
+) (./syllabus.4ct)
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
+0.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
-] [2]
+] [2] [3]
 \q=\skip84
-[3] [4]
+[4] [5] [6]
 \bb=\skip85
 \qq=\skip86
 \rr=\skip87
 \pp=\skip88
-[5] [6] [7] [8] [9]
+[7] [8] [9] [10] [11]
 
-LaTeX Warning: Empty bibliography on input line 498.
+LaTeX Warning: Empty bibliography on input line 506.
 
-[10] (./syllabus.aux)
+[12] (./syllabus.aux)
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
 \openout1 = `syllabus.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31831 strings out of 476026
- 580730 string characters out of 5796559
+ 31861 strings out of 476026
+ 581108 string characters out of 5796559
  1874385 words of memory out of 5000000
- 51572 multiletter control sequences out of 15000+600000
+ 51600 multiletter control sequences out of 15000+600000
  521905 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,128p,1977b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on syllabus.dvi (10 pages, 72620 bytes).
+Output written on syllabus.dvi (12 pages, 74936 bytes).
