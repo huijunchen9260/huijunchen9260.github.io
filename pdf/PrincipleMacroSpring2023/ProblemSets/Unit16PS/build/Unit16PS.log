@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  13 APR 2023 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  23 APR 2023 17:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -690,60 +690,75 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <20.74> not available
 <../QuestionBankImage/OUP-U16-Q20-01.jpg, id=17, 813.0375pt x 429.605pt>
 File: ../QuestionBankImage/OUP-U16-Q20-01.jpg Graphic file (type jpg)
 <use ../QuestionBankImage/OUP-U16-Q20-01.jpg>
-Package pdftex.def Info: ../QuestionBankImage/OUP-U16-Q20-01.jpg  used on input line 245.
+Package pdftex.def Info: ../QuestionBankImage/OUP-U16-Q20-01.jpg  used on input line 244.
 (pdftex.def)             Requested size: 469.75502pt x 248.214pt.
 
-Overfull \hbox (8.0pt too wide) in paragraph at lines 245--256
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 242--255
+[]\OT1/ptm/m/n/14.4 (OUP-U16-Q20) The fig-ure shows long-run un-em-ploy-ment and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--255
+\OT1/ptm/m/n/14.4 real wage growth across the OECD. The rays drawn from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--255
+\OT1/ptm/m/n/14.4 ori-gin are de-scribed as `in-dif-fer-ence curves'. This is be-cause:
+ []
+
+
+Overfull \hbox (8.0pt too wide) in paragraph at lines 242--255
+[]
  []
 
 <../QuestionBankImage/OUP-U16-Q22-01.jpg, id=18, 813.0375pt x 468.75125pt>
 File: ../QuestionBankImage/OUP-U16-Q22-01.jpg Graphic file (type jpg)
 <use ../QuestionBankImage/OUP-U16-Q22-01.jpg>
-Package pdftex.def Info: ../QuestionBankImage/OUP-U16-Q22-01.jpg  used on input line 262.
+Package pdftex.def Info: ../QuestionBankImage/OUP-U16-Q22-01.jpg  used on input line 261.
 (pdftex.def)             Requested size: 469.75502pt x 270.83163pt.
 
-Underfull \hbox (badness 6658) in paragraph at lines 260--273
+Underfull \hbox (badness 6658) in paragraph at lines 259--272
 []\OT1/ptm/m/n/14.4 (OUP-U16-Q22) Look-ing at the fig-ure shown, if it were the case
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--273
+Underfull \hbox (badness 10000) in paragraph at lines 259--272
 \OT1/ptm/m/n/14.4 that coun-tries with strong trade unions also ex-pe-ri-enced high
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--273
+Underfull \hbox (badness 10000) in paragraph at lines 259--272
 \OT1/ptm/m/n/14.4 un-em-ploy-ment rates, we would ex-pect the data points to be:
  []
 
 
-Overfull \hbox (8.0pt too wide) in paragraph at lines 260--273
+Overfull \hbox (8.0pt too wide) in paragraph at lines 259--272
 []
  []
 
 <../QuestionBankImage/ECO-U16-Q7-01.jpg, id=19, 813.0375pt x 525.965pt>
 File: ../QuestionBankImage/ECO-U16-Q7-01.jpg Graphic file (type jpg)
 <use ../QuestionBankImage/ECO-U16-Q7-01.jpg>
-Package pdftex.def Info: ../QuestionBankImage/ECO-U16-Q7-01.jpg  used on input line 296.
+Package pdftex.def Info: ../QuestionBankImage/ECO-U16-Q7-01.jpg  used on input line 295.
 (pdftex.def)             Requested size: 469.75502pt x 303.88817pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--307
+Underfull \hbox (badness 10000) in paragraph at lines 293--306
 []\OT1/ptm/m/n/14.4 (ECO-U16-Q7) Fig-ure 16.9b de-picts the long-run ad-just-ment pro-
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 294--307
+Underfull \hbox (badness 6001) in paragraph at lines 293--306
 \OT1/ptm/m/n/14.4 cess in the labour mar-ket af-ter tech-no-log-i-cal progress. Based on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--307
+Underfull \hbox (badness 10000) in paragraph at lines 293--306
 \OT1/ptm/m/n/14.4 this in-for-ma-tion, which of the fol-low-ing state-ments is cor-rect?
  []
 
 
-Overfull \hbox (8.0pt too wide) in paragraph at lines 294--307
+Overfull \hbox (8.0pt too wide) in paragraph at lines 293--306
 []
  []
 
@@ -762,7 +777,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  102i,8n,104p,528b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/Unit16PS.pdf (9 pages, 415603 bytes).
+Output written on build/Unit16PS.pdf (9 pages, 415608 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams

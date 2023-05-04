@@ -1,0 +1,356 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage{fontawesome5}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+% mint: code chuck and syntax highlighting
+%% outputdir should change according to pdf build directory
+\usepackage[outputdir=build,cache=false]{minted}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+
+\renewcommand{\square}{\scalebox{0.7}{$\blacksquare$ \hspace{0.5em}}}
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering]
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsection\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\begin{document}
+    \title[Asset Pricing (Production)]{Asset Pricing in Production Economy}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\begin{frame}{Overview}
+\label{slide:Overview}
+    \begin{center}
+        How does share price comove with GDP?
+    \end{center}
+    \begin{itemize}
+        \item We extend \cite{Lucas_1978} to production economy $ \Rightarrow  $ \textbf{firms}
+        \item firms are \blue{active} player in macro: \textbf{investment v.s. GDP volatility}
+        \begin{itemize}
+            \item corporate finance: firm debt? capital investment?
+            \item human resource: hiring / lay off employee?
+            \item international economics: multi-nation enterprise? FDI?
+        \end{itemize}
+        \item To be able to reach some conclusion, we need simplification:
+        \begin{itemize}
+            \item similar setting as \cite{Lucas_1978}, representative HH \& firm
+            \item firm pays dividend $ \Leftarrow  $ firm are \textbf{DRS}
+            \item labor-only technology $ \Rightarrow  $ no other intertemporal asset other than share.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section[Firm]{Firm Problem}
+\label{sec:Firm_Problem}
+
+\begin{frame}{Dividend and Wage}
+\label{slide:Dividend_and_Wage}
+\begin{itemize}
+    \item Production function: $ \displaystyle y = z n^{\alpha} $, where $ z $ is TFP shock, and $ \alpha \in (0, 1) $.
+    \item Firm's profit maximization problem: $ \displaystyle \max_{n} z n^{\alpha} - wn $
+    \begin{itemize}
+        \item FOC: $ \displaystyle w = \alpha z n ^{\alpha - 1} $
+    \end{itemize}
+    \item Wage bill: $ \displaystyle w n = \alpha z n ^{\alpha} = \alpha y $
+    \item Assume firm all profits as dividend, $ \displaystyle d = y - wn = (1-\alpha)y $
+\end{itemize}
+
+\end{frame}
+
+\section[Household]{Household's Problem}
+\label{sec:Household_s_Problem}
+
+\begin{frame}{Household Problem}
+\label{slide:Household_Problem}
+
+Assume HH value leisure, and thus
+%
+\begin{align}
+    V(s, z)
+        & = \max_{c\ge 0, s'\ge 0, n \ge 0} \log c + \psi (1-n) + \beta \mathbb{E}_{z'|z} [V(s', z')]
+    \\
+    \text{s.t. } \quad
+        & c + p s' \le (d + p) s + wn
+\end{align}
+%
+We know in equilibrium / steady state, three markets need to clear:
+\begin{enumerate}
+    \item find $ w $ such that labor demand $ = $ labor supply
+    \item find $ p $ such that $ s = 1 $
+    \item by Walras' law, goods market clear, implying $ c = y $.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Solve Household Problem}
+\label{slide:Solve_Household_Problem}
+    Using the same solution technique,
+    %
+    \begin{align}
+        V(s, z)
+            & = \max_{s', c, n} \log c + \psi (1-n) + \beta \mathbb{E}_{z'|z}[\log c' + \psi (1-n')]
+        \\
+            & \quad + \beta^{2} \mathbb{E}_{z'|z} [V(s'', z'')]
+        \\
+        \text{subject to } \quad
+            & c + ps' \le (d + p)s + wn
+        \\
+            & c' + p's'' \le (d' + p') s' + w' n'
+    \end{align}
+    %
+    Replace $ c $ and $ c' $ and get
+    %
+    \begin{align}
+        V(s, z)
+            & = \max_{s', n} \log((d+p)s + wn - p s') + \psi (1-n)
+        \\
+            & \quad + \beta \mathbb{E}_{z'|z} [\log((d'+p')s' + w'n' - p's'') + \psi (1 - n')]
+        \\
+            & \quad + \beta^{2} \mathbb{E}_{z'|z} [V(s'', z'')]
+    \end{align}
+    %
+\end{frame}
+
+\begin{frame}{First Order Condition}
+\label{slide:First_Order_Condition}
+    %
+    \begin{align}
+        V(s, z)
+            & = \max_{s', n} \log((d+p)s + wn - p s') + \psi (1-n)
+        \\
+            & \quad + \beta \mathbb{E}_{z'|z} [\log((d'+p')s' + w'n' - p's'') + \psi (1 - n')]
+        \\
+            & \quad + \beta^{2} \mathbb{E}_{z'|z} [V(s'', z'')]
+    \end{align}
+    %
+    FOC:
+    %
+    \begin{align}
+        [n]: \quad
+            & \frac{w}{c} = \psi
+        \\
+        [s']: \quad
+            & \frac{1}{c} \cdot p = \beta \mathbb{E}_{z'|z} \left[
+                \frac{1}{c'} \cdot (d' + p')
+            \right]
+    \end{align}
+    %
+\end{frame}
+
+\section[Eqm]{Equilibrium Outcome}
+\label{sec:Equilibrium_Outcome}
+
+\begin{frame}{Optimality Conditions}
+\label{slide:Optimality_Conditions}
+    \begin{align}
+        \label{eq:NFOC}
+        [n]: \quad
+            & \frac{w}{c} = \psi \Rightarrow w = \psi c
+        \\
+        \label{eq:SprimeFOC}
+        [s']: \quad
+            & \frac{1}{c} \cdot p = \beta \mathbb{E}_{z'|z} \left[
+                \frac{1}{c'} \cdot (d' + p')
+            \right]
+        \\
+        \label{eq:NDFOC}
+        [\text{Firm}]: \quad
+            & w = \alpha z n^{\alpha-1}
+    \end{align}
+    $ w = w $, \eqref{eq:NFOC} equals to \eqref{eq:NDFOC}, and $ c = y $ yields
+    %
+    \begin{align}
+        \psi y = \alpha \frac{y}{n}
+            & \Rightarrow n = \frac{\alpha}{\psi} \Rightarrow y = z n^{\alpha} = z \left(
+                \frac{\alpha}{\psi}
+            \right)^{\alpha}
+        \\
+            & \Rightarrow w = \alpha z n ^{\alpha-1} = \alpha z \left(
+                \frac{\alpha}{\psi}
+            \right)^{\alpha-1}
+        \\
+            & \Rightarrow d = (1-\alpha) y = (1-\alpha) z \left(
+                \frac{\alpha}{\psi}
+            \right)^{\alpha}
+    \end{align}
+    %
+
+\end{frame}
+
+\begin{frame}{Share Euler Equation}
+\label{slide:Share_Euler_Equation}
+    Focus on \eqref{eq:SprimeFOC}, we can use $ c' = y' $ as well as $ d' = (1-\alpha) y' $ to simplify:
+    %
+    \begin{align}
+        \frac{p}{y}
+            & = \beta \mathbb{E}_{z'|z} \left[
+                \frac{p'}{y'} + \frac{(1-\alpha)y'}{y'}
+            \right]
+        \\
+            & = \beta (1-\alpha) + \beta \mathbb{E}_{z'|z} \left[
+                \frac{p'}{y'}
+            \right]
+    \end{align}
+    %
+    Somehow you got a prophecy from the spirit and his/her voice tells you to guess $ \displaystyle \frac{p}{y} \equiv \Lambda $, a constant over time regardless of TFP shock. Is that true?
+    %
+    \begin{align}
+        \Lambda
+            & = \beta (1-\alpha) + \beta \mathbb{E}_{z'|z} \left[
+                \Lambda
+            \right] = \beta(1-\alpha) + \beta \Lambda
+        \\
+        \Lambda
+            & = \frac{\beta(1-\alpha)}{1-\beta}
+    \end{align}
+    %
+    \begin{center}
+        It true \faAngellist \faAngellist \faAngellist
+    \end{center}
+\end{frame}
+
+\begin{frame}{Intepretation}
+\label{slide:Intepretation}
+    Stock price to GDP ratio, $ \frac{p}{y} $, is constant over time, which implies
+    \begin{enumerate}
+        \item stock price is procyclical: \faArrowCircleUp \hspace{1px} and \faArrowCircleDown \hspace{1px} with TFP $ z $,
+        \item the percentage std of stock price matches percentage std of dividend,
+        \item stock is risky: $ \displaystyle p = \frac{\beta(1-\alpha)}{1-\beta} y $ $ \Rightarrow  $ requires $ (+) $ risk premium
+        \begin{itemize}
+            \item $ \displaystyle e(z, z') = \frac{d'+p'}{p} = \frac{(1-\alpha)y' + \Lambda y'}{\Lambda y} = \frac{\frac{1-\alpha}{1-\beta}y'}{ \frac{\beta(1-\alpha)}{1-\beta} y} = \frac{1}{\beta} \frac{y'}{y}$
+            \item SDF $ \displaystyle = \frac{\beta u'(c')}{u'(c)} = \beta \frac{y}{y'} $
+            \item Risk premium $ \displaystyle = \frac{\mathbb{E}_{t}[e(z, z') - R_{t}]}{R_{t}} = - cov_{t} \left[
+                SDF, e(z, z')
+            \right] > 0$
+        \end{itemize}
+    \end{enumerate}
+    The very times firm shares pay high is when your consumption is low!
+\end{frame}
+
+\section{Appendix}
+\label{sec:Appendix}
+
+\appendix
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+% \begin{frame}\frametitle{}
+% \begin{columns}
+% \label{Appendix}
+% \column{1\linewidth}
+% \centering
+% {\Large \alert{Appendix}}
+% \end{columns}
+% \end{frame}
+%------------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\bibliographystyle{$BIB_STYLE}
+\bibliography{$BIBFILE}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{Gmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maximum}\PYG{p}{(}\PYG{n}{Gvec}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{tmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tgrid}\PYG{p}{[}\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{Gvec}\PYG{p}{)]}
+\PYG{+w}{    }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}optimal t* = }\PYG{l+s+si}{\PYGZdl{}tmax}\PYG{l+s}{, optimal G* = }\PYG{l+s+si}{\PYGZdl{}Gmax}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

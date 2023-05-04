@@ -1,0 +1,404 @@
+\documentclass[14pt]{extarticle}
+% \documentclass[14pt]{article}
+
+% \usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+% \addbibresource{$BIB} % bibtex location
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+\usepackage{natbib}
+
+\usepackage[outputdir=build,cache=true]{minted} % for code chuck and syntax highlighting
+% \colorlet{verylightgray}{gray!20}
+%% shortcuts for julia code chuck
+\newminted{julia}{}
+\newmintinline{julia}{}
+\setmintedinline[julia]{bgcolor=gray!20}
+\setminted[julia]{bgcolor=gray!20}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% \setcounter{section}{}
+\centerline{\huge\bf ECON 4002.02 Midterm Exam}
+\smallskip
+\centerline{\LARGE Hui-Jun Chen}
+
+\medskip
+
+% \showAns
+% \listofanswer
+
+\section*{Instruction}
+\label{sec:Instruction}
+\addcontentsline{toc}{section}{Instruction}
+Please submit your answer on Carmen Quiz ``Midterm Exam''.
+
+All numerical answers written on the exam sheet are supposed to \red{\textbf{round to the second decimal point}}%
+\footnote{round to the second decimal points means that if the third decimal point is a number between $ 0 $ to $ 4 $, then just get rid of the third decimal point. On the other hand, if the third decimal point is a number between $ 5 $ to $ 9 $, then round the second decimal point up by adding $ 1 $ to the second decimal point number. For example, if the answer you get is $ 0.534 $, then round it to $ 0.53 $. Yet, if the answer is $ 0.535 $, then round it up to $ 0.54 $.}
+unless otherwise noted.
+
+However, if you choose to use software to calculate the numerical answer, \textbf{do not} use the rounded answer from previous question to calculate; use the unrounded answer to calculate.
+
+
+% For all algebraic answers,
+% \begin{itemize}
+%     \item There should be no space in your answer in the blank
+%     \item The multiplication cannot be ignored, i.e., $ bC $ should be written as \verb|b*C|.
+%     \item Fraction should typed as \verb|()/()| unless it is only one stuff in the numerator or demoninator.
+%             For example, $ \frac{1}{C} $ can be written as \verb|(1)/(C)| or \verb|1/C|, since both numerator and denominator only have one element, while $ \frac{2K}{N^{a}} $ shold be written as \verb|(2*K)/(N^{a})| to avoid confusion.
+%     \item the power has to form with bracket, i.e., if want to write $ K^{a} $, then you should type \verb|K^{a}|
+%     \item if you want to express the equilibrium quantity (the star $ * $) in the power while there's already something there, let's say $ K^{d*} $, then you should type \verb|K^{d*}|
+% \end{itemize}
+
+You \textbf{may} consult any note and textbook, but you \textbf{cannot} discuss with your classmate or any other person about the exam.
+
+For numerical answer, you are \textbf{recommended} to use software to calculate answers.
+
+There will be one T/F choice question that is worth 2 points on the answer sheet. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
+
+\section*{Grades}
+\label{sec:Grades}
+\addcontentsline{toc}{section}{Grades}
+
+Question \ref{CEdef} to \ref{pinumeric} are worth \textbf{2} points, and Question \ref{G} to \ref{Rmax} are worth \textbf{5} points.
+The total grade is \textbf{102} points.
+
+
+\newpage
+
+\begin{Exercise}
+
+\section*{Question 1}
+\label{sec:Question_1}
+\addcontentsline{toc}{section}{Question 1}
+Considering an one-period general equilibrium model \textbf{similar to} (but not exactly the same as) Example in Lecture 08, slide 11 and 12.
+Also the Experiment 2 from Lecture 07, slide 13 is also a good reference.
+However, in this model economy, there are two differences:
+\begin{enumerate}
+    \item firm rent capital from consumer, and consumers are \textbf{endowed} with $ 2 $ units of capital ($ K^{s} = 2 $).
+    \item consumer's utility function is $ U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d} $
+\end{enumerate}
+
+\Question \label{CEdef} The competitive equilibrium given $ \{ G, z,  $~\answer{$K^{s}$} $ \} $
+
+\Question is a set of allocations $\{ Y^{*},C^{*},l^{*},N^{s}, N^{d}, \pi^{*},T^{*}, $~\answer{$K^{d*}$} $ \} $
+
+\Question and prices $ \{ w^{*},$ \answer{$r^{*}$} $ \} $ such that
+
+1. Taken prices and $ \pi, T $ as given, the representative consumer solves
+
+\Question $ \displaystyle \max_{\text{~\answer{$C, l$}}} U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
+
+\Question subject to $ \displaystyle C \le w(h-l) + \text{~\answer{$r K^{s}$}} + \pi - T $
+
+2. Taken prices as given, the representative firm solves
+
+\Question $ \displaystyle \max_{ \text{~\answer{$K^{d}, N^{d}$}} }$
+
+\Question $z (K^{d})^{a} (N^{d})^{1-a} - w N^{d} - \text{~\answer{$r K^{d}$}}$
+
+3. Government collect taxes to balance budget:
+
+\Question  ~\answer{$T^{*} = G$}
+
+4. Labor market clear means that the equilibrium wage is $ w^{*} $ such that labor supply equals to labor demand:
+
+\Question ~\answer{$N^{s} = N^{d}$}
+
+5. Capital market clear means that the equilibrium rental rate is $ r^{*} $ such that capital supply equals to capital demand:
+
+\Question ~\answer{$K^{s} = K^{d}$}
+
+To solve this model economy, we reformulate the competitive equilibrium into the social planner's problem.
+
+First of all, in social planner's problem, all markets must clear, and thus $ N^{s} = N^{d} = N $, and $ K^{s} = K^{d} = K $ (also $ K = 2 $, but for question \ref{wagealgebra} to \ref{N}, still remain the symbol $ K $).
+
+Through firm's FOC with respect to $ N $ and $ K $, we know $ w $ and $ r $ are
+
+\Question \label{wagealgebra}$ w = z K^{a} $~\answer{$(1-a) N^{-a}$}
+
+\Question $ r = z N^{1-a} $~\answer{$a K^{a-1}$}
+
+which we can use to retrieve wage and rental rate after solving the social planner's problem.
+
+The social planner problem is given by:
+
+
+
+\Question \label{U} Objective function is the consumer's utility:
+
+$ \displaystyle  \max_{ C, l, N, Y, \text{~\answer{ $ K $ } } } U(C, l) = \frac{C^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
+
+subject to
+
+a. Aggregate resource constraint
+
+\Question \label{R}$ C + G =  $~\answer{$ Y $}
+
+b. production constraint
+
+\Question \label{Y} $ Y =  z$~\answer{$K^{a}N^{1-a}$}
+
+c. labor constraint
+
+\Question \label{N} $ N =  $~\answer{$1 - l$}
+
+d. capital constraint
+
+\Question \label{K} $ K =  $~\answer{$2$}
+
+To solve the social planner's problem, we start with substituting the constraints into utility function:
+
+a. Substituting \ref{N} and \ref{K} into \ref{Y}, we get
+
+\Question \label{Ysub} $ Y = z $~\answer{$2^{a}(1-l)^{1-a}$}
+
+b. Substituting \ref{Ysub} into \ref{R}, we get
+
+\Question \label{Rsub}$ C = z  $~\answer{$ 2^{a}(1-l)^{1-a} - G $}
+
+c. Finally, substituting \ref{Rsub} into \ref{U}, we get
+
+\Question $ \displaystyle \max_{ \text{~\answer{$l$}} } $
+
+\Question $ \displaystyle U(C(l), l) =  $ $ \frac{(z \textrm{~\answer{$2^{a}(1-l)^{1-a} - G$}})^{1-b}}{1-b} + \frac{l^{1-d}}{1-d}$
+
+Let $ z = 1, G = 0, a = \frac{1}{2}, b = 2, d = \frac{3}{2}$ and solve for all unknowns,
+
+\Question \label{lnumeric} $ l =  $ ~\answer{$0.67$}
+\Question \label{Nnumeric} $ N =  $ ~\answer{$0.33$}
+\Question \label{wnumeric} $ w^{*} =  $ ~\answer{$1.23$}
+\Question \label{rnumeric} $ r^{*} =  $ ~\answer{$0.20$}
+
+The following is the calculation for the answer from \ref{lnumeric} to \ref{rnumeric}:
+
+~\answer{FOC results in $ l^{-d} = z^{-b} 2^{-ab} (1-l)^{-b+ab} (1-a)z 2^{a}(1-l)^{-a}$}
+
+~\answer{$l^{-d} = z^{1-b} 2^{-ab+a} (1-a) (1-l)^{-a-b+ab}$}
+
+~\answer{$l^{-\frac{3}{2}} = \frac{1}{2\sqrt{2}z} (1-l)^{-\frac{3}{2}}$}
+
+~\answer{$ \left( \frac{1-l}{l} \right)^{\frac{3}{2}} = \frac{1}{2\sqrt{2}z} = \frac{1}{2\sqrt{2}}$}
+
+~\answer{$ \left( \frac{1-l}{l} \right) = \left( \frac{1}{2\sqrt{2}} \right)^{\frac{2}{3}} \approx 0.4999 \Rightarrow 1-l = 0.4999 l \Rightarrow l \approx 0.6666 \approx 0.67$}
+
+~\answer{ $ N = 1-l = 0.33 $, $ w = (1-a)z K^{a}N^{-a} = 1.231 \approx 1.23 $, }
+
+~\answer{ $ r = a z K^{a-1} N^{1-a} \approx 0.203 \approx 0.20  $ }
+
+
+\newpage
+
+\section*{Question 2}
+\label{sec:Question_2}
+\addcontentsline{toc}{section}{Question 2}
+Consider a model economy with distorting labor taxes similar to Lecture 11, but having two difference: \begin{enumerate} \item the production function is Cobb-Douglas requiring only labor input, i.e., $ Y = z N^{a} $, and \item consumer get ``disutility'' from working, and the utility function is given by $ U(C, N) = \ln C - bN $, where $ b $ is a parameter. \end{enumerate} Other than the two changes mentioned above, the definition of the general equilibrium is exactly the same as slide 5 in Lecture 11. Therefore, this question focus mainly on algebraic calculation.
+
+\Question The derivative of utility function with respect to consumption $ C $ is ~\answer{ $\frac{1}{C}$}
+
+\Question The derivative of utility function with respect to labor $ N $ is ~\answer{ $-b$}
+
+\Question \label{MRS} The marginal rate of substitution between labor and consumption ($MRS_{N, C}$) is ~\answer{ $- b C$}
+
+\Question \label{eq} According to the slide 6 and 9, Lecture 11, in equilibrium MRS is going to be equal to the after-tax wage, i.e., ~\answer{$ w (1-t) $}
+
+\Question \label{budget} According to the slide 5, Lecture 11, consumer's budget constraint is saying that $ C =  $ ~\answer{ $ w(1-t) $} $ N + \pi $
+
+\Question \label{wN} Different from slide 5, Lecture 11, now the production function is $ Y = z N^{a} $, and thus by solving the firm's problem, the equilibrium wage as a function of labor demand $ N $ must be $ w = z $ ~\answer{$a N^{a-1}$}
+
+\Question \label{pi} Following \ref{wN}, firm's profit $ \pi = z $ ~\answer{$(1-a) N^{a}$}
+
+The $MRS_{N, C}$ we calculated above is MRS between labor and consumption.
+The equilibrium condition that in the lecture 11 is according to the $ MRS_{l, C} $, the MRS between leisure and consumption.
+Recall that $ l = 1 - N $, and thus $ MRS_{l, C} = - MRS_{N, C}  $.
+
+\Question \label{sol1} Combining your answer in \ref{MRS} and \ref{eq} together, let $ MRS_{l, C} = - MRS_{N, C} $, and substitute consumption from your answer in \ref{budget}, we get the optimal condition is $ b ($~\answer{$w (1-t) $}$N + \pi ) = w(1-t) $
+
+The following three blanks are corresponds to \ref{wpart1} to \ref{wpart2}.
+Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ into your answer in \ref{sol1}, we get
+
+    $ b(  $
+    \label{wpart1} $ \underbrace{ z \textrm{~\answer{ $ aN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    $+$
+    \label{pipart} $ \underbrace{ z \textrm{~\answer{$(1-a) N^{a} $}} }_{\pi \textrm{ part}}$
+    $) =$
+    \label{wpart2} $ \underbrace{ z\textrm{~\answer{ $ aN^{a-1} $}} }_{w \textrm{ part 2}}$
+    $  (1-t)  $
+
+    \Question \label{wpart1} $ z\underbrace{ \textrm{~\answer{ $ aN^{a} (1-t)$}} }_{w \textrm{ part}}$
+    \Question \label{pipart} $ z\underbrace{ \textrm{~\answer{$(1-a) N^{a} $}} }_{\pi \textrm{ part}}$
+    \Question \label{wpart2} $ z\underbrace{ \textrm{~\answer{ $ aN^{a-1} $}} }_{w \textrm{ part 2}}$
+
+\Question \label{sol3} Solve for $ N $ as a function of $ t $, we get
+    $ N =  $ $ \frac{a (1-t)}{b (\textrm{~\answer{ $a (1-t)$}}  + (1-a)) }$
+
+    Some calculation details:
+
+    ~\answer{ $ b( azN^{a} (1-t) + (1-a) z N^{a} ) = azN^{a-1} (1-t) $ }
+
+    ~\answer{ $ \Rightarrow  bzN^{a}( a (1-t) + (1-a) ) = azN^{a-1} (1-t) $ }
+
+    ~\answer{ $ \Rightarrow  bN( a (1-t) + (1-a) ) = a(1-t) $ }
+
+    ~\answer{ $ \Rightarrow  N = \frac{a(1-t)}{b( a (1-t) + (1-a) ) }  $ }
+
+\Question Now let $ z = 1$, $a = 0.33 $, $ b = 2.15 $ and $ t = 0.5 $, the $ N $ you calculated in \ref{sol3} is ~\answer{$0.0919 \approx 0.09$}
+
+\Question after calculate the approximated value for $ N $ to the second decimal point, you can also calculate
+    $ w =  $ ~\answer{$1.66$}
+
+\Question \label{pinumeric} Same for $ \pi =  $ ~\answer{$0.30$}
+
+\Question \label{G} For the tax revenue generate by $ t = 0.5 $, how much government spending $ G $ can the government pay off?
+    \textbf{For this question, please round to the fourth decimal point}
+    $ G = R(t) = w t N = $ ~\answer{$ 0.0746999 \approx 0.0747 $}
+
+\Question \label{taxnumerics} According to Laffer curve, there's also another tax rate $ t_{2} $ such that it can also generate same amount of revenue to pay for the government spending you've calculated \ref{G}. What is $ t_{2} $? $ t_{2} \approx $~\answer{$ 0.9387 \approx 0.94 $}
+
+If you want to solve \ref{taxnumerics} numerically, you can use the following code chuck and supplement the corresponding $ N $ and $ w $:
+
+\begin{juliacode}
+z = 1; a = 0.33; b = 2.15; tnum = 1000
+tgrid = collect( range(0.01, 0.99, length = tnum) )
+Gvec = Array{Float64, 1}(undef, tnum)
+for indt = 1:1:tnum
+    t = tgrid[indt]
+    N = your answer in 37
+    w = z * your answer in 31
+    Gtarget = your answer in 41
+    G = w*t*N
+    if abs(G - Gtarget) < 1e-4
+        println("another tax rate is $t at $indt")
+    end
+    Gvec[indt] = G
+end
+
+\end{juliacode}
+
+Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$,
+
+\Question the optimal tax rate $ t^{*} =  $ ~\answer{$0.76768 \approx 0.77$},
+
+\Question \label{Rmax} and the optimal labor tax revenue $ R(t^{*}) =  $ ~\answer{$0.09285 \approx 0.0929$}
+    (\textbf{For this question, please round to the fourth decimal point})
+
+If you want to solve the above two questions numerically, you can use the following code chuck (need to let the above code chuck to run first):
+
+\begin{juliacode}
+    Gmax = maximum(Gvec)
+    tmax = tgrid[argmax(Gvec)]
+    println("optimal t* = $tmax, optimal G* = $Gmax")
+\end{juliacode}
+
+\end{Exercise}
+
+
+\end{document}
+
