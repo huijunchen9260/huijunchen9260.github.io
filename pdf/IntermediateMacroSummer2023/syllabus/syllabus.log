@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.4.3)  4 MAY 2023 00:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.4.3)  9 MAY 2023 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1323,7 +1323,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \pp=\skip88
 [7] [8] [9] [10] [11]
 
-LaTeX Warning: Empty bibliography on input line 506.
+LaTeX Warning: Empty bibliography on input line 519.
 
 [12] (./syllabus.aux)
 Package logreq Info: Writing requests to 'syllabus.run.xml'.
@@ -1333,10 +1333,10 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
 Here is how much of TeX's memory you used:
  31861 strings out of 476026
  581108 string characters out of 5796559
- 1874385 words of memory out of 5000000
+ 1875385 words of memory out of 5000000
  51600 multiletter control sequences out of 15000+600000
  521905 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,128p,1977b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on syllabus.dvi (12 pages, 74936 bytes).
+Output written on syllabus.dvi (12 pages, 76256 bytes).
