@@ -10,29 +10,21 @@
 <body>
 <main>
 <h1 id="note-on-julia">Note on Julia</h1>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <!-- vim-markdown-toc GFM -->
-
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#julia-introduction">Julia Introduction</a></li>
 <li><a href="#julia-tips">Julia Tips</a>
-
 <ul>
 <li><a href="#memory-allocations">Memory Allocations</a></li>
 </ul></li>
 </ul>
-
 <!-- vim-markdown-toc -->
-
 <h2 id="installation">Installation</h2>
-
 <ul>
 <li>Julia Download page: <a href="https://julialang.org/downloads/">Stable release</a></li>
 <li>Julia Installation Instruction:
-
 <ul>
 <li>Windows: <a href="https://julialang.org/downloads/platform/#windows">Official Instruction</a></li>
 <li>MacOS: <a href="https://julialang.org/downloads/platform/#macos">Official Instruction</a></li>
@@ -40,19 +32,13 @@
 <li>Jupyter Notebook &#47; Jupyter Lab Installation Instruction: <a href="https://docs.jupyter.org/en/latest/install.html">Official Instruction</a></li>
 <li>Link Jupyter Notebook with Julia: <a href="https://www.youtube.com/watch?v=81DRruCIO34">Video tutorial on Windows</a>, <a href="https://www.youtube.com/watch?v=oyx8M1yoboY">Video tutorial on MacOS</a></li>
 </ul>
-
 <h2 id="julia-introduction">Julia Introduction</h2>
-
 <ul>
 <li>100 Seconds Intro by Fireship: <a href="https://www.youtube.com/watch?v=JYs_94znYy0">video</a></li>
 </ul>
-
 <h2 id="julia-tips">Julia Tips</h2>
-
 <h3 id="memory-allocations">Memory Allocations</h3>
-
 <p>Due to the nature of LLVM, memory allocation in Julia can be very expensive. Especially in dynamic programming, we usually a lot of arrays to store our data. Therefore, tracking where the memory is allocated can fast computation a lot.</p>
-
 <ul>
 <li><a href="https://m3g.github.io/JuliaNotes.jl/stable/memory/">Tracking memory allocations: JuliaNotes.jl</a></li>
 </ul>

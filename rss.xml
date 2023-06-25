@@ -10,70 +10,49 @@
 <guid>https://huijunchen9260.github.io/IntermediateMacroSummer2023.html</guid>
 <pubDate>Thu, 04 May 2023 00:06:54 -0400</pubDate>
 <description><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2023">Intermediate Macroeconomics Theory, Summer 2023</h1>
-
 <p>ECON 4002.01, The Ohio State University, Summer 2023</p>
-
 <p><a href="pdf/IntermediateMacroSummer2023/syllabus/build/syllabus.pdf">Syllabus: pdf version</a></p>
-
 <p><a href="pdf/IntermediateMacroSummer2023/syllabus/syllabus.html">Syllabus: html version</a></p>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <!-- vim-markdown-toc GFM -->
-
 <ul>
 <li><a href="#grade">Grade</a></li>
 <li><a href="#course-schedule">Course Schedule</a></li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
-
 <!-- vim-markdown-toc -->
-
 <h2 id="grade">Grade</h2>
-
 <p>See <a href="pdf/IntermediateMacroSummer2023/syllabus/syllabus.html#grades">Grades</a></p>
-
 <h2 id="course-schedule">Course Schedule</h2>
-
 <p>See <a href="pdf/IntermediateMacroSummer2023/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-
 <!-- ## Exam Reviews -->
-
 <!-- - [Midterm Review](pdf/IntermediateMacroSummer2023/Midterm/midtermReview.pdf) -->
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
 <li><a href="pdf/IntermediateMacroSummer2023/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
 <li><a href="pdf/IntermediateMacroSummer2023/math/Final/math.pdf">Review for Math</a></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
-
 <ul>
 <li>Lucas critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Lucas_critique">Wiki: Lucas critique</a></li>
 </ul></li>
 <li>Friedman critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 </ul></li>
 </ul></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
-
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
-
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
-
 <ul>
 <li><a href="https://www.mackenzieinvestments.com/content/dam/mackenzie/en/insights/wp-alts-correlation-vs-beta-en.pdf">Correlation vs Beta: What is the difference and why does it matter?</a></li>
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
@@ -90,7 +69,6 @@
 <!-- - [Midterm Review 1](pdf/IntermediateMacroSummer2023/midtermReview_1.pdf) -->
 <!-- - [Midterm Review 2](pdf/IntermediateMacroSummer2023/midtermReview_2.pdf) --></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
-
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
@@ -99,7 +77,6 @@
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
 <li><a href="pdf/IntermediateMacroSummer2023/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
@@ -110,19 +87,12 @@
 <!-- - [Final Review 1](pdf/IntermediateMacroSummer2023/finalreview_1.pdf) -->
 <!-- - [Final Review 2](pdf/IntermediateMacroSummer2023/finalreview_2.pdf) --></li>
 </ul>
-
 <h2 id="problem-sets">Problem Sets</h2>
-
 <!-- - [Problem Set 1](pdf/IntermediateMacroSummer2023/ProblemSet1/ProblemSet_01_v01.pdf) -->
-
 <!-- - [Problem Set 2](pdf/IntermediateMacroSummer2023/ProblemSet2/build/ProblemSet2.pdf) -->
-
 <!--     - [Problem Set 2 Answer Sheet](pdf/IntermediateMacroSummer2023/ProblemSet2/PS2AnswerSheet.pdf) -->
-
 <!-- - [Problem Set 3](pdf/IntermediateMacroSummer2023/ProblemSet3/Final/ProblemSet3.pdf) -->
-
 <!-- - [Problem Set 4](pdf/IntermediateMacroSummer2023/ProblemSet4/Final/ProblemSet4.pdf) -->
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -131,59 +101,43 @@
 <guid>https://huijunchen9260.github.io/PrincipleMacroSpring2023.html</guid>
 <pubDate>Sun, 25 Dec 2022 22:24:07 -0500</pubDate>
 <description><![CDATA[<h1 id="principle-of-macroeconomics-spring-2023">Principle of Macroeconomics, Spring 2023</h1>
-
 <p>ECON 2002.01, The Ohio State University, Spring 2023</p>
-
 <p><a href="pdf/PrincipleMacroSpring2023/syllabus/build/syllabus.pdf">Syllabus: pdf version</a></p>
-
 <p><a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html">Syllabus: html version</a></p>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <h2 id="grades">Grades</h2>
-
 <p>See <a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html#grades1">Grades</a></p>
-
 <h2 id="course-schedule">Course Schedule</h2>
-
 <p>See <a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html#tentative-course-schedule1">Course schedule</a></p>
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E32v_bsasS8">2022 Finance Rewind - The Crazy Year Behind Us</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit2TechChangePopulationGrowth/build/Unit2TechChangePopulationGrowth.pdf">Unit 2: Technology, population, and growth</a>
-
 <ul>
 <li><a href="https://adventure.howstuffworks.com/outdoor-activities/hiking/how-to-read-a-topographic-map2.htm">How to Read a Topographic Map</a></li>
 <li><a href="https://www.wolframalpha.com/input?i=plot+c+%3D+L+%2B+2*R">Wolfram Algebra plotting cost function</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit3Consumer/build/Unit3Consumer.pdf">Unit 3: Scarcity, Work and Choice</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=oFIdIVngeYA">How trail designers build good hikes</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit6FirmLaborMarket/build/Unit6FirmLaborMarket.pdf">Unit 6: The Firm: Owner, Manager and Employees</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit7FirmGoodMarket/build/Unit7FirmGoodMarket.pdf">Unit 7: The Firm, Demand Elasticity and Market Competition</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=7uKnd6IEiO0">Deck the Halls with Macro Follies</a></li>
 <li><a href="https://www.youtube.com/watch?v=Ll92ud6Nufw">Price Elasticity: Why Airlines Will Never Improve Economy Class</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit9LaborMarket/build/Unit9LaborMarket.pdf">Unit 9: The Labor Market, Wages, Profits, and Unemployment</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit10CreditMarket/build/Unit10CreditMarket.pdf">Unit 10: Banks, Money and the Credit Market</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Zwn6fqbNRLo">What is the most equal country on earth?</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit13EconomicsFluctuation/build/Unit13EconomicsFluctuation.pdf">Unit 13: Economics Fluctuation, GDP and Unemployment</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit14FiscalPolicy/build/Unit14FiscalPolicy.pdf">Unit 14: Unemployment and Fiscal Policy</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/Unit15MonetaryPolicy/build/Unit15MonetaryPolicy.pdf">Unit 15: Inflation, Unemployment and Monetary Policy</a>
-
 <ul>
 <li><strong><a href="https://youtu.be/EpMLAQbSYAw">Age of Easy Money (full documentary) | FRONTLINE</a></strong></li>
 <li><a href="https://youtu.be/UN-O6oNes0I">What’s So Special About 2% Inflation?</a></li>
@@ -192,9 +146,7 @@
 <li><a href="pdf/PrincipleMacroSpring2023/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
 <li><a href="pdf/PrincipleMacroSpring2023/MacroCovidPandemic/lecture-slides-macroeconomics-of-covid-19-pandemic-5-february.pdf">Macroeconomics of the COVID-19 Pandemic</a></li>
 </ul>
-
 <h2 id="problem-sets">Problem Sets</h2>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit1Unit2PS/Final/Unit1Unit2PS.pdf">Problem Set 1: Unit 1 and Unit 2</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit3PS/Final/Unit3PS.pdf">Problem Set 2: Unit 3</a></li>
@@ -208,7 +160,6 @@
 <li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
 <li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
 </ul>
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -217,20 +168,14 @@
 <guid>https://huijunchen9260.github.io/DiscussionSlides.html</guid>
 <pubDate>Thu, 03 Nov 2022 21:40:52 -0400</pubDate>
 <description><![CDATA[<h1 id="discussion-slides">Discussion Slides</h1>
-
 <ul>
 <li><p><a href="pdf/Discussion/MEA_Mar_31_2023/build/Discuss_Wang_Xu.pdf">Media Focus, Sentiments and Capital Allocation in Space</a></p>
-
 <p>by Yu Wang and Zebang Xu</p>
-
 <p>Midwest Economics Association Annual Meeting 2023</p></li>
 <li><p><a href="pdf/Discussion/NOEWorshop_NOV_04_2022/build/DiscussionSlides.pdf">The Impact of FinTech on Discrimination in Mortgage Lending</a></p>
-
 <p>by Daniel Shoag</p>
-
 <p>Northeast Ohio Economics Workshop 2022</p></li>
 </ul>
-
 <p>;tags: Discussion</p>]]></description>
 </item>
 <item>
@@ -239,30 +184,20 @@
 <guid>https://huijunchen9260.github.io/FortranNote.html</guid>
 <pubDate>Sat, 24 Sep 2022 14:21:16 -0400</pubDate>
 <description><![CDATA[<h1 id="note-on-fortran">Note on Fortran</h1>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <!-- vim-markdown-toc GFM -->
-
 <ul>
 <li><a href="#fortran-package-manager">Fortran Package Manager</a>
-
 <ul>
 <li><a href="#change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</a></li>
 </ul></li>
 <li><a href="#fortran-compiler">Fortran Compiler</a></li>
 </ul>
-
 <!-- vim-markdown-toc -->
-
 <h2 id="fortran-package-manager">Fortran Package Manager</h2>
-
 <h3 id="change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</h3>
-
 <p>After changing all the corresponding code, like <code>module</code> name and <code>use</code> statement in the directory <code>src&#47;</code>, you need to go to <code>build&#47;</code> and update the <code>cache.toml</code> file to the new module name.</p>
-
 <h2 id="fortran-compiler">Fortran Compiler</h2>
-
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
 <item>
@@ -271,29 +206,21 @@
 <guid>https://huijunchen9260.github.io/JuliaNote.html</guid>
 <pubDate>Sun, 04 Sep 2022 12:01:54 -0400</pubDate>
 <description><![CDATA[<h1 id="note-on-julia">Note on Julia</h1>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <!-- vim-markdown-toc GFM -->
-
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#julia-introduction">Julia Introduction</a></li>
 <li><a href="#julia-tips">Julia Tips</a>
-
 <ul>
 <li><a href="#memory-allocations">Memory Allocations</a></li>
 </ul></li>
 </ul>
-
 <!-- vim-markdown-toc -->
-
 <h2 id="installation">Installation</h2>
-
 <ul>
 <li>Julia Download page: <a href="https://julialang.org/downloads/">Stable release</a></li>
 <li>Julia Installation Instruction:
-
 <ul>
 <li>Windows: <a href="https://julialang.org/downloads/platform/#windows">Official Instruction</a></li>
 <li>MacOS: <a href="https://julialang.org/downloads/platform/#macos">Official Instruction</a></li>
@@ -301,23 +228,16 @@
 <li>Jupyter Notebook &#47; Jupyter Lab Installation Instruction: <a href="https://docs.jupyter.org/en/latest/install.html">Official Instruction</a></li>
 <li>Link Jupyter Notebook with Julia: <a href="https://www.youtube.com/watch?v=81DRruCIO34">Video tutorial on Windows</a>, <a href="https://www.youtube.com/watch?v=oyx8M1yoboY">Video tutorial on MacOS</a></li>
 </ul>
-
 <h2 id="julia-introduction">Julia Introduction</h2>
-
 <ul>
 <li>100 Seconds Intro by Fireship: <a href="https://www.youtube.com/watch?v=JYs_94znYy0">video</a></li>
 </ul>
-
 <h2 id="julia-tips">Julia Tips</h2>
-
 <h3 id="memory-allocations">Memory Allocations</h3>
-
 <p>Due to the nature of LLVM, memory allocation in Julia can be very expensive. Especially in dynamic programming, we usually a lot of arrays to store our data. Therefore, tracking where the memory is allocated can fast computation a lot.</p>
-
 <ul>
 <li><a href="https://m3g.github.io/JuliaNotes.jl/stable/memory/">Tracking memory allocations: JuliaNotes.jl</a></li>
 </ul>
-
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
 <item>
@@ -326,15 +246,10 @@
 <guid>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</guid>
 <pubDate>Tue, 09 Aug 2022 12:50:08 -0400</pubDate>
 <description><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
-
 <p>ECON 4002.02, The Ohio State University, Autumn 2022</p>
-
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/build/syllabus.pdf">Syllabus: pdf version</a></p>
-
 <p><a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus: html version</a></p>
-
 <h2 id="announcement">Announcement</h2>
-
 <ul>
 <li>Oct 03, 2022: Fix typo in
 <a href="pdf/IntermediateMacroAutumn2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a></li>
@@ -358,11 +273,8 @@ for changing course schedule (erase labor day)</li>
 <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html">Syllabus: html version</a>
 for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 </ul>
-
 <h2 id="table-of-content">Table of Content</h2>
-
 <!-- vim-markdown-toc GFM -->
-
 <ul>
 <li><a href="#grade">Grade</a></li>
 <li><a href="#course-schedule">Course Schedule</a></li>
@@ -370,55 +282,40 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
-
 <!-- vim-markdown-toc -->
-
 <h2 id="grade">Grade</h2>
-
 <p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#grades">Grades</a></p>
-
 <h2 id="course-schedule">Course Schedule</h2>
-
 <p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-
 <h2 id="exam-reviews">Exam Reviews</h2>
-
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2022/Midterm/midtermReview.pdf">Midterm Review</a></li>
 </ul>
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/math/Final/math.pdf">Review for Math</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
-
 <ul>
 <li>Lucas critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Lucas_critique">Wiki: Lucas critique</a></li>
 </ul></li>
 <li>Friedman critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 </ul></li>
 </ul></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
-
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
-
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
-
 <ul>
 <li><a href="https://www.mackenzieinvestments.com/content/dam/mackenzie/en/insights/wp-alts-correlation-vs-beta-en.pdf">Correlation vs Beta: What is the difference and why does it matter?</a></li>
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
@@ -435,7 +332,6 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <!-- - [Midterm Review 1](pdf/IntermediateMacroAutumn2022/midtermReview_1.pdf) -->
 <!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2022/midtermReview_2.pdf) --></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
-
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
@@ -444,7 +340,6 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
@@ -455,20 +350,16 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <!-- - [Final Review 1](pdf/IntermediateMacroAutumn2022/finalreview_1.pdf) -->
 <!-- - [Final Review 2](pdf/IntermediateMacroAutumn2022/finalreview_2.pdf) --></li>
 </ul>
-
 <h2 id="problem-sets">Problem Sets</h2>
-
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet2/build/ProblemSet2.pdf">Problem Set 2</a>
-
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a></li>
 </ul></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -477,90 +368,60 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <guid>https://huijunchen9260.github.io/TikzNote.html</guid>
 <pubDate>Wed, 27 Apr 2022 12:47:01 -0400</pubDate>
 <description><![CDATA[<h1 id="note-on-tikz">Note on Tikz</h1>
-
 <h2 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h2>
-
 <ul>
 <li><p>We can separate the definition of the desired point from the label of the point, e.g.:</p>
-
 <pre><code class="language-tex">    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
     \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
 </code></pre>
-
 <ul>
 <li>Reason: I can have full control on the decoration of the node on <code>(0, 0)</code> and where I should put the label on.
 One can also use <code>\coordinate</code> to define points, i.e.,</li>
 </ul>
-
 <pre><code class="language-tex">    \coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
     \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
 </code></pre>
-
 <p>It seems that <code>\coordinate</code> cannot have labels, so there&#8217;s no need to include empty <code>{}</code> at the end of the <code>\node</code>.</p></li>
 <li><p>Define points first and give every point a reasonable name.</p>
-
 <ul>
 <li>Reason: You can directly use those named points to create paths.</li>
 </ul></li>
 </ul>
-
 <h2 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h2>
-
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
 </code></pre>
-
 <p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
-
 <p><code>bend right=40</code> means the degree of bending.</p>
-
 <h2 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h2>
-
 <p>Here I use &#8220;bezier curve&#8221; as example.</p>
-
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
     (5, 5);
 </code></pre>
-
 <p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
 This <code>node</code> is defined as <code>a</code>.</p>
-
 <h2 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h2>
-
 <p>Let the arbitrary be <code>a</code>.</p>
-
 <pre><code class="language-tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
 \coordinate (a_x) at (\xcoord, 0);
 \coordinate (a_y) at (0, \ycoord);
 </code></pre>
-
 <p>First, let the <code>path</code> be on the point <code>a</code> so that <code>pgf</code> can remember it.</p>
-
 <p>Second, <code>\pgfgetlastxy</code> outputs the x-coordinate <code>\xcoord</code> and y-coordinate <code>\ycoord</code> of the last path, which we define as point <code>a</code>.</p>
-
 <p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
-
 <h2 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h2>
-
 <p>Here I use &#8220;bezier curve&#8221; as example.</p>
-
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
     node[pos=0.51] (b) {}
     (5, 5);
 \draw[shorten &#62;=-1cm, shorten &#60;=-1cm, thick, red] (a) -- (b);
 </code></pre>
-
 <p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
-
 <p>Notice that I didn&#8217;t draw the inner point at point <code>b</code>.</p>
-
 <p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
-
 <h2 id="decoration-brace">Decoration: brace</h2>
-
 <p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
-
 <pre><code class="language-tex">%%% brace on up&#47;right
 \draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
@@ -568,15 +429,10 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=3pt]
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
 </code></pre>
-
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
-
 <h2 id="intersection-between-two-curves">Intersection between two curves</h2>
-
 <p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
-
 <p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
-
 <pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
 \usetikzlibrary{intersections}
 \begin{document}
@@ -588,31 +444,22 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \end{tikzpicture}
 \end{document}
 </code></pre>
-
 <p>Explanation:</p>
-
 <ul>
 <li>Need to add <code>name path=name</code> as argument to call this path.</li>
 <li>Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.</li>
 <li>Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</li>
 </ul>
-
 <h2 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h2>
-
 <p>Simply use <code>\tikzstyle</code> is suffice:</p>
-
 <pre><code class="language-tex">\begin{tikzpicture}
     \tikzstyle{every node}=[font=\scriptsize]
     ...
 \end{tikzpicture}
 </code></pre>
-
 <h2 id="calculation-points">Calculation points</h2>
-
 <p>Need to add <code>\usetikzlibrary{calc}</code></p>
-
 <p>The syntax of <code>calc</code> library is</p>
-
 <pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
 \usetikzlibrary{calc, intersections}
 \begin{document}
@@ -663,7 +510,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \end{tikzpicture}
 \end{document}
 </code></pre>
-
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
 <item>
@@ -672,13 +518,9 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <guid>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</guid>
 <pubDate>Sat, 23 Apr 2022 14:27:53 -0400</pubDate>
 <description><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2022">Intermediate Macroeconomics Theory, Summer 2022</h1>
-
 <p>ECON 4002.01, The Ohio State University, Summer 2022</p>
-
 <p><a href="pdf/IntermediateMacroSummer2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
-
 <h2 id="announcement">Announcement</h2>
-
 <ul>
 <li>May 31, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
 <li>June 02, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a> to fix some typo</li>
@@ -693,21 +535,16 @@ to fix typo and computational errors.</li>
 <li>July 07, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a> and <a href="pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a> to fix typo and expression</li>
 <li>July 19, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a> to fix wrong figure legend and wrong expression.</li>
 </ul>
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="pdf/IntermediateMacroSummer2022/math/Final/math.pdf">Review for Math</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
-
 <ul>
 <li>Lucas critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Lucas_critique">Wiki: Lucas critique</a></li>
 </ul></li>
 <li>Friedman critique:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
@@ -735,18 +572,14 @@ to fix typo and computational errors.</li>
 <li><a href="pdf/IntermediateMacroSummer2022/finalreview_1.pdf">Final Review 1</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/finalreview_2.pdf">Final Review 2</a></li>
 </ul>
-
 <h2 id="problem-sets">Problem Sets</h2>
-
 <ul>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet2/Final/ProblemSet2.pdf">Problem Set 2</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
 <li><a href="pdf/IntermediateMacroSummer2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
-
 <h2 id="lecture-recordings">Lecture Recordings</h2>
-
 <ul>
 <li><a href="https://osu.zoom.us/rec/share/BEP6kfx9xMyke-tIZ58-VOanFmQnFRRAa9nvriGtCB-Md1dgCH4mH4QZhj4cWAjN.2gx4wG3jDn3M2DfI">Lecture 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/ihGSK3P59OAK5wYvrwoFDtD1L5A-qidlR3WDvwtDTuWJjrvZSrpkMXhDHyl98lyB.qttHeFr0eKe9UDcu">Lecture 2</a></li>
@@ -772,7 +605,6 @@ to fix typo and computational errors.</li>
 <li><a href="https://osu.zoom.us/rec/share/o9XD0w-GqSjjVnWrUXQ0EJ6VvDlI2NVgwxFR61sOWiGWmCqCUipeMPcNeNkaULFK.xgJtfj5Co1LLk9N1">Lecture 18 Part 2 and Final Exam Review Part 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/ES9LrJ2rcETagzPv52w30pIu659nHTy4-9voV2B3GWrX4Rbqvn0XOB1ijDl8jXpZ.18uPUtxx1_gRBKZw">Final Review Part 2</a></li>
 </ul>
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -781,57 +613,35 @@ to fix typo and computational errors.</li>
 <guid>https://huijunchen9260.github.io/X220TDiassembly.html</guid>
 <pubDate>Thu, 21 Apr 2022 23:15:43 -0400</pubDate>
 <description><![CDATA[<h1 id="x220-tablet-disassembly">X220 Tablet Disassembly</h1>
-
 <p>X220 Tablet is such a lovely laptop I bought.
 Although its CPU is pretty weak in the standard of 2022 (i7-2640M), it is still a pretty decent Linux laptop that even have touch screen and integrated stylus.</p>
-
 <p>There is a serious question for this laptop though.
 Since the fan is dusted, and the thermopaste on the CPU are all dried out, the CPU temperture are constantly 90 degree of Celsius, which is always really hot.</p>
-
 <p>Today I dissembled the whole laptop to clean the dust on the fan and repaste the thermopaste.
 I am mainly following this <a href="https://www.youtube.com/watch?v=ZsNcVV4jMPw">video</a> for step-by-step tutorial.</p>
-
 <p>First of all, it is easy to disassemble the keyboard by unscrew the screws locates at the back of the laptop.</p>
-
 <p><img src="pix/X220TDiassembly/screwout.webp" alt="screwout" /></p>
-
 <p>The following image also include the tools I am using for this disassembly.</p>
-
 <p><img src="pix/X220TDiassembly/keyboardout.webp" alt="keyboardout" /></p>
-
 <p>Another image for the closer look on how the palmrest and those cables.
 Notice that at this stage, we can see the fan is extremely dirty.</p>
-
 <p><img src="pix/X220TDiassembly/keyboardout2.webp" alt="keyboardout2" /></p>
-
 <p>Next step is to remove the palmrest.
 Notice that although the both sides of the palmrest are easier to detach, it took some techniques to really take out the palmrest.
 Some angle is required to remove the palmrest from the front side of the laptop.</p>
-
 <p><img src="pix/X220TDiassembly/palmrest180.webp" alt="palmrest180" /></p>
-
 <p>We can see the Wifi card at the right-buttom corner of the laptop.
 Zoom in,</p>
-
 <p><img src="pix/X220TDiassembly/wificard.webp" alt="wificard" />
 We need to unscrew to take out the wifi card.</p>
-
 <p>To take out the remaining plastic cover in the following image, I need to use the blue triangle plastic tools to stick into the connection of the cover and the buttom, and then detach the plastic cover.</p>
-
 <p><img src="pix/X220TDiassembly/frontcover.webp" alt="frontcover" /></p>
-
 <p>Take out, we get</p>
-
 <p><img src="pix/X220TDiassembly/frontcoverout.webp" alt="frontcoverout" /></p>
-
 <p>At this stage and remember to unscrew all necessary, we can take the whole motherboard out.</p>
-
 <p><img src="pix/X220TDiassembly/mboardout.webp" alt="mboardout" /></p>
-
 <p>Clean the fan, repaste, and reassembly everything, I successfully decrease the CPU temperture to 60 degree.</p>
-
 <p>It shows again that the importance of maintainence of the laptop and prevent it from overheating.</p>
-
 <p>;tags: Miscellaneous Technology</p>]]></description>
 </item>
 <item>
@@ -840,20 +650,16 @@ We need to unscrew to take out the wifi card.</p>
 <guid>https://huijunchen9260.github.io/LTVHousingPrice.html</guid>
 <pubDate>Wed, 20 Apr 2022 15:10:29 -0400</pubDate>
 <description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
-
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
-
 <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
 <a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a>;
 <a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf">slide: NOE Workshop</a></p>
-
 <p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
 In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
 The policy&#8217;s positive effect on house prices is more severe with greater inequality.
 A strict ceiling is especially harmful to the poor.
 Taxes can only intensify the positive effect on house prices, although they can mitigate the adverse effects on welfare.</p>
-
 <p>;tags: Working</p>]]></description>
 </item>
 <item>
@@ -862,13 +668,9 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <guid>https://huijunchen9260.github.io/UsedKCollateral.html</guid>
 <pubDate>Wed, 20 Apr 2022 15:10:29 -0400</pubDate>
 <description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-
 <!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
-
 <!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
-
 <p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">slides</a></p>
-
 <p>I study how much do financial frictions and endogenous capital partial irreversibility explain aggregate investment volatility.
 I propose a heterogeneous firms model with real and financial frictions.
 Firms adjust their capital stock by trading on the used capital market, thus the capital partial irreversibility is endogenized by the price in the market.
@@ -878,7 +680,6 @@ This irreversibility creates two opposite forces affecting investment volatility
 In my model, collateral constraints amplify the first force and dampen the response of aggregate investment to match the moments in the data.
 A collateral constraint based on the resale value of the capital unevenly affect firms&#8217; borrowing capacity by their upward-&#47;downward-adjustment decision.
 Such decision determines a new price of investment goods, and thus endogenously alters the collateral constraint.</p>
-
 <p>;tags: Working</p>]]></description>
 </item>
 <item>
@@ -887,124 +688,68 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <guid>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</guid>
 <pubDate>Thu, 30 Dec 2021 20:19:06 -0500</pubDate>
 <description><![CDATA[<h1 id="principle-of-macroeconomics-spring-2022">Principle of Macroeconomics, Spring 2022</h1>
-
 <p>ECON 2002.01, The Ohio State University, Spring 2022</p>
-
 <p><a href="pdf/PrincipleMacroSpring2022/build/syllabus.pdf">Syllabus</a></p>
-
 <ul>
 <li>Update Feb. 18, 2022: Revise course schedule due to my presentation in MEA annual meeting.</li>
 </ul>
-
 <!-- ## Lecture Videos -->
-
 <!-- - [Unit 1](https://youtu.be/j2xNxtsa2Uk) -->
-
 <!-- - [Unit 2](https://youtu.be/bmlgp_Pqecw) -->
-
 <!-- - [Unit 3](https://youtu.be/CBSHbUHcvY4) -->
-
 <!-- - [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ) -->
-
 <!-- - [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4) -->
-
 <!-- - [Unit 7](https://youtu.be/UgF-HO1If3w) -->
-
 <!-- - [Unit 9](https://youtu.be/tdM3XLQt76A) -->
-
 <!-- - [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o) -->
-
 <!-- - [Unit 10 Part 2](https://youtu.be/L_IcpcX372g) -->
-
 <!-- - [Unit 11](https://youtu.be/VkZXrPe6wG0) -->
-
 <!-- - [Unit 13](https://youtu.be/rbfoUkP_VCQ) -->
-
 <!-- - [Unit 14](https://youtu.be/1eEsTPxa5WQ) -->
-
 <!-- - [Unit 15](https://youtu.be/0HDBVajKozg) -->
-
 <!-- - [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI) -->
-
 <!-- - [Unit 16](https://youtu.be/auswkrj7OOM) -->
-
 <!-- - [Unit 17](https://youtu.be/tfpdEXwhnyY) -->
-
 <!-- ## Lecture Recording -->
-
 <!-- - [Math Supplement Part 1](https://youtu.be/4IEQ52Xl6Ig) (No audio) -->
-
 <!-- - [Math Supplement Part 2](https://youtu.be/CsipriW8zSc) -->
-
 <!-- - [Unit 1](https://youtu.be/WcO5rbA_U1s) -->
-
 <!-- - [Unit 2](https://youtu.be/B8GY0Sl4j_M) -->
-
 <!-- - [Quiz review and Unit 6 Part 1](https://youtu.be/BXI1GbEnpo4) -->
-
 <!-- - [Unit 6 Part 2](https://youtu.be/2DRAG1mN52I) -->
-
 <!-- - [Unit 7](https://youtu.be/JDFPuoK0mR0) -->
-
 <!-- - [Quiz review and Unit 9 Part 1](https://youtu.be/gyQ-JrzCg00) -->
-
 <!-- - [Unit 9 Part 2](https://youtu.be/gZrecQwyhuc) -->
-
 <!-- - [Unit 10 Part 1](https://youtu.be/GsNub6cKt90) -->
-
 <!-- - [Quiz review and Unit 3 Part 1](https://youtu.be/40U9lKCBzGE) -->
-
 <!-- - [Quiz review and Unit 3 Part 2](https://youtu.be/_v0fmlssKJc) -->
-
 <!-- - [Unit 10 Part 2](https://youtu.be/OdSrcRpextI) -->
-
 <!-- - [Quiz review and Unit 10 Part 3](https://youtu.be/nVMfm60p8As) -->
-
 <!-- - [Unit 10 Part 4 and Unit 13 Part 1](https://youtu.be/JU4L3JxUg3w) -->
-
 <!-- - [Unit 13 Part 2](https://youtu.be/qTP4Iov0N7s) -->
-
 <!-- - [Quiz review and Unit 14 Part 1](https://youtu.be/a92slHH9jxY) -->
-
 <!-- - [Unit 14 Part 2](https://youtu.be/ZCGKeH1eqBo) -->
-
 <!-- - [Unit 14 Part 3](https://youtu.be/YPs2WiDCdZc) -->
-
 <!-- - [Unit 15 Part 1](https://youtu.be/k6n3FEKy2q8) -->
-
 <!-- - [Unit 15 Part 2](https://youtu.be/xoqSSaLWt2k) -->
-
 <!-- - [Unit 15 Part 3](https://youtu.be/CMa_NlcOuRs) -->
-
 <!-- - [Quiz review and Unit 16 Part 2](https://youtu.be/jVM1LXJkjP4) -->
-
 <!-- - [Unit 16 Part 3](https://youtu.be/kD36fI4tUwo) -->
-
 <!-- - [Unit 16 Part 4](https://youtu.be/ZVlrsp3V7EI) -->
-
 <!-- - [Quiz review and Unit 11 Part 1](https://youtu.be/ewLoNMcfmEg) -->
-
 <!-- - [Unit 11 Part 2](https://youtu.be/nt4vrotLyTg) -->
-
 <!-- - [Unit 11 Part 3](https://youtu.be/tKyDQmF5SE8) -->
-
 <!-- - [Final Exam Review Part 1](https://youtu.be/tD_njPZHALQ) -->
-
 <!-- - [Final Exam Review Part 2](https://youtu.be/S6PGzhcJkkg) -->
-
 <!-- - [Final Exam Review Part 3](https://youtu.be/HkVrMEWlW8c) -->
-
 <!-- - [Final Exam Review Part 4](https://youtu.be/04bTN_tlOMU) -->
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/selfintroduction.pdf">Know your Instructor</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/build/math.pdf">Math Supplement</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/build/economics.pdf">Economics in my eye</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a>
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
@@ -1014,13 +759,11 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit9Supplement.pdf">Unit 9 Supplement</a></li>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit9QuizSupplement.pdf">Unit 9 Quiz Supplement: shift in wage-setting curve</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a>
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Exponential_discounting">Exponential Discounting</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Hyperbolic_discounting">Hyperbolic Discounting</a></li>
@@ -1028,22 +771,18 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li><a href="https://en.wikipedia.org/wiki/Gini_coefficient#Definition">Gini Coefficient</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a>
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Alan_Greenspan#Housing_bubble">Alan Greenspan: the market value of global long-term securities is approaching $100 trillion</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit13QuizSolution.pdf">Unit 13 Quiz Solution</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSpring2022/build/Unit14Supplement.pdf">Unit 14 Supplement</a></li>
 </ul></li>
 <li><a href="pdf/PrincipleMacroSpring2022/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=iG1U-Qb38z0">Swift Sanctions on Russia: How Cutting Off Banks Applies Pressure | WSJ</a></li>
 <li><a href="https://www.reddit.com/r/Unexpected/comments/t5vu5s/explaining_the_stock_market_in_russia_right_now/?utm_medium=android_app&amp;utm_source=share">Explaining the stock market in Russia right now</a></li>
@@ -1053,7 +792,6 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <li><a href="pdf/PrincipleMacroSpring2022/build/midterm_review.pdf">Midterm Review</a>
 <!-- - [Why is Ukraine the West's Fault? Featuring John Mearsheimer](https://youtu.be/JrMiSQAGOS4?t=2618) --></li>
 </ul>
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -1062,25 +800,18 @@ Such decision determines a new price of investment goods, and thus endogenously 
 <guid>https://huijunchen9260.github.io/WebsiteCreation.html</guid>
 <pubDate>Wed, 01 Dec 2021 00:20:19 -0500</pubDate>
 <description><![CDATA[<h1 id="how-do-i-create-this-website">How do I create this website</h1>
-
 <p>I have two goals to share with you in this blog post:</p>
-
 <ol>
 <li>How to use a <a href="https://pedantic.software/git/blogit">blogit</a> to systematically build your website, and</li>
 <li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blogit</a>.</li>
 </ol>
-
 <p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260&#47;websrc</a> repository.</p>
-
 <h2 id="the-reason">The Reason</h2>
-
 <p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
-
 <p>Long story short, it is mainly because the conflict between my desire to customize everything to the way I like and my laziness to not really make such repeatable effort in terms of customization.
 On the one hand, decent blog post <a href="http://john.ankarstrom.se/html/">Write HTML in HTML</a> shows probably the final stage of a Linux user who just cannot stop but customize everything in their website: write everything in HTML.
 However, I don&#8217;t want to write my own website in HTML.
 Probably I am not in that stage yet.</p>
-
 <p>On the other hand, to avoid writing in HTML, most of the current static site generators are full of fancy themes and JavaScript.
 All the outcome of contemporary static site generators are great.
 They are dedicated designed to look great without any effort.
@@ -1089,44 +820,33 @@ If you are lucky and find a theme that do everything for you, and probably not a
 Sadly, I <em>AM</em> a very needy person.
 I really want everything to be exactly as the way I want them to be, and such restriction made by the theme author just drives me crazy when I try to update my website.
 Eventually, I realize that the upfront cost to customize my website is too large, and I just don&#8217;t update my blog for like two years.</p>
-
 <p>That is to say, I fall into a paradox.
 On one side of the spectrum, I really want to customize everything.
 On the other side, I really don&#8217;t want to pay the effort.
 That&#8217;s why I need to find a sweet spot between these two extremes.</p>
-
 <h2 id="why-blogit">Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
-
 <p>Because it is simple.</p>
-
 <p>It is simple enough for me to understand every detail, but do the heavy-duty for me.
 (still not <em>every</em> to be honest, that is exaggeration)
 <a href="https://pedantic.software/git/blogit">blogit</a> is nothing but just a Makefile which insert HTML tags into the Markdown file to make it become a HTML page.
 I don&#8217;t know what&#8217;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
 Thankfully, once it is done, it is so simple and magic.
 Every tags are precisely placed in corresponding webpages, and automatically generate a list of articles that every blog need.</p>
-
 <p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &#8220;settings&#8221; just confuses me.</p>
-
 <h2 id="butblogit-is-only-for-blogs">But&#8230;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
-
 <p>Yes, that is true, and I am not satisfied with that.
 A good personal website in my opinion should include individual pages for specific purposes.
 For example, pages for <a href="research.html">Research</a>, <a href="teaching.html">Teaching</a>, and last link for <a href="blog.html">Blog</a> are necessary for a Ph.D. student website.
 In order to achieve this, I rewrite the code to generate <code>blog&#47;index.html</code> in the Makefile to also generate <code>blog&#47;teaching.html</code>.
 The logic to generate this page is to use the existing tags system:</p>
-
 <ol>
 <li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
 <li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &#8220;Under Construction&#8221;.</li>
 <li>Otherwise, we enter the stage of creating <a href="teaching.html">Teaching</a> page:
-
 <ol>
 <li>Using <code>git</code> command to extract the modified date for each markdown file, and update <code>DATE_EDITED</code>.
-
 <ul>
 <li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"</code>
-
 <ul>
 <li><code>git log</code> create a log file and enter a pager.</li>
 <li><code>git log -1</code> shows the log file on last commit (<code>-1</code> part).</li>
@@ -1137,9 +857,7 @@ The logic to generate this page is to use the existing tags system:</p>
 <li>If there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
 </ol></li>
 </ol>
-
 <p>The corresponding code block is also listed below:</p>
-
 <pre><code class="language-make">blog&#47;teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates&#47;,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
     mkdir -p blog
     TITLE="$(BLOG_TITLE)"; \
@@ -1194,11 +912,8 @@ The logic to generate this page is to use the existing tags system:</p>
     envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@; \
     envsubst &#60; templates&#47;footer.html &#62;&#62; $@
 </code></pre>
-
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
-
 <p>Updates 2022-02-10: added methods to add modified dates</p>
-
 <p>;tags: Miscellaneous Technology</p>]]></description>
 </item>
 <item>
@@ -1207,13 +922,9 @@ The logic to generate this page is to use the existing tags system:</p>
 <guid>https://huijunchen9260.github.io/TaxUncertainty.html</guid>
 <pubDate>Mon, 29 Nov 2021 00:56:38 -0500</pubDate>
 <description><![CDATA[<h1 id="uncertain-taxation-government-transfer-and-household-inequality">Uncertain Taxation, Government Transfer, and Household Inequality</h1>
-
 <p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
-
 <p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
-
 <h3 id="abstract">Abstract</h3>
-
 <p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
 Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
 Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
@@ -1223,7 +934,6 @@ When risk aversion is higher, the rich maintain similar levels of consumption by
 Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
 Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
 As a result, lump-sum transfer mitigates some effects of the uncertainty but worsens wealth inequality.</p>
-
 <p>;tags: Working</p>]]></description>
 </item>
 <item>
@@ -1232,15 +942,10 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <guid>https://huijunchen9260.github.io/CSE5523Notes.html</guid>
 <pubDate>Sun, 28 Nov 2021 09:15:05 -0500</pubDate>
 <description><![CDATA[<h1 id="machine-learning-autumn-2021">Machine Learning, Autumn 2021</h1>
-
 <p>CSE 5523, The Ohio State University, Autumn 2021</p>
-
 <p><a href="https://www.asc.ohio-state.edu/schuler.77/courses/5523/">Course Website</a></p>
-
 <p><a href="pdf/CSE5523/CSE5523ProjectPresentation.pdf">Slides for 5min Presentation</a></p>
-
 <p><a href="pdf/CSE5523/CSE5522FinalProjectReport.pdf">Final Project</a></p>
-
 <p>Economics has a long tradition in processing data that holds a different view compared with Computer science.
 Applied Economists dig into data to find the correlation and causality between different factors, while Computer scientists have developed Machine Learning to predict out-of-sample data points.
 In other words, Economists try to interpret data in the past to understand the causality, while Computer scientists try to make future predictions based on the pattern existing in the data.
@@ -1249,7 +954,6 @@ My result shows that
 (1) linear interpretation is good within-sample interpretation but performs devastatingly in out-of-sample prediction,
 (2) trained with long enough epochs, the recurrent neural network can reach the interpretation power of linear regression, but maintaining good enough out-of-sample predictions power requires a high number of layers, and
 (3) Both GRU and LSTM performs generally better than SimpleRNN, and the design of reset gate in GRU can prevent noise from outliers, while the outcome generated by LSTM exacerbates with outliers.</p>
-
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
 <item>
@@ -1258,13 +962,9 @@ My result shows that
 <guid>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</guid>
 <pubDate>Sun, 28 Nov 2021 00:32:14 -0500</pubDate>
 <description><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
-
 <p>ECON 2002.01, The Ohio State University, Summer 2021</p>
-
 <p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
-
 <h2 id="lecture-videos">Lecture Videos</h2>
-
 <ul>
 <li><a href="https://youtu.be/j2xNxtsa2Uk">Unit 1</a></li>
 <li><a href="https://youtu.be/bmlgp_Pqecw">Unit 2</a></li>
@@ -1283,9 +983,7 @@ My result shows that
 <li><a href="https://youtu.be/auswkrj7OOM">Unit 16</a></li>
 <li><a href="https://youtu.be/tfpdEXwhnyY">Unit 17</a></li>
 </ul>
-
 <h2 id="lecture-notes">Lecture Notes</h2>
-
 <ul>
 <li><a href="pdf/PrincipleMacroSummer2021/math.pdf">Math Supplement</a></li>
 <li><a href="pdf/PrincipleMacroSummer2021/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
@@ -1302,7 +1000,6 @@ My result shows that
 <li><a href="pdf/PrincipleMacroSummer2021/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
 <li><a href="pdf/PrincipleMacroSummer2021/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
 </ul>
-
 <p>;tags: Teaching</p>]]></description>
 </item>
 </channel>

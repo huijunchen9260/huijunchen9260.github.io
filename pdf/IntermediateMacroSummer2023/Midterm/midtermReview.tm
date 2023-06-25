@@ -25,8 +25,8 @@
 
   The competitive equilibrium given a set of exogenous variables
   <math|<around*|{|G,z,K<rsup|s>|}>>, is a set of allocations
-  <math|<around*|{|___,K<rsup|d\<ast\>>|}>> and prices
-  <math|<around*|{|w<rsup|\<ast\>>,r<rsup|\<ast\>>|}>> such that
+  <math|<around*|{|Y<rsup|\<ast\>>,C<rsup|\<ast\>>,l<rsup|\<ast\>>,N<rsup|s\<ast\>>,N<rsup|d\<ast\>>,\<pi\><rsup|\<ast\>>,T<rsup|\<ast\>><rsup|*>,K<rsup|d\<ast\>>|}>>
+  and prices <math|<around*|{|w<rsup|\<ast\>>,r<rsup|\<ast\>>|}>> such that
 
   <\enumerate-numeric>
     <item>Taken prices and __ as given, consumers solves\ 
@@ -92,6 +92,10 @@
     <item><math|r=MPK=z<around*|(|N<rsup|d>|)><rsup|1-a> a
     <around*|(|K<rsup|d>|)><rsup|a-1>>
 
+    <math|<frac|\<partial\> z <around*|(|K<rsup|d>|)><rsup|a>
+    <around*|(|N<rsup|d>|)><rsup|1-a>|\<partial\> K<rsup|d>>=a
+    z<around*|(|N<rsup|d>|)><rsup|1-a><around*|(|K<rsup|d>|)><rsup|a-1> >
+
     <item>Social planner's problem is
 
     <\eqnarray*>
@@ -103,6 +107,16 @@
       <tformat|<table|<row|<cell|>|<cell|max<rsub|l>>|<cell|<frac|<around*|(|z
       K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|1-b>|1-b>+<frac|l<rsup|1-d>|1-d>>>|<row|<cell|s.t.>|<cell|>|<cell|K=2>>>>
     </eqnarray*>
+
+    <math|<frac|<around*|(|z K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|1-b>|1-b>\<Rightarrow\><around*|(|1-b|)>
+    <frac|<around*|(|z K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|1-b-1>|1-b>\<Rightarrow\><around*|(|z
+    K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|-b>>
+
+    <math|z K<rsup|a> <around*|(|1-l|)><rsup|1-a>\<Rightarrow\><around*|(|1-a|)>z
+    K<rsup|a> <around*|(|1-l|)><rsup|1-a-1>\<Rightarrow\>z<around*|(|K<rsup|a>|)>
+    <around*|(|<around*|(|1-l|)><rsup|-a>|)>>
+
+    <math|<around*|(|1-l|)>\<Rightarrow\>-1>
 
     <\equation>
       l<rsup|-d>-z<around*|(|K<rsup|a>|)>
@@ -119,6 +133,13 @@
       <around*|(|K<rsup|a>|)> <around*|(|1-l|)><rsup|1-a>-G|)>|)><rsup|-b>
       <around*|(|1-a|)>
     </equation>
+
+    <math|l<rsup|-d>=z K<rsup|a><around*|(|1-l|)><rsup|-a> z<rsup|-b>
+    K<rsup|-a b> <around*|(|1-l|)><rsup|-b
+    <around*|(|1-a|)>><around*|(|1-a|)>>
+
+    <math|<frac|l<rsup|-d>|<around*|(|1-l|)><rsup|-a-b
+    <around*|(|1-a|)>>>=<around*|(|1-a|)> z<rsup|1-b> K<rsup|a-a b>>
 
     <item><math|z=1,G=0,a=<frac|1|2>,b=2,d=<frac|3|2>,> what is
     <math|l,N,w,r>?
@@ -141,7 +162,10 @@
 
     <item><math|D<rsub|N> U<around*|(|C,N|)>=-b>
 
-    <item><math|MRS<rsub|N,C>=<frac|D<rsub|N>U|D<rsub|C>U>=-b C>
+    <item><math|MRS<rsub|N,C>=<frac|D<rsub|N>U|D<rsub|C>U>=-<frac|b|1/C>=-b
+    C>
+
+    <math|N=1-l\<Rightarrow\>MRS<rsub|l,C>=-MRS<rsub|N,C>=b C>
 
     <item><math|MRS<rsub|N,C>=>After-tax wage rate<math|=w<around*|(|1-t|)>>
 

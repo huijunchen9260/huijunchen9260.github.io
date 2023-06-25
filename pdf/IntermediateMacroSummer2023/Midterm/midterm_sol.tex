@@ -8,11 +8,11 @@
 
 \usepackage[outputdir=build,cache=true]{minted} % for code chuck and syntax highlighting
 % \colorlet{verylightgray}{gray!20}
-%% shortcuts for julia code chuck
-\newminted{julia}{}
-\newmintinline{julia}{}
-\setmintedinline[julia]{bgcolor=gray!20}
-\setminted[julia]{bgcolor=gray!20}
+%% shortcuts for python code chuck
+\newminted{python}{}
+\newmintinline{python}{}
+\setmintedinline[python]{bgcolor=gray!20}
+\setminted[python]{bgcolor=gray!20}
 
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -126,13 +126,13 @@
 \begin{document}
 
 % \setcounter{section}{}
-\centerline{\huge\bf ECON 4002.02 Midterm Exam}
+\centerline{\huge\bf ECON 4002.01 Midterm Exam}
 \smallskip
 \centerline{\LARGE Hui-Jun Chen}
 
 \medskip
 
-% \showAns
+\showAns
 % \listofanswer
 
 \section*{Instruction}
@@ -144,7 +144,7 @@ All numerical answers written on the exam sheet are supposed to \red{\textbf{rou
 \footnote{round to the second decimal points means that if the third decimal point is a number between $ 0 $ to $ 4 $, then just get rid of the third decimal point. On the other hand, if the third decimal point is a number between $ 5 $ to $ 9 $, then round the second decimal point up by adding $ 1 $ to the second decimal point number. For example, if the answer you get is $ 0.534 $, then round it to $ 0.53 $. Yet, if the answer is $ 0.535 $, then round it up to $ 0.54 $.}
 unless otherwise noted.
 
-However, if you choose to use software to calculate the numerical answer, \textbf{do not} use the rounded answer from previous question to calculate; use the unrounded answer to calculate.
+However, if you choose to use software to calculate the numerical answer, \textbf{do not} use the rounded answer from previous question to calculate; use the un-rounded answer to calculate.
 
 
 % For all algebraic answers,
@@ -160,6 +160,9 @@ However, if you choose to use software to calculate the numerical answer, \textb
 You \textbf{may} consult any note and textbook, but you \textbf{cannot} discuss with your classmate or any other person about the exam.
 
 For numerical answer, you are \textbf{recommended} to use software to calculate answers.
+
+The written answer should be recognizable.
+If I cannot recognize the answer you wrote, then I may not be able to give you credit.
 
 There will be one T/F choice question that is worth 2 points on the answer sheet. The T/F choice question is to confirm: ``\textbf{I affirm that I have not received or given any unauthorized help on this exam, and that all work is my own.}''
 
@@ -362,40 +365,77 @@ Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ 
 
 \Question \label{taxnumerics} According to Laffer curve, there's also another tax rate $ t_{2} $ such that it can also generate same amount of revenue to pay for the government spending you've calculated \ref{G}. What is $ t_{2} $? $ t_{2} \approx $~\answer{$ 0.9387 \approx 0.94 $}
 
-If you want to solve \ref{taxnumerics} numerically, you can use the following code chuck and supplement the corresponding $ N $ and $ w $:
+If you want to solve \ref{taxnumerics} numerically, you can open the following link to get a \pythoninline{python} terminal:
 
-\begin{juliacode}
-z = 1; a = 0.33; b = 2.15; tnum = 1000
-tgrid = collect( range(0.01, 0.99, length = tnum) )
-Gvec = Array{Float64, 1}(undef, tnum)
-for indt = 1:1:tnum
-    t = tgrid[indt]
-    N = your answer in 37
-    w = z * your answer in 31
-    Gtarget = your answer in 41
-    G = w*t*N
-    if abs(G - Gtarget) < 1e-4
-        println("another tax rate is $t at $indt")
-    end
-    Gvec[indt] = G
-end
+\url{https://www.online-python.com/}
 
-\end{juliacode}
+and use \pythoninline{q2.py} file in the Carmen module \pythoninline{Midterm} or copy from the code at the end of this file to the online python terminal.
+Note that if you copy the code from this pdf file, you need to make sure that all indentation/space is correct.
 
-Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$,
+% use the following code chuck and supplement the corresponding $ N $ and $ w $:
 
-\Question the optimal tax rate $ t^{*} =  $ ~\answer{$0.76768 \approx 0.77$},
+% \begin{pythoncode}
+% z = 1; a = 0.33; b = 2.15; tnum = 1000
+% tgrid = collect( range(0.01, 0.99, length = tnum) )
+% Gvec = Array{Float64, 1}(undef, tnum)
+% for indt = 1:1:tnum
+%     t = tgrid[indt]
+%     N = your answer in 37
+%     w = z * your answer in 31
+%     Gtarget = your answer in 41
+%     G = w*t*N
+%     if abs(G - Gtarget) < 1e-4
+%         println("another tax rate is $t at $indt")
+%     end
+%     Gvec[indt] = G
+% end
+
+% \end{pythoncode}
+
+\Question Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$, the optimal tax rate $ t^{*} =  $ ~\answer{$0.76768 \approx 0.77$},
 
 \Question \label{Rmax} and the optimal labor tax revenue $ R(t^{*}) =  $ ~\answer{$0.09285 \approx 0.0929$}
     (\textbf{For this question, please round to the fourth decimal point})
 
-If you want to solve the above two questions numerically, you can use the following code chuck (need to let the above code chuck to run first):
+% If you want to solve the above two questions numerically, you can use the following code chuck (need to let the above code chuck to run first):
 
-\begin{juliacode}
-    Gmax = maximum(Gvec)
-    tmax = tgrid[argmax(Gvec)]
-    println("optimal t* = $tmax, optimal G* = $Gmax")
-\end{juliacode}
+You can play with this code and explore more!
+
+\begin{pythoncode}
+import numpy as np
+
+tvec = np.linspace(0, 0.9999, 1000)
+gvec = np.zeros(1000)
+
+z = 1
+a = 0.33
+b = 2.15
+
+t = 0.5
+N = ( a*(1-t) ) / ( b*(a*(1-t) + (1-a)) )
+w = z*a*N**(a-1)
+G = w*t*N
+Gtarget = G
+
+i = -1
+for t in tvec:
+    i = i + 1
+    N = ( a*(1-t) ) / ( b*(a*(1-t) + (1-a)) )
+    w = z*a*N**(a-1)
+    G = w*t*N
+    gvec[i] = G
+    if abs(Gtarget - G) < 0.0001:
+        print(f't = {t}, G = {G}, \
+                Gtarget - G = {Gtarget - G}')
+
+
+maxG = np.max(gvec)
+maxtax = tvec[np.argmax(gvec)]
+print(f'maximum G is {maxG} at tax rate {maxtax}')
+
+\end{pythoncode}
+
+
 
 \end{Exercise}
 

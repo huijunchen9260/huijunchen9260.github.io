@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.33}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.15}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{tnum}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1000}
+\PYG{n}{tgrid}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{collect}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mf}{0.01}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.99}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{length}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tnum}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{)}
+\PYG{n}{Gvec}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kt}{Array}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}(}\PYG{n+nb}{undef}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tnum}\PYG{p}{)}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indt}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{tnum}
+\PYG{+w}{    }\PYG{n}{t}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tgrid}\PYG{p}{[}\PYG{n}{indt}\PYG{p}{]}
+\PYG{+w}{    }\PYG{n}{N}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{your}\PYG{+w}{ }\PYG{n}{answer}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m+mi}{37}
+\PYG{+w}{    }\PYG{n}{w}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{z}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{your}\PYG{+w}{ }\PYG{n}{answer}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m+mi}{31}
+\PYG{+w}{    }\PYG{n}{Gtarget}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{your}\PYG{+w}{ }\PYG{n}{answer}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m+mi}{41}
+\PYG{+w}{    }\PYG{n}{G}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{w}\PYG{o}{*}\PYG{n}{t}\PYG{o}{*}\PYG{n}{N}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{n}{abs}\PYG{p}{(}\PYG{n}{G}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{Gtarget}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mf}{1e\PYGZhy{}4}
+\PYG{+w}{        }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}another tax rate is }\PYG{l+s+si}{\PYGZdl{}t}\PYG{l+s}{ at }\PYG{l+s+si}{\PYGZdl{}indt}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{end}
+\PYG{+w}{    }\PYG{n}{Gvec}\PYG{p}{[}\PYG{n}{indt}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{G}
+\PYG{k}{end}
+
+\end{Verbatim}

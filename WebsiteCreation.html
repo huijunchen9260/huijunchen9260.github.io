@@ -10,25 +10,18 @@
 <body>
 <main>
 <h1 id="how-do-i-create-this-website">How do I create this website</h1>
-
 <p>I have two goals to share with you in this blog post:</p>
-
 <ol>
 <li>How to use a <a href="https://pedantic.software/git/blogit">blogit</a> to systematically build your website, and</li>
 <li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blogit</a>.</li>
 </ol>
-
 <p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260&#47;websrc</a> repository.</p>
-
 <h2 id="the-reason">The Reason</h2>
-
 <p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
-
 <p>Long story short, it is mainly because the conflict between my desire to customize everything to the way I like and my laziness to not really make such repeatable effort in terms of customization.
 On the one hand, decent blog post <a href="http://john.ankarstrom.se/html/">Write HTML in HTML</a> shows probably the final stage of a Linux user who just cannot stop but customize everything in their website: write everything in HTML.
 However, I don&#8217;t want to write my own website in HTML.
 Probably I am not in that stage yet.</p>
-
 <p>On the other hand, to avoid writing in HTML, most of the current static site generators are full of fancy themes and JavaScript.
 All the outcome of contemporary static site generators are great.
 They are dedicated designed to look great without any effort.
@@ -37,44 +30,33 @@ If you are lucky and find a theme that do everything for you, and probably not a
 Sadly, I <em>AM</em> a very needy person.
 I really want everything to be exactly as the way I want them to be, and such restriction made by the theme author just drives me crazy when I try to update my website.
 Eventually, I realize that the upfront cost to customize my website is too large, and I just don&#8217;t update my blog for like two years.</p>
-
 <p>That is to say, I fall into a paradox.
 On one side of the spectrum, I really want to customize everything.
 On the other side, I really don&#8217;t want to pay the effort.
 That&#8217;s why I need to find a sweet spot between these two extremes.</p>
-
 <h2 id="why-blogit">Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
-
 <p>Because it is simple.</p>
-
 <p>It is simple enough for me to understand every detail, but do the heavy-duty for me.
 (still not <em>every</em> to be honest, that is exaggeration)
 <a href="https://pedantic.software/git/blogit">blogit</a> is nothing but just a Makefile which insert HTML tags into the Markdown file to make it become a HTML page.
 I don&#8217;t know what&#8217;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
 Thankfully, once it is done, it is so simple and magic.
 Every tags are precisely placed in corresponding webpages, and automatically generate a list of articles that every blog need.</p>
-
 <p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &#8220;settings&#8221; just confuses me.</p>
-
 <h2 id="butblogit-is-only-for-blogs">But&#8230;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
-
 <p>Yes, that is true, and I am not satisfied with that.
 A good personal website in my opinion should include individual pages for specific purposes.
 For example, pages for <a href="research.html">Research</a>, <a href="teaching.html">Teaching</a>, and last link for <a href="blog.html">Blog</a> are necessary for a Ph.D. student website.
 In order to achieve this, I rewrite the code to generate <code>blog&#47;index.html</code> in the Makefile to also generate <code>blog&#47;teaching.html</code>.
 The logic to generate this page is to use the existing tags system:</p>
-
 <ol>
 <li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
 <li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &#8220;Under Construction&#8221;.</li>
 <li>Otherwise, we enter the stage of creating <a href="teaching.html">Teaching</a> page:
-
 <ol>
 <li>Using <code>git</code> command to extract the modified date for each markdown file, and update <code>DATE_EDITED</code>.
-
 <ul>
 <li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"</code>
-
 <ul>
 <li><code>git log</code> create a log file and enter a pager.</li>
 <li><code>git log -1</code> shows the log file on last commit (<code>-1</code> part).</li>
@@ -85,9 +67,7 @@ The logic to generate this page is to use the existing tags system:</p>
 <li>If there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
 </ol></li>
 </ol>
-
 <p>The corresponding code block is also listed below:</p>
-
 <pre><code class="language-make">blog&#47;teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates&#47;,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
     mkdir -p blog
     TITLE="$(BLOG_TITLE)"; \
@@ -142,9 +122,7 @@ The logic to generate this page is to use the existing tags system:</p>
     envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@; \
     envsubst &#60; templates&#47;footer.html &#62;&#62; $@
 </code></pre>
-
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
-
 <p>Updates 2022-02-10: added methods to add modified dates</p>
 <p><i> Article tags:
 <a href="./@Miscellaneous.html">Miscellaneous</a> 
