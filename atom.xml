@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2023-07-06T14:34:04Z</updated>
+<updated>2023-07-28T15:17:20Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -384,6 +384,19 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <updated>2022-09-01T22:10:25Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-tikz">Note on Tikz</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</a></li>
+<li><a href="#create-a-bezier-curve">Create a &#8220;bezier curve&#8221;</a></li>
+<li><a href="#define-points-on-arbitrary-curve">Define points on arbitrary curve</a></li>
+<li><a href="#get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</a></li>
+<li><a href="#draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</a></li>
+<li><a href="#decoration-brace">Decoration: brace</a></li>
+<li><a href="#intersection-between-two-curves">Intersection between two curves</a></li>
+<li><a href="#change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</a></li>
+<li><a href="#calculation-points">Calculation points</a></li>
+</ul>
+<!-- vim-markdown-toc -->
 <h2 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h2>
 <ul>
 <li><p>We can separate the definition of the desired point from the label of the point, e.g.:</p>
