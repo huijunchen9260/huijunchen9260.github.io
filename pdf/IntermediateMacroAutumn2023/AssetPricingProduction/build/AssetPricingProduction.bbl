@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This bbl file is created by econ.bst ver.3.0
+%  The latest econ.bst is available at
+%  <https://github.com/ShiroTakeda/econ-bst>
+
+%%% Definition of \bysame
+\ifx\undefined\bysame
+\newcommand{\bysame}{\hskip.3em \leavevmode\rule[.5ex]{3em}{.3pt}\hskip0.5em}
+\fi
+
+\begin{thebibliography}{xxx}
+
+\harvarditem[Lucas]{Lucas}{1978}{Lucas_1978}
+Lucas, Robert~E. (1978) ``Asset Prices in an Exchange Economy,''
+  \textit{Econometrica}, 46 (6),  1429,
+  \href{http://dx.doi.org/10.2307/1913837}{\urlstyle{rm}
+  \nolinkurl{10.2307/1913837}}.
+
+\end{thebibliography}

@@ -1,0 +1,4 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Value of Share}{3}{0}{1}
+\beamer@sectionintoc {2}{Risk Premium}{9}{0}{2}
+\beamer@sectionintoc {3}{Appendix}{15}{0}{3}

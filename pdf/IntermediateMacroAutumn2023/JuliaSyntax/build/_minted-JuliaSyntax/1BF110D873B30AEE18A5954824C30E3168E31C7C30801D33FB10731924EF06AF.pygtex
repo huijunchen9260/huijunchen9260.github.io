@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indG}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{Gnum}
+\PYG{+w}{        }\PYG{n}{Gval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Ggrid}\PYG{p}{[}\PYG{n}{indG}\PYG{p}{]}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indz}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{znum}
+\PYG{+w}{            }\PYG{n}{zval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zgrid}\PYG{p}{[}\PYG{n}{indz}\PYG{p}{]}
+\PYG{+w}{            }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indl}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{lnum}
+\PYG{+w}{                }\PYG{n}{lval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{lgrid}\PYG{p}{[}\PYG{n}{indl}\PYG{p}{]}
+\PYG{+w}{                }\PYG{n}{cval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zval}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{lval}\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{Gval}
+\PYG{+w}{                }\PYG{n}{uvec}\PYG{p}{[}\PYG{n}{indl}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{utility}\PYG{p}{(}\PYG{n}{lval}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{zval}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Gval}\PYG{p}{)}
+\PYG{+w}{            }\PYG{k}{end}
+\PYG{+w}{            }\PYG{n}{ustar}\PYG{p}{[}\PYG{n}{indz}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{indG}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maximum}\PYG{p}{(}\PYG{n}{uvec}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{    }\PYG{k}{end}
+\end{Verbatim}
