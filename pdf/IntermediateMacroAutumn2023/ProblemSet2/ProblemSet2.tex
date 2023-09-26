@@ -11,6 +11,7 @@
 %\usepackage{automata}
 \usepackage{times}
 \usepackage{ltablex}
+\usepackage{tasks}
 
 %%%%%% Template
 \usepackage{hyperref}
@@ -53,21 +54,103 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\\ \textcolor{blue}{#1}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\title{Problem Set 2}
+\author{Hui-Jun Chen}
+
 \begin{document}
 
-% \setcounter{section}{}
-\centerline{\huge\bf Problem Set 2}
-\smallskip
-\centerline{\LARGE Hui-Jun Chen}
+\maketitle
 
-\medskip
+% \showAns
+% \listofanswer
 
-\section*{Instruction}
+% \section*{Instruction}
 
-% Due at 11:59 PM (Eastern Time) on Sunday, June 14, 2022.
+% % Due at 11:59 PM (Eastern Time) on Sunday, June 14, 2022.
 
-Please answer this problem set on Carmen quizzes ``Problem Set 2''. In the following problems, the part that is in \textbf{\red{red and bold}} are the order of questions that should be answered on Carmen quizzes.
+% Please answer this problem set on Carmen quizzes ``Problem Set 2''. In the following problems, the part that is in \textbf{\red{red and bold}} are the order of questions that should be answered on Carmen quizzes.
 
+\begin{Exercise}
 
 \section*{Problem 1}
 
@@ -116,8 +199,16 @@ Remember the Example in Lecture 8.
 
 Fill the following blanks for the step-by-step guide for algebraic calculation:
 
-\begin{enumerate}
-    \item Step 1: Impose Market clear condition, so shrink all $ 7 $ equations to \textbf{\red{\underline{\quad Q1 \quad}}} equations
+    Step 1: Impose Market clear condition, so shrink all $ 7 $ equations to \textbf{\red{\underline{\quad Q1 \quad}}} equations
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task 4
+        \task 5
+        \task 6
+        \task 7
+    \end{tasks}
 
     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
     %
@@ -152,7 +243,7 @@ Fill the following blanks for the step-by-step guide for algebraic calculation:
             \label{eq:profitDef}
     \end{align}
     %
-    \item Step 2: replace $ l $ in terms of $ N $ using $ l = 1-N $
+    Step 2: replace $ l $ in terms of $ N $ using $ l = 1-N $
 
     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
     %
@@ -166,6 +257,24 @@ Fill the following blanks for the step-by-step guide for algebraic calculation:
             \label{eq:binding_budget}
     \end{align}
     %
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $1 - N$
+        \task $ 2  - N $
+        \task $ N - 1 $
+        \task $ 2 - N $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ N - 3 $
+        \task $ N - 2 $
+        \task $ N - 1 $
+        \task $ N $
+    \end{tasks}
 
     Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
     %
@@ -183,7 +292,7 @@ Fill the following blanks for the step-by-step guide for algebraic calculation:
             \label{eq:profitDef}
     \end{align}
     %
-    \item Step 3: replace $ \pi $ and $ Y $ as $ N $
+    Step 3: replace $ \pi $ and $ Y $ as $ N $
 
     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
     %
@@ -210,28 +319,68 @@ Fill the following blanks for the step-by-step guide for algebraic calculation:
             \label{eq:profitDef}
     \end{align}
     %
-    \item Step 4: Substitute $ \pi( N ) $ into Binding budget constraint and get
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ N $
+        \task $ 2 N $
+        \task $ N^{\frac{1}{2}} $
+        \task $ N^{\frac{1}{4}} $
+    \end{tasks}
+
+    Step 4: Substitute $ \pi( N ) $ into Binding budget constraint and get
     %
     \begin{equation}
     \label{eq:C_as_function_of_N}
         C = (\textbf{\red{\underline{\quad Q5 \quad}}})
     \end{equation}
     %
-    \item Step 5: With consumer's FOC and firm's FOC both equate to $ w $, we can get another expression of $ C $:
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ N$
+        \task $ N^{\frac{1}{2}} $
+        \task $ N^{\frac{1}{4}} $
+        \task $ N^{\frac{1}{8}} $
+    \end{tasks}
+
+    Step 5: With consumer's FOC and firm's FOC both equate to $ w $, we can get another expression of $ C $:
     %
     \begin{equation}
     \label{eq:C_as_function_of_N_ver_2}
         C = (\textbf{\red{\underline{\quad Q2 \quad}}}) \times  (\textbf{\red{\underline{\quad Q6 \quad}}})
     \end{equation}
     %
-    \item Step 6: Let \eqref{eq:C_as_function_of_N} equate \eqref{eq:C_as_function_of_N_ver_2} and we get $ N $ as
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \frac{1}{2} N^{- \frac{1}{2}} $
+        \task $ \frac{1}{2} N $
+        \task $ \frac{1}{4} N^{- \frac{1}{2}} $
+        \task $ \frac{1}{2} N $
+    \end{tasks}
+
+    Step 6: Let \eqref{eq:C_as_function_of_N} equate \eqref{eq:C_as_function_of_N_ver_2} and we get $ N $ as
     %
     \begin{equation}
     \label{eq:Nvalue}
         N = (\textbf{\red{\underline{\quad Q7 \quad}}})
     \end{equation}
     %
-    \item Step 7: Trace back to all unknowns given the value of $ N $, we get
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1 $
+        \task $ \frac{1}{2} $
+        \task $ \frac{1}{3} $
+        \task $ \frac{1}{4} $
+    \end{tasks}
+
+    Step 7: Trace back to all unknowns given the value of $ N $, we get
     %
     \begin{align}
         C
@@ -251,8 +400,50 @@ Fill the following blanks for the step-by-step guide for algebraic calculation:
     \end{align}
     %
 
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} $
+        \task $ \sqrt{\frac{1}{4}} $
+        \task $ \sqrt{\frac{1}{5}} $
+        \task $ \sqrt{\frac{1}{6}} $
+    \end{tasks}
 
-\end{enumerate}
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{3}{4} $
+        \task $ \frac{1}{3} $
+        \task $ \frac{1}{4} $
+        \task $ \frac{2}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} $
+        \task $ \sqrt{\frac{1}{4}} $
+        \task $ \sqrt{\frac{1}{5}} $
+        \task $ \sqrt{\frac{1}{6}} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} - \frac{1}{3} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{3}} - \frac{1}{6} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{6}} - \frac{1}{3} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{6}} - \frac{1}{6} \sqrt{3}$
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} \sqrt{3} $
+        \task $ \frac{1}{2} \sqrt{2} $
+        \task $ \frac{1}{2} \sqrt{3} $
+        \task $ \frac{1}{2} \sqrt{2} $
+    \end{tasks}
 
 \section*{Problem 2}
 
@@ -277,6 +468,23 @@ Suppose also that the current technological level is $z=1$, the current stock of
     $ MPN =$ \textbf{\red{\underline{\quad Q14 \quad}}}
 \end{center}
 
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 0.333 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+        \task $ 3.333 $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ 0.333 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+        \task $ 3.333 $
+    \end{tasks}
 
 
 Suppose that the markets for capital and labor are competitive---that is, there are many firms (soybean farms) in Ohio, so that they are price-takers.
@@ -294,6 +502,51 @@ Suppose that the markets for capital and labor are competitive---that is, there 
 
     Total income $ R \times K + w \times L $  \textbf{\red{\underline{\quad Q19 \quad}}}
 \end{center}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} $
+        \task $ \frac{2}{3} $
+        \task $ \frac{3}{3} $
+        \task $ \frac{4}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} $
+        \task $ \frac{2}{3} $
+        \task $ \frac{3}{3} $
+        \task $ \frac{4}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ \frac{2000}{3} $
+        \task $ \frac{4000}{3} $
+        \task $ \frac{6000}{3} $
+        \task $ \frac{8000}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{2000}{3} $
+        \task $ \frac{4000}{3} $
+        \task $ \frac{6000}{3} $
+        \task $ \frac{8000}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 2000 $
+        \task $ 4000 $
+        \task $ 6000 $
+        \task $ 8000 $
+    \end{tasks}
 
 
 Now suppose that the demand for soybeans in Ohio are as follows. First, the demand for the consumption of soybeans is given as
@@ -324,6 +577,33 @@ where r is the real interest rate in percent. Finally, the demand for soybeans f
     $ C =  $   \textbf{\red{\underline{\quad Q22 \quad}}}
 \end{center}
 
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ 2 $
+        \task $ 3 $
+        \task $ 4 $
+        \task $ 5 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1500 $
+        \task $ 1400 $
+        \task $ 1300 $
+        \task $ 1200 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 2100 $
+        \task $ 2200 $
+        \task $ 2300 $
+        \task $ 2400 $
+    \end{tasks}
+
 
 (d) Suppose the Ohio state government reduces the taxation to $ T = 200 $ while maintaining the same spending of $ G = 400 $, as a part of COVID-19 stimulus package.
 What is the government surplus/deficit? What is the equilibrium interest rate, investment, and consumption after this government policy?
@@ -338,6 +618,42 @@ What is the government surplus/deficit? What is the equilibrium interest rate, i
     $ C =  $   \textbf{\red{\underline{\quad Q26 \quad}}}
 \end{center}
 
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 200 $
+        \task $ 400 $
+        \task $ -200 $
+        \task $ -400 $
+    \end{tasks}
+
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 2 $
+        \task $ 3 $
+        \task $ 4 $
+        \task $ 5 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 1500 $
+        \task $ 1400 $
+        \task $ 1300 $
+        \task $ 1200 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 2100 $
+        \task $ 2200 $
+        \task $ 2300 $
+        \task $ 2400 $
+    \end{tasks}
 
 Suppose instead that Ohio state residents' consumption demand also depends on the real interest rate:
 
@@ -349,7 +665,7 @@ Suppose instead that Ohio state residents' consumption demand also depends on th
 %
 That is, for every percentage point increase in the interest rate, the Ohio state resident would rather not consume 50 soybeans and save them instead.
 
-(e) Analyze again the effects of reduced taxation from $ T = 400 $ to $ T = 200 $, using the new consumption demand but using everything else the same as (d)
+(e) Analyze again the effects of reduced taxation to $ T = 200 $, using the new consumption demand but using everything else the same as (d)
 
 \begin{center}
     government surplus/deficit: $ T - G = $ \textbf{\red{\underline{\quad Q27 \quad}}}
@@ -361,6 +677,43 @@ That is, for every percentage point increase in the interest rate, the Ohio stat
     $ C =  $   \textbf{\red{\underline{\quad Q30 \quad}}}
 \end{center}
 
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 200 $
+        \task $ 400 $
+        \task $ -200 $
+        \task $ -400 $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 1.667 $
+        \task $ 2.667 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1537 $
+        \task $ 3212 $
+        \task $ 1233 $
+        \task $ 2367 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 1537 $
+        \task $ 3212 $
+        \task $ 1233 $
+        \task $ 2367 $
+    \end{tasks}
+
+\end{Exercise}
 
 
 \end{document}
