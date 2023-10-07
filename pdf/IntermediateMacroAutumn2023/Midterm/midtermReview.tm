@@ -21,7 +21,7 @@
     <item>consumer's utility function is <math|U<around*|(|C,l|)>=<frac|C<rsup|1-b>|1-b>+<frac|l<rsup|1-d>|1-d>>
   </itemize-dot>
 
-  <section|GE with capital endowment>
+  <section|Competitive equilibrium with capital endowment>
 
   The competitive equilibrium given a set of exogenous variables
   <math|<around*|{|G,z,K<rsup|s>|}>>, is a set of allocations
@@ -29,7 +29,7 @@
   and prices <math|<around*|{|w<rsup|\<ast\>>,r<rsup|\<ast\>>|}>> such that
 
   <\enumerate-numeric>
-    <item>Taken prices and __ as given, consumers solves\ 
+    <item>Taken prices and _<math|K<rsup|s>>_ as given, consumers solves\ 
 
     <\equation>
       max<rsub|C,l><frac|C<rsup|1-b>|1-b>+<frac|l<rsup|1-d>|1-d>
@@ -41,7 +41,7 @@
       C\<leqslant\>w<around*|(|h-l|)>+r K<rsup|s>+\<pi\>-T
     </equation>
 
-    <item>Taken prices and __ as given, firm solves
+    <item>Taken prices and _<math|z>_ as given, firm solves
 
     <\equation>
       max<rsub|K<rsup|d>,N<rsup|d>>z <around*|(|K<rsup|d>|)><rsup|a>
@@ -103,6 +103,10 @@
       K<rsup|a> N<rsup|1-a>>>|<row|<cell|>|<cell|>|<cell|N=1-l>>|<row|<cell|>|<cell|>|<cell|K=2>>>>
     </eqnarray*>
 
+    <math|C=z K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G>
+
+    <math|<frac|<around*|(|z K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|1-b>|1-b>+<frac|l<rsup|1-d>|1-d>>
+
     <\eqnarray*>
       <tformat|<table|<row|<cell|>|<cell|max<rsub|l>>|<cell|<frac|<around*|(|z
       K<rsup|a> <around*|(|1-l|)><rsup|1-a>-G|)><rsup|1-b>|1-b>+<frac|l<rsup|1-d>|1-d>>>|<row|<cell|s.t.>|<cell|>|<cell|K=2>>>>
@@ -134,12 +138,36 @@
       <around*|(|1-a|)>
     </equation>
 
-    <math|l<rsup|-d>=z K<rsup|a><around*|(|1-l|)><rsup|-a> z<rsup|-b>
-    K<rsup|-a b> <around*|(|1-l|)><rsup|-b
-    <around*|(|1-a|)>><around*|(|1-a|)>>
+    <math|l<rsup|-d>=z<around*|(|K<rsup|a>|)>
+    <around*|(|<around*|(|1-l|)><rsup|-a>|)><around*|[|<around*|(|z
+    <around*|(|K<rsup|a>|)> <around*|(|1-l|)><rsup|1-a>|)>|]><rsup|-b>
+    <around*|(|1-a|)>>
+
+    <math|<around*|[|<around*|(|z <around*|(|K<rsup|a>|)>
+    <around*|(|1-l|)><rsup|1-a>|)>|]><rsup|-b>=z<rsup|-b> K<rsup|-a
+    b><around*|(|1-l|)><rsup|-b<around*|(|1-a|)>>>
+
+    <math|l<rsup|-d>=z<around*|(|K<rsup|a>|)>
+    <around*|(|<around*|(|1-l|)><rsup|-a>|)>z<rsup|-b> K<rsup|-a
+    b><around*|(|1-l|)><rsup|-b<around*|(|1-a|)>> <around*|(|1-a|)>>
+
+    <math|l<rsup|-d>=<around*|(|1-a|)>z<rsup|1-b> K<rsup|a-a b>
+    <around*|(|1-l|)><rsup|-a-b<around*|(|1-a|)>> >
+
+    <\math>
+      \;
+
+      l<rsup|-d>=z K<rsup|a><around*|(|1-l|)><rsup|-a> z<rsup|-b> K<rsup|-a
+      b> <around*|(|1-l|)><rsup|-b <around*|(|1-a|)>><around*|(|1-a|)>
+    </math>
 
     <math|<frac|l<rsup|-d>|<around*|(|1-l|)><rsup|-a-b
     <around*|(|1-a|)>>>=<around*|(|1-a|)> z<rsup|1-b> K<rsup|a-a b>>
+
+    <math|<around*|(|<frac|l|<around*|(|1-l|)>>|)><rsup|-<frac|3|2>>=<frac|1|2>
+    z<rsup|-1> K<rsup|-<frac|1|2>>>
+
+    <math|l<around*|(|z,K|)>\<Rightarrow\>N<around*|(|z,K|)>=1-l<around*|(|z,K|)>\<Rightarrow\>w=MPN,r=MPK>
 
     <item><math|z=1,G=0,a=<frac|1|2>,b=2,d=<frac|3|2>,> what is
     <math|l,N,w,r>?
@@ -153,6 +181,7 @@
     <item>Cobb-Douglas production function: <math|Y=z N<rsup|a>>
 
     <item>Hansen (1985) utility function: <math|U<around*|(|C,N|)>=ln C-b N>
+    (before: <math|U<around*|(|C,l|)>=ln C+ln l>)
   </enumerate>
 
   So we can start to solve this model by
@@ -167,7 +196,7 @@
 
     <math|N=1-l\<Rightarrow\>MRS<rsub|l,C>=-MRS<rsub|N,C>=b C>
 
-    <item><math|MRS<rsub|N,C>=>After-tax wage rate<math|=w<around*|(|1-t|)>>
+    <item><math|MRS<rsub|l,C>=>After-tax wage rate<math|=w<around*|(|1-t|)>>
 
     <item><math|w=MPN=a z N<rsup|a-1>\<Rightarrow\>w N=a z N<rsup|a>>
 
@@ -228,8 +257,9 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>GE
-      with capital endowment> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Competitive
+      equilibrium with capital endowment>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Labor

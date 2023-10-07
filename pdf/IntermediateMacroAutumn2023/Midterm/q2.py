@@ -12,6 +12,7 @@ N = ( a*(1-t) ) / ( b*(a*(1-t) + (1-a)) )
 w = z*a*N**(a-1)
 G = w*t*N
 Gtarget = G
+print( f'Q41: Gtarget = {Gtarget}' )
 
 i = -1
 for t in tvec:
@@ -21,11 +22,14 @@ for t in tvec:
     G = w*t*N
     gvec[i] = G
     if abs(Gtarget - G) < 0.0001:
-        print(f't = {t}, G = {G}, \
+        print(f'Potential Answer for Q42: \
+                t = {t}, G = {G}, \
                 Gtarget - G = {Gtarget - G}')
 
 
 maxG = np.max(gvec)
 maxtax = tvec[np.argmax(gvec)]
-print(f'maximum G is {maxG} at tax rate {maxtax}')
+print(f'Q43: maximum G is achieved at tax rate {maxtax}')
+print(f'Q44: maximum G is {maxG}')
+
 
