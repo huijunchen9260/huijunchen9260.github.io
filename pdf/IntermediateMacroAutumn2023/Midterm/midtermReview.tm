@@ -164,13 +164,17 @@
     <math|<frac|l<rsup|-d>|<around*|(|1-l|)><rsup|-a-b
     <around*|(|1-a|)>>>=<around*|(|1-a|)> z<rsup|1-b> K<rsup|a-a b>>
 
-    <math|<around*|(|<frac|l|<around*|(|1-l|)>>|)><rsup|-<frac|3|2>>=<frac|1|2>
-    z<rsup|-1> K<rsup|-<frac|1|2>>>
-
-    <math|l<around*|(|z,K|)>\<Rightarrow\>N<around*|(|z,K|)>=1-l<around*|(|z,K|)>\<Rightarrow\>w=MPN,r=MPK>
-
     <item><math|z=1,G=0,a=<frac|1|2>,b=2,d=<frac|3|2>,> what is
     <math|l,N,w,r>?
+
+    <math|<around*|(|<frac|l|<around*|(|1-l|)>>|)><rsup|-<frac|3|2>>=<frac|1|2>
+    z<rsup|-1> K<rsup|-<frac|1|2>>=<frac|1|2 z <sqrt|K>>\<equiv\>A>
+
+    <math|<around*|(|<frac|1-l|l>|)><rsup|<frac|3|2>>=A\<Rightarrow\><frac|1-l|l>=A<rsup|<frac|2|3>>\<Rightarrow\>1-l=A<rsup|<frac|2|3>>
+    l\<Rightarrow\><around*|(|1+A<rsup|<frac|2|3>>|)>
+    l=1\<Rightarrow\>l<around*|(|z,K|)>=<frac|1|1+A<around*|(|z,K|)><rsup|<frac|2|3>>>>
+
+    <math|l<around*|(|z,K|)>\<Rightarrow\>N<around*|(|z,K|)>=1-l<around*|(|z,K|)>\<Rightarrow\>w=MPN,r=MPK>
   </enumerate>
 
   <section|Labor tax>
