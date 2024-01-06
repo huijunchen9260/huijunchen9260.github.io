@@ -1,0 +1,37 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Course Overview}}{2}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Course Overview}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-4}{Grades}}{4}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Grades}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-6}{Grading Policy}}{4}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Grading Policy}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-8}{Exams}}{4}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{Exams}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-10}{Problem Sets}}{4}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{Problem Sets}}{4}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-60011}{}{\ignorespaces Example for Carmen questions}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-13}{Quizzes, Problem Sets and Examinations Integrity Policies}}{8}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-14}{}{Quizzes, Problem Sets and Examinations Integrity Policies}}{8}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-15}{Curving}}{8}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-16}{}{Curving}}{8}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-9000}{QQ2-1-17}{End-of-semester curtesy grade boost}}{8}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-18}{}{End-of-semester curtesy grade boost}}{8}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-10000}{QQ2-1-19}{Tentative Course Schedule}}{9}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-20}{}{Tentative Course Schedule}}{9}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-11000}{QQ2-1-21}{New General Education Learning Outcomes}}{11}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-22}{}{New General Education Learning Outcomes }}{11}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-12000}{QQ2-1-23}{Legacy General Education Course learning outcomes}}{13}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-24}{}{Legacy General Education Course learning outcomes}}{13}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-13000}{QQ2-1-25}{Social Science Goal}}{13}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-26}{}{Social Science Goal}}{13}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-14000}{QQ2-1-27}{Organizations and Polities Expected Learning Outcomes}}{13}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-28}{}{Organizations and Polities Expected Learning Outcomes}}{13}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-15000}{QQ2-1-29}{Ohio State’s academic integrity policy}}{15}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-30}{}{Ohio State’s academic integrity policy}}{15}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-16000}{QQ2-1-31}{Other Policies}}{16}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-32}{}{Other Policies}}{16}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-17000}{QQ2-1-33}{Economics Learning Center}}{16}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-34}{}{Economics Learning Center}}{16}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-18000}{QQ2-1-35}{Grading scale}}{16}\relax 
+\doTocEntry\tocsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-36}{}{Grading scale}}{16}\relax 
