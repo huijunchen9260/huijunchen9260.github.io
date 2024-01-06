@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.12.18)  6 JAN 2024 00:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2023.12.18)  6 JAN 2024 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1348,4 +1348,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,8n,128p,1977b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on syllabus.dvi (18 pages, 88868 bytes).
+Output written on syllabus.dvi (18 pages, 88856 bytes).
