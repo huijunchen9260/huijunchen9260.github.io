@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2024.1.7)  12 JAN 2024 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=latex 2024.1.27)  12 FEB 2024 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1341,11 +1341,11 @@ Package logreq Info: Writing requests to 'syllabus.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  31896 strings out of 476026
- 581625 string characters out of 5796559
+ 581625 string characters out of 5796558
  1875385 words of memory out of 5000000
  51631 multiletter control sequences out of 15000+600000
  521905 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,128p,1977b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on syllabus.dvi (18 pages, 89232 bytes).
+Output written on syllabus.dvi (18 pages, 89284 bytes).
