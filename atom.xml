@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2024-02-07T21:15:32Z</updated>
+<updated>2024-08-12T08:05:52Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -357,7 +357,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/FortranNote.html"/>
 <id>https://huijunchen9260.github.io/FortranNote.html</id>
 <published>2022-09-24T14:21:16Z</published>
-<updated>2022-12-25T22:24:07Z</updated>
+<updated>2024-02-07T21:15:33Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-fortran">Note on Fortran</h1>
 <h2 id="table-of-content">Table of Content</h2>
@@ -1126,28 +1126,6 @@ The logic to generate this page is to use the existing tags system:</p>
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
 <p>Updates 2022-02-10: added methods to add modified dates</p>
 <p>;tags: Miscellaneous Technology</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Uncertain Taxation, Government Transfer, and Household Inequality</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/TaxUncertainty.html"/>
-<id>https://huijunchen9260.github.io/TaxUncertainty.html</id>
-<published>2021-11-29T00:56:38Z</published>
-<updated>2022-07-24T17:34:02Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="uncertain-taxation-government-transfer-and-household-inequality">Uncertain Taxation, Government Transfer, and Household Inequality</h1>
-<p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
-<p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
-<h3 id="abstract">Abstract</h3>
-<p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
-Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
-Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
-Labor tax suppresses the major income sources of the poor: labor wage.
-The effect of tax policy uncertainty on the wealth distribution and inequality depends on households&#8217; degree of risk aversion.
-When risk aversion is higher, the rich maintain similar levels of consumption by slowing down their capital accumulation process, while this relationship is reversed for the poor, resulting in decreasing wealth inequality.
-Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
-Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
-As a result, lump-sum transfer mitigates some effects of the uncertainty but worsens wealth inequality.</p>
-<p>;tags: Working</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Machine Learning, Autumn 2021</title>
