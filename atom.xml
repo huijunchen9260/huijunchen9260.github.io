@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2024-08-16T10:13:13Z</updated>
+<updated>2024-08-16T10:15:12Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Aggregate implication of corporate taxation over business cycle (Job Market Paper)</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/BonusDepreciation.html"/>
+<id>https://huijunchen9260.github.io/BonusDepreciation.html</id>
+<published>2024-08-16T10:13:15Z</published>
+<updated>2024-08-16T10:13:15Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="aggregate-implication-of-corporate-taxation-over-business-cycle-job-market-paper">Aggregate implication of corporate taxation over business cycle (Job Market Paper)</h1>
+<p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">paper</a></p>
+<p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">slides</a></p>
+<p>I examine the aggregate effects of corporate taxation using a quantitative dynamic stochastic general equilibrium model featuring firms subject to collateralized borrowing and idiosyncratic productivity shocks.
+In my model economy, two policies subsidize capital investment through corporate tax deductions.
+Firms that invest less than a threshold defined by the IRS enjoy lower user cost of capital, while others deduct their capital expenditure at a counter-cyclical bonus rate.
+Increasing the threshold is 50% more effective than raising the bonus rate in stimulating aggregate output while combining both policies reduces effectiveness by 13% compared to solely increasing the threshold.
+Although a higher bonus rate benefits more firms, unconstrained firms often distribute saved funds as dividends rather than reinvesting, diminishing policy efficacy per dollar of foregone government revenue.
+Conversely, raising the threshold empowers credit-constrained firms to overcome collateral limitations, thereby reducing capital misallocation due to financial frictions.</p>
+<p>;tags: Working</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Principle of Macroeconomics, Spring 2024</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2024.html"/>
@@ -872,7 +890,7 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2023-05-18T23:59:23Z</updated>
+<updated>2024-08-16T10:13:15Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
 <!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
