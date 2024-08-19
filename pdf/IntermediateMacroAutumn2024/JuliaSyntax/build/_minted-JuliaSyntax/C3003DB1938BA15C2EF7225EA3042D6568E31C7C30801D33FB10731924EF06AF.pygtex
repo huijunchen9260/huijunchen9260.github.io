@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{using}\PYG{+w}{ }\PYG{n}{Plots}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{pyplot}\PYG{p}{()}
+\PYG{+w}{    }\PYG{n}{plot}\PYG{p}{(}\PYG{n}{tgrid}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Gvec}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{label}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}G\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
