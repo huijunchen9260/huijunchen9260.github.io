@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2024-09-04T09:35:18Z</updated>
+<updated>2024-09-04T09:38:17Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2024.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2024.html</id>
 <published>2024-08-19T10:26:02Z</published>
-<updated>2024-08-30T09:56:52Z</updated>
+<updated>2024-09-04T09:35:19Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2024">Intermediate Macroeconomics Theory, Autumn 2024</h1>
 <p>ECON 4002.01, The Ohio State University, Autumn 2024</p>
@@ -101,10 +101,7 @@
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
 <li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet1/ProblemSet1.pdf">Problem Set 1</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a>
-<ul>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a></li>
-</ul></li>
+<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
 <li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
