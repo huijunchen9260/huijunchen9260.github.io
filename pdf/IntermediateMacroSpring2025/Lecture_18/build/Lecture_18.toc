@@ -1,0 +1,5 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{z $ \uparrow $}{3}{0}{1}
+\beamer@sectionintoc {2}{$z' \uparrow $}{6}{0}{2}
+\beamer@sectionintoc {3}{$K \downarrow $}{8}{0}{3}
+\beamer@sectionintoc {4}{$G \uparrow $}{10}{0}{4}

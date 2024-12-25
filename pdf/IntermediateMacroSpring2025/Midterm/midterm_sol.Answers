@@ -1,0 +1,58 @@
+\contentsline {answer}{\numberline {1}B}{4}{Item.3}%
+\contentsline {answer}{\numberline {2}A}{4}{Item.4}%
+\contentsline {answer}{\numberline {3}D}{4}{Item.5}%
+\contentsline {answer}{\numberline {}C}{4}{Item.6}%
+\contentsline {answer}{\numberline {5}B}{4}{Item.8}%
+\contentsline {answer}{\numberline {}C}{5}{Item.9}%
+\contentsline {answer}{\numberline {}D}{5}{Item.10}%
+\contentsline {answer}{\numberline {8}B}{5}{Item.14}%
+\contentsline {answer}{\numberline {9}A}{5}{Item.15}%
+\contentsline {answer}{\numberline {10}C}{5}{Item.16}%
+\contentsline {answer}{\numberline {11}A}{6}{Item.17}%
+\contentsline {answer}{\numberline {12}D}{6}{Item.18}%
+\contentsline {answer}{\numberline {} C }{6}{Item.19}%
+\contentsline {answer}{\numberline {14}D}{6}{Item.21}%
+\contentsline {answer}{\numberline {15}B}{6}{Item.22}%
+\contentsline {answer}{\numberline {16}D}{6}{Item.23}%
+\contentsline {answer}{\numberline {17}A}{7}{Item.24}%
+\contentsline {answer}{\numberline {18}D}{7}{Item.25}%
+\contentsline {answer}{\numberline {19}D}{7}{Item.26}%
+\contentsline {answer}{\numberline {}B}{7}{answer.1.19.2}%
+\contentsline {answer}{\numberline {}D}{7}{answer.1.19.3}%
+\contentsline {answer}{\numberline {22}C}{8}{Item.29}%
+\contentsline {answer}{\numberline {23}B}{8}{Item.30}%
+\contentsline {answer}{\numberline {24}A}{8}{Item.31}%
+\contentsline {answer}{\numberline {25}D}{8}{Item.32}%
+\contentsline {answer}{\numberline {}FOC results in $ l^{-d} = z^{-b} 2^{-ab} (1-l)^{-b+ab} (1-a)z 2^{a}(1-l)^{-a}$}{8}{answer.1.25.2}%
+\contentsline {answer}{\numberline {}$l^{-d} = z^{1-b} 2^{-ab+a} (1-a) (1-l)^{-a-b+ab}$}{8}{answer.1.25.3}%
+\contentsline {answer}{\numberline {}$l^{-\frac {3}{2}} = \frac {1}{2\sqrt {2}z} (1-l)^{-\frac {3}{2}}$}{8}{answer.1.25.4}%
+\contentsline {answer}{\numberline {}$ \left ( \frac {1-l}{l} \right )^{\frac {3}{2}} = \frac {1}{2\sqrt {2}z} = \frac {1}{2\sqrt {2}}$}{8}{answer.1.25.5}%
+\contentsline {answer}{\numberline {}$ \left ( \frac {1-l}{l} \right ) = \left ( \frac {1}{2\sqrt {2}} \right )^{\frac {2}{3}} \approx 0.4999 \Rightarrow 1-l = 0.4999 l \Rightarrow l \approx 0.6666 \approx 0.67$}{8}{answer.1.25.6}%
+\contentsline {answer}{\numberline {} $ N = 1-l = 0.33 $, $ w = (1-a)z K^{a}N^{-a} = 1.231 \approx 1.23 $, }{8}{answer.1.25.7}%
+\contentsline {answer}{\numberline {} $ r = a z K^{a-1} N^{1-a} \approx 0.203 \approx 0.20 $ }{8}{answer.1.25.8}%
+\contentsline {answer}{\numberline {26} C}{9}{Item.35}%
+\contentsline {answer}{\numberline {27} D}{9}{Item.36}%
+\contentsline {answer}{\numberline {28} D}{9}{Item.37}%
+\contentsline {answer}{\numberline {29}B}{9}{Item.38}%
+\contentsline {answer}{\numberline {30}B}{9}{Item.39}%
+\contentsline {answer}{\numberline {31}D}{10}{Item.40}%
+\contentsline {answer}{\numberline {32}C}{10}{Item.41}%
+\contentsline {answer}{\numberline {33}B}{10}{Item.42}%
+\contentsline {answer}{\numberline {} $ aN^{a} (1-t)$}{10}{answer.1.33.2}%
+\contentsline {answer}{\numberline {}$(1-a) N^{a} $}{10}{answer.1.33.3}%
+\contentsline {answer}{\numberline {} $ aN^{a-1} $}{10}{answer.1.33.4}%
+\contentsline {answer}{\numberline {34}C }{10}{Item.43}%
+\contentsline {answer}{\numberline {35}A}{11}{Item.45}%
+\contentsline {answer}{\numberline {36} A}{11}{Item.47}%
+\contentsline {answer}{\numberline {} D}{11}{Item.49}%
+\contentsline {answer}{\numberline {} $ b( azN^{a} (1-t) + (1-a) z N^{a} ) = azN^{a-1} (1-t) $ }{11}{Item.50}%
+\contentsline {answer}{\numberline {} $ \Rightarrow bzN^{a}( a (1-t) + (1-a) ) = azN^{a-1} (1-t) $ }{11}{answer.1.37.3}%
+\contentsline {answer}{\numberline {} $ \Rightarrow bN( a (1-t) + (1-a) ) = a(1-t) $ }{11}{answer.1.37.4}%
+\contentsline {answer}{\numberline {} $ \Rightarrow N = \frac {a(1-t)}{b( a (1-t) + (1-a) ) } $ }{11}{answer.1.37.5}%
+\contentsline {answer}{\numberline {38}A}{11}{Item.51}%
+\contentsline {answer}{\numberline {39}B}{11}{Item.52}%
+\contentsline {answer}{\numberline {40}C}{12}{Item.53}%
+\contentsline {answer}{\numberline {41}D}{12}{Item.54}%
+\contentsline {answer}{\numberline {42}A}{12}{Item.55}%
+\contentsline {answer}{\numberline {43}B}{12}{Item.56}%
+\contentsline {answer}{\numberline {44}C}{12}{Item.57}%
