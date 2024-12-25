@@ -1,3 +1,4 @@
+htfcss: ptmbi7t   font-style: italic; font-weight: bold;
 htfcss: ptmri7t font-style: italic;
 htfcss: ptmb7t  font-weight: bold;
 htfcss:  pcrr7t  font-family: 'Nimbus Mono L', serif;
@@ -211,3 +212,4 @@ Font("ptmr7t","","10","172")
 Font("pcrr7t","","10","120")
 Font("ptmb7t","","10","120")
 Font("ptmri7t","","10","120")
+Font("ptmbi7t","","10","120")
