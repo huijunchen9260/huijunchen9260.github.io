@@ -26,14 +26,12 @@
 <p>See <a href="pdf/IntermediateMacroSpring2025/syllabus/syllabus.html#grades">Grades</a></p>
 <h2 id="course-schedule">Course Schedule</h2>
 <p>See <a href="pdf/IntermediateMacroSpring2025/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-<!-- ## Exam Reviews -->
-<!-- - [Midterm Review](pdf/IntermediateMacroSpring2025/Midterm/midtermReview.pdf) -->
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -49,12 +47,12 @@
 <li><a href="http://www.clementincastellano.com/Notebooks/static/HP%20Filter.html">Introduction - HP Filters</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <ul>
@@ -62,44 +60,44 @@
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E1I0hAxGFXw&amp;">What Do You Want? - The Notebook (4&#47;6) Movie CLIP (2004) HD</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-<!-- - [Midterm Review 1](pdf/IntermediateMacroSpring2025/midtermReview_1.pdf) -->
-<!-- - [Midterm Review 2](pdf/IntermediateMacroSpring2025/midtermReview_2.pdf) --></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+<!-- - [Midterm Review 1](pdf/IntermediateMacro/midtermReview_1.pdf) -->
+<!-- - [Midterm Review 2](pdf/IntermediateMacro/midtermReview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSpring2025/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
-<!-- - [Final Review 1](pdf/IntermediateMacroSpring2025/finalreview_1.pdf) -->
-<!-- - [Final Review 2](pdf/IntermediateMacroSpring2025/finalreview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
+<!-- - [Final Review 1](pdf/IntermediateMacro/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacro/finalreview_2.pdf) --></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/IntermediateMacroSpring2025/ProblemSet1/ProblemSet1.pdf">Problem Set 1</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
-<li><a href="pdf/IntermediateMacroSpring2025/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet1/ProblemSet1.pdf">Problem Set 1</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -147,9 +145,9 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -165,12 +163,12 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <li><a href="http://www.clementincastellano.com/Notebooks/static/HP%20Filter.html">Introduction - HP Filters</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <ul>
@@ -178,44 +176,44 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E1I0hAxGFXw&amp;">What Do You Want? - The Notebook (4&#47;6) Movie CLIP (2004) HD</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-<!-- - [Midterm Review 1](pdf/IntermediateMacroAutumn2024/midtermReview_1.pdf) -->
-<!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2024/midtermReview_2.pdf) --></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+<!-- - [Midterm Review 1](pdf/IntermediateMacro/midtermReview_1.pdf) -->
+<!-- - [Midterm Review 2](pdf/IntermediateMacro/midtermReview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
-<!-- - [Final Review 1](pdf/IntermediateMacroAutumn2024/finalreview_1.pdf) -->
-<!-- - [Final Review 2](pdf/IntermediateMacroAutumn2024/finalreview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
+<!-- - [Final Review 1](pdf/IntermediateMacro/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacro/finalreview_2.pdf) --></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet1/ProblemSet1.pdf">Problem Set 1</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2024/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet1/ProblemSet1.pdf">Problem Set 1</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/ProblemSet2.pdf">Problem Set 2</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -291,54 +289,54 @@ credit crisis.</p>
 <p>See <a href="pdf/PrincipleMacroSpring2024/syllabus/syllabus.html#tentative-course-schedule1">Course schedule</a></p>
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a>
+<li><a href="pdf/PrincipleMacro/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E32v_bsasS8">2022 Finance Rewind - The Crazy Year Behind Us</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit2TechChangePopulationGrowth/build/Unit2TechChangePopulationGrowth.pdf">Unit 2: Technology, population, and growth</a>
+<li><a href="pdf/PrincipleMacro/Unit2TechChangePopulationGrowth/build/Unit2TechChangePopulationGrowth.pdf">Unit 2: Technology, population, and growth</a>
 <ul>
 <li><a href="https://adventure.howstuffworks.com/outdoor-activities/hiking/how-to-read-a-topographic-map2.htm">How to Read a Topographic Map</a></li>
 <li><a href="https://www.wolframalpha.com/input?i=plot+c+%3D+L+%2B+2*R">Wolfram Algebra plotting cost function</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit3Consumer/build/Unit3Consumer.pdf">Unit 3: Scarcity, Work and Choice</a>
+<li><a href="pdf/PrincipleMacro/Unit3Consumer/build/Unit3Consumer.pdf">Unit 3: Scarcity, Work and Choice</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=oFIdIVngeYA">How trail designers build good hikes</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit6FirmLaborMarket/build/Unit6FirmLaborMarket.pdf">Unit 6: The Firm: Owner, Manager and Employees</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit7FirmGoodMarket/build/Unit7FirmGoodMarket.pdf">Unit 7: The Firm, Demand Elasticity and Market Competition</a>
+<li><a href="pdf/PrincipleMacro/Unit6FirmLaborMarket/build/Unit6FirmLaborMarket.pdf">Unit 6: The Firm: Owner, Manager and Employees</a></li>
+<li><a href="pdf/PrincipleMacro/Unit7FirmGoodMarket/build/Unit7FirmGoodMarket.pdf">Unit 7: The Firm, Demand Elasticity and Market Competition</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=7uKnd6IEiO0">Deck the Halls with Macro Follies</a></li>
 <li><a href="https://www.youtube.com/watch?v=Ll92ud6Nufw">Price Elasticity: Why Airlines Will Never Improve Economy Class</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit9LaborMarket/build/Unit9LaborMarket.pdf">Unit 9: The Labor Market, Wages, Profits, and Unemployment</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit10CreditMarket/build/Unit10CreditMarket.pdf">Unit 10: Banks, Money and the Credit Market</a>
+<li><a href="pdf/PrincipleMacro/Unit9LaborMarket/build/Unit9LaborMarket.pdf">Unit 9: The Labor Market, Wages, Profits, and Unemployment</a></li>
+<li><a href="pdf/PrincipleMacro/Unit10CreditMarket/build/Unit10CreditMarket.pdf">Unit 10: Banks, Money and the Credit Market</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Zwn6fqbNRLo">What is the most equal country on earth?</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit13EconomicsFluctuation/build/Unit13EconomicsFluctuation.pdf">Unit 13: Economics Fluctuation, GDP and Unemployment</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit14FiscalPolicy/build/Unit14FiscalPolicy.pdf">Unit 14: Unemployment and Fiscal Policy</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit15MonetaryPolicy/build/Unit15MonetaryPolicy.pdf">Unit 15: Inflation, Unemployment and Monetary Policy</a>
+<li><a href="pdf/PrincipleMacro/Unit13EconomicsFluctuation/build/Unit13EconomicsFluctuation.pdf">Unit 13: Economics Fluctuation, GDP and Unemployment</a></li>
+<li><a href="pdf/PrincipleMacro/Unit14FiscalPolicy/build/Unit14FiscalPolicy.pdf">Unit 14: Unemployment and Fiscal Policy</a></li>
+<li><a href="pdf/PrincipleMacro/Unit15MonetaryPolicy/build/Unit15MonetaryPolicy.pdf">Unit 15: Inflation, Unemployment and Monetary Policy</a>
 <ul>
 <li><strong><a href="https://youtu.be/EpMLAQbSYAw">Age of Easy Money (full documentary) | FRONTLINE</a></strong></li>
 <li><a href="https://youtu.be/UN-O6oNes0I">What’s So Special About 2% Inflation?</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit16LongRunEconomy/build/Unit16LongRunEconomy.pdf">Unit 16: Technological Progress, Unemployment and Living Standards in the Long Run</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
-<li><a href="pdf/PrincipleMacroSpring2024/MacroCovidPandemic/lecture-slides-macroeconomics-of-covid-19-pandemic-5-february.pdf">Macroeconomics of the COVID-19 Pandemic</a></li>
+<li><a href="pdf/PrincipleMacro/Unit16LongRunEconomy/build/Unit16LongRunEconomy.pdf">Unit 16: Technological Progress, Unemployment and Living Standards in the Long Run</a></li>
+<li><a href="pdf/PrincipleMacro/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
+<li><a href="pdf/PrincipleMacro/MacroCovidPandemic/lecture-slides-macroeconomics-of-covid-19-pandemic-5-february.pdf">Macroeconomics of the COVID-19 Pandemic</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit1Unit2PS/Final/Unit1Unit2PS.pdf">Problem Set 1: Unit 1 and Unit 2</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit3PS/Final/Unit3PS.pdf">Problem Set 2: Unit 3</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit6PS/Final/Unit6PS.pdf">Problem Set 3: Unit 6</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit7PS/Final/Unit7PS.pdf">Problem Set 4: Unit 7</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit9PS/Final/Unit9PS.pdf">Problem Set 5: Unit 9</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit10PS/Final/Unit10PS.pdf">Problem Set 6: Unit 10</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit13PS/Final/Unit13PS.pdf">Problem Set 7: Unit 13</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit14PS/Final/Unit14PS.pdf">Problem Set 8: Unit 14</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit15PS/Final/Unit15PS.pdf">Problem Set 9: Unit 15</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
-<li><a href="pdf/PrincipleMacroSpring2024/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit1Unit2PS/Final/Unit1Unit2PS.pdf">Problem Set 1: Unit 1 and Unit 2</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit3PS/Final/Unit3PS.pdf">Problem Set 2: Unit 3</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit6PS/Final/Unit6PS.pdf">Problem Set 3: Unit 6</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit7PS/Final/Unit7PS.pdf">Problem Set 4: Unit 7</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit9PS/Final/Unit9PS.pdf">Problem Set 5: Unit 9</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit10PS/Final/Unit10PS.pdf">Problem Set 6: Unit 10</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit13PS/Final/Unit13PS.pdf">Problem Set 7: Unit 13</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit14PS/Final/Unit14PS.pdf">Problem Set 8: Unit 14</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit15PS/Final/Unit15PS.pdf">Problem Set 9: Unit 15</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -369,9 +367,9 @@ credit crisis.</p>
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -387,12 +385,12 @@ credit crisis.</p>
 <li><a href="http://www.clementincastellano.com/Notebooks/static/HP%20Filter.html">Introduction - HP Filters</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <ul>
@@ -400,41 +398,41 @@ credit crisis.</p>
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-<!-- - [Midterm Review 1](pdf/IntermediateMacroAutumn2023/midtermReview_1.pdf) -->
-<!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2023/midtermReview_2.pdf) --></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+<!-- - [Midterm Review 1](pdf/IntermediateMacro/midtermReview_1.pdf) -->
+<!-- - [Midterm Review 2](pdf/IntermediateMacro/midtermReview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2023/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
-<!-- - [Final Review 1](pdf/IntermediateMacroAutumn2023/finalreview_1.pdf) -->
-<!-- - [Final Review 2](pdf/IntermediateMacroAutumn2023/finalreview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
+<!-- - [Final Review 1](pdf/IntermediateMacro/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacro/finalreview_2.pdf) --></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
-<!-- - [Problem Set 1](pdf/IntermediateMacroAutumn2023/ProblemSet1/ProblemSet_01_v01.pdf) -->
-<!-- - [Problem Set 2](pdf/IntermediateMacroAutumn2023/ProblemSet2/build/ProblemSet2.pdf) -->
-<!--     - [Problem Set 2 Answer Sheet](pdf/IntermediateMacroAutumn2023/ProblemSet2/PS2AnswerSheet.pdf) -->
-<!-- - [Problem Set 3](pdf/IntermediateMacroAutumn2023/ProblemSet3/Final/ProblemSet3.pdf) -->
-<!-- - [Problem Set 4](pdf/IntermediateMacroAutumn2023/ProblemSet4/Final/ProblemSet4.pdf) -->
+<!-- - [Problem Set 1](pdf/IntermediateMacro/ProblemSet1/ProblemSet_01_v01.pdf) -->
+<!-- - [Problem Set 2](pdf/IntermediateMacro/ProblemSet2/build/ProblemSet2.pdf) -->
+<!--     - [Problem Set 2 Answer Sheet](pdf/IntermediateMacro/ProblemSet2/PS2AnswerSheet.pdf) -->
+<!-- - [Problem Set 3](pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf) -->
+<!-- - [Problem Set 4](pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf) -->
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -627,9 +625,9 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -641,12 +639,12 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <ul>
@@ -654,41 +652,45 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-<!-- - [Midterm Review 1](pdf/IntermediateMacroSummer2023/midtermReview_1.pdf) -->
-<!-- - [Midterm Review 2](pdf/IntermediateMacroSummer2023/midtermReview_2.pdf) --></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+<!-- - [Midterm Review 1](pdf/IntermediateMacro/midtermReview_1.pdf) -->
+<!-- - [Midterm Review 2](pdf/IntermediateMacro/midtermReview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2023/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
-<li><a href="pdf/IntermediateMacroSummer2023/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
-<!-- - [Final Review 1](pdf/IntermediateMacroSummer2023/finalreview_1.pdf) -->
-<!-- - [Final Review 2](pdf/IntermediateMacroSummer2023/finalreview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
+<!-- - [Final Review 1](pdf/IntermediateMacro/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacro/finalreview_2.pdf) --></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
-<!-- - [Problem Set 1](pdf/IntermediateMacroSummer2023/ProblemSet1/ProblemSet_01_v01.pdf) -->
-<!-- - [Problem Set 2](pdf/IntermediateMacroSummer2023/ProblemSet2/build/ProblemSet2.pdf) -->
-<!--     - [Problem Set 2 Answer Sheet](pdf/IntermediateMacroSummer2023/ProblemSet2/PS2AnswerSheet.pdf) -->
-<!-- - [Problem Set 3](pdf/IntermediateMacroSummer2023/ProblemSet3/Final/ProblemSet3.pdf) -->
-<!-- - [Problem Set 4](pdf/IntermediateMacroSummer2023/ProblemSet4/Final/ProblemSet4.pdf) -->
+<ul>
+<li><a href="pdf/IntermediateMacro/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/build/ProblemSet2.pdf">Problem Set 2</a>
+<ul>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a></li>
+</ul></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
+</ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
@@ -707,54 +709,54 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <p>See <a href="pdf/PrincipleMacroSpring2023/syllabus/syllabus.html#tentative-course-schedule1">Course schedule</a></p>
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a>
+<li><a href="pdf/PrincipleMacro/Unit1TheCapitalistRevolution/build/Unit1TheCapitalistRevolution.pdf">Unit 1: The Capitalist Revolution</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E32v_bsasS8">2022 Finance Rewind - The Crazy Year Behind Us</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit2TechChangePopulationGrowth/build/Unit2TechChangePopulationGrowth.pdf">Unit 2: Technology, population, and growth</a>
+<li><a href="pdf/PrincipleMacro/Unit2TechChangePopulationGrowth/build/Unit2TechChangePopulationGrowth.pdf">Unit 2: Technology, population, and growth</a>
 <ul>
 <li><a href="https://adventure.howstuffworks.com/outdoor-activities/hiking/how-to-read-a-topographic-map2.htm">How to Read a Topographic Map</a></li>
 <li><a href="https://www.wolframalpha.com/input?i=plot+c+%3D+L+%2B+2*R">Wolfram Algebra plotting cost function</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit3Consumer/build/Unit3Consumer.pdf">Unit 3: Scarcity, Work and Choice</a>
+<li><a href="pdf/PrincipleMacro/Unit3Consumer/build/Unit3Consumer.pdf">Unit 3: Scarcity, Work and Choice</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=oFIdIVngeYA">How trail designers build good hikes</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit6FirmLaborMarket/build/Unit6FirmLaborMarket.pdf">Unit 6: The Firm: Owner, Manager and Employees</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit7FirmGoodMarket/build/Unit7FirmGoodMarket.pdf">Unit 7: The Firm, Demand Elasticity and Market Competition</a>
+<li><a href="pdf/PrincipleMacro/Unit6FirmLaborMarket/build/Unit6FirmLaborMarket.pdf">Unit 6: The Firm: Owner, Manager and Employees</a></li>
+<li><a href="pdf/PrincipleMacro/Unit7FirmGoodMarket/build/Unit7FirmGoodMarket.pdf">Unit 7: The Firm, Demand Elasticity and Market Competition</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=7uKnd6IEiO0">Deck the Halls with Macro Follies</a></li>
 <li><a href="https://www.youtube.com/watch?v=Ll92ud6Nufw">Price Elasticity: Why Airlines Will Never Improve Economy Class</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit9LaborMarket/build/Unit9LaborMarket.pdf">Unit 9: The Labor Market, Wages, Profits, and Unemployment</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit10CreditMarket/build/Unit10CreditMarket.pdf">Unit 10: Banks, Money and the Credit Market</a>
+<li><a href="pdf/PrincipleMacro/Unit9LaborMarket/build/Unit9LaborMarket.pdf">Unit 9: The Labor Market, Wages, Profits, and Unemployment</a></li>
+<li><a href="pdf/PrincipleMacro/Unit10CreditMarket/build/Unit10CreditMarket.pdf">Unit 10: Banks, Money and the Credit Market</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Zwn6fqbNRLo">What is the most equal country on earth?</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit13EconomicsFluctuation/build/Unit13EconomicsFluctuation.pdf">Unit 13: Economics Fluctuation, GDP and Unemployment</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit14FiscalPolicy/build/Unit14FiscalPolicy.pdf">Unit 14: Unemployment and Fiscal Policy</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit15MonetaryPolicy/build/Unit15MonetaryPolicy.pdf">Unit 15: Inflation, Unemployment and Monetary Policy</a>
+<li><a href="pdf/PrincipleMacro/Unit13EconomicsFluctuation/build/Unit13EconomicsFluctuation.pdf">Unit 13: Economics Fluctuation, GDP and Unemployment</a></li>
+<li><a href="pdf/PrincipleMacro/Unit14FiscalPolicy/build/Unit14FiscalPolicy.pdf">Unit 14: Unemployment and Fiscal Policy</a></li>
+<li><a href="pdf/PrincipleMacro/Unit15MonetaryPolicy/build/Unit15MonetaryPolicy.pdf">Unit 15: Inflation, Unemployment and Monetary Policy</a>
 <ul>
 <li><strong><a href="https://youtu.be/EpMLAQbSYAw">Age of Easy Money (full documentary) | FRONTLINE</a></strong></li>
 <li><a href="https://youtu.be/UN-O6oNes0I">What’s So Special About 2% Inflation?</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit16LongRunEconomy/build/Unit16LongRunEconomy.pdf">Unit 16: Technological Progress, Unemployment and Living Standards in the Long Run</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
-<li><a href="pdf/PrincipleMacroSpring2023/MacroCovidPandemic/lecture-slides-macroeconomics-of-covid-19-pandemic-5-february.pdf">Macroeconomics of the COVID-19 Pandemic</a></li>
+<li><a href="pdf/PrincipleMacro/Unit16LongRunEconomy/build/Unit16LongRunEconomy.pdf">Unit 16: Technological Progress, Unemployment and Living Standards in the Long Run</a></li>
+<li><a href="pdf/PrincipleMacro/Unit17GreatDepression/Unit-17-The-Great-Depression-1.0.pdf">Unit 17: Great Depression</a> (core-econ slide)</li>
+<li><a href="pdf/PrincipleMacro/MacroCovidPandemic/lecture-slides-macroeconomics-of-covid-19-pandemic-5-february.pdf">Macroeconomics of the COVID-19 Pandemic</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit1Unit2PS/Final/Unit1Unit2PS.pdf">Problem Set 1: Unit 1 and Unit 2</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit3PS/Final/Unit3PS.pdf">Problem Set 2: Unit 3</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit6PS/Final/Unit6PS.pdf">Problem Set 3: Unit 6</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit7PS/Final/Unit7PS.pdf">Problem Set 4: Unit 7</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit9PS/Final/Unit9PS.pdf">Problem Set 5: Unit 9</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit10PS/Final/Unit10PS.pdf">Problem Set 6: Unit 10</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit13PS/Final/Unit13PS.pdf">Problem Set 7: Unit 13</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit14PS/Final/Unit14PS.pdf">Problem Set 8: Unit 14</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit15PS/Final/Unit15PS.pdf">Problem Set 9: Unit 15</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
-<li><a href="pdf/PrincipleMacroSpring2023/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit1Unit2PS/Final/Unit1Unit2PS.pdf">Problem Set 1: Unit 1 and Unit 2</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit3PS/Final/Unit3PS.pdf">Problem Set 2: Unit 3</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit6PS/Final/Unit6PS.pdf">Problem Set 3: Unit 6</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit7PS/Final/Unit7PS.pdf">Problem Set 4: Unit 7</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit9PS/Final/Unit9PS.pdf">Problem Set 5: Unit 9</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit10PS/Final/Unit10PS.pdf">Problem Set 6: Unit 10</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit13PS/Final/Unit13PS.pdf">Problem Set 7: Unit 13</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit14PS/Final/Unit14PS.pdf">Problem Set 8: Unit 14</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit15PS/Final/Unit15PS.pdf">Problem Set 9: Unit 15</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
+<li><a href="pdf/PrincipleMacro/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -812,7 +814,6 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <ul>
 <li><a href="#grade">Grade</a></li>
 <li><a href="#course-schedule">Course Schedule</a></li>
-<li><a href="#exam-reviews">Exam Reviews</a></li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
@@ -821,16 +822,15 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#grades">Grades</a></p>
 <h2 id="course-schedule">Course Schedule</h2>
 <p>See <a href="pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-<h2 id="exam-reviews">Exam Reviews</h2>
-<ul>
-<li><a href="pdf/IntermediateMacroAutumn2022/Midterm/midtermReview.pdf">Midterm Review</a></li>
-</ul>
+<!--## Exam Reviews-->
+<!---->
+<!--- [Midterm Review](pdf/IntermediateMacroAutumn2022/Midterm/midtermReview.pdf)-->
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
 <li><a href="JuliaNote.html">Note on Julia</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/JuliaSyntax/build/JuliaSyntax.pdf">Julia Syntax and Algorithm</a></li>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -842,12 +842,12 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a>
 <ul>
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <ul>
@@ -855,44 +855,44 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-<!-- - [Midterm Review 1](pdf/IntermediateMacroAutumn2022/midtermReview_1.pdf) -->
-<!-- - [Midterm Review 2](pdf/IntermediateMacroAutumn2022/midtermReview_2.pdf) --></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
+<!-- - [Midterm Review 1](pdf/IntermediateMacro/midtermReview_1.pdf) -->
+<!-- - [Midterm Review 2](pdf/IntermediateMacro/midtermReview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a>
 <ul>
 <li><a href="https://www150.statcan.gc.ca/n1/en/pub/75-001-x/2000002/article/5071-eng.pdf?st=u5EgyaFN">Income taxes in Canada and the United States</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=p0z_zKWJTao">The Fed Is In the Red. Here&#8217;s Why. | WSJ</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
-<!-- - [Final Review 1](pdf/IntermediateMacroAutumn2022/finalreview_1.pdf) -->
-<!-- - [Final Review 2](pdf/IntermediateMacroAutumn2022/finalreview_2.pdf) --></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/DynamicProgramming/Final/DynamicProgramming.pdf">Introduction to Dynamic Programming</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingEndowment/build/AssetPricingEndowment.pdf">Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/IntermediateMacro/AssetPricingProduction/build/AssetPricingProduction.pdf">Asset Pricing in Production Economy</a>
+<!-- - [Final Review 1](pdf/IntermediateMacro/finalreview_1.pdf) -->
+<!-- - [Final Review 2](pdf/IntermediateMacro/finalreview_2.pdf) --></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet2/build/ProblemSet2.pdf">Problem Set 2</a>
+<li><a href="pdf/IntermediateMacro/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/build/ProblemSet2.pdf">Problem Set 2</a>
 <ul>
-<li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/PS2AnswerSheet.pdf">Problem Set 2 Answer Sheet</a></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
-<li><a href="pdf/IntermediateMacroAutumn2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
@@ -962,25 +962,24 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <description><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2022">Intermediate Macroeconomics Theory, Summer 2022</h1>
 <p>ECON 4002.01, The Ohio State University, Summer 2022</p>
 <p><a href="pdf/IntermediateMacroSummer2022/syllabus/Final/syllabus.pdf">Syllabus</a></p>
-<h2 id="announcement">Announcement</h2>
-<ul>
-<li>May 31, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li>June 02, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a> to fix some typo</li>
-<li>June 09, 2022: Update
-<a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a>
-and
-<a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a>
-to fix some typo</li>
-<li>June 14, 2022: Update
-<a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a>
-to fix typo and computational errors.</li>
-<li>July 07, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a> and <a href="pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a> to fix typo and expression</li>
-<li>July 19, 2022: Update <a href="pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a> to fix wrong figure legend and wrong expression.</li>
-</ul>
+<!--## Announcement-->
+<!---->
+<!--- May 31, 2022: Update [Lecture 7: Representative Firm](pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf)-->
+<!--- June 02, 2022: Update [Lecture 8: Competitive Equilibrium, One-Period Model](pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf) to fix some typo-->
+<!--- June 09, 2022: Update-->
+<!--    [Lecture 9: Social Planner's Problem](pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf)-->
+<!--    and-->
+<!--    [Lecture 10: Examples on Competitive Equilibrium and Social Planner's Problem](pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf)-->
+<!--    to fix some typo-->
+<!--- June 14, 2022: Update-->
+<!--    [Lecture 11: Distorting Taxes and the Welfare Theorems](pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf)-->
+<!--    to fix typo and computational errors.-->
+<!--- July 07, 2022: Update [Lecture 14: The Real Business Cycle Model Part 1: Consumer](pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf) and [Lecture 15: The Real Business Cycle Model Part 2: Firm](pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf) to fix typo and expression-->
+<!--- July 19, 2022: Update [Lecture 17: The Real Business Cycle Model Part 4: Formal Examples](pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf) to fix wrong figure legend and wrong expression.-->
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="pdf/IntermediateMacroSummer2022/math/Final/math.pdf">Review for Math</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
+<li><a href="pdf/IntermediateMacro/math/Final/math.pdf">Review for Math</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_01/Final/Lecture_01.pdf">Lecture 1: Introduction</a>
 <ul>
 <li>Lucas critique:
 <ul>
@@ -992,34 +991,34 @@ to fix typo and computational errors.</li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/midtermReview_1.pdf">Midterm Review 1</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/midtermReview_2.pdf">Midterm Review 2</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/finalreview_1.pdf">Final Review 1</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/finalreview_2.pdf">Final Review 2</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_02/Final/Lecture_02.pdf">Lecture 2: Economic Aggregates</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_05/Final/Lecture_05.pdf">Lecture 5: Representative Consumer, Optimization and Application</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_06/Final/Lecture_06.pdf">Lecture 6: Numerical Example</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_07/Final/Lecture_07.pdf">Lecture 7: Representative Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_08/Final/Lecture_08.pdf">Lecture 8: Competitive Equilibrium, One-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_09/Final/Lecture_09.pdf">Lecture 9: Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_10/Final/Lecture_10.pdf">Lecture 10: Examples on Competitive Equilibrium and Social Planner&#8217;s Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_11/Final/Lecture_11.pdf">Lecture 11: Distorting Taxes and the Welfare Theorems</a></li>
+<li><a href="pdf/IntermediateMacro/midtermReview_1.pdf">Midterm Review 1</a></li>
+<li><a href="pdf/IntermediateMacro/midtermReview_2.pdf">Midterm Review 2</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_12/Final/Lecture_12.pdf">Lecture 12: Two-Period Consumer Problem</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_13/Final/Lecture_13.pdf">Lecture 13: Competitive Equilibrium, Two-Period Model</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_14/Final/Lecture_14.pdf">Lecture 14: The Real Business Cycle Model Part 1: Consumer</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_15/Final/Lecture_15.pdf">Lecture 15: The Real Business Cycle Model Part 2: Firm</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_16/Final/Lecture_16.pdf">Lecture 16: The Real Business Cycle Model Part 3: Competitive Equilibrium</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_17/Final/Lecture_17.pdf">Lecture 17: The Real Business Cycle Model Part 4: Formal Examples</a></li>
+<li><a href="pdf/IntermediateMacro/Lecture_18/Final/Lecture_18.pdf">Lecture 18: The Real Business Cycle Model Part 5: Application and Matching Data</a></li>
+<li><a href="pdf/IntermediateMacro/finalreview_1.pdf">Final Review 1</a></li>
+<li><a href="pdf/IntermediateMacro/finalreview_2.pdf">Final Review 2</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <ul>
-<li><a href="pdf/IntermediateMacroSummer2022/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/ProblemSet2/Final/ProblemSet2.pdf">Problem Set 2</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
-<li><a href="pdf/IntermediateMacroSummer2022/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet1/ProblemSet_01_v01.pdf">Problem Set 1</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet2/Final/ProblemSet2.pdf">Problem Set 2</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet3/Final/ProblemSet3.pdf">Problem Set 3</a></li>
+<li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 <h2 id="lecture-recordings">Lecture Recordings</h2>
 <ul>
@@ -1132,51 +1131,51 @@ My result shows that
 <!-- - [Final Exam Review Part 4](https://youtu.be/04bTN_tlOMU) -->
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2022/build/selfintroduction.pdf">Know your Instructor</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/build/math.pdf">Math Supplement</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/build/economics.pdf">Economics in my eye</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a>
+<li><a href="pdf/PrincipleMacro/build/selfintroduction.pdf">Know your Instructor</a></li>
+<li><a href="pdf/PrincipleMacro/build/math.pdf">Math Supplement</a></li>
+<li><a href="pdf/PrincipleMacro/build/economics.pdf">Economics in my eye</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
 <li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
 <li><a href="https://earth.esa.int/web/earth-watching/historical-views/content/-/article/kansai-and-kobe-international-airport-osaka-bay-japan-/">Example of Technological Progress: Kansai International Airport on artificial island</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a>
+<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2022/build/Unit9Supplement.pdf">Unit 9 Supplement</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/build/Unit9QuizSupplement.pdf">Unit 9 Quiz Supplement: shift in wage-setting curve</a></li>
+<li><a href="pdf/PrincipleMacro/build/Unit9Supplement.pdf">Unit 9 Supplement</a></li>
+<li><a href="pdf/PrincipleMacro/build/Unit9QuizSupplement.pdf">Unit 9 Quiz Supplement: shift in wage-setting curve</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a>
+<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Exponential_discounting">Exponential Discounting</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Hyperbolic_discounting">Hyperbolic Discounting</a></li>
 <li><a href="https://youtu.be/Q_QPClXo5MU">Prudence: Why You Spend So Much Money At Trader Joe&#8217;s</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Gini_coefficient#Definition">Gini Coefficient</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a>
+<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Alan_Greenspan#Housing_bubble">Alan Greenspan: the market value of global long-term securities is approaching $100 trillion</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a>
+<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2022/build/Unit13QuizSolution.pdf">Unit 13 Quiz Solution</a></li>
+<li><a href="pdf/PrincipleMacro/build/Unit13QuizSolution.pdf">Unit 13 Quiz Solution</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a>
+<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a>
 <ul>
-<li><a href="pdf/PrincipleMacroSpring2022/build/Unit14Supplement.pdf">Unit 14 Supplement</a></li>
+<li><a href="pdf/PrincipleMacro/build/Unit14Supplement.pdf">Unit 14 Supplement</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a>
+<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=iG1U-Qb38z0">Swift Sanctions on Russia: How Cutting Off Banks Applies Pressure | WSJ</a></li>
 <li><a href="https://www.reddit.com/r/Unexpected/comments/t5vu5s/explaining_the_stock_market_in_russia_right_now/?utm_medium=android_app&amp;utm_source=share">Explaining the stock market in Russia right now</a></li>
 </ul></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
-<li><a href="pdf/PrincipleMacroSpring2022/build/midterm_review.pdf">Midterm Review</a>
+<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
+<li><a href="pdf/PrincipleMacro/build/midterm_review.pdf">Midterm Review</a>
 <!-- - [Why is Ukraine the West's Fault? Featuring John Mearsheimer](https://youtu.be/JrMiSQAGOS4?t=2618) --></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
@@ -1189,41 +1188,40 @@ My result shows that
 <description><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
 <p>ECON 2002.01, The Ohio State University, Summer 2021</p>
 <p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
-<h2 id="lecture-videos">Lecture Videos</h2>
-<ul>
-<li><a href="https://youtu.be/j2xNxtsa2Uk">Unit 1</a></li>
-<li><a href="https://youtu.be/bmlgp_Pqecw">Unit 2</a></li>
-<li><a href="https://youtu.be/CBSHbUHcvY4">Unit 3</a></li>
-<li><a href="https://youtu.be/WnCUIAaRwrQ">Unit 6 Part 1</a></li>
-<li><a href="https://youtu.be/41vHVk0yL-4">Unit 6 Part 2</a></li>
-<li><a href="https://youtu.be/UgF-HO1If3w">Unit 7</a></li>
-<li><a href="https://youtu.be/tdM3XLQt76A">Unit 9</a></li>
-<li><a href="https://youtu.be/DCH9CUuS93o">Unit 10 Part 1</a></li>
-<li><a href="https://youtu.be/L_IcpcX372g">Unit 10 Part 2</a></li>
-<li><a href="https://youtu.be/VkZXrPe6wG0">Unit 11</a></li>
-<li><a href="https://youtu.be/rbfoUkP_VCQ">Unit 13</a></li>
-<li><a href="https://youtu.be/1eEsTPxa5WQ">Unit 14</a></li>
-<li><a href="https://youtu.be/0HDBVajKozg">Unit 15</a></li>
-<li><a href="https://youtu.be/3jX5ZP5AGGI">Unit 15 Patch</a></li>
-<li><a href="https://youtu.be/auswkrj7OOM">Unit 16</a></li>
-<li><a href="https://youtu.be/tfpdEXwhnyY">Unit 17</a></li>
-</ul>
+<!--## Lecture Videos-->
+<!---->
+<!--- [Unit 1](https://youtu.be/j2xNxtsa2Uk)-->
+<!--- [Unit 2](https://youtu.be/bmlgp_Pqecw)-->
+<!--- [Unit 3](https://youtu.be/CBSHbUHcvY4)-->
+<!--- [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ)-->
+<!--- [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4)-->
+<!--- [Unit 7](https://youtu.be/UgF-HO1If3w)-->
+<!--- [Unit 9](https://youtu.be/tdM3XLQt76A)-->
+<!--- [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o)-->
+<!--- [Unit 10 Part 2](https://youtu.be/L_IcpcX372g)-->
+<!--- [Unit 11](https://youtu.be/VkZXrPe6wG0)-->
+<!--- [Unit 13](https://youtu.be/rbfoUkP_VCQ)-->
+<!--- [Unit 14](https://youtu.be/1eEsTPxa5WQ)-->
+<!--- [Unit 15](https://youtu.be/0HDBVajKozg)-->
+<!--- [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI)-->
+<!--- [Unit 16](https://youtu.be/auswkrj7OOM)-->
+<!--- [Unit 17](https://youtu.be/tfpdEXwhnyY)-->
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="pdf/PrincipleMacroSummer2021/math.pdf">Math Supplement</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
-<li><a href="pdf/PrincipleMacroSummer2021/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
+<li><a href="pdf/PrincipleMacro/math.pdf">Math Supplement</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>

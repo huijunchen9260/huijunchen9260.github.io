@@ -1,0 +1,641 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+% mint: code chuck and syntax highlighting
+%% outputdir should change according to pdf build directory
+\usepackage[outputdir=build,cache=false]{minted}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
+
+\newcommand{\Getxycoords}[3]{%
+    \pgfplotsextra{%
+        % using `\pgfplotspointgetcoordinates' stores the (axis)
+        % coordinates in `data point' which then can be called by
+        % `\pgfkeysvalueof' or `\pgfkeysgetvalue'
+        \pgfplotspointgetcoordinates{(#1)}%
+        % `\global' (a TeX macro and not a TikZ/PGFPlots one) allows to
+        % store the values globally
+         \global\pgfkeysgetvalue{/data point/x}{#2}%
+         \global\pgfkeysgetvalue{/data point/y}{#3}%
+     }%
+}
+
+% % Create fake \onslide and other commands for standalone picture
+% \usepackage{xparse}
+% \RenewDocumentCommand{\onslide}{s t+ d<>}{}
+% \RenewDocumentCommand{\only}{d<>}{}
+% \RenewDocumentCommand{\uncover}{d<>}{}
+% \RenewDocumentCommand{\visible}{d<>}{}
+% \RenewDocumentCommand{\invisible}{d<>}{}
+
+% \tikzset{
+%     onslide/.code args={<#1>#2}{% http://tex.stackexchange.com/a/6155/16595
+%         \only<#1>{\pgfkeysalso{#2}}
+%     },
+%     alt/.code args={<#1>#2#3}{%
+%         \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+%     },
+% }
+
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+
+\renewcommand{\square}{\scalebox{0.7}{$\blacksquare$ \hspace{0.5em}}}
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering]
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsection\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\begin{document}
+    \title[Unit 7]{Unit 7: \\ The Firm, Demand Elasticity \\ and Market Competition}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\section[Intro]{Introduction}
+\label{sec:Introduction}
+
+\begin{frame}{Introduction}
+\label{slide:Introduction}
+    \begin{center}
+        \textit{How do the firm and consumers interacts?}
+    \end{center}
+    \begin{itemize}
+        \item We have been neglecting \alert{revenue} for the past units. What's its deal?
+        \item To answer this question, we need to see how consumers look like \alert{from firm's perspective}
+        \item Firm doesn't see consumer as individuals; what they see is \textbf{demand}
+        \begin{itemize}
+            \item How sensitive the demand is to the \alert{prices}? (price elasticity)
+            \item Can I produce enough to satisfy all demand? (returns to scale)
+            \item Can I \alert{alter} the demand / set prices? (market power)
+            \item How I benefit from production and trade? (producer/consumer surplus)
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section[Elasticity]{Elasticity \& Price Elasticity of Demand}
+\label{sec:Elasticity____Price_Elasticity_of_Demand}
+
+
+\begin{frame}{Elasticity in general}
+\label{slide:Elasticity_in_general}
+
+\begin{definition}[The x-elasticity of y]
+ The x-elasticity of y measures the fractional response of y to a fraction change in x
+\end{definition}
+
+\begin{itemize}
+    \item Elasticity is the measure of the \textbf{sensitivity} of one variable to another.
+    \item A \textbf{highly elastic} variable will \textbf{respond more dramatically} to changes in the variable it is dependent on
+    % \item In the def above, $ y $ is the variable that being affected, and $ x $ is the variable that $ y $ depends on.
+    \item The formula for elasticity is
+        %
+        \begin{align*}
+         \frac{\text{growth rate of } y}{\text{growth rate of } x} \quad \text{or} \quad \frac{(y_{2} - y_{1}) / y_{1}}{(x_{2} - x_{1}) / x_{1}}
+         &
+         \quad
+         \text{if discrete,}
+         \\
+         \frac{\partial y / y}{ \partial x / x}
+        &
+         \quad
+        \text{if continuous.}
+        \end{align*}
+        %
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Price Elasticity of Demand}
+\label{slide:Price_Elasticity_of_Demand}
+    Following the definition of elasticity, the specification on \alert{how sensitive quantity demanded ($y$) is to the price ($x$)} is $ \displaystyle \epsilon = \frac{(Q_{2} - Q_{1})/Q_{1}}{(P_{2} - P_{1}) / P_{1}} $
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Assume change in price is $ 1 $,
+            \begin{itemize}
+                \item $ |\epsilon_{A}| = \left|\frac{(20 - 20.0125 )/20}{(6400-6399)/6400}\right| = 4$
+                \begin{itemize}
+                    \item $6399 = -80 \times 20.0125 + 8000$
+                \end{itemize}
+                \item $ |\epsilon_{B}| = \left|\frac{(50 - 50.0125 )/20}{(4000-3999)/4000}\right| = 1$
+                \begin{itemize}
+                    \item $3999 = -80 \times 50.0125 + 8000$
+                \end{itemize}
+                \item $ |\epsilon_{C}| = \left|\frac{(70 - 70.0125 )/20}{(2400-2399)/6400}\right| = 0.43$
+                \begin{itemize}
+                    \item $2399 = -80 \times 70.0125 + 8000$
+                \end{itemize}
+
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\linewidth]{./figures/PElasQ}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{Elasticity and Slope: History Story}
+\label{slide:Elasticity_and_Slope}
+    \begin{center}
+        \textit{Is price determining quantity demanded, or the other way around?}
+    \end{center}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \only<1>{
+            \begin{itemize}
+                \item Mathematically speaking, above question is asking $ Q(P) $ or $ P(Q) $
+                \item Graphically speaking, $ QP $ plane is saying $ P(Q) $, i.e., \textit{quantity demanded determines prices} \ldots match experience?
+                \item What is the ``slope'' in the axis-swapped figure? Roughly elasticity?
+            \end{itemize}
+            }
+            \only<2>{
+            \begin{itemize}
+                \item Slope are $ -\frac{1}{80} $, the inverse of the slope before, and constant over A, B, and C.
+                \item Turns out the original formulation is this figure, i.e., \alert{price determines the quantity demanded}, and we can measure the \textbf{absolute change} of demand using slope.
+            \end{itemize}
+            }
+            \only<3>{
+            \begin{itemize}
+                \item However, some Economists wants to compare \alert{growth in quantity demanded} when \alert{prices are in a certain region} over a long time series, which motivates them to \alert{swap the axis}.
+                \item But they still want to see how \alert{quantity changes with the price}!
+            \end{itemize}
+            }
+            \only<4>{
+            \begin{itemize}
+                \item Eventually, as time goes by, we separate the definition as:
+                \item Slope measures the \textbf{absolute/average changes}
+                \item Elasticity measure the \textbf{relative/percentage/marginal changes}
+                \item Thus, a straight line has \alert{constant slope} but \alert{different elasticity}
+            \end{itemize}
+            }
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \only<1-2>{
+            \begin{figure}
+                \centering
+                \includestandalone[width=\linewidth]{./figures/SlopeElas}
+            \end{figure}
+            }
+            \only<3-4>{
+            \begin{figure}
+                \centering
+                \includestandalone[width=\linewidth]{./figures/PElasQ}
+            \end{figure}
+            }
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Constant Elasticity of Demand}
+\label{slide:Constant_Elasticity_of_Demand}
+    Since a straight line doesn't provide constant elasticity, what's the shape of demand function has constant elasticity?
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Recall $ \epsilon = \frac{P}{Q(P)} \frac{\partial Q(P)}{\partial P} $, and $ Q(P) $ is a function of $ P $.
+                \item $ Q(P) $ needs to have some \alert{power} so that after differentiation, all the $ P $'s cancels out and left only constant.
+                \item If $ Q(P) = P^{-0.8} $, then $ \epsilon = \frac{P}{P^{-0.8}} \frac{\partial (P^{-0.8})}{\partial P} = \frac{P}{P^{-0.8}} \times  (-0.8) P^{-1.8} = -0.8 $
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\linewidth]{./figures/ConsElas}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section[Production]{Production: Key Concept}
+\label{sec:Production__Key_Concept}
+
+\begin{frame}{Economies of Scale / Return to Scale}
+\label{slide:Economies_of_Scale___Return_to_Scale}
+\begin{itemize}
+    \item \textbf{Return to scale}: how output will change when inputs increase
+    \item \textbf{Constant return to scale} (CRS): $ x z F( K, N^{d} ) = z F( xK, xN^{d} ) $
+    \begin{itemize}
+        \item output increase \alert{proportionally} with inputs
+        \item small firms are \alert{as efficient as} large firms
+    \end{itemize}
+    \item \textbf{Increasing return to scale} (IRS): $ x z F( K, N^{d} ) > z F( xK, xN^{d} ) $
+    \begin{itemize}
+        \item output increase \alert{more than proportionally} with inputs
+        \item small firms are \alert{less efficient than} large firms
+    \end{itemize}
+    \item \textbf{Decreasing return to scale} (DRS): $ x z F( K, N^{d} ) < z F( xK, xN^{d} ) $
+    \begin{itemize}
+        \item output increase \alert{less than proportionally} with inputs
+        \item small firms are \alert{more efficient than} large firms
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Economies of Scale: Example}
+\label{slide:Economies_of_Scale__Example}
+    \begin{itemize}
+        \item IRS $ \rightarrow  $ Economies of scale, and DRS $ \rightarrow  $ Diseconomies of scale
+        \item Economies of scale includes:
+        \begin{enumerate}
+            \item Cost advantages – Large firms can purchase inputs on more favourable terms, because they have greater bargaining power when negotiating with suppliers.
+            \item Demand advantages - Network effects (value of output rises with number of users e.g. software application)
+        \end{enumerate}
+        \item However, large firms can also suffer from diseconomies of scale
+        \begin{itemize}
+            \item e.g. additional layers of bureaucracy due to too many employees.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Cost Function}
+\label{slide:Cost_Function}
+    Cost functions show how production costs vary with quantity produced.
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{itemize}
+                \only<1> { \item $ AC(Q) \equiv \frac{C(Q)}{Q} $: average cost }
+                \only<1> { \item $ MC(Q) \equiv \frac{\partial C(Q)}{\partial Q} $: marginal cost }
+                \only<1> { \item $ F $: fixed cost }
+                \item $ c_{0} $: lowest point on $ AC(Q) $
+                \only<1> { \item Why $ AC(Q) $ and $ MC(Q) $ intersect at the lowest point? }
+                \only<2> { \item $ MC(Q) $ always increase as $ Q $ increases }
+                \only<2> { \item If $ AC(Q) > \green{(<)} MC(Q) $: the relative increment in cost function, i.e., \alert{marginal cost}, is \textbf{smaller \green{(larger)}} than the \alert{increment of $ 1 $ unit $ Q $} (denominator), and thus $ AC(Q) \downarrow \green{(\uparrow )}  $}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/CostFunc}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section[Profit]{Profit Maximization}
+\label{sec:Profit_Maximization}
+
+\begin{frame}{If Price is a Function of Quantity}
+\label{slide:If_Price_is_a_Function_of_Quantity}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \only<1>{
+                \item Assume the firm is \alert{monopoly}: price being affected by quantity decision
+                \item Profit max: $ \pi = R(Q) - C(Q) $
+                \item $ \frac{\partial R(Q)}{\partial Q}  \Rightarrow MR(Q) $
+                \item $ \frac{\partial C(Q)}{\partial Q}  \Rightarrow MC(Q) $
+                }
+                \only<2>{
+                \item FOC: $MR - MC = 0 \Rightarrow MR = MC$
+                \item Intersect at $ E $, which determines optimal $ Q = 30.97 $
+                \item As firm produce at $ Q = 30.97 $, the market price $ P = 90 - 30.97 = 59.03 $.
+                }
+                \only<3>{
+                \item Another way to maximize profit is by \alert{isoprofit curve} and demand itself.
+                \item $ MC $ is also the \alert{individual supply curve}
+                }
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+
+\end{frame}
+
+\begin{frame}{If Price is NOT a Function of Quantity (Residual Demand)}
+\label{slide:If_Price_is_NOT_a_Function_of_Quantity}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \only<1>{
+                \item Assume the firm is in \alert{perfect competition}: \alert{infinite number} of firms and each \alert{taken prices as given} (no market power)
+                \item This tiny firm thinks it is facing a \alert{horizontal demand curve}, which means that he \alert{cannot affect prices with quantity produced}
+                }
+                \only<2>{
+                \item The demand that \textbf{firm is perceiving} is called \alert{residual demand}
+                \item $ P = 50 \Rightarrow R(Q) = 50Q \Rightarrow MR = 50 $
+                \item $ P = MR = MC \Rightarrow 1.8 Q^{0.8} = 50 \Rightarrow Q = ( \frac{50}{1.8} )^{ \frac{1}{0.8}} \approx 63.77 $
+                }
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC_PC}
+            \end{figure}
+
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section[Surplus]{Gains from Trade}
+\label{sec:Gains_from_Trade}
+
+\begin{frame}{Individual Supply Aggregates into Aggregate Supply}
+\label{slide:Individual_Supply_Aggregation_into_Aggregate_Supply}
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{itemize}
+                \item \alert{Tiny} firm 1 is facing residual demand $ P_{1} = 50 $, and thus he wants to produce at $ Q \approx 63.77 $
+                \item \alert{Tiny} firm 2: $ P_{2} = 40$, produce $Q = ( \frac{40}{1.8} )^{ \frac{1}{0.8}} \approx 48.25$
+                \item Same applies to firm 3 and 4, and thus even all firms have the same cost function, \alert{each point at supply curve represent each firm}.
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC_PCFirm}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Individual Demand Aggregates into Aggregate Demand}
+\label{slide:Individual_Demand_Aggregates_into_Aggregate_Demand}
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{itemize}
+                \item \alert{Tiny} \alert{consumer} 1 is facing residual supply $ P_{1} = 50 $, and thus he wants to buy at $ Q = 40$
+                \item \alert{Tiny} consumer 2: $ P_{2} = 40$, buy at $Q = 50$
+                \item Same applies to consumer 3 and 4, and thus even all consumers have the same demand function, \alert{each point at demand curve represent each consumer}.
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC_PCConsumer}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Consumer and Producer Surplus}
+\label{slide:Consumer_and_Producer_Surplus}
+
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \only<1>{
+                \item Consumer $A$ is willing to pay $P_{A} = 80$
+                \item Firm $ A' $ is will to produce at cost $ P_{A'} = 1.8 \times 10^{0.8} \approx 11.36 $
+                \item Both pay $ P^{*} = 40.7 $:
+                }
+                \only<2>{
+                \item Consumer $B$ is willing to pay $P_{B} = 70$
+                \item Firm $ B' $ is will to produce at cost $ P_{B'} = 1.8 \times 20^{0.8} \approx 19.77 $
+                \item Both pay $ P^{*} = 40.7 $:
+                }
+                \only<3>{
+                \item Consumer $C$ is willing to pay $P_{C} = 60$
+                \item Firm $ C' $ is will to produce at cost $ P_{C'} = 1.8 \times 30^{0.8} \approx 27.35$
+                \item Both pay $ P^{*} = 40.7 $:
+                }
+                \only<4>{
+                \item Consumer $D$ is willing to pay $P_{D} = 50$
+                \item Firm $ D' $ is will to produce at cost $ P_{D'} = 1.8 \times 40^{0.8} \approx 34.43$
+                \item Both pay $ P^{*} = 40.7 $:
+                }
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+        \begin{figure}
+            \centering
+            \includestandalone[width=\textwidth]{./figures/MRMC_PCMarket}
+        \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Market Power}
+\label{slide:Market_Power}
+    \begin{center}
+        \textit{What if firm is monopoly?}
+    \end{center}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \item $ MR = MC $ determines $ Q^{*} = 31 $, and vertical upward to Demand at $ M_{2} $ to get $ P^{*} = 59 $.
+                \item Deadweight Loss created: $ \triangle EM_{1}M_{2} $
+                \item CS $ \downarrow$ $\because$ DWL \& PS
+                \item PS $ \uparrow  $: gave up $ \triangle EM_{1}M_{3} $, but gain part of CS
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includestandalone[width=\textwidth]{./figures/MRMC_MonopolyMarket}
+        \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Markup / Price Spread}
+\label{slide:Markup___Price_Spread}
+    \begin{itemize}
+        \item Markup $ = \frac{P - MC}{P} $ is a measure of market power
+        \item Graphically represented by $ \overline{M_{1}M_{2}} $, is inversely proportional to price elasticity of demand.
+    \end{itemize}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC_MonopolyMarket}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includestandalone[width=\textwidth]{./figures/MRMC_Markup_LowPElas}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Price Elasticity and Market Power}
+\label{slide:Price_Elasticity_and_Market_Power}
+\begin{itemize}
+    \item A firm’s profit margin depends on the \alert{elasticity of demand}, which is determined by competition:
+    \begin{itemize}
+        \item Demand is relatively \textbf{inelastic} if there are \textbf{few close substitutes}
+        \item Firms with market power have enough bargaining power to \alert{set prices} without losing customers to competitors
+    \end{itemize}
+    \item Competition policy (limits on market power) can be beneficial to consumers when firms collude to keep prices high.
+    \framebreak
+    \item Example of market power: A firm selling \alert{specialized} products.
+    \begin{itemize}
+        \item They face \alert{little competition} and hence have \alert{inelastic demand}.
+        \item They can set price above marginal cost without losing customers, thus earning \textbf{monopoly rents}.
+        \item This is a form of market failure because there is deadweight loss.
+    \end{itemize}
+    \item A natural monopoly arises when one firm can \alert{produce at lower average costs} ($+$) than two or more firms e.g. utilities.
+    \item Instead of encouraging competition, policymakers may put price controls or make these firms publicly owned.
+    \framebreak
+    \item Firms can increase their market power by:
+    \begin{enumerate}
+        \item Innovating – Technological innovation can allow firms to differentiate their products from competitors’ e.g. hybrid cars.
+        \begin{itemize}
+            \item Firms that invent a completely new product may prevent competition altogether through patents or copyright laws.
+        \end{itemize}
+
+        \item Advertising – Firms can attract consumers away from competing products and create brand loyalty. Advertising can be more effective than discounts in increasing demand for a brand.
+    \end{enumerate}
+    \item Both of these tactics can shift the firm’s demand curve.
+\end{itemize}
+\end{frame}
+
+
+%\section{Appendix}
+%\label{sec:Appendix}
+
+%\appendix
+%% -------------------------------------------
+%\setbeamertemplate{headline}
+%{
+%\setbeamercolor{section in head/foot}{fg=black, bg=white}
+%\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+%}
+%%------------------------------------------
+%% \begin{frame}\frametitle{}
+%% \begin{columns}
+%% \label{Appendix}
+%% \column{1\linewidth}
+%% \centering
+%% {\Large \alert{Appendix}}
+%% \end{columns}
+%% \end{frame}
+%%------------------------------------------
+%\begin{frame}[allowframebreaks]{References}
+%\footnotesize
+%\bibliographystyle{$BIB_STYLE}
+%\bibliography{$BIBFILE}
+%\end{frame}
+
+\end{document}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{umax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maximum}\PYG{p}{(}\PYG{n}{ustar}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{zloc}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{ustar}\PYG{p}{)[}\PYG{l+m+mi}{1}\PYG{p}{]}
+\PYG{+w}{    }\PYG{n}{Gloc}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{ustar}\PYG{p}{)[}\PYG{l+m+mi}{2}\PYG{p}{]}
+\PYG{+w}{    }\PYG{n}{zmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zgrid}\PYG{p}{[}\PYG{n}{zloc}\PYG{p}{]}
+\PYG{+w}{    }\PYG{n}{Gmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Ggrid}\PYG{p}{[}\PYG{n}{Gloc}\PYG{p}{]}
+\end{Verbatim}

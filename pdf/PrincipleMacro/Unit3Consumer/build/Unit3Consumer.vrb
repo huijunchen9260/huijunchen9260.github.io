@@ -1,0 +1,40 @@
+\frametitle{Income Effect}
+\label{slide:Working_Hours}
+
+Both free time and grain $ \uparrow  $ $ \Rightarrow  $ Both goods are \alert{normal goods}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \datavisualization [scientific axes = clean,
+                              x axis = {length = 8cm, label = {Free time}},
+                              y axis = {length = 4cm, ticks = {few}, label = {grain}},
+                              visualize as smooth line/.list={lowwage, highwage},
+                              style sheet = vary dashing,
+                              legend = north east inside,
+                              lowwage = {label in legend = {text = low wage}},
+                              highwage = {label in legend = {text = high wage}}
+            ]
+              data [set=lowwage, format=function] {
+                var x : interval [8:24];
+                func y = 15 * (24 - \value x);
+              }
+              data [set=highwage, format=function] {
+                var x : interval [8:24];
+                func y = 20 * 24 - 15 * \value x;
+              }
+              info {
+                \node (A) at ( visualization cs: x = 17.5, y = 120 ) {};
+                \node (B) at ( visualization cs: x = 12.5, y = 250 ) {};
+                \draw[thick, blue, name path = AB] (A) to[bend left=32]
+                    node[pos=0.35,draw,fill=red,circle,inner sep=1pt, left] (a) {}
+                    (B);
+                \node[xshift = 1.1cm, yshift = 1cm, at = (A)] (C){};
+                \node[xshift = 1.1cm, yshift = 1cm, at = (B)] (D){};
+                \draw[thin, orange, name path = CD]
+                    (C) to[bend left=32]
+                    node[pos=0.35,draw,fill=red,circle,inner sep=1pt] (b) {}
+                    (D);
+              }
+            ;
+        \end{tikzpicture}
+    \end{center}
