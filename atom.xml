@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-29T00:14:43Z</updated>
+<updated>2025-01-29T16:21:16Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Test math</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/testMath.html"/>
+<id>https://huijunchen9260.github.io/testMath.html</id>
+<published>2025-01-29T16:21:08Z</published>
+<updated>2025-01-29T16:21:08Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="test-math">Test math</h1>
+<p>$\sum<em>{t=1}^{M} F(x</em>t)$</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Intermediate Macroeconomics Theory, Spring 2025</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSpring2025.html"/>
@@ -1034,7 +1044,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
 <id>https://huijunchen9260.github.io/LTVHousingPrice.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2022-11-03T21:40:52Z</updated>
+<updated>2025-01-29T00:14:44Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
@@ -1055,7 +1065,7 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2024-08-16T10:13:15Z</updated>
+<updated>2025-01-29T00:14:44Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
 <!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->

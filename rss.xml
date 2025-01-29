@@ -5,6 +5,64 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Test math</title>
+<link>https://huijunchen9260.github.io/testMath.html</link>
+<guid>https://huijunchen9260.github.io/testMath.html</guid>
+<pubDate>Wed, 29 Jan 2025 16:21:08 -0500</pubDate>
+<description><![CDATA[<h1 id="test-math">Test math</h1>
+<p>$\sum<em>{t=1}^{M} F(x</em>t)$</p>]]></description>
+</item>
+<item>
+<title>The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
+<link>https://huijunchen9260.github.io/LTVHousingPrice.html</link>
+<guid>https://huijunchen9260.github.io/LTVHousingPrice.html</guid>
+<pubDate>Wed, 29 Jan 2025 00:14:44 -0500</pubDate>
+<description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
+<p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
+<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
+<!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
+<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)--></p>
+<p>Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022</p>
+<p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
+This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
+In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
+The policy&#8217;s positive effect on house prices is more severe with greater inequality.
+A strict ceiling is especially harmful to the poor.
+Taxes can only intensify the positive effect on house prices, although they can mitigate the adverse effects on welfare.</p>
+<p>;tags: Working</p>]]></description>
+</item>
+<item>
+<title>Debt Financing, Used Capital Market and Capital Reallocation</title>
+<link>https://huijunchen9260.github.io/UsedKCollateral.html</link>
+<guid>https://huijunchen9260.github.io/UsedKCollateral.html</guid>
+<pubDate>Wed, 29 Jan 2025 00:14:44 -0500</pubDate>
+<description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
+<!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
+<!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
+<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">[paper]</a></p>
+<p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">[slide]</a></p>
+<p>Present at: Midwest Economics Association Annual Meetings 2023, Midwest Macro Meeting 2023 (Clemson), Taiwan Economic Research 2023, 18th Economics Graduate Students’ Conference (WUSTL) 2023</p>
+<p>I study how much financial frictions and the endogeneity of partially irreversible
+capital explain the slow recovery of the Great Recession. I propose a heterogeneous
+firm model with real and financial frictions. Firms adjust their capital stock by trading
+on the used capital market; thus, the capital partial irreversibility is endogenized by the
+price in the market. This irreversibility creates two opposite forces affecting investment
+volatility. First, capital investment is relatively cheaper in the recession, and thus
+attracts firms to invest in capital, dampening the fall of aggregate investment. Second,
+in a downturn, the capital becomes less reversible, and investments become riskier,
+exacerbating the fall of aggregate investment. In my model, the collateral constraint is
+procyclical since it is based on the resale value of the capital, and thus amplifies the first
+force and dampens the response of aggregate investment. I found that in the steady
+state, the used capital market induces firms to stay financially constrained due to lower
+effective capital prices. This status however may put these firms in a vulnerable position
+when the value of their collateral drops during a recession, as they heavily depend on
+debt to finance their capital investment. However, the perfect foresight exercise shows
+that the time-varying collateral constraint channel is relatively small. The main channel
+lies in the used capital market price, which acts as an automatic stabilizer during the
+credit crisis.</p>
+<p>;tags: Working</p>]]></description>
+</item>
+<item>
 <title>Aggregate Implications of Corporate Taxation over the Business Cycle</title>
 <link>https://huijunchen9260.github.io/BonusDepreciation.html</link>
 <guid>https://huijunchen9260.github.io/BonusDepreciation.html</guid>
@@ -914,37 +972,6 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
-<title>Debt Financing, Used Capital Market and Capital Reallocation</title>
-<link>https://huijunchen9260.github.io/UsedKCollateral.html</link>
-<guid>https://huijunchen9260.github.io/UsedKCollateral.html</guid>
-<pubDate>Fri, 16 Aug 2024 10:13:15 -0400</pubDate>
-<description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-<!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
-<!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
-<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">[paper]</a></p>
-<p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">[slide]</a></p>
-<p>Present at: Midwest Economics Association Annual Meetings 2023, Midwest Macro Meeting 2023 (Clemson), Taiwan Economic Research 2023, 18th Economics Graduate Students’ Conference (WUSTL) 2023</p>
-<p>I study how much financial frictions and the endogeneity of partially irreversible
-capital explain the slow recovery of the Great Recession. I propose a heterogeneous
-firm model with real and financial frictions. Firms adjust their capital stock by trading
-on the used capital market; thus, the capital partial irreversibility is endogenized by the
-price in the market. This irreversibility creates two opposite forces affecting investment
-volatility. First, capital investment is relatively cheaper in the recession, and thus
-attracts firms to invest in capital, dampening the fall of aggregate investment. Second,
-in a downturn, the capital becomes less reversible, and investments become riskier,
-exacerbating the fall of aggregate investment. In my model, the collateral constraint is
-procyclical since it is based on the resale value of the capital, and thus amplifies the first
-force and dampens the response of aggregate investment. I found that in the steady
-state, the used capital market induces firms to stay financially constrained due to lower
-effective capital prices. This status however may put these firms in a vulnerable position
-when the value of their collateral drops during a recession, as they heavily depend on
-debt to finance their capital investment. However, the perfect foresight exercise shows
-that the time-varying collateral constraint channel is relatively small. The main channel
-lies in the used capital market price, which acts as an automatic stabilizer during the
-credit crisis.</p>
-<p>;tags: Working</p>]]></description>
-</item>
-<item>
 <title>Note on Fortran</title>
 <link>https://huijunchen9260.github.io/FortranNote.html</link>
 <guid>https://huijunchen9260.github.io/FortranNote.html</guid>
@@ -1148,25 +1175,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <p>Northeast Ohio Economics Workshop 2022</p></li>
 </ul>
 <p>;tags: Discussion</p>]]></description>
-</item>
-<item>
-<title>The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
-<link>https://huijunchen9260.github.io/LTVHousingPrice.html</link>
-<guid>https://huijunchen9260.github.io/LTVHousingPrice.html</guid>
-<pubDate>Thu, 03 Nov 2022 21:40:52 -0400</pubDate>
-<description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
-<p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
-<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
-<!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
-<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)--></p>
-<p>Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022</p>
-<p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
-This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
-In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
-The policy&#8217;s positive effect on house prices is more severe with greater inequality.
-A strict ceiling is especially harmful to the poor.
-Taxes can only intensify the positive effect on house prices, although they can mitigate the adverse effects on welfare.</p>
-<p>;tags: Working</p>]]></description>
 </item>
 <item>
 <title>Note on Julia</title>
