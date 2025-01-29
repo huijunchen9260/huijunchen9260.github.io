@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-27T15:34:36Z</updated>
+<updated>2025-01-29T00:09:26Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSpring2025.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSpring2025.html</id>
 <published>2024-12-25T11:34:44Z</published>
-<updated>2024-12-25T11:34:44Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-spring-2025">Intermediate Macroeconomics Theory, Spring 2025</h1>
 <p>ECON 4002.01, The Ohio State University, Spring 2025</p>
@@ -110,7 +110,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2024.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2024.html</id>
 <published>2024-08-19T10:26:02Z</published>
-<updated>2024-09-04T09:38:18Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2024">Intermediate Macroeconomics Theory, Autumn 2024</h1>
 <p>ECON 4002.01, The Ohio State University, Autumn 2024</p>
@@ -211,11 +211,12 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/BonusDepreciation.html"/>
 <id>https://huijunchen9260.github.io/BonusDepreciation.html</id>
 <published>2024-08-16T10:13:15Z</published>
-<updated>2024-11-25T13:22:27Z</updated>
+<updated>2025-01-29T00:05:43Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">paper</a></p>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">slides</a></p>
+<p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">[paper]</a></p>
+<p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">[slide]</a></p>
+<p>Present at: CES North America Annual Conference 2024, Canadian Economics Association Annual Conference 2024, Taiwan Economics Research 2024, Midwest Macro Meeting 2024 (Purdue), Northeast Ohio Economics Workshop 2024 (Cleveland Fed)</p>
 <p>Corporate tax deductions are widely employed as countercyclical policies, yet their impact on the business cycle and interactions with other policies remain largely understudied.
 I examine the cyclical implications of such deductions by developing a novel dynamic stochastic general equilibrium model in which firms face credit market imperfections and idiosyncratic productivity shocks.
 In my model, firms&#8217; investment decisions are distorted by collateralized borrowing and corporate taxation, and investment expenditures can be deducted from taxable income through targeted or untargeted accelerated depreciation policies.
@@ -230,7 +231,7 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2024.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2024.html</id>
 <published>2024-01-06T00:23:41Z</published>
-<updated>2024-01-06T00:42:46Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2024">Principle of Macroeconomics, Spring 2024</h1>
 <p>ECON 2002.01, The Ohio State University, Spring 2024</p>
@@ -299,7 +300,7 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2023.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2023.html</id>
 <published>2023-08-10T22:01:34Z</published>
-<updated>2023-09-09T09:01:57Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2023">Intermediate Macroeconomics Theory, Autumn 2023</h1>
 <p>ECON 4002.01, The Ohio State University, Autumn 2023</p>
@@ -396,7 +397,7 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2023.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSummer2023.html</id>
 <published>2023-05-04T00:06:54Z</published>
-<updated>2023-07-06T14:03:35Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2023">Intermediate Macroeconomics Theory, Summer 2023</h1>
 <p>ECON 4002.01, The Ohio State University, Summer 2023</p>
@@ -493,7 +494,7 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2023.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2023.html</id>
 <published>2022-12-25T22:24:07Z</published>
-<updated>2023-04-21T09:31:44Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2023">Principle of Macroeconomics, Spring 2023</h1>
 <p>ECON 2002.01, The Ohio State University, Spring 2023</p>
@@ -650,7 +651,7 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroAutumn2022.html</id>
 <published>2022-08-09T12:50:08Z</published>
-<updated>2022-11-29T22:18:23Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-autumn-2022">Intermediate Macroeconomics Theory, Autumn 2022</h1>
 <p>ECON 4002.02, The Ohio State University, Autumn 2022</p>
@@ -937,7 +938,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSummer2022.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSummer2022.html</id>
 <published>2022-04-23T14:27:53Z</published>
-<updated>2022-07-28T12:51:29Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-summer-2022">Intermediate Macroeconomics Theory, Summer 2022</h1>
 <p>ECON 4002.01, The Ohio State University, Summer 2022</p>
@@ -1085,7 +1086,7 @@ credit crisis.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
 <published>2021-12-30T20:19:06Z</published>
-<updated>2022-07-24T17:34:02Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2022">Principle of Macroeconomics, Spring 2022</h1>
 <p>ECON 2002.01, The Ohio State University, Spring 2022</p>
@@ -1345,7 +1346,7 @@ My result shows that
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSummer2021.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</id>
 <published>2021-11-28T00:32:14Z</published>
-<updated>2022-07-24T17:34:02Z</updated>
+<updated>2025-01-27T15:34:37Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
 <p>ECON 2002.01, The Ohio State University, Summer 2021</p>
