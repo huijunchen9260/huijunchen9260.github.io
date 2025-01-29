@@ -8,7 +8,7 @@
 <title>Aggregate Implications of Corporate Taxation over the Business Cycle</title>
 <link>https://huijunchen9260.github.io/BonusDepreciation.html</link>
 <guid>https://huijunchen9260.github.io/BonusDepreciation.html</guid>
-<pubDate>Wed, 29 Jan 2025 00:05:43 -0500</pubDate>
+<pubDate>Wed, 29 Jan 2025 00:09:26 -0500</pubDate>
 <description><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
 <p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">[paper]</a></p>
 <p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">[slide]</a></p>
@@ -921,8 +921,9 @@ for changing office hour from (Tuesday, Thursday) to (Monday, Wednesday).</li>
 <description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
 <!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
 <!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
-<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">paper</a>
-<a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">slides</a></p>
+<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">[paper]</a></p>
+<p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">[slide]</a></p>
+<p>Present at: Midwest Economics Association Annual Meetings 2023, Midwest Macro Meeting 2023 (Clemson), Taiwan Economic Research 2023, 18th Economics Graduate Students’ Conference (WUSTL) 2023</p>
 <p>I study how much financial frictions and the endogeneity of partially irreversible
 capital explain the slow recovery of the Great Recession. I propose a heterogeneous
 firm model with real and financial frictions. Firms adjust their capital stock by trading
@@ -1156,8 +1157,9 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
 <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
-<a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf">slide: MEA annual meeting</a>;
-<a href="pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf">slide: NOE Workshop</a></p>
+<!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
+<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)--></p>
+<p>Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022</p>
 <p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
 In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
