@@ -5,24 +5,31 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
-<title>Test math</title>
-<link>https://huijunchen9260.github.io/testMath.html</link>
-<guid>https://huijunchen9260.github.io/testMath.html</guid>
-<pubDate>Wed, 29 Jan 2025 16:21:08 -0500</pubDate>
-<description><![CDATA[<h1 id="test-math">Test math</h1>
-<p>$\sum<em>{t=1}^{M} F(x</em>t)$</p>]]></description>
+<title>Aggregate Implications of Corporate Taxation over the Business Cycle</title>
+<link>https://huijunchen9260.github.io/BonusDepreciation.html</link>
+<guid>https://huijunchen9260.github.io/BonusDepreciation.html</guid>
+<pubDate>Fri, 31 Jan 2025 00:03:11 -0500</pubDate>
+<description><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
+<p>Corporate tax deductions are widely employed as countercyclical policies, yet their impact on the business cycle and interactions with other policies remain largely understudied.
+I examine the cyclical implications of such deductions by developing a novel dynamic stochastic general equilibrium model in which firms face credit market imperfections and idiosyncratic productivity shocks.
+In my model, firms&#8217; investment decisions are distorted by collateralized borrowing and corporate taxation, and investment expenditures can be deducted from taxable income through targeted or untargeted accelerated depreciation policies.
+My model quantitatively replicates empirical estimates of the distribution of short-run elasticities of investment across firm size to changes in deduction policies.
+I show that raising deductions can reduce the severity and persistence of recessions by alleviating capital misallocation for productive firms.
+Applying my model to the policies in the US 2017 Tax Cuts and Jobs Act, I find that the targeted policy is 30 percent more effective than the untargeted policy in stimulating aggregate output.
+Furthermore, combining both policies reduces the overall effectiveness by 17 percent, revealing potential inefficiencies in current US tax policy implementation.</p>
+<p>;tags: JobMarket</p>]]></description>
 </item>
 <item>
 <title>The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
 <link>https://huijunchen9260.github.io/LTVHousingPrice.html</link>
 <guid>https://huijunchen9260.github.io/LTVHousingPrice.html</guid>
-<pubDate>Wed, 29 Jan 2025 00:14:44 -0500</pubDate>
+<pubDate>Fri, 31 Jan 2025 00:03:11 -0500</pubDate>
 <description><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
-<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
+<!--[paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908);-->
 <!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
-<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)--></p>
-<p>Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022</p>
+<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)-->
+<!--Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022-->
 <p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
 In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
@@ -35,13 +42,8 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <title>Debt Financing, Used Capital Market and Capital Reallocation</title>
 <link>https://huijunchen9260.github.io/UsedKCollateral.html</link>
 <guid>https://huijunchen9260.github.io/UsedKCollateral.html</guid>
-<pubDate>Wed, 29 Jan 2025 00:14:44 -0500</pubDate>
+<pubDate>Fri, 31 Jan 2025 00:03:11 -0500</pubDate>
 <description><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-<!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
-<!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
-<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">[paper]</a></p>
-<p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">[slide]</a></p>
-<p>Present at: Midwest Economics Association Annual Meetings 2023, Midwest Macro Meeting 2023 (Clemson), Taiwan Economic Research 2023, 18th Economics Graduate Students’ Conference (WUSTL) 2023</p>
 <p>I study how much financial frictions and the endogeneity of partially irreversible
 capital explain the slow recovery of the Great Recession. I propose a heterogeneous
 firm model with real and financial frictions. Firms adjust their capital stock by trading
@@ -63,22 +65,61 @@ credit crisis.</p>
 <p>;tags: Working</p>]]></description>
 </item>
 <item>
-<title>Aggregate Implications of Corporate Taxation over the Business Cycle</title>
-<link>https://huijunchen9260.github.io/BonusDepreciation.html</link>
-<guid>https://huijunchen9260.github.io/BonusDepreciation.html</guid>
-<pubDate>Wed, 29 Jan 2025 00:09:26 -0500</pubDate>
-<description><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">[paper]</a></p>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">[slide]</a></p>
-<p>Present at: CES North America Annual Conference 2024, Canadian Economics Association Annual Conference 2024, Taiwan Economics Research 2024, Midwest Macro Meeting 2024 (Purdue), Northeast Ohio Economics Workshop 2024 (Cleveland Fed)</p>
-<p>Corporate tax deductions are widely employed as countercyclical policies, yet their impact on the business cycle and interactions with other policies remain largely understudied.
-I examine the cyclical implications of such deductions by developing a novel dynamic stochastic general equilibrium model in which firms face credit market imperfections and idiosyncratic productivity shocks.
-In my model, firms&#8217; investment decisions are distorted by collateralized borrowing and corporate taxation, and investment expenditures can be deducted from taxable income through targeted or untargeted accelerated depreciation policies.
-My model quantitatively replicates empirical estimates of the distribution of short-run elasticities of investment across firm size to changes in deduction policies.
-I show that raising deductions can reduce the severity and persistence of recessions by alleviating capital misallocation for productive firms.
-Applying my model to the policies in the US 2017 Tax Cuts and Jobs Act, I find that the targeted policy is 30 percent more effective than the untargeted policy in stimulating aggregate output.
-Furthermore, combining both policies reduces the overall effectiveness by 17 percent, revealing potential inefficiencies in current US tax policy implementation.</p>
-<p>;tags: JobMarket</p>]]></description>
+<title>Uncertain Taxation, Government Transfer, and Household Inequality</title>
+<link>https://huijunchen9260.github.io/TaxUncertainty.html</link>
+<guid>https://huijunchen9260.github.io/TaxUncertainty.html</guid>
+<pubDate>Wed, 29 Jan 2025 16:22:36 -0500</pubDate>
+<description><![CDATA[<h1 id="uncertain-taxation-government-transfer-and-household-inequality">Uncertain Taxation, Government Transfer, and Household Inequality</h1>
+<p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
+<p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
+<h3 id="abstract">Abstract</h3>
+<p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
+Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
+Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
+Labor tax suppresses the major income sources of the poor: labor wage.
+The effect of tax policy uncertainty on the wealth distribution and inequality depends on households&#8217; degree of risk aversion.
+When risk aversion is higher, the rich maintain similar levels of consumption by slowing down their capital accumulation process, while this relationship is reversed for the poor, resulting in decreasing wealth inequality.
+Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
+Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
+As a result, lump-sum transfer mitigates some effects of the uncertainty but worsens wealth inequality.</p>
+<p>;tags: Working</p>]]></description>
+</item>
+<item>
+<title>X220 Tablet Disassembly</title>
+<link>https://huijunchen9260.github.io/X220TDiassembly.html</link>
+<guid>https://huijunchen9260.github.io/X220TDiassembly.html</guid>
+<pubDate>Wed, 29 Jan 2025 16:22:36 -0500</pubDate>
+<description><![CDATA[<h1 id="x220-tablet-disassembly">X220 Tablet Disassembly</h1>
+<p>X220 Tablet is such a lovely laptop I bought.
+Although its CPU is pretty weak in the standard of 2022 (i7-2640M), it is still a pretty decent Linux laptop that even have touch screen and integrated stylus.</p>
+<p>There is a serious question for this laptop though.
+Since the fan is dusted, and the thermopaste on the CPU are all dried out, the CPU temperture are constantly 90 degree of Celsius, which is always really hot.</p>
+<p>Today I dissembled the whole laptop to clean the dust on the fan and repaste the thermopaste.
+I am mainly following this <a href="https://www.youtube.com/watch?v=ZsNcVV4jMPw">video</a> for step-by-step tutorial.</p>
+<p>First of all, it is easy to disassemble the keyboard by unscrew the screws locates at the back of the laptop.</p>
+<p><img src="pix/X220TDiassembly/screwout.webp" alt="screwout" /></p>
+<p>The following image also include the tools I am using for this disassembly.</p>
+<p><img src="pix/X220TDiassembly/keyboardout.webp" alt="keyboardout" /></p>
+<p>Another image for the closer look on how the palmrest and those cables.
+Notice that at this stage, we can see the fan is extremely dirty.</p>
+<p><img src="pix/X220TDiassembly/keyboardout2.webp" alt="keyboardout2" /></p>
+<p>Next step is to remove the palmrest.
+Notice that although the both sides of the palmrest are easier to detach, it took some techniques to really take out the palmrest.
+Some angle is required to remove the palmrest from the front side of the laptop.</p>
+<p><img src="pix/X220TDiassembly/palmrest180.webp" alt="palmrest180" /></p>
+<p>We can see the Wifi card at the right-buttom corner of the laptop.
+Zoom in,</p>
+<p><img src="pix/X220TDiassembly/wificard.webp" alt="wificard" />
+We need to unscrew to take out the wifi card.</p>
+<p>To take out the remaining plastic cover in the following image, I need to use the blue triangle plastic tools to stick into the connection of the cover and the buttom, and then detach the plastic cover.</p>
+<p><img src="pix/X220TDiassembly/frontcover.webp" alt="frontcover" /></p>
+<p>Take out, we get</p>
+<p><img src="pix/X220TDiassembly/frontcoverout.webp" alt="frontcoverout" /></p>
+<p>At this stage and remember to unscrew all necessary, we can take the whole motherboard out.</p>
+<p><img src="pix/X220TDiassembly/mboardout.webp" alt="mboardout" /></p>
+<p>Clean the fan, repaste, and reassembly everything, I successfully decrease the CPU temperture to 60 degree.</p>
+<p>It shows again that the importance of maintainence of the laptop and prevent it from overheating.</p>
+<p>;tags: Miscellaneous Technology</p>]]></description>
 </item>
 <item>
 <title>Intermediate Macroeconomics Theory, Autumn 2022</title>
@@ -1235,128 +1276,6 @@ My result shows that
 (2) trained with long enough epochs, the recurrent neural network can reach the interpretation power of linear regression, but maintaining good enough out-of-sample predictions power requires a high number of layers, and
 (3) Both GRU and LSTM performs generally better than SimpleRNN, and the design of reset gate in GRU can prevent noise from outliers, while the outcome generated by LSTM exacerbates with outliers.</p>
 <p>;tags: Miscellaneous</p>]]></description>
-</item>
-<item>
-<title>How do I create this website</title>
-<link>https://huijunchen9260.github.io/WebsiteCreation.html</link>
-<guid>https://huijunchen9260.github.io/WebsiteCreation.html</guid>
-<pubDate>Sun, 24 Jul 2022 17:34:02 -0400</pubDate>
-<description><![CDATA[<h1 id="how-do-i-create-this-website">How do I create this website</h1>
-<p>I have two goals to share with you in this blog post:</p>
-<ol>
-<li>How to use a <a href="https://pedantic.software/git/blogit">blogit</a> to systematically build your website, and</li>
-<li>How to modify the Makefile in <a href="https://pedantic.software/git/blogit">blogit</a>.</li>
-</ol>
-<p>If you want to see the source code for this website, it is stored in <a href="https://github.com/huijunchen9260/websrc">huijunchen9260&#47;websrc</a> repository.</p>
-<h2 id="the-reason">The Reason</h2>
-<p>First, let me briefly talk about <em>WHY</em> I find <a href="https://pedantic.software/git/blogit">blogit</a> is static site generator for me despite there are tones of great and modern static site generators in the web.</p>
-<p>Long story short, it is mainly because the conflict between my desire to customize everything to the way I like and my laziness to not really make such repeatable effort in terms of customization.
-On the one hand, decent blog post <a href="http://john.ankarstrom.se/html/">Write HTML in HTML</a> shows probably the final stage of a Linux user who just cannot stop but customize everything in their website: write everything in HTML.
-However, I don&#8217;t want to write my own website in HTML.
-Probably I am not in that stage yet.</p>
-<p>On the other hand, to avoid writing in HTML, most of the current static site generators are full of fancy themes and JavaScript.
-All the outcome of contemporary static site generators are great.
-They are dedicated designed to look great without any effort.
-To be honest, before making this website using <a href="https://pedantic.software/git/blogit">blogit</a>, I actually used <a href="https://gohugo.io/">Hugo</a> to generate my website.
-If you are lucky and find a theme that do everything for you, and probably not a needy person as I do, then congratulations, the customization that confined by the author of themes works for you.
-Sadly, I <em>AM</em> a very needy person.
-I really want everything to be exactly as the way I want them to be, and such restriction made by the theme author just drives me crazy when I try to update my website.
-Eventually, I realize that the upfront cost to customize my website is too large, and I just don&#8217;t update my blog for like two years.</p>
-<p>That is to say, I fall into a paradox.
-On one side of the spectrum, I really want to customize everything.
-On the other side, I really don&#8217;t want to pay the effort.
-That&#8217;s why I need to find a sweet spot between these two extremes.</p>
-<h2 id="why-blogit">Why <a href="https://pedantic.software/git/blogit">blogit</a>?</h2>
-<p>Because it is simple.</p>
-<p>It is simple enough for me to understand every detail, but do the heavy-duty for me.
-(still not <em>every</em> to be honest, that is exaggeration)
-<a href="https://pedantic.software/git/blogit">blogit</a> is nothing but just a Makefile which insert HTML tags into the Markdown file to make it become a HTML page.
-I don&#8217;t know what&#8217;s happening inside the brain of the author of <a href="https://pedantic.software/git/blogit">blogit</a>, but this is such a terribly tedious job.
-Thankfully, once it is done, it is so simple and magic.
-Every tags are precisely placed in corresponding webpages, and automatically generate a list of articles that every blog need.</p>
-<p>Comparing with all other static site generators, which involves learning <code>YAML</code>, <code>TOML</code>, <code>JS</code> and a lot of &#8220;settings&#8221; just confuses me.</p>
-<h2 id="butblogit-is-only-for-blogs">But&#8230;<a href="https://pedantic.software/git/blogit">blogit</a> is only for blogs!</h2>
-<p>Yes, that is true, and I am not satisfied with that.
-A good personal website in my opinion should include individual pages for specific purposes.
-For example, pages for <a href="research.html">Research</a>, <a href="teaching.html">Teaching</a>, and last link for <a href="blog.html">Blog</a> are necessary for a Ph.D. student website.
-In order to achieve this, I rewrite the code to generate <code>blog&#47;index.html</code> in the Makefile to also generate <code>blog&#47;teaching.html</code>.
-The logic to generate this page is to use the existing tags system:</p>
-<ol>
-<li>I use <code>grep</code> to find out this <code>.md</code> files actually have <code>Teaching</code> tag, and record them into a shell variable <code>$WP</code>.</li>
-<li>If there is no articles with <code>Teaching</code> tag, then create a HTML with &#8220;Under Construction&#8221;.</li>
-<li>Otherwise, we enter the stage of creating <a href="teaching.html">Teaching</a> page:
-<ol>
-<li>Using <code>git</code> command to extract the modified date for each markdown file, and update <code>DATE_EDITED</code>.
-<ul>
-<li><code>git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"</code>
-<ul>
-<li><code>git log</code> create a log file and enter a pager.</li>
-<li><code>git log -1</code> shows the log file on last commit (<code>-1</code> part).</li>
-<li><code>--date</code> and <code>format:</code> shows the format of date to show. I use <code>%F</code> and result in the format <code>%Y-%M-%D</code>.</li>
-<li><code>--pretty</code> and <code>format:</code> shows the format for pretty print. <code>%ad</code> outputs author date, and <code>%n</code> means newline.</li>
-</ul></li>
-</ul></li>
-<li>If there is articles with <code>Teaching</code> tag, generate the <code>DATE</code>, <code>URL</code>, <code>TITLE</code> of the articles using <code>git</code>, and correspond them into links in the <a href="teaching.html">Teaching</a> webpage.</li>
-</ol></li>
-</ol>
-<p>The corresponding code block is also listed below:</p>
-<pre><code class="language-make">blog&#47;teaching.html: teaching.md $(ARTICLES) $(TAGFILES) $(addprefix templates&#47;,$(addsuffix .html,header teaching_header article_list_header article_entry article_separator article_list_footer teaching_footer footer))
-    mkdir -p blog
-    TITLE="$(BLOG_TITLE)"; \
-    PAGE_TITLE="Teaching -- $(BLOG_TITLE)"; \
-    DATE_EDITED="$(shell git log -1 --date="format:$(BLOG_DATE_FORMAT)" --pretty=format:&#39;%ad&#39; -- "$&#60;")"; \
-    export TITLE; \
-    export PAGE_TITLE; \
-    export DATE_EDITED; \
-    envsubst &#60; templates&#47;header.html &#62; $@; \
-    envsubst &#60; templates&#47;teaching_header.html &#62;&#62; $@; \
-    markdown &#60; teaching.md &#62;&#62; $@; \
-    f1=true; \
-    # grep for the markdown files with Teaching tag
-    for f in $(ARTICLES); do \
-        grep -qE "; *tags: .*Teaching.*" "$$f" &#38;&#38; { "$$f1" &#38;&#38; WP="$$f" || WP="$$WP $$f"; f1=false; }; \
-    done ; \
-    # If no files with Teaching tag, output Under Construction
-    [ -z "$$WP" ] &#38;&#38; { \
-        echo "&#60;h1&#62;Under Construction&#60;&#47;h1&#62;" &#62;&#62; $@ ; \
-        envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@ ; \
-        envsubst &#60; templates&#47;footer.html &#62;&#62; $@ ; \
-        exit ; \
-    } ; \
-    # If there&#39;s Teaching tag, find modified dates for all files and update DATE_EDITED
-    [ -n "$$WP" ] &#38;&#38; { \
-        articleNewestDate="$$(for f in $$WP; do \
-            git log -1 --date="format:$(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"; \
-        done | sort -rk2 | head -n 1)"; \
-        tmpNewest=$$(echo $$articleNewestDate | tr -d &#39;-&#39;); \
-        tmpEdit=$$(echo $$DATE_EDITED | tr -d &#39;-&#39;); \
-        [ "$$tmpNewest" -ge "$$tmpEdit" ] &#38;&#38; DATE_EDITED="$$articleNewestDate"
-        export DATE_EDITED; \
-    };  \
-    # IF there&#39;s file with Teaching tag, add hyperlink to each file on this Teaching page
-    [ -n "$$WP" ] &#38;&#38; { \
-        first=true; \
-        echo "&#60;h2&#62;Teaching&#60;&#47;h2&#62;" &#62;&#62; $@ ; \
-        envsubst &#60; templates&#47;article_list_header.html &#62;&#62; $@; \
-        for f in $$WP; do \
-            printf &#39;%s &#39; "$$f"; \
-            git log -1 --date="format:%s $(BLOG_DATE_FORMAT_INDEX)" --pretty=format:&#39;%ad%n&#39; -- "$$f"; \
-        done | sort -rk2 | cut -d" " -f1,3- | while IFS=" " read -r FILE DATE; do \
-            "$$first" || envsubst &#60; templates&#47;article_separator.html; \
-            URL="`printf &#39;%s&#39; "\$$FILE" | sed &#39;s,^$(BLOG_SRC)&#47;\(.*\).md,\1,&#39;`.html" \
-            DATE="$$DATE" \
-            TITLE="`head -n1 "\$$FILE" | sed -e &#39;s&#47;^# &#47;&#47;g&#39;`" \
-            envsubst &#60; templates&#47;article_entry.html; \
-            first=false; \
-        done &#62;&#62; $@; \
-        envsubst &#60; templates&#47;article_list_footer.html &#62;&#62; $@; \
-    };  \
-    envsubst &#60; templates&#47;teaching_footer.html &#62;&#62; $@; \
-    envsubst &#60; templates&#47;footer.html &#62;&#62; $@
-</code></pre>
-<p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
-<p>Updates 2022-02-10: added methods to add modified dates</p>
-<p>;tags: Miscellaneous Technology</p>]]></description>
 </item>
 </channel>
 </rss>

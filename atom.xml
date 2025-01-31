@@ -2,19 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-29T16:21:16Z</updated>
+<updated>2025-01-31T00:04:09Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
 <entry>
-<title type="text">Test math</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/testMath.html"/>
-<id>https://huijunchen9260.github.io/testMath.html</id>
-<published>2025-01-29T16:21:08Z</published>
-<updated>2025-01-29T16:21:08Z</updated>
+<title type="text">Uncertain Taxation, Government Transfer, and Household Inequality</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/TaxUncertainty.html"/>
+<id>https://huijunchen9260.github.io/TaxUncertainty.html</id>
+<published>2025-01-29T16:22:36Z</published>
+<updated>2025-01-29T16:22:36Z</updated>
 <author><name>huijunchen</name></author>
-<summary type="html"><![CDATA[<h1 id="test-math">Test math</h1>
-<p>$\sum<em>{t=1}^{M} F(x</em>t)$</p>]]></summary>
+<summary type="html"><![CDATA[<h1 id="uncertain-taxation-government-transfer-and-household-inequality">Uncertain Taxation, Government Transfer, and Household Inequality</h1>
+<p><a href="pdf/field_paper_HJC.pdf">PDF</a></p>
+<p>This is my field paper in Ph.D. second year, Winter 2020 to Summer 2021.</p>
+<h3 id="abstract">Abstract</h3>
+<p>I study the effects of labor tax, tax policy uncertainty and lump-sum transfer on wealth distribution in a modified Krusell-Smith model.
+Households face uninsurable idiosyncratic unemployment shocks as well as aggregate taxation shocks.
+Through this setup, I find that labor tax and lump-sum transfer increases the wealth inequality, while the tax policy uncertainty decreases it.
+Labor tax suppresses the major income sources of the poor: labor wage.
+The effect of tax policy uncertainty on the wealth distribution and inequality depends on households&#8217; degree of risk aversion.
+When risk aversion is higher, the rich maintain similar levels of consumption by slowing down their capital accumulation process, while this relationship is reversed for the poor, resulting in decreasing wealth inequality.
+Lump-sum transfer serves as a insurance for idiosyncratic and aggregate shocks.
+Therefore, lump-sum transfer replaces part of the role of capital and reduces the incentive for the poor to accumulate capital.
+As a result, lump-sum transfer mitigates some effects of the uncertainty but worsens wealth inequality.</p>
+<p>;tags: Working</p>]]></summary>
+</entry>
+<entry>
+<title type="text">X220 Tablet Disassembly</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/X220TDiassembly.html"/>
+<id>https://huijunchen9260.github.io/X220TDiassembly.html</id>
+<published>2025-01-29T16:22:36Z</published>
+<updated>2025-01-29T16:22:36Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="x220-tablet-disassembly">X220 Tablet Disassembly</h1>
+<p>X220 Tablet is such a lovely laptop I bought.
+Although its CPU is pretty weak in the standard of 2022 (i7-2640M), it is still a pretty decent Linux laptop that even have touch screen and integrated stylus.</p>
+<p>There is a serious question for this laptop though.
+Since the fan is dusted, and the thermopaste on the CPU are all dried out, the CPU temperture are constantly 90 degree of Celsius, which is always really hot.</p>
+<p>Today I dissembled the whole laptop to clean the dust on the fan and repaste the thermopaste.
+I am mainly following this <a href="https://www.youtube.com/watch?v=ZsNcVV4jMPw">video</a> for step-by-step tutorial.</p>
+<p>First of all, it is easy to disassemble the keyboard by unscrew the screws locates at the back of the laptop.</p>
+<p><img src="pix/X220TDiassembly/screwout.webp" alt="screwout" /></p>
+<p>The following image also include the tools I am using for this disassembly.</p>
+<p><img src="pix/X220TDiassembly/keyboardout.webp" alt="keyboardout" /></p>
+<p>Another image for the closer look on how the palmrest and those cables.
+Notice that at this stage, we can see the fan is extremely dirty.</p>
+<p><img src="pix/X220TDiassembly/keyboardout2.webp" alt="keyboardout2" /></p>
+<p>Next step is to remove the palmrest.
+Notice that although the both sides of the palmrest are easier to detach, it took some techniques to really take out the palmrest.
+Some angle is required to remove the palmrest from the front side of the laptop.</p>
+<p><img src="pix/X220TDiassembly/palmrest180.webp" alt="palmrest180" /></p>
+<p>We can see the Wifi card at the right-buttom corner of the laptop.
+Zoom in,</p>
+<p><img src="pix/X220TDiassembly/wificard.webp" alt="wificard" />
+We need to unscrew to take out the wifi card.</p>
+<p>To take out the remaining plastic cover in the following image, I need to use the blue triangle plastic tools to stick into the connection of the cover and the buttom, and then detach the plastic cover.</p>
+<p><img src="pix/X220TDiassembly/frontcover.webp" alt="frontcover" /></p>
+<p>Take out, we get</p>
+<p><img src="pix/X220TDiassembly/frontcoverout.webp" alt="frontcoverout" /></p>
+<p>At this stage and remember to unscrew all necessary, we can take the whole motherboard out.</p>
+<p><img src="pix/X220TDiassembly/mboardout.webp" alt="mboardout" /></p>
+<p>Clean the fan, repaste, and reassembly everything, I successfully decrease the CPU temperture to 60 degree.</p>
+<p>It shows again that the importance of maintainence of the laptop and prevent it from overheating.</p>
+<p>;tags: Miscellaneous Technology</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Intermediate Macroeconomics Theory, Spring 2025</title>
@@ -221,12 +272,9 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/BonusDepreciation.html"/>
 <id>https://huijunchen9260.github.io/BonusDepreciation.html</id>
 <published>2024-08-16T10:13:15Z</published>
-<updated>2025-01-29T00:09:26Z</updated>
+<updated>2025-01-31T00:03:11Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_paper.pdf">[paper]</a></p>
-<p><a href="pdf/BonusDepreciation/bonusdepreciation_slide.pdf">[slide]</a></p>
-<p>Present at: CES North America Annual Conference 2024, Canadian Economics Association Annual Conference 2024, Taiwan Economics Research 2024, Midwest Macro Meeting 2024 (Purdue), Northeast Ohio Economics Workshop 2024 (Cleveland Fed)</p>
 <p>Corporate tax deductions are widely employed as countercyclical policies, yet their impact on the business cycle and interactions with other policies remain largely understudied.
 I examine the cyclical implications of such deductions by developing a novel dynamic stochastic general equilibrium model in which firms face credit market imperfections and idiosyncratic productivity shocks.
 In my model, firms&#8217; investment decisions are distorted by collateralized borrowing and corporate taxation, and investment expenditures can be deducted from taxable income through targeted or untargeted accelerated depreciation policies.
@@ -1044,14 +1092,14 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
 <id>https://huijunchen9260.github.io/LTVHousingPrice.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-29T00:14:44Z</updated>
+<updated>2025-01-31T00:03:11Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
 <p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
-<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908">paper</a>;
+<!--[paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908);-->
 <!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
-<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)--></p>
-<p>Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022</p>
+<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)-->
+<!--Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022-->
 <p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
 This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
 In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
@@ -1065,14 +1113,9 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-29T00:14:44Z</updated>
+<updated>2025-01-31T00:03:11Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-<!-- [slides: candidacy exam](pdf/UsedKCollateral/HJChen_UsedKCollateral_Apr_19_2022_CandExam.pdf) -->
-<!-- [slides](pdf/UsedKCollateral/20230331MEAPresentation.pdf) -->
-<p><a href="pdf/UsedKCollateral/UsedKCollateral.pdf">[paper]</a></p>
-<p><a href="pdf/UsedKCollateral/20230519MMMPresentation.pdf">[slide]</a></p>
-<p>Present at: Midwest Economics Association Annual Meetings 2023, Midwest Macro Meeting 2023 (Clemson), Taiwan Economic Research 2023, 18th Economics Graduate Students’ Conference (WUSTL) 2023</p>
 <p>I study how much financial frictions and the endogeneity of partially irreversible
 capital explain the slow recovery of the Great Recession. I propose a heterogeneous
 firm model with real and financial frictions. Firms adjust their capital stock by trading
@@ -1352,52 +1395,5 @@ My result shows that
 (2) trained with long enough epochs, the recurrent neural network can reach the interpretation power of linear regression, but maintaining good enough out-of-sample predictions power requires a high number of layers, and
 (3) Both GRU and LSTM performs generally better than SimpleRNN, and the design of reset gate in GRU can prevent noise from outliers, while the outcome generated by LSTM exacerbates with outliers.</p>
 <p>;tags: Miscellaneous</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Principle of Macroeconomics, Summer 2021</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSummer2021.html"/>
-<id>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</id>
-<published>2021-11-28T00:32:14Z</published>
-<updated>2025-01-27T15:34:37Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
-<p>ECON 2002.01, The Ohio State University, Summer 2021</p>
-<p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
-<!--## Lecture Videos-->
-<!---->
-<!--- [Unit 1](https://youtu.be/j2xNxtsa2Uk)-->
-<!--- [Unit 2](https://youtu.be/bmlgp_Pqecw)-->
-<!--- [Unit 3](https://youtu.be/CBSHbUHcvY4)-->
-<!--- [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ)-->
-<!--- [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4)-->
-<!--- [Unit 7](https://youtu.be/UgF-HO1If3w)-->
-<!--- [Unit 9](https://youtu.be/tdM3XLQt76A)-->
-<!--- [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o)-->
-<!--- [Unit 10 Part 2](https://youtu.be/L_IcpcX372g)-->
-<!--- [Unit 11](https://youtu.be/VkZXrPe6wG0)-->
-<!--- [Unit 13](https://youtu.be/rbfoUkP_VCQ)-->
-<!--- [Unit 14](https://youtu.be/1eEsTPxa5WQ)-->
-<!--- [Unit 15](https://youtu.be/0HDBVajKozg)-->
-<!--- [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI)-->
-<!--- [Unit 16](https://youtu.be/auswkrj7OOM)-->
-<!--- [Unit 17](https://youtu.be/tfpdEXwhnyY)-->
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="pdf/PrincipleMacro/math.pdf">Math Supplement</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
-</ul>
-<p>;tags: Teaching</p>]]></summary>
 </entry>
 </feed>
