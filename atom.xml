@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-31T00:04:09Z</updated>
+<updated>2025-01-31T00:13:57Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -1113,27 +1113,20 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-31T00:03:11Z</updated>
+<updated>2025-01-31T00:04:10Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-<p>I study how much financial frictions and the endogeneity of partially irreversible
-capital explain the slow recovery of the Great Recession. I propose a heterogeneous
-firm model with real and financial frictions. Firms adjust their capital stock by trading
-on the used capital market; thus, the capital partial irreversibility is endogenized by the
-price in the market. This irreversibility creates two opposite forces affecting investment
-volatility. First, capital investment is relatively cheaper in the recession, and thus
-attracts firms to invest in capital, dampening the fall of aggregate investment. Second,
-in a downturn, the capital becomes less reversible, and investments become riskier,
-exacerbating the fall of aggregate investment. In my model, the collateral constraint is
-procyclical since it is based on the resale value of the capital, and thus amplifies the first
-force and dampens the response of aggregate investment. I found that in the steady
-state, the used capital market induces firms to stay financially constrained due to lower
-effective capital prices. This status however may put these firms in a vulnerable position
-when the value of their collateral drops during a recession, as they heavily depend on
-debt to finance their capital investment. However, the perfect foresight exercise shows
-that the time-varying collateral constraint channel is relatively small. The main channel
-lies in the used capital market price, which acts as an automatic stabilizer during the
-credit crisis.</p>
+<p>I study how much financial frictions and the endogeneity of partially irreversible capital explain the slow recovery of the Great Recession.
+I propose a heterogeneous firm model with real and financial frictions.
+Firms adjust their capital stock by trading on the used capital market; thus, the capital partial irreversibility is endogenized by the price in the market.
+This irreversibility creates two opposite forces affecting investment volatility.
+First, capital investment is relatively cheaper in the recession, and thus attracts firms to invest in capital, dampening the fall of aggregate investment.
+Second, in a downturn, the capital becomes less reversible, and investments become riskier, exacerbating the fall of aggregate investment.
+In my model, the collateral constraint is procyclical since it is based on the resale value of the capital, and thus amplifies the first force and dampens the response of aggregate investment.
+I found that in the steady state, the used capital market induces firms to stay financially constrained due to lower effective capital prices.
+This status however may put these firms in a vulnerable position when the value of their collateral drops during a recession, as they heavily depend on debt to finance their capital investment.
+However, the perfect foresight exercise shows that the time-varying collateral constraint channel is relatively small.
+The main channel lies in the used capital market price, which acts as an automatic stabilizer during the credit crisis.</p>
 <p>;tags: Working</p>]]></summary>
 </entry>
 <entry>
