@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-31T00:13:57Z</updated>
+<updated>2025-01-31T16:54:10Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Note on Website Creation</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/HTMLNote.html"/>
+<id>https://huijunchen9260.github.io/HTMLNote.html</id>
+<published>2025-01-31T11:27:34Z</published>
+<updated>2025-01-31T11:27:34Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="note-on-website-creation">Note on Website Creation</h1>
+<h2 id="section"><code>&#60;dialog&#62;</code></h2>
+<p>Useful popup windows using some javascript</p>
+<dialog id="myDialog">
+  <p>Hello! I'm a modal.</p>
+  <button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<p><button onclick="document.getElementById('myDialog').showModal()">Open Modal</button></p>
+<pre><code class="language-HTML">&#60;dialog id="myDialog"&#62;
+  &#60;p&#62;Hello! I&#39;m a modal.&#60;&#47;p&#62;
+  &#60;button onclick="document.getElementById(&#39;myDialog&#39;).close()"&#62;Close&#60;&#47;button&#62;
+&#60;&#47;dialog&#62;
+&#60;button onclick="document.getElementById(&#39;myDialog&#39;).showModal()"&#62;Open Modal&#60;&#47;button&#62;
+</code></pre>
+<h2 id="section-1"><code>details</code></h2>
+<p>Create collapsible section in pure HTML elements.</p>
+<details>
+  <summary>Click to expand</summary>
+  Hidden content here!
+</details>
+<pre><code class="language-HTML">&#60;details&#62;
+  &#60;summary&#62;Click to expand&#60;&#47;summary&#62;
+  Hidden content here!
+&#60;&#47;details&#62;
+</code></pre>]]></summary>
+</entry>
 <entry>
 <title type="text">Uncertain Taxation, Government Transfer, and Household Inequality</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/TaxUncertainty.html"/>
@@ -1113,7 +1146,7 @@ Taxes can only intensify the positive effect on house prices, although they can 
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
 <id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
 <published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-31T00:04:10Z</updated>
+<updated>2025-01-31T00:13:57Z</updated>
 <author><name>huijunchen9260</name></author>
 <summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
 <p>I study how much financial frictions and the endogeneity of partially irreversible capital explain the slow recovery of the Great Recession.
@@ -1366,27 +1399,5 @@ The logic to generate this page is to use the existing tags system:</p>
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
 <p>Updates 2022-02-10: added methods to add modified dates</p>
 <p>;tags: Miscellaneous Technology</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Machine Learning, Autumn 2021</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/CSE5523Notes.html"/>
-<id>https://huijunchen9260.github.io/CSE5523Notes.html</id>
-<published>2021-11-28T09:15:05Z</published>
-<updated>2022-07-24T17:34:02Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="machine-learning-autumn-2021">Machine Learning, Autumn 2021</h1>
-<p>CSE 5523, The Ohio State University, Autumn 2021</p>
-<p><a href="https://www.asc.ohio-state.edu/schuler.77/courses/5523/">Course Website</a></p>
-<p><a href="pdf/CSE5523/CSE5523ProjectPresentation.pdf">Slides for 5min Presentation</a></p>
-<p><a href="pdf/CSE5523/CSE5522FinalProjectReport.pdf">Final Project</a></p>
-<p>Economics has a long tradition in processing data that holds a different view compared with Computer science.
-Applied Economists dig into data to find the correlation and causality between different factors, while Computer scientists have developed Machine Learning to predict out-of-sample data points.
-In other words, Economists try to interpret data in the past to understand the causality, while Computer scientists try to make future predictions based on the pattern existing in the data.
-This report aims to investigate the effectiveness of the recurrent neural network to replicate the interpretation power that linear regression can provide, and also the preciseness of the linear regression in out-of-sample prediction.
-My result shows that
-(1) linear interpretation is good within-sample interpretation but performs devastatingly in out-of-sample prediction,
-(2) trained with long enough epochs, the recurrent neural network can reach the interpretation power of linear regression, but maintaining good enough out-of-sample predictions power requires a high number of layers, and
-(3) Both GRU and LSTM performs generally better than SimpleRNN, and the design of reset gate in GRU can prevent noise from outliers, while the outcome generated by LSTM exacerbates with outliers.</p>
-<p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 </feed>

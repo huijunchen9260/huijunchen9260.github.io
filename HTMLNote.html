@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Note on Website Creation -- Hui-Jun Chen's Webpage</title>
+        <meta name="description" content="Hui-Jun Chen's Personal Website">
+    </head>
+<body>
+<main>
+<h1 id="note-on-website-creation">Note on Website Creation</h1>
+<h2 id="section"><code>&#60;dialog&#62;</code></h2>
+<p>Useful popup windows using some javascript</p>
+<dialog id="myDialog">
+  <p>Hello! I'm a modal.</p>
+  <button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<p><button onclick="document.getElementById('myDialog').showModal()">Open Modal</button></p>
+<pre><code class="language-HTML">&#60;dialog id="myDialog"&#62;
+  &#60;p&#62;Hello! I&#39;m a modal.&#60;&#47;p&#62;
+  &#60;button onclick="document.getElementById(&#39;myDialog&#39;).close()"&#62;Close&#60;&#47;button&#62;
+&#60;&#47;dialog&#62;
+&#60;button onclick="document.getElementById(&#39;myDialog&#39;).showModal()"&#62;Open Modal&#60;&#47;button&#62;
+</code></pre>
+<h2 id="section-1"><code>details</code></h2>
+<p>Create collapsible section in pure HTML elements.</p>
+<details>
+  <summary>Click to expand</summary>
+  Hidden content here!
+</details>
+<pre><code class="language-HTML">&#60;details&#62;
+  &#60;summary&#62;Click to expand&#60;&#47;summary&#62;
+  Hidden content here!
+&#60;&#47;details&#62;
+</code></pre>
+<p><i> Article tags:
+</i></p>
+</main><p><i>posted on: 2025-01-31, last edited on: 2025-01-31, written by: huijunchen</i></p>
+<footer>
+    <hr/>
+    <a href=".">Homepage</a>  ·
+    <a href="research.html">Research</a>  ·
+    <a href="teaching.html">Teaching</a>  ·
+    <a href="blog.html">Blog</a>  ·
+    <a href="./rss.xml">RSS</a>  ·
+    <a href="./atom.xml">atom</a>
+    <br>
+    <p>
+        Hui-Jun Chen ·
+        <a href="https://github.com/huijunchen9260">GitHub</a> ·
+        Last Modified: 2025-01-31
+    </p>
+    <p><small>Powered by <a href="https://pedantic.software/git/blogit">blogit</a></small></p>
+</footer>
+</body></html>
