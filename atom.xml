@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-01-31T16:54:10Z</updated>
+<updated>2025-01-31T19:55:13Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/HTMLNote.html"/>
 <id>https://huijunchen9260.github.io/HTMLNote.html</id>
 <published>2025-01-31T11:27:34Z</published>
-<updated>2025-01-31T11:27:34Z</updated>
+<updated>2025-01-31T16:54:11Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-website-creation">Note on Website Creation</h1>
 <h2 id="section"><code>&#60;dialog&#62;</code></h2>
@@ -37,7 +37,8 @@
   &#60;summary&#62;Click to expand&#60;&#47;summary&#62;
   Hidden content here!
 &#60;&#47;details&#62;
-</code></pre>]]></summary>
+</code></pre>
+<p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Uncertain Taxation, Government Transfer, and Household Inequality</title>
