@@ -6,13 +6,20 @@
 % \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
 \usepackage{natbib}
 
+\usepackage[T1]{fontenc}
 \usepackage[cache=true]{minted} % for code chuck and syntax highlighting
 % \colorlet{verylightgray}{gray!20}
-%% shortcuts for python code chuck
-\newminted{python}{}
-\newmintinline{python}{}
-\setmintedinline[python]{bgcolor=gray!20}
-\setminted[python]{bgcolor=gray!20}
+% %% shortcuts for python code chuck
+% \newminted{python}{}
+% \newmintinline{python}{}
+% \setmintedinline[python]{bgcolor=gray!20}
+% \setminted[python]{bgcolor=gray!20}
+
+%% shortcuts for julia code chuck
+\newminted{julia}{}
+\newmintinline{julia}{}
+\setmintedinline[julia]{bgcolor=gray!20}
+\setminted[julia]{bgcolor=gray!20}
 
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -649,16 +656,16 @@ Combining your answer in \ref{wN} and \ref{pi} and substitute $ w $ and $ \pi $ 
     \task 0.2541
 \end{tasks}
 
-If you want to solve \ref{taxnumerics} numerically, you can open the following link to get a \pythoninline{python} terminal:
+If you want to solve \ref{taxnumerics} numerically, you can open the following link to get a \juliainline{julia} terminal:
 
-\url{https://www.online-python.com/}
+\url{https://www.tutorialspoint.com/execute_julia_online.php}
 
-and use \pythoninline{q2.py} file in the Carmen module \pythoninline{Midterm} or copy from the code at the end of this file to the online python terminal.
+and use \juliainline{q2.jl} file in the Carmen module \juliainline{Midterm} or copy from the code at the end of this file to the online julia terminal.
 Note that if you copy the code from this pdf file, you need to make sure that all indentation/space is correct.
 
 % use the following code chuck and supplement the corresponding $ N $ and $ w $:
 
-% \begin{pythoncode}
+% \begin{juliacode}
 % z = 1; a = 0.33; b = 2.15; tnum = 1000
 % tgrid = collect( range(0.01, 0.99, length = tnum) )
 % Gvec = Array{Float64, 1}(undef, tnum)
@@ -674,7 +681,7 @@ Note that if you copy the code from this pdf file, you need to make sure that al
 %     Gvec[indt] = G
 % end
 
-% \end{pythoncode}
+% \end{juliacode}
 
 \Question Given that $ z = 1, a = 0.33 $, and $ b = 2.15 $, if government wants to maximize the labor tax revenue $ R(t) = w t N$, the optimal tax rate $ t^{*} =  $ ~\answer{B},
 \begin{tasks}(4)
@@ -699,43 +706,10 @@ You can play with this code and explore more!
 
 \newpage
 
-Note: Due to python's restriction on indentation using spaces or tabs, if you copy this to the python terminal, you will get error.
-Please use the content in the \pythoninline{q2.py}.
-\begin{pythoncode}
-import numpy as np
+% \textbf{Note:} Due to julia's restriction and latex compilation, if you copy this to the julia terminal, you will get error (on line 8).
+Please use the content in the \juliainline{q2.jl}.
 
-tvec = np.linspace(0, 0.9999, 1000)
-gvec = np.zeros(1000)
-
-z = 1
-a = 0.33
-b = 2.15
-
-t = 0.5
-N = ( a*(1-t) ) / ( b*(a*(1-t) + (1-a)) )
-w = z*a*N**(a-1)
-G = w*t*N
-Gtarget = G
-print( f'Q41: Gtarget = {Gtarget}' )
-
-i = -1
-for t in tvec:
-    i = i + 1
-    N = ( a*(1-t) ) / ( b*(a*(1-t) + (1-a)) )
-    w = z*a*N**(a-1)
-    G = w*t*N
-    gvec[i] = G
-    if abs(Gtarget - G) < 0.0001:
-        print(f'Potential Answer for Q42: \
-                t = {t}, G = {G}, \
-                Gtarget - G = {Gtarget - G}')
-
-
-maxG = np.max(gvec)
-maxtax = tvec[np.argmax(gvec)]
-print(f'Q43: maximum G is achieved at tax rate {maxtax}')
-print(f'Q44: maximum G is {maxG}')
-\end{pythoncode}
+\inputminted{julia}{q2.jl}
 
 
 
