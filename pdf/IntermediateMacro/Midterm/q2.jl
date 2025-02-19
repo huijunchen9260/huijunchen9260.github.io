@@ -28,9 +28,7 @@ for indt = 1:1:tnum
     G = gov(w, t, N)
     Gvec[indt] = G
     if (abs(G - Gtarget) < 0.0001)
-        println("Potential answer for Q42: \
-                At tax = $t, G = $G, \
-                Target - G = $(G - Gtarget)")
+        println("Potential answer for Q42: At tax = $t, G = $G, Target - G = $(G - Gtarget)")
     end
 end
 
