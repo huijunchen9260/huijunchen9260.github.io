@@ -187,6 +187,11 @@ pre > code {
     word-wrap: break-word;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 img[alt="thefool"] {
 	max-width: 1.5em ;
 	max-height: 1.5em ;

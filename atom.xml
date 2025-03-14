@@ -2,16 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-02-13T11:02:13Z</updated>
+<updated>2025-03-14T15:34:27Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Lunar Eclipse</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LunarEclipse.html"/>
+<id>https://huijunchen9260.github.io/LunarEclipse.html</id>
+<published>2025-03-14T15:17:17Z</published>
+<updated>2025-03-14T15:24:13Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="lunar-eclipse">Lunar Eclipse</h1>
+<p>Date: March 14, 2025 at Upper Arlington, Columbus, Ohio</p>
+<p>I stayed awake until 3 AM on March 14.</p>
+<p>This is how it looks like in prediction.</p>
+<p><img src="../data/pix/LunarEclipse/Lunar3AM.png" alt="Simulation" /></p>
+<p>This is the pictures that I took, using my Google Pixel, zoomed in 5X.</p>
+<p><img src="pix/LunarEclipse/Lunar1.jpg" alt="Lunar1" /></p>
+<p><img src="pix/LunarEclipse/Lunar2.jpg" alt="Lunar2" /></p>
+<p>For some reason, if I did not zoom in, then I can see the light beside the moon, which is not visible by eyes, but can be captured by camera.</p>
+<p><img src="pix/LunarEclipse/Lunar3.jpg" alt="Lunar3" /></p>
+<p>;tags: Personal</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Note on Website Creation</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/HTMLNote.html"/>
 <id>https://huijunchen9260.github.io/HTMLNote.html</id>
 <published>2025-01-31T11:27:34Z</published>
-<updated>2025-01-31T19:55:13Z</updated>
+<updated>2025-03-14T15:17:17Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="note-on-website-creation">Note on Website Creation</h1>
 <h2 id="section"><code>&#60;dialog&#62;</code></h2>
@@ -67,7 +86,7 @@ As a result, lump-sum transfer mitigates some effects of the uncertainty but wor
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/X220TDiassembly.html"/>
 <id>https://huijunchen9260.github.io/X220TDiassembly.html</id>
 <published>2025-01-29T16:22:36Z</published>
-<updated>2025-01-29T16:22:36Z</updated>
+<updated>2025-03-14T15:17:17Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="x220-tablet-disassembly">X220 Tablet Disassembly</h1>
 <p>X220 Tablet is such a lovely laptop I bought.
@@ -99,14 +118,14 @@ We need to unscrew to take out the wifi card.</p>
 <p><img src="pix/X220TDiassembly/mboardout.webp" alt="mboardout" /></p>
 <p>Clean the fan, repaste, and reassembly everything, I successfully decrease the CPU temperture to 60 degree.</p>
 <p>It shows again that the importance of maintainence of the laptop and prevent it from overheating.</p>
-<p>;tags: Miscellaneous Technology</p>]]></summary>
+<p>;tags: Personal Miscellaneous Technology</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Intermediate Macroeconomics Theory, Spring 2025</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/IntermediateMacroSpring2025.html"/>
 <id>https://huijunchen9260.github.io/IntermediateMacroSpring2025.html</id>
 <published>2024-12-25T11:34:44Z</published>
-<updated>2025-01-27T15:34:37Z</updated>
+<updated>2025-02-13T11:02:14Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="intermediate-macroeconomics-theory-spring-2025">Intermediate Macroeconomics Theory, Spring 2025</h1>
 <p>ECON 4002.01, The Ohio State University, Spring 2025</p>
@@ -305,23 +324,6 @@ We need to unscrew to take out the wifi card.</p>
 <li><a href="pdf/IntermediateMacro/ProblemSet4/Final/ProblemSet4.pdf">Problem Set 4</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Aggregate Implications of Corporate Taxation over the Business Cycle</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/BonusDepreciation.html"/>
-<id>https://huijunchen9260.github.io/BonusDepreciation.html</id>
-<published>2024-08-16T10:13:15Z</published>
-<updated>2025-01-31T00:03:11Z</updated>
-<author><name>huijunchen</name></author>
-<summary type="html"><![CDATA[<h1 id="aggregate-implications-of-corporate-taxation-over-the-business-cycle">Aggregate Implications of Corporate Taxation over the Business Cycle</h1>
-<p>Corporate tax deductions are widely employed as countercyclical policies, yet their impact on the business cycle and interactions with other policies remain largely understudied.
-I examine the cyclical implications of such deductions by developing a novel dynamic stochastic general equilibrium model in which firms face credit market imperfections and idiosyncratic productivity shocks.
-In my model, firms&#8217; investment decisions are distorted by collateralized borrowing and corporate taxation, and investment expenditures can be deducted from taxable income through targeted or untargeted accelerated depreciation policies.
-My model quantitatively replicates empirical estimates of the distribution of short-run elasticities of investment across firm size to changes in deduction policies.
-I show that raising deductions can reduce the severity and persistence of recessions by alleviating capital misallocation for productive firms.
-Applying my model to the policies in the US 2017 Tax Cuts and Jobs Act, I find that the targeted policy is 30 percent more effective than the untargeted policy in stimulating aggregate output.
-Furthermore, combining both policies reduces the overall effectiveness by 17 percent, revealing potential inefficiencies in current US tax policy implementation.</p>
-<p>;tags: JobMarket</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Principle of Macroeconomics, Spring 2024</title>
@@ -654,24 +656,6 @@ Furthermore, combining both policies reduces the overall effectiveness by 17 per
 <li><a href="pdf/PrincipleMacro/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Discussion Slides</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/DiscussionSlides.html"/>
-<id>https://huijunchen9260.github.io/DiscussionSlides.html</id>
-<published>2022-11-03T21:40:52Z</published>
-<updated>2023-03-30T23:18:21Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="discussion-slides">Discussion Slides</h1>
-<ul>
-<li><p><a href="pdf/Discussion/MEA_Mar_31_2023/build/Discuss_Wang_Xu.pdf">Media Focus, Sentiments and Capital Allocation in Space</a></p>
-<p>by Yu Wang and Zebang Xu</p>
-<p>Midwest Economics Association Annual Meeting 2023</p></li>
-<li><p><a href="pdf/Discussion/NOEWorshop_NOV_04_2022/build/DiscussionSlides.pdf">The Impact of FinTech on Discrimination in Mortgage Lending</a></p>
-<p>by Daniel Shoag</p>
-<p>Northeast Ohio Economics Workshop 2022</p></li>
-</ul>
-<p>;tags: Discussion</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Note on Fortran</title>
@@ -1127,48 +1111,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <p>;tags: Teaching</p>]]></summary>
 </entry>
 <entry>
-<title type="text">The Effects of Loan-to-value Ratio Ceilings on House Prices</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LTVHousingPrice.html"/>
-<id>https://huijunchen9260.github.io/LTVHousingPrice.html</id>
-<published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-31T00:03:11Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="the-effects-of-loan-to-value-ratio-ceilings-on-house-prices">The Effects of Loan-to-value Ratio Ceilings on House Prices</h1>
-<p>Joint work with <a href="https://www.sungminparkecon.com/">Sungmin Park</a></p>
-<!--[paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3943908);-->
-<!--[slide: MEA annual meeting](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Mar2022.pdf);-->
-<!--[slide: NOE Workshop](pdf/LTVHousingPrice/Houseprice_slides_HJChen_SungminPark_Nov042022_NOEWorkshop.pdf)-->
-<!--Present at: Northeast Ohio Economics Workshop (Cleveland Fed) 2022, Midwest Economics Association Annual Meetings 2022-->
-<p>Loan-to-value ratio (LTV) ceiling is a government policy that puts a cap on households&#8217; mortgages relative to their house value, often intended to reduce booms in house prices.
-This paper studies the effects of this policy on house prices, using a simple two-period overlapping-generations model featuring within-generation inequality.
-In contrast to popular belief, we find that a strict (low) loan-to-value ratio ceiling raises long-run house prices, as lenders respond to the policy by substituting from mortgage lending to purchasing more houses.
-The policy&#8217;s positive effect on house prices is more severe with greater inequality.
-A strict ceiling is especially harmful to the poor.
-Taxes can only intensify the positive effect on house prices, although they can mitigate the adverse effects on welfare.</p>
-<p>;tags: Working</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Debt Financing, Used Capital Market and Capital Reallocation</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/UsedKCollateral.html"/>
-<id>https://huijunchen9260.github.io/UsedKCollateral.html</id>
-<published>2022-04-20T15:10:29Z</published>
-<updated>2025-01-31T00:13:57Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="debt-financing-used-capital-market-and-capital-reallocation">Debt Financing, Used Capital Market and Capital Reallocation</h1>
-<p>I study how much financial frictions and the endogeneity of partially irreversible capital explain the slow recovery of the Great Recession.
-I propose a heterogeneous firm model with real and financial frictions.
-Firms adjust their capital stock by trading on the used capital market; thus, the capital partial irreversibility is endogenized by the price in the market.
-This irreversibility creates two opposite forces affecting investment volatility.
-First, capital investment is relatively cheaper in the recession, and thus attracts firms to invest in capital, dampening the fall of aggregate investment.
-Second, in a downturn, the capital becomes less reversible, and investments become riskier, exacerbating the fall of aggregate investment.
-In my model, the collateral constraint is procyclical since it is based on the resale value of the capital, and thus amplifies the first force and dampens the response of aggregate investment.
-I found that in the steady state, the used capital market induces firms to stay financially constrained due to lower effective capital prices.
-This status however may put these firms in a vulnerable position when the value of their collateral drops during a recession, as they heavily depend on debt to finance their capital investment.
-However, the perfect foresight exercise shows that the time-varying collateral constraint channel is relatively small.
-The main channel lies in the used capital market price, which acts as an automatic stabilizer during the credit crisis.</p>
-<p>;tags: Working</p>]]></summary>
-</entry>
-<entry>
 <title type="text">Principle of Macroeconomics, Spring 2022</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
 <id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
@@ -1405,5 +1347,74 @@ The logic to generate this page is to use the existing tags system:</p>
 <p>With some modification for each individual pages, I can systematically generate everything using just <code>make build</code>, and directly publish on GitHub using <code>make deploy</code>.</p>
 <p>Updates 2022-02-10: added methods to add modified dates</p>
 <p>;tags: Miscellaneous Technology</p>]]></summary>
+</entry>
+<entry>
+<title type="text">Machine Learning, Autumn 2021</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/CSE5523Notes.html"/>
+<id>https://huijunchen9260.github.io/CSE5523Notes.html</id>
+<published>2021-11-28T09:15:05Z</published>
+<updated>2022-07-24T17:34:02Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1 id="machine-learning-autumn-2021">Machine Learning, Autumn 2021</h1>
+<p>CSE 5523, The Ohio State University, Autumn 2021</p>
+<p><a href="https://www.asc.ohio-state.edu/schuler.77/courses/5523/">Course Website</a></p>
+<p><a href="pdf/CSE5523/CSE5523ProjectPresentation.pdf">Slides for 5min Presentation</a></p>
+<p><a href="pdf/CSE5523/CSE5522FinalProjectReport.pdf">Final Project</a></p>
+<p>Economics has a long tradition in processing data that holds a different view compared with Computer science.
+Applied Economists dig into data to find the correlation and causality between different factors, while Computer scientists have developed Machine Learning to predict out-of-sample data points.
+In other words, Economists try to interpret data in the past to understand the causality, while Computer scientists try to make future predictions based on the pattern existing in the data.
+This report aims to investigate the effectiveness of the recurrent neural network to replicate the interpretation power that linear regression can provide, and also the preciseness of the linear regression in out-of-sample prediction.
+My result shows that
+(1) linear interpretation is good within-sample interpretation but performs devastatingly in out-of-sample prediction,
+(2) trained with long enough epochs, the recurrent neural network can reach the interpretation power of linear regression, but maintaining good enough out-of-sample predictions power requires a high number of layers, and
+(3) Both GRU and LSTM performs generally better than SimpleRNN, and the design of reset gate in GRU can prevent noise from outliers, while the outcome generated by LSTM exacerbates with outliers.</p>
+<p>;tags: Miscellaneous</p>]]></summary>
+</entry>
+<entry>
+<title type="text">Principle of Macroeconomics, Summer 2021</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSummer2021.html"/>
+<id>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</id>
+<published>2021-11-28T00:32:14Z</published>
+<updated>2025-01-27T15:34:37Z</updated>
+<author><name>huijunchen9260</name></author>
+<summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
+<p>ECON 2002.01, The Ohio State University, Summer 2021</p>
+<p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
+<!--## Lecture Videos-->
+<!---->
+<!--- [Unit 1](https://youtu.be/j2xNxtsa2Uk)-->
+<!--- [Unit 2](https://youtu.be/bmlgp_Pqecw)-->
+<!--- [Unit 3](https://youtu.be/CBSHbUHcvY4)-->
+<!--- [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ)-->
+<!--- [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4)-->
+<!--- [Unit 7](https://youtu.be/UgF-HO1If3w)-->
+<!--- [Unit 9](https://youtu.be/tdM3XLQt76A)-->
+<!--- [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o)-->
+<!--- [Unit 10 Part 2](https://youtu.be/L_IcpcX372g)-->
+<!--- [Unit 11](https://youtu.be/VkZXrPe6wG0)-->
+<!--- [Unit 13](https://youtu.be/rbfoUkP_VCQ)-->
+<!--- [Unit 14](https://youtu.be/1eEsTPxa5WQ)-->
+<!--- [Unit 15](https://youtu.be/0HDBVajKozg)-->
+<!--- [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI)-->
+<!--- [Unit 16](https://youtu.be/auswkrj7OOM)-->
+<!--- [Unit 17](https://youtu.be/tfpdEXwhnyY)-->
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="pdf/PrincipleMacro/math.pdf">Math Supplement</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
+<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
+</ul>
+<p>;tags: Teaching</p>]]></summary>
 </entry>
 </feed>
