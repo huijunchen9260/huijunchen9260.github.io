@@ -187,11 +187,10 @@ pre > code {
     word-wrap: break-word;
 }
 
-img, video {
-  height: auto;
-  max-width: 100%;
-  margin-top: 0px;
-  margin-bottom: 2.5rem; }
+img {
+    width: 100%;
+    height: auto;
+}
 
 img[alt="thefool"] {
 	max-width: 1.5em ;
