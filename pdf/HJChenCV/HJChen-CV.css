@@ -1,11 +1,12 @@
  
 /* start css.sty */
-.cmtt-12{font-family: monospace,monospace;}
-.cmbx-12x-x-172{font-size:172%; font-weight: bold;}
-.cmbx-12x-x-172{ font-weight: bold;}
-.cmbx-12{ font-weight: bold;}
-.cmbx-12{ font-weight: bold;}
-.cmti-12{ font-style: italic;}
+.cmr-10x-x-109{}
+.cmtt-10x-x-109{font-family: monospace,monospace;}
+.cmbx-12x-x-144{font-size:157%; font-weight: bold;}
+.cmbx-12x-x-144{ font-weight: bold;}
+.cmti-10x-x-109{ font-style: italic;}
+.cmbx-10x-x-109{ font-weight: bold;}
+.cmbx-10x-x-109{ font-weight: bold;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}
@@ -29,6 +30,7 @@ h1,h2,h3,h4,h5 { line-height:1.2; }
 .subsectionHead, .likesubsectionHead { font-size: 1.3195em; }
 .subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }
  @media (prefers-color-scheme: dark) { img[src^="HJChen-CV"]{filter: invert(1); } } 
+ body { background-color: Canvas; color: CanvasText; color-scheme: light dark; } 
 li p.indent { text-indent: 0em }
 li p:first-child{ margin-top:0em; }
 li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -86,7 +88,6 @@ table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline hr, .cline hr{border:none;border-top:1px solid black;}
 .hline {border-top: 1px solid black;}
 .hline + .vspace:last-child{display:none;}
-.hline:first-child{border-bottom:1px solid black;border-top:none;}
 .tabbing-right {text-align:right;}
 div.float, div.figure {margin-left: auto; margin-right: auto;}
 div.float img {text-align:center;}
@@ -112,7 +113,7 @@ span.bar-css {text-decoration:overline;}
 img.cdots{vertical-align:middle;}
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 .index-item, .index-subitem, .index-subsubitem {display:block}
-div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center; margin-top: 0.5rem;}
 div.caption span.id{font-weight: bold; white-space: nowrap; }
 h1.partHead{text-align: center}
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }

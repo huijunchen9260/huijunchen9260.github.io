@@ -1,6 +1,6 @@
-htfcss: cmti  font-style: italic;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmti  font-style: italic;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmtt font-family: monospace,monospace;
@@ -36,6 +36,7 @@ Css: .sectionHead, .likesectionHead { font-size: 1.5157em; }
 Css: .subsectionHead, .likesubsectionHead { font-size: 1.3195em; }
 Css: .subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }
 Css:  @media (prefers-color-scheme: dark) { img[src^="HJChen-CV"]{filter: invert(1); } } 
+Css:  body { background-color: Canvas; color: CanvasText; color-scheme: light dark; } 
 Css: li p.indent { text-indent: 0em }
 Css: li p:first-child{ margin-top:0em; }
 Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -93,7 +94,6 @@ Css: .hline td, .cline td{ padding: 0; }
 Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
 Css: .hline + .vspace:last-child{display:none;}
-Css: .hline:first-child{border-bottom:1px solid black;border-top:none;}
 Css: .tabbing-right {text-align:right;}
 Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
 Css: div.float img {text-align:center;}
@@ -119,7 +119,7 @@ Css: span.bar-css {text-decoration:overline;}
 Css: img.cdots{vertical-align:middle;}
 Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 Css: .index-item, .index-subitem, .index-subsubitem {display:block}
-Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center; margin-top: 0.5rem;}
 Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
 Css: h1.partHead{text-align: center}
 Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
@@ -134,7 +134,7 @@ Css: div.maketitle{ margin-bottom: 2em; }
 Css: div.author, div.date {text-align:center;}
 Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
 Css: div.author{white-space: nowrap;}
-Font_Size: 12
+Font_Size: 11
 Css: div.abstract p {margin-left:5%; margin-right:5%;}
 Css: div.abstract {width:100%;}
 Css: .abstracttitle{text-align:center;margin-bottom:1em;}
@@ -158,8 +158,8 @@ Css: td.section {padding-right:2em; width:20%;}
 Css: table.section {margin-top:1em;}
 Css: .position table {width:100%;}
 --- characters ---
-Font("cmr","12","12","100")
-Font("cmtt","12","12","100")
-Font("cmbx","12","12","172")
-Font("cmbx","12","12","100")
-Font("cmti","12","12","100")
+Font("cmr","10","10","109")
+Font("cmtt","10","10","109")
+Font("cmbx","12","12","144")
+Font("cmti","10","10","109")
+Font("cmbx","10","10","109")
