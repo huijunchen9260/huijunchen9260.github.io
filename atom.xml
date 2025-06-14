@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-06-14T16:50:36Z</updated>
+<updated>2025-06-14T16:51:34Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -22,7 +22,8 @@
 <p><img src="pix/StrawberryMoon/StrawberryMoon2.webp" alt="Zoomed in Strawberry Moon" /></p>
 <p>And here&#8217;s the same moon, not zoomed in:</p>
 <p><img src="pix/StrawberryMoon/StrawberryMoon1.webp" alt="Wide shot of Strawberry Moon" /></p>
-<p>As it rises, the red slowly shifts to orange, then fades into white as the moon climbs higher in the sky.</p>]]></summary>
+<p>As it rises, the red slowly shifts to orange, then fades into white as the moon climbs higher in the sky.</p>
+<p>;tags: Personal</p>]]></summary>
 </entry>
 <entry>
 <title type="text">Lunar Eclipse</title>
