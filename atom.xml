@@ -2,16 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-03-15T21:48:59Z</updated>
+<updated>2025-06-14T16:50:36Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Strawberry Moon</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/StrawberryMoon.html"/>
+<id>https://huijunchen9260.github.io/StrawberryMoon.html</id>
+<published>2025-06-14T16:49:48Z</published>
+<updated>2025-06-14T16:49:48Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="strawberry-moon">Strawberry Moon</h1>
+<p><strong>Date:</strong> June 11, 2025 — <em>Ocean City, Maryland</em></p>
+<p>This wasn&#8217;t something I planned to see. Honestly, I didn’t even know the term <em>“strawberry moon”</em> until that night.</p>
+<p>I was sitting on the balcony of my hotel in Ocean City, looking out over the ocean. Suddenly, I noticed this red, perfectly round shape hanging low in the sky. I had been wondering where the moon was—and then it hit me. That red circle <em>was</em> the moon.</p>
+<p>According to <a href="https://www.almanac.com/content/full-moon-june">this website</a>, the strawberry moon is June&#8217;s full moon—usually the last full moon of spring or the first of summer. The name comes from the Algonquian tribes in the northeastern U.S., who used it to mark the ripening of June-bearing strawberries.</p>
+<p>The moon looks red when it&#8217;s close to the horizon. Here&#8217;s a photo I took with my Pixel Pro 7 in night mode, zoomed in 5x:</p>
+<p><img src="pix/StrawberryMoon/StrawberryMoon2.webp" alt="Zoomed in Strawberry Moon" /></p>
+<p>And here&#8217;s the same moon, not zoomed in:</p>
+<p><img src="pix/StrawberryMoon/StrawberryMoon1.webp" alt="Wide shot of Strawberry Moon" /></p>
+<p>As it rises, the red slowly shifts to orange, then fades into white as the moon climbs higher in the sky.</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Lunar Eclipse</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/LunarEclipse.html"/>
 <id>https://huijunchen9260.github.io/LunarEclipse.html</id>
 <published>2025-03-14T15:17:17Z</published>
-<updated>2025-03-14T15:40:10Z</updated>
+<updated>2025-03-15T21:49:00Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="lunar-eclipse">Lunar Eclipse</h1>
 <p>Date: March 14, 2025 at Upper Arlington, Columbus, Ohio</p>
