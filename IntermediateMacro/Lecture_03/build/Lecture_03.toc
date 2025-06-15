@@ -1,0 +1,5 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Math Concept}{2}{0}{1}
+\beamer@sectionintoc {2}{Measure GDP \& comove}{5}{0}{2}
+\beamer@sectionintoc {3}{Visualization}{7}{0}{3}
+\beamer@sectionintoc {4}{Data}{10}{0}{4}

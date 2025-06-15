@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This bbl file is created by econ.bst ver.3.0
+%  The latest econ.bst is available at
+%  <https://github.com/ShiroTakeda/econ-bst>
+
+%%% Definition of \bysame
+\ifx\undefined\bysame
+\newcommand{\bysame}{\hskip.3em \leavevmode\rule[.5ex]{3em}{.3pt}\hskip0.5em}
+\fi
+
+\begin{thebibliography}{xxx}
+
+\harvarditem[Akerlof]{Akerlof}{1970}{Akerlof_1970_TQJE}
+Akerlof, George~A. (1970) ``The Market for “Lemons”: Quality Uncertainty
+  and the Market Mechanism,'' \textit{The Quarterly Journal of Economics}, 84
+  (3),  488, \href{http://dx.doi.org/10.2307/1879431}{\urlstyle{rm}
+  \nolinkurl{10.2307/1879431}}.
+
+\end{thebibliography}

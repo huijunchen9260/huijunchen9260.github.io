@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{dist}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1.0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{iter}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{dist}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mf}{1e\PYGZhy{}2}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{iter}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c}{\PYGZsh{} same as \PYGZdq{}iter = iter + 1\PYGZdq{}}
+\PYG{+w}{        }\PYG{n}{indc}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rand}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{cnum}\PYG{p}{);}\PYG{+w}{ }\PYG{n}{indl}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rand}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{lnum}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{dist}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{utility}\PYG{p}{[}\PYG{n}{indc}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{indl}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{minimum}\PYG{p}{(}\PYG{n}{utility}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{dist}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mf}{1e\PYGZhy{}2}\PYG{p}{)}
+\PYG{+w}{            }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Find minimum at (}\PYG{l+s+si}{\PYGZdl{}indc}\PYG{l+s}{, }\PYG{l+s+si}{\PYGZdl{}indl}\PYG{l+s}{)\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{            }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Iterates }\PYG{l+s+si}{\PYGZdl{}iter}\PYG{l+s}{ times\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{    }\PYG{k}{end}
+\end{Verbatim}
