@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-06-14T18:43:58Z</updated>
+<updated>2025-06-14T21:58:32Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/WildHorses.html"/>
 <id>https://huijunchen9260.github.io/WildHorses.html</id>
 <published>2025-06-14T18:32:10Z</published>
-<updated>2025-06-14T18:35:59Z</updated>
+<updated>2025-06-14T18:43:59Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="wild-horses">Wild Horses</h1>
 <p><strong>Date:</strong> June 12, 2025 — <em>Assateague Island National Park, Maryland</em></p>
@@ -722,6 +722,7 @@ We need to unscrew to take out the wifi card.</p>
 <ul>
 <li><a href="#change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</a></li>
 </ul></li>
+<li><a href="#variable-initialization">Variable initialization</a></li>
 </ul>
 <!-- vim-markdown-toc -->
 <h2 id="video-resource">Video Resource</h2>
@@ -731,7 +732,38 @@ We need to unscrew to take out the wifi card.</p>
 <h2 id="fortran-package-manager">Fortran Package Manager</h2>
 <h3 id="change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</h3>
 <p>After changing all the corresponding code, like <code>module</code> name and <code>use</code> statement in the directory <code>src&#47;</code>, you need to go to <code>build&#47;</code> and update the <code>cache.toml</code> file to the new module name.</p>
-<!-- ## Fortran Compiler -->
+<h2 id="variable-initialization">Variable initialization</h2>
+<p>I refer to this <a href="https://fortran-lang.discourse.group/t/questions-on-variable-scope-in-parallel-computing/9824">discussion</a> in fortran-lang wiki.</p>
+<p>One will face race condition with <code>OpenMP</code> if you initialize variable like</p>
+<pre><code class="language-fortran">real(wp) :: a = 0.0_wp
+</code></pre>
+<p>This way, the variable <code>a</code> will be <code>save</code> variable, and the <code>a</code> variable in each thread will not be independent.</p>
+<p>For example, if you have a subroutine like this:</p>
+<pre><code class="language-fortran">SUBROUTINE test()
+  INTEGER :: x = 5
+  x = x + 1
+  WRITE (*, *) x
+END SUBROUTINE test
+</code></pre>
+<p>and then in you program you do</p>
+<pre><code class="language-fortran">CALL test()
+CALL test()
+CALL test()
+CALL test()
+CALL test()
+</code></pre>
+<p>it will print</p>
+<pre><code>6
+7
+8
+9
+10
+</code></pre>
+<p>Instead, we should initialize variables as</p>
+<pre><code class="language-fortran">real(wp) :: a
+a = 0.0_wp
+</code></pre>
+<p>so that the variable will be automatic variables.</p>
 <p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 <entry>
