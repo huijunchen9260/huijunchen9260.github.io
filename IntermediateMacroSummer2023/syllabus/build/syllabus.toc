@@ -1,9 +1,0 @@
-\contentsline {section}{Course Overview}{1}{section*.2}%
-\contentsline {section}{Grades}{3}{section*.3}%
-\contentsline {section}{Grading Policy}{3}{section*.4}%
-\contentsline {subsection}{Quizzes / Exams}{3}{section*.5}%
-\contentsline {section}{Quizzes and Examinations Integrity Policies}{3}{section*.6}%
-\contentsline {subsection}{Curving}{3}{section*.7}%
-\contentsline {subsection}{Problem Sets}{3}{section*.8}%
-\contentsline {subsection}{Midterm \& Final weight change}{4}{section*.9}%
-\contentsline {section}{Tentative Course Schedule}{5}{section*.10}%

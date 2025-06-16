@@ -1,6 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Elasticity \& Price Elasticity of Demand}{4}{0}{2}
-\beamer@sectionintoc {3}{Production: Key Concept}{12}{0}{3}
-\beamer@sectionintoc {4}{Profit Maximization}{17}{0}{4}
-\beamer@sectionintoc {5}{Gains from Trade}{23}{0}{5}

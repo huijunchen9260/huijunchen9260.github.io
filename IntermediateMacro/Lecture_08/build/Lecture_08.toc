@@ -1,3 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Structure}{3}{0}{1}
-\beamer@sectionintoc {2}{Competitive Equilibrium}{6}{0}{2}

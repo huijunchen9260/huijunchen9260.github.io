@@ -1,5 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Economics Model}{4}{0}{2}
-\beamer@sectionintoc {3}{Why ``Hocky-stick'' Growth?}{9}{0}{3}
-\beamer@sectionintoc {4}{Why Stagnation?}{15}{0}{4}

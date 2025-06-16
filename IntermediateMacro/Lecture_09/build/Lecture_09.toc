@@ -1,4 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{PPF}{4}{0}{1}
-\beamer@sectionintoc {2}{Pareto Efficiency}{6}{0}{2}
-\beamer@sectionintoc {3}{Social Planner}{7}{0}{3}

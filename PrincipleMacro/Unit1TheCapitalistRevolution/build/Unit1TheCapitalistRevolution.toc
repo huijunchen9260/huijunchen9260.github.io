@@ -1,7 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Course Plan}{2}{0}{1}
-\beamer@sectionintoc {2}{Introduction}{5}{0}{2}
-\beamer@sectionintoc {3}{Inequality}{7}{0}{3}
-\beamer@sectionintoc {4}{``Hockey-stick'' Growth}{10}{0}{4}
-\beamer@sectionintoc {5}{Capitalism}{14}{0}{5}
-\beamer@sectionintoc {6}{Economics}{21}{0}{6}

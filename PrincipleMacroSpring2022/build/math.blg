@@ -1,9 +1,0 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'build/math.blg'
-[120] biber:340> INFO - === Wed Apr 27, 2022, 08:47:33
-[145] Biber.pm:418> INFO - Reading 'build/math.bcf'
-[257] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[296] bbl.pm:654> INFO - Writing 'build/math.bbl' with encoding 'UTF-8'
-[297] bbl.pm:757> INFO - Output to build/math.bbl
-[297] Biber.pm:130> WARN - The file 'build/math.bcf' does not contain any citations!
-[297] Biber.pm:132> INFO - WARNINGS: 1

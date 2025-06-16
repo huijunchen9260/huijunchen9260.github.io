@@ -1,3 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Simplified Model}{3}{0}{1}
-\beamer@sectionintoc {2}{Full Model}{8}{0}{2}

@@ -1,4 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Demand for $ C $}{3}{0}{1}
-\beamer@sectionintoc {2}{Representative Firm}{7}{0}{2}
-\beamer@sectionintoc {3}{More Assumptions}{11}{0}{3}

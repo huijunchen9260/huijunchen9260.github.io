@@ -1,5 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Firm Problem}{3}{0}{1}
-\beamer@sectionintoc {2}{Household's Problem}{5}{0}{2}
-\beamer@sectionintoc {3}{Equilibrium Outcome}{9}{0}{3}
-\beamer@sectionintoc {4}{Appendix}{13}{0}{4}

@@ -1,3 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Consumer}{4}{0}{1}
-\beamer@sectionintoc {2}{Analysis}{9}{0}{2}

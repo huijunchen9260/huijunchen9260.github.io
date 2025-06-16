@@ -1,3 +1,0 @@
-\babel@toc {nil}{}\relax 
-\beamer@sectionintoc {1}{Complete the Model}{3}{0}{1}
-\beamer@sectionintoc {2}{Work with Model}{9}{0}{2}
