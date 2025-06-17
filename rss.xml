@@ -5,10 +5,58 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Peter Luger in New York City</title>
+<link>https://huijunchen9260.github.io/PeterLugerNYC.html</link>
+<guid>https://huijunchen9260.github.io/PeterLugerNYC.html</guid>
+<pubDate>Tue, 17 Jun 2025 10:10:37 -0400</pubDate>
+<description><![CDATA[<h1 id="peter-luger-in-new-york-city">Peter Luger in New York City</h1>
+<p><strong>Date:</strong> June 16, 2025 — <em>New York City, New York</em></p>
+<p>Peter Luger Steak House is a legendary spot in Brooklyn, New York.
+This was my first time dining there. It used to hold a Michelin star, but lost it in 2022 due to inconsistent food quality, according to <a href="https://www.tastingtable.com/1756619/peter-luger-steak-house-pete-wells-not-impressed/">this article</a>.
+Despite all the criticism, I personally had a great experience.</p>
+<p>As the photos show, the interior is luxurious and traditional:</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger1.webp" alt="PeterLuger1" /></p>
+<p>We were seated at a table by the window.
+Somehow, the view outside looked even better from inside this historic restaurant.</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger2.webp" alt="PeterLuger2" /></p>
+<p>I hadn’t done much research ahead of time, but when I saw a sausage lunch special on the menu, I realized this is actually a German-style steakhouse.
+You can also tell from the decorations on the wall:</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger3.webp" alt="PeterLuger3" /></p>
+<p>Our waiter was kind and professional—he only spoke when needed, but always helpful.
+Right after we placed our order, a basket of bread arrived along with their signature steak sauce.
+The sauce had a cocktail-like flavor to it, and I really enjoyed it.</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger4.webp" alt="PeterLuger4" />
+<img src="pix/PeterLugerNYC/PeterLuger5.webp" alt="PeterLuger5" /></p>
+<p>We started with bacon and Caesar salad as appetizers.
+The bacon was amazing—not overly salty like supermarket bacon, and thick enough to really taste the meat.
+It was so good I decided to order the sausage lunch special right after.
+The Caesar salad was also well done, and not overly salty like many other steakhouses tend to make it.</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger6.webp" alt="PeterLuger6" />
+<img src="pix/PeterLugerNYC/PeterLuger7.webp" alt="PeterLuger7" /></p>
+<p>For the main course, we got the steak for two—a porterhouse that includes both filet mignon and New York strip.
+I really liked how they presented it.
+The waiter propped one side of the sizzling hot platter with a small upside-down dish to angle it toward the sunlight, making the steak glisten.
+Then came the classic Peter Luger touch: he used two spoons to plate one piece of filet and one piece of strip onto each dish, along with some clarified butter.</p>
+<p>The steak was tender and juicy, served perfectly medium-rare at first.
+Since the platter was still hot, the rest of the steak continued to cook and reached medium over time—but it stayed juicy throughout.</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger8.webp" alt="PeterLuger8" />
+<img src="pix/PeterLugerNYC/PeterLuger9.webp" alt="PeterLuger9" /></p>
+<p>The sausage had no pepper or heavy seasoning—just a clean, meaty flavor.
+Personally, I preferred it without the Dijon mustard.</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger10.webp" alt="PeterLuger10" /></p>
+<p>The meal ended with some chocolates:</p>
+<p><img src="pix/PeterLugerNYC/PeterLuger11.webp" alt="PeterLuger11" /></p>
+<p>To sum up, I really enjoyed the entire meal.
+Our waiter was friendly and even made a few jokes, which added to the atmosphere.
+(Interestingly, the waiters at nearby tables seemed more reserved.)
+The steak was fabulous. I truly believe the porterhouse is a must-have at Peter Luger—or maybe even a must-have if you’re visiting NYC.</p>
+<p>;tags: Personal</p>]]></description>
+</item>
+<item>
 <title>Din Tai Fung in New York City</title>
 <link>https://huijunchen9260.github.io/DinTaiFungNYC.html</link>
 <guid>https://huijunchen9260.github.io/DinTaiFungNYC.html</guid>
-<pubDate>Sun, 15 Jun 2025 21:41:06 -0400</pubDate>
+<pubDate>Sun, 15 Jun 2025 21:48:27 -0400</pubDate>
 <description><![CDATA[<h1 id="din-tai-fung-in-new-york-city">Din Tai Fung in New York City</h1>
 <p><strong>Date:</strong> June 15, 2025 — <em>New York City, New York</em></p>
 <p>As a Taiwanese, I naturally have high standards when it comes to Taiwanese cuisine.
@@ -1318,46 +1366,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \end{tikzpicture}
 \end{document}
 </code></pre>
-<p>;tags: Miscellaneous</p>]]></description>
-</item>
-<item>
-<title>Note on Julia</title>
-<link>https://huijunchen9260.github.io/JuliaNote.html</link>
-<guid>https://huijunchen9260.github.io/JuliaNote.html</guid>
-<pubDate>Mon, 12 Sep 2022 10:14:54 -0400</pubDate>
-<description><![CDATA[<h1 id="note-on-julia">Note on Julia</h1>
-<h2 id="table-of-content">Table of Content</h2>
-<!-- vim-markdown-toc GFM -->
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#julia-introduction">Julia Introduction</a></li>
-<li><a href="#julia-tips">Julia Tips</a>
-<ul>
-<li><a href="#memory-allocations">Memory Allocations</a></li>
-</ul></li>
-</ul>
-<!-- vim-markdown-toc -->
-<h2 id="installation">Installation</h2>
-<ul>
-<li>Julia Download page: <a href="https://julialang.org/downloads/">Stable release</a></li>
-<li>Julia Installation Instruction:
-<ul>
-<li>Windows: <a href="https://julialang.org/downloads/platform/#windows">Official Instruction</a></li>
-<li>MacOS: <a href="https://julialang.org/downloads/platform/#macos">Official Instruction</a></li>
-</ul></li>
-<li>Jupyter Notebook &#47; Jupyter Lab Installation Instruction: <a href="https://docs.jupyter.org/en/latest/install.html">Official Instruction</a></li>
-<li>Link Jupyter Notebook with Julia: <a href="https://www.youtube.com/watch?v=81DRruCIO34">Video tutorial on Windows</a>, <a href="https://www.youtube.com/watch?v=oyx8M1yoboY">Video tutorial on MacOS</a></li>
-</ul>
-<h2 id="julia-introduction">Julia Introduction</h2>
-<ul>
-<li>100 Seconds Intro by Fireship: <a href="https://www.youtube.com/watch?v=JYs_94znYy0">video</a></li>
-</ul>
-<h2 id="julia-tips">Julia Tips</h2>
-<h3 id="memory-allocations">Memory Allocations</h3>
-<p>Due to the nature of LLVM, memory allocation in Julia can be very expensive. Especially in dynamic programming, we usually a lot of arrays to store our data. Therefore, tracking where the memory is allocated can fast computation a lot.</p>
-<ul>
-<li><a href="https://m3g.github.io/JuliaNotes.jl/stable/memory/">Tracking memory allocations: JuliaNotes.jl</a></li>
-</ul>
 <p>;tags: Miscellaneous</p>]]></description>
 </item>
 </channel>
