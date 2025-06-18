@@ -2,16 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-06-17T10:42:18Z</updated>
+<updated>2025-06-17T22:21:44Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Matt's Fish Camp in Fenwick Island</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MattFishCampFenwick.html"/>
+<id>https://huijunchen9260.github.io/MattFishCampFenwick.html</id>
+<published>2025-06-17T22:20:37Z</published>
+<updated>2025-06-17T22:20:37Z</updated>
+<author><name>huijunchen</name></author>
+<summary type="html"><![CDATA[<h1 id="matts-fish-camp-in-fenwick-island">Matt&#8217;s Fish Camp in Fenwick Island</h1>
+<p><strong>Date:</strong> June 11–12, 2025 — <em>Fenwick Island, Delaware</em></p>
+<p>There’s no sales tax in Delaware.
+That became our main motivation to dine across the state line during our time in Ocean City.</p>
+<p>We found this place called <strong>Matt’s Fish Camp</strong>, and they had an amazing happy hour—<strong>buck-a-shuck oysters</strong> and <strong>50-cent clams</strong> from 4 PM to 6 PM.
+I’ve never seen prices like that before.
+So of course, we went there twice—once wasn’t enough. We went for both happy hour and dinner.</p>
+<h2 id="swordfish-for-dinner">Swordfish for Dinner</h2>
+<p>We tried the swordfish as our main dish.
+It was meaty and lean. I personally liked it, but my partner wasn’t a fan.</p>
+<p><img src="pix/MattFishCampFenwick/MattFI1.webp" alt="MattFI1" /></p>
+<h2 id="solving-the-fi-salmon-mystery">Solving the &#8220;FI&#8221; Salmon Mystery</h2>
+<p>On the first day, I noticed the salmon was labeled as coming from &#8220;FI,&#8221; which didn’t match any U.S. state abbreviation.
+We figured it out the next day at <em>Sea Shell City</em>, a nearby gift shop—<strong>FI stands for Fenwick Island</strong>.</p>
+<p>So naturally, we ordered the &#8220;FI&#8221; salmon the next day.
+As always, salmon didn’t disappoint me.</p>
+<p><img src="pix/MattFishCampFenwick/MattFI2.webp" alt="MattFI2" /></p>
+<h2 id="oysters-and-clams-so-fresh">Oysters and Clams: So Fresh</h2>
+<p>We ordered a dozen oysters and a dozen clams.
+They were unbelievably fresh. That’s when I realized the weird aftertaste I’d experienced with oysters from Whole Foods in Columbus wasn’t normal.</p>
+<p>Each oyster and clam here was smooth and briny—nothing like what I’d had before.
+Now I understand why people say <strong>oysters are addictive</strong>.</p>
+<p><img src="pix/MattFishCampFenwick/MattFI3.webp" alt="MattFI3" /></p>
+<p>;tags: Personal</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Peter Luger in New York City</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PeterLugerNYC.html"/>
 <id>https://huijunchen9260.github.io/PeterLugerNYC.html</id>
 <published>2025-06-16T22:48:27Z</published>
-<updated>2025-06-17T10:10:37Z</updated>
+<updated>2025-06-17T10:42:19Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="peter-luger-in-new-york-city">Peter Luger in New York City</h1>
 <p><strong>Date:</strong> June 16, 2025 — <em>New York City, New York</em></p>
@@ -1288,120 +1320,6 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li><a href="https://osu.zoom.us/rec/share/Qcbn-Oqn1AWU8TAZV_cn5H4A5tyd-nG_GVQSjPv_SOKjttnu_WYWvnlmQE7ItGwG.TBodJkc0eeuIWmyZ">Lecture 17 Part 2 and Lecture 18 Part 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/o9XD0w-GqSjjVnWrUXQ0EJ6VvDlI2NVgwxFR61sOWiGWmCqCUipeMPcNeNkaULFK.xgJtfj5Co1LLk9N1">Lecture 18 Part 2 and Final Exam Review Part 1</a></li>
 <li><a href="https://osu.zoom.us/rec/share/ES9LrJ2rcETagzPv52w30pIu659nHTy4-9voV2B3GWrX4Rbqvn0XOB1ijDl8jXpZ.18uPUtxx1_gRBKZw">Final Review Part 2</a></li>
-</ul>
-<p>;tags: Teaching</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Principle of Macroeconomics, Spring 2022</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PrincipleMacroSpring2022.html"/>
-<id>https://huijunchen9260.github.io/PrincipleMacroSpring2022.html</id>
-<published>2021-12-30T20:19:06Z</published>
-<updated>2025-01-27T15:34:37Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="principle-of-macroeconomics-spring-2022">Principle of Macroeconomics, Spring 2022</h1>
-<p>ECON 2002.01, The Ohio State University, Spring 2022</p>
-<p><a href="pdf/PrincipleMacroSpring2022/build/syllabus.pdf">Syllabus</a></p>
-<ul>
-<li>Update Feb. 18, 2022: Revise course schedule due to my presentation in MEA annual meeting.</li>
-</ul>
-<!-- ## Lecture Videos -->
-<!-- - [Unit 1](https://youtu.be/j2xNxtsa2Uk) -->
-<!-- - [Unit 2](https://youtu.be/bmlgp_Pqecw) -->
-<!-- - [Unit 3](https://youtu.be/CBSHbUHcvY4) -->
-<!-- - [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ) -->
-<!-- - [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4) -->
-<!-- - [Unit 7](https://youtu.be/UgF-HO1If3w) -->
-<!-- - [Unit 9](https://youtu.be/tdM3XLQt76A) -->
-<!-- - [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o) -->
-<!-- - [Unit 10 Part 2](https://youtu.be/L_IcpcX372g) -->
-<!-- - [Unit 11](https://youtu.be/VkZXrPe6wG0) -->
-<!-- - [Unit 13](https://youtu.be/rbfoUkP_VCQ) -->
-<!-- - [Unit 14](https://youtu.be/1eEsTPxa5WQ) -->
-<!-- - [Unit 15](https://youtu.be/0HDBVajKozg) -->
-<!-- - [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI) -->
-<!-- - [Unit 16](https://youtu.be/auswkrj7OOM) -->
-<!-- - [Unit 17](https://youtu.be/tfpdEXwhnyY) -->
-<!-- ## Lecture Recording -->
-<!-- - [Math Supplement Part 1](https://youtu.be/4IEQ52Xl6Ig) (No audio) -->
-<!-- - [Math Supplement Part 2](https://youtu.be/CsipriW8zSc) -->
-<!-- - [Unit 1](https://youtu.be/WcO5rbA_U1s) -->
-<!-- - [Unit 2](https://youtu.be/B8GY0Sl4j_M) -->
-<!-- - [Quiz review and Unit 6 Part 1](https://youtu.be/BXI1GbEnpo4) -->
-<!-- - [Unit 6 Part 2](https://youtu.be/2DRAG1mN52I) -->
-<!-- - [Unit 7](https://youtu.be/JDFPuoK0mR0) -->
-<!-- - [Quiz review and Unit 9 Part 1](https://youtu.be/gyQ-JrzCg00) -->
-<!-- - [Unit 9 Part 2](https://youtu.be/gZrecQwyhuc) -->
-<!-- - [Unit 10 Part 1](https://youtu.be/GsNub6cKt90) -->
-<!-- - [Quiz review and Unit 3 Part 1](https://youtu.be/40U9lKCBzGE) -->
-<!-- - [Quiz review and Unit 3 Part 2](https://youtu.be/_v0fmlssKJc) -->
-<!-- - [Unit 10 Part 2](https://youtu.be/OdSrcRpextI) -->
-<!-- - [Quiz review and Unit 10 Part 3](https://youtu.be/nVMfm60p8As) -->
-<!-- - [Unit 10 Part 4 and Unit 13 Part 1](https://youtu.be/JU4L3JxUg3w) -->
-<!-- - [Unit 13 Part 2](https://youtu.be/qTP4Iov0N7s) -->
-<!-- - [Quiz review and Unit 14 Part 1](https://youtu.be/a92slHH9jxY) -->
-<!-- - [Unit 14 Part 2](https://youtu.be/ZCGKeH1eqBo) -->
-<!-- - [Unit 14 Part 3](https://youtu.be/YPs2WiDCdZc) -->
-<!-- - [Unit 15 Part 1](https://youtu.be/k6n3FEKy2q8) -->
-<!-- - [Unit 15 Part 2](https://youtu.be/xoqSSaLWt2k) -->
-<!-- - [Unit 15 Part 3](https://youtu.be/CMa_NlcOuRs) -->
-<!-- - [Quiz review and Unit 16 Part 2](https://youtu.be/jVM1LXJkjP4) -->
-<!-- - [Unit 16 Part 3](https://youtu.be/kD36fI4tUwo) -->
-<!-- - [Unit 16 Part 4](https://youtu.be/ZVlrsp3V7EI) -->
-<!-- - [Quiz review and Unit 11 Part 1](https://youtu.be/ewLoNMcfmEg) -->
-<!-- - [Unit 11 Part 2](https://youtu.be/nt4vrotLyTg) -->
-<!-- - [Unit 11 Part 3](https://youtu.be/tKyDQmF5SE8) -->
-<!-- - [Final Exam Review Part 1](https://youtu.be/tD_njPZHALQ) -->
-<!-- - [Final Exam Review Part 2](https://youtu.be/S6PGzhcJkkg) -->
-<!-- - [Final Exam Review Part 3](https://youtu.be/HkVrMEWlW8c) -->
-<!-- - [Final Exam Review Part 4](https://youtu.be/04bTN_tlOMU) -->
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="pdf/PrincipleMacro/build/selfintroduction.pdf">Know your Instructor</a></li>
-<li><a href="pdf/PrincipleMacro/build/math.pdf">Math Supplement</a></li>
-<li><a href="pdf/PrincipleMacro/build/economics.pdf">Economics in my eye</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Essays_in_Positive_Economics#The_Methodology_of_Positive_Economics">Wiki: the methodology of positive economics</a></li>
-<li><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=NqNGaJBahWoC&amp;oi=fnd&amp;pg=PA180&amp;dq=The+Methodology+of+Positive+Economics&amp;ots=gLKnEx_kWX&amp;sig=nWfE1bFegyceirvT_tWEEJzJtoU#v=onepage&amp;q=The%20Methodology%20of%20Positive%20Economics&amp;f=false">The methodology of positive economics</a></li>
-<li><a href="https://earth.esa.int/web/earth-watching/historical-views/content/-/article/kansai-and-kobe-international-airport-osaka-bay-japan-/">Example of Technological Progress: Kansai International Airport on artificial island</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a>
-<ul>
-<li><a href="pdf/PrincipleMacro/build/Unit9Supplement.pdf">Unit 9 Supplement</a></li>
-<li><a href="pdf/PrincipleMacro/build/Unit9QuizSupplement.pdf">Unit 9 Quiz Supplement: shift in wage-setting curve</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Exponential_discounting">Exponential Discounting</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Hyperbolic_discounting">Hyperbolic Discounting</a></li>
-<li><a href="https://youtu.be/Q_QPClXo5MU">Prudence: Why You Spend So Much Money At Trader Joe&#8217;s</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Gini_coefficient#Definition">Gini Coefficient</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Alan_Greenspan#Housing_bubble">Alan Greenspan: the market value of global long-term securities is approaching $100 trillion</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a>
-<ul>
-<li><a href="pdf/PrincipleMacro/build/Unit13QuizSolution.pdf">Unit 13 Quiz Solution</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a>
-<ul>
-<li><a href="pdf/PrincipleMacro/build/Unit14Supplement.pdf">Unit 14 Supplement</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=iG1U-Qb38z0">Swift Sanctions on Russia: How Cutting Off Banks Applies Pressure | WSJ</a></li>
-<li><a href="https://www.reddit.com/r/Unexpected/comments/t5vu5s/explaining_the_stock_market_in_russia_right_now/?utm_medium=android_app&amp;utm_source=share">Explaining the stock market in Russia right now</a></li>
-</ul></li>
-<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
-<li><a href="pdf/PrincipleMacro/build/midterm_review.pdf">Midterm Review</a>
-<!-- - [Why is Ukraine the West's Fault? Featuring John Mearsheimer](https://youtu.be/JrMiSQAGOS4?t=2618) --></li>
 </ul>
 <p>;tags: Teaching</p>]]></summary>
 </entry>
