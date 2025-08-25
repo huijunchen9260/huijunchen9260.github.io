@@ -1,0 +1,719 @@
+\documentclass[12pt]{article}
+
+% \usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+\usepackage{natbib}
+% \addbibresource{$BIB} % bibtex location
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+
+\usepackage{xcolor}
+ \usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\def\blue{\color{blue}}
+\def\orange{\color{orange}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\centerline{\huge\bf Syllabus: Macroeconomics I}
+\medskip
+\centerline{\LARGE \bf Autumn 2025}
+\medskip
+\centerline{\Large Instructor: Hui-Jun Chen}
+\centerline{Last Update: \today}
+\centerline{Lastest Version: \href{https://huijunchen9260.github.io/pdf/MacroeconomicsIAutumn2025/syllabus/syllabus.pdf}{Click Here}}
+
+\medskip
+
+% \tableofcontents
+
+% \newpage
+
+\section*{Course Overview}
+\addcontentsline{toc}{section}{Course Overview}
+\begin{itemize}
+
+    \item Course website:
+    \begin{itemize}
+        \item Materials: \href{https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html}{Webpage}
+    \end{itemize}
+    \item Meeting Time: Thursday 10:10 - 13:00 (R34n)
+    \item Location: TSMC Building 224
+    \item Office: TSMC Building 729-B
+    \item Email address: \href{huijunchen@mx.nthu.edu.tw}{huijunchen@mx.nthu.edu.tw}
+    \item Please do not hesitate to email me and set an appointment outside of regular office hour. To get quicker email reply, I would prefer you to:
+    \begin{enumerate}
+        \item Use \texttt{[Macro]} at the beginning of your subject title.
+        \begin{itemize}
+            \item example title: \texttt{[Macro] Question regarding Extra credit}
+        \end{itemize}
+    \end{enumerate}
+    \item I will reply your email within \textit{2 business day}.
+    \item Office hour: By appointment
+    \item Teaching Assistant:
+    \begin{enumerate}
+        \item 陳建廷(email: \href{ericchen904230331@gmail.com}{ericchen904230331@gmail.com})
+        \item 曾子齊(email: \href{freeboard2001@gmail.com}{freeboard2001@gmail.com})
+    \end{enumerate}
+    \item TA Office hour: TBA
+\end{itemize}
+
+\newpage
+
+\section*{Grades}
+\addcontentsline{toc}{section}{Grades}
+
+\newlength\q
+\setlength\q{\dimexpr .5\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\q}|p{\q}|}
+    \hline
+    Categories  & Points \\
+    \hline
+    \hline
+    Problem sets on course material   & 20 points \\
+    \hline
+    Midterm Exam I & 20 points \\
+    \hline
+    Midterm Exam II & 20 points \\
+    \hline
+    Final Exam & 30 points \\
+    \hline
+    Attendance & 10 points \\
+    \hline
+    Total & 100 points \\
+    \hline
+\end{tabular}
+\textit{See course schedule, below, for due dates} \\
+
+
+\section*{Grading Policy}
+\addcontentsline{toc}{section}{Grading Policy}
+
+% \subsection*{Quizzes / Exams}
+% \addcontentsline{toc}{subsection}{Quizzes / Exams}
+
+% Weekly quizzes in this class: \underline{Calculus materials}.
+% You will have \textbf{unlimited} attempts and \textbf{unlimited time} per attempt for quizzes of Calculus materials.
+% When calculating the final grade, I will \textbf{drop two quiz with the lowest grade} in each category (except Quiz on Calculus, Ch. 10 \& 11).
+
+% The exact due date and time for quizzes and exams should refer to the schedule below and the setting on Carmen.
+% In principle, all quizzes are due on \textbf{Sunday 11:59pm}, and the answer is available on \textbf{next Monday}.
+
+% Late quizzes are not accepted, unless you have formal excuse (require formal documentation, and the \textbf{instrutor still has rights to decide whether to extend the quiz / exams for this excuse}).
+
+% Final exam are cumulative, so the content from the midterm is also included in final exam.
+
+% \section*{Quizzes and Examinations Integrity Policies}
+% \addcontentsline{toc}{section}{Quizzes and Examinations Integrity Policies}
+\section*{Examinations Integrity Policies}
+\addcontentsline{toc}{section}{Examinations Integrity Policies}
+
+\textbf{Problem Sets}: Discussions are \textbf{encouraged}, but each person must hand in their own answer sheets
+
+\textbf{Examinations}: Discussions are \textbf{forbidden}, either face to face or via online discussion board / Social media.
+
+% \subsection*{Extra credits}
+
+% Extra credits: At the end of the semester, I will have you do the Student Evaluation of Instruction (SEI). If I get $80\%$ response rate on SEI by the end of the semester, everyone will get 2 points of extra credits.
+
+\subsection*{Curving}
+\addcontentsline{toc}{subsection}{Curving}
+
+If less than $40\%$ of the students get A- or above, I will add some points to everybody until $40\%$ of the students get A- or above, but I don't expect this to occur.
+
+\subsection*{Problem Sets}
+\label{sub:Problem_Sets}
+\addcontentsline{toc}{subsection}{Problem Sets}
+
+There are four problem sets and each of them worth 5 points.
+The way to calculate semester grade on problem set is by $ \frac{ \texttt{correct answers} }{ \texttt{total number of questions} } \times 5 $.
+For example, if there are 36 questions and you answer 30 correctly, then you will get $ \frac{30}{36} \times 5 \approx 4.16$ points in semester grade.
+
+
+Problem sets will be answered on paper, and will be submitted by the class time to TA.
+
+Note that overdue assignment will \textbf{NOT} be accepted.
+
+\subsection*{Exam}
+\label{sub:Exam}
+\addcontentsline{toc}{subsection}{Exam}
+
+There are two midterm exams and each of them worth 20 points.
+There is one final exam and it worths 30 points.
+The way to calculate semester grade on exams is the similar to the Problem Sets if not otherwise noted.
+
+\subsection*{Attendance}
+\label{sub:Attendance}
+\addcontentsline{toc}{subsection}{Attendance}
+
+If there are more than $ 50\% $ of students attend the class, then I will not take attendance.
+If I have not taken attendance until the end of semester, then every students will be granted the entirety of the attendance points.
+If I start to take attendance, then I will spread $ 5 $ to $ 10 $ attendance check across the rest of the semester, and the attendance points will be recorded accordingly.
+
+
+% \subsection*{Midterm \& Final weight change}
+% \label{sub:Midterm____Final_weight_change}
+% \addcontentsline{toc}{subsection}{Midterm \& Final weight change}
+
+% After the midterm exam, there will be a survey on Carmen asking whether you want to change the weight between midterm and final from $ 35 $ points each to $ 10 $ points for midterm and $ 60 $ points for final.
+% This survey will due \textbf{before} the final exam date, and you cannot change the weight between midterm and final after you took the final exam.
+
+
+% \section*{Course Attendance Policy}
+
+% According to the new ASC policy, \textbf{strictly masking} is required, which means you should wear your mask to cover your mouth and nose.
+% Also, the students \textbf{are not allowed to eat or drink} in class.
+
+% The definition of in-person class also redefined by new ASC policy.
+% Up to \textbf{24\%} of the class meetings can be online.
+% If I cannot teach the course in person due to personal issue, I will make an announcement on \href{https://osu.instructure.com/courses/114824}{Carmen}, and the class will be held online in the \href{https://osu.zoom.us/j/2532324996?pwd=c2cweEphWFMvTVZreHJ0MHNRNUdodz09}{zoom link}.
+
+% The instructor is also required to make reasonable accommodations for students who cannot attend the classes for a period of time, either because of sickness or quarantine.
+% My arrangement is to open all my class recordings back in the summer in the \href{https://huijunchen9260.github.io/PrincipleMacroSpring2022.html}{Webpage} so that students who cannot come to class can also reach out the course materials by watching the recorded videos.
+% Also, since the office hour is online, those students who cannot attend the in-person meeting can also ask me question on the \href{https://osu.zoom.us/j/2532324996?pwd=c2cweEphWFMvTVZreHJ0MHNRNUdodz09}{zoom link}.
+
+\section*{Tentative Course Schedule}
+\addcontentsline{toc}{section}{Tentative Course Schedule}
+
+\newlength\bb
+\setlength\bb{\dimexpr .08\textwidth -2\tabcolsep}
+\newlength\qq
+\setlength\qq{\dimexpr .14\textwidth -2\tabcolsep}
+\newlength\rr
+\setlength\rr{\dimexpr .3\textwidth -2\tabcolsep}
+\newlength\pp
+\setlength\pp{\dimexpr .5\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\bb}|p{\bb}|p{\pp}|p{\rr}|}
+    \hline
+        Week & Day & Topics and Readings & Deadlines \\
+    \hline
+    \hline
+        1
+        &
+        9/4
+        &
+        Topic: Introduction
+        \newline
+        Topic: Measurement I
+        &
+    \\
+    \hline
+        2
+        &
+        9/11
+        &
+        Topic: Measurement II
+        \newline
+        Topic: Consumer Preference I
+        &
+        Problem Set 1
+    \\
+    \hline
+        3
+        &
+        9/18
+        &
+        Topic: Consumer Preference II
+        \newline
+        Topic: Examples
+        &
+    \\
+    \hline
+        4
+        &
+        9/25
+        &
+        Topic: Firms
+        \newline
+        Topic: Competitive Equilibrium
+        &
+    \\
+    \hline
+        5
+        &
+        10/2
+        &
+        Topic: Social Planer's Problem
+        \newline
+        Topic: Examples
+        &
+        Problem Set 2
+    \\
+    \hline
+        6
+        &
+        10/9
+        &
+        Midterm I
+        &
+    \\
+    \hline
+        7
+        &
+        10/16
+        &
+        Midterm Recap
+        \newline
+        Topic: Distorting Taxes
+        &
+    \\
+    \hline
+        8
+        &
+        10/23
+        &
+        Topic: Two Period Consumer Problem
+        \newline
+        Topic: Two Period Equilibrium
+        &
+    \\
+    \hline
+        9
+        &
+        10/30
+        &
+        Topic: RBC Model Part 1: Consumer
+        \newline
+        Topic: RBC Model Part 2: Firm
+        &
+        Problem Set 3
+    \\
+    \hline
+        10
+        &
+        11/06
+        &
+        Topic: RBC Model Part 3: Competitive Equilibrium
+        \newline
+        Topic: RBC Model Part 4: Examples
+        &
+    \\
+    \hline
+        11
+        &
+        11/13
+        &
+        Topic: RBC Model Part 5: Applications
+        \newline
+        Topic: Solow Model and Dynamic Programming
+        &
+        Problem Set 4
+    \\
+    \hline
+        12
+        &
+        11/20
+        &
+        Midterm II
+        &
+    \\
+    \hline
+        13
+        &
+        11/27
+        &
+        Topic: Asset Pricing: Endowment Economy
+        \newline
+        Topic: Asset Pricing: Production Economy
+        &
+    \\
+    \hline
+        14
+        &
+        12/04
+        &
+        Customized Class
+        &
+    \\
+    \hline
+        15
+        &
+        12/11
+        &
+        Customized Class
+        \newline
+        Final Review
+        &
+    \\
+    \hline
+        16
+        &
+        12/18
+        &
+        Final Exam
+        &
+    \\
+    \hline
+\end{tabular}
+
+% \section*{Tentative Course Schedule}
+% \addcontentsline{toc}{section}{Tentative Course Schedule}
+%
+% \newlength\bb
+% \setlength\bb{\dimexpr .06\textwidth -2\tabcolsep}
+% \newlength\qq
+% \setlength\qq{\dimexpr .14\textwidth -2\tabcolsep}
+% \newlength\rr
+% \setlength\rr{\dimexpr .3\textwidth -2\tabcolsep}
+% \newlength\pp
+% \setlength\pp{\dimexpr .5\textwidth -2\tabcolsep}
+% \begin{tabular}{|p{\bb}|p{\qq}|p{\rr}|p{\pp}|}
+%     \hline
+%         Wk & Days & Deadlines & Topics and Readings \\
+%     \hline
+%     \hline
+%         1
+%         &
+%         01/07
+%         \newline
+%         01/09
+%         &
+%         % Essence of Calculus Ch.1
+%         % \newline
+%         % Syllabus
+%         % \newline
+%         % Deadline: 05/14 11:59pm
+%         &
+%         Topic: Introduction
+%         \newline
+%         Topic: Measurement I
+%     \\
+%     \hline
+%         2
+%         &
+%         01/14
+%         \newline
+%         01/16
+%         &
+%         % Essence of Calculus Ch.2
+%         % \newline
+%         % Deadline: 05/21 11:59pm
+%         &
+%         Topic: Measurement II
+%         \newline
+%         Topic: Consumer Preference I
+%     \\
+%     \hline
+%         3
+%         &
+%         01/21
+%         \newline
+%         01/23
+%         &
+%         % Essence of Calculus Ch.3
+%         % \newline
+%         Problem Set 1
+%         \newline
+%         Deadline: 02/02 11:59pm
+%         &
+%         Topic: Consumer Preference II
+%         \newline
+%         Topic: Examples
+%     \\
+%     \hline
+%         4
+%         &
+%         01/28
+%         \newline
+%         01/30
+%         &
+%         &
+%         Topic: Firms
+%         \newline
+%         Topic: Competitive Equilibrium
+%     \\
+%     \hline
+%         5
+%         &
+%         02/04
+%         \newline
+%         02/06
+%         &
+%         &
+%         Topic: Social Planer's Problem
+%         \newline
+%         Topic: Examples
+%     \\
+%     \hline
+%         6
+%         &
+%         02/11
+%         \newline
+%         02/13
+%         &
+%         Problem Set 2
+%         \newline
+%         Deadline: 02/23 11:59pm
+%         &
+%         Topic: Distorting Taxes
+%         \newline
+%         Customized Class: TBA
+%     \\
+%     \hline
+%         7
+%         &
+%         02/18
+%         \newline
+%         02/20
+%         &
+%         &
+%         Customized Class: TBA
+%         \newline
+%         Midterm Review
+%     \\
+%     \hline
+%         8
+%         &
+%         02/25
+%         &
+%         &
+%         Midterm
+%     \\
+%     \hline
+%         9
+%         &
+%         02/27
+%         &
+%         &
+%         Midterm Recap
+%         \newline
+%         Topic: Two Period Consumer Problem
+%     \\
+%     \hline
+%         10
+%         &
+%         03/04
+%         \newline
+%         03/06
+%         &
+%         &
+%         Topic: Two Period Consumer Problem
+%         \newline
+%         Topic: Two Period Equilibrium
+%     \\
+%     \hline
+%         11
+%         &
+%         03/11
+%         \newline
+%         03/13
+%         &
+%         &
+%         Spring break
+%     \\
+%     \hline
+%         12
+%         &
+%         03/18
+%         \newline
+%         03/20
+%         &
+%         &
+%         Topic: RBC Model Part 1: Consumer
+%         \newline
+%         Topic: RBC Model Part 2: Firm
+%     \\
+%     \hline
+%         13
+%         &
+%         03/25
+%         \newline
+%         03/27
+%         &
+%         Problem Set 3
+%         \newline
+%         Deadline: 04/06 11:59pm
+%         &
+%         Topic: RBC Model Part 3: Competitive Equilibrium
+%         \newline
+%         Topic: RBC Model Part 4: Examples
+%     \\
+%     \hline
+%         14
+%         &
+%         04/01
+%         \newline
+%         04/03
+%         &
+%         &
+%         Topic: RBC Model Part 5: Applications
+%         \newline
+%         Topic: Solow Model and Dynamic Programming
+%     \\
+%     \hline
+%         15
+%         &
+%         04/08
+%         \newline
+%         04/10
+%         &
+%         Problem Set 4
+%         \newline
+%         Deadline: 04/20 11:59pm
+%         &
+%         Topic: Asset Pricing: Endowment Economy
+%         \newline
+%         Topic: Asset Pricing: Production Economy
+%     \\
+%     \hline
+%         16
+%         &
+%         04/15
+%         \newline
+%         04/17
+%         &
+%         &
+%         Final Review
+%     \\
+%     \hline
+%         17
+%         &
+%         04/22-04/24
+%         &
+%         &
+%         Final Exam: Ends at 3:45pm, 4/24
+%     \\
+%     \hline
+% \end{tabular}
+
+
+% \newpage
+%
+% \section*{Course learning outcomes}
+%
+% % \textbf{This course fulfills the GE Goals and Expected Learning Outcomes for Social Science: Organizations and Polities.}
+%
+% \subsection*{Social Science Goal}
+%
+% Students understand the systematic study of human behavior and cognition; the structure of human societies, cultures, and institutions; and the processes by which individuals, groups, and societies interact, communicate, and use human, natural, and economic resources.
+%
+% \subsection*{Organizations and Polities Expected Learning Outcomes}
+% \begin{enumerate}
+%     \item Students understand the theories and methods of social scientific inquiry as they apply to the study of organizations and polities.
+%     \item Students understand the formation and durability of political, economic, and social organizing principles and their differences and similarities across contexts.
+%     \item Students comprehend and assess the nature and values of organizations and polities and their importance in social problem solving and policy making.
+% \end{enumerate}
+%
+% This class addresses the theories and methods of social scientific inquiry through discussion of supply and demand at the national level, and the measurement of national income and other macroeconomic measures, along with applications to current events.
+%
+% Students will learn about the formation and durability of political, economic, and social organizing principles through discussions of the origin and structure of central banks as well as other international organizations, and fiscal and monetary policy. These topics will include discussion of various commonly accepted points of view.
+%
+% Students will comprehend and assess the nature and values of organizations and polities and their importance in social problem solving and policy making through discussion of fiscal and monetary policy, business cycles and the Federal Reserve Bank, including its values and objectives.
+%
+%
+%
+% \newpage
+%
+% % \section*{Academic integrity policy}
+% %
+% % Academic integrity is essential to maintaining an environment that fosters excellence in teaching, research, and other educational and scholarly activities.
+% % Thus, The Ohio State University and the Committee on Academic Misconduct (COAM) expect that all students have read and understand the University’s Code of Student Conduct, and that all students will complete all academic and scholarly assignments with fairness and honesty.
+% % Students must recognize that failure to follow the rules and guidelines established in the University’s Code of Student Conduct and this syllabus may constitute ``Academic Misconduct.''
+% %
+% % The Ohio State University’s Code of Student Conduct (Section 3335-23-04) defines academic misconduct as: ``Any activity that tends to compromise the academic integrity of the University, or subvert the educational process.''
+% % Examples of academic misconduct include (but are not limited to) plagiarism, collusion (unauthorized collaboration), copying the work of another student, and possession of unauthorized materials during an examination.
+% % Ignorance of the University’s Code of Student Conduct is never considered an ``excuse'' for academic misconduct, so I recommend that you review the Code of Student Conduct and, specifically, the sections dealing with academic misconduct.
+% %
+% % \textbf{If I suspect that a student has committed academic misconduct in this course, I am obligated by University Rules to report my suspicions to the Committee on Academic Misconduct.}
+% % If COAM determines that you have violated the University’s Code of Student Conduct (i.e., committed academic misconduct), the sanctions for the misconduct could include a failing grade in this course and suspension or dismissal from the University.
+% %
+% % If you have any questions about the above policy or what constitutes academic misconduct in this course, please contact me.
+% %
+% % Other sources of information on academic misconduct (integrity) to which you can refer include:
+% % \begin{itemize}
+% %     \item The Committee on Academic Misconduct web pages (COAM Home)
+% %     \item Ten Suggestions for Preserving Academic Integrity (Ten Suggestions)
+% %     \item Eight Cardinal Rules of Academic Integrity (www.northwestern.edu/uacc/8cards.htm)
+% % \end{itemize}
+% %
+% % Violating university or course rules as contained in the course syllabus or other information provided to the student in regard to student classroom conduct may result in your being removed from the class rolls.
+% %
+% % \subsection*{Other Policies}
+% %
+% % Students with disabilities that have been certified by the Office for Disability Services will be appropriately accommodated.
+% % They should inform the instructor as soon as possible of their needs.
+% % Students who feel that they need an accommodation based on the impact of a disability should contact the Office for Disability Service.
+% % General information is available at http://www.ods.ohio-state.edu.
+% %
+% % The core material contained within this syllabus will either be discussed in class or assigned as required reading.
+% %
+% % If you decide not to complete the course, please formally withdraw from the class.
+% % Failure to officially withdraw will result in an ``E'' on your transcript and you will have foregone the opportunity to receive a refund (partial or full).
+% %
+% % You are expected to be on time to class.
+% % In those events when you do arrive at class late, please find a seat as quietly and unobtrusively as possible.
+% % Do not interrupt class to hand in assignments or request materials.
+% % An opportunity will be provided for these activities at an appropriate time.
+% %
+% % We will be doing in-class participation exercises that work via the internet.
+% % Please be sure to bring a mobile device (laptop, tablet, or smartphone) with you to class each day.
+% %
+% % \subsection*{Economics Learning Center}
+% %
+% % Information can be found at https://economics.osu.edu/economics-learning-center.
+% %
+% \subsection*{Grading scale}
+% \begin{itemize}
+%     \item 93–100: A
+%     \item 90–92.9: A-
+%     \item 87–89.9: B+
+%     \item 83–86.9: B
+%     \item 80–82.9: B-
+%     \item 77–79.9: C+
+%     \item 73–76.9: C
+%     \item 70 –72.9: C-
+%     \item 67 –69.9: D+
+%     \item 60 –66.9: D
+%     \item Below 60: E
+% \end{itemize}
+
+\end{document}
+

@@ -1,0 +1,3 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Solow Model}{3}{0}{1}
+\beamer@sectionintoc {2}{Neoclassical Growth Model}{7}{0}{2}

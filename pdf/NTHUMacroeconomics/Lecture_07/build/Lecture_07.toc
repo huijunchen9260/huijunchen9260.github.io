@@ -1,0 +1,4 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Technology}{3}{0}{1}
+\beamer@sectionintoc {2}{Optimization}{11}{0}{2}
+\beamer@sectionintoc {3}{Experiments}{12}{0}{3}
