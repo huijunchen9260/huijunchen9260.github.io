@@ -1,0 +1,17 @@
+\frametitle{Utility Function}
+\label{slide:Utility_Function}
+    \begin{itemize}
+        \item As a student you value two things: free time and grade
+        \item However, higher grade $ \Rightarrow  $ sacrifice your free time!
+    \end{itemize}
+
+    \begin{center}
+
+        % % \includegraphics[width=0.9\textwidth]{./figures/utility.png}
+        % \begin{tikzpicture}
+        %     \begin{axis}[xmax=10,ymax=4, xmin=0, ymin=0]
+        %         \addplot3[mesh, samples = 50]{ln(x) + ln(y)}
+        %     \end{axis}
+        % \end{tikzpicture}
+    % \end{center}
+

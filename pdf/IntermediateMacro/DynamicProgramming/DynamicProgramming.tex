@@ -1,0 +1,439 @@
+\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[T1]{fontenc}
+% mint: code chuck and syntax highlighting
+%% outputdir should change according to pdf build directory
+\usepackage[outputdir=build,cache=false]{minted}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tikz}
+% \usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{makecell}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{bm}
+\usepackage{appendixnumberbeamer}
+\usepackage{natbib}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\usetheme[compress]{Boadilla}
+\usecolortheme{default}
+\useoutertheme{miniframes}
+\usefonttheme[onlymath]{serif}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}{--}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{itemize subsubitem}{fg=black}
+\setbeamercolor{item projected}{bg=darkgray,fg=white}
+\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
+\setbeamercolor{alerted text}{fg=blue}
+\setbeamertemplate{enumerate items}[circle]
+
+\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+
+
+
+\setbeamertemplate{headline}{}
+
+%==========================================
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\var}{\rm Var}
+\DeclareMathOperator*{\cov}{\rm Cov}
+
+\theoremstyle{definition}
+\newtheorem{assume}{Assumption}
+\newtheorem{lem}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{corol}{Corollary}
+
+\begin{document}
+    \title[Intro to Dynamic Programming]{Introduction to Dynamic Programming}
+    \author[Hui-Jun Chen]{Hui-Jun Chen}
+    \institute[OSU]{The Ohio State University}
+    % \date{\today}
+    \date{\today}
+    \setbeamertemplate{navigation symbols}{}
+    \setstretch{1.2}
+
+%-------------------------------------------------------
+{
+%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
+    \begin{frame}
+% \vspace{3em}
+        \centering
+%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
+        \maketitle
+% \vspace{-1.5em}
+% \centering
+% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+
+
+    \end{frame}
+}
+
+% -------------------------------------------
+\setbeamertemplate{headline}
+{
+\setbeamercolor{section in head/foot}{fg=black, bg=white}
+\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
+}
+%------------------------------------------
+
+\begin{frame}{Overview}
+\label{slide:Overview}
+
+This slide is to introduce three representations of the infinite horizon problem using \textbf{Neoclassical Growth Model} as example.
+
+\vspace{1em}
+
+We will go over the \textbf{Solow model} first to get the sense of problem we are working with.
+
+\vspace{1em}
+
+The three representations are:
+
+\begin{enumerate}
+    \item Date 0 economy
+    \item Sequential formulation
+    \item Recursive formulation
+\end{enumerate}
+
+\end{frame}
+
+\section{Solow Model}
+\label{sec:Solow_Model}
+
+
+\begin{frame}{Solow Model}
+\label{slide:Solow_Model}
+
+\begin{itemize}
+    \item Infinite horizon: $ t = 0, 1, 2, \ldots$
+    \item Single homogeneous good produced each period.
+    \item Output $ Y_{t} $ can be used for consumption $ C_{t} $ or investment $ I_{t} $.
+    \begin{itemize}
+        \item the share $ s $ is constant: $ I_{t} = s Y_{t} $
+    \end{itemize}
+    \item Labor force is constant over time, i.e., $ L_{t} = L, \forall t$.
+    \item Capital $ K_{t} $ depreciates at rate $ \delta \in (0, 1) $.
+    \begin{itemize}
+        \item Capital law of motion: $ K_{t+1} = (1-\delta)K_{t} + I_{t} $.
+    \end{itemize}
+    \item Production function: $ Y_{t} = F(K_{t}, L_{t}) $
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Analysis: Solow Model}
+\label{slide:Analysis__Solow_Model}
+    \begin{itemize}
+        \item Since saving rate $ s $ is constant $ \Rightarrow  $ $ C_{t} = (1-s)Y_{t} $ $ \Rightarrow  $ $ u(C_{t}) $ predetermined, no need for consumer problem.
+        \item Three equations:
+        %
+        \begin{align}
+            C_{t} + I_{t}
+                & = F(K_{t}, L)
+            \\
+            K_{t+1}
+                & = (1-\delta)K_{t} + I_{t}
+            \\
+            I_{t}
+                & = s F(K_{t}, L)
+        \end{align}
+        %
+        can substitute into one:
+        %
+        \begin{equation}
+        \label{eq:Capital_decision}
+            K_{t+1} = g(K_{t}) \equiv (1-\delta)K_{t} + s F(K_{t}, L)
+        ,\end{equation}
+        %
+        \item Given $ K_{t} $, $ K_{t+1} $ is determined at time $ t $ $ \Rightarrow $ capital is a \textbf{state} variable.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Properties: Solow Model}
+\label{slide:Properties__Solow_Model}
+    \begin{itemize}
+        \item Need some assumptions to hold, and \textbf{Cobb-Douglas} matches all
+        \begin{itemize}
+            \item $F(K_{t}, L_{t}) = AK_{t}^{\alpha} L_{t}^{1-\alpha}$
+        \end{itemize}
+        \item Exists a steady state such that $ K_{t} = K_{t+1} = K^{*} $, i.e.,
+        %
+        \begin{equation}
+        \label{eq:Capital_decision_ss}
+            K^{*} = g(K^{*}) \equiv (1-\delta)K^{*} + s F(K^{*}, L)
+        ,\end{equation}
+        %
+        \item and the nontrivial solution is also unique (figure next slide)
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Properties: Solow Model (Cont.)}
+\label{slide:Properties__Solow_Model__Cont__}
+    \begin{center}
+        \begin{tikzpicture}[domain=0:5]
+            \tikzstyle{every node}=[font=\scriptsize]
+            \pgfmathsetmacro{\x}{5};
+            \pgfmathsetmacro{\y}{5};
+            % \draw[very thin,color=gray, step=0.1] (0,0) grid (\x, \y); % gray grid
+            \draw[->] (0,0) node[below]{ $ 0 $  } -- node[below, yshift = -0.4cm]{current efficiency unit of capital $k_{t}$} (\x + 0.5,0) ;   % label x axis
+            \draw[->] (0,0) -- node[above, rotate=90, yshift = 0.4cm]{future efficiency unit of capital $k_{t+1}$} (0,\y + 0.5) ;   % label y axis
+            \draw[black] plot (\x, \x) node[left]{$45^{\circ}$};
+            \draw[thick, blue, yshift = -1cm] (0, 1)
+                to[bend left=20]
+                node[pos=0.21] (b) {}
+                node[pos=0.73,draw,fill=red,circle,inner sep=1pt] (c) {}
+                (5, 5) node[below]{$g(k_{t})$};
+            % \draw[shorten >=-1cm, shorten <=-1.5cm, thick, red] (a) -- (b) node[above, yshift=.8cm]{slope $=$ MPC};
+            \path (c); \pgfgetlastxy{\xcoord}{\ycoord};
+            \coordinate (c_x) at (\xcoord, 0);
+            \coordinate (c_y) at (0, \ycoord);
+            \draw[dashed] (c_y) node[left]{$k^{*}$}  -- (c) -- (c_x) node[below]{$k^{*}$};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\section{Neoclassical Growth Model}
+\label{sec:Neoclassical_Growth_Model}
+
+\begin{frame}{Neoclassical Growth Model: Set up}
+\label{slide:Optimal_Growth_Model}
+    \begin{itemize}
+        \item Difficulties with Solow Model: \blue{exogenous} saving rate.
+        \begin{itemize}
+            \item \textbf{how} arrived at $ s $? Is $ s $ \textbf{optimal}?
+        \end{itemize}
+        \item Micro-foundation: rep. consumer makes consumption-saving decision.
+        \item No externalities, and thus can solve in Social planner's problem.
+        \item Assume rep. consumer lives for $ \infty $ period with \textbf{additive} separability:
+        %
+        \begin{equation}
+        \label{eq:rep_consumer_u}
+            U(C_{0}, C_{1}, \ldots) = \sum_{t=0}^{\infty} \beta^{t} u(C_{t})
+        ,\end{equation}
+        %
+        where function $ u(\cdot) $ is the same for every period, and $ \beta $ is \blue{subjective discount factor}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Neoclassical Growth Model: Set up (Cont.)}
+\label{slide:Neoclassical_Growth_Model__Set_up__Cont__}
+    \begin{itemize}
+        \item Assumes no labor (for the sake of sanity)
+        \item Two goods are trading:
+        \begin{itemize}
+            \item firm $ \rightarrow  $ consumer: consumption goods ($c_{t}$) with price $ p_{t} $
+            \item consumer $ \rightarrow  $ firm: capital accumulation ($k_{t}$) with price $ r_{t} $
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Date 0 Representation}
+\label{slide:Date_0_Representation}
+A \blue{Date 0 C.E.} is \textbf{prices} $ \left\{p_{t}, r_{t}\right\}_{t=0}^{\infty} $ and \textbf{quantities} $ \{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty} $ such that
+\begin{enumerate}
+    \item $\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}$ solves household's problem,
+     \begin{align}
+             & \max_{\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}} \sum_{t=0}^{\infty} \beta^{t} u(c_{t})
+         \\
+         \text{subject to} \quad
+             & c_{t} \ge 0, \forall t = 0, 1, \ldots
+         \\
+             & \sum_{t=0}^{\infty} \red{p_{t}} (c_{t} + k_{t+1}) \le \sum_{t=0}^{\infty} \red{p_{t}} (r_{t} k_{t} + (1-\delta)k_{t}), \forall t
+     \end{align}
+    \item $\{k_{t+1}^{*}\}_{t=0}^{\infty}$ solves firm's problem at each $ t = 0, 1, \ldots $
+    %
+    \begin{align}
+        \max_{k_{t}} p_{t} f(k_{t}) - p_{t}r_{t}k_{t}
+    \end{align}
+    %
+    \item Goods market clear: $ c_{t}^{*} + k_{t+1}^{*} = f(k_{t}^{*}) + (1-\delta) k_{t}^{*} $
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Discussion on Date 0 Representation}
+\label{slide:Discussion_on_Date_0_Representation}
+
+\begin{itemize}
+    \item $ p_{t} $ is the relative price of $ c_{t} $ \textbf{in units of $ c_{0} $} $ \Rightarrow  $ $ p_{0} = 1 $.
+    \item $ p_{t} r_{t} $ is the relative price of capital \textbf{in units of $ c_{0} $}
+    \item Firm's problem is static, implies $ r_{t} = D_{k}f(k_{t}) $
+    \item Use \textbf{LaGrange multiplier} $ \lambda $, we derive the FOC for $ c_{t} $ and $ k_{t+1} $ are
+    %
+    \begin{align*}
+        [c_{t}]: \quad
+            &\beta^{t} u'(c_t) = \lambda p_{t}
+        \\
+        [k_{t+1}]: \quad
+            & p_{t} = p_{t+1} (r_{t+1} + 1 - \delta )
+    \end{align*}
+    %
+    %
+    \item If we divide both $ p_{t} $ and $ p_{t+1} $, we get \textbf{Euler equation}:
+    %
+    \begin{equation*}
+            \frac{p_{t}}{p_{t+1}} = \frac{u'(c_{t})}{\beta u'(c_{t+1})} = (r_{t+1} + 1 - \delta)
+            \Rightarrow
+            u'(c_{t}) = \beta u'(c_{t+1}) (r_{t+1} + 1 - \delta)
+    \end{equation*}
+    %
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sequential Representation}
+\label{slide:Sequential_Representation}
+    \small
+    A \blue{sequential C.E.} is \textbf{prices} $ \{r_{t}\}_{t=0}^{\infty} $ and \textbf{quantities} $ \{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty} $ such that
+\begin{enumerate}
+    \item $\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}$ solves household's problem,
+     \begin{align}
+             & \max_{\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}} \sum_{t=0}^{\infty} \beta^{t} u(c_{t})
+         \\
+         \text{subject to} \quad
+             & c_{t} \ge 0, \forall t = 0, 1, \ldots
+         \\
+            & c_{t} + k_{t+1} \le r_{t} k_{t} + (1-\delta) k_{t}, \red{\forall t = 0, 1, \ldots}
+         \\
+            & \label{eq:transversality} \lim_{t\rightarrow \infty} \left(\prod_{s=1}^{t} (r_{t} + 1 - \delta)\right)^{-1} k_{t+1} = 0
+     \end{align}
+    \item $\{k_{t+1}^{*}\}_{t=0}^{\infty}$ solves firm's problem at each $ t = 0, 1, \ldots $
+    %
+    \begin{align}
+        \max_{k_{t}} f(k_{t}) - r_{t}k_{t}
+    \end{align}
+    %
+    \item Goods market clear: $ c_{t}^{*} + k_{t+1}^{*} = f(k_{t}^{*}) + (1-\delta) k_{t}^{*} $
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Discussion on Sequential Representation}
+\label{slide:Discussion_on_Sequential_Representation}
+    \begin{itemize}
+        \item Here we have budget constraint at every possible $ t $, rather than one.
+        \item Need \textbf{LaGrange multiplier} $ \lambda_{t} $ for each budget constraint!
+        \item FOC for $ c_{t} $ and $ k_{t+1} $ are
+            \begin{align*}
+                [c_{t}]: \quad
+                    &\beta^{t} u'(c_t) = \beta^{t} \lambda_{t} \Rightarrow u'(c_{t}) = \beta \lambda_{t}
+                \\
+                [k_{t+1}]: \quad
+                    & \beta^{t} \lambda_{t} = \beta^{t+1} \lambda_{t+1} (r_{t+1} + 1 - \delta)
+                    \Rightarrow \lambda_{t} = \beta \lambda_{t+1} (r_{t+1} + 1 - \delta)
+            \end{align*}
+        \item and still, we can the same \textbf{Euler equation}:
+        %
+        \begin{equation*}
+                u'(c_{t}) = \beta u'(c_{t+1}) (r_{t+1} + 1 - \delta)
+        \end{equation*}
+        %
+        \item Equation \eqref{eq:transversality} is the \blue{transversality condition}: avoid Ponzi scheme
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Intro: Recursive Representation}
+\label{slide:Intro__Recursive_Representation}
+\small
+    \begin{itemize}
+        \item In the sequential representation, at each date $ t $, household is solving \textbf{exactly the same} utility optimization problem, so we can write it as:
+        %
+        \begin{align}
+                & \max_{c_{t}, k_{t+1}} u(c_{t}) + \overbrace{\sum_{s = t+1}^{\infty} \beta^{s} u(c_{s})}^{\text{not related to } c_{t}}
+            \\
+            \text{subject to} \quad
+                & c_{t} + k_{t+1} \le r_{t} k_{t} + (1-\delta) k_{t}
+            \\
+                & c_{t+1} + k_{t+2} \le r_{t+1} k_{t+1} + (1-\delta)k_{t+1}
+        \end{align}
+        %
+        \item Observing this, instead of finding the \textbf{level} of the prices and quantities, we find the \textbf{function} of prices and quantities that express the same problem that household is solving \textbf{at each $t$}.
+        \item Note that HH cannot change prices, and thus prices depends on the \textbf{aggregate} state variable, i.e., aggregate capital $ \bar{K} $. In equilibrium $ \bar{K} = k $.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Recursive Representation}
+\label{slide:Recursive_Representation}
+\small
+    A \blue{recursive C.E.} is a set of \blue{functions} for \textbf{prices} $ \{r(\bar{K})\} $ and \textbf{quantities} $ \{G(\bar{K}), g(k, \bar{K})\}$ and value $ V(k, \bar{K}) $ such that
+    \begin{enumerate}
+        \item $ V(k, \bar{K}) $ solves household's problem,
+        %
+        \begin{align}
+                & V(k, \bar{K}) = \max_{c, k' \ge 0} \left(
+                    u(c) + \beta V(k', \bar{K}')
+                \right)
+            \\
+            \text{subject to} \quad
+                & c + k' = (r(\bar{K}) + 1 - \delta) k
+            \\
+                & \bar{K}' = G(\bar{K})
+        \end{align}
+        %
+        \item Prices are competitively determined, i.e., firm's problem implies
+        %
+        \begin{equation*}
+            r(\bar{K}) = f'(\bar{k})
+        ,\end{equation*}
+        %
+        \item Individual decisions are consistent with aggregates when $ k = \bar{K} $, i.e.,
+        %
+        \begin{equation*}
+            G(\bar{K}) = g(\bar{K}, \bar{K})
+        \end{equation*}
+        %
+
+    \end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Discussion on Recursive Representation}
+\label{slide:Discussion_on_Recursive_Representation}
+    \begin{itemize}
+        \item Why?! $ \because  $ The only formulation we can put it on computer!
+        \item Date 0: how could you code the budget constraint w/ infinite sum?
+        \item Sequential: infinite number of budget constraint\ldots
+        \item Recursive: through recursion, we can keep iterate on same problem until it \textbf{converges} to a fixed point.
+        \item Difficulties: for each C.E., need to identify the \blue{\textbf{structure}} of the question such that we can represent that structure using \blue{individual} and \blue{aggregate} state variables.
+    \end{itemize}
+
+\end{frame}
+
+
+\end{document}

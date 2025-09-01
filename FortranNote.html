@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title># Note on Fortran -- Hui-Jun Chen's Webpage</title>
+        <meta name="description" content="Hui-Jun Chen's Personal Website">
+    </head>
+<body>
+<main>
+<h1 id="note-on-fortran">Note on Fortran</h1>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#video-resource">Video Resource</a></li>
+<li><a href="#fortran-package-manager">Fortran Package Manager</a>
+<ul>
+<li><a href="#change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</a></li>
+</ul></li>
+<li><a href="#variable-initialization">Variable initialization</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="video-resource">Video Resource</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vdaps6Z0kJY">Fortran: Array Language</a></li>
+</ul>
+<h2 id="fortran-package-manager">Fortran Package Manager</h2>
+<h3 id="change-module-name-after-fpm-initialized-the-project">Change module name after fpm initialized the project</h3>
+<p>After changing all the corresponding code, like <code>module</code> name and <code>use</code> statement in the directory <code>src&#47;</code>, you need to go to <code>build&#47;</code> and update the <code>cache.toml</code> file to the new module name.</p>
+<h2 id="variable-initialization">Variable initialization</h2>
+<p>I refer to this <a href="https://fortran-lang.discourse.group/t/questions-on-variable-scope-in-parallel-computing/9824">discussion</a> in fortran-lang wiki.</p>
+<p>One will face race condition with <code>OpenMP</code> if you initialize variable like</p>
+<pre><code class="language-fortran">real(wp) :: a = 0.0_wp
+</code></pre>
+<p>This way, the variable <code>a</code> will be <code>save</code> variable, and the <code>a</code> variable in each thread will not be independent.</p>
+<p>For example, if you have a subroutine like this:</p>
+<pre><code class="language-fortran">SUBROUTINE test()
+  INTEGER :: x = 5
+  x = x + 1
+  WRITE (*, *) x
+END SUBROUTINE test
+</code></pre>
+<p>and then in you program you do</p>
+<pre><code class="language-fortran">CALL test()
+CALL test()
+CALL test()
+CALL test()
+CALL test()
+</code></pre>
+<p>it will print</p>
+<pre><code>6
+7
+8
+9
+10
+</code></pre>
+<p>Instead, we should initialize variables as</p>
+<pre><code class="language-fortran">real(wp) :: a
+a = 0.0_wp
+</code></pre>
+<p>so that the variable will be automatic variables.</p>
+<p><i> Article tags:
+</i></p>
+</main><p><i>posted on: 2022-09-24, last edited on: 2025-09-01, written by: huijunchen9260</i></p>
+<footer>
+    <hr/>
+    <a href=".">Homepage</a>  ·
+    <a href="research.html">Research</a>  ·
+    <a href="teaching.html">Teaching</a>  ·
+    <a href="blog.html">Blog</a>  ·
+    <a href="./rss.xml">RSS</a>  ·
+    <a href="./atom.xml">atom</a>
+    <br>
+    <p>
+        Hui-Jun Chen ·
+        <a href="https://github.com/huijunchen9260">GitHub</a> ·
+        Last Modified: 2025-09-01
+    </p>
+    <p><small>Powered by <a href="https://pedantic.software/git/blogit">blogit</a></small></p>
+</footer>
+</body></html>
