@@ -11,7 +11,6 @@
 \usepackage{fontspec}
 \usepackage{luatexja}
 \usepackage[mathscr]{euscript}
-
 % ---------------- %
 % color definition %
 % ---------------- %
@@ -22,6 +21,14 @@
 \definecolor{blue}{HTML}{004C99}
 \definecolor{lightgray}{HTML}{E7E7E7}
 \definecolor{gray}{RGB}{90, 90, 90}
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks   = true,
+     linkcolor    = blue,
+     citecolor    = blue
+}
+
 
 \newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
@@ -140,10 +147,7 @@
             \end{itemize}
         \end{column}
         \begin{column}{0.4\textwidth}
-            \begin{figure}
                 \includegraphics[width=\textwidth]{./figures/Williamson.jpg}
-                \caption{Recommended but not required textbook}
-            \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
