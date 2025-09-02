@@ -1,115 +1,116 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{ulem}
-\usepackage{hyperref}
-% \hypersetup{colorlinks=true,allcolors=blue}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
-\usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 1},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+\title[Lecture 1]{Lecture 1: Introduction \\ Course and Macroeconomics}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 1]{Lecture 1: Introduction \\ Course and Macroeconomics}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
-
-
-    \end{frame}
-}
-
-\setbeamertemplate{headline}{}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\leavevmode
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-
-\setbeamertemplate{frametitle}{%
-    \nointerlineskip%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=2.0ex,dp=0.6ex]{frametitle}
-        \hspace*{0.6em}\insertframetitle%
-    \end{beamercolorbox}%
-}
-%------------------------------------------
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
 \section{Course Plan}
 \label{sec:Course_Plan}
@@ -118,91 +119,24 @@
 \label{slide:Your_Instructor}
     \begin{itemize}
         \item My name is \alert{Hui-Jun Chen}, you can call me HJ for convenience.
-        \item I am interested in \alert{housing}, \alert{used capital market}, and their macroeconomics implications.
-        \item In my leisure time, I also like to investigate the \alert{Linux} system.
+        \item I work on \alert{Macro-Finance}, investigating issues like \alert{corporate tax reform}, \alert{housing}, \alert{used capital market}, and their macroeconomics implications.
         \item Contact Info:
         \begin{itemize}
-            \item Email: \href{chen.9260@buckeyemail.osu.edu}{chen.9260@buckeyemail.osu.edu}.
+            \item Email: \href{huijunchen@mx.nthu.edu.tw}{huijunchen@mx.nthu.edu.tw}.
             \item Website: \href{https://huijunchen9260.github.io/}{https://huijunchen9260.github.io}
+            \item Course website: \href{https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html}{https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html}
         \end{itemize}
     \end{itemize}
 \end{frame}
-
-\begin{frame}{}
-\label{slide:Syllabus}
-
-\begin{columns}
-\column{1\linewidth}
-\centering
-{\Large \alert{\href{https://huijunchen9260.github.io/pdf/IntermediateMacroAutumn2022/syllabus/syllabus.html}{Syllabus}}}
-\end{columns}
-
-\end{frame}
-% <++>
-
-
-% \begin{frame}{Basics}
-% \label{slide:Basics}
-%     \begin{itemize}
-%         \item Class Meetings: Tuesday and Thursday, 11:40 AM to 1:15 PM
-%         \item Zoom Info:
-%         \begin{itemize}
-%             \item Meeting ID: 951 7226 1996
-%             \item Password: 946301
-%             \item \href{https://tinyurl.com/2s4hr365}{Direct Link}:
-%                     \href{https://tinyurl.com/2s4hr365}{https://tinyurl.com/2s4hr365}
-%                     (Shorten by tinyurl)
-%         \end{itemize}
-%         \item Documents and lecture recordings will be posted on \href{https://tinyurl.com/yfpt8nsn}{Course Website}:
-%         \begin{itemize}
-%             \item Direct Link: \href{https://tinyurl.com/yfpt8nsn}{https://tinyurl.com/yfpt8nsn}
-%         \end{itemize}
-%         \item Announcement, quiz and exams will be made via \href{https://osu.instructure.com/courses/121985}{Carmen}
-%         \begin{itemize}
-%             \item Direct Link: \href{https://osu.instructure.com/courses/121985}{https://osu.instructure.com/courses/121985}
-%         \end{itemize}
-%     \end{itemize}
-% \end{frame}
-
-% \begin{frame}{Basics (Cont.)}
-% \label{slide:Basics__Cont__}
-%     \begin{itemize}
-%         \item To get email reply, you \textbf{must} satisfy two conditions below:
-%         \begin{enumerate}
-%             \item \alert{DO \textbf{NOT} SEND TO CARMEN EMAIL}
-%             \item \alert{Use \texttt{[E4002.01]} at the beginning of your subject title}
-%             \begin{itemize}
-%                 \item example title: \texttt{[E4002.01] Question regarding Extra credit}
-%             \end{itemize}
-%         \end{enumerate}
-%         \item I will reply your email within \textit{2 business day}.
-%         \item Office hour: One hour before the lecture
-%         \begin{itemize}
-%             \item Tuesday and Thursday, 10:40AM - 11:40AM, on \href{https://osu.zoom.us/j/95172261996?pwd=bHVuRlU5dHlmSUx5STcycDBkOVdpZz09}{Zoom Link}
-%             \item Please tell me if you plan on coming!
-%         \end{itemize}
-%         \item Piazza: anonymously asking questions
-%         \begin{itemize}
-%             \item Direct link: \href{https://piazza.com/osu/summer2022/econ400201}{https://piazza.com/osu/summer2022/econ400201}
-%             \item I will check piazza during office hour
-%         \end{itemize}
-%     \end{itemize}
-% \end{frame}
 
 \begin{frame}{Expectation}
 \label{slide:Expectation}
     \begin{columns}
         \begin{column}{0.6\textwidth}
             \begin{itemize}
-                % \item \textbf{Attendance}: recommended but not required
                 \item \textbf{Participation}: can ask question anytime during the lecture
-                % \begin{itemize}
-                %     \item Just interrupt me by asking. Can check zoom chat but might not very often.
-                % \end{itemize}
-                \item \textbf{Prerequisites}: \alert{Principle of Economics}
-                        (ECON 2001 \& 2002),
-                        Basic Algebra
-                % \item \textbf{Calculus}: better to remember in advance, but will learn via video series \alert{\href{https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr}{The Essence of Calculus}}
+                \item \textbf{Prerequisites}: \alert{Principle of Economics}, Basic Algebra, Some knowledge of Calculus
+                \item Other rules: please refer to the syllabus
             \end{itemize}
         \end{column}
         \begin{column}{0.4\textwidth}
@@ -214,30 +148,6 @@
     \end{columns}
 \end{frame}
 
-% \begin{frame}{Quiz, Exam and Homework}
-% \label{slide:Exam__Quiz_and_Homework}
-%     \begin{itemize}
-%         \item \textbf{Quiz}: Weekly by watching \alert{\href{https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr}{The Essence of Calculus}} ($ 20\% $)
-%         \begin{itemize}
-%             \item \alert{unlimited} time and trials w/ a week, meant to encourage!
-%             \item Will drop 1 lowest quiz between Ch. 1-9.
-%         \end{itemize}
-%         \item \textbf{Exam}: Midterm and Cumulative Final, $ 30\% $ each
-%             \begin{itemize}
-%                 \item Midterm: \alert{June 23th, 2022}
-%                 \item Final: \alert{August 2nd, 2022}
-%             \end{itemize}
-%         \item \textbf{Homework}: on \alert{\href{https://osu.instructure.com/courses/121985}{Carmen}} ($20\%$)
-%         \begin{itemize}
-%             \item A good representation for exam
-%             \item step-by-step guidance on calculation
-%         \end{itemize}
-%         \item Schedule and Deadline: see syllabus
-%     \end{itemize}
-% \end{frame}
-
-
-
 \begin{frame}{Course Plan}
 \label{slide:Course_Plan}
 \begin{itemize}
@@ -248,7 +158,7 @@
     \item \textbf{Module 2}: One-period (\alert{static}) model (Week 2-6)
     \begin{itemize}
         \item micro foundation: consumers and firms
-        \item macro implication: equilibrium, efficiency, resource allocation w/ data
+        \item macro implication: equilibrium, efficiency, resource allocation with data
     \end{itemize}
     \item \textbf{Module 3}: Two-period (\alert{dynamic}) model (Week 8-12)
     \begin{itemize}
@@ -258,30 +168,17 @@
 \end{itemize}
 \end{frame}
 
-% \begin{frame}{List of Possible Module 4 Content}
-% \label{slide:List_of_Possible_Module_4_Content}
-%
-%     \begin{itemize}
-%         \item Economics Growth: Exogenous Growth Model (Solow Model)
-%         \item Labor / Employer Bargain: 1-sided / 2-sided label search model
-%         \item Finance: Asset Pricing model
-%         \item Coding and algorithm to solve RBC model
-%     \end{itemize}
-%
-% \end{frame}
-%
-
 \section{Methodology of Macro}
 \label{sec:Methodology_of_Macro}
 
 \begin{frame}{What is Macro?}
 \label{slide:What_is_Macro_}
     \begin{itemize}
-        \item ``\alert{macro is a method}''
+        \item ``\alert{Macro is a method}''
         \item Models (theory) $ + $ Data (empiric) $ = $ explanation to macro events
         \begin{itemize}
-            \item w/o models: only \alert{correlation}
-            \item w/o data: only \alert{imagination}
+            \item without models: only \alert{correlation}
+            \item without data: only \alert{imagination}
             \item \alert{Friedman's critique}: models are judged by \alert{prediction power}
         \end{itemize}
         \item Macro events in this class: \alert{long-run growth} and \alert{business cycle}
@@ -317,13 +214,13 @@
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{Figure 1.1: Per Capita Real GDP (in 2009 dollars) for the United States, 1900–2014 \\ \alert{$Y$}}
+                \caption{Figure 1.1: Per Capita Real GDP (in 2009 dollars) for the United States}
                 \includegraphics[width=\textwidth]{./figures/Figure1_1.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{Figure 1.3: Natural log of Per Capita Real GDP and trend, 1900–2014 \\ \alert{$y = \ln(Y), trend = HPFilter(y)$}}
+                \caption{Figure 1.3: Natural log of Per Capita Real GDP and trend, 1900–2014 (Trend: HP Filter)}
                 \includegraphics[width=\textwidth]{./figures/Figure1_3.jpg}
             \end{figure}
         \end{column}
@@ -335,13 +232,13 @@
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{Figure 1.4 Percentage Deviation from Trend in Per Capita Real GDP \\ \alert{actual - trend}}
+                \caption{Figure 1.4 Percentage Deviation from Trend in Per Capita Real GDP, \alert{actual - trend}}
                 \includegraphics[width=\textwidth]{./figures/Figure1_4.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{Figure 1.13 Percentage Deviation From Trend in Real GDP \\ \alert{same transform as 1.1, 1.3, 1.4, not per capita} }
+                \caption{Figure 1.13 Percentage Deviation From Trend in Real GDP, \alert{same transform as 1.1, 1.3, 1.4, not per capita} }
                 \includegraphics[width=\textwidth]{./figures/Figure1_13.jpg}
             \end{figure}
         \end{column}
@@ -353,27 +250,37 @@
     \begin{itemize}
         \item Economics is a \alert{scientific pursuit} involving the formulation and \alert{refinement of theories} that can help us better understand \alert{how economies work} and \alert{how they can be improved}
         \item \textbf{Data}: \alert{how economies work}, e.g. GDP example
-        \item \textbf{Theory}: cannot do experiment, only way for \alert{scientific pursuit}
+        \item \textbf{Theory}: cannot do experiment at economy scale $ \Rightarrow  $ only way for \alert{scientific pursuit}
         \item \textbf{Policy}: understand \alert{how economies can be improved} by \alert{policies}
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Anecdotic Illustration of Economics Model}
+\label{slide:Anecdotic_Illustration_of_Economics_Model}
+
+\begin{center}
+Build your own world (similar to real world) so that you know every detail!
+\includegraphics[width=0.8\textwidth]{./figures/6375692be499513c6f3be825_Minecraft-logo.png}
+\end{center}
+
 \end{frame}
 
 \begin{frame}{Structure of Macro Model: $ 4 $ elements}
 \label{slide:Structure_of_Macro_Model____4___elements}
 \begin{enumerate}
-    \item \textbf{agent}: who is involved?
+    \item \textbf{Agent}: who is involved?
     \begin{itemize}
         \item e.g. consumers, firms, governments, etc.
     \end{itemize}
-    \item \textbf{preferences}: how and what is consumed/valued/invested?
+    \item \textbf{Preferences}: how and what is consumed/valued/invested?
     \begin{itemize}
         \item e.g. consumers' utility function on goods
     \end{itemize}
-    \item \textbf{resources}: availability and distribution
+    \item \textbf{Resources}: availability and distribution
     \begin{itemize}
         \item e.g. Wealth, time, talents, natural resources
     \end{itemize}
-    \item \textbf{technology}: objective limitation at given period of time
+    \item \textbf{Technology}: objective limitation at given period of time
     \begin{itemize}
         \item firms' production, market structure
     \end{itemize}
@@ -398,11 +305,27 @@
     \end{enumerate}
 \end{frame}
 
+\begin{frame}{What makes a good model?}
+\label{slide:What_makes_a_good_model_}
+    \begin{center}
+        \alert{Friedman's critique}: models are judged by \alert{prediction power}
+    \end{center}
+    \begin{itemize}
+        \item Clarity: is the logic and causality understandable?
+        \item Prediction power: match data?
+        \item Communication: what we (dis-)agree about?
+    \end{itemize}
+
+    \vspace{0.7em}
+
+    ALL models are fake, only some are useful, i.e., elucidates the \alert{underlying mechanism} that people implicitly follows
+
+\end{frame}
 
 
 \begin{frame}{Just Micro?}
 \label{slide:Just_Micro_}
-    \alert{Yes!} Macro models need micro foundation, because
+    \alert{Yes!} Macro models need micro-foundation, because
     \begin{itemize}
         \item aggregate behavior is the sum of individual decisions
         \item \alert{Lucas' critique}: structures of economies \alert{change} w/ policies b/c \alert{individual decision} changed
@@ -415,5 +338,12 @@
     \end{itemize}
 \end{frame}
 
-\end{document}
+\appendix
 
+% \begin{frame}[allowframebreaks]{References}
+% \footnotesize
+% \bibliographystyle{$BIB_STYLE}
+% \bibliography{$BIBFILE}
+% \end{frame}
+
+\end{document}
