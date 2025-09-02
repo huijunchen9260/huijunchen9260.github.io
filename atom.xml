@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-09-02T10:21:12Z</updated>
+<updated>2025-09-02T10:36:35Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html</id>
 <published>2025-08-25T03:18:29Z</published>
-<updated>2025-09-01T19:19:15Z</updated>
+<updated>2025-09-02T10:21:12Z</updated>
 <author><name>huijunchen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-i-autumn-2025">Macroeconomics (I), Autumn 2025</h1>
 <p>Course number: 11410ECON309102</p>
@@ -106,6 +106,8 @@
 <!--  - [Problem Set 4](pdf/NTHUMacroeconomics/ProblemSet4/Final/ProblemSet4.pdf) -->
 <h2 id="some-videos">Some Videos</h2>
 <ul>
+<li><a href="https://www.youtube.com/watch?v=6FpRjVPMOoM">The Point of No Return&#8217; Ramin Karimloo &#38; Sierra Boggess | The Phantom of The Opera</a></li>
+<li><a href="https://www.youtube.com/watch?v=JAdj0pGFO7w">Saint-Saëns: Melodie sans Paroles</a></li>
 <li><a href="https://www.youtube.com/watch?v=YdOXS_9_P4U">Terence Tao on how we measure the cosmos | Part 1</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></summary>
