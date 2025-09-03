@@ -1,104 +1,118 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{ulem}
-\usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
-\usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 2},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+\title[Lecture 1]{Lecture 2: Measurement I \\ Economic Aggregates}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 2]{Lecture 2 Measurement I \\ Economic Aggregates}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
 
-    \end{frame}
-}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
 
 \section{Three Approach}
 \label{sec:Three_Approach}
@@ -116,10 +130,50 @@ If no measurement error, all should give the same answer!
 
 \begin{frame}{$3$ Approach to Measure GDP: Example}
 \label{slide:_3__Approach_to_Measure_GDP__Example}
-    \begin{figure}
-        \includegraphics[width=\textwidth]{./figures/ThreeApproachTable1.png}
-    \end{figure}
-    \alert{Question}: how to calculate GDP?
+    % \begin{figure}
+    %     \includegraphics[width=\textwidth]{./figures/ThreeApproachTable1.png}
+    % \end{figure}
+\renewcommand{\arraystretch}{1.3} % row spacing
+\setlength{\tabcolsep}{10pt}      % column spacing
+
+\begin{center}
+\scalebox{0.8}{
+\begin{tabular}{|l|c|c|c|}
+\hline
+Variable & Coconut Producer & Restaurant & Government \\
+\hline
+\textcolor{orange}{Revenue*} & \textcolor{orange}{20} & \textcolor{orange}{30} & \textcolor{orange}{5.5} \\
+\hline
+sales for consumption & 8 & 30 & -- \\
+sales as intermediate & 12 & 0 & -- \\
+\hline
+\hline
+\textcolor{orange}{Costs} & \textcolor{orange}{7} & \textcolor{orange}{19} & \textcolor{orange}{5.5} \\
+\hline
+wages & 5 & 4 & 5.5 \\
+interest on loan & 0.5 & -- & -- \\
+cost of intermediates & -- & 12 & -- \\
+taxes* & 1.5 & 3 & -- \\
+\hline
+\hline
+\textcolor{orange}{After-Tax Profits**} & \textcolor{orange}{13} & \textcolor{orange}{11} & -- \\
+\hline
+\end{tabular}
+
+}
+\begin{minipage}{.9\textwidth}
+\footnotesize
+\begin{itemize}
+    \item government gets revenue from taxes on producers and consumers, spends wages to provide defense services
+    \item profits are revenues minus costs
+\end{itemize}
+\end{minipage}
+\end{center}
+
+\vspace{0.5em}
+
+\normalsize
+\alert{Question}: how to calculate GDP?
 \end{frame}
 
 \begin{frame}{The Product Approach}
@@ -155,7 +209,7 @@ If no measurement error, all should give the same answer!
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Income Approach}
+\begin{frame}{The Income Approach}
 \label{slide:Income_Approach}
     \textbf{Question}: \alert{how much does agent earn?}
     \begin{itemize}
@@ -179,18 +233,20 @@ If no measurement error, all should give the same answer!
 
 \begin{frame}{Prices in GDP measurement}
 \label{slide:Prices_in_GDP_measurement}
-    The \alert{revenue} row is calculated by $ 10M $ coconuts $ \times $ $ \$2 $ each
+\begin{itemize}
+    \item The \alert{revenue} row is calculated by $ 10M $ coconuts $ \times $ $ \$2 $ each
     \begin{itemize}
         \item What if coconut price increases to $ \$3 $ next year?
     \end{itemize}
-    \textbf{Solution}: common \alert{price index} across different time
+    \item \textbf{Solution}: common \alert{price index} across different time
 
-    Two ways to build common price index:
-
+    \item Two ways to build common price index:
     \begin{enumerate}
         \item GDP deflator: common \alert{GDP} standard
         \item Consumer Price Index (CPI): common \alert{consumption basket} ($Q$)
     \end{enumerate}
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Prices in GDP measurement (Cont.)}
@@ -224,30 +280,43 @@ If no measurement error, all should give the same answer!
         \item \textbf{Nominal GDP}: value of goods \& services at current price
         \item \textbf{Real GDP}: value of goods \& services at base year price
     \end{itemize}
-    \begin{figure}
-        \includegraphics[width=\textwidth]{./figures/GDPMeasurement.png}
-    \end{figure}
-
-    Choice of base year affects the GDP measure!
-
-    alternative: chain-weighting
+\begin{center}
+\scalebox{0.9}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\bfseries Year} &
+\multicolumn{2}{c|}{\bfseries Apples} &
+\multicolumn{2}{c|}{\bfseries Oranges} &
+\multicolumn{3}{c|}{\bfseries GDP Measure} \\
+\hline
+ & Quantity & Price & Quantity & Price & Nominal & Real (base year = 1) & Real (base year = 2) \\
+\hline
+1 & 50 & \$1.00 & 100 & \$0.80 & \$130 & \$130 & \$222.5 \\
+2 & 80 & \$1.25 & 120 & \$1.60 & \$292 & \$176 & \$292 \\
+\hline
+\end{tabular}}
+\end{center}
+\begin{itemize}
+    \item Choice of base year affects the GDP measure!
+    \item Alternative: chain-weighting
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{Data: Nominal v.s. Real GDP}
 \label{slide:Data__Nominal_v_s__Real_GDP}
     \begin{columns}
-        \begin{column}{0.3\textwidth}
+        \begin{column}{0.4\textwidth}
             \begin{itemize}
                 \item inflation growth $ + $ economics growth $ = $ nominal grows faster than real
                 \item \textbf{Question}: \alert{What year is the base year} on this graph?
                 \item Ans: 2009, when Nominal $ = $ Real
             \end{itemize}
         \end{column}
-        \begin{column}{0.7\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{figure}
                 \caption{Figure 2.1 Nominal GDP and Chain-Weighted Real GDP}
-                \includegraphics[width=\textwidth]{./figures/Figure2_1.png}
+                \includegraphics[width=.9\textwidth]{./figures/Figure2_1.png}
             \end{figure}
         \end{column}
     \end{columns}
@@ -267,30 +336,16 @@ If no measurement error, all should give the same answer!
     \end{itemize}
 \end{frame}
 
+% \appendix
 
-\appendix
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
-\begin{frame}\frametitle{}
-\begin{columns}
-\label{Appendix}
-\column{1\linewidth}
-\centering
-{\Large \alert{Appendix}}
-\end{columns}
-\end{frame}
-%------------------------------------------
+% \begin{frame}[allowframebreaks]{References}
+% \footnotesize
+% \bibliographystyle{$BIB_STYLE}
+% \bibliography{$BIBFILE}
+% \end{frame}
 
-\begin{frame}{Chain-weighting }
-\label{slide:Chain_weighting_}
-    Chain
-\end{frame}
-<++>
+\end{document}
+
 
 
 \end{document}
