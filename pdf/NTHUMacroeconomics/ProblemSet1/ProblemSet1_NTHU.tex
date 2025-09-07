@@ -1,0 +1,559 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\\ \textcolor{blue}{#1}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+\title{Problem Set 1}
+\author{Hui-Jun Chen}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\showAns
+% \listofanswer
+
+\begin{Exercise}
+
+\section{Inflation}
+\label{sec:Inflation}
+
+Credit: Sungmin Park
+
+Consider the following list of all final goods produced in an economy during years 2018-2020.
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline & \multicolumn{2}{|c|}{2018} & \multicolumn{2}{|c|}{2019} & \multicolumn{2}{|c|}{2020} \\
+\hline & Quantity & Price & Quantity & Price & Quantity & Price \\
+\hline Apples & 100 & $\$ 1.00$ & 120 & $\$ 2.00$ & 150 & $\$ 2.50$ \\
+\hline Bananas & 100 & $\$ 0.50$ & 150 & $\$ 0.75$ & 200 & $\$ 1.00$ \\
+\hline Cupcakes & 50 & $\$ 2.00$ & 100 & $\$ 2.50$ & 150 & $\$ 3.00$ \\
+\hline
+\end{tabular}
+
+\end{center}
+
+\subsection{GDP deflator}
+\label{sub:GDP_deflator}
+
+Compute this economy's nominal gross domestic product (GDP) and the real GDP in each year, using 2018 as the base year.
+
+Notice that here the Real GDP is calculated using the GDP deflator method.
+
+
+\Question
+Nominal GDP in 2018 is \answer{250}
+% \begin{tasks}(4)
+%     \task 235
+%     \task 240
+%     \task 245
+%     \task 250
+% \end{tasks}
+
+\Question
+Nominal GDP in 2019 is \answer{602.5}
+% \begin{tasks}(4)
+%     \task 582.5
+%     \task 592.5
+%     \task 602.5
+%     \task 612.5
+% \end{tasks}
+
+\Question
+Nominal GDP in 2020 is \answer{1025}
+% \begin{tasks}(4)
+%     \task 1025
+%     \task 1030
+%     \task 1035
+%     \task 1040
+% \end{tasks}
+
+\Question
+Real GDP in 2018 is \answer{250}
+% \begin{tasks}(4)
+%     \task 235
+%     \task 240
+%     \task 245
+%     \task 250
+% \end{tasks}
+
+\Question
+Real GDP in 2019 is \answer{395}
+% \begin{tasks}(4)
+%     \task 390
+%     \task 395
+%     \task 400
+%     \task 405
+% \end{tasks}
+
+\Question
+Real GDP in 2020 is \answer{550}
+% \begin{tasks}(4)
+%     \task 540
+%     \task 545
+%     \task 550
+%     \task 555
+% \end{tasks}
+
+\Question
+GDP deflator in 2019 is \answer{152.53}
+% \begin{tasks}(4)
+%     \task 152.53
+%     \task 155.63
+%     \task 152.63
+%     \task 163.52
+% \end{tasks}
+
+\Question
+GDP deflator in 2020 is \answer{186.36}
+% \begin{tasks}(4)
+%     \task 166.36
+%     \task 186.42
+%     \task 186.36
+%     \task 166.42
+% \end{tasks}
+
+\subsection{CPI}
+\label{sub:CPI}
+
+Continuing to using 2018 as the base year, What is the Consumer Price Index (CPI) in 2019 and 2020?
+
+\Question
+CPI in 2019 is \answer{160}
+% \begin{tasks}(4)
+%     \task 155
+%     \task 160
+%     \task 165
+%     \task 170
+% \end{tasks}
+
+\Question
+CPI in 2020 is \answer{200}
+% \begin{tasks}(4)
+%     \task 100
+%     \task 200
+%     \task 300
+%     \task 400
+% \end{tasks}
+
+After calculating the CPI, the inflation formula is:
+%
+\begin{equation*}
+    \text{Inflation} = \text{percentage change in CPI} = \frac{CPI_{t} - CPI_{t-1}}{CPI_{t-1}}\times 100
+.\end{equation*}
+%
+What are the inflation rates in 2019 and 2020 based on the CPI?
+
+\Question
+Inflation rate in 2019 is \answer{60\%}
+% \begin{tasks}(4)
+%     \task 30\%
+%     \task 40\%
+%     \task 50\%
+%     \task 60\%
+% \end{tasks}
+
+\Question
+Inflation rate in 2020 is \answer{25\%}
+\begin{tasks}(4)
+    \task 15\%
+    \task 20\%
+    \task 25\%
+    \task 30\%
+\end{tasks}
+
+\subsection{COVID shock}
+\label{sub:COVID_shock}
+
+\begin{center}
+
+\begin{tabular}{|l|c|c|}
+\hline  & \multicolumn{2}{|c|}{2021} \\
+\cline { 2 - 3 } & Quantity & Price \\
+\hline Apples & 150 & $\$ 3.00$ \\
+\hline Bananas & 200 & $\$ 5.60$ \\
+\hline Cupcakes & 150 & $\$ 7.00$ \\
+\hline
+\end{tabular}
+
+\end{center}
+
+What is the CPI and inflation rate in 2021 using 2018 as base year?
+
+\Question
+CPI in 2021 is \answer{484}
+% \begin{tasks}(4)
+%     \task 484
+%     \task 565
+%     \task 584
+%     \task 465
+% \end{tasks}
+
+\Question
+Inflation rate in 2021 is \answer{142\%}
+% \begin{tasks}(4)
+%     \task 120\%
+%     \task 142\%
+%     \task 20\%
+%     \task 42\%
+% \end{tasks}
+
+\Question
+Comparing Inflation in 2021 and 2020. Is 2021 experiencing an inflation, stagflation, or deflation? \answer{inflation}
+% \begin{tasks}(3)
+%     \task deflation
+%     \task stagflation
+%     \task inflation
+% \end{tasks}
+
+\section{Employment}
+\label{sec:Employment}
+
+Credit: Sungmin Park
+
+\Question
+Let $ u $ denote the unemployment rate of an economy. Let $ e  $ denote the fraction of adult population that is employed. What is the labor-force participation rate written in terms of $ u $ and $ e $? \answer{$ \displaystyle \frac{e}{1 - u} $}
+
+Please write calculation process if you want to earn partial credits.
+% \begin{tasks}(4)
+%     \task $ \displaystyle \frac{1 - u}{e} $
+%     \task $ \displaystyle \frac{1 - e}{u} $
+%     \task $ \displaystyle \frac{e}{1 - u} $
+%     \task $ \displaystyle \frac{u}{1 - e} $
+% \end{tasks}
+
+\pagebreak
+
+\section{Computer Exercise}
+\label{sec:Computer_Exercise}
+
+Credit: Mike Carter
+
+One of the most important measurements of economic output is Gross Domestic Product. This question asks you to find information about GDP for a few selected time periods to get you some practice using official data. The data we will use is accessible at \url{http://FRED.StLouisFed.org} .
+
+\begin{itemize}
+    \item To get to Real GDP, click ``\textbf{CATEGORY}'' $ \Rightarrow  $ ``\textbf{NATIONAL ACCOUNTS}'' $ \Rightarrow $ ``\textbf{NATIONAL INCOME \& PRODUCT ACCOUNTS}'' $ \Rightarrow $ ``\textbf{GDP/GNP}'', then find the data series labeled ``\textbf{Billions of Chained 2012 Dollars, Not Seasonally Adjusted}''.
+    \begin{itemize}
+        \item I think it's easier to view this data in table form. To do that, click the link halfway down the page to ``\textbf{Table 1.1.6 Real Gross Domestic Product, Chained Dollars: Annual}''.
+        \item Be sure you’ve selected ``\textbf{chained dollars}'' to get real GDP
+        \item Also be sure you’ve selected ``\textbf{annual}'' so you can see GDP for the whole year
+    \end{itemize}
+    \item For nominal GDP, click ``\textbf{CATEGORY}'' $ \Rightarrow $ ``\textbf{NATIONAL ACCOUNTS}'' $ \Rightarrow $ ``\textbf{NATIONAL INCOME \& PRODUCT ACCOUNTS}'' $ \Rightarrow $ ``\textbf{GDP/GNP}'', then find the data series labeled ``\textbf{Billions of Dollars, Annual, Not Seasonally Adjusted}''.
+    \begin{itemize}
+        \item Again, I think this data is easier to use in table form. To find that, click the link halfway down the page to ``\textbf{Table 1.1.5 Gross Domestic Product: Annual}''
+        \item For nominal GDP, make sure you don’t see ``\textbf{real}'' or ``\textbf{chained}'' labels
+        \item Also be sure to select ``\textbf{annual}'' to find GDP for the whole year
+    \end{itemize}
+    \item To find population data, click ``\textbf{CATEGORY}'' $ \Rightarrow $ ``\textbf{POPULATION, EMPLOYMENT, \& LABOR MARKETS}'' $ \Rightarrow $ ``\textbf{POPULATION}''. The annual population should be toward the top of the list on that page.
+    \begin{itemize}
+        \item Unfortunately this series doesn’t have a nice table linked at the bottom of the page. But you can click the ``\textbf{DOWNLOAD}'' button near the top of the page to see values for every year.
+    \end{itemize}
+\end{itemize}
+
+fill in the table below
+
+\begin{center}
+
+\newlength\q
+\setlength\q{\dimexpr .2\textwidth -2\tabcolsep}
+\newlength\p
+\setlength\p{\dimexpr .4\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\p}|p{\q}|p{\q}|p{\q}|}
+\hline & 2019 & 1989 & 1956 \\
+\hline Nominal GDP & 21372582 million & Q17 & Q18 \\
+\hline Real GDP & 19032672 million & Q19 & Q20 \\
+\hline Population & Q21 & Q22 & Q23 \\
+\hline Nominal GDP per capita & Q24 & Q25 & Q26 \\
+\hline Real GDP per capita & Q27 & Q28 & Q29 \\
+\hline Implied Deflator & Q30 & Q31 & Q32 \\
+\hline
+\end{tabular}
+
+\end{center}
+
+*(FRED has updated their numbers for Nominal and Real GDP for 2019. I am following the same numbers as before)
+
+*$ \displaystyle \text{Implied Deflator} = \frac{\text{Nominal GDP per capita}}{\text{Real GDP per capita}} \times  100$
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 5461580 million
+%     \task 5641580 million
+%     \task 5645180 million
+%     \task 5156480 million
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 443953 million
+%     \task 445393 million
+%     \task 449353 million
+%     \task 449335 million
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 9197997 million
+%     \task 9179997 million
+%     \task 9199779 million
+%     \task 9791997 million
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 2939134 million
+%     \task 2439193 million
+%     \task 2933941 million
+%     \task 2934391 million
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 330513000
+%     \task 330351000
+%     \task 331305000
+%     \task 351330000
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 248773000
+%     \task 238747000
+%     \task 248773000
+%     \task 247387000
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 122168000
+%     \task 168221000
+%     \task 168212000
+%     \task 122681000
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 66446.88
+%     \task 68846.64
+%     \task 64664.88
+%     \task 64466.88
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 20428.67
+%     \task 22804.67
+%     \task 22467.80
+%     \task 20467.28
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 2671.21
+%     \task 2121.67
+%     \task 2621.71
+%     \task 2761.21
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 57558.24
+%     \task 57524.58
+%     \task 58524.75
+%     \task 57585.24
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 37180.60
+%     \task 37160.80
+%     \task 38060.71
+%     \task 37060.18
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 17367.44
+%     \task 17467.43
+%     \task 17443.67
+%     \task 14367.74
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 121.29
+%     \task 112.29
+%     \task 112.92
+%     \task 121.92
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 64.33
+%     \task 63.33
+%     \task 61.33
+%     \task 62.33
+% \end{tasks}
+
+\Question \answer{}
+% \begin{tasks}(4)
+%     \task 15.13
+%     \task 15.31
+%     \task 13.15
+%     \task 11.53
+% \end{tasks}
+
+\end{Exercise}
+
+\end{document}
