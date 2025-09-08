@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title># Note on Tikz -- Hui-Jun Chen's Webpage</title>
+        <title># Note on Tikz and PGFplots -- Hui-Jun Chen's Webpage</title>
         <meta name="description" content="Hui-Jun Chen's Personal Website">
     </head>
 <body>
 <main>
-<h1 id="note-on-tikz">Note on Tikz</h1>
+<h1 id="note-on-tikz-and-pgfplots">Note on Tikz and PGFplots</h1>
 <!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#tikz-related">Tikz related</a>
 <ul>
 <li><a href="#opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</a></li>
 <li><a href="#create-a-bezier-curve">Create a &#8220;bezier curve&#8221;</a></li>
@@ -21,9 +23,15 @@
 <li><a href="#intersection-between-two-curves">Intersection between two curves</a></li>
 <li><a href="#change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</a></li>
 <li><a href="#calculation-points">Calculation points</a></li>
+</ul></li>
+<li><a href="#pgfplots-related">PGFplots related</a>
+<ul>
+<li><a href="#get-the-dimension-of-the-axis-environment">Get the dimension of the <code>axis</code> environment</a></li>
+</ul></li>
 </ul>
 <!-- vim-markdown-toc -->
-<h2 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h2>
+<h2 id="tikz-related">Tikz related</h2>
+<h3 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h3>
 <ul>
 <li><p>We can separate the definition of the desired point from the label of the point, e.g.:</p>
 <pre><code class="language-tex">    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
@@ -42,12 +50,12 @@ One can also use <code>\coordinate</code> to define points, i.e.,</li>
 <li>Reason: You can directly use those named points to create paths.</li>
 </ul></li>
 </ul>
-<h2 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h2>
+<h3 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h3>
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
 </code></pre>
 <p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
 <p><code>bend right=40</code> means the degree of bending.</p>
-<h2 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h2>
+<h3 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h3>
 <p>Here I use &#8220;bezier curve&#8221; as example.</p>
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
@@ -55,7 +63,7 @@ One can also use <code>\coordinate</code> to define points, i.e.,</li>
 </code></pre>
 <p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
 This <code>node</code> is defined as <code>a</code>.</p>
-<h2 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h2>
+<h3 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h3>
 <p>Let the arbitrary be <code>a</code>.</p>
 <pre><code class="language-tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
 \coordinate (a_x) at (\xcoord, 0);
@@ -64,7 +72,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <p>First, let the <code>path</code> be on the point <code>a</code> so that <code>pgf</code> can remember it.</p>
 <p>Second, <code>\pgfgetlastxy</code> outputs the x-coordinate <code>\xcoord</code> and y-coordinate <code>\ycoord</code> of the last path, which we define as point <code>a</code>.</p>
 <p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
-<h2 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h2>
+<h3 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h3>
 <p>Here I use &#8220;bezier curve&#8221; as example.</p>
 <pre><code class="language-tex">\draw (0, 0) to[bend right=40]
     node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
@@ -75,7 +83,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
 <p>Notice that I didn&#8217;t draw the inner point at point <code>b</code>.</p>
 <p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
-<h2 id="decoration-brace">Decoration: brace</h2>
+<h3 id="decoration-brace">Decoration: brace</h3>
 <p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
 <pre><code class="language-tex">%%% brace on up&#47;right
 \draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
@@ -85,7 +93,7 @@ This <code>node</code> is defined as <code>a</code>.</p>
        (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
 </code></pre>
 <p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
-<h2 id="intersection-between-two-curves">Intersection between two curves</h2>
+<h3 id="intersection-between-two-curves">Intersection between two curves</h3>
 <p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
 <p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
 <pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
@@ -105,14 +113,14 @@ This <code>node</code> is defined as <code>a</code>.</p>
 <li>Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.</li>
 <li>Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</li>
 </ul>
-<h2 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h2>
+<h3 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h3>
 <p>Simply use <code>\tikzstyle</code> is suffice:</p>
 <pre><code class="language-tex">\begin{tikzpicture}
     \tikzstyle{every node}=[font=\scriptsize]
     ...
 \end{tikzpicture}
 </code></pre>
-<h2 id="calculation-points">Calculation points</h2>
+<h3 id="calculation-points">Calculation points</h3>
 <p>Need to add <code>\usetikzlibrary{calc}</code></p>
 <p>The syntax of <code>calc</code> library is</p>
 <pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
@@ -165,6 +173,14 @@ This <code>node</code> is defined as <code>a</code>.</p>
 \end{tikzpicture}
 \end{document}
 </code></pre>
+<h2 id="pgfplots-related">PGFplots related</h2>
+<h3 id="get-the-dimension-of-the-environment">Get the dimension of the <code>axis</code> environment</h3>
+<p>This is useful to draw a vertical line or horizontal line in the <code>axis</code> environment.</p>
+<p>The code is <code>\pgfkeysvalueof{&#47;pgfplots&#47;variable}</code>. For example, <code>\pgfkeysvalueof{&#47;pgfplots&#47;xmin}</code> will give you the <code>xmin</code> variable value defined in <code>axis</code>.</p>
+<p>Examples:</p>
+<pre><code class="language-tex">\draw[color=blue, dashed] (1.0, \pgfkeysvalueof{&#47;pgfplots&#47;ymin}) -- (1.0, \pgfkeysvalueof{&#47;pgfplots&#47;ymax});
+</code></pre>
+<p>Will draw a blue dashed vertical line at \(x = 1.0\).</p>
 <p><i> Article tags:
 </i></p>
 </main><p><i>posted on: 2022-04-27, last edited on: 2025-09-01, written by: huijunchen9260</i></p>
