@@ -5,6 +5,185 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Note on Tikz and PGFplots</title>
+<link>https://huijunchen9260.github.io/TikzNote.html</link>
+<guid>https://huijunchen9260.github.io/TikzNote.html</guid>
+<pubDate>Mon, 08 Sep 2025 11:23:36 +0800</pubDate>
+<description><![CDATA[<h1 id="note-on-tikz-and-pgfplots">Note on Tikz and PGFplots</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#tikz-related">Tikz related</a>
+<ul>
+<li><a href="#opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</a></li>
+<li><a href="#create-a-bezier-curve">Create a &#8220;bezier curve&#8221;</a></li>
+<li><a href="#define-points-on-arbitrary-curve">Define points on arbitrary curve</a></li>
+<li><a href="#get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</a></li>
+<li><a href="#draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</a></li>
+<li><a href="#decoration-brace">Decoration: brace</a></li>
+<li><a href="#intersection-between-two-curves">Intersection between two curves</a></li>
+<li><a href="#change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</a></li>
+<li><a href="#calculation-points">Calculation points</a></li>
+</ul></li>
+<li><a href="#pgfplots-related">PGFplots related</a>
+<ul>
+<li><a href="#get-the-dimension-of-the-axis-environment">Get the dimension of the <code>axis</code> environment</a></li>
+</ul></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="tikz-related">Tikz related</h2>
+<h3 id="opinionated-good-habit-when-using-tikz">Opinionated &#8220;Good&#8221; Habit when using Tikz</h3>
+<ul>
+<li><p>We can separate the definition of the desired point from the label of the point, e.g.:</p>
+<pre><code class="language-tex">    \node[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ ) {};
+    \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
+</code></pre>
+<ul>
+<li>Reason: I can have full control on the decoration of the node on <code>(0, 0)</code> and where I should put the label on.
+One can also use <code>\coordinate</code> to define points, i.e.,</li>
+</ul>
+<pre><code class="language-tex">    \coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
+    \node[below]  at (x00) {$x_{00}(a_1, a_2)$};
+</code></pre>
+<p>It seems that <code>\coordinate</code> cannot have labels, so there&#8217;s no need to include empty <code>{}</code> at the end of the <code>\node</code>.</p></li>
+<li><p>Define points first and give every point a reasonable name.</p>
+<ul>
+<li>Reason: You can directly use those named points to create paths.</li>
+</ul></li>
+</ul>
+<h3 id="create-a-bezier-curve">Create a &#8220;bezier curve"</h3>
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40] (5, 5);
+</code></pre>
+<p>Can <code>bend right</code> or <code>bend left</code>, depends on from <code>(0, 0)</code> to <code>(5, 5)</code> or the other direction.</p>
+<p><code>bend right=40</code> means the degree of bending.</p>
+<h3 id="define-points-on-arbitrary-curve">Define points on arbitrary curve</h3>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
+    node[pos=0.2,draw,fill=red,circle,inner sep=1pt] (a) {}
+    (5, 5);
+</code></pre>
+<p>The <code>pos</code> option in <code>node</code> defines what fraction of this curve should I put a point on it.
+This <code>node</code> is defined as <code>a</code>.</p>
+<h3 id="get-x-and-y-coordinate-of-arbitrary-point">Get x and y coordinate of arbitrary point</h3>
+<p>Let the arbitrary be <code>a</code>.</p>
+<pre><code class="language-tex">\path (a); \pgfgetlastxy{\xcoord}{\ycoord};
+\coordinate (a_x) at (\xcoord, 0);
+\coordinate (a_y) at (0, \ycoord);
+</code></pre>
+<p>First, let the <code>path</code> be on the point <code>a</code> so that <code>pgf</code> can remember it.</p>
+<p>Second, <code>\pgfgetlastxy</code> outputs the x-coordinate <code>\xcoord</code> and y-coordinate <code>\ycoord</code> of the last path, which we define as point <code>a</code>.</p>
+<p>Finally, we can define the <code>a_x</code> and <code>a_y</code> points for the corresponding coordinate points.</p>
+<h3 id="draw-tangent-line-on-curve">Draw &#8220;tangent line&#8221; on curve</h3>
+<p>Here I use &#8220;bezier curve&#8221; as example.</p>
+<pre><code class="language-tex">\draw (0, 0) to[bend right=40]
+    node[pos=0.5,draw,fill=red,circle,inner sep=1pt] (a) {}
+    node[pos=0.51] (b) {}
+    (5, 5);
+\draw[shorten &#62;=-1cm, shorten &#60;=-1cm, thick, red] (a) -- (b);
+</code></pre>
+<p>Instead of do the tangent line in a <a href="https://tex.stackexchange.com/a/25940">delicated way</a>, I found out that just define two close point (<code>a</code> and <code>b</code>) and connect them together.</p>
+<p>Notice that I didn&#8217;t draw the inner point at point <code>b</code>.</p>
+<p>When connecting two points, use negative number in <code>shorten</code> to actually extend the line out.</p>
+<h3 id="decoration-brace">Decoration: brace</h3>
+<p>Need to add <code>\usetikzlibrary{decorations.pathreplacing}</code> in preamble.</p>
+<pre><code class="language-tex">%%% brace on up&#47;right
+\draw [decorate,decoration={brace,amplitude=4pt},xshift=0pt,yshift=3pt]
+       (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
+%%% brace on down&#47;left (mirror)
+\draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=3pt]
+       (a) -- (b) node [black,midway,yshift=.3cm] {\footnotesize $foo$};
+</code></pre>
+<p>Need to modify <code>xshift</code> and <code>yshift</code> to micro-adjust the brace display.</p>
+<h3 id="intersection-between-two-curves">Intersection between two curves</h3>
+<p><a href="https://tex.stackexchange.com/a/531279">Source</a></p>
+<p>Need to add <code>\usetikzlibrary{intersections}</code> in preamble.</p>
+<pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
+\usetikzlibrary{intersections}
+\begin{document}
+\begin{tikzpicture}
+    \draw[name path=a] (0, 0) to[bend right = 40] (2, 0);
+    \draw[name path=b] (0, -.5) to[bend left = 40] (2, -.5);
+    \path[name intersections={of=a and b, by=e}];
+    \node[draw,fill=red,circle,inner sep=1pt] at (e) {};
+\end{tikzpicture}
+\end{document}
+</code></pre>
+<p>Explanation:</p>
+<ul>
+<li>Need to add <code>name path=name</code> as argument to call this path.</li>
+<li>Use <code>\path</code> to define the <code>name intersections</code>. <code>of</code> is to define the intersections between two paths, and <code>by</code> defines the name of the intersection.</li>
+<li>Use <code>\node</code> to draw the point as <code>circle</code>. Can be other type.</li>
+</ul>
+<h3 id="change-the-font-size-of-all-nodelabel">Change the font size of all node&#47;label</h3>
+<p>Simply use <code>\tikzstyle</code> is suffice:</p>
+<pre><code class="language-tex">\begin{tikzpicture}
+    \tikzstyle{every node}=[font=\scriptsize]
+    ...
+\end{tikzpicture}
+</code></pre>
+<h3 id="calculation-points">Calculation points</h3>
+<p>Need to add <code>\usetikzlibrary{calc}</code></p>
+<p>The syntax of <code>calc</code> library is</p>
+<pre><code class="language-tex">\documentclass[tikz, margin = 1mm]{standalone}
+\usetikzlibrary{calc, intersections}
+\begin{document}
+\begin{tikzpicture}
+
+    % The following figure shows how the golden section search separate the 2-D space.
+    \pgfmathsetmacro{\x}{5};
+    \pgfmathsetmacro{\y}{5};
+    \pgfmathsetmacro{\tau}{0.618};
+
+    \draw[-] (0, 0) -- (\x, 0) -- (\x, \y) -- (0, \y) -- (0, 0);
+
+    % define (a, b) points in both dimension
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x00) at ( $ (0, 0)$ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x01) at ( $ (\x, 0) $ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x10) at ( $ (0, \y)$ );
+    \coordinate[draw,fill=red,circle,inner sep=1pt] (x11) at ( $ (\x, \y) $ );
+
+    % use calc library to calculate the coordinate of the (c, d) points in both dimension
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c1) at ( $ (x00)!1-\tau!(x01) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c1mirror) at ( $ (x10)!1-\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d1) at ( $ (x00)!\tau!(x01) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d1mirror) at ( $ (x10)!\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c2) at ( $ (x00)!1-\tau!(x10) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](c2mirror) at ( $ (x01)!1-\tau!(x11) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d2) at ( $ (x00)!\tau!(x10) $ );
+    \coordinate[draw,fill=blue,circle,inner sep=1pt](d2mirror) at ( $ (x01)!\tau!(x11) $ );
+
+    % draw dashed line to connect coordinates
+    \draw[dashed, name path = dashc1] (c1) -- (c1mirror);
+    \draw[dashed, name path = dashd1] (d1) -- (d1mirror);
+    \draw[dashed, name path = dashc2] (c2) -- (c2mirror);
+    \draw[dashed, name path = dashd2] (d2) -- (d2mirror);
+
+    % define the interior (c, d) points using coordinates
+    \path[name intersections={of=dashc1 and dashc2, by=y00}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y00) {};
+
+    \path[name intersections={of=dashc1 and dashd2, by=y10}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y10) {};
+
+    \path[name intersections={of=dashd1 and dashc2, by=y01}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y01) {};
+
+    \path[name intersections={of=dashd1 and dashd2, by=y11}];
+    \node[draw,fill=orange,circle,inner sep=1pt] at (y11) {};
+
+\end{tikzpicture}
+\end{document}
+</code></pre>
+<h2 id="pgfplots-related">PGFplots related</h2>
+<h3 id="get-the-dimension-of-the-environment">Get the dimension of the <code>axis</code> environment</h3>
+<p>This is useful to draw a vertical line or horizontal line in the <code>axis</code> environment.</p>
+<p>The code is <code>\pgfkeysvalueof{&#47;pgfplots&#47;variable}</code>. For example, <code>\pgfkeysvalueof{&#47;pgfplots&#47;xmin}</code> will give you the <code>xmin</code> variable value defined in <code>axis</code>.</p>
+<p>Examples:</p>
+<pre><code class="language-tex">\draw[color=blue, dashed] (1.0, \pgfkeysvalueof{&#47;pgfplots&#47;ymin}) -- (1.0, \pgfkeysvalueof{&#47;pgfplots&#47;ymax});
+</code></pre>
+<p>Will draw a blue dashed vertical line at $x = 1.0$.</p>
+<p>;tags: Miscellaneous</p>]]></description>
+</item>
+<item>
 <title>Macroeconomics (I), Autumn 2025</title>
 <link>https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html</link>
 <guid>https://huijunchen9260.github.io/MacroeconomicsIAutumn2025.html</guid>
@@ -54,7 +233,7 @@
 <li><a href="https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci1-9.pdf">Chain-weighing: The New Approach to Measuring GDP (Current Issues in Economics and Finance)</a></li>
 <li>Answering Question: <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/workingpaper/45140-NSPDI_workingPaper_1.pdf">The Long-Run Effects of Federal Budget Deficitson National Saving and Private Domestic Investment</a></li>
 </ul></li>
-<li><a href="pdf/NTHUMacroeconomics/Lecture_03/Final/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
+<li><a href="pdf/NTHUMacroeconomics/Lecture_03/Lecture_03.pdf">Lecture 3: Business Cycle Measurement</a>
 <ul>
 <li>Answering Question: What&#8217;s the difference between correlation and beta in finance
 <!-- - [Correlation vs Beta: What is the difference and why does it matter?](https://www.mackenzieinvestments.com/content/dam/mackenzie/en/insights/wp-alts-correlation-vs-beta-en.pdf) -->
@@ -62,7 +241,7 @@
 <li>The concept of beta comes from the Capital Asset Pricing Model (CAPM), and this is a good review paper about it: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/0895330042162340">The Capital Asset Pricing Model</a></li>
 </ul></li>
 </ul></li>
-<li><a href="pdf/NTHUMacroeconomics/Lecture_04/Final/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
+<li><a href="pdf/NTHUMacroeconomics/Lecture_04/Lecture_04.pdf">Lecture 4: Representative Consumer, Preference and Constraints</a>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=E1I0hAxGFXw&amp;">What Do You Want? - The Notebook (4&#47;6) Movie CLIP (2004) HD</a></li>
 </ul></li>
@@ -1263,51 +1442,6 @@ The steak was fabulous. I truly believe the porterhouse is a must-have at Peter 
 <li><a href="pdf/PrincipleMacro/ProblemSets/Unit15PS/Final/Unit15PS.pdf">Problem Set 9: Unit 15</a></li>
 <li><a href="pdf/PrincipleMacro/ProblemSets/Unit16PS/Final/Unit16PS.pdf">Problem Set 10: Unit 16</a></li>
 <li><a href="pdf/PrincipleMacro/ProblemSets/Unit17PS/Final/Unit17PS.pdf">Problem Set 11: Unit 17</a></li>
-</ul>
-<p>;tags: Teaching</p>]]></description>
-</item>
-<item>
-<title>Principle of Macroeconomics, Summer 2021</title>
-<link>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</link>
-<guid>https://huijunchen9260.github.io/PrincipleMacroSummer2021.html</guid>
-<pubDate>Mon, 01 Sep 2025 19:19:15 +0800</pubDate>
-<description><![CDATA[<h1 id="principle-of-macroeconomics-summer-2021">Principle of Macroeconomics, Summer 2021</h1>
-<p>ECON 2002.01, The Ohio State University, Summer 2021</p>
-<p><a href="pdf/PrincipleMacroSummer2021/SYLLABUS.pdf">Syllabus</a></p>
-<!--## Lecture Videos-->
-<!---->
-<!--- [Unit 1](https://youtu.be/j2xNxtsa2Uk)-->
-<!--- [Unit 2](https://youtu.be/bmlgp_Pqecw)-->
-<!--- [Unit 3](https://youtu.be/CBSHbUHcvY4)-->
-<!--- [Unit 6 Part 1](https://youtu.be/WnCUIAaRwrQ)-->
-<!--- [Unit 6 Part 2](https://youtu.be/41vHVk0yL-4)-->
-<!--- [Unit 7](https://youtu.be/UgF-HO1If3w)-->
-<!--- [Unit 9](https://youtu.be/tdM3XLQt76A)-->
-<!--- [Unit 10 Part 1](https://youtu.be/DCH9CUuS93o)-->
-<!--- [Unit 10 Part 2](https://youtu.be/L_IcpcX372g)-->
-<!--- [Unit 11](https://youtu.be/VkZXrPe6wG0)-->
-<!--- [Unit 13](https://youtu.be/rbfoUkP_VCQ)-->
-<!--- [Unit 14](https://youtu.be/1eEsTPxa5WQ)-->
-<!--- [Unit 15](https://youtu.be/0HDBVajKozg)-->
-<!--- [Unit 15 Patch](https://youtu.be/3jX5ZP5AGGI)-->
-<!--- [Unit 16](https://youtu.be/auswkrj7OOM)-->
-<!--- [Unit 17](https://youtu.be/tfpdEXwhnyY)-->
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="pdf/PrincipleMacro/math.pdf">Math Supplement</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%201%20-%20The%20capitalist%20revolution%20-%201.0.pdf">Unit 1</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%202%20-%20Technological%20change,%20population,%20and%20growth%20-%201.0.pdf">Unit 2</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%203%20-%20Scarcity,%20work,%20and%20choice%20-%201.0.pdf">Unit 3</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%206%20-%20The%20firm%20-%201.0.pdf">Unit 6</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%207%20-%20The%20firm%20and%20its%20customers%20-%201.0.pdf">Unit 7</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%209%20-%20The%20labour%20market%20-%201.0.pdf">Unit 9</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2010%20-%20The%20credit%20market%20-%201.0.pdf">Unit 10</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2011%20-%20Market%20disequilibrium%20-%201.0.pdf">Unit 11</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2013%20-%20Economic%20fluctuations%20and%20unemployment%20-%201.0.pdf">Unit 13</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2014%20-%20Unemployment%20and%20fiscal%20policy%20-%201.0.pdf">Unit 14</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2015%20-%20Inflation%20and%20monetary%20policy%20-%201.0.pdf">Unit 15</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2016%20-%20Technological%20progress,%20unemployment,%20and%20living%20standards%20in%20the%20long%20run%20-%201.0.pdf">Unit 16</a></li>
-<li><a href="pdf/PrincipleMacro/Unit%2017%20-%20The%20Great%20Depression%20-%201.0.pdf">Unit 17</a></li>
 </ul>
 <p>;tags: Teaching</p>]]></description>
 </item>

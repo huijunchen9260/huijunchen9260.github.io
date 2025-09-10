@@ -1,104 +1,123 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{ulem}
-\usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
-\usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks   = true,
+     linkcolor    = blue,
+     citecolor    = blue
+}
+
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 3},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+\title[Lecture 1]{Lecture 3: \\Business Cycle Measurement}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 3]{Lecture 3 \\ Business Cycle Measurement}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
-
-
-    \end{frame}
-}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
 \section{Math Concept}
 \label{sec:Math_Concept}
@@ -108,13 +127,13 @@
 \begin{columns}
     \begin{column}{0.5\textwidth}
         \begin{figure}
-            \caption{Figure 1.3: Natural log of Per Capita Real GDP and trend, 1900–2014 \\ \alert{$y = \ln(Y), trend = HPFilter(y)$}}
+            \caption{Figure 1.3: Natural log of Per Capita Real GDP and trend, 1900–2014: \alert{$y = \ln(Y)$, trend = HPFilter(y)}}
             \includegraphics[width=\textwidth]{./figures/Figure1_3.jpg}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{figure}
-            \caption{Figure 1.4 Percentage Deviation from Trend in Per Capita Real GDP \\ \alert{actual - trend}}
+            \caption{Figure 1.4 Percentage Deviation from Trend in Per Capita Real GDP: \alert{actual - trend}}
             \includegraphics[width=\textwidth]{./figures/Figure1_4.jpg}
         \end{figure}
     \end{column}
@@ -195,7 +214,7 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \caption{Figure 3.1 Business Cycle}
-                \includegraphics[width=\textwidth]{./figures/Fugre3_1.jpg}
+                \includegraphics[width=.85\textwidth]{./figures/Fugre3_1.jpg}
             \end{figure}
         \end{column}
     \end{columns}
@@ -226,7 +245,7 @@
 \begin{frame}{Visualization of Correlation: Scatter Plots}
 \label{slide:Visualization_of_Correlation__Scatter_Plots}
     \begin{figure}
-        \includegraphics[width=0.65\textwidth]{./figures/Figure3_4.jpg}
+        \includegraphics[width=0.5\textwidth]{./figures/Figure3_4.jpg}
     \end{figure}
 \end{frame}
 
@@ -306,15 +325,38 @@
 
 \begin{frame}{Summary}
 \label{slide:Summary}
-    \begin{figure}
-        \includegraphics[width=\textwidth]{./figures/BCSummary.png}
-    \end{figure}
 
-    What about the properties of government spending? Expectation?
+\begin{table}[h!]
+\caption{Business cycle statistics relative to GDP}
+\centering
+\scalebox{0.9}{
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Variable} &
+\textbf{Corr. Coef.} &
+\shortstack{\textbf{Std Dev} \\ \textbf{(\% of S.D. GDP)}} &
+\textbf{Cyclicality} &
+\textbf{Lead/Lag} &
+\shortstack{\textbf{Variation} \\ \textbf{Relative to GDP}} \\
+\hline
+consumption & 0.77 & 77  & Procyclical & Coincident & Smaller \\
+\hline
+investment  & 0.80 & 301 & Procyclical & Coincident & Larger  \\
+\hline
+employment  & 0.78 & 65  & Procyclical & Lagging   & Smaller \\
+\hline
+average labor productivity & 0.77 & 63  & Procyclical & Coincident & Smaller \\
+\hline
+\end{tabular}}
+\end{table}
 \end{frame}
 
+% \appendix
 
-
+% \begin{frame}[allowframebreaks]{References}
+% \footnotesize
+% \bibliographystyle{$BIB_STYLE}
+% \bibliography{$BIBFILE}
+% \end{frame}
 
 \end{document}
-
