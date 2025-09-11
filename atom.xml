@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2025-09-10T19:44:38Z</updated>
+<updated>2025-09-11T09:02:01Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -22,12 +22,18 @@
 <h2 id="table-of-content">Table of Content</h2>
 <!-- vim-markdown-toc Marked -->
 <ul>
+<li><a href="#news">News</a></li>
 <li><a href="#grade">Grade</a></li>
 <li><a href="#course-schedule">Course Schedule</a></li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
 <li><a href="#some-videos">Some Videos</a></li>
 </ul>
 <!-- vim-markdown-toc -->
+<h2 id="news">News</h2>
+<ul>
+<li>September 11, 2025: Update Problem Set 1.</li>
+</ul>
 <h2 id="grade">Grade</h2>
 <p>See <a href="pdf/MacroeconomicsIAutumn2025/syllabus/syllabus.html#grades">Grades</a></p>
 <h2 id="course-schedule">Course Schedule</h2>
@@ -98,12 +104,13 @@
 <!-- - [Final Review 1](pdf/NTHUMacroeconomics/finalreview_1.pdf) -->
 <!-- - [Final Review 2](pdf/NTHUMacroeconomics/finalreview_2.pdf) --></li>
 </ul>
-<!-- ## Problem Sets -->
-<!---->
-<!--  - [Problem Set 1](pdf/NTHUMacroeconomics/ProblemSet1/ProblemSet1.pdf) -->
+<h2 id="problem-sets">Problem Sets</h2>
+<ul>
+<li><a href="pdf/NTHUMacroeconomics/ProblemSet1/ProblemSet1_NTHU_Q.pdf">Problem Set 1</a>
 <!--  - [Problem Set 2](pdf/NTHUMacroeconomics/ProblemSet2/ProblemSet2.pdf) -->
 <!--  - [Problem Set 3](pdf/NTHUMacroeconomics/ProblemSet3/Final/ProblemSet3.pdf) -->
-<!--  - [Problem Set 4](pdf/NTHUMacroeconomics/ProblemSet4/Final/ProblemSet4.pdf) -->
+<!--  - [Problem Set 4](pdf/NTHUMacroeconomics/ProblemSet4/Final/ProblemSet4.pdf) --></li>
+</ul>
 <h2 id="some-videos">Some Videos</h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=6FpRjVPMOoM">The Point of No Return&#8217; Ramin Karimloo &#38; Sierra Boggess | The Phantom of The Opera</a></li>
