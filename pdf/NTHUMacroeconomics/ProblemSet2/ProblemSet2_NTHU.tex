@@ -1,0 +1,903 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+\title{Problem Set 2}
+\author{Hui-Jun Chen}
+
+\begin{document}
+
+\maketitle
+
+\showAns
+% \listofanswer
+
+% \section*{Instruction}
+
+% % Due at 11:59 PM (Eastern Time) on Sunday, June 14, 2022.
+
+% Please answer this problem set on Carmen quizzes ``Problem Set 2''. In the following problems, the part that is in \textbf{\red{red and bold}} are the order of questions that should be answered on Carmen quizzes.
+
+\begin{Exercise}
+
+\section*{Problem 1: Macroeconomic Analysis of the 2025 Taiwan Cash Handout}
+
+\subsection*{Applied Context: The Policy}
+In late 2025, the Taiwanese government finalized a plan to distribute a universal cash handout of NTD 10,000 to all eligible citizens and residents. This policy, officially part of the "Special Act for Strengthening Economic and Social Resilience," was designed to share the benefits of strong economic performance and provide relief from global inflationary pressures.
+
+As a junior economist at a local think tank in Hsinchu, you are tasked with analyzing the potential impact of this "helicopter money" on household labor supply. You decide to apply a standard micro-founded macroeconomic model.
+
+\textbf{Important Note}: This is a \textbf{partial equilibrium} analysis focusing only on the consumer's decision. It assumes the wage is fixed and does not solve for a general equilibrium where the labor market clears.
+
+\subsection*{The Model}
+\begin{itemize}
+    \item \textbf{Utility Function}: $U(C, l) = \frac{C^{1-\sigma}}{1-\sigma} + b \cdot l$
+    \item \textbf{Budget Constraint}: $C \le w(h - l) + \pi - T$
+    \item \textbf{Parameters}: $\sigma = 2$, $b = 5$, $w = 10$, $h = 1$
+\end{itemize}
+
+\HRule
+
+\subsection*{Part I: Theoretical Foundations}
+
+\Question The \textbf{Frisch elasticity of labor supply ($\epsilon_{N,w}^{Frisch}$)} measures the percentage change in hours worked ($N$) in response to a one percent change in the real wage ($w$), holding the marginal utility of wealth ($\lambda$) constant. Mathematically, it is defined as:
+\[ \epsilon_{N,w}^{Frisch} = \frac{\partial N / N}{\partial w / w} \bigg|_{\lambda \text{ constant}} \]
+Given the utility function in this model, what is the Frisch elasticity of labor supply? \answer{D}
+\begin{tasks}(1)
+    \task 0
+    \task 1
+    \task -1
+    \task Infinite ($\infty$)
+\end{tasks}
+\details{The Frisch elasticity holds $\lambda$ constant. The optimality condition is $b = \lambda \cdot w$. Since $b$ and $\lambda$ are both treated as constants in this experiment, if $w$ changes even slightly, one side becomes permanently greater than the other, causing an "all-or-nothing" jump in labor supply from 0 to max hours, which is an infinite response.}
+
+\Question The MRS represents the rate at which a consumer is willing to trade consumption for leisure while maintaining the same level of utility. What is the correct formula for the $MRS_{l,C}$ for this model? \answer{A}
+\begin{tasks}(1)
+    \task $bC^{\sigma}$
+    \task $C^{\sigma}/b$
+    \task $b/C$
+    \task $w/b$
+\end{tasks}
+\details{The MRS is the ratio of the marginal utility of leisure ($MU_l = b$) to the marginal utility of consumption ($MU_C = C^{-\sigma}$). Therefore, $MRS_{l,C} = \frac{MU_l}{MU_C} = \frac{b}{C^{-\sigma}} = bC^{\sigma}$.}
+
+\subsection*{Part II: The Economy Before the Handout}
+For this section, assume the baseline scenario where $\pi - T = 0$.
+
+\Question What is the consumer's optimal consumption ($C_0$) in this pre-policy environment? \answer{C}
+\begin{tasks}(1)
+    \task 2
+    \task 10
+    \task $\sqrt{2}$
+    \task 5
+\end{tasks}
+\details{The optimal interior choice occurs where $MRS_{l,C} = w$, so $bC^{\sigma} = w$. Plugging in the parameters: $5 \cdot C_0^2 = 10 \implies C_0^2 = 2 \implies C_0 = \sqrt{2} \approx 1.414$.}
+
+\Question What is the consumer's optimal choice of leisure ($l_0$)? \answer{A}
+\begin{tasks}(1)
+    \task $1 - \frac{\sqrt{2}}{10}$
+    \task 1
+    \task 0.5
+    \task 0
+\end{tasks}
+\details{Substitute $C_0 = \sqrt{2}$ into the budget constraint: $\sqrt{2} = 10(1 - l_0) + 0 \implies 10l_0 = 10 - \sqrt{2} \implies l_0 = 1 - \frac{\sqrt{2}}{10} \approx 0.8586$.}
+
+\Question Given the choice of leisure in the previous question, how many hours does the consumer choose to work ($N_0 = h - l_0$)? \answer{B}
+\begin{tasks}(1)
+    \task $1 - \frac{\sqrt{10}}{2}$
+    \task $\frac{\sqrt{2}}{10}$
+    \task 0.5
+    \task 1
+\end{tasks}
+\details{Labor supply is total time minus leisure: $N_0 = h - l_0 = 1 - (1 - \frac{\sqrt{2}}{10}) = \frac{\sqrt{2}}{10} \approx 0.1414$.}
+
+
+\subsection*{Part III: The Economy After the Handout}
+The NTD 10,000 handout is now distributed. We normalize this amount so the post-policy value is $\pi - T = 1$.
+
+\Question What is the consumer's new optimal consumption ($C_1$)? \answer{D}
+\begin{tasks}(1)
+    \task $1 + \sqrt{2}$
+    \task 11
+    \task 1
+    \task $\sqrt{2}$
+\end{tasks}
+\details{For an interior solution, optimal consumption depends only on the wage and preferences ($C = (w/b)^{1/\sigma}$), not non-wage income. Since the wage is constant and the cash handout is not large enough to push the consumer to a corner solution, their target consumption level remains the same.}
+
+\Question What is the consumer's new optimal leisure ($l_1$)? \answer{B}
+\begin{tasks}(1)
+    \task It remains unchanged.
+    \task $1 - \frac{\sqrt{2}-1}{10}$
+    \task 1
+    \task $1 - \frac{\sqrt{2}}{10}$
+\end{tasks}
+\details{Plug the new parameters into the budget constraint: $\sqrt{2} = 10(1 - l_1) + 1 \implies \sqrt{2} - 1 = 10 - 10l_1 \implies 10l_1 = 11 - \sqrt{2} \implies l_1 = \frac{11 - \sqrt{2}}{10} \approx 0.9586$.}
+
+\Question What is the new number of hours worked ($N_1 = h - l_1$)? \answer{A}
+\begin{tasks}(1)
+    \task $\frac{\sqrt{2}-1}{10}$
+    \task $\frac{\sqrt{2}}{10}$
+    \task 0
+    \task 0.1
+\end{tasks}
+\details{$N_1 = h - l_1 = 1 - (\frac{11 - \sqrt{2}}{10}) = \frac{10 - 11 + \sqrt{2}}{10} = \frac{\sqrt{2}-1}{10} \approx 0.0414$.}
+
+\Question What is the approximate percentage change in hours worked as a result of the cash handout? \answer{C}
+\begin{tasks}(1)
+    \task -29.3\%
+    \task +70.7\%
+    \task -70.7\%
+    \task +29.3\%
+\end{tasks}
+\details{The percentage change is $\frac{N_1 - N_0}{N_0} = \frac{(\sqrt{2}-1)/10 - \sqrt{2}/10}{\sqrt{2}/10} = \frac{\sqrt{2}-1-\sqrt{2}}{\sqrt{2}} = \frac{-1}{\sqrt{2}} \approx -0.707$, or -70.7\%.}
+
+\subsection*{Part IV: Analysis and Interpretation}
+
+\Question The cash handout represents a pure... \answer{C}
+\begin{tasks}(1)
+    \task Substitution Effect
+    \task Technology Shock
+    \task Income Effect
+    \task Preference Shock
+\end{tasks}
+\details{A cash transfer that does not depend on hours worked is a pure increase in non-wage income. This shifts the budget constraint outward without changing its slope (the wage), which is the definition of a pure income effect.}
+
+\Question The model's prediction that leisure increases when non-wage income rises implies that leisure is what kind of good? \answer{D}
+\begin{tasks}(1)
+    \task An inferior good
+    \task A Giffen good
+    \task A public good
+    \task A normal good
+\end{tasks}
+\details{A normal good is any good for which demand increases when income increases. Since the consumer "buys" more leisure (i.e., works less) when their non-wage income rises, leisure is a normal good.}
+
+\Question This partial equilibrium analysis focuses only on the household labor supply decision. If this were the only effect, what would the model predict is the immediate impact of the cash handout on GDP? \answer{B}
+\begin{tasks}(1)
+    \task GDP would increase, because consumption rises.
+    \task GDP would decrease, because total hours worked in the economy fall.
+    \task GDP would remain unchanged, because the money is just a transfer.
+    \task The impact cannot be determined.
+\end{tasks}
+\details{In this simple model, GDP is a function of total labor input. Since the policy causes the representative consumer to work less ($N_1 < N_0$), the total hours worked in the economy would fall, leading to a decrease in output (GDP).}
+
+\subsection*{Part V: Reconciling Theory and Application}
+
+\Question Question 1 established that the Frisch elasticity is infinite, implying an "all-or-nothing" labor response to wage changes. Yet, your answer to Question 5 shows an \textbf{interior solution} for labor supply. Why does the model predict the average person works *some* of the time? \answer{C}
+\begin{tasks}(1)
+    \task The income effect from the wage is large enough to offset the infinite substitution effect.
+    \task The Frisch elasticity is only a theoretical concept and does not apply to this model.
+    \task In the full optimization, the consumer adjusts their consumption, which in turn adjusts their marginal utility of wealth, allowing them to find an interior balance.
+    \task The specific parameter values ($b=5, w=10$) are uniquely chosen to create an interior solution.
+\end{tasks}
+\details{This is the key conceptual point. The infinite Frisch elasticity comes from an artificial experiment where the marginal utility of wealth ($\lambda$) is held constant. In the full optimization, the consumer is free to adjust their consumption level ($C$). By choosing $C=\sqrt{2}$, they implicitly choose a marginal utility of wealth ($\lambda = C^{-\sigma} = (\sqrt{2})^{-2} = 0.5$) that makes them perfectly willing to work for the going wage, leading to an interior solution.}
+
+\Question At the benchmark optimum, what is the marginal utility of an additional dollar of income ($\lambda = MU_C$)? \answer{A}
+\begin{tasks}(1)
+    \task 0.5
+    \task 2
+    \task 1
+    \task 10
+\end{tasks}
+\details{The marginal utility of wealth ($\lambda$) is equal to the marginal utility of consumption ($MU_C$) at the optimum. $\lambda = MU_C = C_0^{-\sigma} = (\sqrt{2})^{-2} = 1/2 = 0.5$.}
+
+\Question Which of the following is a significant limitation of applying this simple model to the real-world policy? \answer{B}
+\begin{tasks}(1)
+    \task The model incorrectly assumes people like leisure.
+    \task The model uses a fixed wage, ignoring that a widespread drop in labor supply could cause wages to rise, creating a \textbf{general equilibrium effect}.
+    \task The model's utility function is too complex to be realistic.
+    \task The model does not account for the government's budget.
+\end{tasks}
+\details{This is a core concept of general vs. partial equilibrium. The model's assumption of a fixed wage is its biggest weakness. In reality, if a large portion of the population reduces their labor supply, firms would likely have to increase wages to attract workers, creating a general equilibrium effect that would counteract some of the initial decline in work.}
+
+\section*{Problem 2}
+
+Credit: Sungmin Park
+
+Suppose that the only consumption good in the state of Ohio is soybeans, and suppose that Ohio's output Y of number of soybeans is determined by the following production function
+
+%
+\begin{equation}
+\label{eq:production}
+    F( K, L ) = z K^{\frac{1}{3}} L^{\frac{2}{3}}
+,\end{equation}
+%
+where $z$ is TFP, $K$ is its current stock of capital, and $L$ is the size of its current labor force.
+Suppose also that the current technological level is $z=1$, the current stock of capital is 1,000, and the current labor force is 8,000.
+
+(a) At the current technological level, capital stock, and labor force, what is the total output of soybeans? What is the marginal product of capital? What is the marginal product of labor?
+
+\begin{center}
+    $ MPK =$ \textbf{\red{\underline{\quad Q13 \quad}}}
+
+    $ MPN =$ \textbf{\red{\underline{\quad Q14 \quad}}}
+\end{center}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 0.333 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+        \task $ 3.333 $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ 0.333 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+        \task $ 3.333 $
+    \end{tasks}
+
+
+Suppose that the markets for capital and labor are competitive---that is, there are many firms (soybean farms) in Ohio, so that they are price-takers.
+
+(b) What is the real rental rate of capital? What is the real wage? How many soybeans go to the capitalists? (i.e. what is the capital income?) How many soybeans go to the workers? (i.e. what is the labor income?) What is the total income?
+
+\begin{center}
+    rental rate $ R =  $ \textbf{\red{\underline{\quad Q15 \quad}}}
+
+    wage $ w =  $ \textbf{\red{\underline{\quad Q16 \quad}}}
+
+    Capital income $ R \times K $  \textbf{\red{\underline{\quad Q17 \quad}}}
+
+    Labor income $ w \times L $  \textbf{\red{\underline{\quad Q18 \quad}}}
+
+    Total income $ R \times K + w \times L $  \textbf{\red{\underline{\quad Q19 \quad}}}
+\end{center}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} $
+        \task $ \frac{2}{3} $
+        \task $ \frac{3}{3} $
+        \task $ \frac{4}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} $
+        \task $ \frac{2}{3} $
+        \task $ \frac{3}{3} $
+        \task $ \frac{4}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ \frac{2000}{3} $
+        \task $ \frac{4000}{3} $
+        \task $ \frac{6000}{3} $
+        \task $ \frac{8000}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{2000}{3} $
+        \task $ \frac{4000}{3} $
+        \task $ \frac{6000}{3} $
+        \task $ \frac{8000}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 2000 $
+        \task $ 4000 $
+        \task $ 6000 $
+        \task $ 8000 $
+    \end{tasks}
+
+
+Now suppose that the demand for soybeans in Ohio are as follows. First, the demand for the consumption of soybeans is given as
+
+%
+\begin{equation}
+\label{eq:demand}
+    C = 0.5( Y - T ) + 500
+,\end{equation}
+%
+where $T = 400$ is the number of soybeans taxed by the Ohio state government. Second, the demand for investing soybeans for future production is given as
+
+%
+\begin{equation}
+\label{eq:investment}
+    I = 1500 - 100r
+,\end{equation}
+%
+where r is the real interest rate in percent. Finally, the demand for soybeans from the Ohio state government is  as the government collect the same amount as taxes T and spend it on running the Ohio State University.
+
+(c) What are the equilibrium interest rate, investment, and consumption?
+
+\begin{center}
+    $ r =  $   \textbf{\red{\underline{\quad Q20 \quad}}}
+
+    $ I =  $   \textbf{\red{\underline{\quad Q21 \quad}}}
+
+    $ C =  $   \textbf{\red{\underline{\quad Q22 \quad}}}
+\end{center}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ 2 $
+        \task $ 3 $
+        \task $ 4 $
+        \task $ 5 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1500 $
+        \task $ 1400 $
+        \task $ 1300 $
+        \task $ 1200 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 2100 $
+        \task $ 2200 $
+        \task $ 2300 $
+        \task $ 2400 $
+    \end{tasks}
+
+
+(d) Suppose the Ohio state government reduces the taxation to $ T = 200 $ while maintaining the same spending of $ G = 400 $, as a part of COVID-19 stimulus package.
+What is the government surplus/deficit? What is the equilibrium interest rate, investment, and consumption after this government policy?
+
+\begin{center}
+    government surplus/deficit: $ T - G = $ \textbf{\red{\underline{\quad Q23 \quad}}}
+
+    $ r =  $   \textbf{\red{\underline{\quad Q24 \quad}}}
+
+    $ I =  $   \textbf{\red{\underline{\quad Q25 \quad}}}
+
+    $ C =  $   \textbf{\red{\underline{\quad Q26 \quad}}}
+\end{center}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 200 $
+        \task $ 400 $
+        \task $ -200 $
+        \task $ -400 $
+    \end{tasks}
+
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 2 $
+        \task $ 3 $
+        \task $ 4 $
+        \task $ 5 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 1500 $
+        \task $ 1400 $
+        \task $ 1300 $
+        \task $ 1200 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 2100 $
+        \task $ 2200 $
+        \task $ 2300 $
+        \task $ 2400 $
+    \end{tasks}
+
+Suppose instead that Ohio state residents' consumption demand also depends on the real interest rate:
+
+%
+\begin{equation}
+\label{eq:demand_interestrate}
+    C = 0.5 ( Y-T ) + 600 - 50r
+.\end{equation}
+%
+That is, for every percentage point increase in the interest rate, the Ohio state resident would rather not consume 50 soybeans and save them instead.
+
+(e) Analyze again the effects of reduced taxation to $ T = 200 $, using the new consumption demand but using everything else the same as (d)
+
+\begin{center}
+    government surplus/deficit: $ T - G = $ \textbf{\red{\underline{\quad Q27 \quad}}}
+
+    $ r =  $   \textbf{\red{\underline{\quad Q28 \quad}}}
+
+    $ I =  $   \textbf{\red{\underline{\quad Q29 \quad}}}
+
+    $ C =  $   \textbf{\red{\underline{\quad Q30 \quad}}}
+\end{center}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 200 $
+        \task $ 400 $
+        \task $ -200 $
+        \task $ -400 $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ 1.667 $
+        \task $ 2.667 $
+        \task $ 1.333 $
+        \task $ 2.333 $
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1537 $
+        \task $ 3212 $
+        \task $ 1233 $
+        \task $ 2367 $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ 1537 $
+        \task $ 3212 $
+        \task $ 1233 $
+        \task $ 2367 $
+    \end{tasks}
+
+\end{Exercise}
+
+
+\end{document}
+
+
+% \section*{Problem 1}
+
+% Remember the Example in Lecture 8.
+
+%     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{C}{l} = w
+%             \label{eq:consumerFOC}
+%         \\
+%         \text{Binding budget constraint} \quad
+%             & C = w ( 1-l ) + \pi
+%             \label{eq:binding_budget}
+%         \\
+%         \text{Time constraint} \quad
+%             & N^{s} = 1 - l
+%             \label{eq:time_budget}
+%     \end{align}
+%     %
+
+%     Firm: $ \max_{N^{d}} ( N^{d} )^{\frac{1}{2}} - w N^{d} $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{1}{2} ( N^{d} )^{- \frac{1}{2}} = w
+%             \label{eq:firmFOC}
+%         \\
+%         \text{Output definition} \quad
+%             & Y = ( N^{d} )^{\frac{1}{2}}
+%             \label{eq:outputDef}
+%         \\
+%         \text{Profit definition} \quad
+%             & \pi = Y - w N^{d}
+%             \label{eq:profitDef}
+%     \end{align}
+%     %
+%     Market clear:
+%     %
+%     \begin{align}
+%         N^{s} & = N^{d}
+%         \label{eq:laborClear}
+%     \end{align}
+%     %
+
+% Fill the following blanks for the step-by-step guide for algebraic calculation:
+
+%     Step 1: Impose Market clear condition, so shrink all $ 7 $ equations to \textbf{\red{\underline{\quad Q1 \quad}}} equations
+
+%     \Question
+%     \answer{C}
+%     \begin{tasks}(4)
+%         \task 4
+%         \task 5
+%         \task 6
+%         \task 7
+%     \end{tasks}
+
+%     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{C}{l} = w
+%             \label{eq:consumerFOC}
+%         \\
+%         \text{Binding budget constraint} \quad
+%             & C = w ( 1-l ) + \pi
+%             \label{eq:binding_budget}
+%         \\
+%         \text{Time constraint} \quad
+%             & N = 1 - l
+%             \label{eq:time_budget}
+%     \end{align}
+%     %
+
+%     Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+%             \label{eq:firmFOC}
+%         \\
+%         \text{Output definition} \quad
+%             & Y = ( N )^{\frac{1}{2}}
+%             \label{eq:outputDef}
+%         \\
+%         \text{Profit definition} \quad
+%             & \pi = Y - w N
+%             \label{eq:profitDef}
+%     \end{align}
+%     %
+%     Step 2: replace $ l $ in terms of $ N $ using $ l = 1-N $
+
+%     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{C}{(\textbf{\red{\underline{\quad Q2 \quad}}})} = w
+%             \label{eq:consumerFOC}
+%         \\
+%         \text{Binding budget constraint} \quad
+%             & C = w (\textbf{\red{\underline{\quad Q3 \quad}}}) + \pi
+%             \label{eq:binding_budget}
+%     \end{align}
+%     %
+
+%     \Question
+%     \answer{A}
+%     \begin{tasks}(4)
+%         \task $1 - N$
+%         \task $ 2  - N $
+%         \task $ N - 1 $
+%         \task $ 2 - N $
+%     \end{tasks}
+
+%     \Question
+%     \answer{D}
+%     \begin{tasks}(4)
+%         \task $ N - 3 $
+%         \task $ N - 2 $
+%         \task $ N - 1 $
+%         \task $ N $
+%     \end{tasks}
+
+%     Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+%             \label{eq:firmFOC}
+%         \\
+%         \text{Output definition} \quad
+%             & Y = ( N )^{\frac{1}{2}}
+%             \label{eq:outputDef}
+%         \\
+%         \text{Profit definition} \quad
+%             & \pi = Y - w N
+%             \label{eq:profitDef}
+%     \end{align}
+%     %
+%     Step 3: replace $ \pi $ and $ Y $ as $ N $
+
+%     Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{C}{(\textbf{\red{\underline{\quad Q2 \quad}}})} = w
+%             \label{eq:consumerFOC}
+%         \\
+%         \text{Binding budget constraint} \quad
+%             & C = w (\textbf{\red{\underline{\quad Q3 \quad}}}) + \pi
+%             \label{eq:binding_budget}
+%     \end{align}
+%     %
+
+%     Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+%     %
+%     \begin{align}
+%         \text{FOC} \quad
+%             & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+%             \label{eq:firmFOC}
+%         \\
+%         \text{Profit definition} \quad
+%             & \pi = (\textbf{\red{\underline{\quad Q4 \quad}}}) - w N
+%             \label{eq:profitDef}
+%     \end{align}
+%     %
+
+%     \Question
+%     \answer{C}
+%     \begin{tasks}(4)
+%         \task $ N $
+%         \task $ 2 N $
+%         \task $ N^{\frac{1}{2}} $
+%         \task $ N^{\frac{1}{4}} $
+%     \end{tasks}
+
+%     Step 4: Substitute $ \pi( N ) $ into Binding budget constraint and get
+%     %
+%     \begin{equation}
+%     \label{eq:C_as_function_of_N}
+%         C = (\textbf{\red{\underline{\quad Q5 \quad}}})
+%     \end{equation}
+%     %
+
+%     \Question
+%     \answer{B}
+%     \begin{tasks}(4)
+%         \task $ N$
+%         \task $ N^{\frac{1}{2}} $
+%         \task $ N^{\frac{1}{4}} $
+%         \task $ N^{\frac{1}{8}} $
+%     \end{tasks}
+
+%     Step 5: With consumer's FOC and firm's FOC both equate to $ w $, we can get another expression of $ C $:
+%     %
+%     \begin{equation}
+%     \label{eq:C_as_function_of_N_ver_2}
+%         C = (\textbf{\red{\underline{\quad Q2 \quad}}}) \times  (\textbf{\red{\underline{\quad Q6 \quad}}})
+%     \end{equation}
+%     %
+
+%     \Question
+%     \answer{A}
+%     \begin{tasks}(4)
+%         \task $ \frac{1}{2} N^{- \frac{1}{2}} $
+%         \task $ \frac{1}{2} N $
+%         \task $ \frac{1}{4} N^{- \frac{1}{2}} $
+%         \task $ \frac{1}{2} N $
+%     \end{tasks}
+
+%     Step 6: Let \eqref{eq:C_as_function_of_N} equate \eqref{eq:C_as_function_of_N_ver_2} and we get $ N $ as
+%     %
+%     \begin{equation}
+%     \label{eq:Nvalue}
+%         N = (\textbf{\red{\underline{\quad Q7 \quad}}})
+%     \end{equation}
+%     %
+
+%     \Question
+%     \answer{C}
+%     \begin{tasks}(4)
+%         \task $ 1 $
+%         \task $ \frac{1}{2} $
+%         \task $ \frac{1}{3} $
+%         \task $ \frac{1}{4} $
+%     \end{tasks}
+
+%     Step 7: Trace back to all unknowns given the value of $ N $, we get
+%     %
+%     \begin{align}
+%         C
+%             & = (\textbf{\red{\underline{\quad Q8 \quad}}})
+%         \\
+%         l
+%             & = (\textbf{\red{\underline{\quad Q9 \quad}}})
+%         \\
+%         Y
+%             & = (\textbf{\red{\underline{\quad Q10 \quad}}})
+%         \\
+%         \pi
+%             & = (\textbf{\red{\underline{\quad Q11 \quad}}})
+%         \\
+%         w
+%             & = (\textbf{\red{\underline{\quad Q12 \quad}}})
+%     \end{align}
+%     %
+
+%     \Question
+%     \answer{A}
+%     \begin{tasks}(4)
+%         \task $ \sqrt{\frac{1}{3}} $
+%         \task $ \sqrt{\frac{1}{4}} $
+%         \task $ \sqrt{\frac{1}{5}} $
+%         \task $ \sqrt{\frac{1}{6}} $
+%     \end{tasks}
+
+%     \Question
+%     \answer{D}
+%     \begin{tasks}(4)
+%         \task $ \frac{3}{4} $
+%         \task $ \frac{1}{3} $
+%         \task $ \frac{1}{4} $
+%         \task $ \frac{2}{3} $
+%     \end{tasks}
+
+%     \Question
+%     \answer{A}
+%     \begin{tasks}(4)
+%         \task $ \sqrt{\frac{1}{3}} $
+%         \task $ \sqrt{\frac{1}{4}} $
+%         \task $ \sqrt{\frac{1}{5}} $
+%         \task $ \sqrt{\frac{1}{6}} $
+%     \end{tasks}
+
+%     \Question
+%     \answer{B}
+%     \begin{tasks}(4)
+%         \task $ \sqrt{\frac{1}{3}} - \frac{1}{3} \sqrt{3}$
+%         \task $ \sqrt{\frac{1}{3}} - \frac{1}{6} \sqrt{3}$
+%         \task $ \sqrt{\frac{1}{6}} - \frac{1}{3} \sqrt{3}$
+%         \task $ \sqrt{\frac{1}{6}} - \frac{1}{6} \sqrt{3}$
+%     \end{tasks}
+
+%     \Question
+%     \answer{C}
+%     \begin{tasks}(4)
+%         \task $ \frac{1}{3} \sqrt{3} $
+%         \task $ \frac{1}{2} \sqrt{2} $
+%         \task $ \frac{1}{2} \sqrt{3} $
+%         \task $ \frac{1}{2} \sqrt{2} $
+%     \end{tasks}
