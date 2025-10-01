@@ -1,104 +1,117 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{ulem}
-\usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
-\usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 9},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+
+\title[Lecture 9]{Lecture 9 \\ Social Planner's Problem}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[NTHU]{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 9]{Lecture 9 \\ Social Planner's Problem}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
-
-
-    \end{frame}
-}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
 \begin{frame}{Overview}
 \label{slide:Overview}
@@ -144,47 +157,46 @@
 
 \begin{frame}{Production Possibility Frontier (PPF)}
 \label{slide:Production_Possibility_Frontier__PPF_}
-\begin{columns}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item \textbf{Def}: technological possibilities for the whole economy
-            %
-            \begin{equation}
-            \label{eq:PPF}
-                C = z F( K, h-l ) - G
-            \end{equation}
-            %
-            \item \textbf{Marginal rate of transformation} (MRT): rate to transform leisure to consumption (through work)
-            %
-            \begin{equation}
-            \label{eq:MRT}
-                \begin{split}
-                    MRT_{l, C}
-                        & = z D_{N} F( K, N )
-                    \\
-                        & = MPN
-                    \\
-                \end{split}
-            \end{equation}
-            %
-        \end{itemize}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \caption{\scriptsize Figure 5.2 The Production Function and the Production Possibilities Frontier}
-            \includegraphics[width=\textwidth]{./figures/Figure5_2.jpg}
-        \end{figure}
-    \end{column}
-\end{columns}
+    \begin{itemize}
+        \item \textbf{Def}: technological possibilities for the whole economy
+        %
+        \begin{equation}
+        \label{eq:PPF}
+            C = z F( K, h-l ) - G
+        \end{equation}
+        %
+        \item \textbf{Marginal rate of transformation} (MRT): rate to transform leisure to consumption (through work)
+        %
+        \begin{equation}
+        \label{eq:MRT}
+            \begin{split}
+                MRT_{l, C}
+                    & = z D_{N} F( K, N )
+                \\
+                    & = MPN
+                \\
+            \end{split}
+        \end{equation}
+        %
+    \end{itemize}
 \end{frame}
+
+\begin{frame}{Production Possibility Frontier (Figure)}
+\label{slide:Production_Possibility_Frontier__Figure_}
+        \begin{figure}
+            \caption{\scriptsize The Production Function and the Production Possibilities Frontier}
+            \includegraphics[width=.7\textwidth]{./figures/Figure5_2.jpg}
+        \end{figure}
+\end{frame}
+
 
 \begin{frame}{Competitive Equilibrium: Graphcial Representation}
 \label{slide:Competitive_Equilibrium__Graphcial_Representation}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{\scriptsize Figure 5.3  Competitive Equilibrium}
-                \includegraphics[width=\textwidth]{./figures/Figure5_3.jpg}
+                \caption{\scriptsize Competitive Equilibrium}
+                \includegraphics[width=.8\textwidth]{./figures/Figure5_3.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -227,7 +239,7 @@
         \item caveats:
         \begin{itemize}
             \item ``efficiency'' in economics is a statement about a model
-            \item very narrow: e.g. having Jeff Bezos pay for a meal for someone in need.
+            \item very narrow: e.g. having Jeff Bezos pay for a meal for someone in need is ``harming'' Bezos.
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -256,8 +268,8 @@
     \end{align*}
     %
     \begin{itemize}
-        \item \alert{What’s here}: GDP accounting, physical / technological constraints, required government spending, consumer preferences
-        \item \alert{What's not}: consumer’s budget constraint, the wage rate, consumer’s / firm’s individual problems, profits, taxes
+        \item \alert{What's here}: GDP accounting, physical / technological constraints, required government spending, consumer preferences
+        \item \alert{What's not}: consumer's budget constraint, the wage rate, consumer's / firm's individual problems, profits, taxes
     \end{itemize}
 \end{frame}
 
@@ -295,12 +307,9 @@
 \begin{frame}{Welfare Theorem}
 \label{slide:Welfare_Theorem}
     \begin{itemize}
-        \item \textbf{First welfare theorem}: under centain conditions, the allocation under a competitive equilibrium is Pareto optimal
-        \item \textbf{Second welfare theorem}: under certain conditions, a Pareto optimal allocation is the allocation for a competitive equilibrium.
-        \item straightforward to show here (we already have!) but no always so.
-        \begin{itemize}
-            \item conditions not always met!
-        \end{itemize}
+        \item \textbf{First welfare theorem}: under \href{https://en.wikipedia.org/wiki/Fundamental_theorems_of_welfare_economics}{\underline{\alert{certain conditions}}}, the allocation under a competitive equilibrium is Pareto optimal
+        \item \textbf{Second welfare theorem}: under \href{https://en.wikipedia.org/wiki/Fundamental_theorems_of_welfare_economics}{\underline{\alert{certain conditions}}}, a Pareto optimal allocation is the allocation for a competitive equilibrium.
+        \item straightforward to show here (we already have!), but not always so as conditions not always met!
         \item SPP and CE often alike if not identical, serves as a good benchmark
     \end{itemize}
 \end{frame}
@@ -310,8 +319,8 @@
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \caption{\scriptsize Figure 5.4  Pareto Optimality}
-                \includegraphics[width=\textwidth]{./figures/Figure5_4.jpg}
+                \caption{\scriptsize Pareto Optimality}
+                \includegraphics[width=.8\textwidth]{./figures/Figure5_4.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -330,7 +339,7 @@
 \begin{enumerate}
     \item Externalities: activity for which an individual does not take account of all associated costs and benefits: can be positive or negative
     \begin{itemize}
-        \item example: pollution must be cleaned up, but firm doesn’t have to
+        \item example: pollution must be cleaned up, but firm doesn't have to
     \end{itemize}
     \item Distorting taxes: lead to ``wedges'' between MRS, MP, and MRT
     \begin{itemize}
