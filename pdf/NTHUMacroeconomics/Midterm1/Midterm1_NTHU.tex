@@ -1,0 +1,821 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+\title{Midterm Exam I}
+\author{Macroeconomics I \\ Hui-Jun Chen}
+
+\begin{document}
+
+\maketitle
+
+% \showAns
+% \listofanswer
+
+% \section*{Instruction}
+
+% % Due at 11:59 PM (Eastern Time) on Sunday, June 14, 2022.
+
+% Please answer this problem set on Carmen quizzes ``Problem Set 2''. In the following problems, the part that is in \textbf{\red{red and bold}} are the order of questions that should be answered on Carmen quizzes.
+
+\begin{Exercise}
+
+\section*{Problem 1: The calculation of Lecture 8}
+
+Remember the Example in Lecture 8.
+
+    Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{C}{l} = w
+            \label{eq:consumerFOC}
+        \\
+        \text{Binding budget constraint} \quad
+            & C = w ( 1-l ) + \pi
+            \label{eq:binding_budget}
+        \\
+        \text{Time constraint} \quad
+            & N^{s} = 1 - l
+            \label{eq:time_budget}
+    \end{align}
+    %
+
+    Firm: $ \max_{N^{d}} ( N^{d} )^{\frac{1}{2}} - w N^{d} $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{1}{2} ( N^{d} )^{- \frac{1}{2}} = w
+            \label{eq:firmFOC}
+        \\
+        \text{Output definition} \quad
+            & Y = ( N^{d} )^{\frac{1}{2}}
+            \label{eq:outputDef}
+        \\
+        \text{Profit definition} \quad
+            & \pi = Y - w N^{d}
+            \label{eq:profitDef}
+    \end{align}
+    %
+    Market clear:
+    %
+    \begin{align}
+        N^{s} & = N^{d}
+        \label{eq:laborClear}
+    \end{align}
+    %
+
+Fill the following blanks for the step-by-step guide for algebraic calculation:
+
+    Step 1: Impose Market clear condition, so shrink all $ 7 $ equations to \textbf{\red{\underline{\quad Q1 \quad}}} equations
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task 4
+        \task 5
+        \task 6
+        \task 7
+    \end{tasks}
+
+    Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{C}{l} = w
+            \label{eq:consumerFOC}
+        \\
+        \text{Binding budget constraint} \quad
+            & C = w ( 1-l ) + \pi
+            \label{eq:binding_budget}
+        \\
+        \text{Time constraint} \quad
+            & N = 1 - l
+            \label{eq:time_budget}
+    \end{align}
+    %
+
+    Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+            \label{eq:firmFOC}
+        \\
+        \text{Output definition} \quad
+            & Y = ( N )^{\frac{1}{2}}
+            \label{eq:outputDef}
+        \\
+        \text{Profit definition} \quad
+            & \pi = Y - w N
+            \label{eq:profitDef}
+    \end{align}
+    %
+    Step 2: replace $ l $ in terms of $ N $ using $ l = 1-N $
+
+    Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{C}{(\textbf{\red{\underline{\quad Q2 \quad}}})} = w
+            \label{eq:consumerFOC}
+        \\
+        \text{Binding budget constraint} \quad
+            & C = w (\textbf{\red{\underline{\quad Q3 \quad}}}) + \pi
+            \label{eq:binding_budget}
+    \end{align}
+    %
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $1 - N$
+        \task $ 2  - N $
+        \task $ N - 1 $
+        \task $ 2 - N $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ N - 3 $
+        \task $ N - 2 $
+        \task $ N - 1 $
+        \task $ N $
+    \end{tasks}
+
+    Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+            \label{eq:firmFOC}
+        \\
+        \text{Output definition} \quad
+            & Y = ( N )^{\frac{1}{2}}
+            \label{eq:outputDef}
+        \\
+        \text{Profit definition} \quad
+            & \pi = Y - w N
+            \label{eq:profitDef}
+    \end{align}
+    %
+    Step 3: replace $ \pi $ and $ Y $ as $ N $
+
+    Consumer: $ \max_{C, l} \ln C + \ln l \quad \text{subject to} \quad C \le w( 1-l ) + \pi $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{C}{(\textbf{\red{\underline{\quad Q2 \quad}}})} = w
+            \label{eq:consumerFOC}
+        \\
+        \text{Binding budget constraint} \quad
+            & C = w (\textbf{\red{\underline{\quad Q3 \quad}}}) + \pi
+            \label{eq:binding_budget}
+    \end{align}
+    %
+
+    Firm: $ \max_{N} ( N )^{\frac{1}{2}} - w N $
+    %
+    \begin{align}
+        \text{FOC} \quad
+            & \frac{1}{2} ( N )^{- \frac{1}{2}} = w
+            \label{eq:firmFOC}
+        \\
+        \text{Profit definition} \quad
+            & \pi = (\textbf{\red{\underline{\quad Q4 \quad}}}) - w N
+            \label{eq:profitDef}
+    \end{align}
+    %
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ N $
+        \task $ 2 N $
+        \task $ N^{\frac{1}{2}} $
+        \task $ N^{\frac{1}{4}} $
+    \end{tasks}
+
+    Step 4: Substitute $ \pi( N ) $ into Binding budget constraint and get
+    %
+    \begin{equation}
+    \label{eq:C_as_function_of_N}
+        C = (\textbf{\red{\underline{\quad Q5 \quad}}})
+    \end{equation}
+    %
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ N$
+        \task $ N^{\frac{1}{2}} $
+        \task $ N^{\frac{1}{4}} $
+        \task $ N^{\frac{1}{8}} $
+    \end{tasks}
+
+    Step 5: With consumer's FOC and firm's FOC both equate to $ w $, we can get another expression of $ C $:
+    %
+    \begin{equation}
+    \label{eq:C_as_function_of_N_ver_2}
+        C = (\textbf{\red{\underline{\quad Q2 \quad}}}) \times  (\textbf{\red{\underline{\quad Q6 \quad}}})
+    \end{equation}
+    %
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \frac{1}{2} N^{- \frac{1}{2}} $
+        \task $ \frac{1}{2} N $
+        \task $ \frac{1}{4} N^{- \frac{1}{2}} $
+        \task $ \frac{1}{2} N $
+    \end{tasks}
+
+    Step 6: Let \eqref{eq:C_as_function_of_N} equate \eqref{eq:C_as_function_of_N_ver_2} and we get $ N $ as
+    %
+    \begin{equation}
+    \label{eq:Nvalue}
+        N = (\textbf{\red{\underline{\quad Q7 \quad}}})
+    \end{equation}
+    %
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ 1 $
+        \task $ \frac{1}{2} $
+        \task $ \frac{1}{3} $
+        \task $ \frac{1}{4} $
+    \end{tasks}
+
+    Step 7: Trace back to all unknowns given the value of $ N $, we get
+    %
+    \begin{align}
+        C
+            & = (\textbf{\red{\underline{\quad Q8 \quad}}})
+        \\
+        l
+            & = (\textbf{\red{\underline{\quad Q9 \quad}}})
+        \\
+        Y
+            & = (\textbf{\red{\underline{\quad Q10 \quad}}})
+        \\
+        \pi
+            & = (\textbf{\red{\underline{\quad Q11 \quad}}})
+        \\
+        w
+            & = (\textbf{\red{\underline{\quad Q12 \quad}}})
+    \end{align}
+    %
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} $
+        \task $ \sqrt{\frac{1}{4}} $
+        \task $ \sqrt{\frac{1}{5}} $
+        \task $ \sqrt{\frac{1}{6}} $
+    \end{tasks}
+
+    \Question
+    \answer{D}
+    \begin{tasks}(4)
+        \task $ \frac{3}{4} $
+        \task $ \frac{1}{3} $
+        \task $ \frac{1}{4} $
+        \task $ \frac{2}{3} $
+    \end{tasks}
+
+    \Question
+    \answer{A}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} $
+        \task $ \sqrt{\frac{1}{4}} $
+        \task $ \sqrt{\frac{1}{5}} $
+        \task $ \sqrt{\frac{1}{6}} $
+    \end{tasks}
+
+    \Question
+    \answer{B}
+    \begin{tasks}(4)
+        \task $ \sqrt{\frac{1}{3}} - \frac{1}{3} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{3}} - \frac{1}{6} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{6}} - \frac{1}{3} \sqrt{3}$
+        \task $ \sqrt{\frac{1}{6}} - \frac{1}{6} \sqrt{3}$
+    \end{tasks}
+
+    \Question
+    \answer{C}
+    \begin{tasks}(4)
+        \task $ \frac{1}{3} \sqrt{3} $
+        \task $ \frac{1}{2} \sqrt{2} $
+        \task $ \frac{1}{2} \sqrt{3} $
+        \task $ \frac{1}{2} \sqrt{2} $
+    \end{tasks}
+
+\newpage
+
+\section*{Problem 2: Macroeconomic Analysis of H-1B Visa Fee Policy}
+
+\subsection*{Scenario}
+A new administration proposes a substantial fee, $t = \$100,000$, that should be paid by firms on every H-1B worker hired. We will analyze this policy using our one-period competitive equilibrium model.
+
+\subsection*{Model Setup}
+\begin{itemize}
+    \item \textbf{Household}: Utility $U(C, l) = \ln C + \beta \ln l$; Time endowment $h=1$.
+    \item \textbf{Firm}: Production $Y = z K^{\alpha} N^{1-\alpha}$, where $ N $ is the total labor demand.
+    \item \textbf{Government}: Balances its budget, $G = T + t N_H$.
+    \item \textbf{Parameters}: $z=1$, $K=1$, $\alpha=1/3$, $\beta=2$.
+\end{itemize}
+
+\HRule
+
+\subsection*{Part I: Conceptual Foundations}
+
+\Question The administration considers a massive \$100,000 fee per H-1B worker. According to the Lucas critique, why is a micro-founded model essential for analyzing such a large policy shift? \answer{A}
+\begin{tasks}(1)
+    \task Because a large fee is a major policy change, it will fundamentally alter how firms decide to hire, making old statistical data unreliable.
+    \task Historical data on visa fees is likely inaccurate and cannot be trusted for forecasting.
+    \task Micro-founded models are the only models that can account for government spending.
+    \task The Lucas critique states that only small, incremental policies can be accurately modeled.
+\end{tasks}
+\details{The Lucas critique's core argument is that rational agents (like firms) will change their behavior and decision rules in response to a major policy change. A \$100,000 fee is a regime shift, not a small tweak, so older models based on historical data from a low-fee regime will likely fail to predict the outcome accurately.}
+
+\Question A U.S. software firm has \$10M in revenue. It pays \$2M for intermediate goods, \$4M in domestic wages, \$1M in H-1B wages, and \$500,000 in H-1B fees. Using the income approach , what is this firm's contribution to GDP? \answer{B}
+\begin{tasks}(1)
+    \task \$7,500,000
+    \task \$8,000,000
+    \task \$2,500,000
+    \task \$5,500,000
+\end{tasks}
+\details{The firm's value added is Revenue - Intermediate Goods = \$10M - \$2M = \$8M. The income approach states that this value added must be fully distributed as income. The components are: Wages (\$4M + \$1M = \$5M), Taxes on Production (the \$0.5M fee), and Profits (\$10M - \$2M - \$5M - \$0.5M = \$2.5M). The total contribution to Gross Domestic Income is the sum of all these income streams: \$5M (Wages) + \$2.5M (Profits) + \$0.5M (Govt Income/Taxes) = \$8M.}
+
+\subsection*{Part II: The Perfect Substitutes Case}
+Assume H-1B ($N_H$) and domestic ($N_D$) workers are perfect substitutes, so total labor demand is $N = N_D + N_H$. The production function is $Y = N^{ \frac{2}{3}}$. The domestic household's labor supply is perfectly inelastic at $N^s = \frac{1}{3}$.
+
+\Question What is the firm's labor demand curve, $N(w)$? \answer{D}
+\begin{tasks}(1)
+    \task $N = \left(\frac{3w}{2}\right)^3$
+    \task $N = \left(\frac{2}{3w}\right)^2$
+    \task $N = \left(\frac{3}{2w}\right)^{\frac{3}{2}}$
+    \task $N = \left(\frac{2}{3w}\right)^3$
+\end{tasks}
+\details{The MPN is $\frac{dY}{dN} = \frac{2}{3}N^{-1/3}$. The firm hires until $MPN = w$. So, $w = \frac{2}{3}N^{-1/3}$. Solving for N: $N^{1/3} = 2/(3w) \implies N = (2/3w)^3$.}
+
+\Question Assuming that the US does not have any foreign labor supply, only the domestic ones. What is the equilibrium wage $w^*$? \answer{C}
+\begin{tasks}(1)
+    \task $\frac{2}{3}$
+    \task $2 \times 3^{2/3}$
+    \task $2 \times 3^{-2/3}$
+    \task $\frac{3}{2}$
+\end{tasks}
+\details{In equilibrium, $N^s = N^d$. So, $1/3 = (2/3w)^3 = 8/(27w^3)$. Rearranging gives $27w^3 = 24 \implies w^3 = 24/27 = 8/9$. So $w = \sqrt[3]{8/9} = 2/9^{1/3} = 2/3^{2/3} = 2 \times 3^{-2/3}$.}
+
+\Question Now, the US government announce the H-1B program and allow foreign workers to enter with a fee $t>0$. The firm must pay a fee of $t$ for each H-1B worker. The market real wage is $w$. What is the firm's profit-maximization condition for hiring an H-1B worker? \answer{C}
+\begin{tasks}(1)
+    \task $MPN = w - t$
+    \task $MPN = w$
+    \task $MPN = w + t$
+    \task $MPN = t$
+\end{tasks}
+\details{The marginal benefit of hiring an H-1B worker (their MPN) must equal the full marginal cost, which is the wage paid to them ($w$) plus the fee paid to the government ($t$).}
+
+\Question In this perfect substitutes model, what is the equilibrium level of H-1B employment, $N_H^*$? \answer{A}
+\begin{tasks}(1)
+    \task 0
+    \task $1/3$
+    \task It depends on the size of the fee $t$.
+    \task It is negative.
+\end{tasks}
+\details{Since domestic workers provide the exact same productivity at a strictly lower cost ($w < w+t$), the profit-maximizing firm will never hire an H-1B worker. Employment of H-1B workers drops to zero.}
+
+\Question The analysis in previous question suggests firms would hire zero H-1B workers. In reality, firms still hire them. What is the most plausible economic reason our simple model misses? \answer{B}
+\begin{tasks}(1)
+    \task Firms are not actually profit-maximizers.
+    \task Domestic and H-1B workers are not perfect substitutes; H-1B workers may possess unique skills that command a higher effective MPN.
+    \task The government forces firms to hire H-1B workers.
+    \task The real wage for H-1B workers is secretly lower than for domestic workers.
+\end{tasks}
+\details{This is the most realistic answer. If an H-1B worker has specialized skills such that their $MPN_{H}$ is significantly higher than a domestic worker's $MPN_{D}$, a firm might be willing to pay the extra fee if $MPN_H > w+t$.}
+
+\subsection*{Part III: The Cobb-Douglas Production Case}
+Now assume a more realistic scenario where the two labor types are imperfect substitutes. Let the production function be $Y = N_D^{1/2} N_H^{1/2}$. The supply of domestic labor is perfectly inelastic at $N_D = 1/4$, and the supply of H-1B labor is perfectly inelastic at $N_H = 1/4$.
+
+\Question What is the Marginal Product of a domestic worker, $MPN_D$? \answer{B}
+\begin{tasks}(1)
+    \task $\frac{1}{2}\sqrt{\frac{N_D}{N_H}}$
+    \task $\frac{1}{2}\sqrt{\frac{N_H}{N_D}}$
+    \task $\sqrt{\frac{N_H}{N_D}}$
+    \task $\sqrt{\frac{N_D}{N_H}}$
+\end{tasks}
+\details{The $MPN_D$ is the partial derivative of Y with respect to $N_D$: $\frac{\partial Y}{\partial N_D} = (\frac{1}{2} N_D^{-1/2}) N_H^{1/2} = \frac{1}{2}\sqrt{N_H/N_D}$.}
+
+\Question Before the fee ($t=0$), what is the equilibrium wage for domestic workers, $w_D$? \answer{D}
+\begin{tasks}(1)
+    \task 2
+    \task 1
+    \task 4
+    \task $1/2$
+\end{tasks}
+\details{The wage equals the marginal product. Given $N_D=1/4$ and $N_H=1/4$, we have $w_D = MPN_D = \frac{1}{2}\sqrt{(1/4)/(1/4)} = \frac{1}{2}\sqrt{1} = 1/2$.}
+
+\Question Before the fee ($t=0$), what is the total output (GDP) of this economy? \answer{A}
+\begin{tasks}(1)
+    \task $1/4$
+    \task $1/2$
+    \task $1$
+    \task $4$
+\end{tasks}
+\details{Total output is $Y = N_D^{1/2} N_H^{1/2} = (1/4)^{1/2} (1/4)^{1/2} = (1/2) \times (1/2) = 1/4$.}
+
+\Question Now, a fee of $t=1/4$ is imposed on H-1B workers. What is the new wage paid *to* H-1B workers, $w_H$? \answer{B}
+\begin{tasks}(1)
+    \task $1/2$
+    \task $1/4$
+    \task $0$
+    \task $-1/4$
+\end{tasks}
+\details{The firm's total cost for an H-1B worker is $w_H + t$. It sets this equal to their marginal product: $w_H + t = MPN_H$. The $MPN_H$ is $\frac{1}{2}\sqrt{N_D/N_H} = \frac{1}{2}\sqrt{(1/4)/(1/4)} = 1/2$. So, $w_H + 1/4 = 1/2 \implies w_H = 1/4$.}
+
+\Question After the fee is imposed, what are the profits ($\pi$) of the representative firm? \answer{A}
+\begin{tasks}(1)
+    \task 0
+    \task $1/8$
+    \task $1/4$
+    \task $-1/8$
+\end{tasks}
+\details{This production function exhibits constant returns to scale ($1/2 + 1/2 = 1$). A key property of CRS is that if all factors are paid their marginal products, economic profits are zero. Before the policy, $\pi = Y - w_D N_D - w_H N_H = 1/4 - (1/2)(1/4) - (1/2)(1/4) = 0$. After the policy, domestic wages are still $w_D' = 1/2$. $\pi = 1/4 - (1/2)(1/4) - (1/4)(1/4) - (1/4)(1/4) = 1/4 - 1/8 - 1/16 - 1/16 = 0$. Profits remain zero.}
+
+\Question In this Cobb-Douglas labor model with perfectly inelastic labor supply, who bears the full economic burden of the fee? \answer{B}
+\begin{tasks}(1)
+    \task The firm owners (through lower profits).
+    \task The H-1B workers (through lower wages).
+    \task Domestic workers (through lower wages).
+    \task The government.
+\end{tasks}
+\details{The domestic wage did not change ($w_D=1/2$). The firm's profits remained at zero. The wage paid to H-1B workers fell from $1/2$ to $1/4$. The size of this wage drop is exactly equal to the fee ($t=1/4$). Therefore, the H-1B workers bear 100\% of the economic burden, a classic result when the supply of the taxed factor is perfectly inelastic.}
+
+\subsection*{Part IV: General Equilibrium Analysis}
+Let's return to the general model where the household's labor supply is NOT perfectly inelastic.
+Production: $Y = z K^{\alpha} N^{1-\alpha}$. Household utility: $U = \ln(C) + \beta\ln(l)$. The policy is an increase in TFP, $z$.
+
+\Question The production function is $Y = z K^\alpha (N_D^\gamma N_H^{1-\gamma})^{1-\alpha}$. The H-1B fee ($t$) is imposed only on $N_H$. How does this fee affect the firm's demand for \textbf{capital} ($K$)? \answer{B}
+\begin{tasks}(1)
+    \task It has no effect on capital demand because the fee is on labor.
+    \task The firm's demand for capital will decrease.
+    \task The firm's demand for capital will increase.
+    \task The rental rate of capital will fall, but demand will not change.
+\end{tasks}
+\details{The fee reduces the firm's demand for high-skilled labor ($N_H$). Because capital and labor are complements (i.e., they work together), having less labor makes each unit of capital less productive. This reduces the Marginal Product of Capital (MPK) and causes the firm to demand less capital.}
+
+% \Question An increase in Total Factor Productivity ($z$) shifts the production function upward. What is the immediate effect on the firm's labor demand curve? \answer{D}
+% \begin{tasks}(1)
+%     \task It shifts left because firms need fewer workers to produce the same amount.
+%     \task It does not move, but the firm moves along the curve.
+%     \task It pivots inward.
+%     \task It shifts right because the MPN is higher at every level of employment.
+% \end{tasks}
+% \details{The MPN is $z(1-\alpha)K^{\alpha}N^{-\alpha}$. When $z$ increases, the MPN increases for any given level of $N$. This means the firm is willing to pay a higher wage for any amount of labor, which is a rightward shift of the labor demand curve.}
+
+% \Question What is the effect of an increase in TFP ($z$) on the household's labor supply curve? \answer{B}
+% \begin{tasks}(1)
+%     \task A pure substitution effect causes labor supply to increase.
+%     \task The income effect (from higher dividends) and substitution effect (from a higher equilibrium wage) work in opposite directions, creating an ambiguous effect.
+%     \task A pure income effect causes labor supply to decrease.
+%     \task There is no effect on the labor supply curve.
+% \end{tasks}
+% \details{An increase in TFP creates both an income and a substitution effect on the household. The substitution effect from the resulting higher equilibrium wage encourages more work. The income effect from higher wages and higher profits/dividends ($\pi$) encourages less work. The net effect is theoretically ambiguous.}
+
+% \Question In the competitive equilibrium, a positive TFP shock ($z \uparrow$) leads to a higher equilibrium wage ($w^*$) and higher employment ($N^*$). What does this empirical result imply about the relative strengths of the income and substitution effects on labor supply? \answer{B}
+% \begin{tasks}(1)
+%     \task The income effect is stronger.
+%     \task The substitution effect is stronger.
+%     \task The two effects are equal.
+%     \task The result is unrelated to these effects.
+% \end{tasks}
+% \details{The rightward shift in labor demand pushes both wages and employment up. For employment to actually increase in equilibrium, the labor supply curve must not be strongly backward-bending. This means that the substitution effect (which pushes for more work) must be stronger than the income effect (which pushes for less work) in the empirically relevant range.}
+
+% \Question Given that a TFP shock increases both output ($Y$) and consumption ($C$), how would you classify consumption as a business cycle variable? \answer{C}
+% \begin{tasks}(1)
+%     \task Acyclical
+%     \task Countercyclical
+%     \task Procyclical
+%     \task Lagging
+% \end{tasks}
+% \details{A procyclical variable moves in the same direction as aggregate output (GDP). Since consumption increases when output increases, it is procyclical.}
+
+% \Question Finally, consider the H-1B fee policy again. The policy acts as a targeted negative shock, making the economy less efficient at combining different types of labor. In our general equilibrium framework, this is best modeled as a decrease in: \answer{D}
+% \begin{tasks}(1)
+%     \task The capital stock, K.
+%     \task The household's preference for leisure, $\beta$.
+%     \task The real wage, w.
+%     \task Total Factor Productivity, z.
+% \end{tasks}
+% \details{A distortionary tax like the H-1B fee prevents the firm from using its most efficient mix of inputs. This means that for any given amount of total capital and labor, the final output is now lower than it was before the policy. A reduction in the economy's ability to transform inputs into output is, by definition, a decrease in Total Factor Productivity ($z$).}
+
+
+\Question The H-1B fee ($t$) is a lump-sum amount per worker. How does this modify the firm's labor demand curve for H-1B workers? \answer{D}
+\begin{tasks}(1)
+    \task It makes the labor demand curve steeper.
+    \task It makes the labor demand curve flatter.
+    \task It pivots the labor demand curve inward.
+    \task It causes a parallel downward shift of the labor demand curve.
+\end{tasks}
+\details{The firm's hiring rule is $MPN = w+t$, or $w = MPN-t$. This means that for any given quantity of labor $N_H$, the maximum wage the firm is willing to pay is exactly $t$ dollars less than it was before. This is a parallel downward shift of the labor demand curve.}
+
+\Question The H-1B fees collected are used to fund government spending ($G$). From the representative household's perspective, how does the policy affect their budget constraint initially, before any wage changes? \answer{B}
+\begin{tasks}(1)
+    \task It has no effect.
+    \task It decreases their non-wage income ($\pi-T$) because firm profits ($\pi$) fall due to the new fee.
+    \task It increases their non-wage income ($\pi-T$) because the government lowers other taxes ($T$).
+    \task It increases their wage income ($wN^s$).
+\end{tasks}
+\details{The firm must pay the fee, which reduces its profits. Since the representative household owns the firm, the dividends ($\pi$) they receive will fall, tightening their budget constraint.}
+
+\Question The reduction in the household's dividend income ($\pi$) described in last question is an example of a: \answer{B}
+\begin{tasks}(1)
+    \task Pure substitution effect, causing them to work more.
+    \task Pure income effect, causing them to work more.
+    \task Pure income effect, causing them to work less.
+    \task Technology shock, causing them to be less productive.
+\end{tasks}
+\details{This correctly identifies it as a pure income effect. Because the household is poorer, and leisure is a normal good, they will 'buy' less leisure. This means they will work more.}
+
+\Question The policy shifts the demand for domestic labor to the right (as firms substitute away from H-1B workers), which tends to increase the domestic wage ($w$). How does this wage increase affect a domestic worker's labor supply? \answer{D}
+\begin{tasks}(1)
+    \task It will definitely increase their labor supply.
+    \task It will definitely decrease their labor supply.
+    \task It has no effect on their labor supply.
+    \task The effect is ambiguous, as the income effect (work less) and substitution effect (work more) oppose each other.
+\end{tasks}
+\details{This is the standard textbook result. A higher wage makes you richer, encouraging more leisure (income effect). It also makes leisure more expensive, encouraging less leisure (substitution effect). The net effect on hours worked is theoretically ambiguous.}
+
+\Question Assume for the US economy that the substitution effect of a wage change is stronger than the income effect. What is the shape of the labor supply curve? \answer{A}
+\begin{tasks}(1)
+    \task Upward-sloping
+    \task Downward-sloping
+    \task Vertical
+    \task Horizontal
+\end{tasks}
+\details{If the substitution effect dominates, a higher wage (the reward for working) will always induce people to supply more labor.}
+
+\Question Let's assemble the full picture in a competitive equilibrium. The H-1B fee policy causes which two simultaneous shifts in the market for \textbf{domestic} labor? \answer{D}
+\begin{tasks}(1)
+    \task Labor demand shifts right, and labor supply shifts right.
+    \task Labor demand shifts left, and labor supply shifts left.
+    \task Labor demand shifts right, and labor supply shifts left.
+    \task Labor demand for domestic workers shifts right, and the labor supply curve for domestic workers also shifts right.
+\end{tasks}
+\details{This is the correct combination. (1) Firms' demand for domestic workers increases as they are substitutes for now-more-expensive H-1B workers (Demand shifts right). (2) Households are poorer due to lower firm profits, so they want to work more at any given wage to compensate (Supply shifts right).}
+
+\Question Given that both the labor demand and labor supply curves for domestic workers shift to the right, what is the predicted effect on the equilibrium for domestic workers? \answer{A}
+\begin{tasks}(1)
+    \task Employment will increase, but the effect on the wage is ambiguous.
+    \task The wage will increase, but the effect on employment is ambiguous.
+    \task Both employment and the wage will definitely increase.
+    \task Both employment and the wage will definitely decrease.
+\end{tasks}
+\details{This is the standard result of a simultaneous rightward shift in both supply and demand. The quantity (employment) unambiguously increases, but the final price (wage) depends on the relative magnitude of the two shifts.}
+
+% \Question Suppose the final equilibrium result is a higher wage ($w^*$) and higher employment ($N^*$) for domestic workers. What does this imply about the relative sizes of the shifts? \answer{B}
+% \begin{tasks}(1)
+%     \task The rightward shift in labor supply was larger than the rightward shift in labor demand.
+%     \task The rightward shift in labor demand was larger than the rightward shift in labor supply.
+%     \task The shifts were of exactly equal magnitude.
+%     \task The model cannot determine the relative sizes of the shifts.
+% \end{tasks}
+% \details{For the price (wage) to rise when both curves shift right, the increase in demand must be stronger than the increase in supply. This puts upward pressure on the wage that dominates the downward pressure from the supply shift.}
+
+% \Question What is the overall predicted effect of the H-1B fee policy on the nation's total output (GDP)? \answer{B}
+% \begin{tasks}(1)
+%     \task GDP will definitely increase because domestic employment rises.
+%     \task GDP will definitely decrease because the economy is now less efficient.
+%     \task GDP will remain unchanged.
+%     \task The effect is ambiguous because employment rises but capital demand falls.
+% \end{tasks}
+% \details{The fee is a distortionary tax that prevents firms from using their optimal, lowest-cost mix of inputs. This leads to an inefficient allocation of resources and a lower total output than would be possible without the fee. The economy moves inside its Production Possibilities Frontier.}
+
+% \Question In the new equilibrium, total output ($Y^*$) has fallen. The government uses the H-1B fee revenue to fund new spending ($G$). According to the income-expenditure identity ($Y = C+G$), what must be true about private consumption ($C$)? \answer{B}
+% \begin{tasks}(1)
+%     \task Consumption must have increased.
+%     \task Consumption must have decreased significantly.
+%     \task Consumption must have remained the same.
+%     \task The change in consumption is ambiguous.
+% \end{tasks}
+% \details{Rearranging the identity gives $C = Y - G$. If total output ($Y$) has fallen and government spending ($G$) has risen, consumption ($C$) must have fallen by the sum of these two effects.}
+
+% \Question From the household's perspective, what causes the predicted fall in consumption? \answer{C}
+% \begin{tasks}(1)
+%     \task Only the fall in dividend income ($\pi$).
+%     \task Only the rise in the equilibrium wage ($w$).
+%     \task The fall in total national income (Y) is larger than any potential redistribution towards domestic wages, leading to lower aggregate household income.
+%     \task The household chooses to save more in anticipation of future fees.
+% \end{tasks}
+% \details{This is the most complete answer. The household's total income is affected by both the fall in profits ($\pi$) and the rise in wages ($w$). The model predicts that the negative effect from lower overall economic output and reduced profits outweighs the benefit of a higher wage for those who are working, leading to lower total income and thus lower consumption.}
+
+% \Question If you were to measure the business cycle effects of this policy, and you observed that domestic wages rose while GDP fell, how would you classify the behavior of the real wage? \answer{B}
+% \begin{tasks}(1)
+%     \task Procyclical
+%     \task Countercyclical
+%     \task Acyclical
+%     \task Leading
+% \end{tasks}
+% \details{A countercyclical variable moves in the opposite direction of GDP. If wages rise while GDP falls, the wage is behaving countercyclically.}
+
+\Question Recall the definition of unemployment rate as the people who are unemployment out of the labor force. What is the unemployment rate \underline{\textbf{in our equilibrium model}}? \answer{C}
+\begin{tasks}(1)
+    \task Unemployment increases.
+    \task Unemployment decreases.
+    \task Unemployment is always zero.
+    \task The effect on unemployment is ambiguous.
+\end{tasks}
+\details{In the basic competitive equilibrium model, the labor market always clear, meaning labor supply equals labor demand. There is no room for involuntary unemployment by definition.}
+
+% \Question How could we enrich the model to make a more realistic prediction about unemployment? \answer{C}
+% \begin{tasks}(1)
+%     \task By making the production function have increasing returns to scale.
+%     \task By assuming households do not have a preference for leisure.
+%     \task By adding search-and-matching frictions to the labor market.
+%     \task By assuming the government runs a budget deficit.
+% \end{tasks}
+% \details{This is the standard approach in modern macroeconomics. Frictions like the time it takes for a firm to find a suitable worker and for a worker to find a suitable job can lead to a positive unemployment rate even in equilibrium.}
+
+% \Question Our model predicts the policy is inefficient and lowers total GDP. What is the primary real-world argument in favor of such a policy that our model does not capture? \answer{A}
+% \begin{tasks}(1)
+%     \task That the goal is not to maximize current GDP, but to alter the income distribution in favor of domestic workers.
+%     \task That H-1B fees will have no effect on firm behavior.
+%     \task That the government is better at allocating labor than the market.
+%     \task That higher wages for domestic workers will lead to a consumption boom that increases GDP.
+% \end{tasks}
+% \details{This is a very plausible political economy argument. The policy may be efficient at achieving a different goal: raising wages for a specific group (domestic tech workers), even if it comes at the cost of lower overall economic output. Our model focuses on efficiency, not distribution.}
+
+\Question What is the most significant weakness of using this one-period (static) model to analyze the H-1B fee policy? \answer{C}
+\begin{tasks}(1)
+    \task It cannot account for changes in firm profits.
+    \task It cannot account for the consumer's choice between work and leisure.
+    \task It ignores the dynamic effects on investment and capital accumulation over time.
+    \task It assumes that both consumption and leisure are normal goods.
+\end{tasks}
+\details{This is a crucial limitation. The model cannot analyze how the policy might affect a firm's incentive to invest in new capital (offices, servers, R\&D) or a worker's incentive to invest in their own skills over time. These dynamic effects could be very large in the long run.}
+
+\Question The model uses a representative household that owns the firm. How does this assumption simplify the analysis of the H-1B fee's effect on household income? \answer{B}
+\begin{tasks}(1)
+    \task It allows us to ignore the effect on firm profits.
+    \task It combines the wage and profit effects into a single household budget, showing that the household ultimately bears the cost of the fee through lower profits.
+    \task It assumes that only H-1B workers pay the fee.
+    \task It allows us to model workers and firm owners as having conflicting interests.
+\end{tasks}
+\details{This is the key simplification. Instead of tracking separate groups of workers and capital owners, the model shows that the household, as the owner of all factors of production, receives all income (wages and profits). Therefore, any cost imposed on the firm (like the fee) directly reduces the profit portion of the household's income.}
+
+\end{Exercise}
+
+
+\end{document}
+

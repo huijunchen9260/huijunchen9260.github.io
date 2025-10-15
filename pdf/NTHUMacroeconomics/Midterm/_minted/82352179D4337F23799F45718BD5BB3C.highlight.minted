@@ -1,0 +1,42 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZsh{} parameters}
+\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.33}
+\PYG{n}{b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.15}
+\PYG{n}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}
+\PYG{n}{t}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.5}
+
+\PYG{c}{\PYGZsh{} implicit functions}
+\PYG{n}{labor}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{a}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{b}\PYG{o}{*}\PYG{p}{(}\PYG{n}{a}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{wage}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{z}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{a}\PYG{o}{*}\PYG{n}{z}\PYG{o}{*}\PYG{n}{N}\PYG{o}{\PYGZca{}}\PYG{p}{(}\PYG{n}{a}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{gov}\PYG{p}{(}\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{w}\PYG{o}{*}\PYG{n}{t}\PYG{o}{*}\PYG{n}{N}
+
+\PYG{c}{\PYGZsh{}\PYGZsh{} find the G level at tax = 0.5}
+\PYG{n}{N}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{labor}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{)}
+\PYG{n}{w}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{wage}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{z}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}
+\PYG{n}{G}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{gov}\PYG{p}{(}\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}
+\PYG{n}{Gtarget}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{G}
+
+\PYG{c}{\PYGZsh{}\PYGZsh{} iterate all possible tax value and calculate corresponding G value}
+\PYG{n}{tnum}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1000}
+\PYG{n}{tvec}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{collect}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{range}\PYG{p}{(}\PYG{l+m+mf}{0.0001}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.999}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tnum}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{)}
+\PYG{n}{Gvec}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kt}{Array}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}\PYG{p}{(}\PYG{n+nb}{undef}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tnum}\PYG{p}{)}
+
+\PYG{k}{for}\PYG{+w}{ }\PYG{n}{indt}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{n}{tnum}
+\PYG{+w}{    }\PYG{k}{local}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{G}
+\PYG{+w}{    }\PYG{n}{t}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tvec}\PYG{p}{[}\PYG{n}{indt}\PYG{p}{]}
+\PYG{+w}{    }\PYG{n}{N}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{labor}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{w}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{wage}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{z}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{G}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{gov}\PYG{p}{(}\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{t}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{Gvec}\PYG{p}{[}\PYG{n}{indt}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{G}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{G}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{Gtarget}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mf}{0.0001}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Potential answer for Q42: At tax = }\PYG{l+s+si}{\PYGZdl{}t}\PYG{l+s}{, G = }\PYG{l+s+si}{\PYGZdl{}G}\PYG{l+s}{, Target \PYGZhy{} G = }\PYG{l+s+si}{\PYGZdl{}}\PYG{p}{(}\PYG{n}{G}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{Gtarget}\PYG{p}{)}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{end}
+\PYG{k}{end}
+
+\PYG{n}{Gmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maximum}\PYG{p}{(}\PYG{n}{Gvec}\PYG{p}{)}
+\PYG{n}{Gmaxidx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{Gvec}\PYG{p}{)}
+\PYG{n}{Tmax}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tvec}\PYG{p}{[}\PYG{n}{Gmaxidx}\PYG{p}{]}
+
+\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Q43: maximum G is achieved at tax rate }\PYG{l+s+si}{\PYGZdl{}Tmax}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Q44: maximum G is }\PYG{l+s+si}{\PYGZdl{}Gmax}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}
