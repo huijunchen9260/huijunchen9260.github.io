@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c}{\PYGZsh{} manually type all the elements}
+\PYG{+w}{    }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mf}{1.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{2.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{3.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{4.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{5.0}\PYG{+w}{ }\PYG{p}{]}
+\PYG{+w}{    }\PYG{c}{\PYGZsh{} automatically generate an \PYGZdq{}empty\PYGZdq{} array}
+\PYG{+w}{    }\PYG{c}{\PYGZsh{}               type    dim empty  row   column}
+\PYG{+w}{    }\PYG{n}{utility}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kt}{Array}\PYG{p}{\PYGZob{}}\PYG{k+kt}{Float64}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}}\PYG{p}{(}\PYG{n+nb}{undef}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cnum}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{lnum}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{utility}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{zeros}\PYG{p}{(}\PYG{n}{cnum}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{lnum}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZsh{} zero array}
+\PYG{+w}{    }\PYG{n}{utility}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ones}\PYG{p}{(}\PYG{n}{cnum}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{lnum}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZsh{} one array}
+\end{MintedVerbatim}

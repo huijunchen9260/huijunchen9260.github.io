@@ -1,104 +1,118 @@
-\documentclass[11pt,aspectratio=43]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{ulem}
-\usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
-\usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 11},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+
+\title[Lecture 9]{Lecture 11 \\ Distorting Taxes and the Welfare Theorems}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[NTHU]{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 11]{Lecture 11 \\ Distorting Taxes and the Welfare Theorems}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
-
-    \end{frame}
-}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
 
 \begin{frame}{Overview}
 \label{slide:Overview}
@@ -119,15 +133,15 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
 
 \end{frame}
 
-\section{Simplified Model}
+\section{Simplified (but Problematic) Model}
 \label{sec:Simplified_Model}
 
-\begin{frame}{SPP in Simplified Model}
+\begin{frame}{SPP in Simplified (but Problematic) Model}
 \label{slide:SPP_in_Simplified_Model}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \includegraphics[width=\textwidth]{./figures/Figure_5_14.jpg}
+                \includegraphics[width=.7\textwidth]{./figures/Figure_5_14.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -242,7 +256,7 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \caption{\scriptsize Figure 5.16  Competitive Equilibrium in the Simplified Model with a Proportional Tax on Labor Income}
-                \includegraphics[width=\textwidth]{./figures/Figure_5_16.jpg}
+                \includegraphics[width=.7\textwidth]{./figures/Figure_5_16.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -262,9 +276,6 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
     \end{columns}
 \end{frame}
 
-\section{Full Model}
-\label{sec:Full_Model}
-
 \begin{frame}{How Much Tax Revenue can be Generated?}
 \label{slide:How_Much_Tax_Revenue_can_be_Generated_}
     \begin{columns}
@@ -273,7 +284,7 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
                 \caption{\scriptsize Figure 5.17  A Laffer Curve}
                 \includegraphics[width=\textwidth]{./figures/Figure_5_17.jpg}
             \end{figure}
-            \jump{slide:Multiple_Competitive_Equilibria_Possible}{Back}
+            \goto{Back}{slide:Multiple_Competitive_Equilibria_Possible}
         \end{column}
         \begin{column}{0.5\textwidth}
             \small
@@ -290,7 +301,7 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
             ,\end{equation*}
             %
             \begin{itemize}
-                \item not just $ t = 1 $! tax \alert{rate } vs tax \alert{base}
+                \item not just $ t = 1 $! tax \alert{rate} vs tax \alert{base}
                 \item $ t = 0 $: no revenue because no tax
                 \item $ t = 1 $: no revenue because no incentive to work
             \end{itemize}
@@ -381,7 +392,7 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \caption{Figure 5.18  Two Competitive Equilibria}
-                \includegraphics[width=\textwidth]{./figures/Figure_5_18.jpg}
+                \includegraphics[width=.7\textwidth]{./figures/Figure_5_18.jpg}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -390,14 +401,37 @@ In this lecture, the \alert{distorting taxes} will include \alert{substitution e
                 \item both $ t_{1} $ and $ t_{2} $ yield the same revenue
                 \item consumer strictly better off under lower tax rate $ t_{1} $
             \end{itemize}
-            \jump{slide:How_Much_Tax_Revenue_can_be_Generated_}{Tax Revenue}
+            % \jump{Tax Revenue}{slide:How_Much_Tax_Revenue_can_be_Generated_}
         \end{column}
     \end{columns}
 \end{frame}
 
+
+\begin{frame}{What's wrong with this model?}
+\label{slide:What_s_wrong_with_this_model_}
+
+Recall that $ Y = z N^{d} $ implies labor supply $ N^{s}(t) $ equals to
+
+%
+\begin{equation}
+\label{eq:laborSupplyTaxRate}
+    N^{s}(t) = 1 - l = \frac{1}{2} - \frac{\pi}{2(1-t)}
+,\end{equation}
+%
+and the total tax revenue is given by
+%
+\begin{equation}
+\label{eq:govTaxRevenue}
+    R(t) = w t N^{s}(t)
+.\end{equation}
+%
+In equilibrium $ w = z = 1 $, so $ \pi = z N^{d} - w N^{d} = 0 $, so this question is trivial...Stay tuned with Problem Sets \faSmileWink[regular]
+
+\end{frame}
+
 \begin{frame}{Conclusion}
 \label{slide:Conclusion}
-    We’ve focused on the simple case to keep analysis straightforward, but logic applies more broadly.
+    We've focused on the simple case to keep analysis straightforward, but logic applies more broadly.
     \begin{itemize}
         \item SPP: $ MRS_{l, C} = MRT_{l, C} = MPN $, since PPF is $ C = z F( K, N ) - G $
         \item CE: same distortion as our simple case:

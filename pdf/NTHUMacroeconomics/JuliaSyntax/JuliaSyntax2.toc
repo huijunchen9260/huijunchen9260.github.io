@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Basic Julia Usage}{2}{0}{1}
+\beamer@sectionintoc {2}{Syntax}{7}{0}{2}
+\beamer@sectionintoc {3}{Laffer curve}{16}{0}{3}
+\beamer@sectionintoc {4}{Gov Spending}{22}{0}{4}

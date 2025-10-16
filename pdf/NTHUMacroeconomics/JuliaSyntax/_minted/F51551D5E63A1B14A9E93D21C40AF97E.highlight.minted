@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n}{cval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{cgrid}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{c}{\PYGZsh{} get the first element of cgrid}
+\PYG{+w}{    }\PYG{n}{lval}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{lgrid}\PYG{p}{[}\PYG{l+m+mi}{5}\PYG{p}{]}\PYG{+w}{ }\PYG{c}{\PYGZsh{} get the fifth element of lgrid}
+\end{MintedVerbatim}

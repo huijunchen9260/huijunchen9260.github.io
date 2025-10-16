@@ -1,0 +1,2297 @@
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025/Homebrew)  (format=lualatex 2025.3.7)  16 OCT 2025 07:47
+ system commands enabled.
+ file:line:error style messages enabled.
+**JuliaSyntax2.tex
+(./JuliaSyntax2.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended collection.
+luaotfload | conf : Root cache directory is "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2025/02/04 v3.72 A class for typesetting presentations
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
+)
+\beamer@tempbox=\box52
+\beamer@tempcount=\count195
+\c@beamerpauses=\count196
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+\beamer@slideinframe=\count197
+\beamer@minimum=\count198
+\beamer@decode@box=\box53
+)
+\beamer@commentbox=\box54
+\beamer@modecount=\count199
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\headdp=\dimen140
+\footheight=\dimen141
+\sidebarheight=\dimen142
+\beamer@tempdim=\dimen143
+\beamer@finalheight=\dimen144
+\beamer@animht=\dimen145
+\beamer@animdp=\dimen146
+\beamer@animwd=\dimen147
+\beamer@leftmargin=\dimen148
+\beamer@rightmargin=\dimen149
+\beamer@leftsidebar=\dimen150
+\beamer@rightsidebar=\dimen151
+\beamer@boxsize=\dimen152
+\beamer@vboxoffset=\dimen153
+\beamer@descdefault=\dimen154
+\beamer@descriptionwidth=\dimen155
+\beamer@lastskip=\skip49
+\beamer@areabox=\box55
+\beamer@animcurrent=\box56
+\beamer@animshowbox=\box57
+\beamer@sectionbox=\box58
+\beamer@logobox=\box59
+\beamer@linebox=\box60
+\beamer@sectioncount=\count266
+\beamer@subsubsectionmax=\count267
+\beamer@subsectionmax=\count268
+\beamer@sectionmax=\count269
+\beamer@totalheads=\count270
+\beamer@headcounter=\count271
+\beamer@partstartpage=\count272
+\beamer@sectionstartpage=\count273
+\beamer@subsectionstartpage=\count274
+\beamer@animationtempa=\count275
+\beamer@animationtempb=\count276
+\beamer@xpos=\count277
+\beamer@ypos=\count278
+\beamer@ypos@offset=\count279
+\beamer@showpartnumber=\count280
+\beamer@currentsubsection=\count281
+\beamer@coveringdepth=\count282
+\beamer@sectionadjust=\count283
+\beamer@toclastsection=\count284
+\beamer@tocsectionnumber=\count285
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+))
+\beamer@paperwidth=\skip50
+\beamer@paperheight=\skip51
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks18
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box61
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen166
+\pgf@xa=\dimen167
+\pgf@xb=\dimen168
+\pgf@xc=\dimen169
+\pgf@y=\dimen170
+\pgf@ya=\dimen171
+\pgf@yb=\dimen172
+\pgf@yc=\dimen173
+\c@pgf@counta=\count289
+\c@pgf@countb=\count290
+\c@pgf@countc=\count291
+\c@pgf@countd=\count292
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count293
+\pgfmath@box=\box62
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
+))) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count295
+\c@pgf@countb=\count296
+\c@pgf@countc=\count297
+\c@pgf@countd=\count298
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count299
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count300
+\pgfsyssoftpath@bigbuffer@items=\count301
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 265.
+
+Package xcolor Info: Driver file: luatex.def on input line 274.
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count302
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen261
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen265
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box66
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+
+
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 14.
+
+\XC@nummixins=\count305
+\XC@countmixins=\count306
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks29
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count307
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen267
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count310
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4040.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4040.
+Package hyperref Info: Option `implicit' set `false' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count311
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen268
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count312
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Hy@abspage=\count313
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count314
+\c@bookmark@seq@number=\count315
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaserequires.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasefont.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2020/01/31
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
+))))) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+\beamer@argscount=\count316
+\beamer@lastskipcover=\skip52
+\beamer@trivlistdepth=\count317
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetitle.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+\c@lecture=\count318
+\c@part=\count319
+\c@section=\count320
+\c@subsection=\count321
+\c@subsubsection=\count322
+)
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+\beamer@framebox=\box67
+\beamer@frametitlebox=\box68
+\beamer@zoombox=\box69
+\beamer@zoomcount=\count323
+\beamer@zoomframecount=\count324
+\beamer@frametextheight=\dimen271
+\c@subsectionslide=\count325
+\beamer@frametopskip=\skip53
+\beamer@framebottomskip=\skip54
+\beamer@frametopskipautobreak=\skip55
+\beamer@framebottomskipautobreak=\skip56
+\beamer@envbody=\toks31
+\framewidth=\dimen272
+\c@framenumber=\count326
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+\beamer@splitbox=\box70
+\beamer@autobreakcount=\count327
+\beamer@autobreaklastheight=\dimen273
+\beamer@frametitletoks=\toks32
+\beamer@framesubtitletoks=\toks33
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+\beamer@footins=\box71
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasecolor.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+\beamer@frameboxcopy=\box72
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+\beamer@sbttoks=\toks34
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+\bmb@box=\box73
+\bmb@colorbox=\box74
+\bmb@boxwidth=\dimen274
+\bmb@boxheight=\dimen275
+\bmb@prevheight=\dimen276
+\bmb@temp=\dimen277
+\bmb@dima=\dimen278
+\bmb@dimb=\dimen279
+\bmb@prevheight=\dimen280
+)
+\beamer@blockheadheight=\dimen281
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
+\@enLab=\toks35
+)
+\beamer@bibiconwidth=\skip57
+\c@figure=\count328
+\c@table=\count329
+\abovecaptionskip=\skip58
+\belowcaptionskip=\skip59
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex)
+\beamer@section@min@dim=\dimen282
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen283
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen284
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count330
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count331
+\leftroot@=\count332
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count333
+\DOTSCASE@=\count334
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box75
+\strutbox@=\box76
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen285
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count335
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count336
+\dotsspace@=\muskip18
+\c@parentequation=\count337
+\dspbrk@lvl=\count338
+\tag@help=\toks37
+\row@=\count339
+\column@=\count340
+\maxfields@=\count341
+\andhelp@=\toks38
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
+\@envbody=\toks39
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks41
+\thm@bodyfont=\toks42
+\thm@headfont=\toks43
+\thm@notefont=\toks44
+\thm@headpunct=\toks45
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks46
+)
+\c@theorem=\count342
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+\beamer@dima=\dimen292
+\beamer@dimb=\dimen293
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/Users/huijunchen/.config/latex/tex/latex/metropolis/beamerthememetropolis.sty
+Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks47
+\pgfopts@list@add@b@toks=\toks48
+) (/Users/huijunchen/.config/latex/tex/latex/metropolis/beamerinnerthememetropolis.sty
+Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count343
+\calc@Bcount=\count344
+\calc@Adimen=\dimen294
+\calc@Bdimen=\dimen295
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count345
+\calc@Cskip=\skip68
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box77
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
+)
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count346
+\pgfplotmarksize=\dimen300
+)
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count347
+\tikznumberofchildren=\count348
+\tikznumberofcurrentchild=\count349
+\tikz@fig@count=\count350
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count351
+\pgfmatrixcurrentcolumn=\count352
+\pgf@matrix@numberofcolumns=\count353
+)
+\tikz@expandcount=\count354
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\metropolis@titleseparator@linewidth=\skip69
+\metropolis@progressonsectionpage=\skip70
+\metropolis@progressonsectionpage@linewidth=\skip71
+\metropolis@blocksep=\skip72
+\metropolis@blockadjust=\skip73
+\metropolis@parskip=\skip74
+) (/Users/huijunchen/.config/latex/tex/latex/metropolis/beamerouterthememetropolis.sty
+Package: beamerouterthememetropolis 2017/01/23 Metropolis outer theme
+\metropolis@frametitle@padding=\skip75
+\metropolis@progressinheadfoot=\skip76
+\metropolis@progressinheadfoot@linewidth=\skip77
+) (/Users/huijunchen/.config/latex/tex/latex/metropolis/beamercolorthememetropolis.sty
+Package: beamercolorthememetropolis 2017/01/23 Metropolis color theme
+) (/Users/huijunchen/.config/latex/tex/latex/metropolis/beamerfontthememetropolis.sty
+Package: beamerfontthememetropolis 2017/01/23 Metropolis font theme
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontspec/fontspec.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count355
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box82
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count356
+\l__fontspec_language_int=\count357
+\l__fontspec_strnum_int=\count358
+\l__fontspec_tmp_int=\count359
+\l__fontspec_tmpa_int=\count360
+\l__fontspec_tmpb_int=\count361
+\l__fontspec_tmpc_int=\count362
+\l__fontspec_em_int=\count363
+\l__fontspec_emdef_int=\count364
+\l__fontspec_strong_int=\count365
+\l__fontspec_strongdef_int=\count366
+\l__fontspec_tmpa_dim=\dimen309
+\l__fontspec_tmpb_dim=\dimen310
+\l__fontspec_tmpc_dim=\dimen311
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+\c@fontsnotfound=\count367
+luaotfload | cache : Lookup cache loaded from /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSansLight(0)' created for font 'Fira
+(fontspec)             Sans Light' with options
+(fontspec)             [Ligatures=TeX,ItalicFont={Fira Sans Light
+(fontspec)             Italic},BoldFont={Fira Sans},BoldItalicFont={Fira Sans
+(fontspec)             Italic}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Fira Sans
+(fontspec)             Light:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"name:Fira
+(fontspec)             Sans
+(fontspec)             Light:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"name:Fira
+(fontspec)             Sans:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Fira
+(fontspec)             Sans:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"name:Fira Sans
+(fontspec)             Light
+(fontspec)             Italic:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Fira Sans Light
+(fontspec)             Italic:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"name:Fira
+(fontspec)             Sans Italic:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Fira Sans
+(fontspec)             Italic:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Fira Mono Medium/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMono(0)' created for font 'Fira Mono'
+(fontspec)             with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,BoldFont={Fira
+(fontspec)             Mono Medium}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Fira
+(fontspec)             Mono:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"name:Fira Mono
+(fontspec)             Medium:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"name:Fira
+(fontspec)             Mono/I:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"name:Fira
+(fontspec)             Mono/BI:mode=node;script=latn;language=dflt;"
+
+))
+
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 8.
+
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read3
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box83
+\tcb@upperbox=\box84
+\tcb@lowerbox=\box85
+\tcb@phantombox=\box86
+\c@tcbbreakpart=\count368
+\c@tcblayer=\count369
+\c@tcolorbox@number=\count370
+\l__tcobox_tmpa_box=\box87
+\l__tcobox_tmpa_dim=\dimen312
+\tcb@temp=\box88
+\tcb@temp=\box89
+\tcb@temp=\box90
+\tcb@temp=\box91
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip78
+\bibsep=\skip79
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count371
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fira/FiraSans.sty
+Package: FiraSans 2022/09/17 (Bob Tennent and autoinst) Style file for Fira Sans fonts.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks53
+\XKV@tempa@toks=\toks54
+)
+\XKV@depth=\count372
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(0)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Ligatures=TeX,Numbers =
+(fontspec)             {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 138.
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(1)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(2)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-LightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(3)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Monospaced,OldStyle},UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-LightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Thin scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Thin scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Thin scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ThinItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ThinItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(4)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Thin,ItalicFont = *-ThinItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ThinItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ThinItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Light scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraLightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraLightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(5)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-ExtraLight,ItalicFont = *-ExtraLightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraLight.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraLight.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraLightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraLightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-UltraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-UltraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-UltraLight scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-UltraLightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-UltraLightItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(6)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-UltraLight,ItalicFont = *-UltraLightItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-UltraLight.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-UltraLight.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-UltraLightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-UltraLightItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Medium scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Medium scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Medium scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-MediumItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-MediumItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(7)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Medium,ItalicFont = *-MediumItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Medium.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Medium.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-MediumItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-MediumItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Book scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Book scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Book scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BookItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BookItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(8)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Book,ItalicFont = *-BookItalic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Book.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Book.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BookItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BookItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-SemiBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-SemiBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-SemiBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-SemiBoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-SemiBoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(9)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-SemiBold,ItalicFont = *-SemiBoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-SemiBold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-SemiBold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-SemiBoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-SemiBoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraBoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-ExtraBoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(10)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-ExtraBold,ItalicFont = *-ExtraBoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraBoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-ExtraBoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Heavy scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Heavy scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-Heavy scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-HeavyItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraSans-HeavyItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(11)' created for font 'FiraSans'
+(fontspec)             with options [Ligatures = TeX,Scale = 1,Extension =
+(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Heavy,ItalicFont = *-HeavyItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Heavy.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-Heavy.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-HeavyItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraSans-HeavyItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fira/FiraMono.sty
+Package: FiraMono 2022/09/17 (Bob Tennent and autoinst) Style file for Fira Mono fonts.
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Oblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-BoldOblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMono(1)' created for font 'FiraMono'
+(fontspec)             with options [Ligatures = TeX,HyphenChar=None,Scale =
+(fontspec)             1,Extension =
+(fontspec)             .otf,WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,Numbers
+(fontspec)             = {Monospaced,OldStyle},UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Oblique,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldOblique].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Oblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-BoldOblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Oblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-BoldOblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMono(2)' created for font 'FiraMono'
+(fontspec)             with options [Ligatures = TeX,HyphenChar=None,Scale =
+(fontspec)             1,Extension = .otf,Numbers =
+(fontspec)             {Monospaced,OldStyle},UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Oblique,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldOblique].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Oblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-BoldOblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Oblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-BoldOblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMono(3)' created for font 'FiraMono'
+(fontspec)             with options [Ligatures = TeX,HyphenChar=None,Scale =
+(fontspec)             1,Extension = .otf,Numbers =
+(fontspec)             {Monospaced,Tabular},UprightFont = *-Regular,ItalicFont
+(fontspec)             = *-Oblique,BoldFont = *-Bold,BoldItalicFont =
+(fontspec)             *-BoldOblique].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Oblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-BoldOblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;"
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Medium scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Medium scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-Oblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             FiraMono-BoldOblique scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMono(4)' created for font 'FiraMono'
+(fontspec)             with options [Ligatures = TeX,HyphenChar=None,Scale =
+(fontspec)             1,Extension = .otf,Numbers =
+(fontspec)             {Monospaced,OldStyle},UprightFont = *-Medium,ItalicFont
+(fontspec)             = *-Oblique,BoldFont = *-Bold,BoldItalicFont =
+(fontspec)             *-BoldOblique].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Medium.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-Oblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[FiraMono-BoldOblique.otf]:mode=node;script=latn;language=dflt;+tlig;+tnum;+onum;"
+
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+FiraSans(0) on input line 116.
+LaTeX Font Info:    No file T1FiraSans(0).fd. on input line 116.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Font Warning: Font shape `T1/FiraSans(0)/m/n' undefined
+(Font)              using `T1/lmr/m/n' instead on input line 116.
+
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex)
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FontAwesome/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FontAwesome/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FontAwesome/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FontAwesome(0)' created for font
+(fontspec)             'FontAwesome' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:FontAwesome:mode=node;language=dflt;"
+
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2025/03/06 v3.6.0 Yet another Pygments shim for LaTeX
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2025/03/04 v1.12.0 fvextra - extensions and patches for fancyvrb
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count373
+\FV@InFile=\read4
+\FV@TabBox=\box92
+\c@FancyVerbLine=\count374
+\FV@StepNumber=\count375
+\FV@OutFile=\write5
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/01/29 line numbers on paragraphs v5.4
+\linenopenalty=\count376
+\output=\toks55
+\linenoprevgraf=\count377
+\linenumbersep=\dimen313
+\linenumberwidth=\dimen314
+\c@linenumber=\count378
+\c@pagewiselinenumber=\count379
+\c@LN@truepage=\count380
+\c@internallinenumber=\count381
+\c@internallinenumbers=\count382
+\quotelinenumbersep=\dimen315
+\bframerule=\dimen316
+\bframesep=\dimen317
+\bframebox=\box93
+\@LN@amsmath@ams@eqpen=\count383
+LaTeX Info: Redefining \\ on input line 3187.
+)
+\c@FancyVerbWriteLine=\count384
+\c@FancyVerbBufferLine=\count385
+\c@FV@TrueTabGroupLevel=\count386
+\c@FV@TrueTabCounter=\count387
+\FV@TabBox@Group=\box94
+\FV@bgcolorstructbox=\box95
+\FV@TmpLength=\skip80
+\c@FV@HighlightLinesStart=\count388
+\c@FV@HighlightLinesStop=\count389
+\FV@LoopCount=\count390
+\FV@NCharsBox=\box96
+\FV@BreakIndent=\dimen318
+\FV@BreakIndentNChars=\count391
+\FV@BreakSymbolSepLeft=\dimen319
+\FV@BreakSymbolSepLeftNChars=\count392
+\FV@BreakSymbolSepRight=\dimen320
+\FV@BreakSymbolSepRightNChars=\count393
+\FV@BreakSymbolIndentLeft=\dimen321
+\FV@BreakSymbolIndentLeftNChars=\count394
+\FV@BreakSymbolIndentRight=\dimen322
+\FV@BreakSymbolIndentRightNChars=\count395
+\c@FancyVerbLineBreakLast=\count396
+\FV@LineBox=\box97
+\FV@LineIndentBox=\box98
+\c@FV@BreakBufferDepth=\count397
+\FV@LineWidth=\dimen323
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2025/03/03 v0.5.0 latex2pydata - write data to file in Python literal format
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count398
+\float@exts=\toks56
+\float@box=\box99
+\@float@everytoks=\toks57
+\@floatcapt=\box100
+)
+\c@minted@FancyVerbLineTemp=\count399
+\@float@every@listing=\toks58
+\c@listing=\count400
+)
+
+LaTeX Font Warning: Font shape `T1/FiraSans(0)/light/n' undefined
+(Font)              using `T1/FiraSans(0)/m/n' instead on input line 102.
+
+(./JuliaSyntax2.aux
+
+LaTeX Warning: Label `slide:Grid_search__structure__cont__' multiply defined.
+
+
+LaTeX Warning: Label `slide:grid_search__better_figure' multiply defined.
+
+)
+\openout1 = JuliaSyntax2.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(14.22636pt, 426.79135pt, 14.22636pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=256.0748pt
+* \textwidth=426.79135pt
+* \textheight=227.62207pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=14.22636pt
+* \marginparwidth=3.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count401
+\scratchdimen=\dimen324
+\scratchbox=\box101
+\nofMPsegments=\count402
+\nofMParguments=\count403
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count404
+\MPscratchDim=\dimen325
+\MPnumerator=\count405
+\makeMPintoPDFobject=\count406
+\everyMPtoPDFconversion=\toks60
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 102.
+ (./JuliaSyntax2.out) (./JuliaSyntax2.out)
+\@outlinefile=\write6
+
+\openout6 = JuliaSyntax2.out
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 102.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 102.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 102.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> T1/FiraSans(0)/m/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> T1/FiraSans(0)/m/n on input line 102.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 102.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> T1/FiraMono(1)/m/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> T1/FiraMono(1)/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/b/n --> T1/lmr/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/FiraSans(0)/m/n --> T1/FiraSans(0)/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/FiraMono(1)/m/n --> T1/FiraMono(1)/b/n on input line 102.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 102.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `normal' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 102.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `bold' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 102.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 102.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+) (./JuliaSyntax2.nav)
+
+LaTeX Font Warning: Font shape `T1/FiraSans(0)/medium/n' undefined
+(Font)              using `T1/FiraSans(0)/m/n' instead on input line 107.
+
+
+Overfull \vbox (41.30022pt too high) detected at line 107
+ []
+
+
+
+[1
+
+{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] (./JuliaSyntax2.toc)
+
+[2
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 124.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 124.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 124.
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+
+[3
+
+]
+LaTeX Font Info:    Trying to load font information for T1+FiraMono(1) on input line 139.
+LaTeX Font Info:    No file T1FiraMono(1).fd. on input line 139.
+LaTeX Font Info:    Font shape `TU/FiraMono(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 139.
+
+
+[4
+
+]
+\pydata@fh@_118DB811E5F57CCF1FBE93D1C1028D28.data.minted=\write7
+
+\openout7 = _118DB811E5F57CCF1FBE93D1C1028D28.data.minted
+runsystem(latexminted config  --timestamp 20251016074716 118DB811E5F57CCF1FBE93D1C1028D28)...executed.
+ (./_118DB811E5F57CCF1FBE93D1C1028D28.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20251016074716 118DB811E5F57CCF1FBE93D1C1028D28)...executed.
+ (./_minted/default.style.minted) (./_minted/AB088D835BA31DA441D7BAE5F38EE84C.highlight.minted
+LaTeX Font Info:    Font shape `TU/FiraMono(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 3.
+) (./_minted/3202DAB846B2AE0260E314901FD8E6BD.highlight.minted) (./_minted/17A6CE6BC94034D7FA580774A2F4B51F.highlight.minted) (./_minted/992B45D015A447255549B3C2F3D4D843.highlight.minted) (./_minted/60B25BB62E9F009F4E9EADA2834D2190.highlight.minted) (./_minted/D0D60702DD303ECD698F93709551BB45.highlight.minted) (./_minted/14F683AB1E52C335438458867BB4F37B.highlight.minted) (./_minted/6F6604C3D6D5BB7DB95E77C26B04570C.highlight.minted) (./_minted/3202DAB846B2AE0260E314901FD8E6BD.highlight.minted)
+
+[5
+
+] (./_minted/B347AF3D5652B2E565411A4A7D36F34B.highlight.minted) (./_minted/CE0E635116D7FBAADEC47BCA7D52E64D.highlight.minted) (./_minted/E4620E791E7D46D2D25A3675F28FCCD2.highlight.minted
+LaTeX Font Info:    Font shape `TU/FiraMono(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 3.
+) (./_minted/24910EABBA4C811A907CD83407DFE91F.highlight.minted)
+
+[6
+
+] (./JuliaSyntax2.toc)
+
+[7
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/B0A8C48F3F03178AC1F47431280DFA60.highlight.minted) (./_minted/63D0D253139A41E9B00758FC2B113184.highlight.minted) (./_minted/63D0D253139A41E9B00758FC2B113184.highlight.minted) (./_minted/5D4C9E2C05FFA8E11248526BFB68DAF0.highlight.minted) (./_minted/8DC20BE3BE4928107F2DA5B5A53CBC15.highlight.minted) (./_minted/0E9417F2D9CB21D9CCA422E388592883.highlight.minted) (./_minted/B0A8C48F3F03178AC1F47431280DFA60.highlight.minted) (./_minted/63D0D253139A41E9B00758FC2B113184.highlight.minted) (./_minted/F381DA068C4D18EDD5370CAC0A742B9B.highlight.minted))
+
+[8
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/8BEB4282BD329E5EAD0C4F3A23CC415B.highlight.minted) (./_minted/F51551D5E63A1B14A9E93D21C40AF97E.highlight.minted
+LaTeX Font Info:    Font shape `TU/FiraMono(1)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 2.
+) (./_minted/7FFDF7EA309FA489DF0598E1CDD1F822.highlight.minted))
+
+[9
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/24910EABBA4C811A907CD83407DFE91F.highlight.minted) (./_minted/77D2A4E5BACCB6A2DBCAAF791A51457A.highlight.minted)) (./_minted/24910EABBA4C811A907CD83407DFE91F.highlight.minted
+LaTeX Font Info:    Font shape `TU/FiraMono(1)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+)
+
+[10
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/E087B809A723622A0B8A400D3145E5E8.highlight.minted) (./_minted/7C3A62D8BBF91E01D1E45F5873271261.highlight.minted) (./_minted/17A6CE6BC94034D7FA580774A2F4B51F.highlight.minted) (./_minted/83847D1ADAEFC36BF9F8A22805AE602F.highlight.minted) (./_minted/9855A389CF5C4E5B994740985565620F.highlight.minted) (./_minted/FB939B8750E1664A41F3921BE960D079.highlight.minted)
+<./figures/utility.png, id=129, 1384.6932pt x 716.9184pt>
+File: ./figures/utility.png Graphic file (type png)
+<use ./figures/utility.png>
+Package luatex.def Info: ./figures/utility.png  used on input line 14.
+(luatex.def)             Requested size: 256.07741pt x 132.57312pt.
+)
+Overfull \vbox (17.14078pt too high) detected at line 259
+ []
+
+
+
+[11
+
+<./figures/utility.png>]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/101CC92EB846E80764A7BA11E55332CB.highlight.minted)
+<./figures/utility_contour.png, id=138, 1384.6932pt x 716.9184pt>
+File: ./figures/utility_contour.png Graphic file (type png)
+<use ./figures/utility_contour.png>
+Package luatex.def Info: ./figures/utility_contour.png  used on input line 10.
+(luatex.def)             Requested size: 341.43437pt x 176.76782pt.
+)
+Overfull \vbox (23.73563pt too high) detected at line 273
+ []
+
+
+
+[12
+
+<./figures/utility_contour.png>]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/24910EABBA4C811A907CD83407DFE91F.highlight.minted) (./_minted/18D6C2FB5A2B43665CAB4AB4966808F3.highlight.minted) (./_minted/B5A24DACB2E874AFDD5E05C2620F4AC6.highlight.minted) (./_minted/18D6C2FB5A2B43665CAB4AB4966808F3.highlight.minted) (./_minted/0C68997B4530D6F71479321B4DA3D004.highlight.minted) (./_minted/18D6C2FB5A2B43665CAB4AB4966808F3.highlight.minted) (./_minted/3ADE488DF6B054BA159ECE85A13B6B56.highlight.minted)) (./_minted/18D6C2FB5A2B43665CAB4AB4966808F3.highlight.minted)
+
+[13
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/E4620E791E7D46D2D25A3675F28FCCD2.highlight.minted) (./_minted/5ED944F97F6628660F015A0EB9F3F690.highlight.minted) (./_minted/E8128D39415BA06A690352B71F0029A3.highlight.minted) (./_minted/EDEACA07B07B9EF8F9F64EF57361E42D.highlight.minted) (./_minted/D9F170ED99238115A6D364345F59A65C.highlight.minted) (./_minted/6905170A3543E92BB118DC41F81BE646.highlight.minted)) (./_minted/E4620E791E7D46D2D25A3675F28FCCD2.highlight.minted)
+Overfull \vbox (19.0668pt too high) detected at line 320
+ []
+
+
+
+[14
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/FE8A2B671E1562DBE57DAC3886072E37.highlight.minted))
+
+[15
+
+] (./JuliaSyntax2.toc)
+
+[16
+
+]
+
+[17
+
+]
+
+[18
+
+]
+Overfull \vbox (1.1027pt too high) detected at line 424
+ []
+
+
+
+[19
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/034F2B629E112E0D1902E30C0DEBB21E.highlight.minted))
+
+[20
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/3A79E191C576D0192B524399F9B943C0.highlight.minted)
+<./figures/lafferCurve.png, id=206, 1384.6932pt x 716.9184pt>
+File: ./figures/lafferCurve.png Graphic file (type png)
+<use ./figures/lafferCurve.png>
+Package luatex.def Info: ./figures/lafferCurve.png  used on input line 8.
+(luatex.def)             Requested size: 298.75264pt x 154.67047pt.
+)
+Overfull \vbox (1.63828pt too high) detected at line 453
+ []
+
+
+
+[21
+
+<./figures/lafferCurve.png>] (./JuliaSyntax2.toc)
+
+[22
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/4207D05EBE92EA4500AECE694D8548C9.highlight.minted) (./_minted/CDED78A087D9517DD5CCD56C9F9CB975.highlight.minted))
+
+[23
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/4207D05EBE92EA4500AECE694D8548C9.highlight.minted) (./_minted/1C99A4435C438D159F8ACAD76F1FDF49.highlight.minted))
+
+[24
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/FEE2C2CF70474CD1E3DFAE36B87016DB.highlight.minted))
+
+[25
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/D502BCA0452F64724C4650880A0EA146.highlight.minted))
+
+[26
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/84D0D8FB741E7509C40E9244DF85B16C.highlight.minted))
+
+[27
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/F045E61237E48FE22DAB517F28064E54.highlight.minted) (./_minted/C6ED292547D0B5F0280AAFB2C327C63A.highlight.minted) (./_minted/DD1C62D0A489C39008823D22CC2FEB14.highlight.minted))
+
+[28
+
+]
+<./figures/utilitygov_wrong.png, id=266, 1384.6932pt x 716.9184pt>
+File: ./figures/utilitygov_wrong.png Graphic file (type png)
+<use ./figures/utilitygov_wrong.png>
+Package luatex.def Info: ./figures/utilitygov_wrong.png  used on input line 594.
+(luatex.def)             Requested size: 426.79135pt x 220.96251pt.
+
+Overfull \vbox (22.69046pt too high) detected at line 594
+ []
+
+
+
+[29
+
+<./figures/utilitygov_wrong.png>]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb
+warning  (pdf backend): ignoring duplicate destination with the name 'slide:Grid_search__structure__cont__'
+(./_minted/B5023531F19E912E7C478BAB57A981DE.highlight.minted)) (./_minted/A208D35C8DD5F0DD63D7D6FC6B569387.highlight.minted)
+
+[30
+
+]
+<./figures/utilitygov_correct.png, id=280, 1384.6932pt x 716.9184pt>
+File: ./figures/utilitygov_correct.png Graphic file (type png)
+<use ./figures/utilitygov_correct.png>
+Package luatex.def Info: ./figures/utilitygov_correct.png  used on input line 620.
+(luatex.def)             Requested size: 426.79135pt x 220.96251pt.
+
+Overfull \vbox (22.69046pt too high) detected at line 620
+ []
+
+
+
+[31
+
+<./figures/utilitygov_correct.png>]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/18730D3D915CA9649F8BF10014D3AAD7.highlight.minted) (./_minted/22A6C8B607A56E391AD78FD6C7F9F4F4.highlight.minted) (./_minted/3ADB57E98A1F63F6B99D41B9FB1D8A63.highlight.minted))
+
+[32
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/5957FD67D03F4C275E5DFC9AE69ADFD2.highlight.minted))
+
+[33
+
+]
+\openout4 = JuliaSyntax2.vrb
+ (./JuliaSyntax2.vrb (./_minted/7F1CC0F6AB4E73BBE8F81206579A8D49.highlight.minted))
+
+[34
+
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'slide:grid_search__better_figure'
+<./figures/utilitygov_better.png, id=307, 1384.6932pt x 716.9184pt>
+File: ./figures/utilitygov_better.png Graphic file (type png)
+<use ./figures/utilitygov_better.png>
+Package luatex.def Info: ./figures/utilitygov_better.png  used on input line 687.
+(luatex.def)             Requested size: 426.79135pt x 220.96251pt.
+
+Overfull \vbox (22.69046pt too high) detected at line 687
+ []
+
+
+
+[35
+
+<./figures/utilitygov_better.png>] (./_minted/19E07DEE10B7EA7E47CA6EB8727E0893.highlight.minted) (./_minted/9961C670AAE5DFFB8B3A83BBF9056FCE.highlight.minted)
+
+[36
+
+]
+\tf@nav=\write8
+
+\openout8 = JuliaSyntax2.nav
+\tf@toc=\write9
+
+\openout9 = JuliaSyntax2.toc
+\tf@snm=\write10
+
+\openout10 = JuliaSyntax2.snm
+ (./JuliaSyntax2.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `JuliaSyntax2.out' has not changed.
+(rerunfilecheck)             Checksum: 6BCC2532D40F6F93BBF0455CAADA9887;419.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 38045 strings out of 475506
+ 125031,1648299 words of node,token memory allocated
+ 5520 words of node memory still in use:
+   44 hlist, 11 vlist, 9 rule, 17 disc, 6 local_par, 12 math, 117 glue, 33 kern, 17 penalty, 349 glyph, 131 attribute, 72 glue_spec, 131 attribute_list, 6 write, 10 pdf_literal, 1 pdf_dest, 38 pdf_colorstack nodes
+   avail lists: 1:4,2:2071,3:222,4:1013,5:361,6:43,7:1958,8:47,9:797,10:18,11:104
+ 59355 multiletter control sequences out of 65536+600000
+ 134 fonts using 30584295 bytes
+ 128i,18n,139p,1961b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/opentype/public/fira/FiraMono-Oblique.otf></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/opentype/public/fira/FiraMono-Bold.otf></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/opentype/public/fira/FiraMono-Regular.otf></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/f
+onts/type1/public/cm-super/sfss0500.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on JuliaSyntax2.pdf (36 pages, 2144130 bytes).
+
+PDF statistics: 405 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 114 named destinations out of 1000 (max. 131072)
+ 48 words of extra memory for PDF output out of 10000 (max. 100000000)
+
