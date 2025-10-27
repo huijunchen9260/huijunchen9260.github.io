@@ -1,0 +1,394 @@
+\documentclass[12pt]{article}
+
+% \usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+\usepackage{natbib}
+% \addbibresource{$BIB} % bibtex location
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+
+\usepackage{xcolor}
+ \usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\def\blue{\color{blue}}
+\def\orange{\color{orange}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\centerline{\huge\bf Syllabus: Macroeconomics II}
+\medskip
+\centerline{\LARGE \bf Spring 2026}
+\medskip
+\centerline{\Large Instructor: Hui-Jun Chen}
+\centerline{Last Update: \today}
+\centerline{Lastest Version: \href{https://huijunchen9260.github.io/pdf/MacroeconomicsIISpring2026/syllabus/syllabus.pdf}{Click Here}}
+
+\medskip
+
+% \tableofcontents
+
+% \newpage
+
+\section*{Course Overview}
+\addcontentsline{toc}{section}{Course Overview}
+\begin{itemize}
+
+    \item Course website:
+    \begin{itemize}
+
+       \item Materials: \href{https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html}{Webpage}
+    \end{itemize}
+    \item Meeting Time: Thursday 10:10 - 13:00 (R34n)
+    \item Location: TSMC Building 224
+    \item Office: TSMC Building 729-B
+    \item Email address: \href{huijunchen@mx.nthu.edu.tw}{huijunchen@mx.nthu.edu.tw}
+    \item Please do not hesitate to email me and set an appointment outside of regular office hour.
+To get quicker email reply, I would prefer you to:
+    \begin{enumerate}
+        \item Use \texttt{[Macro]} at the beginning of your subject title.
+\begin{itemize}
+            \item example title: \texttt{[Macro] Question regarding Extra credit}
+        \end{itemize}
+    \end{enumerate}
+    \item I will reply your email within \textit{2 business day}.
+\item Office hour: By appointment
+    \item Teaching Assistant:
+    \begin{enumerate}
+        \item 陳建廷(email: \href{ericchen904230331@gmail.com}{ericchen904230331@gmail.com})
+        \item 曾子齊(email: \href{freeboard2001@gmail.com}{freeboard2001@gmail.com})
+    \end{enumerate}
+    \item TA Office hour: 15:20 - 16:20, Tuesday at Room 515, TSMC Building
+\end{itemize}
+
+\newpage
+
+\section*{Grades}
+\addcontentsline{toc}{section}{Grades}
+
+\newlength\q
+\setlength\q{\dimexpr .5\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\q}|p{\q}|}
+    \hline
+    Categories  & Points \\
+    \hline
+    \hline
+    Problem sets on course material   & 20 points \\
+    \hline
+    Midterm Exam
+I & 20 points \\
+    \hline
+    Midterm Exam II & 20 points \\
+    \hline
+    Final Exam & 30 points \\
+    \hline
+    Attendance & 10 points \\
+    \hline
+    Total & 100 points \\
+    \hline
+\end{tabular}
+\textit{See course schedule, below, for due dates} \\
+
+
+\section*{Grading Policy}
+\addcontentsline{toc}{section}{Grading Policy}
+
+% \subsection*{Quizzes / Exams}
+% \addcontentsline{toc}{subsection}{Quizzes / Exams}
+
+% Weekly quizzes in this class: \underline{Calculus materials}.
+% You will have \textbf{unlimited} attempts and \textbf{unlimited time} per attempt for quizzes of Calculus materials.
+% When calculating the final grade, I will \textbf{drop two quiz with the lowest grade} in each category (except Quiz on Calculus, Ch. 10 \& 11).
+% The exact due date and time for quizzes and exams should refer to the schedule below and the setting on Carmen.
+% In principle, all quizzes are due on \textbf{Sunday 11:59pm}, and the answer is available on \textbf{next Monday}.
+% Late quizzes are not accepted, unless you have formal excuse (require formal documentation, and the \textbf{instrutor still has rights to decide whether to extend the quiz / exams for this excuse}).
+% Final exam are cumulative, so the content from the midterm is also included in final exam.
+% \section*{Quizzes and Examinations Integrity Policies}
+% \addcontentsline{toc}{section}{Quizzes and Examinations Integrity Policies}
+\section*{Examinations Integrity Policies}
+\addcontentsline{toc}{section}{Examinations Integrity Policies}
+
+\textbf{Problem Sets}: Discussions are \textbf{encouraged}, but each person must hand in their own answer sheets
+
+\textbf{Examinations}: Discussions are \textbf{forbidden}, either face to face or via online discussion board / Social media.
+% \subsection*{Extra credits}
+
+% Extra credits: At the end of the semester, I will have you do the Student Evaluation of Instruction (SEI).
+If I get $80\%$ response rate on SEI by the end of the semester, everyone will get 2 points of extra credits.
+\subsection*{Curving}
+\addcontentsline{toc}{subsection}{Curving}
+
+If less than $40\%$ of the students get A- or above, I will add some points to everybody until $40\%$ of the students get A- or above, but I don't expect this to occur.
+\subsection*{Problem Sets}
+\label{sub:Problem_Sets}
+\addcontentsline{toc}{subsection}{Problem Sets}
+
+There are four problem sets and each of them worth 5 points.
+The way to calculate semester grade on problem set is by $ \frac{ \texttt{correct answers} }{ \texttt{total number of questions} } \times 5 $.
+For example, if there are 36 questions and you answer 30 correctly, then you will get $ \frac{30}{36} \times 5 \approx 4.16$ points in semester grade.
+Problem sets will be answered on paper, and will be submitted by the class time to TA.
+Note that overdue assignment will \textbf{NOT} be accepted.
+
+\subsection*{Exam}
+\label{sub:Exam}
+\addcontentsline{toc}{subsection}{Exam}
+
+There are two midterm exams and each of them worth 20 points.
+There is one final exam and it worths 30 points.
+The way to calculate semester grade on exams is the similar to the Problem Sets if not otherwise noted.
+\subsection*{Attendance}
+\label{sub:Attendance}
+\addcontentsline{toc}{subsection}{Attendance}
+
+If there are more than $ 50\% $ of students attend the class, then I will not take attendance.
+If I have not taken attendance until the end of semester, then every students will be granted the entirety of the attendance points.
+If I start to take attendance, then I will spread $ 5 $ to $ 10 $ attendance check across the rest of the semester, and the attendance points will be recorded accordingly.
+% \subsection*{Midterm \& Final weight change}
+% \label{sub:Midterm____Final_weight_change}
+% \addcontentsline{toc}{subsection}{Midterm \& Final weight change}
+
+% After the midterm exam, there will be a survey on Carmen asking whether you want to change the weight between midterm and final from $ 35 $ points each to $ 10 $ points for midterm and $ 60 $ points for final.
+% This survey will due \textbf{before} the final exam date, and you cannot change the weight between midterm and final after you took the final exam.
+% \section*{Course Attendance Policy}
+
+% According to the new ASC policy, \textbf{strictly masking} is required, which means you should wear your mask to cover your mouth and nose.
+% Also, the students \textbf{are not allowed to eat or drink} in class.
+% The definition of in-person class also redefined by new ASC policy.
+% Up to \textbf{24\%} of the class meetings can be online.
+% If I cannot teach the course in person due to personal issue, I will make an announcement on \href{https://osu.instructure.com/courses/114824}{Carmen}, and the class will be held online in the \href{https://osu.zoom.us/j/2532324996?pwd=c2cweEphWFMvTVZreHJ0MHNRNUdodz09}{zoom link}.
+% The instructor is also required to make reasonable accommodations for students who cannot attend the classes for a period of time, either because of sickness or quarantine.
+% My arrangement is to open all my class recordings back in the summer in the \href{https://huijunchen9260.github.io/PrincipleMacroSpring2022.html}{Webpage} so that students who cannot come to class can also reach out the course materials by watching the recorded videos.
+% Also, since the office hour is online, those students who cannot attend the in-person meeting can also ask me question on the \href{https://osu.zoom.us/j/2532324996?pwd=c2cweEphWFMvTVZreHJ0MHNRNUdodz09}{zoom link}.
+\section*{Tentative Course Schedule}
+\addcontentsline{toc}{section}{Tentative Course Schedule}
+
+\newlength\bb
+\setlength\bb{\dimexpr .08\textwidth -2\tabcolsep}
+\newlength\qq
+\setlength\qq{\dimexpr .14\textwidth -2\tabcolsep}
+\newlength\rr
+\setlength\rr{\dimexpr .3\textwidth -2\tabcolsep}
+\newlength\pp
+\setlength\pp{\dimexpr .5\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\bb}|p{\bb}|p{\pp}|p{\rr}|}
+    \hline
+        Week & Day & Topics and Readings & Deadlines \\
+    \hline
+    \hline
+        1
+        &
+        2/26
+        &
+        Topic: Introduction and Review of Stylized Facts
+        \newline
+        Topic: Aggregate Demand and Supply
+        &
+    \\
+    \hline
+        2
+        &
+        3/5
+        &
+        Topic: IS-LM Model I: Closed Economy (Goods Market \& Money Market)
+        \newline
+        Topic: IS-LM Model II: Policy Analysis
+        &
+    \\
+    \hline
+
+ 3
+        &
+        3/12
+        &
+        Topic: Mundell-Fleming Model I: Fixed Exchange Rate
+        \newline
+        Topic: Mundell-Fleming Model II: Flexible Exchange Rate
+        &
+        Problem Set 1
+    \\
+    \hline
+        4
+        &
+
+   3/19
+        &
+        Topic: Phillips Curve and Sacrifice Ratio
+        \newline
+        Topic: Rational Expectations
+        &
+    \\
+    \hline
+        5
+        &
+        3/26
+        &
+        Topic: Expectations and Policy Analysis
+     \newline
+        Topic: Micro-foundations: Imperfect Competition and Sticky Prices
+        &
+        Problem Set 2
+    \\
+    \hline
+        6
+        &
+        4/2
+        &
+        Midterm I
+        &
+    \\
+    \hline
+
+     7
+        &
+        4/9
+        &
+        Midterm Recap
+        \newline
+        Topic: The New Keynesian Model I: Households and Firms
+        &
+    \\
+    \hline
+        8
+        &
+        4/16
+
+    &
+        Topic: The New Keynesian Model II: Staggered Price Setting (Calvo)
+        \newline
+        Topic: The New Keynesian Model III: Monetary Policy and Shocks
+        &
+    \\
+    \hline
+        9
+        &
+        4/23
+        &
+        Topic: Monetary Policy Rules
+    \newline
+        Topic: Fiscal Policy Multipliers in NK Model
+        &
+        Problem Set 3
+    \\
+    \hline
+        10
+        &
+        4/30
+        &
+        Topic: Sticky Wages and Labor Market Frictions
+        \newline
+         Topic: Search and Matching Models I (Flows)
+        &
+    \\
+    \hline
+        11
+        &
+        5/7
+        &
+        Topic: Search and Matching Models II (Equilibrium)
+        \newline
+        Topic: Review of Dynamic Stochastic General Equilibrium (DSGE)
+
+&
+        Problem Set 4
+    \\
+    \hline
+        12
+        &
+        5/14
+        &
+        Midterm II
+        &
+    \\
+    \hline
+        13
+        &
+        5/21
+
+       &
+        Topic: Financial Frictions and the Great Recession
+        \newline
+        Topic: Open Economy New Keynesian Models
+        &
+    \\
+    \hline
+        14
+        &
+        5/28
+        &
+        Customized Class
+
+    &
+    \\
+    \hline
+        15
+        &
+        6/4
+        &
+        Customized Class
+        \newline
+        Final Review
+        &
+    \\
+    \hline
+        16
+
+  &
+        6/11
+        &
+        Final Exam
+        &
+    \\
+    \hline
+\end{tabular}
+
+\section*{Grading scale}
+
+See \url{https://registra.site.nthu.edu.tw/var/file/211/1211/img/609/grade-plan.pdf} for NTHU definition.
+\end{document}
