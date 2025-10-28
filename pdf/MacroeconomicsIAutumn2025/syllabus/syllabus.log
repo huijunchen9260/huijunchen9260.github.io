@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.21.0 (TeX Live 2025/Homebrew)  (format=dvilualatex 2025.3.7)  28 OCT 2025 07:44
+This is LuaTeX, Version 1.21.0 (TeX Live 2025/Homebrew)  (format=dvilualatex 2025.3.7)  28 OCT 2025 09:33
  restricted system commands enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
 de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
@@ -1692,7 +1692,9 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 \pp=\skip68
 
 
-[5] (./syllabus.aux)
+[5]
+
+[6] (./syllabus.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1705,9 +1707,9 @@ Here is how much of LuaTeX's memory you used:
  568 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 68 glue_spec,
  7 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1552,3:1970,4:34,5:159,6:158,7:3736,8:76,9:1316,10:33,11:1
-50
+   avail lists: 1:2,2:1560,3:1989,4:34,5:161,6:157,7:3834,8:76,9:1320,10:33,11:1
+56
  50499 multiletter control sequences out of 65536+600000
  42 fonts using 2855063 bytes
- 108i,8n,125p,1004b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on syllabus.dvi (5 pages, 64256 bytes).
+ 108i,9n,125p,1004b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on syllabus.dvi (6 pages, 64584 bytes).
