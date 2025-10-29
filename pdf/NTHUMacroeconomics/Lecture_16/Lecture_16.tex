@@ -1,105 +1,117 @@
-\documentclass[11pt,aspectratio=43,usenames,dvipsnames]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xcolor}
-\usepackage{setspace}
+\documentclass[11pt,aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{SimplePlus}
+
+\usepackage{threeparttable}
 \usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{tikz}
-% \usetikzlibrary{decorations}
-\usetikzlibrary{decorations.pathreplacing, intersections}
-\usepackage{ulem}
-\usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{babel}
-\usepackage{makecell}
-\usepackage[para,online,flushleft]{threeparttable}
-\usepackage{pdfpages}
-\usepackage{tcolorbox}
-\usepackage{bm}
-\usepackage{appendixnumberbeamer}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
 \usepackage{natbib}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
-\usetheme[compress]{Boadilla}
-\usecolortheme{default}
-\useoutertheme{miniframes}
-\usefonttheme[onlymath]{serif}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
 
-\newcommand{\jump}[2]{\hyperlink{#1}{\beamerbutton{#2}}}
-\newcommand{\orange}[1]{\textcolor{BurntOrange}{#1}}
+% ---------------- %
+% color definition %
+% ---------------- %
+\definecolor{main}{HTML}{23373B}
+\definecolor{pink}{RGB}{180, 50, 110}
+\definecolor{orange}{HTML}{FF8000}
+\definecolor{red}{HTML}{990000}
+\definecolor{blue}{HTML}{004C99}
+\definecolor{lightgray}{HTML}{E7E7E7}
+\definecolor{gray}{RGB}{90, 90, 90}
+
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\definecolor{yellow}{HTML}{EDB120}
 
-\setbeamertemplate{itemize item}{\raisebox{0.1em}{\scalebox{0.7}{$\blacksquare$}}}
-\setbeamertemplate{itemize subitem}[circle]
-\setbeamertemplate{itemize subsubitem}{--}
-\setbeamercolor{itemize item}{fg=black}
-\setbeamercolor{itemize subitem}{fg=black}
-\setbeamercolor{itemize subsubitem}{fg=black}
-\setbeamercolor{item projected}{bg=darkgray,fg=white}
-\definecolor{blue}{rgb}{0.2, 0.2, 0.7}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamertemplate{enumerate items}[circle]
+% \setbeamercolor{alerted text}{fg=blue}
 
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
 
-\setbeamertemplate{headline}{}
+\usepackage{fontawesome5}
+\setbeamertemplate{itemize item}{\faAngleRight}
+\setbeamertemplate{itemize subitem}{\faAngleDoubleRight}
 
-%==========================================
-\let\olditemize=\itemize
-\let\endolditemize=\enditemize
-\renewenvironment{itemize}{\olditemize \itemsep1em}{\endolditemize}
-\let\oldenumerate=\enumerate
-\let\endoldenumerate=\endenumerate
-\renewenvironment{enumerate}{\oldenumerate \itemsep1em}{ \endoldenumerate}
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
 
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\var}{\rm Var}
-\DeclareMathOperator*{\cov}{\rm Cov}
+\usepackage[mode=tex]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=newest, scale only axis, width = 10cm}
 
-\theoremstyle{definition}
-\newtheorem{assume}{Assumption}
-\newtheorem{lem}{Lemma}
-\newtheorem{proposition}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{corol}{Corollary}
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+\hypersetup{
+    pdfpagemode=UseNone,
+    pdftitle = {Macroeconomics I, Lecture 16},
+    pdfauthor = {Hui-Jun Chen},
+    pdfsubject = {},
+    pdfkeywords = {},
+}
+
+\title[Lecture 16]{Lecture 16 \\ The Real Business Cycle Model \\ Part 3: Competitive Equilibrium}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[NTHU]{National Tsing Hua University}
+\date{\today}
 
 \begin{document}
-    \title[Lecture 16]{Lecture 16 \\ The Real Business Cycle Model \\ Part 3: Competitive Equilibrium}
-    \author[Hui-Jun Chen]{Hui-Jun Chen}
-    \institute[OSU]{The Ohio State University}
-    % \date{\today}
-    \date{\today}
-    \setbeamertemplate{navigation symbols}{}
-    \setstretch{1.2}
 
-%-------------------------------------------------------
-{
-%	\usebackgroundtemplate{\includegraphics[width=1\paperwidth]{../EveningSky_cropped_edit43_bright.jpg}}
-    \begin{frame}
-% \vspace{3em}
-        \centering
-%		{\footnotesize 	ECON 4002 Intermediate Macroeconomic Theory}
-        \maketitle
-% \vspace{-1.5em}
-% \centering
-% \includegraphics[width=0.55\linewidth]{Pictures/houses.jpeg}
-
-
-    \end{frame}
-}
-
-% -------------------------------------------
-\setbeamertemplate{headline}
-{
-\setbeamercolor{section in head/foot}{fg=black, bg=white}
-\vskip1em \tiny \insertsectionnavigationhorizontal{1\paperwidth}{\hspace{0.50\paperwidth}}{}
-}
-%------------------------------------------
+% Title Page
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
 
 
 \begin{frame}{Overview}
@@ -374,6 +386,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
 \label{slide:The_Output_Supply_Curve}
     \begin{columns}
         \begin{column}{0.5\textwidth}
+            \scalebox{0.9}{
             \begin{tikzpicture}
                 \tikzstyle{every node}=[font=\scriptsize]
                 \pgfmathsetmacro{\x}{5};
@@ -448,7 +461,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
                 \draw[dashed] (f_y) node[left]{$r_{1}$} -- (f) -- (f_x) node[below]{$Y_{1}$};
                 \draw[dashed] (e_y) node[left]{$r_{2}$} -- (e) -- (e_x) node[below]{$Y_{2}$};
 
-            \end{tikzpicture}
+            \end{tikzpicture}}
 
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -479,6 +492,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
 \label{slide:Wealth_and_Output_Supply}
     \begin{columns}
         \begin{column}{0.5\textwidth}
+            \scalebox{0.9}{
             \begin{tikzpicture}
                 \tikzstyle{every node}=[font=\scriptsize]
                 \pgfmathsetmacro{\x}{5};
@@ -564,7 +578,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
                 \draw[dashed] (e) -- (f) -- (f_x) node[below]{$Y_{2}$};
                 \draw[ultra thick, BurntOrange, ->] (i) -- (j) ;
 
-            \end{tikzpicture}
+            \end{tikzpicture}}
 
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -584,7 +598,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
 \label{slide:TFP___Capital_and_Output_Supply}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-
+            \scalebox{0.9}{
             \begin{tikzpicture}
                 \tikzstyle{every node}=[font=\scriptsize]
                 \pgfmathsetmacro{\x}{5};
@@ -680,7 +694,7 @@ Given exogenous quantities \orange{$\{ G, G', z, z', K \}$}, a \textbf{competiti
                 \draw[dashed] (e) -- (f) -- (f_x) node[below]{$Y_{2}$};
                 \draw[ultra thick, BurntOrange, ->] (i) -- (j) ;
 
-            \end{tikzpicture}
+            \end{tikzpicture}}
         \end{column}
         \begin{column}{0.5\textwidth}
             Suppose TFP $ z \uparrow  $.
