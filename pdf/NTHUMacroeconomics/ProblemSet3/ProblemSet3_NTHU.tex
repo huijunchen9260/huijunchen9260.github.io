@@ -1,0 +1,550 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\showAns
+% \listofanswer
+
+\title{Problem Set 3}
+\author{Hui-Jun Chen}
+
+\begin{document}
+
+\maketitle
+
+\begin{Exercise}
+
+\section*{Question 1}
+\label{sec:Question_1}
+\addcontentsline{toc}{section}{Question 1}
+
+Consider a model that is \textbf{similar to} (not exactly!) the Lecture 14 Consumer Problem, but there are three differences:
+
+\begin{enumerate}
+    \item Consumers' utility function is given by $ U(C, C', N_{S}, N_{S}') = \log C - b N_{S} + \log C' - b N_{S}' $
+    \item Consumers do \textbf{not} own the whole firm, i.e., $ \pi = 0 $. Instead, they buy shares of the firm \blue{$ s $} in date $ 0 $ to achieve intertemporal saving at per-unit price \blue{$ q $}. At date $ 1 $, consumers redeem their share to the firm and get \blue{$ s $} of reward.
+    \item Consumers are \textbf{not} subject to the lump-sum tax, i.e., $ T = 0 $.
+\end{enumerate}
+
+\subsection*{Budget Constraint}
+\label{sub:Budget_Constraint}
+\addcontentsline{toc}{subsection}{Budget Constraint}
+
+Firstly, let's follow the slide and think about the consumer's budget constraint, you can refer to Lecture 14, slide 4.
+
+\Question there are $ \answer{A} $ choice variables,
+    \begin{tasks}(4)
+        \task $ 5 $
+        \task $ 3 $
+        \task $ 2 $
+        \task $ 4 $
+    \end{tasks}
+\Question and they are $ \{C, C', N_{S}, N_{S}', \answer{C} \} $
+    \begin{tasks}(4)
+        \task $ S $
+        \task $ S' $
+        \task $ s $
+        \task $ s' $
+    \end{tasks}
+
+\Question consumers own \textbf{part} of the firm and get $ \answer{B} $  of reward
+    \begin{tasks}(4)
+        \task $ \pi $
+        \task $ s $
+        \task $ \pi' $
+        \task $ S $
+    \end{tasks}
+
+\Question and they are taken the equilibrium price $ \{w, w', \answer{D}\} $ as given.
+    \begin{tasks}(4)
+        \task $ r $
+        \task $ r' $
+        \task $ q' $
+        \task $ q $
+    \end{tasks}
+
+After defining all of the variables, consumer's budget constraints in each period are
+
+\Question date $ 0 $ budget constraints is \answer{$A$}
+    \begin{tasks}(2)
+        \task $ C + q s  = w N_{S}$
+        \task $ C + S = w N_{S} + \pi - T $
+        \task $ C = w N_{S} + qs $
+        \task $ C = w N_{S} + \frac{s}{q} + \pi - T $
+    \end{tasks}
+
+\Question date $ 1 $ budget constraints is \answer{$C$}
+    \begin{tasks}(2)
+        \task $ C' = w N_{S} + \pi' - T' + (1+r)S$
+        \task $ C' = w' N_{S}' + q s $
+        \task $ C' = w' N_{S}' + s$
+        \task $ C' = w' N_{S}' + \frac{s'}{q'} + \pi' - T' $
+    \end{tasks}
+
+
+\Question \label{LifeTimeBudget} The lifetime budget constraint by combining date $ 0 $ and date $ 1 $ budget constraints is \answer{$D$}
+    \begin{tasks}(1)
+        \task $ C + \frac{C'}{1+r} = w N_{S} + \frac{w' N_{S}'}{1+r} $
+        \task $ C + \frac{C'}{1+r} = w N_{S} + \pi - T + \frac{w' N_{S}' + \pi' - T'}{1+r} $
+        \task $ C - qC' = w N_{S} - q w' N_{S}' $
+        \task $ C + qC' = w N_{S} + q w' N_{S}' $
+    \end{tasks}
+
+    Some calculation details:
+
+    ~\answer{ $ s = C' - w' N_{S}' \Rightarrow C + q (C' - w' N_{S}') = w N_{S}$  }
+
+    ~\answer{ $ \Rightarrow C + qC' = w N_{S} + q w' N_{S}' $ }
+
+\subsection*{Preference}
+\label{sub:Preference}
+\addcontentsline{toc}{subsection}{Preference}
+
+After finishing consumer's budget constraint, let's turn to the analysis preference:
+
+\Question Accroding to the consumer's utility mentioned before, the derivative of consumer's utility function $ U(C, C', N_{S}, N_{S}') $ with respect to current consumption $ C $ is \answer{$A$}
+
+    \begin{tasks}(4)
+        \task $ \frac{1}{C} $
+        \task $ \frac{1}{C'} $
+        \task $ \frac{C'}{C} $
+        \task $ \frac{C}{C'} $
+    \end{tasks}
+
+\Question Similarly, the derivative of consumer's utility function $ U(C, C', N_{S}, N_{S}') $ with respect to future consumption $ C' $ is \answer{$B$}
+
+    \begin{tasks}(4)
+        \task $ \frac{1}{C} $
+        \task $ \frac{1}{C'} $
+        \task $ \frac{C'}{C} $
+        \task $ \frac{C}{C'} $
+    \end{tasks}
+
+\Question Similarly, the derivative of consumer's utility function $ U(C, C', N_{S}, N_{S}') $ with respect to current labor supply $ N_{S} $ is \answer{$D$}
+
+    \begin{tasks}(4)
+        \task $ \frac{1}{N_{S}'} $
+        \task $ \frac{1}{N_{S}} $
+        \task $ -b N_{S} $
+        \task $ -b $
+    \end{tasks}
+
+\Question Similarly, the derivative of consumer's utility function $ U(C, C', N_{S}, N_{S}') $ with respect to future labor supply $ N_{S}' $ is \answer{$C$}
+
+    \begin{tasks}(4)
+        \task $ \frac{1}{N_{S}'} $
+        \task $ \frac{1}{N_{S}} $
+        \task $ -b $
+        \task $ -b N_{S} $
+    \end{tasks}
+
+\Question After deriving four derivatives of the utility function, consumer's marginal rate of substitution between $ C $ and $ C' $, $ MRS_{C, C'} $ is \answer{$C$}
+
+    \begin{tasks}(4)
+        \task $ \frac{1}{C} $
+        \task $ \frac{1}{C'} $
+        \task $ \frac{C'}{C} $
+        \task $ \frac{C}{C'} $
+    \end{tasks}
+
+    Some calculation details:
+
+    ~\answer{ $ MRS_{C, C'} = \frac{u'(C)}{u'(C')} = \frac{1/C}{1/C'} = \frac{C'}{C} $ }
+
+\Question Similarly, $ MRS_{l, C}  = $ \answer{$A$}
+
+    \begin{tasks}(4)
+        \task $bC$
+        \task $bC'$
+        \task $-bC$
+        \task $-bC'$
+    \end{tasks}
+
+    Some calculation details:
+
+    ~\answer{ $MRS_{l, C} = -MRS_{N_{S}, C} = \frac{v'(N_{S})}{u'(C)} = \frac{b}{1/C} = bC$ }
+
+\Question Similarly, $ MRS_{l', C}  = $ \answer{$A$}
+    \begin{tasks}(4)
+        \task $bC$
+        \task $bC'$
+        \task $-bC$
+        \task $-bC'$
+    \end{tasks}
+
+    Some calculation details:
+
+    ~\answer{ $MRS_{l', C} = -MRS_{N_{S}', C} = \frac{v'(N_{S}')}{u'(C)} = \frac{b}{1/C} = bC$ }
+
+\subsection*{Representative Consumer's Problem}
+\label{sub:Representative_Consumer_s_Problem}
+\addcontentsline{toc}{subsection}{Representative Consumer's Problem}
+
+Since in this model the share purchasing $ s $ is indeed the saving for the consumer, and consumer's share purchasing decision is implied by the combination of its consumption and labor supply decision, and thus in equilibrium, consumers are not choosing shares.
+
+\Question Consumer's Problem is to maximize utility function by choosing \answer{$D$},
+
+\begin{tasks}(2)
+    \task $ C, C', S, S' $
+    \task $ S, S', N_{S}, N_{S}' $
+    \task $ C, C', s, s' $
+    \task $ C, C', N_{S}, N_{S}' $
+\end{tasks}
+
+subject to the lifetime budget constraint \ref{LifeTimeBudget}.
+
+Consumer's Problem formulation:
+
+~\answer{%
+    $ \displaystyle
+            \max_{C, C', N_{S}, N_{S}'} \log C - b N_{S} + \log C' - b N_{S}'
+        \text{ subject to }
+            C + qC' = w N_{S} + q w' N_{S}'
+    $
+}
+
+\Question First step, we substitute $ C $ with all the other terms in the lifetime budget constraint and get \answer{$A$}
+    \begin{tasks}(1)
+        \task
+        $ \displaystyle
+            \max_{C', N_{S}, N_{S}'} \log \left(
+                w N_{S} + q w' N_{S}' - qC'
+            \right)- b N_{S} + \log C' - b N_{S}'
+        $
+        \task
+        $ \displaystyle
+            \max_{C, N_{S}, N_{S}'} \log C- b N_{S} + \log \left(
+                w N_{S} + q w' N_{S}' - qC
+            \right) - b N_{S}'
+        $
+        \task
+        $ \displaystyle
+            \max_{C, N_{S}, N_{S}'} \log C- b N_{S} + \log \left(
+                \frac{w N_{S} + q w' N_{S}' - C}{q}
+            \right) - b N_{S}'
+        $
+        \task
+        $ \displaystyle
+            \max_{C', N_{S}, N_{S}'} \log \left(
+                w N_{S} + q w' N_{S}' - qC
+            \right)- b N_{S} +
+            \log C' - b N_{S}'
+        $
+    \end{tasks}
+
+    Note: read what should be substitute into other terms!
+
+\Question The FOC w.r.t. $ C' $ is \answer{$C$}
+
+\begin{tasks}(2)
+    \task $ \displaystyle b = \frac{q w'}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle b = \frac{w}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle \frac{1}{C'} = \frac{q}{w N_{S} + q w' N_{S}' - q C'}$
+    \task $ \displaystyle \frac{1}{C} = \frac{1}{w N_{S} + q w' N_{S}' - q C'}$
+\end{tasks}
+
+\Question The FOC w.r.t. $ N_{S} $ is \answer{$B$}
+
+\begin{tasks}(2)
+    \task $ \displaystyle b = \frac{q w'}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle b = \frac{w}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle \frac{1}{C'} = \frac{q}{w N_{S} + q w' N_{S}' - q C'}$
+    \task $ \displaystyle \frac{1}{C} = \frac{1}{w N_{S} + q w' N_{S}' - q C'}$
+\end{tasks}
+
+\Question The FOC w.r.t. $ N_{S}' $ is \answer{$A$}
+
+\begin{tasks}(2)
+    \task $ \displaystyle b = \frac{q w'}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle b = \frac{w}{w N_{S} + q w' N_{s}' - q C'} $
+    \task $ \displaystyle \frac{1}{C'} = \frac{q}{w N_{S} + q w' N_{S}' - q C'}$
+    \task $ \displaystyle \frac{1}{C} = \frac{1}{w N_{S} + q w' N_{S}' - q C'}$
+\end{tasks}
+
+\subsection*{Question 2}
+\label{sub:Question_2}
+\addcontentsline{toc}{subsection}{Question 2}
+
+Consider a model that is \textbf{similar to} (not exactly!) the Lecture 15 Firm's Problem, but there are two differences:
+
+\begin{enumerate} \item Consider that when firm is hiring workers, it is also doing the job training, i.e., the firm is also accumulating the \textbf{human capital} for itself.
+    \begin{itemize}
+        \item In date $ 0 $, firms are hiring workers, paying wage $ w $ and investing the job training cost $ I^{h} $.
+        \item In date $ 1 $, firms pays wage $ w' $ to the workers.
+        \item the human capital accumulation process based on two parts. The first part is that the remaining human capital is depreciated by $ \delta_{h} $. The second part is the human capital investment, $ I^{h} $. Initial human capital at date $ 0 $ is $ 1 $, i.e., $ H = 1 $.
+        \item Human capital \textbf{cannot} be liquidated after date $ 1 $.
+    \end{itemize}
+    \item Production function is $ Y = z K^{\alpha} (HN)^{1-\alpha} $, where $ \alpha \in [0, 1] $, and the labor cost is $ w N $ in date $ 0 $ and $ w' N' $ in date $ 1 $.
+\end{enumerate}
+
+\Question Assume that firm is discounting in the same way as consumer is, i.e., firms are discounting in the real interest rate $ r $. Firm's object function is \answer{$D$},
+\begin{tasks}(2)
+    \task $ \displaystyle \max_{N, N'} V = \pi + \frac{\pi'}{1+r'} $
+    \task $ \displaystyle \max_{N, N', K', I^{h}} V = \pi + \frac{\pi'}{r} $
+    \task $ \displaystyle \max_{N, N', K', H', I, I^{h}} V = \pi + q \pi'$
+    \task $ \displaystyle \max_{N, N', K', H', I, I^{h}} V = \pi + \frac{\pi'}{1+r} $
+\end{tasks}
+
+\Question where $ \pi $ is \answer{$B$}
+\begin{tasks}(2)
+    \task $ \displaystyle z K^{\alpha} (HN)^{1-\alpha} - wN - I $
+    \task $ \displaystyle z K^{\alpha} (N)^{1-\alpha} - wN - I - I^{h} $
+    \task $ \displaystyle z K^{\alpha} (HN)^{1-\alpha} - I - I^{h} $
+    \task $ \displaystyle z K^{\alpha} (HN)^{1-\alpha} - wN - I^{h} $
+\end{tasks}
+
+\Question and $ \pi' $ is \answer{$D$}
+\begin{tasks}(1)
+    \task $ \displaystyle  z' K'^{\alpha} (H'N')^{1-\alpha} - w' N' + (1-\delta)K' + (1-\delta_{h}) H'$
+    \task $ \displaystyle  z' K'^{\alpha} (H'N')^{1-\alpha} - w' N' + (1-\delta)K' - (1-\delta_{h}) H'$
+    \task $ \displaystyle  z' K'^{\alpha} (H'N')^{1-\alpha} - w' H' N' + (1-\delta)K'$
+    \task $ \displaystyle  z' K'^{\alpha} (H'N')^{1-\alpha} - w' N' + (1-\delta)K'$
+\end{tasks}
+
+\Question subject to the capital accumulation process $ K' = (1-\delta)K + I $ and human capital accumulation process \answer{$A$}
+\begin{tasks}(2)
+    \task $ \displaystyle H' = (1 - \delta_{h})H + I^{h} $
+    \task $ \displaystyle H' = (1 - \delta)H + I^{h} $
+    \task $ \displaystyle H' = (1 - \delta_{h})H + I $
+    \task $ \displaystyle H' = (1 - \delta)H + I $
+\end{tasks}
+
+By substituting $ \pi, \pi', Y, Y', I $, and $ I^{h} $ into the firm's problem, we get
+
+%
+\begin{equation*}
+    \max_{N, N', K', H'} z K^{\alpha} (HN)^{1-\alpha} - w N
+        \underbrace{
+        \text{\answer{$C$}}
+        }_{\text{\ref{date0}}}
+        +
+        \frac{\displaystyle  z' K'^{\alpha} (H'N')^{1-\alpha} - w' N' +
+        \overbrace{
+        \text{\answer{$A$}}
+        }^{\text{\ref{date1}}}
+        }{1+r}
+.\end{equation*}
+%
+
+\Question \label{date0}
+
+\begin{tasks}(1)
+    \task $ \displaystyle  - [K' - (1-\delta)K]$
+    \task $ \displaystyle  - [H' - (1-\delta_{h})H]$
+    \task $ \displaystyle  - [K' - (1-\delta)K] - [H' - (1-\delta_{h})H]$
+    \task $ \displaystyle  - [K' - (1-\delta)K] + [H' - (1-\delta_{h})H]$
+\end{tasks}
+
+\Question \label{date1}
+
+\begin{tasks}(2)
+    \task $(1-\delta)K'$
+    \task $(1-\delta)K' + (1-\delta_{h})H'$
+    \task $(1-\delta)K' + (1-\delta_{h})H'N'$
+    \task $(1-\delta)rK'+ (1-\delta_{h})H'N'$
+\end{tasks}
+
+Formal formulation:
+
+~\answer{ $ \displaystyle \max_{N, N', K', H'} z K^{\alpha} (HN)^{1-\alpha} - w N - [K' - (1-\delta)K] - [H' - (1-\delta_{h})H]$}
+
+~\answer{ $ \displaystyle \qquad  \qquad \frac{z' K'^{\alpha} (H'N')^{1-\alpha} - w' N' + (1-\delta)K'}{1+r} $}
+
+
+\Question The FOC w.r.t. $ N $ is \answer{$A$}
+\begin{tasks}(1)
+    \task $ \displaystyle (1-\alpha)z K^{\alpha} (HN)^{-\alpha} H = w $
+    \task $ \displaystyle -1 + \frac{(1-\alpha) z' K'^{\alpha} (H'N')^{-\alpha} N }{1+r}  = 0$
+    \task $ \displaystyle (1-\alpha)z' K'^{\alpha} (H'N')^{-\alpha} H' = w' $
+    \task $ \displaystyle -1 + \frac{\alpha z' K'^{\alpha-1} (H'N')^{1-\alpha} + (1-\delta)K }{1+r} = 0 $
+\end{tasks}
+
+
+\Question The FOC w.r.t. $ N' $ is \answer{$C$}
+
+\begin{tasks}(1)
+    \task $ \displaystyle (1-\alpha)z K^{\alpha} (HN)^{-\alpha} H = w $
+    \task $ \displaystyle -1 + \frac{(1-\alpha) z' K'^{\alpha} (H'N')^{-\alpha} N }{1+r}  = 0$
+    \task $ \displaystyle (1-\alpha)z' K'^{\alpha} (H'N')^{-\alpha} H' = w' $
+    \task $ \displaystyle -1 + \frac{\alpha z' K'^{\alpha-1} (H'N')^{1-\alpha} + (1-\delta)K }{1+r} = 0 $
+\end{tasks}
+
+\Question The FOC w.r.t. $ K' $ is \answer{$D$}
+
+\begin{tasks}(1)
+    \task $ \displaystyle (1-\alpha)z K^{\alpha} (HN)^{-\alpha} H = w $
+    \task $ \displaystyle -1 + \frac{(1-\alpha) z' K'^{\alpha} (H'N')^{-\alpha} N }{1+r}  = 0$
+    \task $ \displaystyle (1-\alpha)z' K'^{\alpha} (H'N')^{-\alpha} H' = w' $
+    \task $ \displaystyle -1 + \frac{\alpha z' K'^{\alpha-1} (H'N')^{1-\alpha} + (1-\delta)K }{1+r} = 0 $
+\end{tasks}
+
+\Question The FOC w.r.t. $ H' $ is \answer{$B$}
+
+\begin{tasks}(1)
+    \task $ \displaystyle (1-\alpha)z K^{\alpha} (HN)^{-\alpha} H = w $
+    \task $ \displaystyle -1 + \frac{(1-\alpha) z' K'^{\alpha} (H'N')^{-\alpha} N }{1+r}  = 0$
+    \task $ \displaystyle (1-\alpha)z' K'^{\alpha} (H'N')^{-\alpha} H' = w' $
+    \task $ \displaystyle -1 + \frac{\alpha z' K'^{\alpha-1} (H'N')^{1-\alpha} + (1-\delta)K }{1+r} = 0 $
+\end{tasks}
+
+
+
+
+
+\end{Exercise}
+
+
+
+
+\end{document}
