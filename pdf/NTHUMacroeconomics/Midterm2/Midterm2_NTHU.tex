@@ -1,0 +1,826 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+\title{Midterm Exam II}
+\author{Macroeconomics I \\ Hui-Jun Chen}
+
+\begin{document}
+
+\maketitle
+
+\showAns
+% \listofanswer
+
+% \section*{Instruction}
+
+% % Due at 11:59 PM (Eastern Time) on Sunday, June 14, 2022.
+
+% Please answer this problem set on Carmen quizzes ``Problem Set 2''. In the following problems, the part that is in \textbf{\red{red and bold}} are the order of questions that should be answered on Carmen quizzes.
+
+\textbf{Each question in Problem 1 worth 2.5 points, each question in Problem 2 worth 3.5 points, and writing down your name and ID number is worth 1 point. The total is 100.}
+
+\begin{Exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 1: Distorting Taxes with Cobb--Douglas Production}
+
+Recent U.S. legislation---including the Tax Cuts and Jobs Act (2017) and the One Big Beautiful Bill (2025)---has changed marginal household income tax rates and deduction caps. In our model, these appear as a proportional labor-income tax $t$ that alters the after-tax wage $w(1-t)$ in the production function $Y=zN^{\alpha}$. The distortion causes
+\[
+MRS_{l,C} = w(1-t) \neq MRT_{l,C} = MPN = z\alpha N^{\alpha-1}.
+\]
+
+% --- Conceptual Questions ---
+\Question In an undistorted economy, efficiency requires equality between
+\answer{B}
+\begin{tasks}(1)
+    \task $MRS_{l,C} = w(1-t)$
+    \task $MRS_{l,C} = MRT_{l,C} = MPN$
+    \task $MPN > w$
+    \task $MRT_{l,C} = w(1+t)$
+\end{tasks}
+
+\Question A proportional labor-income tax primarily
+\answer{B}
+\begin{tasks}(1)
+    \task Shifts the PPF outward
+    \task Reduces the after-tax wage and labor supply
+    \task Raises both consumption and leisure
+    \task Increases productivity directly
+\end{tasks}
+
+\Question A lump-sum tax is efficient because
+\answer{B}
+\begin{tasks}(1)
+    \task It alters the slope of indifference curves
+    \task It does not change the relative price of leisure
+    \task It raises marginal utility of income
+    \task It lowers government revenue
+\end{tasks}
+
+\Question The First Welfare Theorem fails when
+\answer{C}
+\begin{tasks}(1)
+    \task Markets are competitive
+    \task Preferences are identical
+    \task Distorting taxes create wedges
+    \task Government spending = 0
+\end{tasks}
+
+\Question The tax wedge measures
+\answer{B}
+\begin{tasks}(1)
+    \task Difference between disposable and gross income
+    \task Gap between $MRS_{l,C}$ and $MRT_{l,C}$
+    \task Labor elasticity of substitution
+    \task Capital income share
+\end{tasks}
+
+\Question When $w(1-t)$ falls, equilibrium labor supply
+\answer{B}
+\begin{tasks}(1)
+    \task Rises
+    \task Falls due to substitution and income effects
+    \task Unchanged
+    \task Indeterminate
+\end{tasks}
+
+\Question Holding $z$ fixed, a higher $t$ implies
+\answer{B}
+\begin{tasks}(1)
+    \task Higher output
+    \task Lower output and consumption
+    \task Constant GDP
+    \task Larger profit
+\end{tasks}
+
+\Question Which policy minimizes efficiency loss for a given revenue?
+\answer{B}
+\begin{tasks}(1)
+    \task Raise proportional tax
+    \task Lump-sum taxation
+    \task Raise sales tax
+    \task Subsidize leisure
+\end{tasks}
+
+\Question Raising the standard deduction while lowering credits likely
+\answer{B}
+\begin{tasks}(1)
+    \task Raises effective $t$
+    \task Lowers effective $t$ for middle earners
+    \task Leaves $t$ unchanged
+    \task Has no effect
+\end{tasks}
+
+\Question The Laffer curve shows
+\answer{B}
+\begin{tasks}(1)
+    \task Tradeoff between inflation and unemployment
+    \task Relationship between $t$ and total tax revenue
+    \task Government multipliers
+    \task Wage rigidity
+\end{tasks}
+
+% --- Theory Questions ---
+\Question The firm's wage equals
+\answer{A}
+\begin{tasks}(1)
+    \task $w=z\alpha N^{\alpha-1}$
+    \task $w=z(1-\alpha)N^{\alpha}$
+    \task $w=zN^{\alpha}$
+    \task $w=zN^{1-\alpha}$
+\end{tasks}
+
+\Question Profits satisfy
+\answer{A}
+\begin{tasks}(1)
+    \task $\pi=z(1-\alpha)N^{\alpha}$
+    \task $\pi=zN^{\alpha-1}$
+    \task $\pi=wN-zN^{\alpha}$
+    \task $\pi=zN-wN$
+\end{tasks}
+
+\Question Equilibrium labor is given by
+\answer{A}
+\begin{tasks}(1)
+    \task $N=\dfrac{A}{1+A}$, $A=\dfrac{\alpha(1-t)}{\alpha(1-t)+1-\alpha}$
+    \task $N=(1+A)/A$
+    \task $N=A(1+A)$
+    \task $N=(1-A)/(1+A)$
+\end{tasks}
+
+\Question Government revenue equals
+\answer{A}
+\begin{tasks}(1)
+    \task $R=t w N$
+    \task $R=(1-t)wN$
+    \task $R=t zN^{\alpha-1}$
+    \task $R=z(1-t)N^{\alpha}$
+\end{tasks}
+
+\Question The peak of the Laffer curve occurs where
+\answer{A}
+\begin{tasks}(1)
+    \task $\partial R/\partial t = 0$
+    \task $R=Y$
+    \task $R=w$
+    \task $MRS_{l,C}=MRT_{l,C}$
+\end{tasks}
+
+\Question Suppose $Y=zN^{\alpha}$ with $z=1$ and $\alpha=0.5$.
+If the government imposes a proportional labor-income tax $t=0.2$,
+the wage is $w=\alpha z N^{\alpha-1}$, and labor supply satisfies
+$MRS_{l,C}=w(1-t)$.  Compute the equilibrium labor $N$.
+\answer{C}
+\begin{tasks}(1)
+    \task $N=0.36$
+    \task $N=0.50$
+    \task $N=0.64$
+    \task $N=0.80$
+\end{tasks}
+
+\Question For $z=1$, $\alpha=0.33$, $t=0.3$, equilibrium $N$ is approximately
+\answer{C}
+\begin{tasks}(1)
+    \task 0.25
+    \task 0.33
+    \task 0.40
+    \task 0.50
+\end{tasks}
+
+\Question A rise in productivity $z$ causes the revenue-maximizing tax rate $t^{*}$ to
+\answer{A}
+\begin{tasks}(1)
+    \task Increase
+    \task Decrease
+    \task Stay constant
+    \task Drop to zero
+\end{tasks}
+
+\Question Graphically, a higher $t$ moves equilibrium
+\answer{A}
+\begin{tasks}(1)
+    \task From planner optimum to distorted CE below same IC
+    \task To higher IC
+    \task Vertical shift
+    \task Rightward along PPF
+\end{tasks}
+
+\Question In the U.S. tax code, the state and local tax (SALT) \emph{deduction cap}
+limits how much state/local taxes households can deduct from federal taxable income.
+When the SALT cap binds in high-tax states, households face a higher \emph{effective}
+labor-income tax rate $t$ on the margin. In the Cobb–Douglas model $Y=zN^{\alpha}$ with
+$MRS_{l,C}=w(1-t)$ and $w=\alpha z N^{\alpha-1}$, equilibrium employment in those states will
+
+\answer{B}
+\begin{tasks}(1)
+    \task rise, because the deduction cap increases work incentives.
+    \task fall, due to a higher effective marginal tax rate on labor income.
+    \task remain unchanged, since SALT is unrelated to labor supply.
+    \task be indeterminate without capital taxation.
+\end{tasks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\section{Problem 2: Lucas Human Capital Accumulation}
+\label{sec:Problem_2__Lucas_Human_Capital_Accumulation}
+
+Reference: Lucas human capital accumulation model (1988 JME)
+
+Credit: Julia K. Thomas
+
+Consider a two-period model, where human capital are accumulated by \blue{spending time in education} rather than \blue{purchasing using output goods}.
+\begin{itemize}
+    \item the utility function is given by $ U(C, C') = u(C) + u(C') $, i.e., consumer doesn't value leisure.
+    \item households are endowed with $ H $ of current human capital at date $ 0 $, and they accumulate future human capital $ H' $ by \blue{spending $ 1-\phi $ fraction of their time endowment to education}. The law of motion for human capital is given by
+    %
+    \begin{equation}
+    \label{eq:HlawofMotion}
+        H' = H + (1 - \phi )H
+    ,\end{equation}
+    %
+    where $ 1-\phi $ is the fraction of the time endowment that goes to education so that households can accumulate human capital.
+
+    \item households are endowed with $ K $ amount of capital, and determine the investment at date $ 0 $ to determine their future capital $ K' $ at date $ 1 $. The usage of these capital for consumer is to rent to the firm and earn the per-unit rent $ r $.
+        The law of motion for physical capital is given by
+        %
+        \begin{equation}
+        \label{eq:KlawofMotion}
+            K' = (1-\delta)K + I
+        .\end{equation}
+    \item Firm's production function is given by
+    %
+    \begin{equation}
+    \label{eq:FirmProduction}
+        Y = K^{\alpha} (\phi H)^{1-\alpha};
+        Y' = K'^{\alpha} (\phi' H')^{1-\alpha};
+    \end{equation}
+    %
+    Firm pays the per-unit wage $ w $ for the labor times the level of human capital supplied by the households and pays per-unit capital renting fee $ r $ to consumers.
+    \item Consumer owns the whole firm, and claims the whole profit $ \pi $.
+    \item There's no government in this model, i.e., $ G = G' = T = T' = B = 0 $.
+\end{itemize}
+
+First, let's construct the budget constraint for consumers.
+
+\Question Consider the current budget constraint, what is the labor income for consumer? \answer{B}
+\begin{tasks}(4)
+    \task $ r K $
+    \task $ w \phi H $
+    \task $ w K $
+    \task $ r \phi H $
+\end{tasks}
+
+\Question Consider the current budget constraint, what is the capital income for consumer? \answer{A}
+\begin{tasks}(4)
+    \task $ r K $
+    \task $ w \phi H $
+    \task $ w K $
+    \task $ r \phi H $
+\end{tasks}
+
+\Question \label{budgetConstrant} What is the current budget constraint for consumer? \answer{D}
+\begin{tasks}(2)
+    \task $ C \le w H + r \phi K - I + \pi $
+    \task $ C \le w \phi H + r \phi K - I + \pi $
+    \task $ C \le w H + r K - I + \pi $
+    \task $ C \le w \phi H + r K - I + \pi $
+\end{tasks}
+
+\Question \label{profit} What is the profit for the firm? \answer{C}
+\begin{tasks}(2)
+    \task $ \pi = Y - wH - rK $
+    \task $ \pi = Y - w\phi H - r \phi K $
+    \task $ \pi = Y - w\phi H - rK $
+    \task $ \pi = Y - w\phi H - r \phi K $
+\end{tasks}
+
+\Question In this economy, does the competitive equilibrium and social planner's problem generate the same result? Why? \answer{B}
+\begin{tasks}(1)
+    \task No, because the first welfare theorem doesn't holds.
+    \task Yes, because the first welfare theorem holds.
+    \task Yes, because the first welfare theorem don't holds.
+    \task No, because the first welfare theorem holds.
+\end{tasks}
+
+Let's solve this model using the social planner's problem.
+
+\Question \label{SPPConsumption} Combine your answers in \ref{budgetConstrant} and \ref{profit}, in the perspective of social planner, we can rewrite household's current budget constraint as \answer{A}
+\begin{tasks}(2)
+    \task $ C \le Y - I $
+    \task $ C \le Y - rK - w\phi H - I $
+    \task $ C \le Y - r\phi K - w H - I $
+    \task $ C \le Y - r\phi K - w\phi H - I $
+\end{tasks}
+
+Since the budget constraint is binding, we can replace consumption as your answer in \ref{SPPConsumption}.
+
+Social planner's problem is then given by
+
+%
+%
+\begin{align}
+        \max_{C, C', \phi, K', H'}
+            & u(C) + u(C')
+        \\
+        \text{ s.t. }
+            & C = \text{ your answer in \ref{SPPConsumption} }
+        \\
+            & C' = Y'
+        \\
+            & H' = H + (1-\phi)H \label{HLaw}
+        \\
+            & K' = (1-\delta) K + I \label{KLaw}
+\end{align}
+%
+
+Replace consumption with your answer in \ref{SPPConsumption} and investment with equation \ref{KLaw}, we can rewrite social planner's problem as
+%
+\begin{equation*}
+    \begin{split}
+        \max_{
+            \underbrace{
+            \text{\answer{C}}
+            }_{\text{\ref{argument}}}
+        }
+            & u(
+                \underbrace{
+                \text{\answer{A}}
+                }_{\text{\ref{Uconsumption}}}
+               ) + u(K'^{\alpha} (\phi' H')^{1-\alpha})
+        \\
+        \text{ s.t. }
+            & H' = H + (1-\phi)H
+        \\
+    \end{split}
+\end{equation*}
+%
+
+\Question \label{argument}
+\begin{tasks}(2)
+    \task $\phi, K', H', C'$
+    \task $\phi, K', C'$
+    \task $\phi, K', H'$
+    \task $K', H', C'$
+\end{tasks}
+
+\Question \label{Uconsumption}
+\begin{tasks}(1)
+    \task $ K^{\alpha} (\phi H)^{1-\alpha} + (1-\delta) K - K' $
+    \task $ K^{\alpha} (\phi H)^{1-\alpha} $
+    \task $ K^{\alpha} (\phi H)^{1-\alpha} + (1-\delta) K - K' + r K $
+    \task $ K^{\alpha} (\phi H)^{1-\alpha} + (1-\delta) K - K' + w \phi H $
+\end{tasks}
+
+\Question \label{phi'} There's one result directly from our model assumption. Since this is a two-period model, and agents don't live to the third period, we know that $ \phi' =$ \answer{D}
+\begin{tasks}(4)
+    \task $ 0.3 $
+    \task $ 0.5 $
+    \task $ 0 $
+    \task $ 1 $
+\end{tasks}
+
+Using your answer in \ref{phi'} as well as substitute $ H' = (2-\phi)H $ into the utility function, we can write the social planner's problem as
+%
+\begin{equation*}
+    \max_{\phi, K'}
+            u(
+                \underbrace{
+                \text{\answer{A}}
+                }_{\text{\ref{Uconsumption}}}
+               ) + u(
+                \underbrace{
+                \text{\answer{C}}
+                }_{\text{\ref{UconsumptionPrime}}}
+                   )
+.\end{equation*}
+%
+
+\Question \label{UconsumptionPrime}
+
+\begin{tasks}(2)
+    \task $ K'^{\alpha} ( (2-\phi) H)^{-\alpha} $
+    \task $ K'^{\alpha} ( (2-\phi) H) $
+    \task $ K'^{\alpha} ( (2-\phi) H)^{1-\alpha} $
+    \task $ K'^{\alpha} H^{1-\alpha} $
+\end{tasks}
+
+\Question \label{FOCK'} The first order condition with respect to $ K' $ would leads to \answer{D}
+
+\begin{tasks}(1)
+    \task $ \frac{u'(C)}{u'(C')} = K'^{\alpha} ( (2-\phi) H )^{1-\alpha} $
+    \task $ \frac{u'(C)}{u'(C')} = \alpha K'^{\alpha-1} H^{1-\alpha} $
+    \task $ \frac{u'(C)}{u'(C')} = K'^{\alpha} ( (2-\phi) H )^{1-\alpha} $
+    \task $ \frac{u'(C)}{u'(C')} = \alpha K'^{\alpha-1} ( (2-\phi) H )^{1-\alpha} $
+\end{tasks}
+
+\Question \label{FOCphi} The first order condition with respect to $ \phi $ would leads to \answer{B}
+
+\begin{tasks}(1)
+    \task $ \frac{u'(C)}{u'(C')} = \left(
+        \frac{K'}{K}
+    \right)^{1-\alpha} \left(
+        \frac{2-\phi}{\phi}
+    \right)^{-\alpha}$
+    \task $ \frac{u'(C)}{u'(C')} = \left(
+        \frac{K'}{K}
+    \right)^{\alpha} \left(
+        \frac{2-\phi}{\phi}
+    \right)^{-\alpha}$
+    \task $ \frac{u'(C)}{u'(C')} = \left(
+        \frac{K'}{K}
+    \right)^{\alpha} $
+    \task $ \frac{u'(C)}{u'(C')} = \left(
+        \frac{K'}{K}
+    \right)^{\alpha-1} \left(
+        \frac{2-\phi}{\phi}
+    \right)^{-\alpha}$
+\end{tasks}
+
+Remember that $ MRS_{C, C'} = \frac{u'(C)}{u'(C')} $, and thus your answer in \ref{FOCK'} and \ref{FOCphi} should equal to each other.
+
+\Question Simplify the above equation and we can get \answer{A}
+
+\begin{tasks}(2)
+    \task $ \frac{\phi^{\alpha}}{2-\phi} K'  = \alpha K^{\alpha} H^{1-\alpha}$
+    \task $ \frac{\phi^{\alpha}}{2-\phi} K'^{\alpha-1}  = \alpha K^{\alpha} H^{1-\alpha}$
+    \task $ \frac{\phi}{2-\phi} K'  = \alpha K^{\alpha} H^{1-\alpha}$
+    \task $ \frac{\phi^{1-\alpha}}{2-\phi} K'  = \alpha K^{\alpha} H^{1-\alpha}$
+\end{tasks}
+
+From the above equation, we can see that the choice variables, $ \phi $ and $ K' $, are equal to $ \alpha K^{\alpha} H^{1-\alpha} $.
+Remember that both $ K $ and $ H $ are the endowments and $ \alpha $ is the parameter of production function.
+
+\Question What is the economics intuition of the this equation? \answer{C}
+
+\begin{tasks}(1)
+    \task The investment on human capital is a more favorable option than the investment on physical capital in equilibrium
+    \task The investment on human capital is a less favorable option than the investment on physical capital in equilibrium
+    \task The investment on human capital and the investment on physical capital are equally favorable options in equilibrium
+    \task We cannot determine which investment is more favorable in equilibrium
+\end{tasks}
+
+
+
+
+
+
+
+% \section{Problem 2: Intertemporal Substitution with CRRA Utility}
+
+% Between 2020 and 2024, fiscal and monetary policy created natural tests for intertemporal substitution: stimulus checks (temporary $y$), student-loan forgiveness (higher lifetime wealth), and interest-rate hikes (higher $r$).
+% Consumers choose how to allocate consumption over time according to
+
+% \[
+% \max_{c,\,c'} \; u(c) + \frac{u(c')}{1+r},
+% \quad
+% \text{s.t.}
+% \quad
+% c + \frac{c'}{1+r} = y - t + \frac{y'-t'}{1+r},
+% \]
+% where $u(c)=\frac{c^{1-\sigma}}{1-\sigma}$.
+
+% The optimality condition (Euler equation) equates marginal utilities:
+% \[
+% u'(c) = \frac{u'(c')}{1+r}
+% \quad \Rightarrow \quad
+% \left( \frac{c'}{c} \right)^{\sigma} = \frac{1}{1+r}.
+% \]
+
+% % When $r=0$, the consumer perfectly smooths consumption ($c=c'$); a higher $r$ makes future consumption relatively cheaper, encouraging saving today.
+
+% % --- Conceptual Questions ---
+% \Question The Euler equation represents
+% \answer{A}
+% \begin{tasks}(1)
+%     \task The tradeoff between current and future consumption.
+%     \task Labor-leisure condition.
+%     \task Government solvency.
+%     \task Price rigidity.
+% \end{tasks}
+
+% \Question When $r$ increases, the budget line
+% \answer{A}
+% \begin{tasks}(1)
+%     \task Rotates clockwise (steeper).
+%     \task Shifts outward.
+%     \task Flattens.
+%     \task Remains unchanged.
+% \end{tasks}
+
+% \Question A consumer is a borrower if
+% \answer{B}
+% \begin{tasks}(1)
+%     \task $s>0$.
+%     \task $s<0$.
+%     \task $c'=0$.
+%     \task $y'=0$.
+% \end{tasks}
+
+% \Question Consumption smoothing implies
+% \answer{A}
+% \begin{tasks}(1)
+%     \task $c=c'$ under $r=0$ (no intertemporal incentive to save).
+%     \task $s=0$ always.
+%     \task $c$ rises one-for-one with current income $y$.
+%     \task $c'=(1+r)c$.
+% \end{tasks}
+
+% \Question Under the Permanent Income Hypothesis, a temporary income rise causes
+% \answer{A}
+% \begin{tasks}(1)
+%     \task A small rise in $c$, larger rise in saving.
+%     \task Equal rises in $c$ and $c'$.
+%     \task Zero saving.
+%     \task A big jump in $c$ only.
+% \end{tasks}
+
+% \Question Permanent income increases cause
+% \answer{A}
+% \begin{tasks}(1)
+%     \task Larger effects on both $c$ and $c'$.
+%     \task No change.
+%     \task Opposite effects.
+%     \task A fall in $c'$.
+% \end{tasks}
+
+% \Question A higher $\sigma$ implies consumers
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Are more willing to substitute across time.
+%     \task Are less willing to substitute across time.
+%     \task Are neutral.
+%     \task Always borrow more.
+% \end{tasks}
+
+% \Question Ricardian Equivalence assumes
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Proportional taxes.
+%     \task Lump-sum taxes and perfect credit markets.
+%     \task Credit constraints.
+%     \task Progressive brackets.
+% \end{tasks}
+
+% \Question Ricardian Equivalence fails when
+% \answer{C}
+% \begin{tasks}(1)
+%     \task Consumers live forever.
+%     \task Markets are perfect.
+%     \task Credit markets are imperfect.
+%     \task Government debt $=0$.
+% \end{tasks}
+
+% \Question Aggregate consumption is smoother than GDP because
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Firms hoard capital.
+%     \task Households smooth through saving.
+%     \task Taxes vary.
+%     \task Inflation stabilizes demand.
+% \end{tasks}
+
+% % --- Theory Questions ---
+% \Question The lifetime budget constraint is
+% \answer{A}
+% \begin{tasks}(1)
+%     \task $c + \frac{c'}{1+r} = y - t + \frac{y'-t'}{1+r}$.
+%     \task $c=c'$.
+%     \task $c+c'=y+y'$.
+%     \task $\frac{c'}{c}=1+r$.
+% \end{tasks}
+
+% \Question The optimality condition for CRRA utility is
+% \answer{A}
+% \begin{tasks}(1)
+%     \task $(1+r) u'(c) = u'(c')$.
+%     \task $u'(c)=u'(c')$.
+%     \task $(c'/c) = 1+r$.
+%     \task $c'=c(1+r)^{1/\sigma}$.
+% \end{tasks}
+
+% \Question If $r>0$, then
+% \answer{B}
+% \begin{tasks}(1)
+%     \task $c=c'$.
+%     \task $c>c'$.
+%     \task $c<c'$.
+%     \task $s<0$.
+% \end{tasks}
+
+% \Question Given $y=1.1$, $y'=1.2$, $r=0.1$, $t=t'=0$, $\sigma=2$, the optimal $c$ is approximately
+% \answer{B}
+% \begin{tasks}(1)
+%     \task $0.95$.
+%     \task $1.00$.
+%     \task $1.05$.
+%     \task $1.10$.
+% \end{tasks}
+
+% \Question A one-time stimulus ($\Delta y>0$ today only) implies
+% \answer{B}
+% \begin{tasks}(1)
+%     \task A large $\Delta c$.
+%     \task A small $\Delta c$, large $\Delta s$.
+%     \task No change in saving.
+%     \task Lower $c'$ immediately.
+% \end{tasks}
+
+% \Question For a borrower, higher $r$
+% \answer{C}
+% \begin{tasks}(1)
+%     \task Raises $c$.
+%     \task Lowers both $c$ and $c'$.
+%     \task Lowers $c$, ambiguous $c'$.
+%     \task Raises both.
+% \end{tasks}
+
+% \Question Student-loan forgiveness (lower $t'$) causes
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Lower lifetime wealth.
+%     \task Higher lifetime wealth, higher $c$ and $c'$.
+%     \task Higher $r$.
+%     \task No change.
+% \end{tasks}
+
+% \Question If $\sigma=1.5$, $r$ rises from $0.02$ to $0.04$, then $(c'/c)$
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Increases slightly.
+%     \task Decreases slightly.
+%     \task Remains unchanged.
+%     \task Falls to zero.
+% \end{tasks}
+
+% \Question Graphically, a higher $r$ shifts the optimum
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Toward higher $c$, lower $c'$.
+%     \task Toward lower $c$, higher $c'$.
+%     \task No movement.
+%     \task Outward.
+% \end{tasks}
+
+% \Question According to the Permanent Income Hypothesis, saving spikes in 2020--21 occurred because
+% \answer{B}
+% \begin{tasks}(1)
+%     \task Stimulus was permanent income.
+%     \task Stimulus was temporary income, mostly saved.
+%     \task Rate cuts forced borrowing.
+%     \task Inflation expectations.
+% \end{tasks}
+
+\end{Exercise}
+
+
+\end{document}
+
