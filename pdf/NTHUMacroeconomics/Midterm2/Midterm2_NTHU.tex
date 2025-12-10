@@ -156,7 +156,7 @@
 
 \maketitle
 
-\showAns
+% \showAns
 % \listofanswer
 
 % \section*{Instruction}
@@ -172,7 +172,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem 1: Distorting Taxes with Cobb--Douglas Production}
 
-Recent U.S. legislation---including the Tax Cuts and Jobs Act (2017) and the One Big Beautiful Bill (2025)---has changed marginal household income tax rates and deduction caps. In our model, these appear as a proportional labor-income tax $t$ that alters the after-tax wage $w(1-t)$ in the production function $Y=zN^{\alpha}$. The distortion causes
+Recent U.S. legislation---including the Tax Cuts and Jobs Act (2017) and the One Big Beautiful Bill (2025)---has changed marginal household income tax rates and deduction caps. In our model, these appear as a proportional labor-income tax $t$ that alters the after-tax wage $w(1-t)$ in the production function $Y=zN^{\alpha}$. Utility function is $ U = \log C + \log l $. The distortion causes
 \[
 MRS_{l,C} = w(1-t) \neq MRT_{l,C} = MPN = z\alpha N^{\alpha-1}.
 \]
@@ -317,23 +317,63 @@ MRS_{l,C} = w(1-t) \neq MRT_{l,C} = MPN = z\alpha N^{\alpha-1}.
 \Question Suppose $Y=zN^{\alpha}$ with $z=1$ and $\alpha=0.5$.
 If the government imposes a proportional labor-income tax $t=0.2$,
 the wage is $w=\alpha z N^{\alpha-1}$, and labor supply satisfies
-$MRS_{l,C}=w(1-t)$.  Compute the equilibrium labor $N$.
-\answer{C}
+$MRS_{l,C}=w(1-t)$.  Compute the equilibrium labor $N$ to be closest to
+\answer{A}
 \begin{tasks}(1)
-    \task $N=0.36$
+    \task $N=0.31$
     \task $N=0.50$
     \task $N=0.64$
     \task $N=0.80$
 \end{tasks}
 
+\details{
+Given $z = 1, \alpha = 0.5, t = 0.2$,
+compute $ \displaystyle
+\alpha(1-t) = 0.5 \times 0.8 = 0.4,
+1 - \alpha = 0.5 $.
+Thus
+$ \displaystyle
+A = \frac{0.4}{0.4 + 0.5}
+  = \frac{0.4}{0.9}
+  = \frac{4}{9}
+  \approx 0.4444.
+$
+Then
+$ \displaystyle
+N = \frac{A}{1 + A} = \frac{4/9}{1 + 4/9} = \frac{4/9}{13/9} = \frac{4}{13} \approx 0.31
+$
+}
+
 \Question For $z=1$, $\alpha=0.33$, $t=0.3$, equilibrium $N$ is approximately
-\answer{C}
+\answer{A}
 \begin{tasks}(1)
-    \task 0.25
+    \task 0.20
     \task 0.33
     \task 0.40
     \task 0.50
 \end{tasks}
+\details{
+Given $ \displaystyle
+z = 1, \alpha = 0.33, t = 0.3,
+    $
+compute
+$ \displaystyle
+\alpha(1-t) = 0.33 \times 0.7 = 0.231,
+1 - \alpha = 0.67.
+$
+Thus
+$ \displaystyle
+A = \frac{0.231}{0.231 + 0.67}
+  = \frac{0.231}{0.901}
+  \approx 0.2564.
+$
+Then
+$ \displaystyle
+N = \frac{A}{1 + A}
+  = \frac{0.2564}{1.2564}
+  \approx 0.20.
+$
+}
 
 \Question A rise in productivity $z$ causes the revenue-maximizing tax rate $t^{*}$ to
 \answer{A}
