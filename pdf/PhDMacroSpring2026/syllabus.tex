@@ -1,0 +1,318 @@
+\documentclass[12pt]{article}
+
+% \usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,uniquelist=false,backend=biber,doi=false,url=false]{biblatex}
+\usepackage{natbib}
+% \addbibresource{$BIB} % bibtex location
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % have comma in parencite
+
+\usepackage{xcolor}
+ \usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\def\blue{\color{blue}}
+\def\orange{\color{orange}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+\setmainfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+\setsansfont{Crimson Pro Light}[
+  ItalicFont={* Italic},
+  BoldFont={Crimson Pro Medium},
+  BoldItalicFont={Crimson Pro Medium Italic}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\centerline{\huge\bf Syllabus: Seminar on Macroeconomics}
+\medskip
+\centerline{\LARGE \bf Spring 2026}
+\medskip
+\centerline{\Large Instructor: Hui-Jun Chen}
+\centerline{Last Update: \today}
+\centerline{Lastest Version: \href{https://huijunchen9260.github.io/pdf/PhDMacroSpring2026/syllabus/syllabus.pdf}{Click Here}}
+
+\medskip
+
+% \tableofcontents
+
+% \newpage
+
+\section*{Course Overview}
+\addcontentsline{toc}{section}{Course Overview}
+\begin{itemize}
+
+    \item Course website:
+    \begin{itemize}
+
+       \item Materials: TBA
+    \end{itemize}
+    \item Meeting Time: Wednesday 10:10 - 13:00 (W34n)
+    \item Location: TSMC Building 732
+    \item Office: TSMC Building 729-B
+    \item Email address: \href{huijunchen@mx.nthu.edu.tw}{huijunchen@mx.nthu.edu.tw}
+    \item Please do not hesitate to email me and set an appointment outside of regular office hour.
+To get quicker email reply, I would prefer you to:
+    \begin{enumerate}
+        \item Use \texttt{[Macro]} at the beginning of your subject title.
+\begin{itemize}
+            \item example title: \texttt{[Macro] Question regarding Extra credit}
+        \end{itemize}
+    \end{enumerate}
+    \item I will reply your email within \textit{2 business day}.
+\item Office hour: By appointment
+    \item Teaching Assistant: TBA
+    % \begin{enumerate}
+    %     \item 陳建廷(email: \href{ericchen904230331@gmail.com}{ericchen904230331@gmail.com})
+    %     \item 曾子齊(email: \href{freeboard2001@gmail.com}{freeboard2001@gmail.com})
+    % \end{enumerate}
+    \item TA Office hour: TBA
+\end{itemize}
+
+\newpage
+
+\section*{Grades}
+\addcontentsline{toc}{section}{Grades}
+
+\newlength\q
+\setlength\q{\dimexpr .5\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\q}|p{\q}|}
+    \hline
+    Categories  & Points \\
+    \hline
+    \hline
+    % Problem sets on course material   & 20 points \\
+    % \hline
+    Midterm Exam I & 30 points \\
+    \hline
+    Midterm Exam II & 30 points \\
+    \hline
+    Final Exam & 30 points \\
+    \hline
+    Attendance & 10 points \\
+    \hline
+    Total & 100 points \\
+    \hline
+\end{tabular}
+\textit{See course schedule, below, for due dates} \\
+
+
+\section*{Grading Policy}
+\addcontentsline{toc}{section}{Grading Policy}
+
+% \subsection*{Quizzes / Exams}
+% \addcontentsline{toc}{subsection}{Quizzes / Exams}
+
+% Weekly quizzes in this class: \underline{Calculus materials}.
+% You will have \textbf{unlimited} attempts and \textbf{unlimited time} per attempt for quizzes of Calculus materials.
+% When calculating the final grade, I will \textbf{drop two quiz with the lowest grade} in each category (except Quiz on Calculus, Ch. 10 \& 11).
+% The exact due date and time for quizzes and exams should refer to the schedule below and the setting on Carmen.
+% In principle, all quizzes are due on \textbf{Sunday 11:59pm}, and the answer is available on \textbf{next Monday}.
+% Late quizzes are not accepted, unless you have formal excuse (require formal documentation, and the \textbf{instrutor still has rights to decide whether to extend the quiz / exams for this excuse}).
+% Final exam are cumulative, so the content from the midterm is also included in final exam.
+% \section*{Quizzes and Examinations Integrity Policies}
+% \addcontentsline{toc}{section}{Quizzes and Examinations Integrity Policies}
+\section*{Examinations Integrity Policies}
+\addcontentsline{toc}{section}{Examinations Integrity Policies}
+
+\textbf{Examinations}: Discussions are \textbf{forbidden}, either face to face or via online discussion board / Social media.
+% \subsection*{Extra credits}
+
+% Extra credits: At the end of the semester, I will have you do the Student Evaluation of Instruction (SEI).
+If I get $80\%$ response rate on SEI by the end of the semester, everyone will get 2 points of extra credits.
+
+\subsection*{Curving}
+\addcontentsline{toc}{subsection}{Curving}
+
+If less than $40\%$ of the students get A- or above, I will add some points to everybody until $40\%$ of the students get A- or above, but I don't expect this to occur.
+
+\subsection*{Attendance}
+\label{sub:Attendance}
+\addcontentsline{toc}{subsection}{Attendance}
+
+If there are more than $ 50\% $ of students attend the class, then I will not take attendance.
+If I have not taken attendance until the end of semester, then every students will be granted the entirety of the attendance points.
+If I start to take attendance, then I will spread $ 5 $ to $ 10 $ attendance check across the rest of the semester, and the attendance points will be recorded accordingly.
+
+
+\section*{Tentative Course Schedule}
+\addcontentsline{toc}{section}{Tentative Course Schedule}
+
+\newlength\bb
+\setlength\bb{\dimexpr .08\textwidth -2\tabcolsep}
+\newlength\qq
+\setlength\qq{\dimexpr .14\textwidth -2\tabcolsep}
+\newlength\rr
+\setlength\rr{\dimexpr .3\textwidth -2\tabcolsep}
+\newlength\pp
+\setlength\pp{\dimexpr .84\textwidth -2\tabcolsep}
+\begin{tabular}{|p{\bb}|p{\bb}|p{\pp}|}
+    \hline
+        Week & Day & Topics and Readings \\
+    \hline
+    \hline
+        1
+        &
+        2/25
+        &
+        Topic: Introduction and Dynamic Programming
+    \\
+    \hline
+        2
+        &
+        3/4
+        &
+        Topic: One-side Labor Search Model
+    \\
+    \hline
+
+        3
+        &
+        3/11
+        &
+        Topic: Two-side Labor Search Model
+    \\
+    \hline
+        4
+        &
+        3/18
+        &
+        Topic: Lucas Asset Pricing: Endowment Economy
+    \\
+    \hline
+        5
+        &
+        3/25
+        &
+        Topic: Lucas Asset Pricing: Production Economy
+    \\
+    \hline
+        6
+        &
+        4/1
+        &
+        Midterm I
+    \\
+    \hline
+
+        7
+        &
+        4/8
+        &
+        Midterm Recap
+        \newline
+        Topic: Real Business Cycle Model I
+    \\
+    \hline
+        8
+        &
+        4/15
+        &
+        Topic: Real Business Cycle Model II
+    \\
+    \hline
+        9
+        &
+        4/22
+        &
+        Topic: Endogenous Growth Model I
+    \\
+    \hline
+        10
+        &
+        4/29
+        &
+        Topic: Endogenous Growth Model II
+    \\
+    \hline
+        11
+        &
+        5/6
+        &
+        Midterm II
+    \\
+    \hline
+        12
+        &
+        5/13
+        &
+        Midterm Recap
+        \newline
+        Topic: Heterogeneous Agent Model I
+    \\
+    \hline
+        13
+        &
+        5/20
+        &
+        Topic: Heterogeneous Agent Model II
+    \\
+    \hline
+        14
+        &
+        5/27
+        &
+        Topic: Heterogeneous Agent Model III
+    \\
+    \hline
+        15
+        &
+        6/3
+        &
+        Topic: Heterogeneous Agent Model IV
+        \newline
+        Final Review
+    \\
+    \hline
+        16
+        &
+        6/10
+        &
+        Final Exam
+    \\
+    \hline
+\end{tabular}
+
+\section*{Grading scale}
+
+See \url{https://registra.site.nthu.edu.tw/var/file/211/1211/img/609/grade-plan.pdf} for NTHU definition.
+\end{document}
