@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-01-31T08:16:47Z</updated>
+<updated>2026-02-18T12:08:30Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -33,6 +33,14 @@
 <h2 id="course-schedule">Course Schedule</h2>
 <p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
 <h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/698bcfb28df6d203ef980694/1770770354896/brunner_lecture.pdf">Inflation</a>
+<ul>
+<li>by John H. Cochrane, a main theme for this lecture. The structure is based on this book.</li>
+</ul></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Introduction</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2</a></li>
+</ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></summary>
 </entry>

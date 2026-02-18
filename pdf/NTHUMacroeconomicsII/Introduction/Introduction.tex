@@ -1,0 +1,518 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES (template-compatible)
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{amsmath}
+\usepackage{iftex}
+
+% --- Font handling: compile with pdfLaTeX here; switch to LuaLaTeX locally if desired ---
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \usepackage{luatexja}
+  \setmainfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+  \setsansfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+\fi
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+% ------------------------------------ %
+% Section title page with Huge bf text %
+% ------------------------------------ %
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \Huge{\centerline{\textbf{\insertsection}}}
+  \end{frame}
+}
+
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+%%=============================================================
+%%  FOOTLINE TEMPLATE
+%%=============================================================
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm} \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+\setbeamertemplate{footline}[shadow theme]
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Inflation \& the Price Level]{Intermediate Macroeconomics II\\\vspace{4pt}Inflation \& the Price Level: Motivation}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{National Tsing Hua University}
+\date{Spring 2026}
+
+\graphicspath{{figures/}}
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Acknowledgement and source}
+\begin{block}{Where today\'s motivation comes from}
+This introduction is adapted from \textbf{John H. Cochrane}, \emph{Inflation} (Karl Brunner Distinguished Lecture; February 10, 2026), especially \textbf{Chapter 1 (Introduction)}, \textbf{Chapter 2 (The 2021--2022 inflation)}, and \textbf{Chapter 3 (Monetary Policy)}.
+\end{block}
+
+\begin{itemize}
+\item Figures shown are reproduced from Cochrane\'s lecture PDF (data series are primarily from FRED).
+\item Goal here is \textbf{pedagogical}: motivate what theories of inflation must explain, before we build models.
+\item Any remaining mistakes/interpretations are mine.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Motivation}
+
+%------------------------------------------------
+\begin{frame}{What this course is about}
+\begin{itemize}
+\item \textbf{Price level} $P_t$: the value of money (how many dollars buy one unit of goods).
+\item \textbf{Inflation} $\pi_t$: the rate of change in the price level.
+\item These are \textbf{macroeconomic prices}: they shape wages, contracts, taxes, debt burdens, and policy.
+\item A central challenge: \textbf{real macro} can explain quantities, but we also need a theory for \textbf{nominal units}.
+\end{itemize}
+
+\begin{block}{Core aim}
+Build models that explain \textbf{(i) why inflation happens} and \textbf{(ii) what anchors the level of prices}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Three questions to keep asking all semester}
+\begin{enumerate}
+\item \textbf{Nominal anchor:} What pins down the price level $P_t$?
+\begin{itemize}
+\item Examples: money-growth rules, a gold standard/backing, a Taylor rule, or fiscal backing of debt.
+\end{itemize}
+\item \textbf{Dynamics:} What makes inflation persist or fade? \\
+\hspace{1em} (expectations, frictions, Phillips curve, credibility)
+\item \textbf{Policy regime:} What do monetary and fiscal authorities \emph{commit} to do when shocks hit?
+\begin{itemize}
+\item ``Monetary dominance'' vs ``fiscal dominance'' is a regime statement.
+\end{itemize}
+\end{enumerate}
+
+\begin{block}{A theme}
+Many disagreements about inflation are really disagreements about the \textbf{policy regime} and the \textbf{anchor}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{The standard policy doctrine (in words)}
+\small
+\begin{itemize}
+\item Central banks often describe a \textbf{monetary transmission mechanism}:
+\begin{itemize}
+\item Raise interest rates $\Rightarrow$ spending slows $\Rightarrow$ unemployment rises $\Rightarrow$ inflation falls.
+\item Lower interest rates $\Rightarrow$ demand expands $\Rightarrow$ inflation rises.
+\end{itemize}
+\item Cochrane\'s complaint: this doctrine is \textbf{useful operationally}, but it is not yet a complete \textbf{economic theory}.
+\item Two missing pieces show up immediately:
+\begin{itemize}
+\item \textbf{Expectations:} what determines expected inflation and expected future policy?
+\item \textbf{Price-level determination:} why doesn\'t $P_t$ drift under an interest-rate target?
+\end{itemize}
+\item Even the Fisher equation warns us: higher nominal rates can also reflect \textbf{higher expected inflation}.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+We want a framework that makes the doctrine \textbf{precise}, \textbf{internally consistent}, and \textbf{testable}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Why the standard story is under strain: institutions}
+\small
+\begin{itemize}
+\item Modern monetary systems are not the textbook world of money-supply control:
+\begin{itemize}
+\item \textbf{Interest-rate targets} are the main instrument.
+\item \textbf{Ample reserves} pay market interest (``floor'' systems); reserves are not scarce.
+\item Broad money and deposits are largely \textbf{endogenous} (created by private credit).
+\end{itemize}
+\item ``QE'' changes the \textbf{composition} of government liabilities (reserves vs bonds), not necessarily ``money'' in the old sense.
+\item Cochrane\'s bar: a theory must fit current institutions: \textbf{fiat money, interest-rate targets, ample reserves, no money-supply control}.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+A credible theory must match \textbf{current institutions}, not only historical ones.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Why the standard story is under strain: theory}
+\small
+\begin{itemize}
+\item Cochrane argues we are in a moment of \textbf{uncertainty} in monetary economics:
+\begin{itemize}
+\item The verbal doctrine has changed little since the 1970s.
+\item Yet standard models struggle when pushed hard (especially around expectations and regime).
+\end{itemize}
+\item New Keynesian models make the doctrine formal, but rely on:
+\begin{itemize}
+\item a \textbf{specific policy rule} (e.g., Taylor principle) for determinacy,
+\item a \textbf{mechanism for expectation formation and credibility},
+\item a clean treatment of fiscal policy and government debt.
+\end{itemize}
+\item The 2021--2022 episode is a stress test:
+\begin{itemize}
+\item Inflation rose quickly while policy rates stayed near zero.
+\item Inflation later fell substantially without a catastrophic recession.
+\end{itemize}
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+We will study inflation like economists: \textbf{start from episodes}, then discipline theories.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section[2021-2022]{A recent episode: 2021--2022}
+
+%------------------------------------------------
+\begin{frame}{The timeline (US): recession, zero rates, then inflation}
+\begin{columns}
+  \begin{column}{0.62\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{fig2_1.png}
+  \end{column}
+  \begin{column}{0.38\textwidth}
+    \small
+    \begin{itemize}
+    \item 2020: COVID recession; inflation eases; Fed funds rate near zero.
+    \item Late Jan 2021: new administration; economy rebounds; inflation takes off.
+    \item 2022: sharp rate hikes come \emph{after} inflation is already high.
+    \item Disinflation later arrives with a slowdown, but not a deep 1980s-style recession.
+    \end{itemize}
+
+    \vspace{0.5em}
+    \begin{block}{First puzzle}
+    Inflation surged \textbf{before} interest rates rose.
+    \end{block}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Facts and puzzles to explain}
+\small
+\begin{itemize}
+\item \textbf{What caused inflation to surge?}
+\begin{itemize}
+\item Demand boom, supply disruptions, energy shocks, markups, expectations,\ldots?
+\end{itemize}
+\item \textbf{Timing:} why early 2021 and not 2020, when policy was already extremely expansionary?
+\item \textbf{Persistence:} why did inflation remain above target for so long?
+\item \textbf{Disinflation:} why did inflation later decline without a deep recession?
+\item \textbf{Policy interpretation:} if rates were near zero at the start, what was the \emph{nominal anchor}?
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+Good theories must match the \textbf{timing} and the \textbf{comovement} of inflation, rates, output, and policy.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{The ``elephant in the room'': fiscal expansion}
+\begin{columns}
+  \begin{column}{0.62\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{fig2_2.png}
+  \end{column}
+  \begin{column}{0.38\textwidth}
+    \small
+    \begin{itemize}
+    \item 2020--2021: very large deficits and transfers.
+    \item The key question is not only \emph{how big} deficits are, but \textbf{how they are expected to be paid for}.
+    \item Fiscal expansions can work through:
+    \begin{itemize}
+      \item \textbf{Demand} (Keynesian spending/transfer channel), and
+      \item \textbf{Valuation} (news about backing of nominal liabilities).
+    \end{itemize}
+    \end{itemize}
+  \end{column}
+\end{columns}
+\begin{center}
+    Are deficits a \textbf{demand boom}, a \textbf{debt-valuation event}, or both?
+\end{center}
+    % \begin{block}{Competing interpretations}
+    % \small
+    % \end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Why ``deficits cause inflation'' is not enough}
+\small
+\begin{itemize}
+\item History shows: some large deficits are followed by inflation; others are not.
+\item Cochrane\'s emphasis: the difference is often \textbf{expectations about the future fiscal path}.
+\begin{itemize}
+\item Do people expect future taxes/spending adjustments (future primary surpluses)?
+\item Or do they expect persistent deficits and debt rollover without credible backing?
+\end{itemize}
+\item This shifts attention from current deficits to the \textbf{entire expected present value of surpluses}.
+\item Put differently: inflation is about \textbf{news} and \textbf{regime}, not only today\'s deficit number.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+To explain inflation we must explain how \textbf{nominal government liabilities} are valued.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section[Fiscal Theory]{Fiscal theory: the price level as debt valuation}
+
+%------------------------------------------------
+\begin{frame}{The key equation (government debt valuation)}
+\small
+\begin{block}{Debt valuation / fiscal theory relationship}
+\[
+\frac{B_{t-1}}{P_t}
+= \mathbb{E}_t \sum_{j=0}^{\infty} \beta^{j} \, s_{t+j}
+\]
+\end{block}
+
+\small
+\begin{itemize}
+\item $B_{t-1}$: outstanding \textbf{nominal} government liabilities (money + bonds).
+\item $P_t$: price level, so $B_{t-1}/P_t$ is their \textbf{real value}.
+\item $s_{t+j}$: future \textbf{primary surpluses} (taxes minus non-interest spending) that \emph{back} liabilities.
+\item Interpretation: an \textbf{asset-pricing equation} (real value = present value of backing).
+\item A warning from Chapter 3: a present value equation is \emph{not} a full model by itself---we still need a regime (what policy does when shocks hit).
+\end{itemize}
+
+\normalsize
+\begin{block}{Interpretation}
+Like an asset price: \textbf{real value = present value of backing}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Mechanism in words: how fiscal news moves prices}
+\small
+\begin{enumerate}
+\item Government issues nominal liabilities (money/bonds) today.
+\item Households value them based on expected future \textbf{real backing} (surpluses).
+\item If expected backing \textbf{falls}, the real value must fall.
+\end{enumerate}
+
+\vspace{0.3em}
+\begin{block}{How can the real value fall?}
+With nominal $B$ given in the short run, adjustment can occur via a \textbf{higher $P_t$}.
+\end{block}
+
+\small
+\begin{itemize}
+\item In a frictionless model, $P_t$ can \textbf{jump} instantly (a one-time price-level revaluation).
+\item With sticky prices, the same revaluation can show up as \textbf{persistent inflation} over time.
+\item This helps explain why inflation may rise even if policy rates do not move immediately.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Three fiscal paths: why expectations matter}
+\centering
+\includegraphics[width=0.95\linewidth]{fig2_3.png}
+
+\vspace{0.4em}
+\small
+\begin{itemize}
+\item \textbf{Temporary deficit} + credible future surpluses: little inflation pressure.
+\item \textbf{Deficit without backing}: inflation/price-level jump reduces the real value of liabilities.
+\item \textbf{Persistent expected deficits}: inflation can remain elevated until fiscal news improves.
+\item Cochrane\'s framing: the key object is \textbf{news about the present value of surpluses}.
+\end{itemize}
+
+\begin{block}{Takeaway}
+Inflation is about the \textbf{expected fiscal/monetary regime}, not only current spending.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{What this approach adds (relative to slogans)}
+\small
+\begin{itemize}
+\item It separates two ideas often mixed together:
+\begin{itemize}
+\item \textbf{Aggregate demand} effects of fiscal stimulus (Keynesian channel).
+\item \textbf{Valuation/anchor} effects through backing of nominal liabilities (fiscal theory channel).
+\end{itemize}
+\item It makes a clean prediction: inflation responds to \textbf{news} about future surpluses/deficits.
+\item It highlights an empirical task: measuring \textbf{expectations} and detecting \textbf{regime changes}.
+\item It also reframes monetary policy (Chapter 3): rate changes work differently depending on\
+\hspace{1em} debt maturity, price stickiness, and whether fiscal policy adjusts.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+We need models that talk about \textbf{expectations, policy rules, and debt} in one framework.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section[Monetary Policy]{Monetary policy}
+
+%------------------------------------------------
+\begin{frame}{A monetary-policy puzzle: interest rates and inflation}
+\small
+\begin{itemize}
+\item The doctrine says: \textbf{raise rates to lower inflation}.
+\item But basic accounting points the other way:
+\begin{itemize}
+\item Higher interest rates raise interest costs on government debt.
+\item With one-period debt and no fiscal adjustment, higher nominal rates often imply \textbf{higher expected inflation} (a Fisher effect).
+\end{itemize}
+\item Cochrane\'s Chapter 3 asks a clean conceptual question:
+\begin{itemize}
+\item What can a central bank do \textbf{on its own}, holding fiscal surpluses fixed?
+\item What requires \textbf{secondary fiscal channels} (recession-induced deficits/tightening)?
+\end{itemize}
+\item This matters because modern central banks cannot directly compel taxes or spending.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+To understand ``rate hikes reduce inflation,'' we must specify \textbf{the regime and the debt structure}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Sticky prices and long-term debt: a channel for disinflation}
+\small
+\begin{itemize}
+\item Chapter 3.1 adds two ingredients to the fiscal-valuation view:
+\begin{itemize}
+\item \textbf{Sticky prices} to avoid unrealistic instant price-level jumps.
+\item \textbf{Long-term government debt} (not only one-period debt).
+\end{itemize}
+\item Key intuition (valuation):
+\begin{itemize}
+\item Higher expected future rates lower \textbf{today's long-term bond prices}.
+\item If the present value of primary surpluses is unchanged, the real value of nominal liabilities must match.
+\item Therefore, a fall in bond prices can require a \textbf{lower price level today} (disinflation on impact).
+\end{itemize}
+\item In these models, rate hikes can generate a \textbf{temporary} fall in inflation and output, while long-run Fisher forces may still differ.
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+A coherent story of monetary policy requires: \textbf{sticky prices + debt maturity + fiscal expectations}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section[Roadmap]{Roadmap for the semester}
+
+%------------------------------------------------
+\begin{frame}{How we will study inflation and the price level}
+\small
+\begin{enumerate}
+\item \textbf{Measurement and facts}
+\begin{itemize}
+\item CPI vs PCE; expectations; Fisher equation; stylized inflation episodes.
+\end{itemize}
+\item \textbf{IS--LM and AD--AS (benchmark)}
+\begin{itemize}
+\item A first short-run framework; what it gets right/wrong given modern institutions.
+\end{itemize}
+\item \textbf{New Keynesian model (workhorse)}
+\begin{itemize}
+\item Euler/IS curve, Phillips curve, Taylor rule; determinacy and credibility.
+\end{itemize}
+\item \textbf{Fiscal theory and regimes}
+\begin{itemize}
+\item Government budget constraint, debt valuation, monetary vs fiscal dominance.
+\end{itemize}
+\item \textbf{Interest rates and inflation (the hard question)}
+\begin{itemize}
+\item When do rate hikes disinflate? How do debt maturity and fiscal responses matter?
+\end{itemize}
+\end{enumerate}
+
+\normalsize
+\begin{block}{Promise}
+By the end, you should be able to tell a coherent story about \textbf{episodes} like 2021--2022.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{How this connects to what you learned last semester}
+\small
+\begin{itemize}
+\item RBC emphasized: real allocations, productivity shocks, and intertemporal prices.
+\item This semester adds two ingredients (and keeps the RBC core):
+\begin{itemize}
+\item \textbf{Nominal frictions} (sticky prices/wages) so monetary policy matters in the short run.
+\item \textbf{Nominal liabilities and fiscal backing} so the price level is anchored.
+\end{itemize}
+\item A useful mental map:
+\begin{itemize}
+\item \textbf{Flexible prices} determine the \emph{real} equilibrium (output, natural rate).
+\item \textbf{Nominal anchor/regime} determines $P_t$ and inflation dynamics.
+\end{itemize}
+\end{itemize}
+
+\normalsize
+\begin{block}{Takeaway}
+Think: \textbf{RBC core} + \textbf{nominal side} + \textbf{policy regime} $\Rightarrow$ inflation and $P_t$.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Next time}
+\large
+\begin{itemize}
+\item Define inflation vs. the price level; real vs. nominal variables.
+\item Introduce basic identities and the Fisher equation.
+\item A first benchmark model: IS--LM (and why we will later move beyond it).
+\end{itemize}
+\end{frame}
+
+\end{document}
