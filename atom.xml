@@ -2,16 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-02-18T12:08:30Z</updated>
+<updated>2026-02-23T01:17:56Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
+<entry>
+<title type="text">Seminar on Macroeconomics, Spring 2026</title>
+<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PhDMacroSpring2026.html"/>
+<id>https://huijunchen9260.github.io/PhDMacroSpring2026.html</id>
+<published>2026-02-23T01:17:31Z</published>
+<updated>2026-02-23T01:17:31Z</updated>
+<author><name>Hui-Jun Chen</name></author>
+<summary type="html"><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
+<p>Course number: TBA</p>
+<p>Time: W3W4Wn</p>
+<p>Room: TSMC Building 732</p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.pdf">Syllabus: pdf version</a></p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.html">Syllabus: html version</a></p>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- vim-markdown-toc Marked -->
+<ul>
+<li><a href="#grade">Grade</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="grade">Grade</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#grades">Grades</a></p>
+<h2 id="course-schedule">Course Schedule</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Introduction</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
+</ul>
+<h2 id="problem-sets">Problem Sets</h2>
+<p>;tags: Teaching</p>]]></summary>
+</entry>
 <entry>
 <title type="text">Macroeconomics (II), Spring 2026</title>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</id>
 <published>2026-01-31T08:16:14Z</published>
-<updated>2026-01-31T08:16:14Z</updated>
+<updated>2026-02-18T12:08:31Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Course number: TBA</p>
@@ -1065,48 +1099,6 @@ CALL test()
 a = 0.0_wp
 </code></pre>
 <p>so that the variable will be automatic variables.</p>
-<p>;tags: Miscellaneous</p>]]></summary>
-</entry>
-<entry>
-<title type="text">Note on Julia</title>
-<link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/JuliaNote.html"/>
-<id>https://huijunchen9260.github.io/JuliaNote.html</id>
-<published>2022-09-04T12:01:54Z</published>
-<updated>2025-09-01T19:19:15Z</updated>
-<author><name>huijunchen9260</name></author>
-<summary type="html"><![CDATA[<h1 id="note-on-julia">Note on Julia</h1>
-<h2 id="table-of-content">Table of Content</h2>
-<!-- vim-markdown-toc GFM -->
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#julia-introduction">Julia Introduction</a></li>
-<li><a href="#julia-tips">Julia Tips</a>
-<ul>
-<li><a href="#memory-allocations">Memory Allocations</a></li>
-</ul></li>
-</ul>
-<!-- vim-markdown-toc -->
-<h2 id="installation">Installation</h2>
-<ul>
-<li>Julia Download page: <a href="https://julialang.org/downloads/">Stable release</a></li>
-<li>Julia Installation Instruction:
-<ul>
-<li>Windows: <a href="https://julialang.org/downloads/platform/#windows">Official Instruction</a></li>
-<li>MacOS: <a href="https://julialang.org/downloads/platform/#macos">Official Instruction</a></li>
-</ul></li>
-<li>Jupyter Notebook &#47; Jupyter Lab Installation Instruction: <a href="https://docs.jupyter.org/en/latest/install.html">Official Instruction</a></li>
-<li>Link Jupyter Notebook with Julia: <a href="https://www.youtube.com/watch?v=81DRruCIO34">Video tutorial on Windows</a>, <a href="https://www.youtube.com/watch?v=oyx8M1yoboY">Video tutorial on MacOS</a></li>
-</ul>
-<h2 id="julia-introduction">Julia Introduction</h2>
-<ul>
-<li>100 Seconds Intro by Fireship: <a href="https://www.youtube.com/watch?v=JYs_94znYy0">video</a></li>
-</ul>
-<h2 id="julia-tips">Julia Tips</h2>
-<h3 id="memory-allocations">Memory Allocations</h3>
-<p>Due to the nature of LLVM, memory allocation in Julia can be very expensive. Especially in dynamic programming, we usually a lot of arrays to store our data. Therefore, tracking where the memory is allocated can fast computation a lot.</p>
-<ul>
-<li><a href="https://m3g.github.io/JuliaNotes.jl/stable/memory/">Tracking memory allocations: JuliaNotes.jl</a></li>
-</ul>
 <p>;tags: Miscellaneous</p>]]></summary>
 </entry>
 </feed>
