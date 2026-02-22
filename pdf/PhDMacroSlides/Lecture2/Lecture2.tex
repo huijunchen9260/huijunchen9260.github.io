@@ -1,0 +1,570 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\usepackage{fontspec}
+\usepackage{luatexja}
+
+\usepackage{appendixnumberbeamer}
+
+\setmainfont{Alegreya Sans Light}[
+  ItalicFont={* Italic},
+  BoldFont={Alegreya Sans Medium},
+  BoldItalicFont={Alegreya Sans Medium Italic}]
+\setsansfont{Alegreya Sans Light}[
+  ItalicFont={* Italic},
+  BoldFont={Alegreya Sans Medium},
+  BoldItalicFont={Alegreya Sans Medium Italic}]
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+% % --------------------------- %
+% % Section title page with toc %
+% % --------------------------- %
+% \setbeamertemplate{subsection page}{%
+%     \usebeamertemplate*{section page}
+% }
+% \setbeamertemplate{section in toc}[square]
+% \setbeamertemplate{subsection in toc}[square]
+% \AtBeginSection[]{
+% % \sepframe
+% \begin{frame}[noframenumbering]{Outline}
+%     % \tableofcontents[currentsection]
+%     \tableofcontents[currentsection, currentsubsection]
+% \end{frame}
+% }
+% \AtBeginSubsection[]{
+%   \begin{frame}[noframenumbering]{Outline}
+%     \tableofcontents[currentsection, currentsubsection]
+%   \end{frame}
+% }
+
+% ------------------------------------ %
+% Section title page with Huge bf text %
+% ------------------------------------ %
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \Huge{\centerline{\textbf{\insertsection}}}
+  \end{frame}
+}
+
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+%%=============================================================
+%%  FOOTLINE TEMPLATE
+%%=============================================================
+
+% % --- Footline depends on onesec option: show only current section or full bar ---
+% \if@Optiononesec
+% % Minimalist footline: only section name and frame number
+% \defbeamertemplate*{footline}{shadow theme}{%
+%     \leavevmode\hbox{%
+%         \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+%         \begin{beamercolorbox}[wd=1.01\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+%             \insertshorttitle \insertsection \hfill \insertframenumber \ / \ \inserttotalframenumber%
+%         \end{beamercolorbox}%
+%     }%
+% }
+% \else
+% % Standard footline: section bar and frame number
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm} \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+% \fi
+
+% --- Activate the custom footline ---
+\setbeamertemplate{footline}[shadow theme]
+
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% \title[]{}
+% \author{ Hui-Jun Chen\inst{1}
+% \and Min Fang\inst{2}
+% \and Po-Hsuan Hsu\inst{1}
+% \and Chi-Yang Tsou\inst{3}
+% \institute[]{
+%     \inst{1} National Tsing Hua University \and
+%     \inst{2} University of Florida \and
+%     \inst{3} University of Manchester \and
+%     }\vspace{2pt}
+% \date{\today} % Date, can be changed to a custom date
+
+
+\title[Lecture 2]{Graduate Macro Sequence: \\ Three ways to represent a model}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{
+    National Tsing Hua University\\
+    Department of Economics
+    }\vspace{2pt}
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% \setbeamercovered{transparent}
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+\begin{frame}{Three ways to represent a model}
+\label{slide:L2_Title}
+\begin{itemize}
+    \item Same economics, three ``lenses'':
+    \begin{enumerate}
+        \item \textcolor{RoyalBlue}{Date-0 (Arrow--Debreu / planning)}: choose an entire plan at time 0
+        \item \textcolor{RoyalBlue}{Sequential (markets each period)}: choose each period subject to a per-period budget
+        \item \textcolor{RoyalBlue}{Recursive (dynamic programming)}: choose a \emph{rule} using a state variable
+    \end{enumerate}
+    \item Key message for beginners:
+    \[
+        \textbf{Plan} \;\;(\{c_t,k_{t+1}\}_{t\ge0}) \quad \Longleftrightarrow \quad
+        \textbf{Rule} \;\;(c=g(x),\; k'=h(x))
+    \]
+    \item We use the same neoclassical growth environment as an example
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Roadmap}
+\label{slide:L2_Roadmap}
+\begin{enumerate}
+    \item Warm-up: \textcolor{RoyalBlue}{Plan vs Rule} in a 2-period problem
+    \item Infinite horizon: why ``plan form'' becomes an \textcolor{RoyalBlue}{infinite-dimensional} object
+    \item The three representations with Neoclassical Growth Model as an example
+    \item Why recursion is \textcolor{RoyalBlue}{computationally} powerful (fixed point / iteration)
+\end{enumerate}
+
+\end{frame}
+
+%========================================================================================
+\section[Warm-up]{Warm-up: plan vs rule}
+%========================================================================================
+
+\begin{frame}{Warm-up: a 2-period consumption--saving problem}
+\label{slide:L2_Warmup_2period}
+\small
+Suppose you live for two periods \(t=0,1\).
+
+\begin{itemize}
+    \item Resources:
+    \[
+        c_0 + a_1 = y_0 + (1+r)a_0,
+        \qquad
+        c_1 = y_1 + (1+r)a_1.
+    \]
+    \item Preferences:
+    \[
+        u(c_0) + \beta u(c_1), \quad \beta\in(0,1).
+    \]
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Two ways to think about it:}
+\begin{enumerate}
+    \item \textcolor{RoyalBlue}{Plan:} choose \((c_0,a_1,c_1)\) today.
+    \item \textcolor{RoyalBlue}{Rule:} choose \(a_1\) today, and tomorrow consume whatever is feasible.
+\end{enumerate}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{The only new idea: continuation value}
+\label{slide:L2_ContinuationValue}
+\small
+At \(t=0\), write the objective as
+\[
+u(c_0) \;+\; \beta \underbrace{u(c_1)}_{\text{everything after today}}.
+\]
+
+In longer horizons, ``everything after today'' is a long tail:
+\[
+u(c_0) + \beta u(c_1) + \beta^2 u(c_2)+\cdots
+\]
+
+\begin{itemize}
+    \item DP names this tail: \textcolor{RoyalBlue}{continuation value}.
+    \item Continuation value depends on what you carry into tomorrow:
+    \[
+        \text{tomorrow's situation} \;\approx\; \text{state}.
+    \]
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{Transition:} For infinite horizon, we cannot treat the tail as ``a finite list.''
+We compress it into a function \(V(\cdot)\).
+
+\end{frame}
+
+%========================================================================================
+\section[Why?]{Why infinite horizon motivates recursion}
+%========================================================================================
+
+\begin{frame}{Why infinite horizon is hard in plan form}
+\label{slide:L2_InfiniteDim}
+\small
+Date-0 / sequential formulations ask you to pick an \textcolor{RoyalBlue}{entire sequence}:
+\[
+\{c_t, k_{t+1}\}_{t=0}^{\infty}.
+\]
+
+\begin{itemize}
+    \item That is an \textcolor{RoyalBlue}{infinite-dimensional} object.
+    \item You can derive elegant \textcolor{RoyalBlue}{conditions} (Euler equation, transversality conditions),
+    \item But you still need a way to \textcolor{RoyalBlue}{compute} the policy rules.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{DP's goal:} replace an infinite sequence with two \textcolor{RoyalBlue}{functions}:
+\[
+c_t = g(x_t), \qquad x_{t+1} = f(x_t, g(x_t), \varepsilon_{t+1}).
+\]
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{What is a state?}
+\label{slide:L2_State_Def}
+\small
+A \textcolor{RoyalBlue}{state variable} \(x_t\) is a summary of ``where you are'' today that is sufficient for:
+\begin{enumerate}
+    \item choosing optimally today,
+    \item predicting the distribution of tomorrow.
+\end{enumerate}
+
+\textbf{In the neoclassical growth model (no labor):}
+\[
+x_t = k_t \quad \text{(current capital)}.
+\]
+Given \(k_t\), today's choice \(k_{t+1}\) pins down today's consumption:
+\[
+c_t = f(k_t) + (1-\delta)k_t - k_{t+1}.
+\]
+
+\begin{itemize}
+    \item Past history matters only through \(k_t\).
+    \item So the optimal decision can be written as a \textcolor{RoyalBlue}{rule}:
+    \[
+        k_{t+1} = h(k_t), \qquad c_t = g(k_t).
+    \]
+\end{itemize}
+
+\end{frame}
+
+\section[Neoclassical]{Three Representation}
+\label{sec:Neoclassical_Growth_Model}
+
+\begin{frame}{Neoclassical Growth Model: Set up}
+\label{slide:Optimal_Growth_Model}
+    \begin{itemize}
+        % \item Difficulties with Solow Model: \blue{exogenous} saving rate.
+        % \begin{itemize}
+        %     \item \textbf{how} arrived at $ s $? Is $ s $ \textbf{optimal}?
+        % \end{itemize}
+        \item Micro-foundation: rep. consumer makes consumption-saving decision.
+        \item No externalities, and thus can solve in Social planner's problem.
+        \item Assume rep. consumer lives for $ \infty $ period with \textbf{additive} separability:
+        %
+        \begin{equation}
+        \label{eq:rep_consumer_u}
+            U(C_{0}, C_{1}, \ldots) = \sum_{t=0}^{\infty} \beta^{t} u(C_{t})
+        ,\end{equation}
+        %
+        where function $ u(\cdot) $ is the same for every period, and $ \beta $ is \blue{subjective discount factor}.
+        \item Assumes no labor (for the sake of sanity)
+        \item Two goods are trading:
+        \begin{itemize}
+            \item firm $ \rightarrow  $ consumer: consumption goods ($c_{t}$) with price $ p_{t} $
+            \item consumer $ \rightarrow  $ firm: capital accumulation ($k_{t}$) with price $ r_{t} $
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Date 0 Representation}
+\label{slide:Date_0_Representation}
+A \blue{Date 0 C.E.} is \textbf{prices} $ \left\{p_{t}, r_{t}\right\}_{t=0}^{\infty} $ and \textbf{quantities} $ \{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty} $ such that
+\begin{enumerate}
+    \item $\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}$ solves household's problem,
+     \begin{align}
+             & \max_{\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}} \sum_{t=0}^{\infty} \beta^{t} u(c_{t})
+         \\
+         \text{subject to} \quad
+             & c_{t} \ge 0, \forall t = 0, 1, \ldots
+         \\
+             & \sum_{t=0}^{\infty} \red{p_{t}} (c_{t} + k_{t+1}) \le \sum_{t=0}^{\infty} \red{p_{t}} (r_{t} k_{t} + (1-\delta)k_{t}), \forall t
+     \end{align}
+    \item $\{k_{t+1}^{*}\}_{t=0}^{\infty}$ solves firm's problem at each $ t = 0, 1, \ldots $
+    %
+    \begin{align}
+        \max_{k_{t}} p_{t} f(k_{t}) - p_{t}r_{t}k_{t}
+    \end{align}
+    %
+    \item Goods market clear: $ c_{t}^{*} + k_{t+1}^{*} = f(k_{t}^{*}) + (1-\delta) k_{t}^{*} $
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Discussion on Date 0 Representation}
+\label{slide:Discussion_on_Date_0_Representation}
+
+\begin{itemize}
+    \item $ p_{t} $ is the relative price of $ c_{t} $ \textbf{in units of $ c_{0} $} $ \Rightarrow  $ $ p_{0} = 1 $.
+    \item $ p_{t} r_{t} $ is the relative price of capital \textbf{in units of $ c_{0} $}
+    \item Firm's problem is static, implies $ r_{t} = D_{k}f(k_{t}) $
+    \item Use \textbf{LaGrange multiplier} $ \lambda $, we derive the FOC for $ c_{t} $ and $ k_{t+1} $ are
+    %
+    \begin{align*}
+        [c_{t}]: \quad
+            &\beta^{t} u'(c_t) = \lambda p_{t}
+        \\
+        [k_{t+1}]: \quad
+            & p_{t} = p_{t+1} (r_{t+1} + 1 - \delta )
+    \end{align*}
+    %
+    %
+    \item If we divide both $ p_{t} $ and $ p_{t+1} $, we get \textbf{Euler equation}:
+    %
+    \begin{equation*}
+            \frac{p_{t}}{p_{t+1}} = \frac{u'(c_{t})}{\beta u'(c_{t+1})} = (r_{t+1} + 1 - \delta)
+            \Rightarrow
+            u'(c_{t}) = \beta u'(c_{t+1}) (r_{t+1} + 1 - \delta)
+    \end{equation*}
+    %
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sequential Representation}
+\label{slide:Sequential_Representation}
+    \small
+    A \blue{sequential C.E.} is \textbf{prices} $ \{r_{t}\}_{t=0}^{\infty} $ and \textbf{quantities} $ \{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty} $ such that
+\begin{enumerate}
+    \item $\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}$ solves household's problem,
+     \begin{align}
+             & \max_{\{c_{t}^{*}, k_{t+1}^{*}\}_{t=0}^{\infty}} \sum_{t=0}^{\infty} \beta^{t} u(c_{t})
+         \\
+         \text{subject to} \quad
+             & c_{t} \ge 0, \forall t = 0, 1, \ldots
+         \\
+            & c_{t} + k_{t+1} \le r_{t} k_{t} + (1-\delta) k_{t}, \red{\forall t = 0, 1, \ldots}
+         \\
+            & \label{eq:transversality} \lim_{t\rightarrow \infty} \left(\prod_{s=1}^{t} (r_{t} + 1 - \delta)\right)^{-1} k_{t+1} = 0
+     \end{align}
+    \item $\{k_{t+1}^{*}\}_{t=0}^{\infty}$ solves firm's problem at each $ t = 0, 1, \ldots $
+    %
+    \begin{align}
+        \max_{k_{t}} f(k_{t}) - r_{t}k_{t}
+    \end{align}
+    %
+    \item Goods market clear: $ c_{t}^{*} + k_{t+1}^{*} = f(k_{t}^{*}) + (1-\delta) k_{t}^{*} $
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Discussion on Sequential Representation}
+\label{slide:Discussion_on_Sequential_Representation}
+    \begin{itemize}
+        \item Here we have budget constraint at every possible $ t $, rather than one.
+        \item Need \textbf{LaGrange multiplier} $ \lambda_{t} $ for each budget constraint!
+        \item FOC for $ c_{t} $ and $ k_{t+1} $ are
+            \begin{align*}
+                [c_{t}]: \quad
+                    &\beta^{t} u'(c_t) = \beta^{t} \lambda_{t} \Rightarrow u'(c_{t}) = \beta \lambda_{t}
+                \\
+                [k_{t+1}]: \quad
+                    & \beta^{t} \lambda_{t} = \beta^{t+1} \lambda_{t+1} (r_{t+1} + 1 - \delta)
+                    \Rightarrow \lambda_{t} = \beta \lambda_{t+1} (r_{t+1} + 1 - \delta)
+            \end{align*}
+        \item and still, we can the same \textbf{Euler equation}:
+        %
+        \begin{equation*}
+                u'(c_{t}) = \beta u'(c_{t+1}) (r_{t+1} + 1 - \delta)
+        \end{equation*}
+        %
+        \item Equation \eqref{eq:transversality} is the \blue{transversality condition}: avoid Ponzi scheme
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Motivating Recursive Representation}
+\label{slide:Intro__Recursive_Representation}
+\small
+    \begin{itemize}
+        \item In the sequential representation, at each date $ t $, household is solving \textbf{exactly the same} utility optimization problem, so we can write it as:
+        %
+        \begin{align}
+                & \max_{c_{t}, k_{t+1}} u(c_{t}) + \overbrace{\sum_{s = t+1}^{\infty} \beta^{s} u(c_{s})}^{\text{not related to } c_{t}}
+            \\
+            \text{subject to} \quad
+                & c_{t} + k_{t+1} \le r_{t} k_{t} + (1-\delta) k_{t}
+            \\
+                & c_{t+1} + k_{t+2} \le r_{t+1} k_{t+1} + (1-\delta)k_{t+1}
+        \end{align}
+        %
+        \item Observing this, instead of finding the \textbf{level} of the prices and quantities, we find the \textbf{function} of prices and quantities that express the same problem that household is solving \textbf{at each $t$}.
+        \item Note that HH cannot change prices, and thus prices depends on the \textbf{aggregate} state variable, i.e., aggregate capital $ \bar{K} $. In equilibrium $ \bar{K} = k $.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Recursive Representation}
+\label{slide:Recursive_Representation}
+\small
+    A \blue{recursive C.E.} is a set of \blue{functions} for \textbf{prices} $ \{r(\bar{K})\} $ and \textbf{quantities} $ \{G(\bar{K}), g(k, \bar{K})\}$ and value $ V(k, \bar{K}) $ such that
+    \begin{enumerate}
+        \item $ V(k, \bar{K}) $ solves household's problem,
+        %
+        \begin{align}
+                & V(k, \bar{K}) = \max_{c, k' \ge 0} \left(
+                    u(c) + \beta V(k', \bar{K}')
+                \right)
+            \\
+            \text{subject to} \quad
+                & c + k' = (r(\bar{K}) + 1 - \delta) k
+            \\
+                & \bar{K}' = G(\bar{K})
+        \end{align}
+        %
+        \item Prices are competitively determined, i.e., firm's problem implies
+        %
+        \begin{equation*}
+            r(\bar{K}) = f'(\bar{k})
+        ,\end{equation*}
+        %
+        \item Individual decisions are consistent with aggregates when $ k = \bar{K} $, i.e.,
+        %
+        \begin{equation*}
+            G(\bar{K}) = g(\bar{K}, \bar{K})
+        \end{equation*}
+        %
+
+    \end{enumerate}
+
+
+\end{frame}
+
+% \begin{frame}{Discussion on Recursive Representation}
+% \label{slide:Discussion_on_Recursive_Representation}
+%     \begin{itemize}
+%         \item Why?! $ \because  $ The only formulation we can put it on computer!
+%         \item Date 0: how could you code the budget constraint w/ infinite sum?
+%         \item Sequential: infinite number of budget constraint\ldots
+%         \item Recursive: through recursion, we can keep iterate on same problem until it \textbf{converges} to a fixed point.
+%         \item Difficulties: for each C.E., need to identify the \blue{\textbf{structure}} of the question such that we can represent that structure using \blue{individual} and \blue{aggregate} state variables.
+%     \end{itemize}
+
+% \end{frame}
+
+%========================================================================================
+\section[Solvable]{Why recursion is solvable/computable}
+%========================================================================================
+
+\begin{frame}{Why the recursive form is computable}
+\label{slide:L2_WhySolvable}
+\small
+The recursive form turns the problem into a \textcolor{RoyalBlue}{fixed point}:
+\[
+V = T(V),
+\]
+where \(T\) is the \textcolor{RoyalBlue}{Bellman operator}:
+\[
+(TV)(k)=\max_{k'\in\Gamma(k)}
+\left\{
+u(f(k)+(1-\delta)k-k')+\beta V(k')
+\right\}.
+\]
+
+\begin{itemize}
+    \item Start with a guess \(V_0\)
+    \item Update: \(V_{n+1} = T(V_n)\)
+    \item Repeat until \(V_{n+1}\approx V_n\)
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Interpretation:} ``Solve the same two-period problem again and again.''
+
+\end{frame}
+
+\begin{frame}{One model, three representations}
+\label{slide:L2_ThreeWays_Overview_Formal}
+\small
+\begin{itemize}
+    \item We keep the \blue{same primitives} and \blue{same feasibility} (neoclassical growth).
+    \item What changes is the \blue{equilibrium object} we solve for:
+    \begin{itemize}
+        \item \blue{Date-0:} sequences of prices \(\{p_t,r_t\}_{t\ge0}\) and allocations \(\{c_t,k_{t+1}\}_{t\ge0}\)
+        \item \blue{Sequential:} spot prices \(\{r_t\}_{t\ge0}\), allocations, and a \blue{TVC}
+        \item \blue{Recursive:} \blue{functions} \(r(\bar K)\), policies \(g(k,\bar K)\), aggregation \(G(\bar K)\), value \(V(k,\bar K)\)
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.7em}
+\begin{center}
+\begin{tabular}{@{}p{0.30\linewidth}p{0.32\linewidth}p{0.34\linewidth}@{}}
+\toprule
+\blue{Date-0 CE} & \blue{Sequential CE} & \blue{Recursive CE} \\
+\midrule
+One PV constraint & Per-period constraints & Bellman + consistency \\
+                  & Transversality condition &                       \\
+Prices: \(\{p_t,r_t\}\) & Prices: \(\{r_t\}\) & Prices: \(r(\bar K)\) \\
+Allocations: sequences & Allocations: sequences & Allocations: policy rules \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}{Takeaway}
+\label{slide:L2_Takeaway}
+\small
+\begin{enumerate}
+    \item A model can be written as \textcolor{RoyalBlue}{plan}, \textcolor{RoyalBlue}{sequential}, or \textcolor{RoyalBlue}{recursive}.
+    \item They describe the \textcolor{RoyalBlue}{same economics} but emphasize different objects.
+    \item DP is the step that turns ``choose an infinite sequence'' into ``compute a rule.''
+\end{enumerate}
+
+\vspace{1em}
+\begin{center}
+\textcolor{RoyalBlue}{\Large Plan} \(\;\Longleftrightarrow\;\) \textcolor{RoyalBlue}{\Large Rule}
+\end{center}
+
+\end{frame}
+
+
+
+\end{document}
