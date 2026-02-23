@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-02-23T10:33:05Z</updated>
+<updated>2026-02-23T14:04:27Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PhDMacroSpring2026.html"/>
 <id>https://huijunchen9260.github.io/PhDMacroSpring2026.html</id>
 <published>2026-02-23T01:17:31Z</published>
-<updated>2026-02-23T01:17:31Z</updated>
+<updated>2026-02-23T10:33:07Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
 <p>Course number: TBA</p>
@@ -25,6 +25,7 @@
 <li><a href="#grade">Grade</a></li>
 <li><a href="#course-schedule">Course Schedule</a></li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#reference">Reference</a></li>
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
 <!-- vim-markdown-toc -->
@@ -38,6 +39,10 @@
 <li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
 <li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
 </ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>Some of the Dynamic Programming notes come from Fatih Guvenen&#8217;s <a href="https://www.fatihguvenen.com/phd-computational-methods">Computational Method</a></li>
+</ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></summary>
 </entry>
@@ -46,7 +51,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</id>
 <published>2026-01-31T08:16:14Z</published>
-<updated>2026-02-18T12:08:31Z</updated>
+<updated>2026-02-23T10:33:07Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Course number: TBA</p>

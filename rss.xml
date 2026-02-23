@@ -5,43 +5,10 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
-<title>Seminar on Macroeconomics, Spring 2026</title>
-<link>https://huijunchen9260.github.io/PhDMacroSpring2026.html</link>
-<guid>https://huijunchen9260.github.io/PhDMacroSpring2026.html</guid>
-<pubDate>Mon, 23 Feb 2026 01:17:31 +0800</pubDate>
-<description><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
-<p>Course number: TBA</p>
-<p>Time: W3W4Wn</p>
-<p>Room: TSMC Building 732</p>
-<p><a href="pdf/PhDMacroSpring2026/syllabus.pdf">Syllabus: pdf version</a></p>
-<p><a href="pdf/PhDMacroSpring2026/syllabus.html">Syllabus: html version</a></p>
-<h2 id="table-of-content">Table of Content</h2>
-<!-- vim-markdown-toc Marked -->
-<ul>
-<li><a href="#grade">Grade</a></li>
-<li><a href="#course-schedule">Course Schedule</a></li>
-<li><a href="#lecture-notes">Lecture Notes</a></li>
-<li><a href="#problem-sets">Problem Sets</a></li>
-</ul>
-<!-- vim-markdown-toc -->
-<h2 id="grade">Grade</h2>
-<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#grades">Grades</a></p>
-<h2 id="course-schedule">Course Schedule</h2>
-<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Lecture 1: Introduction</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
-</ul>
-<h2 id="problem-sets">Problem Sets</h2>
-<p>;tags: Teaching</p>]]></description>
-</item>
-<item>
 <title>Macroeconomics (II), Spring 2026</title>
 <link>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</link>
 <guid>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</guid>
-<pubDate>Wed, 18 Feb 2026 12:08:31 +0800</pubDate>
+<pubDate>Mon, 23 Feb 2026 10:33:07 +0800</pubDate>
 <description><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Course number: TBA</p>
 <p>Time: R3R4Rn</p>
@@ -69,6 +36,44 @@
 </ul></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
+</ul>
+<h2 id="problem-sets">Problem Sets</h2>
+<p>;tags: Teaching</p>]]></description>
+</item>
+<item>
+<title>Seminar on Macroeconomics, Spring 2026</title>
+<link>https://huijunchen9260.github.io/PhDMacroSpring2026.html</link>
+<guid>https://huijunchen9260.github.io/PhDMacroSpring2026.html</guid>
+<pubDate>Mon, 23 Feb 2026 10:33:07 +0800</pubDate>
+<description><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
+<p>Course number: TBA</p>
+<p>Time: W3W4Wn</p>
+<p>Room: TSMC Building 732</p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.pdf">Syllabus: pdf version</a></p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.html">Syllabus: html version</a></p>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- vim-markdown-toc Marked -->
+<ul>
+<li><a href="#grade">Grade</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="grade">Grade</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#grades">Grades</a></p>
+<h2 id="course-schedule">Course Schedule</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Lecture 1: Introduction</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>Some of the Dynamic Programming notes come from Fatih Guvenen&#8217;s <a href="https://www.fatihguvenen.com/phd-computational-methods">Computational Method</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></description>
