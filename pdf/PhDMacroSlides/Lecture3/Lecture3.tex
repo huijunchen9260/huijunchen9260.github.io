@@ -1,0 +1,477 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES  (match Lecture2 template style)
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb,mathtools}
+
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage{appendixnumberbeamer}
+
+\setmainfont{Alegreya Sans Light}[
+  ItalicFont={* Italic},
+  BoldFont={Alegreya Sans Medium},
+  BoldItalicFont={Alegreya Sans Medium Italic}]
+\setsansfont{Alegreya Sans Light}[
+  ItalicFont={* Italic},
+  BoldFont={Alegreya Sans Medium},
+  BoldFont={Alegreya Sans Medium},
+  BoldItalicFont={Alegreya Sans Medium Italic}]
+
+% ------------------------------------ %
+% Section title page with Huge bf text %
+% ------------------------------------ %
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \Huge{\centerline{\textbf{\insertsection}}}
+  \end{frame}
+}
+
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+%----------------------------------------------------------------------------------------
+%  FOOTLINE TEMPLATE  (same as Lecture2.tex)
+%----------------------------------------------------------------------------------------
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm} \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+\setbeamertemplate{footline}[shadow theme]
+\setbeamertemplate{navigation symbols}{}
+
+%----------------------------------------------------------------------------------------
+%  Convenience macros (safe)
+%----------------------------------------------------------------------------------------
+\providecommand{\blue}[1]{\textcolor{RoyalBlue}{#1}}
+\providecommand{\red}[1]{\textcolor{BrickRed}{#1}}
+\newcommand{\norminf}[1]{\left\lVert #1 \right\rVert_{\infty}}
+\newcommand{\E}{\mathbb{E}}
+\usepackage{amsmath,amssymb,mathtools}
+
+\providecommand{\orange}[1]{\textcolor{Orange}{#1}}
+\providecommand{\norminf}[1]{\|#1\|_\infty}
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[Lecture 3]{Graduate Macro Sequence:\\ Dynamic Programming}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{National Tsing Hua University\\ Department of Economics}
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+%========================================================================================
+\section[DP]{Dynamic Programming}
+%========================================================================================
+
+\begin{frame}{Lecture 3: What we need for computation}
+\label{slide:L3_Intro}
+\small
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item We want to solve a Bellman equation: \(V = TV\).
+    \item \blue{Key idea:} treat this as a \textbf{fixed point problem} for an operator \(T\).
+    \item Two questions:
+    \begin{enumerate}\setlength{\itemsep}{0.25em}
+        \item When does a fixed point exist and is it unique?
+        \item If it exists, how do we \textbf{find it on a computer}?
+    \end{enumerate}
+    \item The workhorse theorem: \blue{Contraction Mapping Theorem}.
+\end{itemize}
+\end{frame}
+
+%========================================================================================
+\section[CMT]{Contraction Mapping Theorem}
+%========================================================================================
+
+\begin{frame}{Contraction Mapping Theorem}
+\label{slide:L3_CMT_1}
+\small
+\begin{itemize}\setlength{\itemsep}{0.45em}
+    \item \textbf{Definition (Contraction Mapping).}
+    Let \((S,d)\) be a metric space and \(T:S\to S\) be a mapping of \(S\) into itself.
+    \(T\) is a contraction mapping with modulus \(\beta\) if for some \(\beta\in(0,1)\),
+    \[
+        d(Tv_1,Tv_2)\le \beta\, d(v_1,v_2)\qquad \text{for all } v_1,v_2\in S.
+    \]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contraction Mapping Theorem}
+\label{slide:L3_CMT_2}
+\small
+\begin{itemize}\setlength{\itemsep}{0.45em}
+    \item \textbf{Contraction Mapping Theorem.}
+    Let \((S,d)\) be a \textbf{complete} metric space and suppose that \(T:S\to S\)
+    is a contraction mapping. Then, \(T\) has a \textbf{unique} fixed point \(v^\ast\in S\) such that
+    \[
+        Tv^\ast = v^\ast
+        \;=\;
+        \lim_{N\to\infty} T^{N}v_0
+        \qquad \text{for all } v_0\in S.
+    \]
+    \item The beauty of CMT is that it is a \blue{constructive theorem}:
+    it not only tells us existence/uniqueness of \(v^\ast\), but also shows us how to find it
+    (\(v_{n+1}=Tv_n\)).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{(Optional) Why \(T^N v_0\) converges: the key inequality}
+\label{slide:L3_CMT_KeyIneq}
+\footnotesize
+Let \(v_{n+1}=Tv_n\). Because \(T\) is a contraction,
+\[
+d(v_{n+1},v_n)=d(Tv_n,Tv_{n-1})\le \beta\, d(v_n,v_{n-1})
+\Rightarrow d(v_{n+1},v_n)\le \beta^n d(v_1,v_0).
+\]
+Then for any \(m\ge 1\),
+\[
+d(v_{n+m},v_n)
+\le \sum_{j=0}^{m-1} d(v_{n+j+1},v_{n+j})
+\le \sum_{j=0}^{m-1}\beta^{n+j} d(v_1,v_0)
+\le \frac{\beta^n}{1-\beta}\, d(v_1,v_0).
+\]
+So \(\{v_n\}\) is Cauchy; completeness gives convergence to some \(v^\ast\in S\).
+(Then show \(Tv^\ast=v^\ast\), and uniqueness follows from contraction.)
+\end{frame}
+
+%========================================================================================
+\section[CMT in DP]{How to use CMT in Dynamic Programming}
+%========================================================================================
+
+\begin{frame}{Step 1: choose the function space}
+\label{slide:L3_FunctionSpace}
+\small
+In DP, \(v(\cdot)\) is a \textbf{function}. A standard choice:
+\[
+S = \mathcal{B}(X)\equiv \{v:X\to\mathbb{R}\;:\;\sup_{x\in X}|v(x)|<\infty\},
+\quad
+d(v,w)=\norminf{v-w}.
+\]
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item \(\big(\mathcal{B}(X),\norminf{\cdot}\big)\) is a \textbf{complete} metric space.
+    \item So CMT applies if we can show \(T\) is a \textbf{contraction} on \(\mathcal{B}(X)\).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Step 2: Bellman operator}
+\label{slide:L3_BellmanOp}
+\small
+Consider a discounted DP:
+\[
+(TV)(x)\equiv \max_{a\in\Gamma(x)}
+\left\{ u(x,a) + \beta\, \E\big[V(x')\mid x,a\big]\right\},
+\qquad \beta\in(0,1).
+\]
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item If we can show \(T\) is a contraction on \(\mathcal{B}(X)\),
+    then CMT gives \(\exists!\,V^\ast\) and \(V^\ast=\lim_{N\to\infty} T^N V_0\).
+    \item Question: \textbf{How do we show \(T\) is a contraction?}
+\end{itemize}
+\end{frame}
+
+%========================================================================================
+\section[Blackwell]{Blackwell's sufficient conditions}
+%========================================================================================
+
+\begin{frame}{Intuition before Blackwell: discounting is geometric shrinkage}
+\label{slide:L3_Blackwell_Intuition_Geometric}
+\small
+\begin{itemize}\setlength{\itemsep}{0.45em}
+    \item Recall the geometric series:
+    \[
+        1+\beta+\beta^2+\cdots=
+        \begin{cases}
+            \dfrac{1}{1-\beta}, & 0<\beta<1,\\[0.6em]
+            \infty, & \beta\ge 1.
+        \end{cases}
+    \]
+    \item \blue{Economic meaning:} discounting makes the infinite future \emph{finite} because weights shrink geometrically.
+    \item \blue{DP intuition:} suppose your continuation value is wrong by at most \(m\) everywhere:
+    \[
+        \norminf{V-W}\le m.
+    \]
+    Then the one-period-ahead value difference coming purely from the future is at most
+    \[
+        \beta\,\E[V(x')-W(x')] \le \beta m.
+    \]
+    \item Repeating the logic across iterations gives a geometric tightening:
+    \[
+        \norminf{T^nV-T^nW}\ \le\ \beta^n \norminf{V-W}.
+    \]
+\end{itemize}
+
+\vspace{0.3em}
+\textbf{Takeaway:} \(\beta<1\) is the ``geometric force'' behind contraction and convergence.
+\end{frame}
+
+\begin{frame}{Blackwell's sufficient conditions (sufficient, not necessary)}
+\label{slide:L3_Blackwell_1}
+\small
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item CMT requires \(T\) to be a contraction.
+    \item \blue{Blackwell provides sufficient conditions} to verify contraction easily.
+    \item They are \textbf{not necessary}: an operator can be a contraction even if these fail.
+\end{itemize}
+
+\begin{block}{Blackwell's sufficient conditions}
+Let \(T:\mathcal{B}(X)\to \mathcal{B}(X)\). Suppose:
+\begin{enumerate}\setlength{\itemsep}{0.2em}
+    \item \blue{Monotonicity:} \(V\le W \Rightarrow TV\le TW\).
+    \item \blue{Discounting:} there exists \(\beta\in(0,1)\) s.t. for any constant \(a\ge 0\),
+    \[
+        T(V+a)\le TV + \beta a.
+    \]
+\end{enumerate}
+Then \(T\) is a contraction with modulus \(\beta\) under \(\norminf{\cdot}\).
+\end{block}
+\end{frame}
+
+\begin{frame}{Why Blackwell is useful here: discounting comes from \(\beta\)}
+\label{slide:L3_Blackwell_2}
+\small
+For the Bellman operator
+\[
+(TV)(x)=\max_{a\in\Gamma(x)}\{u(x,a)+\beta \E[V(x')\mid x,a]\},
+\]
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item \textbf{Monotonicity:} if \(V\le W\), then \(\E[V]\le \E[W]\), so the RHS is smaller for every action,
+    hence \(TV\le TW\).
+    \item \textbf{Discounting:} add a constant \(c\ge 0\) to \(V\):
+    \[
+        T(V+c)(x)
+        =\max_{a}\{u(x,a)+\beta \E[V(x')+c]\}
+        =\max_{a}\{u(x,a)+\beta \E[V(x')]\} + \beta c
+        = TV(x)+\beta c.
+    \]
+\end{itemize}
+So Blackwell implies: \(\norminf{TV-TW}\le \beta \norminf{V-W}\).
+\end{frame}
+
+%========================================================================================
+\section[VFI]{Value Function Iteration and acceleration}
+%========================================================================================
+
+\begin{frame}{Standard Value Function Iteration (VFI)}
+\label{slide:L3_VFI}
+\small
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Once we know \(T\) is a contraction, CMT implies:
+    \[
+        V^\ast = \lim_{N\to\infty} T^N V_0 \quad \text{for any initial guess } V_0.
+    \]
+    \item \textbf{Algorithm (Standard VFI):}
+    \begin{enumerate}\setlength{\itemsep}{0.25em}
+        \item Choose \(V_0\in\mathcal{B}(X)\).
+        \item Iterate \(V_{n+1}=TV_n\).
+        \item Stop when \(\norminf{V_{n+1}-V_n}\) is small.
+    \end{enumerate}
+    \item When \(\beta\approx 1\), VFI can be \blue{very slow}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A practical error bound from contraction}
+\label{slide:L3_ErrorBound}
+\small
+For a contraction with modulus \(\beta\),
+\[
+\norminf{V^\ast - V_n}
+\;\le\;
+\frac{1}{1-\beta}\,\norminf{V_{n+1}-V_n}.
+\]
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item This gives a stopping rule: to be within \(\varepsilon\), it is enough to have
+    \(\norminf{V_{n+1}-V_n} < (1-\beta)\varepsilon\).
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\subsection{Howard's Policy Iteration and MPI}
+%------------------------------------------------
+
+\begin{frame}{Howard's Policy Iteration}
+\label{slide:L3_Howard_Intro}
+\small
+\begin{itemize}
+    \item Howard's policy iteration follows from \orange{\textbf{two key observations}} about VFI:
+    \begin{itemize}
+        \item The \textbf{maximization step} is \red{\textbf{typically much more costly}} (in computation time)
+              than the \textbf{evaluation step}.
+        \item But the evaluation step uses the \blue{updated decision rule} \(\tilde{s}_n(k_i,z_j)\) for
+              \red{\textbf{only one period}} (since decisions after tomorrow are embedded in \(V_n\) on the RHS).
+    \end{itemize}
+
+    \item \textbf{Policy Iteration:} repeat the evaluation step multiple times between each maximization step.
+
+    \item \textbf{Definition:} for a given value function \(J\) and a decision rule \(w\),
+    define \textbf{Howard's mapping} \(\tilde{T}_w\) as the operator that
+    \red{``plugs in \(w\)''} into the RHS of the Bellman equation:
+    \[
+        \tilde{T}_w J(k_i,z_j)
+        \equiv
+        u\!\Big(\underbrace{e^{z_j}k_i^{\alpha}+(1-\delta)k_i-w(k_i,z_j)}_{\equiv\ c(k_i,z_j;w)}\Big)
+        +\beta\,\E\!\left[J\!\big(w(k_i,z_j),z'\big)\mid z_j\right].
+    \]
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Howard's Policy Iteration: Cont'd}
+\label{slide:L3_Howard_Cont}
+\small
+\begin{itemize}
+    \item We will be interested in applying the Howard mapping repeatedly, so for \(m=1,\ldots,M\), let
+    \[
+        J_{m+1}\ \equiv\ \tilde{T}_w\,J_m(k_i,z_j)
+    \]
+    denote the updated value function.
+
+    \item Howard (1962)'s key insight is that \(\tilde{T}_w\) \textbf{is also a contraction mapping}
+          with modulus \(\beta\).
+          \[
+              \Rightarrow\ \text{applying }\tilde{T}_w\text{ repeatedly converges to a fixed point at rate }\beta.
+          \]
+
+    \item Of course, this fixed point is \textbf{not} the solution of the original Bellman equation
+          (since the policy function \(w\) is held fixed while only the value is updated).
+
+    \item But \(\tilde{T}_w\) is an operator that is much cheaper to apply, so it is natural to apply it more than once.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Algorithmus: VFI with Policy Iteration}
+\label{slide:L3_Alg2_VFI_PI}
+\small
+\begin{enumerate}
+    \item Set \(n=0\). Choose an initial guess \(V_0\in\mathcal{S}\).
+    \item \textbf{Maximization Step:} obtain \(\tilde{s}_n\) (the updated decision rule) from \(V_n\).
+    \item \textbf{Howard Step:} set \(J_0\equiv V_n\), and iterate on
+    \[
+        J_{m+1}\ \equiv\ \tilde{T}_{\tilde{s}_n}\,J_m(k_i,z_j),
+        \qquad m=0,1,2,\ldots
+    \]
+    then set \(V_{n+1}=J^\ast\equiv \lim_{m\to\infty}J_m\).
+    \item Stop if convergence criterion is satisfied:
+    \[
+        \lVert V_{n+1}-V_n\rVert_\infty < \text{toler.}
+    \]
+    Otherwise, increase \(n\) and return to step 2.
+\end{enumerate}
+
+\medskip
+\begin{itemize}
+    \item \textbf{Note:} it is often possible to obtain the fixed point \(J^\ast\) in a finite number of steps.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{VFI with Modified Policy Iteration (MPI) Algorithm}
+\label{slide:L3_MPI}
+\small
+\begin{itemize}
+    \item \orange{\textbf{Modify Step 3}} of Howard's algorithm above:
+
+    \begin{itemize}
+        \item \textbf{Modified Howard Step:}
+        set \(J_0\equiv V_n\), and iterate on
+        \[
+            J_{m+1}\ \equiv\ \tilde{T}_{\tilde{s}_n}\,J_m(k_i,z_j),
+            \qquad m=0,1,2,\ldots,M<\infty.
+        \]
+        Choose a \textbf{moderate} value for \(M\) (by experimentation; use smaller \(M\) for more challenging problems).
+        Then set \(V_{n+1}=J_M\).
+    \end{itemize}
+
+    \item The choice of \(M\) is a \blue{\textbf{key tuning parameter}} in practice.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\subsection[MQP]{MacQueen--Porteus (MQP) bounds}
+%------------------------------------------------
+
+\begin{frame}{MacQueen--Porteus (MQP) bounds: why we care}
+\label{slide:L3_MQP_1}
+\small
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Iterative algorithms need a stopping rule.
+    \item MQP bounds provide \blue{upper and lower bounds} on \(V^\ast\) (especially clean in discrete state problems).
+\end{itemize}
+
+Let \(V_{n+1}=TV_n\) and define increments
+\[
+\Delta_n(x)\equiv V_n(x)-V_{n-1}(x),\quad
+\underline{\Delta}_n\equiv \min_x \Delta_n(x),\quad
+\overline{\Delta}_n\equiv \max_x \Delta_n(x).
+\]
+\end{frame}
+
+\begin{frame}{MacQueen--Porteus (MQP) bounds: the bound}
+\label{slide:L3_MQP_2}
+\small
+Define correction terms
+\[
+\underline{c}_n \equiv \frac{\beta}{1-\beta}\,\underline{\Delta}_n,
+\qquad
+\overline{c}_n \equiv \frac{\beta}{1-\beta}\,\overline{\Delta}_n.
+\]
+Then (under standard conditions; most transparent in finite/discrete state problems),
+\[
+V_n(x)+\underline{c}_n \;\le\; V^\ast(x) \;\le\; V_n(x)+\overline{c}_n
+\qquad \text{for all } x.
+\]
+
+\begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Practical stopping: stop when \(\overline{c}_n-\underline{c}_n\) is small.
+\end{itemize}
+\end{frame}
+
+%========================================================================================
+\section{Wrap-up}
+%========================================================================================
+
+\begin{frame}{Wrap-up}
+\label{slide:L3_WrapUp}
+\small
+\begin{itemize}\setlength{\itemsep}{0.4em}
+    \item CMT: if \(T\) is a contraction on a complete metric space, then a unique fixed point exists
+    \item In DP, the job is to show the Bellman operator \(T\) is a contraction.
+    \item Blackwell conditions are a \blue{sufficient (not necessary)} way to construst contraction:
+    discounting with \(\beta\).
+    \item Algorithms:
+    \begin{itemize}\setlength{\itemsep}{0.25em}
+        \item VFI (guaranteed but slow when \(\beta\approx 1\))
+        \item Howard / Modified Policy Iteration (speed)
+        \item MQP bounds (error bounds / stopping rules)
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}
