@@ -442,7 +442,6 @@ Css: #TBL-2-1{border-left: 1px solid black;}
 Css: #TBL-2-1{border-right:1px solid black;}
 Css: #TBL-2-2{border-right:1px solid black;}
 Css: #TBL-2-3{border-right:1px solid black;}
-Css: #TBL-2-4{border-right:1px solid black;}
 --- characters ---
 Font("ec-lmr","12","12","100")
 Font("ec-lmbx","12","12","207")
