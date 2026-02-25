@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-02-25T19:36:28Z</updated>
+<updated>2026-02-25T23:16:25Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -50,7 +50,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</id>
 <published>2026-01-31T08:16:14Z</published>
-<updated>2026-02-23T10:33:07Z</updated>
+<updated>2026-02-25T19:36:29Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Time: R3R4Rn</p>
@@ -72,7 +72,7 @@
 <p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
 <h2 id="lecture-notes">Lecture Notes</h2>
 <ul>
-<li><a href="https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/698bcfb28df6d203ef980694/1770770354896/brunner_lecture.pdf">Inflation</a>
+<li><a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a>
 <ul>
 <li>by John H. Cochrane, a main theme for this lecture. The structure is based on this book.</li>
 </ul></li>
