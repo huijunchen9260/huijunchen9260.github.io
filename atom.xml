@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-02-25T23:16:25Z</updated>
+<updated>2026-02-25T23:43:09Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -50,7 +50,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</id>
 <published>2026-01-31T08:16:14Z</published>
-<updated>2026-02-25T19:36:29Z</updated>
+<updated>2026-02-25T23:16:26Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Time: R3R4Rn</p>
@@ -75,6 +75,10 @@
 <li><a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a>
 <ul>
 <li>by John H. Cochrane, a main theme for this lecture. The structure is based on this book.</li>
+</ul></li>
+<li><a href="https://www.johnhcochrane.com/research-all/the-fiscal-theory-of-the-price-level-1">The Fiscal Theory of the Price Level</a>
+<ul>
+<li>by John H. Cochrane, should be the full-blown version of the <a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a> book.</li>
 </ul></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
