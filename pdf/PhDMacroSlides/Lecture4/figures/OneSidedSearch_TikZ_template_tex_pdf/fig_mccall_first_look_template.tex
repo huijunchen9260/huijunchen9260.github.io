@@ -1,0 +1,119 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections, fillbetween}
+\usetikzlibrary{calc,positioning}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{pgfplots.groupplots, pgfplots.colormaps}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{sfmath}
+\pgfplotsset{compat=newest, scale only axis, width = 11.5cm, height = 6.5cm}
+\pgfplotsset{
+    sciclean/.style={
+        font=\footnotesize,
+        axis background/.style={fill=white},
+        axis on top=false,
+        axis lines=left,
+        axis line style={-, black},
+        tick align=inside,
+        major tick length=0.15cm,
+        grid=none,
+        enlargelimits=false,
+        title style={font=\small\bfseries, yshift=0.5em},
+        label style={font=\footnotesize},
+        tick label style={font=\scriptsize},
+    }
+}
+
+% Create fake \onslide and other commands for standalone picture
+\usepackage{xparse}
+\NewDocumentCommand{\onslide}{s t+ d<>}{}
+\NewDocumentCommand{\only}{d<>}{}
+\NewDocumentCommand{\uncover}{d<>}{}
+\NewDocumentCommand{\visible}{d<>}{}
+\NewDocumentCommand{\invisible}{d<>}{}
+
+% ---------------------------------------------------------------------
+% Create sloped legend on the data line
+\makeatletter
+\tikzset{
+Sloped/.code = {
+\iftikz@fullytransformed%
+    \tikzset{sloped}
+\else
+    \pgfgettransformentries{\mya}{\myb}{\myc}{\myd}{\mys}{\myt}%
+    \tikzset{sloped, transform shape, rotate = {atan2(\myb,\mya)}}%
+\fi
+}
+}
+\makeatother
+% ---------------------------------------------------------------------
+
+\definecolor{blue}{HTML}{0072BD}
+\definecolor{orange}{HTML}{D95319}
+\definecolor{yellow}{HTML}{EDB120}
+\definecolor{purple}{HTML}{7E2F8E}
+\definecolor{green}{HTML}{77AC30}
+\definecolor{light-blue}{HTML}{4DBEEE}
+\definecolor{red}{HTML}{A2142F}
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[
+    sciclean,
+    xlabel={wage $w$},
+    ylabel={value},
+    xmin=0, xmax=1,
+    ymin=0, ymax=10.5,
+    xtick={0,0.4,1},
+    xticklabels={$0$, $\bar w$, $B$},
+    ytick={0,4,10},
+    yticklabels={$0$, $\dfrac{\bar w}{1-\beta}$, $\dfrac{B}{1-\beta}$},
+]
+
+% --- Normalization for drawing ---
+% set 1/(1-\beta)=10 so accept value is 10 w; choose \bar w=0.4 so \bar w/(1-\beta)=4.
+
+% Accept value line
+\addplot[thick, solid, color=black, domain=0:1, samples=2]
+    {10*x}
+    node[pos=0.22, Sloped, below, font=\scriptsize,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt]
+    {$\dfrac{w}{1-\beta}$};
+
+% Reject value (constant)
+\addplot[very thick, solid, color=orange, domain=0:1, samples=2]
+    {4}
+    node[pos=0.78, Sloped, above, font=\scriptsize,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=2pt]
+    {$c+\beta\int_{0}^{B} v(w')\,F(dw')$};
+
+% Value function v(w) = max{accept, reject}
+\addplot[very thick, solid, color=blue, domain=0:0.4, samples=2] {4};
+\addplot[very thick, solid, color=blue, domain=0.4:1, samples=2]
+    {10*x}
+    node[pos=0.78, Sloped, above, font=\scriptsize, color=blue,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=2pt]
+    {$v(w)$};
+
+% Guide lines at \bar w and B
+\addplot[densely dashed, color=purple, domain=0:10.5, samples=2]
+    coordinates {(0.4,0) (0.4,4)};
+\addplot[densely dashed, color=purple, domain=0:10.5, samples=2]
+    coordinates {(1,0) (1,10)};
+
+% Upper bound line B/(1-\beta)
+\addplot[densely dashed, color=purple, domain=0:1, samples=2]
+    coordinates {(0,10) (1,10)}
+    node[pos=0.12, Sloped, below, font=\scriptsize,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=-1pt]
+    {$\dfrac{B}{1-\beta}$};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

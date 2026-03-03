@@ -1,0 +1,104 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing, intersections, fillbetween}
+\usetikzlibrary{calc,positioning}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{pgfplots.groupplots, pgfplots.colormaps}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{sfmath}
+\pgfplotsset{compat=newest, scale only axis, width = 11.5cm, height = 6.5cm}
+\pgfplotsset{
+    sciclean/.style={
+        font=\footnotesize,
+        axis background/.style={fill=white},
+        axis on top=false,
+        axis lines=left,
+        axis line style={-, black},
+        tick align=inside,
+        major tick length=0.15cm,
+        grid=none,
+        enlargelimits=false,
+        title style={font=\small\bfseries, yshift=0.5em},
+        label style={font=\footnotesize},
+        tick label style={font=\scriptsize},
+    }
+}
+
+\usepackage{xparse}
+\NewDocumentCommand{\onslide}{s t+ d<>}{}
+\NewDocumentCommand{\only}{d<>}{}
+\NewDocumentCommand{\uncover}{d<>}{}
+\NewDocumentCommand{\visible}{d<>}{}
+\NewDocumentCommand{\invisible}{d<>}{}
+
+\makeatletter
+\tikzset{
+Sloped/.code = {
+\iftikz@fullytransformed%
+    \tikzset{sloped}
+\else
+    \pgfgettransformentries{\mya}{\myb}{\myc}{\myd}{\mys}{\myt}%
+    \tikzset{sloped, transform shape, rotate = {atan2(\myb,\mya)}}%
+\fi
+}
+}
+\makeatother
+
+\definecolor{blue}{HTML}{0072BD}
+\definecolor{orange}{HTML}{D95319}
+\definecolor{yellow}{HTML}{EDB120}
+\definecolor{purple}{HTML}{7E2F8E}
+\definecolor{green}{HTML}{77AC30}
+\definecolor{light-blue}{HTML}{4DBEEE}
+\definecolor{red}{HTML}{A2142F}
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[
+    sciclean,
+    xlabel={wage},
+    ylabel={},
+    xmin=0, xmax=1,
+    ymin=-0.22, ymax=0.82,
+    xtick={0,1},
+    xticklabels={$0$, $B$},
+    ytick={-0.2,0.32,0.64,0.8},
+    yticklabels={$-c$, $\beta\,[\mathbb{E}w-c]$, $\beta(B-c)$, $B-c$},
+    title={Graph of Equation 6},
+]
+
+% Normalization used for the picture:
+% B=1, c=0.2, \beta=0.8, \mathbb{E}w=0.6.
+% LHS: w-c = x-0.2.
+% RHS: a convex curve connecting \beta(\mathbb{E}w-c)=0.32 at 0 and \beta(B-c)=0.64 at 1.
+
+% LHS
+\addplot[very thick, dotted, color=red, domain=0:1, samples=2]
+    {x - 0.2}
+    node[pos=0.75, Sloped, above, font=\scriptsize,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=1pt]
+    {LHS};
+
+% RHS
+\addplot[very thick, solid, color=blue, domain=0:1, samples=200]
+    {0.32 + (0.64-0.32)*x^1.7}
+    node[pos=0.75, Sloped, below, font=\scriptsize, color=blue,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=-1pt]
+    {RHS};
+
+% Horizontal reference at beta(B-c)
+\addplot[thick, dashed, color=black, domain=0:1, samples=2]
+    coordinates {(0,0.64) (1,0.64)}
+    node[pos=0.18, Sloped, above, font=\scriptsize,
+         fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt, yshift=1pt]
+    {$\beta(B-c)$};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}
