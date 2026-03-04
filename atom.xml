@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-03-04T08:34:42Z</updated>
+<updated>2026-03-04T20:32:39Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -83,6 +83,7 @@
 </ul></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture3/Lecture3.pdf">Lecture 3: AS-AD</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></summary>
