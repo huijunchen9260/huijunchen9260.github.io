@@ -1,0 +1,17 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % Axes
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$r$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$\frac{M^d}{P}$};
+
+  % Money demand curve
+  \draw[curve] (0.8,3.6) .. controls (2.5,2.8) and (4.2,1.7) .. (5.6,0.8)
+    node[label style, pos=0.65, above] {$L(Y,r)$};
+
+  % Direction arrows
+  \draw[helper] (2.3,2.55) -- (2.3,0) node[lab, anchor=north] {$r_0$};
+  \node[lab, anchor=west] at (3.1,3.95) {Money demand: $L_Y>0,\;L_r<0$};
+\end{tikzpicture}
+\end{document}

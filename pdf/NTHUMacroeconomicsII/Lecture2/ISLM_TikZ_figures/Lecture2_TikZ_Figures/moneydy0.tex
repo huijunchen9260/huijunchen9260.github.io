@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$i$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$M^d$};
+
+  \draw[curve] (0.9,3.4) .. controls (2.3,2.7) and (3.9,1.6) .. (5.4,0.7)
+    node[label style, pos=0.68, above] {$Y_0$};
+
+  \draw[curve2] (0.9,3.9) .. controls (2.4,3.1) and (4.1,2.0) .. (5.6,1.0)
+    node[label style, pos=0.68, above] {$Y_1>Y_0$};
+
+  \node[lab, anchor=west] at (0.2,4.05) {Higher $Y$: more transactions $\Rightarrow$ higher money demand};
+\end{tikzpicture}
+\end{document}

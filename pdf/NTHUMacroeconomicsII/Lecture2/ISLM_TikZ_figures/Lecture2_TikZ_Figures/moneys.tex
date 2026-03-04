@@ -1,0 +1,14 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$i$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$\frac{M^s}{P}$};
+
+  % Real money supply (vertical)
+  \draw[curve] (3.2,0.3) -- (3.2,4.0)
+    node[lab, anchor=south] at (3.2,4.0) {$\frac{M^s}{P}$};
+
+  \node[lab, anchor=west] at (0.2,3.8) {Given nominal $M^s$ and price level $P$};
+\end{tikzpicture}
+\end{document}

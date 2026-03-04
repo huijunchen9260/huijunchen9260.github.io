@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$Y$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$r$};
+
+  \draw[curve] (1.2,1.2) .. controls (2.7,1.7) and (4.0,2.7) .. (5.5,3.8)
+    node[label style, pos=0.65, above] {LM$(M_0)$};
+
+  \draw[curve2] (1.6,0.8) .. controls (3.1,1.3) and (4.4,2.3) .. (5.9,3.4)
+    node[label style, pos=0.65, above] {LM$(M_1>M_0)$};
+
+  \node[lab, anchor=west] at (0.3,3.95) {$M\uparrow \Rightarrow M/P\uparrow \Rightarrow$ LM shifts down/right};
+\end{tikzpicture}
+\end{document}

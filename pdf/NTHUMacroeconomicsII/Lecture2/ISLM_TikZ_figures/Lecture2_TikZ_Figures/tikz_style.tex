@@ -1,0 +1,21 @@
+% Common TikZ styles (built from the user's Graduate Macro Sequence template)
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc, decorations.markings}
+
+% Base template styles (user-provided)
+\tikzset{
+  node style/.style={draw, circle, minimum size=6mm, inner sep=0pt},
+  label style/.style={font=\small, sloped, anchor=center},
+  arrow style/.style={-{Stealth[length=3mm]}, thick}
+}
+
+% Macro-diagram extensions (kept minimal and clean)
+\tikzset{
+  axis/.style={arrow style},
+  curve/.style={thick},
+  curve2/.style={thick, dashed},
+  helper/.style={thin, dashed},
+  dot/.style={circle, fill=black, inner sep=1.2pt},
+  lab/.style={font=\small},
+  titlelab/.style={font=\small\bfseries},
+}

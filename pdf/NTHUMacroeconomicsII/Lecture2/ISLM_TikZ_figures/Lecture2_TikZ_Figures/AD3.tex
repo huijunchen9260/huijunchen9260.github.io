@@ -1,0 +1,18 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$Y$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$P$};
+
+  \draw[curve] (1.0,3.7) .. controls (2.6,3.0) and (3.8,2.0) .. (5.7,1.0)
+    node[label style, pos=0.62, above] {AD$_0$};
+
+  \draw[curve2] (0.6,3.7) .. controls (2.2,3.0) and (3.4,2.0) .. (5.3,1.0)
+    node[label style, pos=0.62, above] {AD$_1$};
+
+  \draw[arrow style] (3.2,2.4) -- (2.7,2.4) node[lab, anchor=east] {tightening};
+
+  \node[lab, anchor=west] at (0.3,3.95) {Tighter policy / higher money demand shifts AD left};
+\end{tikzpicture}
+\end{document}

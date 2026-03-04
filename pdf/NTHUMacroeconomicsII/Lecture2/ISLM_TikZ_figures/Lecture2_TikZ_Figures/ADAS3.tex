@@ -1,0 +1,31 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$Y$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$P$};
+
+  % AD1 (after demand boom)
+  \draw[curve] (1.4,3.7) .. controls (3.0,3.0) and (4.2,2.0) .. (6.1,1.0)
+    node[label style, pos=0.62, above] {AD};
+
+  % SRAS short-run
+  \draw[curve] (1.2,0.9) .. controls (2.6,1.4) and (4.0,2.3) .. (5.6,3.6)
+    node[label style, pos=0.65, above] {SRAS$_0$};
+
+  % SRAS after price/wage adjustment (shifts up/left)
+  \draw[curve2] (0.9,1.2) .. controls (2.3,1.7) and (3.7,2.6) .. (5.3,3.9)
+    node[label style, pos=0.65, above] {SRAS$_1$};
+
+  % LRAS
+  \draw[curve2] (3.6,0.4) -- (3.6,4.0)
+    node[lab, anchor=south] at (3.6,4.0) {LRAS};
+
+  \node[dot] (E0) at (3.6,2.4) {};
+  \node[dot] (E1) at (3.6,2.8) {};
+  \node[lab, anchor=south west] at (E0) {SR};
+  \node[lab, anchor=south west] at (E1) {LR};
+
+  \node[lab, anchor=west] at (0.3,3.95) {Over time, SRAS adjusts: output returns to FE; price level rises};
+\end{tikzpicture}
+\end{document}

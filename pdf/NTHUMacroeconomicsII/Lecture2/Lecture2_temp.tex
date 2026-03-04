@@ -1,0 +1,520 @@
+%----------------------------------------------------------------------------------------
+% Lecture: IS–LM (Closed Economy) in Abel-style language
+% Uses your beamer preamble + your figure filenames
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{amsmath}
+\usepackage{iftex}
+
+% --- Speaker notes (hidden by default) ---
+\usepackage{pgfpages}
+\setbeameroption{hide notes}
+% Uncomment ONE to print notes:
+% \setbeameroption{show notes}
+% \setbeameroption{show notes on second screen=right}
+
+% --- Font handling: compile with pdfLaTeX here; switch to LuaLaTeX locally if desired ---
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \usepackage{luatexja}
+  \setmainfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+  \setsansfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+\fi
+
+% ------------ %
+% beamerbutton %
+% ------------ %
+\newcommand{\goto}[2]{\hyperlink{#2}{\beamergotobutton{#1}}}
+\newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
+\newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
+
+% ------------------------------------ %
+% Section title page with Huge bf text %
+% ------------------------------------ %
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \Huge{\centerline{\textbf{\insertsection}}}
+  \end{frame}
+}
+
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+%%=============================================================
+%%  FOOTLINE TEMPLATE
+%%=============================================================
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm} \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+\setbeamertemplate{footline}[shadow theme]
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[IS--LM]{Macroeconomics II (Spring 2026)\\\vspace{4pt}Lecture: The IS--LM Model (Closed Economy) \& Policy Analysis}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{National Tsing Hua University}
+\date{}
+
+\graphicspath{{figures/}{./}}
+
+\begin{document}
+
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\note{
+Housekeeping: today is Week 2 in the syllabus: IS-LM I (goods+money) and IS-LM II (policy).
+Promise: students leave with (i) what IS and LM mean, (ii) how to shift them, (iii) how AD comes out.
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Learning objectives (what you should be able to do today)}
+\begin{enumerate}
+\item Explain the \textbf{FE line} (full-employment output) and why it is vertical.
+\item Derive the \textbf{IS curve} as \textbf{goods-market equilibrium} (desired investment = desired saving).
+\item Derive the \textbf{LM curve} as \textbf{asset-market equilibrium} (real money supply = real money demand).
+\item Use IS--LM to analyze \textbf{monetary} and \textbf{fiscal} policy in the short run.
+\item Convert IS--LM into a \textbf{downward-sloping AD curve} and preview AD--AS.
+\end{enumerate}
+\note{
+Abel-style framing: define each curve as an equilibrium condition, then (i) slope, (ii) shifts, (iii) policy experiments.
+Tell them: “We are building a framework for inflation — but first we need demand side + money market.”
+}
+\end{frame}
+
+%------------------------------------------------
+\section{Bridge from RBC to IS--LM}
+
+%------------------------------------------------
+\begin{frame}{From RBC to IS--LM: what changes?}
+\begin{itemize}
+\item In RBC, flexible prices clear markets: output is pinned down by \textbf{technology and labor market equilibrium}.
+\item The key price is the \textbf{real interest rate} $r$: it equilibrates \textbf{saving and investment}.
+\item IS--LM keeps that real logic, but adds:
+\begin{itemize}
+\item a role for \textbf{money demand} and the \textbf{nominal interest rate};
+\item a short-run environment where the \textbf{price level is taken as given} (for now).
+\end{itemize}
+\end{itemize}
+
+\begin{block}{Big picture}
+IS = goods market clearing;\quad LM = money/asset market clearing;\quad together they determine $(Y,r)$ in the short run.
+\end{block}
+\note{
+Key “continuity” line: IS is basically your RBC goods-market/S=I condition drawn in (Y,r) space.
+New ingredient is LM: a nominal object that links money, interest rates, and eventually the price level.
+}
+\end{frame}
+
+%------------------------------------------------
+\section{FE line: labor market equilibrium}
+
+%------------------------------------------------
+\begin{frame}{The FE line: equilibrium in the labor market (1 of 2)}
+\begin{itemize}
+\item The labor market determines \textbf{full-employment} employment $N^{FE}$ and output $Y^{FE}$.
+\item For a given $K$ and $A$, full-employment output does \textbf{not} depend on the real interest rate.
+\item In $(Y,r)$ space, this gives a \textbf{vertical} FE line at $Y^{FE}$.
+\end{itemize}
+
+\begin{block}{Interpretation}
+FE is the \textbf{supply-side benchmark}: where the economy ends up in the long run (when prices adjust).
+\end{block}
+\note{
+Connect to RBC: “This is exactly the RBC ‘Y is pinned by labor market + technology’ insight.”
+Emphasize: FE is not a claim that Y always equals FE; it’s the reference point.
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{The FE line: what shifts it? (2 of 2)}
+\begin{itemize}
+\item FE shifts right when full-employment output rises:
+\begin{itemize}
+\item beneficial supply shock ($A\uparrow$),
+\item labor supply increases ($N^{FE}\uparrow$),
+\item capital stock increases ($K\uparrow$).
+\end{itemize}
+\item FE shifts left when the opposite happens.
+\end{itemize}
+
+\begin{block}{Forecast}
+Policy experiments in IS--LM move the economy \emph{around} FE in the short run; price adjustment brings us back \emph{toward} FE in the longer run.
+\end{block}
+\note{
+You can keep this fast. Students often confuse FE with “LRAS”; say that explicitly: FE is like LRAS in (Y,P) space.
+}
+\end{frame}
+
+%------------------------------------------------
+\section{IS curve: equilibrium in the goods market}
+
+%------------------------------------------------
+\begin{frame}{The IS curve: equilibrium in the goods market (1 of 4)}
+\begin{itemize}
+\item Goods market clears when \textbf{desired investment} equals \textbf{desired national saving}.
+\item The real interest rate adjusts to restore equilibrium.
+\item For any level of output $Y$, the IS curve shows the real interest rate $r$ that clears the goods market.
+\end{itemize}
+
+\begin{block}{Goods-market condition}
+\[
+I(r,\,\text{expectations}) = S(Y,r,\,\text{fiscal policy}).
+\]
+\end{block}
+\note{
+Use Abel language: “IS is a map from Y to the r that makes S=I.”
+Tell students: we will later microfound this via Euler equation (NK IS).
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Why IS slopes downward (2 of 4)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{fig1.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item Saving increases with $r$ (higher return encourages saving).
+\item Investment decreases with $r$ (higher cost of capital discourages investment).
+\item If output $Y$ rises, saving rises (people save more out of higher income).
+\item With downward-sloping investment, higher $Y$ requires a \textbf{lower $r$} to keep $I=S$.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Mechanism script: “Y up → S shifts right → to restore I=S we need r down so I rises and S falls.”
+If fig1 is not the S–I diagram but your IS picture, still works: emphasize “higher r lowers demand so equilibrium Y lower.”
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Shifts of IS: what moves goods demand? (3 of 4)}
+\begin{itemize}
+\item IS shifts \textbf{up/right} if desired spending rises relative to saving:
+\begin{itemize}
+\item temporary increase in government purchases ($G\uparrow$),
+\item tax cut (if Ricardian equivalence does not hold),
+\item higher expected future income / wealth (consumption today rises),
+\item higher expected future MPK (investment demand rises).
+\end{itemize}
+\item IS shifts \textbf{down/left} when the opposite happens.
+\end{itemize}
+
+\begin{block}{Translation}
+“IS right” means: for a given $r$, the goods market wants \textbf{higher} equilibrium output.
+\end{block}
+\note{
+Keep Abel-style “factors that shift” bullet list. Then add one sentence: “we’ll use this repeatedly in policy analysis.”
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{A fiscal example: $G\uparrow$ shifts IS (4 of 4)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{AD1.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item A temporary rise in $G$ reduces national saving.
+\item At the original $Y$, the real interest rate must rise to reduce private spending and restore goods-market equilibrium.
+\item So IS shifts up/right.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Even if AD1 is shown, narrate it as “G shifts IS, which later shows up as AD shifting right.”
+You can mention “crowding out via higher r” already here.
+}
+\end{frame}
+
+%------------------------------------------------
+\section{LM curve: equilibrium in the asset market}
+
+%------------------------------------------------
+\begin{frame}{The LM curve: asset market equilibrium (1 of 5)}
+\small
+\begin{itemize}
+\item Asset-market equilibrium requires:
+\[
+\frac{M}{P} = L(Y,r) \quad \text{(real money supply = real money demand)}.
+\]
+\item Real money supply $(M/P)$ is set by the central bank \emph{and} the price level.
+\item Real money demand:
+\begin{itemize}
+\item rises with $Y$ (transactions),
+\item falls with $r$ (opportunity cost of holding money).
+\end{itemize}
+\end{itemize}
+
+\begin{block}{Definition}
+LM is the set of $(Y,r)$ pairs that clear the money/asset market.
+\end{block}
+\note{
+Use Abel’s mechanism: if Y rises, people want more money → they sell bonds → bond prices fall → yields rise → r rises until money demand falls back.
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Money demand picture: what is $L(Y,r)$? (2 of 5)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{moneyd.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item Money provides liquidity services.
+\item Holding money has an opportunity cost: foregone interest $r$.
+\item Hence:
+\begin{itemize}
+\item $r\uparrow \Rightarrow L(Y,r)\downarrow$,
+\item $Y\uparrow \Rightarrow L(Y,r)\uparrow$.
+\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+If students ask “why r not i?” say: at this stage we treat expected inflation as given, so i and r move together.
+Later, Fisher equation will separate them.
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Deriving LM: why it slopes upward (3 of 5)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LM0.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item Start at equilibrium.
+\item If output rises, money demand rises.
+\item To restore equilibrium, people sell nonmonetary assets:
+\begin{itemize}
+\item asset prices fall,
+\item yields rise,
+\item the real interest rate rises.
+\end{itemize}
+\item Therefore, LM slopes upward.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+This is the Abel story almost verbatim: “output up → money demand up → sell bonds → r up.”
+Tell them: this is the LM “restoring mechanism.”
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Shifts of LM: changes in real money supply (4 of 5)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LM2.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item If $M$ rises (or $P$ falls), real money supply rises.
+\item At a given $Y$, equilibrium $r$ is lower.
+\item So LM shifts down/right.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Emphasize the “real” part: LM shifts with M/P.
+Quick question: “If P rises unexpectedly, what happens to LM?”
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Shifts of LM: changes in real money demand (5 of 5)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{LM1.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item If money demand rises (liquidity preference rises), then at each $Y$ the equilibrium $r$ must rise.
+\item So LM shifts up/left.
+\item Examples: higher perceived risk of nonmoney assets; lower liquidity of alternatives; payment frictions.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+If you want to tie to 2008/2020: liquidity demand spike shifts LM left, tightening conditions even if M rises.
+}
+\end{frame}
+
+%------------------------------------------------
+\section{General equilibrium and policy analysis}
+
+%------------------------------------------------
+\begin{frame}{IS--LM equilibrium: clearing two markets at once}
+\begin{itemize}
+\item \textbf{On the IS curve:} goods market clears ($I=S$).
+\item \textbf{On the LM curve:} asset market clears ($M/P = L(Y,r)$).
+\item The intersection gives the short-run equilibrium $(Y,r)$ for a given $(M,P)$ and fiscal stance.
+\end{itemize}
+
+\begin{block}{Key comparison to RBC}
+RBC pins down $Y$ at FE. IS--LM allows $Y$ to deviate from FE in the short run because nominal/financial conditions affect demand.
+\end{block}
+\note{
+Say explicitly: “short run ≠ long run.” IS-LM is a short-run demand-determination tool.
+We haven’t solved for P yet; we treat it as fixed (next: AD-AS gives P adjustment).
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Monetary policy experiment: $M\uparrow$ (or $P\downarrow$)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{AD2.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item $M/P\uparrow$ shifts LM down/right.
+\item Equilibrium $r$ falls and output rises in the short run.
+\item This is the classic “monetary expansion raises demand” result.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Even if the figure is AD2, narrate via LM shift first, then connect to AD shift.
+Plant the seed: modern CB uses interest-rate policy, not money targets (we’ll fix later).
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Fiscal policy experiment: $G\uparrow$ (temporary)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{AD1.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item $G\uparrow$ shifts IS up/right.
+\item Equilibrium $Y$ rises; equilibrium $r$ rises.
+\item The rise in $r$ partially crowds out private spending.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Say “crowding out” carefully: it’s a mechanism (higher r reduces I), not a moral judgment.
+If time: ask students what happens if LM is very flat/steep (liquidity trap vs classical).
+}
+\end{frame}
+
+%------------------------------------------------
+\section{From IS--LM to AD--AS (preview)}
+
+%------------------------------------------------
+\begin{frame}{From IS--LM to AD: why AD slopes downward}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{AD0.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item Hold nominal money $M$ fixed.
+\item If $P$ falls, real balances $M/P$ rise.
+\item LM shifts down/right $\Rightarrow$ equilibrium $Y$ rises.
+\item Hence: lower $P$ corresponds to higher $Y$ $\Rightarrow$ AD slopes downward.
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+This is the key inflation bridge: AD is a mapping from P to equilibrium Y (given policy and IS).
+You can emphasize: “So the price level matters through real balances.”
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Why we need AS next (and why IS--LM alone is incomplete)}
+\begin{columns}
+\begin{column}{0.60\textwidth}
+\centering
+\includegraphics[width=\linewidth]{ADAS0.jpg}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\begin{itemize}
+\item IS--LM tells us \textbf{demand} (AD).
+\item Inflation requires a theory of \textbf{price adjustment} (AS).
+\item AD--AS lets us answer:
+\begin{itemize}
+\item when demand shocks raise mostly $Y$ vs mostly $P$,
+\item how the economy returns toward FE over time.
+\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\note{
+Closing line: “Next lecture: AS / Phillips curve logic. Then we can speak directly about inflation dynamics.”
+Tie to course focus: inflation & price level.
+}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Next time}
+\large
+\begin{itemize}
+\item Aggregate supply and price adjustment (SRAS vs LRAS / FE).
+\item AD--AS policy experiments and the inflation-output tradeoff.
+\item Then we will transition to New Keynesian foundations.
+\end{itemize}
+\note{
+If you have time today, preview one ADAS shift (demand boom vs supply shock) using ADAS1/ADAS2.
+Otherwise keep it for Lecture 3.
+}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$Y$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$P$};
+
+  \draw[curve] (1.0,3.7) .. controls (2.6,3.0) and (3.8,2.0) .. (5.7,1.0)
+    node[label style, pos=0.62, above] {AD};
+
+  \draw[curve] (1.4,0.8) .. controls (2.8,1.3) and (4.2,2.2) .. (5.8,3.5)
+    node[label style, pos=0.65, above] {SRAS$_0$};
+
+  \draw[curve2] (0.9,1.1) .. controls (2.3,1.6) and (3.7,2.5) .. (5.3,3.8)
+    node[label style, pos=0.65, above] {SRAS$_1$};
+
+  \node[dot] (E0) at (3.2,2.2) {};
+  \node[dot] (E1) at (2.8,2.5) {};
+  \node[lab, anchor=south west] at (E0) {E$_0$};
+  \node[lab, anchor=south west] at (E1) {E$_1$};
+
+  \node[lab, anchor=west] at (0.3,3.95) {Adverse supply: $P\uparrow$ while $Y\downarrow$ (stagflation)};
+\end{tikzpicture}
+\end{document}

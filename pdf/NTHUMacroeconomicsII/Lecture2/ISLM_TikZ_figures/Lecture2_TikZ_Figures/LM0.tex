@@ -1,0 +1,23 @@
+\documentclass[tikz]{standalone}
+\input{tikz_style.tex}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[axis] (0,0) -- (6.2,0) node[lab, anchor=west] {$Y$};
+  \draw[axis] (0,0) -- (0,4.2) node[lab, anchor=south] {$r$};
+
+  \draw[curve] (1.0,1.0) .. controls (2.5,1.4) and (4.0,2.5) .. (5.5,3.6)
+    node[label style, pos=0.60, above] {LM};
+
+  \node[dot] (A) at (2.0,1.55) {};
+  \node[dot] (B) at (4.2,2.85) {};
+  \node[lab, anchor=south west] at (A) {A};
+  \node[lab, anchor=south west] at (B) {B};
+
+  \draw[helper] (A) -- (2.0,0) node[lab, anchor=north] {$Y_0$};
+  \draw[helper] (B) -- (4.2,0) node[lab, anchor=north] {$Y_1$};
+  \draw[helper] (A) -- (0,1.55) node[lab, anchor=east] {$r_0$};
+  \draw[helper] (B) -- (0,2.85) node[lab, anchor=east] {$r_1$};
+
+  \node[lab, anchor=west] at (0.3,3.95) {$M/P$ fixed;\;$Y\uparrow \Rightarrow r\uparrow$ to clear money market};
+\end{tikzpicture}
+\end{document}
