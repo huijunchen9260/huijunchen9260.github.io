@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.21.0 (TeX Live 2025/Homebrew)  (format=dvilualatex 2025.3.7)  24 FEB 2026 23:33
+This is LuaTeX, Version 1.21.0 (TeX Live 2025/Homebrew)  (format=dvilualatex 2025.3.7)  4 MAR 2026 08:36
  restricted system commands enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
 de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
@@ -1705,9 +1705,9 @@ Here is how much of LuaTeX's memory you used:
  568 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 68 glue_spec,
  7 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1297,3:1574,4:34,5:181,6:131,7:3722,8:76,9:1048,10:33,11:1
+   avail lists: 1:2,2:1297,3:1574,4:34,5:181,6:131,7:3734,8:76,9:1048,10:33,11:1
 54
  50486 multiletter control sequences out of 65536+600000
  42 fonts using 2855063 bytes
  108i,8n,125p,1004b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on syllabus.dvi (5 pages, 55196 bytes).
+Output written on syllabus.dvi (5 pages, 55200 bytes).
