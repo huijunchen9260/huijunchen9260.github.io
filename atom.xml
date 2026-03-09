@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-03-09T20:29:16Z</updated>
+<updated>2026-03-09T22:51:40Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PhDMacroSpring2026.html"/>
 <id>https://huijunchen9260.github.io/PhDMacroSpring2026.html</id>
 <published>2026-02-23T01:17:31Z</published>
-<updated>2026-03-09T12:24:45Z</updated>
+<updated>2026-03-09T20:29:18Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
 <p>Time: W3W4Wn</p>
@@ -25,6 +25,7 @@
 <li><a href="#course-schedule">Course Schedule</a></li>
 <li><a href="#lecture-notes">Lecture Notes</a></li>
 <li><a href="#reference">Reference</a></li>
+<li><a href="#fun-stuff">Fun stuff</a></li>
 <li><a href="#problem-sets">Problem Sets</a></li>
 </ul>
 <!-- vim-markdown-toc -->
@@ -44,6 +45,13 @@
 <ul>
 <li>Some of the Dynamic Programming notes come from Fatih Guvenen&#8217;s <a href="https://www.fatihguvenen.com/phd-computational-methods">Computational Method</a></li>
 <li>The models are adopted from the lecture slides by Julia Thomas.</li>
+</ul>
+<h2 id="fun-stuff">Fun stuff</h2>
+<ul>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S016726812300344X">Do looks matter for an academic career in economics?</a>
+<ul>
+<li>Yes, at least partially!</li>
+</ul></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></summary>
