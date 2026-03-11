@@ -1,0 +1,488 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{natbib}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \usepackage{luatexja}
+\fi
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+\sloppy
+
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}%
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+\sloppy
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \parindent=0pt%
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother
+
+\ifPDFTeX
+  % pdfLaTeX: Latin Modern (no fontspec)
+\else
+  % LuaLaTeX: use Crimson Pro if available; otherwise fall back to Latin Modern
+  \IfFontExistsTF{Crimson Pro Light}{%
+    \setmainfont{Crimson Pro Light}[
+      ItalicFont={* Italic},
+      BoldFont={Crimson Pro Medium},
+      BoldItalicFont={Crimson Pro Medium Italic}]
+    \setsansfont{Crimson Pro Light}[
+      ItalicFont={* Italic},
+      BoldFont={Crimson Pro Medium},
+      BoldItalicFont={Crimson Pro Medium Italic}]
+  }{%
+    \setmainfont{Latin Modern Roman}
+    \setsansfont{Latin Modern Sans}
+  }%
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uncomment next line to show answers in red:
+% \showAns
+% Uncomment next line to print a list of answers:
+% \listofanswer
+
+\title{Problem Set 1}
+\author{Hui-Jun Chen}
+
+\begin{document}
+\maketitle
+
+\begin{Exercise}
+
+\subsection*{Lecture 1: Motivation --- Inflation, the price level, and nominal anchors}
+
+\Question The \textbf{price level} $P_t$ is best interpreted as \answer{B}
+\begin{tasks}(1)
+\task the growth rate of prices between $t$ and $t+1$
+\task the value of money in terms of goods
+\task the nominal interest rate set by the central bank
+\task the real interest rate that clears the goods market
+\end{tasks}
+
+\Question \textbf{Inflation} $\pi_t$ is \answer{A}
+\begin{tasks}(1)
+\task the rate of change of the price level
+\task the level of real GDP
+\task the nominal money supply
+\task the real wage divided by productivity
+\end{tasks}
+
+\Question A \textbf{nominal anchor} is needed because otherwise \answer{C}
+\begin{tasks}(1)
+\task output is not uniquely determined in the long run
+\task the labor market cannot clear
+\task the price level can drift without a force pinning down its level
+\task the government cannot issue nominal debt
+\end{tasks}
+
+\Question In the 2021--2022 U.S. episode, one headline puzzle motivating the course is \answer{D}
+\begin{tasks}(1)
+\task inflation fell immediately once deficits rose
+\task real GDP was constant while inflation changed
+\task policy rates rose sharply before inflation rose
+\task inflation rose substantially while policy rates initially stayed near zero
+\end{tasks}
+
+\Question The fiscal-theory/debt-valuation equation conceptually says the real value of nominal government liabilities equals \answer{B}
+\begin{tasks}(1)
+\task the current money growth rate
+\task the present value of expected future primary surpluses
+\task the present value of expected future GDP growth
+\task the current-period tax revenue only
+\end{tasks}
+
+\Question A key reason \emph{``deficits cause inflation''} is not a complete theory is that \answer{C}
+\begin{tasks}(1)
+\task deficits always reduce output
+\task deficits can only be financed by money printing
+\task what matters is the expected \emph{path} of future fiscal backing, not just current deficits
+\task deficits mechanically determine the real interest rate
+\end{tasks}
+
+\Question In the debt-valuation view, unexpected inflation can be triggered by \answer{A}
+\begin{tasks}(1)
+\task news that lowers expected future primary surpluses (backing)
+\task higher current productivity with no other changes
+\task a fall in money demand with fixed $P$
+\task an increase in labor supply holding everything else fixed
+\end{tasks}
+
+\Question Under a regime where the public expects future taxes/spending to adjust to stabilize debt, a temporary deficit is most consistent with \answer{D}
+\begin{tasks}(1)
+\task large and permanent inflation regardless of policy
+\task an immediate collapse in output
+\task a permanent fall in the price level
+\task relatively muted inflation pressure from the deficit alone
+\end{tasks}
+
+\Question A clean way to summarize the course motivation is: theories of inflation must explain \answer{B}
+\begin{tasks}(1)
+\task only the long-run growth rate of output
+\task timing and comovement of $\pi$, $i$, output, and policy during episodes
+\task only cross-sectional variation in firm prices
+\task only the money multiplier
+\end{tasks}
+
+\Question In Cochrane-style framing, disagreements about inflation often boil down to disagreements about \answer{C}
+\begin{tasks}(1)
+\task whether labor supply is elastic
+\task whether investment has adjustment costs
+\task the policy regime and the nominal anchor
+\task whether production is Cobb--Douglas
+\end{tasks}
+
+\subsection*{Lecture 2: IS--LM --- money market, goods market, and aggregate demand}
+
+\Question The money-demand function $M^d/P = L(Y,i)$ typically satisfies \answer{A}
+\begin{tasks}(1)
+\task $\partial L/\partial Y>0$ and $\partial L/\partial i<0$
+\task $\partial L/\partial Y<0$ and $\partial L/\partial i>0$
+\task $\partial L/\partial Y=0$ and $\partial L/\partial i<0$
+\task $\partial L/\partial Y>0$ and $\partial L/\partial i=0$
+\end{tasks}
+
+\Question If output $Y$ rises (holding $M$ and $P$ fixed), the LM curve implies the equilibrium interest rate \answer{B}
+\begin{tasks}(1)
+\task falls because money demand falls
+\task rises because money demand rises
+\task stays constant because money supply is fixed
+\task becomes indeterminate because goods market clears first
+\end{tasks}
+
+\Question Holding nominal money supply $M$ fixed, an increase in the price level $P$ \answer{C}
+\begin{tasks}(1)
+\task raises real balances $M/P$ and shifts LM right
+\task does not affect LM because $M$ is nominal
+\task lowers real balances $M/P$ and shifts LM left
+\task shifts IS right through higher government spending
+\end{tasks}
+
+\Question A monetary expansion ($M\uparrow$) with $P$ fixed shifts the LM curve \answer{D}
+\begin{tasks}(1)
+\task up/left
+\task not at all
+\task up/right
+\task down/right
+\end{tasks}
+
+\Question In standard IS logic, a fall in the interest rate increases equilibrium output because \answer{A}
+\begin{tasks}(1)
+\task investment (and other interest-sensitive spending) rises
+\task money demand rises
+\task productivity rises
+\task labor supply falls
+\end{tasks}
+
+\Question A rightward shift of IS can be caused by \answer{B}
+\begin{tasks}(1)
+\task an increase in money demand holding everything else fixed
+\task an increase in government purchases $G$
+\task an increase in the price level $P$ holding $M$ fixed
+\task a fall in productivity $A$
+\end{tasks}
+
+\Question IS--LM equilibrium is the point where \answer{C}
+\begin{tasks}(1)
+\task the labor market and goods market clear
+\task only the goods market clears
+\task both the goods market and money market clear
+\task money demand equals investment demand
+\end{tasks}
+
+\Question The \textbf{aggregate demand} (AD) curve slopes downward because \answer{A}
+\begin{tasks}(1)
+\task $P\downarrow \Rightarrow M/P\uparrow \Rightarrow$ LM shifts right $\Rightarrow Y\uparrow$
+\task $P\downarrow \Rightarrow$ wages rise $\Rightarrow Y\uparrow$
+\task $P\uparrow \Rightarrow$ productivity rises $\Rightarrow Y\uparrow$
+\task $P\downarrow \Rightarrow$ taxes rise $\Rightarrow Y\uparrow$
+\end{tasks}
+
+\Question In the IS--LM-to-AD derivation, which variable is treated as changing to trace out AD? \answer{D}
+\begin{tasks}(1)
+\task $Y$
+\task $i$
+\task $G$
+\task $P$
+\end{tasks}
+
+\Question In the short run of the textbook IS--LM story, it is common to treat the price level $P$ as \answer{B}
+\begin{tasks}(1)
+\task fully flexible within the period
+\task predetermined/sticky so IS--LM pins down $Y$ given $P$
+\task irrelevant because money is neutral
+\task chosen by households directly
+\end{tasks}
+
+\subsection*{Lecture 3: AD--AS --- demand vs supply shocks and short-run vs medium-run}
+
+\Question The FE (full-employment) line in $(Y,P)$ space is typically \answer{C}
+\begin{tasks}(1)
+\task downward sloping because higher $P$ raises real balances
+\task upward sloping because higher $P$ raises labor supply
+\task vertical because full-employment output is determined by real factors
+\task horizontal because prices are fixed
+\end{tasks}
+
+\Question A rightward shift in AD (holding AS fixed) typically leads to \answer{A}
+\begin{tasks}(1)
+\task $Y\uparrow$ and $P\uparrow$ in the short run
+\task $Y\uparrow$ and $P\downarrow$ in the short run
+\task $Y\downarrow$ and $P\uparrow$ in the short run
+\task $Y\downarrow$ and $P\downarrow$ in the short run
+\end{tasks}
+
+\Question A negative productivity shock is best represented in AD--AS as \answer{D}
+\begin{tasks}(1)
+\task AD shifting right
+\task AD shifting left
+\task SRAS shifting right
+\task SRAS shifting left (and FE shifting left)
+\end{tasks}
+
+\Question A supply shock that shifts AS left tends to generate \answer{B}
+\begin{tasks}(1)
+\task $Y\uparrow$ and $P\downarrow$
+\task $Y\downarrow$ and $P\uparrow$
+\task $Y\uparrow$ and $P\uparrow$
+\task $Y\downarrow$ and $P\downarrow$
+\end{tasks}
+
+\Question The comovement diagnostic says: demand shocks typically make $(Y,P)$ move \answer{A}
+\begin{tasks}(1)
+\task in the same direction
+\task in opposite directions
+\task not at all
+\task randomly
+\end{tasks}
+
+\Question In the medium-run adjustment story, if $Y>Y^{FE}$ after an AD expansion, then price adjustment typically implies \answer{C}
+\begin{tasks}(1)
+\task the price level falls until $Y$ rises further
+\task $Y$ stays permanently above $Y^{FE}$
+\task the price level rises, reducing real balances and moving $Y$ back toward $Y^{FE}$
+\task the money supply must fall one-for-one with output
+\end{tasks}
+
+\Question A fiscal expansion $G\uparrow$ shifts AD right. In a model with a vertical FE line, the long-run effect on output is \answer{D}
+\begin{tasks}(1)
+\task permanently higher output
+\task permanently lower output
+\task output becomes indeterminate
+\task no permanent change in output; mainly a higher price level
+\end{tasks}
+
+\Question In AD--AS, an outward shift of AD combined with an inward shift of AS is most consistent with \answer{B}
+\begin{tasks}(1)
+\task disinflation and a boom
+\task higher inflation with ambiguous output (depends on magnitudes)
+\task lower inflation with lower output
+\task unchanged inflation and higher output
+\end{tasks}
+
+\Question The main reason Lecture 3 follows Lecture 2 is that IS--LM gives AD, but \answer{A}
+\begin{tasks}(1)
+\task inflation requires a supply/price-adjustment side (AS)
+\task the labor market disappears in IS--LM
+\task money demand is irrelevant for policy
+\task GDP accounting fails
+\end{tasks}
+
+\Question In a simple AD--AS framework, ``stagflation'' refers to \answer{C}
+\begin{tasks}(1)
+\task low inflation and high output
+\task low inflation and low output
+\task high inflation and low output
+\task high inflation and high output
+\end{tasks}
+
+\subsection*{Lecture 4: Inflation dynamics --- Fisher, Phillips curves, policy rules, and Cochrane-style distinctions}
+\Question The Fisher equation can be summarized as \answer{B}
+\begin{tasks}(1)
+\task $i_t \approx r_t - E_t\pi_{t+1}$
+\task $i_t \approx r_t + E_t\pi_{t+1}$
+\task $r_t \approx i_t + E_t\pi_{t+1}$
+\task $E_t\pi_{t+1} \approx r_t - i_t$ and is always zero
+\end{tasks}
+
+\Question Under adaptive expectations $\pi_t^{e}=\pi_{t-1}$, the ex-ante real rate is \answer{C}
+\begin{tasks}(1)
+\task $r_t = i_t + \pi_{t-1}$
+\task $r_t = i_t - \pi_{t+1}$
+\task $r_t = i_t - \pi_{t-1}$
+\task $r_t = i_t$ always
+\end{tasks}
+
+\Question A backward-looking Phillips curve with a cost-push shock is closest to \answer{D}
+\begin{tasks}(1)
+\task $\pi_t = \beta E_t\pi_{t+1} + \kappa x_t$
+\task $\pi_t = \pi_{t-1} - \kappa x_t$
+\task $\pi_t = E_t\pi_{t+1} + u_t$
+\task $\pi_t = \pi_{t-1} + \kappa x_t + u_t$
+\end{tasks}
+
+\Question Rearranging $\pi_t = \pi_{t-1} + \kappa x_t + u_t$ implies \answer{A}
+\begin{tasks}(1)
+\task $x_t = (\pi_t-\pi_{t-1}-u_t)/\kappa$
+\task $x_t = (\pi_{t-1}-\pi_t-u_t)/\kappa$
+\task $x_t = (\pi_t+\pi_{t-1}+u_t)/\kappa$
+\task $x_t = \kappa(\pi_t-\pi_{t-1}) + u_t$
+\end{tasks}
+
+\Question Suppose policy follows a Taylor rule $i_t = \bar i + \phi_\pi \tilde\pi_t + \phi_x x_t$ and $\pi_t^e=\pi_{t-1}$.
+Then the real-rate gap can be written as \answer{B}
+\begin{tasks}(1)
+\task $r_t-r^n = \phi_\pi \tilde\pi_{t-1} + \phi_x x_t - \tilde\pi_{t}$
+\task $r_t-r^n = \phi_\pi \tilde\pi_{t} + \phi_x x_t - \tilde\pi_{t-1}$
+\task $r_t-r^n = \phi_\pi \tilde\pi_{t} - \phi_x x_t + \tilde\pi_{t-1}$
+\task $r_t-r^n = \tilde\pi_{t} - \tilde\pi_{t-1}$ only
+\end{tasks}
+
+\Question With IS in gap form $x_t=-\sigma(r_t-r^n)+\varepsilon_t^d$, substituting the expression in the previous question and solving for $x_t$ gives \answer{D}
+\begin{tasks}(1)
+\task $x_t = -\sigma\phi_\pi\tilde\pi_t + \varepsilon_t^d$
+\task $x_t = \sigma\phi_\pi\tilde\pi_t - \sigma\tilde\pi_{t-1} + \varepsilon_t^d$
+\task $x_t = \dfrac{-\sigma\phi_\pi\tilde\pi_{t-1}+\sigma\tilde\pi_t+\varepsilon_t^d}{1+\sigma\phi_x}$
+\task $x_t = \dfrac{-\sigma\phi_\pi\tilde\pi_t+\sigma\tilde\pi_{t-1}+\varepsilon_t^d}{1+\sigma\phi_x}$
+\end{tasks}
+
+\Question Combining IS + backward-looking Phillips curve + Taylor rule yields an AR(1) for inflation deviations $\tilde\pi_t=a\tilde\pi_{t-1}+\cdots$.
+In this system, a sufficient condition for mean reversion ($a<1$) is \answer{C}
+\begin{tasks}(1)
+\task $\phi_\pi<1$
+\task $\phi_\pi=1$
+\task $\phi_\pi>1$
+\task $\phi_x=0$ always
+\end{tasks}
+
+\Question A positive demand shock $\varepsilon_t^d>0$ raises inflation in the Old-Keynesian system primarily because \answer{B}
+\begin{tasks}(1)
+\task it directly increases $\pi_t$ even if $x_t=0$
+\task it raises $x_t$ (output gap), which feeds into inflation via $\kappa x_t$
+\task it lowers the policy rate mechanically through the Fisher equation
+\task it shifts full-employment output $Y^{FE}$ immediately
+\end{tasks}
+
+\Question A positive cost-push shock $u_t>0$ means \answer{A}
+\begin{tasks}(1)
+\task inflation rises even if $x_t=0$; offsetting it requires $x_t<0$ (slack)
+\task inflation rises only if the policy rate falls
+\task inflation must fall because firms become more productive
+\task inflation is unchanged because $u_t$ cancels in equilibrium
+\end{tasks}
+
+\Question Cochrane emphasizes ``distinguishing theories'' because different models imply different predictions about \answer{D}
+\begin{tasks}(1)
+\task the accounting identity $Y=C+I+G$
+\task whether $x_t$ is defined as $Y_t-Y^{FE}$
+\task whether CPI or PCE should be used
+\task inflation under interest-rate pegs/Taylor rules and the role of fiscal backing/news
+\end{tasks}
+
+\end{Exercise}
+
+\end{document}

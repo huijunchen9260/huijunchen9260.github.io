@@ -1,0 +1,199 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt,partopsep=0pt}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\title{Lecture 4 Speaker Handout\\[-2pt]\large Inflation Dynamics (Old Keynesian) + Cochrane Ch.3--4 Pointers}
+\author{Hui-Jun Chen}
+\date{Spring 2026}
+
+\begin{document}
+\maketitle
+
+\section{From price level movements to inflation paths}
+
+\subsection*{Title page}
+\begin{itemize}
+\item Last time: AD--AS diagnosed demand vs supply shocks in $(Y,P)$.
+\item Today: turn that into a \textbf{time path} for inflation $\pi_t$.
+\item Key move: replace ``one-shot price level change'' with a \textbf{law of motion} for inflation.
+\end{itemize}
+
+\subsection*{Price level $P_t$ vs inflation $\pi_t$}
+\begin{itemize}
+\item AD--AS tells us where the \textbf{price level} lands after a shock.
+\item But inflation is the \textbf{change} in the price level: $\pi_t \equiv \Delta\log P_t$.
+\item One-time jump in $P$ $\neq$ inflation staying high; persistence requires a dynamic mechanism.
+\end{itemize}
+
+\subsection*{Output gap as ``pressure''}
+\begin{itemize}
+\item Define $Y^{FE}$ (full-employment / natural output) from the RBC supply block.
+\item Output gap $x_t \equiv y_t - y_t^{FE}$ summarizes slack vs tightness.
+\item Most inflation models: inflation = expected inflation + (slack term) + shocks.
+\end{itemize}
+
+\subsection*{AD--AS recap (memory anchor figure)}
+\begin{itemize}
+\item Demand shock: $Y$ and $P$ move together.
+\item Supply shock: $Y$ and $P$ move opposite (stagflation).
+\item Now we write equations that generate the \emph{paths} behind these movements.
+\end{itemize}
+
+\section{Old-Keynesian inflation dynamics: the missing equation}
+
+\subsection*{Adaptive expectations (benchmark)}
+\begin{itemize}
+\item Benchmark: expected inflation equals last period's inflation, $\pi_t^e=\pi_{t-1}$.
+\item Captures inertia in a transparent way; later we upgrade to forward-looking expectations (NK).
+\end{itemize}
+
+\subsection*{Backward-looking Phillips curve}
+\begin{itemize}
+\item Missing equation: inflation changes with the output gap:
+\[
+\pi_t=\pi_{t-1}+\kappa x_t+u_t.
+\]
+\item If $x_t>0$ (overheating) inflation \emph{accelerates}; if $x_t<0$ inflation \emph{decelerates}.
+\item $u_t$ is cost-push: inflation can rise even without a boom (bottlenecks, oil, supply disruptions).
+\end{itemize}
+
+\subsection*{IS / AD in gap form (demand side)}
+\begin{itemize}
+\item Reduced-form demand:
+\[
+x_t=-\sigma(r_t-r_t^{n})+\varepsilon_t^{d}.
+\]
+\item Real rate above natural rate cools demand; $\varepsilon_t^{d}$ shifts demand.
+\end{itemize}
+
+\subsection*{Policy rule + Fisher}
+\begin{itemize}
+\item Modern policy: interest-rate reaction rule (Taylor-style).
+\item Fisher links nominal and real rates: $r_t=i_t-\pi_t^e$.
+\item With adaptive expectations, $\pi_t^e=\pi_{t-1}$ is predetermined $\Rightarrow$ tightening raises real rate immediately.
+\end{itemize}
+
+\section{Algebra: derive the doctrine from equations}
+
+\subsection*{Algebra 1: express the real-rate gap in observables}
+\begin{itemize}
+\item Work with inflation deviation from target $\tilde\pi_t$.
+\item Combine Taylor rule + Fisher + $\pi_t^e=\pi_{t-1}$:
+\[
+r_t-r^n=\phi_\pi\tilde\pi_t+\phi_x x_t-\tilde\pi_{t-1}.
+\]
+\item Interpretation: policy response to inflation and slack maps into the real-rate gap.
+\end{itemize}
+
+\subsection*{Algebra 2: solve IS for $x_t$}
+\begin{itemize}
+\item Substitute the real-rate gap into IS.
+\item Collect terms because the rule also depends on $x_t$:
+\[
+x_t=\frac{-\sigma\phi_{\pi}\tilde\pi_t+\sigma\tilde\pi_{t-1}+\varepsilon_t^{d}}{1+\sigma\phi_x}.
+\]
+\item Read: higher current inflation triggers tighter policy $\Rightarrow$ smaller $x_t$.
+\end{itemize}
+
+\subsection*{Algebra 3: inflation becomes AR(1) under policy feedback}
+\begin{itemize}
+\item Plug $x_t$ into $\tilde\pi_t=\tilde\pi_{t-1}+\kappa x_t+u_t$.
+\item Rearrange to get:
+\[
+\tilde\pi_t
+=
+a\,\tilde\pi_{t-1}
++b\,\varepsilon_t^{d}
++c\,u_t,
+\]
+where $a$ depends on $(\kappa,\sigma,\phi_\pi,\phi_x)$.
+\item Key: stability $\Leftrightarrow a<1$; policy parameters determine whether inflation mean-reverts.
+\end{itemize}
+
+\subsection*{System summary: Old-Keynesian 3-equation core}
+\begin{itemize}
+\item Demand: $x_t=-\sigma(r_t-r_t^{n})+\varepsilon_t^{d}$.
+\item Inflation: $\pi_t=\pi_{t-1}+\kappa x_t+u_t$.
+\item Policy: Taylor rule + Fisher + adaptive expectations.
+\item This is ``AD--AS with dynamics'': it produces time paths for $(x_t,\pi_t)$.
+\end{itemize}
+
+\section{Implications you can state cleanly}
+
+\subsection*{Why ``raise rates to lower inflation'' works here}
+\begin{itemize}
+\item Tightening $\Rightarrow$ real rate rises (because expectations are sticky).
+\item IS: higher real rate lowers $x_t$ (slack).
+\item Phillips: slack makes inflation decelerate: $\pi_t-\pi_{t-1}=\kappa x_t+u_t$.
+\item Disinflation is gradual because inflation inherits $\pi_{t-1}$.
+\end{itemize}
+
+\subsection*{Taylor principle (derived)}
+\begin{itemize}
+\item In AR(1) form, stability is $a<1$.
+\item $\phi_\pi>1$ tends to make $a<1$ (mean reversion); $\phi_\pi=1$ gives a unit-root style case; $\phi_\pi<1$ can be unstable.
+\item Intuition: to cool inflation you need the real rate to rise when inflation rises.
+\end{itemize}
+
+\subsection*{Back-of-the-envelope: ``how much slack to disinflate?''}
+\begin{itemize}
+\item Rearranged Phillips curve:
+\[
+x_t=\frac{\pi_t-\pi_{t-1}-u_t}{\kappa}.
+\]
+\item Smaller $\kappa$ (flatter Phillips) implies larger output gaps for a given disinflation.
+\item Cost-push ($u_t>0$) makes disinflation harder even with slack.
+\end{itemize}
+
+\subsection*{Demand vs supply inflation (connect to Lecture 3)}
+\begin{itemize}
+\item Demand shock $\varepsilon_t^{d}>0$: raises $x_t$, then inflation rises via $\kappa x_t$ (AD shift).
+\item Cost-push $u_t>0$: inflation rises directly even if $x_t$ is small (AS shift).
+\item Same taxonomy as AD--AS, now with dynamics.
+\end{itemize}
+
+\subsection*{A compact disinflation narrative}
+\begin{enumerate}
+\item Policy raises $i_t$.
+\item With sticky expectations, $r_t$ rises.
+\item Demand cools: $x_t<0$.
+\item Inflation decelerates over time: $\pi_t$ drifts down.
+\end{enumerate}
+
+\section{Cochrane Ch.3--4 pointers (what to emphasize)}
+
+\subsection*{Cochrane Ch.3 (Monetary policy) in one paragraph}
+\begin{itemize}
+\item Under interest-rate targeting, ``rates control inflation'' is not automatic: you must specify the broader regime.
+\item In particular, whether fiscal policy provides backing matters for price-level determination.
+\item The Old-Keynesian model delivers the doctrine because of backward-looking expectations + slack channel; Cochrane asks when that survives stronger expectation assumptions.
+\end{itemize}
+
+\subsection*{Cochrane Ch.4 (Distinguishing theories) in one paragraph}
+\begin{itemize}
+\item Different theories imply different anchors and different predictions under interest-rate pegs, Taylor rules, and ZLB episodes.
+\item Old Keynesian: backward-looking inflation dynamics; policy stabilizes via real-rate channel.
+\item New Keynesian: forward-looking pricing shifts the role of expectations; determinacy/equilibrium selection become central.
+\item Fiscal theory: valuation of nominal government liabilities anchors the price level; fiscal regime matters.
+\end{itemize}
+
+\subsection*{Interest-rate peg thought experiment}
+\begin{itemize}
+\item Fix $i_t$ for a long time: what happens differs across models.
+\item This is a clean way to motivate why we need to be explicit about expectations and the nominal anchor.
+\end{itemize}
+
+\section*{Next lecture (what changes)}
+\begin{itemize}
+\item Replace adaptive expectations with forward-looking expectations.
+\item Replace backward-looking Phillips with NK Phillips curve.
+\item Revisit ``Taylor principle'' and stability in that environment.
+\end{itemize}
+
+\end{document}

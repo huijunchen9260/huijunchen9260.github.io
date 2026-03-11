@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-03-09T22:51:40Z</updated>
+<updated>2026-03-12T00:51:52Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PhDMacroSpring2026.html"/>
 <id>https://huijunchen9260.github.io/PhDMacroSpring2026.html</id>
 <published>2026-02-23T01:17:31Z</published>
-<updated>2026-03-09T20:29:18Z</updated>
+<updated>2026-03-09T22:51:42Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
 <p>Time: W3W4Wn</p>
@@ -94,8 +94,12 @@
 <li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Lecture3/Lecture3_ADAS.pdf">Lecture 3: AS-AD</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_Inflation_Dynamics.pdf">Lecture 4: Old-Keynesian Inflation Dynamics</a></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
+<ul>
+<li><a href="../pdf/NTHUMacroeconomicsII/ProblemSet1/ProblemSet1_Q.pdf">Problem Set 1</a></li>
+</ul>
 <p>;tags: Teaching</p>]]></summary>
 </entry>
 <entry>

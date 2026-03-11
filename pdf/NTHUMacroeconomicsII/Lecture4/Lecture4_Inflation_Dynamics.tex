@@ -1,0 +1,481 @@
+%========================================================================================
+% Lecture 4 (Revised): Old-Keynesian Inflation Dynamics
+% Style: SimpleDarkBlue; no theorem boxes; readable-by-skimming
+%========================================================================================
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{amsmath}
+\usepackage{iftex}
+
+% --- Font handling: compile with pdfLaTeX here; switch to LuaLaTeX locally if desired ---
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \usepackage{luatexja}
+  \setmainfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+  \setsansfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+\fi
+
+% ------------------------------------ %
+% Section title page with Huge bf text %
+% ------------------------------------ %
+\AtBeginSection[]{
+  \begin{frame}[noframenumbering, plain]
+    \Huge{\centerline{\textbf{\insertsection}}}
+  \end{frame}
+}
+
+%%% automatically add spaces into enumerate and itemize environment
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+%%=============================================================
+%%  FOOTLINE TEMPLATE
+%%=============================================================
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex, leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm} \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+\setbeamertemplate{footline}[shadow theme]
+
+% --- Figure path (reuse your AD/AS jpgs if desired) ---
+\graphicspath{{figureAD/}{./}}
+
+% --- Lightweight safe figure include (only shows placeholder if missing) ---
+\newcommand{\fig}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{\fbox{\scriptsize Missing: \texttt{#2}}}%
+}
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[Lecture 4: Inflation Dynamics]{Intermediate Macroeconomics II\\\vspace{4pt}Lecture 4: Old-Keynesian Inflation Dynamics}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{National Tsing Hua University}
+\date{Spring 2026}
+
+\begin{document}
+
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+%------------------------------------------------
+\section[Inflation]{From price to inflation}
+
+%------------------------------------------------
+\begin{frame}{Price level $P_t$ vs inflation $\pi_t$}
+\small
+\begin{itemize}
+\item The AD--AS diagram in Lecture 3 told us how shocks move the \textbf{price level} $P$.
+\item Inflation is the \textbf{time-series object} we report and forecast.
+\end{itemize}
+
+\vspace{0.4em}
+\[
+\pi_t \equiv \log P_t - \log P_{t-1}
+\qquad \Rightarrow \qquad
+\log P_t = \log P_0 + \sum_{j=1}^{t}\pi_j.
+\]
+
+\vspace{0.4em}
+\begin{itemize}
+\item One-time \emph{level} shift in $P$ is different from a persistent run of $\pi_t>0$.
+\item A model of inflation needs a \textbf{law of motion} for $\pi_t$ (or $P_t$).
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Output gap as ``pressure''}
+\small
+\begin{itemize}
+\item Full-employment (natural) output $Y_t^{FE}$ comes from the RBC supply block.
+\item Output gap (log):
+\[
+ x_t \equiv \log Y_t - \log Y_t^{FE}.
+\]
+\item Interpretation:
+\begin{itemize}
+\item $x_t>0$: tight factor markets, higher marginal cost pressure.
+\item $x_t<0$: slack, weaker marginal cost pressure.
+\end{itemize}
+\end{itemize}
+
+\vspace{0.3em}
+\small
+A large share of inflation models can be read as: \textbf{inflation = expected inflation + $\kappa x_t$ + shocks}.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{AD--AS recap (one picture to keep in mind)}
+\begin{columns}
+\begin{column}{0.62\textwidth}
+\centering
+\fig[width=\linewidth]{../Lecture3/figureAD/figADAS.jpg}
+\end{column}
+\begin{column}{0.38\textwidth}
+\small
+\begin{itemize}
+\item Lecture 3: \textbf{diagnosis} (demand vs supply) in $(Y,P)$ space.
+\item This lecture: turn that diagnosis into \textbf{dynamics} in $(x,\pi)$ space.
+\end{itemize}
+
+\vspace{0.4em}
+\small
+\textbf{Key upgrade:} specify how expected inflation is formed and how inflation adjusts over time.
+\end{column}
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section[Old-Keynesian]{Old-Keynesian inflation dynamics}
+
+%------------------------------------------------
+\begin{frame}{Adaptive expectations (a benchmark)}
+\small
+\[
+\pi_t^{e} = \pi_{t-1}.
+\]
+
+\begin{itemize}
+\item Not ``deep,'' but captures a common empirical feature: inflation inherits the recent past.
+\item It gives a simple way to connect \textbf{today's slack} to \textbf{tomorrow's inflation}.
+\item Later we replace this with rational/forward-looking expectations (NK).
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Backward-looking Phillips curve (Old Keynesian)}
+\small
+\[
+\pi_t = \pi_{t-1} + \kappa x_t + u_t.
+\]
+
+\begin{itemize}
+\item $\kappa>0$: stronger demand pressure ($x_t>0$) makes inflation \emph{accelerate}.
+\item $u_t$: cost-push shock (supply disruption) that can raise inflation even when $x_t$ is small.
+\item This is the simplest way to turn ``AS'' into a \textbf{law of motion for inflation}.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{IS/AD side in gap form (reduced form)}
+\small
+A convenient demand-side relation:
+\[
+ x_t = -\sigma\,(r_t - r_t^{n}) + \varepsilon_t^{d},
+\]
+where $r_t^{n}$ is the natural real rate and $\varepsilon_t^{d}$ is a demand disturbance.
+
+\begin{itemize}
+\item If the real rate rises above the natural rate, demand falls and the gap shrinks.
+\item This is the ``IS'' logic from Lecture 2, written in output-gap language.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Policy rule (replace LM with an interest-rate reaction)}
+\small
+\[
+ i_t = \bar{i} + \phi_{\pi}(\pi_t-\pi^{*}) + \phi_x x_t.
+\]
+
+\begin{itemize}
+\item $\phi_{\pi}$: response to inflation deviations.
+\item $\phi_x$: response to the output gap.
+\item $ \pi^{*} $: target inflation ($\approx 2\%$)
+\item Use Fisher: $r_t \approx i_t - \pi_t^{e}$.
+\end{itemize}
+
+\vspace{0.3em}
+\small
+This replaces ``move $M$'' with ``move $i$'' (modern institutional description).
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Algebra 1: from the Taylor rule to the real rate}
+\small
+Write deviations from a steady state with target inflation $\pi^{*}$:
+\[
+\tilde \pi_t \equiv \pi_t-\pi^{*}, \qquad \tilde i_t \equiv i_t-i^{*}.
+\]
+
+With adaptive expectations $\pi_t^{e}=\pi_{t-1}$ and Fisher $r_t \approx i_t-\pi_t^{e}$,
+\[
+r_t-r^{n} \;\approx\; (i_t-i^{*})-(\pi_{t-1}-\pi^{*})
+\;=\; \tilde i_t-\tilde \pi_{t-1}.
+\]
+
+The Taylor rule becomes
+\[
+\tilde i_t=\phi_{\pi}\tilde\pi_t+\phi_x x_t
+\quad\Rightarrow\quad
+r_t-r^{n}=\phi_{\pi}\tilde\pi_t+\phi_x x_t-\tilde\pi_{t-1}.
+\]
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Algebra 2: solve the IS equation for the output gap}
+\small
+Start from the reduced-form IS (demand) relation:
+\[
+x_t=-\sigma(r_t-r^{n})+\varepsilon_t^{d}.
+\]
+
+Substitute $r_t-r^{n}=\phi_{\pi}\tilde\pi_t+\phi_x x_t-\tilde\pi_{t-1}$:
+\[
+x_t=-\sigma(\phi_{\pi}\tilde\pi_t+\phi_x x_t-\tilde\pi_{t-1})+\varepsilon_t^{d}.
+\]
+
+Collect terms in $x_t$ and solve:
+\[
+(1+\sigma\phi_x)x_t=-\sigma\phi_{\pi}\tilde\pi_t+\sigma\tilde\pi_{t-1}+\varepsilon_t^{d}
+\quad\Rightarrow\quad
+x_t=\frac{-\sigma\phi_{\pi}\tilde\pi_t+\sigma\tilde\pi_{t-1}+\varepsilon_t^{d}}{1+\sigma\phi_x}.
+\]
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Algebra 3: inflation becomes an AR(1) under policy feedback}
+\small
+Backward-looking Phillips curve:
+\[
+\tilde\pi_t=\tilde\pi_{t-1}+\kappa x_t+u_t.
+\]
+
+Plug in the solution for $x_t$:
+\[
+\tilde\pi_t-\tilde\pi_{t-1}
+=\frac{\kappa}{1+\sigma\phi_x}\Big(-\sigma\phi_{\pi}\tilde\pi_t+\sigma\tilde\pi_{t-1}+\varepsilon_t^{d}\Big)+u_t.
+\]
+
+Rearrange:
+\[
+\tilde\pi_t
+=
+\underbrace{\frac{1+\sigma\phi_x+\kappa\sigma}{\,1+\sigma\phi_x+\kappa\sigma\phi_{\pi}\,}}_{\displaystyle a}
+\tilde\pi_{t-1}
+\;+\;
+\underbrace{\frac{\kappa}{\,1+\sigma\phi_x+\kappa\sigma\phi_{\pi}\,}}_{\displaystyle b}\varepsilon_t^{d}
+\;+\;
+\underbrace{\frac{1+\sigma\phi_x}{\,1+\sigma\phi_x+\kappa\sigma\phi_{\pi}\,}}_{\displaystyle c}u_t.
+\]
+
+\begin{itemize}
+\item Inflation persistence here is the coefficient $a$.
+\item Policy affects $a$ through $\phi_{\pi}$ (and $\phi_x$).
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{The Old-Keynesian core system (three equations)}
+\small
+\begin{enumerate}
+\item \textbf{Demand (IS in gaps):} \quad $x_t = -\sigma(r_t-r_t^{n}) + \varepsilon_t^{d}$
+\item \textbf{Inflation (backward-looking PC):} \quad $\pi_t = \pi_{t-1} + \kappa x_t + u_t$
+\item \textbf{Policy (Taylor rule):} \quad $i_t = \bar{i}+\phi_{\pi}(\pi_t-\pi^{*})+\phi_x x_t$
+\end{enumerate}
+
+\vspace{0.4em}
+\small
+Together with $r_t \approx i_t - \pi_t^{e}$ and $\pi_t^{e}=\pi_{t-1}$, this system produces \textbf{inflation paths}, not just level shifts.
+\end{frame}
+
+%------------------------------------------------
+\section[Implication]{What the system implies}
+
+%------------------------------------------------
+\begin{frame}{Why ``raise rates to lower inflation'' works here}
+\small
+Start from the Phillips curve:
+\[
+\pi_t-\pi_{t-1} = \kappa x_t + u_t.
+\]
+
+\begin{itemize}
+\item To reduce inflation over time, the model needs $x_t<0$ (slack) or $u_t<0$.
+\item Tight policy raises $r_t$ relative to $r_t^n$ \;$\Rightarrow$\; $x_t$ falls (IS).
+\item Then inflation decelerates gradually because $\pi_t$ inherits $\pi_{t-1}$.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}{Taylor principle, derived: why $\phi_{\pi}>1$ stabilizes inflation here}
+\small
+From the algebra, inflation follows
+\[
+\tilde\pi_t = a\,\tilde\pi_{t-1} + b\,\varepsilon_t^{d} + c\,u_t,
+\qquad
+a=\frac{1+\sigma\phi_x+\kappa\sigma}{1+\sigma\phi_x+\kappa\sigma\phi_{\pi}}.
+\]
+
+\begin{itemize}
+\item If $\phi_{\pi}>1$, then $1+\sigma\phi_x+\kappa\sigma\phi_{\pi} > 1+\sigma\phi_x+\kappa\sigma$
+\;\;$\Rightarrow$\;\; $a<1$ (mean reversion).
+\item If $\phi_{\pi}=1$, then $a=1$: inflation inherits a unit root from $\pi_t^{e}=\pi_{t-1}$.
+\item If $\phi_{\pi}<1$, then $a>1$: inflation tends to drift away after a shock.
+\end{itemize}
+
+\vspace{0.3em}
+\small
+This is the Old-Keynesian ``doctrine'' in algebra: reacting more than one-for-one raises the \textbf{real} rate when inflation rises, which pushes $x_t$ negative and makes inflation decelerate.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{A useful back-of-the-envelope: how much slack to disinflate?}
+\small
+From the Phillips curve,
+\[
+\pi_t-\pi_{t-1}=\kappa x_t+u_t
+\quad\Rightarrow\quad
+x_t=\frac{\pi_t-\pi_{t-1}-u_t}{\kappa}.
+\]
+
+\begin{itemize}
+\item To reduce inflation by 1pp relative to last period (holding $u_t=0$), you need
+\[
+x_t\approx -\frac{1}{\kappa}.
+\]
+\item Smaller $\kappa$ (flatter Phillips curve) means you need a larger output gap to change inflation.
+\item Cost-push shocks ($u_t$) can make disinflation harder even if demand is weak.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Demand-driven vs supply-driven inflation (same taxonomy as Lecture 3)}
+\small
+\begin{itemize}
+\item \textbf{Demand inflation:} $\varepsilon_t^{d}>0$ raises $x_t$.
+\begin{itemize}
+\item Phillips: inflation accelerates through $\kappa x_t$.
+\item AD--AS: AD shifts right.
+\end{itemize}
+\item \textbf{Cost-push inflation:} $u_t>0$ raises inflation even if $x_t$ is weak.
+\begin{itemize}
+\item Phillips: direct inflation pressure.
+\item AD--AS: AS shifts left.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{A short narrative for disinflation}
+\small
+Suppose inflation is above target.
+
+\begin{enumerate}
+\item Policy raises $i_t$ (rule or decision).
+\item With $\pi_t^{e}$ slow-moving, the real rate rises.
+\item Demand weakens: $x_t$ turns negative.
+\item Inflation decelerates: $\pi_t-\pi_{t-1}=\kappa x_t + u_t$.
+\end{enumerate}
+
+\vspace{0.3em}
+\small
+The key feature is \textbf{inertia}: inflation does not jump to target immediately; it moves as $\pi_t$ updates from $\pi_{t-1}$.
+\end{frame}
+
+%------------------------------------------------
+\section[Theories]{Distinguishing theories}
+
+%------------------------------------------------
+\begin{frame}{Cochrane Ch.3: interest-rate targeting raises the ``anchor'' question}
+\small
+If the central bank chooses $i_t$, what pins down the price level?
+
+\begin{itemize}
+\item In the Old-Keynesian system, anchoring is effectively delegated to:
+\begin{itemize}
+\item inertia in expected inflation ($\pi_t^{e}=\pi_{t-1}$), and
+\item a sufficiently aggressive policy response ($\phi_{\pi}>1$).
+\end{itemize}
+\item Cochrane stresses that with rational expectations and modern institutions, the anchor can become fragile unless the full regime is specified.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Cochrane Ch.4: four theories, four different ``anchors''}
+\small
+\begin{itemize}
+\item \textbf{Money-growth:} money supply vs money demand determines inflation.
+\item \textbf{Old Keynesian:} inflation inherits the past; slack moves inflation gradually.
+\item \textbf{New Keynesian:} forward-looking pricing makes expectations and policy rules central.
+\item \textbf{Fiscal theory:} price level adjusts to value nominal government liabilities.
+\end{itemize}
+
+\vspace{0.3em}
+\small
+The same policy experiment (e.g., an interest-rate peg) can produce sharply different predictions across these theories.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Interest-rate peg thought experiment (why models disagree)}
+\small
+Hold $i_t$ fixed for a long time.
+
+\begin{itemize}
+\item Old Keynesian: with $\pi_t^{e}=\pi_{t-1}$, inflation dynamics are pinned by inertia + slack adjustment.
+\item New Keynesian: with rational expectations, a peg can generate multiple inflation paths (indeterminacy) unless an anchor selects one.
+\item Fiscal theory: uniqueness can come from fiscal backing / debt valuation rather than from the interest-rate rule alone.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section[Preview]{Preview: what changes next}
+
+%------------------------------------------------
+\begin{frame}{Next: New Keynesian replacement of the two ``ad hoc'' pieces}
+\small
+Two ingredients change:
+\begin{enumerate}
+\item Replace $\pi_t^{e}=\pi_{t-1}$ with forward-looking expectations.
+\item Replace the backward-looking Phillips curve with the NKPC:
+\[
+\pi_t = \beta E_t\pi_{t+1} + \kappa x_t + u_t.
+\]
+\end{enumerate}
+
+\vspace{0.3em}
+\small
+Then the policy rule does more than move demand: it influences inflation by shaping expected future inflation.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{One-page map (where we are headed)}
+\small
+\begin{itemize}
+\item Lecture 2: IS--LM $\Rightarrow$ AD.
+\item Lecture 3: AD--AS $\Rightarrow$ demand vs supply in $(Y,P)$.
+\item Lecture 4: Old Keynesian $\Rightarrow$ inflation dynamics with inertia.
+\item Lecture 5+: New Keynesian $\Rightarrow$ expectations, determinacy, credibility.
+\item Later: fiscal regimes and the price-level anchor (FTPL).
+\end{itemize}
+\end{frame}
+
+\end{document}
