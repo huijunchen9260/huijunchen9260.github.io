@@ -43,14 +43,36 @@
 \newcommand{\return}[2]{\hyperlink{#2}{\beamerreturnbutton{#1}}}
 \newcommand{\extgoto}[2]{\href{#2}{\beamergotobutton{#1}}}
 
-% ------------------------------------ %
-% Section title page with Huge bf text %
-% ------------------------------------ %
+
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
 \AtBeginSection[]{
-  \begin{frame}[noframenumbering, plain]
-    \Huge{\centerline{\textbf{\insertsection}}}
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
   \end{frame}
 }
+
+% % ------------------------------------ %
+% % Section title page with Huge bf text %
+% % ------------------------------------ %
+% \AtBeginSection[]{
+%   \begin{frame}[noframenumbering, plain]
+%     \Huge{\centerline{\textbf{\insertsection}}}
+%   \end{frame}
+% }
 
 %%% automatically add spaces into enumerate and itemize environment
 \let\tempone\itemize
@@ -93,7 +115,7 @@
 \end{frame}
 
 %------------------------------------------------
-\section{A short dictionary: diagrams $\leftrightarrow$ equations}
+\section[Diagram]{A short dictionary: diagrams $\leftrightarrow$ equations}
 
 %------------------------------------------------
 \begin{frame}{From Lecture 3 to Lecture 4}
@@ -140,16 +162,16 @@ u_t - u_t^{n} \approx -\gamma \, x_t \qquad (\gamma>0)\quad \text{(Okun's law)}.
 \end{frame}
 
 %------------------------------------------------
-\section{Aggregate demand in equations (IS--LM $\Rightarrow$ AD)}
+\section[AD]{Aggregate demand in equations (IS--LM $\Rightarrow$ AD)}
 
 %------------------------------------------------
 \begin{frame}{AD from IS--LM: the one mechanism}
 \begin{columns}
-\begin{column}{0.62\textwidth}
+\begin{column}{0.5\textwidth}
 \centering
 \includegraphics[width=\linewidth]{figAD0.jpg}
 \end{column}
-\begin{column}{0.38\textwidth}
+\begin{column}{0.5\textwidth}
 \small
 \begin{itemize}
 \item Fix nominal money supply $M$.
@@ -232,7 +254,7 @@ Y(P)=\frac{\bar{A}+a\pi^e+\frac{a}{h}\frac{M}{P}}{1+a\frac{k}{h}}.
 \end{frame}
 
 %------------------------------------------------
-\section{Aggregate supply in equations (SRAS + FE)}
+\section[SRAS]{Aggregate supply in equations (SRAS + FE)}
 
 %------------------------------------------------
 \begin{frame}{FE as the long-run supply benchmark}
@@ -302,12 +324,12 @@ or (equivalently) raise the $p$ needed to produce a given $y$.
 \end{frame}
 
 %------------------------------------------------
-\section{Equilibrium and comparative statics}
+\section[Equilibrium]{Equilibrium and comparative statics}
 
 %------------------------------------------------
 \begin{frame}{AD--AS equilibrium (in one picture)}
 \centering
-\includegraphics[width=0.90\linewidth]{figADAS.jpg}
+\includegraphics[width=0.60\linewidth]{figADAS.jpg}
 \end{frame}
 
 %------------------------------------------------
@@ -405,7 +427,7 @@ p = \frac{p^e + \lambda(\bar{y}_D - y^{FE})}{1+\lambda\phi}.
 \end{frame}
 
 %------------------------------------------------
-\section{One-page summary}
+\section[Summary]{One-page summary}
 
 %------------------------------------------------
 \begin{frame}{Cheat sheet: what each symbol means in the math AD--AS}
@@ -434,3 +456,4 @@ p = \frac{p^e + \lambda(\bar{y}_D - y^{FE})}{1+\lambda\phi}.
 \end{frame}
 
 \end{document}
+
