@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{From AD--AS pictures to an inflation model}{2}{0}{1}
+\beamer@sectionintoc {2}{The three blocks}{6}{0}{2}
+\beamer@sectionintoc {3}{One-period equilibrium in $(x,\pi )$}{13}{0}{3}
+\beamer@sectionintoc {4}{Dynamics}{17}{0}{4}
+\beamer@sectionintoc {5}{Wrap-up}{22}{0}{5}
