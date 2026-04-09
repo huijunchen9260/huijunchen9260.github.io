@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% -----------------------
+%  Show / hide solutions
+% -----------------------
+\newif\ifshowAns
+% \showAnstrue      % <-- instructor version
+\showAnsfalse   % <-- student version
+
+\ifshowAns
+  \newenvironment{sol}{\par\smallskip\noindent \textcolor{red}{\textbf{Solution.}} \\ }{\par\medskip}
+\else
+  \excludecomment{sol}
+\fi
+
+\newcommand{\pts}[1]{\hfill{\small[#1 pts]}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\norminf}[1]{\left\lVert #1 \right\rVert_{\infty}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Midterm Exam 1}}\\
+Seminar in Macroeconomics\\
+\medskip
+\textit{Hui-Jun Chen}
+\end{center}
+
+% ============================================================
+\section*{Question 1 \pts{35}}
+
+\subsection*{Environment}
+Consider the deterministic neoclassical growth problem with no labor:
+\[
+\max_{\{c_t,k_{t+1}\}_{t\ge0}} \sum_{t=0}^{\infty}\beta^t \log(c_t),\qquad \beta\in(0,1)
+\]
+subject to
+\[
+c_t + k_{t+1} = k_t^\alpha + (1-\delta)k_t,\qquad c_t\ge 0,\ k_{t+1}\ge 0,
+\]
+with given \(k_0>0\), \(\alpha\in(0,1)\), and \(\delta\in(0,1)\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Three representations (conceptual).} \pts{12}\\
+In \textbf{one short paragraph each}, describe what changes across:
+\begin{itemize}
+\item Date-0 (plan) representation,
+\item Sequential representation,
+\item Recursive (DP) representation.
+\end{itemize}
+You do \emph{not} need to write the full math program, but you must clearly say what the \textbf{choice object} is in each case.
+
+\item \textbf{Write the Bellman equation.} \pts{10}\\
+Define the state and choice and write the Bellman equation \(V(k)=\max\{\cdots\}\).
+
+\item \textbf{Why recursion is computationally useful.} \pts{8}\\
+Explain (in words) why the recursive formulation can be solved by iteration \(V_{n+1}=TV_n\),
+while the Date-0 and Sequential formulations are awkward to put directly on a computer.
+
+\item \textbf{Blackwell intuition (no proof).} \pts{5}\\
+In one or two sentences, explain why discounting by \(\beta<1\) suggests that \(T\) ``shrinks'' differences
+between value functions (geometric intuition).
+\end{enumerate}
+
+\begin{sol}
+(a) \textbf{Date-0:} choose entire sequences \(\{c_t,k_{t+1}\}_{t\ge0}\) at time 0 subject to all feasibility constraints.
+\textbf{Sequential:} still choose sequences, but constraints are written period-by-period (plus a TVC/no-Ponzi condition).
+\textbf{Recursive:} choose a \emph{rule} \(k'=g(k)\) state-by-state; problem is summarized by a Bellman equation where the
+unknown is the function \(V(\cdot)\).
+
+(b) State: \(k\). Choice: \(k'\in[0,\,k^\alpha+(1-\delta)k]\). Consumption: \(c=k^\alpha+(1-\delta)k-k'\).
+\[
+V(k)=\max_{k'\in[0,\,k^\alpha+(1-\delta)k]}
+\left\{\log\!\big(k^\alpha+(1-\delta)k-k'\big)+\beta V(k')\right\}.
+\]
+
+(c) DP turns an infinite-horizon plan into a fixed point \(V=TV\) over functions; we can iterate the same one-period problem.
+Date-0 involves infinite sequences and infinite sums directly; sequential involves infinitely many constraints/multipliers.
+Recursive reduces the problem to repeatedly applying the same operator until convergence.
+
+(d) If two guesses differ by at most \(m\), then next period continuation differs by at most \(\beta m\), then \(\beta^2 m\), etc.
+Geometric discounting makes distant differences shrink quickly, supporting contraction/convergence.
+\end{sol}
+
+% ============================================================
+\section*{Question 2: One-sided Labor Search \pts{35}}
+
+An unemployed worker receives an i.i.d.\ wage offer \(w\sim F\) each period on \([0,B]\).
+If she \textbf{accepts} an offer \(w\), she earns wage \(w\) forever.
+If she \textbf{rejects}, she receives unemployment payoff \(c>0\) for the period and draws a new offer next period.
+Preferences are risk-neutral: \(\sum_{t\ge0}\beta^t c_t\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Bellman equation and accept/reject values.} \pts{12}\\
+Write \(v(w)\) and show the accept value equals \(\frac{w}{1-\beta}\).
+Write the reject value in terms of \(\int v(w')\,dF\).
+
+\item \textbf{Reservation wage rule.} \pts{10}\\
+Define the reservation wage \(\bar w\) and state the accept/reject rule in terms of \(\bar w\).
+(You may give an indifference condition.)
+
+\item \textbf{Comparative statics (intuition).} \pts{8}\\
+Explain why \(\bar w\) increases with \(c\) and with \(\beta\). (Words are fine.)
+
+\item \textbf{Duration.} \pts{5}\\
+Let \(H=1-F(\bar w)\) be the probability of accepting in a given period.
+Under i.i.d.\ offers, what is the expected unemployment duration?
+\end{enumerate}
+
+\begin{sol}
+(a) Bellman:
+\[
+v(w)=\max\left\{\underbrace{w+\beta w+\beta^2 w+\cdots}_{=w/(1-\beta)},\;
+\underbrace{c+\beta\int_0^B v(w')\,F(dw')}_{\text{reject}}\right\}.
+\]
+So accept value is \(w/(1-\beta)\), reject value is \(c+\beta\E[v(w')]\).
+
+(b) \(\bar w\) solves indifference:
+\[
+\frac{\bar w}{1-\beta}=c+\beta\int v(w')\,F(dw').
+\]
+Rule: accept iff \(w\ge \bar w\), reject iff \(w<\bar w\).
+
+(c) Higher \(c\) improves the outside option of rejecting, so you become pickier \(\Rightarrow \bar w\uparrow\).
+Higher \(\beta\) raises the value of waiting for a better offer, increasing the option value of rejecting \(\Rightarrow \bar w\uparrow\).
+
+(d) Each period you accept with probability \(H\). Duration is geometric with mean \(1/H\).
+\end{sol}
+
+% ============================================================
+\section*{Question 3: Two-sided Labor Search \pts{30}}
+
+Consider a Mortensen--Pissarides labor market.
+Unemployment is \(u\), vacancies are \(v\), and matching is \(M(u,v)\) with CRS.
+Define tightness \(\theta=v/u\).
+Let the vacancy-filling probability be \(q(\theta)=M(u,v)/v\) and job-finding probability be \(f(\theta)=M(u,v)/u=\theta q(\theta)\).
+Suppose output per match is \(z\), separation rate is \(\delta\), vacancy posting cost is \(p\), and unemployment payoff is \(c\).
+Wage is determined by Nash bargaining with worker bargaining power \(\phi\in(0,1)\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Matching rates.} \pts{8}\\
+Define \(q(\theta)\) and \(f(\theta)\). Explain (in words) why typically \(q'(\theta)<0\) and \(f'(\theta)>0\).
+
+\item \textbf{Free entry condition.} \pts{10}\\
+Let \(J_u\) be the value of an unmatched firm (vacancy) and \(J_e\) be the value of a matched firm.
+State the free entry condition and show it implies a relationship of the form
+\[
+p=\beta q(\theta)J_e.
+\]
+(You do not need to derive the full Bellman equations; a short argument is fine.)
+
+\item \textbf{Wage equation.} \pts{8}\\
+State the Nash bargaining implication that wage can be written as
+\[
+w(\theta)=\phi z + (1-\phi)c + \phi\theta p.
+\]
+Explain in one sentence why \(w\) increases with \(\theta\).
+
+\item \textbf{Steady-state unemployment.} \pts{4}\\
+Write the steady-state unemployment rate in terms of \(\delta\) and \(f(\theta)\).
+\end{enumerate}
+
+\begin{sol}
+(a) \(q(\theta)=M(u,v)/v\) and \(f(\theta)=M(u,v)/u=\theta q(\theta)\).
+With more vacancies per unemployed worker (\(\theta\uparrow\)), it becomes harder for each vacancy to find a worker
+(\(q(\theta)\downarrow\)), but easier for each unemployed worker to find a job (\(f(\theta)\uparrow\)).
+
+(b) Free entry means firms post vacancies until the value of an open vacancy is zero: \(J_u=0\).
+From the vacancy value equation \(J_u=-p+\beta[q(\theta)J_e+(1-q(\theta))J_u]\),
+setting \(J_u=0\) yields \(0=-p+\beta q(\theta)J_e\Rightarrow p=\beta q(\theta)J_e\).
+
+(c) Nash bargaining splits match surplus; rearranging gives
+\(w(\theta)=\phi z+(1-\phi)c+\phi\theta p\).
+Higher \(\theta\) means workers find jobs more easily and firms fill vacancies more slowly, raising the worker’s outside option/surplus share,
+so wages rise in tight markets.
+
+(d) Steady state satisfies flows in = flows out:
+\(\delta(1-u)=uf(\theta)\Rightarrow u=\frac{\delta}{\delta+f(\theta)}\).
+\end{sol}
+
+\end{document}

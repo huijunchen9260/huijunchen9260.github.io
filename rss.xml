@@ -8,7 +8,7 @@
 <title>Macroeconomics (II), Spring 2026</title>
 <link>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</link>
 <guid>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</guid>
-<pubDate>Fri, 20 Mar 2026 14:55:33 +0800</pubDate>
+<pubDate>Thu, 26 Mar 2026 08:35:42 +0800</pubDate>
 <description><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Time: R3R4Rn</p>
 <p>Room: TSMC Building 224</p>
@@ -82,7 +82,13 @@
 <li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Lecture 1: Introduction</a></li>
 <li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
 <li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture4/Lecture4.pdf">Lecture 4: One-side Labor Search Model</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture4/Lecture4.pdf">Lecture 4: One-side Labor Search Model</a>
+<ul>
+<li><a href="https://www.sas.upenn.edu/~jesusfv/Blessings_JHU.pdf">The Blessings of Overparameterization: Applications in Solving Economic Models</a>
+<ul>
+<li>Amazing Applications in using machine learning to solve the McCall Labor Search Model</li>
+</ul></li>
+</ul></li>
 <li><a href="pdf/PhDMacroSlides/Lecture5/Lecture5.pdf">Lecture 5: Two-side Labor Search Model</a></li>
 </ul>
 <h2 id="reference">Reference</h2>

@@ -1,0 +1,410 @@
+%----------------------------------------------------------------------------------------
+% Midterm 1 Review Slides (Lectures 1--4) - Beamer / SimpleDarkBlue
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimpleDarkBlue}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc}
+
+% --- Font handling: compile with pdfLaTeX by default ---
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \usepackage{luatexja}
+  \setmainfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+  \setsansfont{Alegreya Sans Light}[
+    ItalicFont={* Italic},
+    BoldFont={Alegreya Sans Medium},
+    BoldItalicFont={Alegreya Sans Medium Italic}]
+\fi
+
+% --------------------------- %
+% Section title page with toc %
+% --------------------------- %
+\setbeamertemplate{subsection page}{%
+    \usebeamertemplate*{section page}
+}
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\AtBeginSection[]{
+% \sepframe
+\begin{frame}[noframenumbering]{Outline}
+    % \tableofcontents[currentsection]
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+\AtBeginSubsection[]{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+% % Section title page
+% \AtBeginSection[]{
+%   \begin{frame}[noframenumbering, plain]
+%     \Huge{\centerline{\textbf{\insertsection}}}
+%   \end{frame}
+% }
+
+% Spacing in lists
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{\fill}}{\temptwo}
+\let\tempa\enumerate
+\let\tempb\endenumerate
+\renewenvironment{enumerate}{\tempa\addtolength{\itemsep}{\fill}}{\tempb}
+
+% Footline (same style you used)
+\defbeamertemplate*{footline}{shadow theme}{%
+    \leavevmode\hbox{%
+        \hypersetup{linkcolor=white,urlcolor=white,citecolor=white}
+        \begin{beamercolorbox}[wd=1.02\paperwidth, ht=2.5ex, dp=1.125ex,
+          leftskip=.3cm plus1fil, rightskip=0.3cm]{author in head/foot}%
+            \insertsectionnavigationhorizontal{.80\textwidth}{}{} \hspace{.3cm}
+            \hfill \#\ \insertframenumber \ / \ \inserttotalframenumber%
+        \end{beamercolorbox}%
+    }%
+}
+\setbeamertemplate{footline}[shadow theme]
+
+% TikZ styles (simple)
+\tikzset{
+  axis/.style={->,thick},
+  curve/.style={thick},
+  dash/.style={thick,dashed},
+  >={Latex[length=3mm]},
+  lab/.style={fill=white,inner sep=1.2pt,font=\small}
+}
+
+%----------------------------------------------------------------------------------------
+% Title
+%----------------------------------------------------------------------------------------
+\title[Midterm 1 Review]{Macroeconomics II (Spring 2026)\\\vspace{4pt}Midterm 1 Review (Lectures 1--4)}
+\author[Hui-Jun Chen]{Hui-Jun Chen}
+\institute[]{National Tsing Hua University}
+\date{}
+
+\begin{document}
+
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{How to use this review deck}
+\begin{itemize}
+\item Goal: a compact checklist of the \textbf{objects}, \textbf{equations}, and \textbf{comparative statics} that appear repeatedly in Midterm 1.
+\item For each block: (i) the key definition; (ii) the key equation; (iii) the sign logic; (iv) one quick computation pattern.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Midterm 1 topic map (Lectures 1--4)}
+\begin{enumerate}
+\item \textbf{Lecture 1:} Price level vs inflation; nominal anchors; Cochrane-style fiscal backing intuition.
+\item \textbf{Lecture 2:} IS--LM mechanics; deriving AD; shifts (fiscal/monetary); Fisher link.
+\item \textbf{Lecture 3:} AD--AS diagnosis; demand vs supply shocks; medium-run adjustment; solving linear AD--AS.
+\item \textbf{Lecture 4:} IS--MP and RBC foundation for IS (log utility Euler); output gap; Okun link.
+\end{enumerate}
+\end{frame}
+
+%================================================
+\section[Lecture 1]{Lecture 1: Inflation and the price level}
+%================================================
+
+\begin{frame}{Definitions you must not mix up}
+\begin{itemize}
+\item Price level: $P_t$ (value of money in goods).
+\item Log price level: $p_t\equiv \log P_t$.
+\item Inflation: $\pi_t\equiv p_t-p_{t-1}\approx \log(P_t/P_{t-1})$.
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Level vs rate:} A one-time jump in $P_t$ produces a one-time burst of inflation; persistent inflation means $\pi_t$ stays high for multiple periods.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Nominal rates, real rates, and expected inflation (Fisher)}
+\begin{itemize}
+\item Nominal interest rate: $i_t$.
+\item Real interest rate: $r_t$.
+\item Expected inflation: $\pi_t^e$ (or $\mathbb{E}_t\pi_{t+1}$).
+\end{itemize}
+
+\[
+\text{Fisher (approx.):}\qquad i_t \approx r_t+\pi_t^e.
+\]
+
+\begin{itemize}
+\item Exam logic: If you hold $i_t$ fixed, higher $\pi_t^e$ means lower $r_t$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Nominal anchor and policy regime (words)}
+\begin{itemize}
+\item A nominal anchor is a mechanism that prevents the price level path from drifting arbitrarily.
+\item In practice, ``what anchors inflation'' depends on the \textbf{policy regime}:
+\begin{itemize}
+\item what the central bank commits to do,
+\item what fiscal policy commits to do (how debt will be backed).
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cochrane-style fiscal backing intuition (one equation)}
+\small
+Debt valuation relationship:
+\[
+\frac{B_{t-1}}{P_t}=\mathbb{E}_t\sum_{j=0}^{\infty}\beta^j s_{t+j},
+\]
+where $s_{t+j}$ are future primary surpluses.
+
+\begin{itemize}
+\item If expected surpluses fall (backing weakens), the real value $B/P$ must fall.
+\item With nominal $B$ fixed in the short run, adjustment can happen via a higher $P_t$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Typical Midterm 1 question patterns (Lecture 1)}
+\begin{itemize}
+\item Compute inflation from two price levels: $100\to 103$ means about $3\%$.
+\item Distinguish: level jump vs persistent inflation.
+\item Interpret ``deficits do not always cause inflation'' as an expectations/backing statement.
+\end{itemize}
+\end{frame}
+
+%================================================
+\section[Lecture 2]{Lecture 2: IS--LM and deriving AD}
+%================================================
+
+\begin{frame}{IS curve: demand falls with the real rate}
+A reduced-form IS:
+\[
+Y=\bar A-a r,\qquad a>0.
+\]
+\begin{itemize}
+\item Higher $r$ makes saving more attractive / borrowing more expensive $\Rightarrow$ lower demand $\Rightarrow$ lower $Y$.
+\item Fiscal expansion ($G\uparrow$ or taxes $\downarrow$) typically raises $\bar A$ (IS shifts right).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{LM curve: money demand vs money supply}
+Money market clearing:
+\[
+\frac{M}{P}=kY-h i,\qquad k,h>0.
+\]
+Solve for $i$:
+\[
+i=\frac{k}{h}Y-\frac{1}{h}\frac{M}{P}.
+\]
+
+\begin{itemize}
+\item Higher $Y$ increases money demand $\Rightarrow$ higher $i$.
+\item Higher $M/P$ lowers $i$ (more liquidity).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Deriving AD in IS--LM (the sign chain)}
+\begin{itemize}
+\item Hold $M$ fixed and raise the price level $P$:
+\[
+P\uparrow \Rightarrow \frac{M}{P}\downarrow.
+\]
+\item Lower $M/P$ shifts LM left/up $\Rightarrow$ $i\uparrow$.
+\item Higher $i$ (and hence higher $r$) reduces demand on IS $\Rightarrow$ $Y\downarrow$.
+\end{itemize}
+
+\begin{itemize}
+\item Conclusion: AD is downward sloping in $(P,Y)$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Quick numerical template: solve LM for $i$}
+Given $M/P$, $k$, $h$, $Y$:
+\[
+i=\frac{k}{h}Y-\frac{1}{h}\frac{M}{P}.
+\]
+\begin{itemize}
+\item Plug-in carefully: compute $(k/h)Y$ and $(1/h)(M/P)$ separately.
+\item If you assume a ZLB, the final answer is $i=\max\{0,i^\ast\}$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Shifts you should recognize instantly (IS--LM)}
+\begin{itemize}
+\item \textbf{Fiscal expansion:} IS right $\Rightarrow$ $Y\uparrow$, $i\uparrow$ in the short run.
+\item \textbf{Monetary expansion:} LM right/down $\Rightarrow$ $Y\uparrow$, $i\downarrow$ for given $P$.
+\item \textbf{Tight money:} LM left/up $\Rightarrow$ $Y\downarrow$, $i\uparrow$.
+\end{itemize}
+\end{frame}
+
+%================================================
+\section[Lecture 3]{Lecture 3: AD--AS diagnosis and medium run}
+%================================================
+
+\begin{frame}{AD--AS: what moves together?}
+\begin{itemize}
+\item \textbf{Demand shock:} $Y\uparrow$, $P\uparrow$ (move together).
+\item \textbf{Supply shock (negative):} $Y\downarrow$, $P\uparrow$ (stagflation).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Full-employment / potential output}
+\begin{itemize}
+\item $Y^{FE}$ (or $y^{FE}$) is potential output determined by the RBC supply block.
+\item In the medium run, output tends to return toward $Y^{FE}$ as expected prices/wages adjust.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SRAS as a ``price surprise'' equation (level form)}
+One useful reduced form:
+\[
+y=y^{FE}+\alpha(p-p^e),\qquad \alpha>0.
+\]
+Define output gap $x\equiv y-y^{FE}$:
+\[
+x=\alpha(p-p^e).
+\]
+
+\begin{itemize}
+\item If $p>p^e$ (higher-than-expected prices), firms hire more $\Rightarrow$ $x>0$.
+\item A change in $p^e$ shifts SRAS.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Solve linear AD--AS once (memorize the structure)}
+Use:
+\[
+y=\bar y_D-\phi p,\qquad \phi>0
+\]
+\[
+p=p^e+\lambda(y-y^{FE}),\qquad \lambda>0.
+\]
+Substitute AD into SRAS:
+\[
+(1+\lambda\phi)p=p^e+\lambda(\bar y_D-y^{FE})
+\]
+\[
+\Rightarrow\quad p=\frac{p^e+\lambda(\bar y_D-y^{FE})}{1+\lambda\phi}.
+\]
+
+\begin{itemize}
+\item With $p$ known, recover $y=\bar y_D-\phi p$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Medium-run adjustment (how the gap closes)}
+\begin{itemize}
+\item If demand pushes $y$ above $y^{FE}$, inflationary pressure raises expected prices/wages.
+\item In the level-form SRAS, this is $p^e\uparrow$ over time $\Rightarrow$ SRAS shifts up/left.
+\item Medium-run outcome: output returns toward $y^{FE}$, while the price level remains higher.
+\end{itemize}
+\end{frame}
+
+%================================================
+\section[Lecture 4]{Lecture 4: IS--MP and RBC foundation for IS}
+%================================================
+
+\begin{frame}{Okun link (one line you can always use)}
+\[
+u_t-u_t^n\approx -\gamma x_t,\qquad \gamma>0.
+\]
+\begin{itemize}
+\item $x_t>0$ means unemployment below natural (tight labor market).
+\item $x_t<0$ means unemployment above natural (slack).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RBC foundation: log utility Euler equation}
+Assume $u(C)=\log C$, so $u_C(C)=1/C$. Euler equation:
+\[
+\frac{1}{C_t}=\beta(1+r_t)\,\mathbb{E}_t\left[\frac{1}{C_{t+1}}\right].
+\]
+\begin{itemize}
+\item Intuition (certainty-equivalent): $C_{t+1}/C_t=\beta(1+r_t)$.
+\item Higher $r_t$ increases desired consumption growth $\Rightarrow$ households postpone consumption $\Rightarrow$ current demand falls.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dynamic IS in gap form (log utility)}
+A standard gap IS (set $\sigma=1$):
+\[
+x_t=\mathbb{E}_t x_{t+1}-(r_t-r_t^n)+\varepsilon_t^d.
+\]
+\begin{itemize}
+\item $r_t^n$: natural real rate (makes $x_t=0$ absent shocks).
+\item $\varepsilon_t^d$: demand shifters (fiscal/credit/sentiment).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Static approximation used in AD--AS diagrams}
+Holding $\mathbb{E}_t x_{t+1}$ fixed within a period:
+\[
+x_t\approx -\tilde\sigma(r_t-r_t^n)+\varepsilon_t^d,\qquad \tilde\sigma>0.
+\]
+In levels:
+\[
+Y=\bar A-a r,\qquad a>0.
+\]
+\end{frame}
+
+\begin{frame}{IS--MP: policy written as a real-rate rule}
+To match the IS--MP figures, we can write policy directly in real-rate form:
+\[
+r=\bar r+\phi_\pi(\pi-\pi^\ast)+\phi_y(Y-Y^{FE}),
+\qquad \phi_\pi>0,\ \phi_y\ge 0.
+\]
+\begin{itemize}
+\item Inflation above target leads to higher $r$ (tighter stance) $\Rightarrow$ lower demand.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{IS--MP implies downward AD in $(P,Y)$ (one sentence)}
+\begin{itemize}
+\item With $\pi=p-p_{-1}$ and $p_{-1}$ fixed in the short run, higher $p$ means higher $\pi$.
+\item The rule raises $r$, and IS then lowers $Y$.
+\item Therefore AD slopes down in $(P,Y)$ even without money supply control.
+\end{itemize}
+\end{frame}
+
+%================================================
+\section[Strategy]{Exam strategy: what to do quickly on MCQs}
+%================================================
+
+\begin{frame}{Fast checklist for MCQs}
+\begin{enumerate}
+\item \textbf{Definition check:} $P$ vs $\pi$; $i$ vs $r$; $y$ vs $x$.
+\item \textbf{Sign check:} demand shock vs supply shock; IS slope; LM slope.
+\item \textbf{One substitution:} solve LM for $i$; substitute AD into SRAS; clamp to ZLB if stated.
+\item \textbf{Units:} rates in decimals (0.05) vs percent (5\%).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Formula sheet (minimal)}
+\small
+\begin{itemize}
+\item $\pi_t=p_t-p_{t-1}$,\quad $i_t\approx r_t+\pi_t^e$.
+\item IS: $Y=\bar A-a r$.
+\item LM: $M/P=kY-h i$,\quad $i=\frac{k}{h}Y-\frac{1}{h}\frac{M}{P}$.
+\item SRAS: $y=y^{FE}+\alpha(p-p^e)$.
+\item Linear AD--AS solution: $p=\dfrac{p^e+\lambda(\bar y_D-y^{FE})}{1+\lambda\phi}$.
+\item Okun: $u-u^n\approx -\gamma x$.
+\item Dynamic IS (log utility): $x_t=\mathbb{E}_t x_{t+1}-(r_t-r_t^n)+\varepsilon_t^d$.
+\end{itemize}
+\end{frame}
+
+\end{document}

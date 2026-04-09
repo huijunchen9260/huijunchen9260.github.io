@@ -1,0 +1,653 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+
+% --- Explanations for multiple choice options (shown only when \showAns is enabled) ---
+\newcommand{\ExplainChoices}[4]{%
+\ifthenelse{\boolean{showAns}}{%
+\vspace{0.25em}
+{\footnotesize
+\textcolor{red}{%
+\begin{itemize}
+\item[(A)] #1
+\item[(B)] #2
+\item[(C)] #3
+\item[(D)] #4
+\end{itemize}}}
+}{}
+}
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+
+% --- Fonts (robust fallback) ---
+\IfFontExistsTF{Crimson Pro Light}{
+  \setmainfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+  \setsansfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+}{
+  % HaranoAji fonts ship with TeXLive and are reliably found by LuaLaTeX
+  \setmainfont{HaranoAjiMincho}
+  \setsansfont{HaranoAjiGothic}
+}
+\title{Midterm Exam 1}
+\author{Macroeconomics II \\ Hui-Jun Chen}
+
+
+\begin{document}
+
+\maketitle
+
+% Uncomment to print answer key in red
+% \showAns
+
+\begin{Exercise}
+
+% \section*{Instructions}
+% \begin{itemize}
+% \item This exam covers Lectures 1--4.
+% \item \textbf{40 multiple choice questions}. Exactly one option is correct for each question.
+% \item You may use a calculator. Write any scratch work on separate paper.
+% \end{itemize}
+
+% \vspace{0.8em}
+% \hrule
+% \vspace{0.8em}
+
+\section*{Problem 1 (Questions 1--20): Concepts \& core mechanisms (Lectures 1--2)}
+
+\Question \textbf{Price level.} The price level $P_t$ is best interpreted as:
+\answer{B}
+\begin{tasks}(1)
+\task the interest rate set by the central bank
+\task the value of money in terms of goods (dollars per unit of goods)
+\task the real wage measured in goods
+\task the quantity of money in the economy
+\end{tasks}
+\ExplainChoices{A policy instrument can be an interest rate, but that is not the definition of the price level.}{Correct: $P_t$ tells how many dollars are needed to buy one unit of the consumption basket (the value of money).}{The real wage is $w/P$, a different object from $P$ itself.}{$M$ is the nominal money stock; $P$ is the price of goods.}
+
+
+\Question \textbf{Inflation (definition).} If we define $p_t\equiv \log P_t$, then inflation is:
+\answer{C}
+\begin{tasks}(1)
+\task $\pi_t \equiv P_t-P_{t-1}$
+\task $\pi_t \equiv \log(P_t/P_{t-1})^2$
+\task $\pi_t \equiv p_t-p_{t-1}$
+\task $\pi_t \equiv p_{t+1}-p_t$
+\end{tasks}
+\ExplainChoices{$P_t-P_{t-1}$ is a level difference, not the standard inflation definition and depends on units.}{The square is irrelevant; the usual definition is $\log(P_t/P_{t-1})$ (not squared).}{Correct: $\pi_t=p_t-p_{t-1}=\log P_t-\log P_{t-1}\approx \log(P_t/P_{t-1})$.}{$p_{t+1}-p_t$ is next period's inflation, not current inflation.}
+
+
+\Question \textbf{Inflation (calculation).} If $P$ rises from $100$ to $103$ in one year, annual inflation is approximately:
+\answer{B}
+\begin{tasks}(1)
+\task $0.3\%$
+\task $3\%$
+\task $30\%$
+\task $-3\%$
+\end{tasks}
+\ExplainChoices{0.3\% would correspond to $P$ moving from 100 to 100.3, not 103.}{Correct: $(103-100)/100=0.03=3\%$ (and $\log(103/100)\approx 0.0296$).}{30\% would require 100 to 130.}{Negative inflation would require $P$ to fall.}
+
+
+\Question \textbf{Nominal anchor.} A ``nominal anchor'' is:
+\answer{D}
+\begin{tasks}(1)
+\task a policy that fixes real output in the short run
+\task a rule that fixes the unemployment rate permanently
+\task a mechanism that pins down the real interest rate in the long run
+\task a mechanism that pins down the price level path (or long-run inflation)
+\end{tasks}
+\ExplainChoices{A nominal anchor does not fix real output; output is endogenously determined.}{Nominal anchor is not about permanently fixing unemployment.}{Anchoring the real rate is neither necessary nor sufficient to pin down the price level.}{Correct: a nominal anchor is what prevents $P_t$ (or long-run inflation) from drifting arbitrarily.}
+
+
+\Question \textbf{Cochrane theme.} ``Deficits cause inflation'' is incomplete mainly because:
+\answer{C}
+\begin{tasks}(1)
+\task only monetary policy can affect inflation
+\task deficits never affect aggregate demand
+\task inflation depends on expectations of how government debt will be backed (future surpluses)
+\task inflation is purely determined by productivity
+\end{tasks}
+\ExplainChoices{Monetary policy affects inflation, but fiscal considerations can matter too depending on the regime.}{Deficits can boost demand; they are not irrelevant by definition.}{Correct: inflation depends on expectations of how nominal liabilities will be backed (future primary surpluses).}{Productivity affects real quantities; it does not mechanically determine the nominal price level.}
+
+
+\Question \textbf{Fiscal backing intuition.} In the fiscal theory view, if expected future primary surpluses fall unexpectedly while nominal debt $B$ is given, the price level $P$ tends to:
+\answer{A}
+\begin{tasks}(1)
+\task rise (so real debt $B/P$ falls)
+\task fall (so real debt rises)
+\task stay fixed because debt is nominal
+\task become indeterminate only if money supply is fixed
+\end{tasks}
+\ExplainChoices{Correct: with nominal $B$ given, lower expected backing implies lower real value $B/P$, achieved by higher $P$.}{If $P$ fell, $B/P$ would rise, the opposite of what is needed when backing falls.}{Nominal debt being nominal is exactly why $P$ adjusts to change its real value.}{Money supply can matter in some models, but the fiscal-valuation logic does not require money-supply control.}
+
+
+\Question \textbf{Money demand.} In a standard money demand function $M/P=L(Y,i)$, which sign pattern is correct?
+\answer{D}
+\begin{tasks}(1)
+\task Increasing in income $ Y $ will decrease money demand $ L $; increasing in interest rate $ i $ will reduce money demand $ L $
+\task Increasing in income $ Y $ will decrease money demand $ L $; increasing in interest rate $ i $ will increase money demand $ L $
+\task Increasing in income $ Y $ will increase money demand $ L $; increasing in interest rate $ i $ will increase money demand $ L $
+\task Increasing in income $ Y $ will increase money demand $ L $; increasing in interest rate $ i $ will reduce money demand $ L $
+\end{tasks}
+\ExplainChoices{If $L_Y<0$, money demand would fall when income rises, opposite of transactions demand.}{If $L_i>0$, people would want more money when interest rates rise, opposite of opportunity cost logic.}{If both are positive, the interest-rate effect has the wrong sign.}{Correct: higher income raises money demand ($L_Y>0$) and higher interest rates reduce it ($L_i<0$).}
+
+
+\Question \textbf{LM mechanics.} Holding nominal money $M$ fixed, an increase in $P$ shifts the LM curve:
+\answer{B}
+\begin{tasks}(1)
+\task right (lower $i$ for each $Y$)
+\task left/up (higher $i$ for each $Y$)
+\task does not shift because LM depends only on $M$
+\task downward because inflation rises
+\end{tasks}
+\ExplainChoices{An LM shift right would require higher real balances, not higher $P$ with fixed $M$.}{Correct: $P\uparrow$ lowers $M/P$, shifting LM left/up (higher $i$ for each $Y$).}{LM depends on $M/P$, so changing $P$ matters.}{LM is not downward sloping in $(Y,i)$ space; it is upward sloping.}
+
+
+\Question \textbf{IS slope.} In the reduced-form IS relation $Y=\bar A-a r$ with $a>0$, a higher real rate $r$ implies:
+\answer{A}
+\begin{tasks}(1)
+\task lower $Y$ (lower demand)
+\task higher $Y$ (higher saving)
+\task higher inflation immediately
+\task no effect on $Y$
+\end{tasks}
+\ExplainChoices{Correct: higher real rates reduce interest-sensitive spending, lowering equilibrium output.}{Higher saving does not raise contemporaneous output in this reduced-form demand relation.}{Inflation is not determined by IS alone in these lectures.}{IS is explicitly sensitive to $r$ through investment (and consumption in richer versions).}
+
+
+\Question \textbf{Numerical IS.} Suppose $Y=\bar A-50r$ (with $r$ in decimals). If $r$ rises from $0.04$ to $0.05$, then $\Delta Y$ equals:
+\answer{D}
+\begin{tasks}(1)
+\task $-50$
+\task $-5$
+\task $-0.05$
+\task $-0.5$
+\end{tasks}
+\ExplainChoices{$-50$ would be the change if $r$ rose by 1.00 (100 percentage points).}{$-5$ corresponds to $\Delta r=0.10$, not $0.01$.}{$-0.05$ corresponds to $\Delta r=0.001$, not $0.01$.}{Correct: $\Delta r=0.01$ so $\Delta Y=-50\times 0.01=-0.5$.}
+
+
+\Question \textbf{LM algebra.} Suppose money demand is $M/P=kY-hi$. Solving for $i$ gives:
+\answer{A}
+\begin{tasks}(1)
+\task $i=\frac{k}{h}Y-\frac{1}{h}\frac{M}{P}$
+\task $i=\frac{h}{k}Y-\frac{1}{k}\frac{M}{P}$
+\task $i=\frac{M}{P}-kY+h$
+\task $i=\frac{1}{h}\frac{M}{P}-\frac{k}{h}Y$
+\end{tasks}
+\ExplainChoices{Correct: rearranging gives $hi=kY-M/P$, so $i=(k/h)Y-(1/h)(M/P)$.}{This inverts the slope; units are wrong.}{Not algebraically consistent with $M/P=kY-hi$.}{Signs are reversed: higher $M/P$ should lower $i$.}
+
+
+\Question \textbf{AD slope in IS--LM.} In IS--LM, why is AD downward sloping in $(P,Y)$?
+\answer{C}
+\begin{tasks}(1)
+\task higher $P$ increases real balances $M/P$
+\task higher $P$ raises potential output $Y^{FE}$
+\task higher $P$ reduces $M/P$, raising $i$ and reducing demand
+\task higher $P$ directly lowers productivity
+\end{tasks}
+\ExplainChoices{Higher $P$ reduces real balances, not increases them.}{Potential output is a supply-side concept; $P$ does not mechanically raise $Y^{FE}$.}{Correct: $P\uparrow\Rightarrow M/P\downarrow\Rightarrow i\uparrow\Rightarrow Y\downarrow$.}{Productivity is not directly affected by $P$ in IS--LM.}
+
+
+\Question \textbf{Fiscal expansion.} A temporary increase in government spending $G$ (holding taxes fixed) primarily:
+\answer{B}
+\begin{tasks}(1)
+\task shifts LM right
+\task shifts IS right
+\task shifts both IS and LM left
+\task steepens LM without shifting it
+\end{tasks}
+\ExplainChoices{LM shifts with money supply or money demand, not directly with $G$.}{Correct: higher $G$ raises autonomous demand, shifting IS right.}{Both left would require contractionary policies, not higher $G$.}{Steepness depends on money demand elasticities; $G$ shifts IS.}
+
+
+\Question \textbf{Monetary expansion.} An increase in nominal money $M$ primarily:
+\answer{A}
+\begin{tasks}(1)
+\task shifts LM right/down
+\task shifts IS right
+\task shifts AD left
+\task has no effect because $P$ adjusts instantly
+\end{tasks}
+\ExplainChoices{Correct: higher $M$ raises $M/P$ for given $P$, shifting LM right/down.}{$M$ does not directly shift IS in the basic setup.}{Higher $M$ tends to shift AD right, not left.}{With sticky prices in the short run, $M$ changes affect real balances and output.}
+
+
+\Question \textbf{Real vs nominal (Fisher).} Which statement is correct?
+\answer{B}
+\begin{tasks}(1)
+\task the central bank directly chooses the real rate $r$
+\task the central bank chooses a nominal instrument $i$, and $r$ depends on expected inflation
+\task the real rate is always equal to inflation
+\task the nominal rate is independent of inflation expectations
+\end{tasks}
+\ExplainChoices{CB controls a nominal instrument; the real rate depends on expected inflation and inflation.}{Correct: roughly $r=i-\pi^e$; expectations matter for the real stance.}{The real rate is not equal to inflation.}{Nominal rates respond to inflation expectations through Fisher arbitrage.}
+
+
+\Question \textbf{LM comparative statics.} With $M/P=kY-hi$, holding $M/P$ fixed, if $Y$ increases then $i$:
+\answer{A}
+\begin{tasks}(1)
+\task increases
+\task decreases
+\task stays constant
+\task becomes negative
+\end{tasks}
+\ExplainChoices{Correct: $\partial i/\partial Y=k/h>0$ holding $M/P$ fixed.}{If $Y$ rises, transactions demand rises, pushing rates up, not down.}{There is a mechanical relationship; it does not stay constant.}{The equation does not imply negativity generically.}
+
+
+\Question \textbf{Numerical LM.} Let $M/P=6$, $k=1$, $h=2$, and $Y=8$. Then $i$ equals:
+\answer{C}
+\begin{tasks}(1)
+\task $-1$
+\task $0$
+\task $1$
+\task $2$
+\end{tasks}
+\ExplainChoices
+{If you plug in the numbers, $i=(k/h)Y-(1/h)(M/P)=\tfrac{1}{2}\cdot 8-\tfrac{1}{2}\cdot 6=4-3=1$, not $-1$. So option A is wrong.}
+{To get $i=0$, you would need $(k/h)Y=(1/h)(M/P)$, i.e. $Y=M/P$. With $M/P=6$, that would require $Y=6$ (not $8$).}
+{Correct: $i=\tfrac{1}{2}\cdot 8-\tfrac{1}{2}\cdot 6=4-3=1$.}
+{To get $i=2$, you would need $4-\tfrac{1}{2}(M/P)=2 \Rightarrow M/P=4$ (given $Y=8,k=1,h=2$), not $6$.}
+
+
+\Question \textbf{Cochrane-style puzzle.} Inflation can rise even if policy rates remain near zero if:
+\answer{C}
+\begin{tasks}(1)
+\task money demand falls only when unemployment rises
+\task productivity falls sharply
+\task fiscal news reduces expected backing of nominal liabilities (raising $P$)
+\task central bank commits to a fixed money growth rate
+\end{tasks}
+\ExplainChoices{Money demand shifts are not the core here; rates can be low while inflation rises for other reasons.}{Productivity shocks affect real output; they do not directly imply inflation must rise with zero rates.}{Correct: fiscal news reducing expected backing can raise $P$ (and inflation) even before rates rise.}{Fixed money growth is one regime, but the question targets the near-zero-rate episode logic.}
+
+
+\Question \textbf{Deficits and inflation (evidence logic).} ``Large deficits are not always followed by inflation'' is consistent with:
+\answer{A}
+\begin{tasks}(1)
+\task deficits expected to be offset by future surpluses (credible backing)
+\task deficits always being fully monetized
+\task deficits always lowering real rates permanently
+\task inflation being unrelated to expectations
+\end{tasks}
+\ExplainChoices{Correct: if deficits are expected to be reversed by future surpluses, inflation need not rise much.}{Full monetization is precisely the case that tends to create inflation pressure.}{Real rates can rise or fall depending on policy; deficits do not guarantee permanent rate declines.}{Expectations are central in modern inflation analysis.}
+
+
+\Question \textbf{Anchoring (concept).} Which situation best reflects an \emph{unanchored} nominal anchor?
+\answer{D}
+\begin{tasks}(1)
+\task long-run expected inflation stays near the target after shocks
+\task inflation returns quickly to target after a temporary supply shock
+\task the central bank reacts more when inflation is above target
+\task private agents revise long-run expected inflation upward after a temporary shock
+\end{tasks}
+\ExplainChoices{Anchored expectations means this stays near target, not unanchored.}{Quick return to target suggests anchoring, not unanchoring.}{A stronger reaction can help anchoring; it is not itself unanchoring.}{Correct: unanchored means agents revise long-run expected inflation upward after shocks.}
+
+
+\vspace{0.8em}
+\hrule
+\vspace{0.8em}
+
+\section*{Problem 2 (Questions 21--40): AD--AS and IS--MP math (Lectures 3--4)}
+
+\Question \textbf{Supply shock in AD--AS.} A negative supply shock typically causes:
+\answer{B}
+\begin{tasks}(1)
+\task $Y\uparrow$ and $P\downarrow$
+\task $Y\downarrow$ and $P\uparrow$
+\task $Y\uparrow$ and $P\uparrow$
+\task $Y\downarrow$ and $P\downarrow$
+\end{tasks}
+\ExplainChoices{This is not the typical supply-shock pattern; supply shocks reduce output.}{Correct: adverse supply raises costs, shifting AS up/left: $Y\downarrow$, $P\uparrow$.}{$Y\uparrow$ typically comes from demand shifts, not negative supply.}{Both down is typical of negative demand shocks.}
+
+
+\Question \textbf{Demand shock in AD--AS.} A positive demand shock typically causes:
+\answer{C}
+\begin{tasks}(1)
+\task $Y\downarrow$ and $P\uparrow$
+\task $Y\downarrow$ and $P\downarrow$
+\task $Y\uparrow$ and $P\uparrow$
+\task $Y\uparrow$ and $P\downarrow$
+\end{tasks}
+\ExplainChoices{$Y\downarrow$, $P\uparrow$ is the supply-shock pattern.}{Both down is negative demand.}{Correct: positive demand shifts AD right: $Y\uparrow$, $P\uparrow$.}{$P\downarrow$ would require AS improvements or negative demand.}
+
+
+\Question \textbf{Full-employment output.} In your Lecture 3 notation, $Y^{FE}$ is:
+\answer{A}
+\begin{tasks}(1)
+\task potential output determined by the RBC supply block
+\task output chosen by the central bank
+\task output when inflation is zero
+\task output when money supply is constant
+\end{tasks}
+\ExplainChoices{Correct: $Y^{FE}$ is potential output pinned by technology and market clearing in the RBC block.}{CB sets policy instruments, not potential output.}{Inflation can be zero at many output levels depending on expectations/shocks.}{$Y^{FE}$ is not tied to money growth mechanically.}
+
+
+\Question \textbf{Medium run.} In the medium run of the AD--AS story, output tends to return toward $Y^{FE}$ mainly because:
+\answer{D}
+\begin{tasks}(1)
+\task AD shifts back automatically
+\task productivity always rises
+\task money supply returns to its initial level
+\task expected prices (or wages) adjust, shifting SRAS
+\end{tasks}
+\ExplainChoices{AD need not shift back automatically; it depends on policy and shocks.}{Productivity is not assumed to always rise.}{Money supply may not return; modern policy targets rates.}{Correct: as wages/prices/expectations adjust, SRAS shifts and output returns toward potential.}
+
+
+\Question \textbf{SRAS (level form).} If $y=y^{FE}+\alpha(p-p^e)$, then the output gap is:
+\answer{B}
+\begin{tasks}(1)
+\task $x=y+y^{FE}$
+\task $x=\alpha(p-p^e)$
+\task $x=\alpha(p^e-p)$
+\task $x=p-p^e$
+\end{tasks}
+\ExplainChoices{$x=y-y^{FE}$, not $y+y^{FE}$.}{Correct: $x=y-y^{FE}=\alpha(p-p^e)$ from the given SRAS.}{This flips the sign of the surprise term.}{$p-p^e$ misses the slope parameter $\alpha$ and ignores $y^{FE}$.}
+
+
+\Question \textbf{Okun's law sign.} If $u-u^n\approx -\gamma x$ with $\gamma>0$, then $x>0$ implies:
+\answer{A}
+\begin{tasks}(1)
+\task unemployment below natural ($u<u^n$)
+\task unemployment above natural ($u>u^n$)
+\task unemployment unchanged
+\task inflation must be falling
+\end{tasks}
+\ExplainChoices{Correct: $x>0$ means output above potential, so unemployment is below natural.}{$u>u^n$ corresponds to slack ($x<0$).}{It changes unless $x=0$.}{Inflation dynamics requires a Phillips curve; Okun alone does not pin it down.}
+
+
+\Question \textbf{Numerical Okun.} If $\gamma=0.5$ and the output gap is $x=2\%$, the unemployment gap is approximately:
+\answer{C}
+\begin{tasks}(1)
+\task $+4\%$
+\task $+1\%$
+\task $-1\%$
+\task $-4\%$
+\end{tasks}
+\ExplainChoices{+4\% has the wrong sign and magnitude.}{+1\% has the wrong sign.}{Correct: $u-u^n\approx -0.5\times 2\%=-1\%$.}{$-4\%$ is too large in magnitude.}
+
+
+\Question \textbf{Log utility Euler (calculation).} With $C_{t+1}/C_t=\beta(1+r_t)$, if $\beta=0.96$ and $r_t=0.05$, then $C_{t+1}/C_t$ equals:
+\answer{B}
+\begin{tasks}(1)
+\task $0.048$
+\task $1.008$
+\task $0.992$
+\task $1.09375$
+\end{tasks}
+\ExplainChoices{0.048 is $\beta r$, not $\beta(1+r)$.}{Correct: $0.96\times 1.05=1.008$.}{0.992 is the reciprocal, not the product.}{1.09375 is $1.05/0.96$, not $0.96\cdot 1.05$.}
+
+
+\Question \textbf{Steady-state real rate.} Under $1=\beta(1+\bar r)$ with $\beta=0.96$, $\bar r$ is approximately:
+\answer{D}
+\begin{tasks}(1)
+\task $0.96$
+\task $0.04$
+\task $-0.04$
+\task $1/0.96-1\approx 0.0417$
+\end{tasks}
+\ExplainChoices{$\beta$ itself is not a rate.}{0.04 is close but missing the exact calculation.}{$-0.04$ has the wrong sign.}{Correct: $\bar r=1/\beta-1\approx 0.0417$.}
+
+
+\Question \textbf{Dynamic IS (log utility).} A standard IS in gap form is:
+\answer{A}
+\begin{tasks}(1)
+\task $x_t=\mathbb{E}_t x_{t+1}-(r_t-r_t^n)+\varepsilon_t^d$
+\task $x_t=\mathbb{E}_t x_{t+1}+(r_t-r_t^n)+\varepsilon_t^d$
+\task $x_t=(r_t-r_t^n)+\varepsilon_t^d$
+\task $x_t=-(r_t-r_t^n)-\varepsilon_t^d$
+\end{tasks}
+\ExplainChoices{Correct: with log utility, coefficient on $(r-r^n)$ is 1 and it enters negatively.}{Wrong sign: higher $r$ would raise demand here.}{Omits expectations term and has wrong structure.}{Flips both signs.}
+
+
+\Question \textbf{Real-rate MP rule.} A real-rate policy rule consistent with Lecture 4 is:
+\answer{B}
+\begin{tasks}(1)
+\task $r=\bar r-\phi_\pi(\pi-\pi^*)-\phi_y(Y-Y^{FE})$
+\task $r=\bar r+\phi_\pi(\pi-\pi^*)+\phi_y(Y-Y^{FE})$
+\task $r=\pi+\phi_\pi(\pi-\pi^*)$
+\task $r=\bar r$ always
+\end{tasks}
+\ExplainChoices{The signs correspond to a destabilizing response to inflation/overheating.}{Correct: higher inflation or overheating triggers a higher real-rate stance.}{Not a standard policy rule; omits intercept/gap response appropriately.}{A constant real rate is not inflation targeting.}
+
+
+\Question \textbf{IS--MP implication.} In $Y=\bar A-a r$ and $r=\bar r+\phi_\pi(\pi-\pi^*)$, higher inflation implies:
+\answer{D}
+\begin{tasks}(1)
+\task higher $Y$ because $r$ falls
+\task no change in $Y$ because $r$ is real
+\task higher $Y$ because policy accommodates inflation
+\task lower $Y$ because policy raises $r$
+\end{tasks}
+\ExplainChoices{This would imply policy cuts $r$ when inflation rises, which would fuel inflation.}{Real policy can change output via IS; it is not irrelevant.}{Accommodation is the opposite of the stated rule.}{Correct: inflation above target raises $r$, lowering $Y$ through IS.}
+
+
+\Question \textbf{Numerical policy.} Suppose $r=0.02+2(\pi-\pi^*)$ with $\pi^*=0.02$. If inflation rises from $2\%$ to $3\%$, then $r$ rises by:
+\answer{A}
+\begin{tasks}(1)
+\task $0.02$
+\task $0.01$
+\task $0.002$
+\task $0.2$
+\end{tasks}
+\ExplainChoices{Correct: $\Delta\pi=0.01$, coefficient 2 gives $\Delta r=0.02$.}{0.01 would be coefficient 1.}{0.002 is too small by a factor of 10.}{0.2 is too large by a factor of 10.}
+
+
+\Question \textbf{Numerical IS--MP.} If $Y=\bar A-10r$ and $r$ rises by $0.02$, then $\Delta Y$ equals:
+\answer{C}
+\begin{tasks}(1)
+\task $+0.2$
+\task $0$
+\task $-0.2$
+\task $-2$
+\end{tasks}
+\ExplainChoices{+0.2 would require $r$ to fall, not rise.}{Output changes because $r$ changes in IS.}{Correct: $\Delta Y=-10\times 0.02=-0.2$.}{$-2$ would require $\Delta r=0.2$.}
+
+
+\Question \textbf{AD--AS solving (comparative statics).} With AD $y=\bar y_D-\phi p$ and SRAS $p=p^e+\lambda(y-y^{FE})$ (holding $p^e$ fixed), a higher $\bar y_D$ leads to:
+\answer{B}
+\begin{tasks}(1)
+\task lower $p$ and lower $y$
+\task higher $p$ and higher $y$
+\task higher $p$ and lower $y$
+\task no change in equilibrium
+\end{tasks}
+\ExplainChoices{This would correspond to a negative demand shift.}{Correct: AD shifts right, so both $y$ and $p$ rise when SRAS slopes upward.}{Price up with output down is supply contraction.}{Equilibrium changes unless slopes are degenerate.}
+
+
+\Question \textbf{Solve once (formula).} From AD $y=\bar y_D-\phi p$ and SRAS $p=p^e+\lambda(y-y^{FE})$, the equilibrium price level satisfies:
+\answer{D}
+\begin{tasks}(1)
+\task $p=p^e+\lambda(\bar y_D-y^{FE})$
+\task $p=\dfrac{p^e}{1+\lambda\phi}$
+\task $p=\dfrac{\bar y_D-y^{FE}}{1+\lambda\phi}$
+\task $p=\dfrac{p^e+\lambda(\bar y_D-y^{FE})}{1+\lambda\phi}$
+\end{tasks}
+\ExplainChoices{Ignores the AD slope interaction; you must solve simultaneously.}{Missing the demand shifter term.}{Ignores $p^e$ and $\lambda$.}{Correct: $(1+\lambda\phi)p=p^e+\lambda(\bar y_D-y^{FE})$.}
+
+
+\Question \textbf{Policy aggressiveness.} In an IS--MP AD derivation, increasing $\phi_\pi$ (holding other parameters fixed) generally makes AD:
+\answer{A}
+\begin{tasks}(1)
+\task steeper (output responds more to inflation)
+\task flatter (output responds less to inflation)
+\task shift right
+\task shift left
+\end{tasks}
+\ExplainChoices{Correct: stronger inflation response means a larger output contraction for a given inflation increase (steeper AD).}{Flatter would correspond to weaker response.}{Steepness changes, not a parallel shift.}{Steepness changes, not a parallel shift.}
+
+
+\Question \textbf{Monetary easing (IS--MP).} In the IS--MP view, an ``AD shift right due to easier monetary policy'' is best interpreted as:
+\answer{D}
+\begin{tasks}(1)
+\task an increase in $M$ holding the policy rule fixed
+\task a fall in productivity that raises $Y^{FE}$
+\task an upward shift in SRAS due to cost shocks
+\task a lower intercept $\bar r$ / more accommodative stance in the real-rate rule
+\end{tasks}
+\ExplainChoices{In IS--MP we do not interpret easing primarily as $M\uparrow$.}{This is a supply-side change, not monetary easing.}{This is cost-push, not easing.}{Correct: easing corresponds to a lower intercept/more accommodative stance (lower $\bar r$).}
+
+
+\Question \textbf{Cochrane connection.} In a regime with uncertain fiscal backing, an interest-rate rule alone may not pin down the price level because:
+\answer{B}
+\begin{tasks}(1)
+\task the IS curve becomes vertical
+\task nominal liabilities must be valued by expected surpluses; without backing, $P$ adjusts through valuation
+\task unemployment becomes constant
+\task money demand becomes infinite
+\end{tasks}
+\ExplainChoices{A vertical IS is not the key issue in Cochrane's regime discussion.}{Correct: without credible fiscal backing, $P$ can adjust via valuation of nominal liabilities; rate rules alone may not anchor $P$.}{Unemployment is not fixed by this argument.}{Money demand need not be infinite.}
+
+
+\Question \textbf{Level vs rate.} A permanent one-time increase in the price level $P$ with no further changes implies:
+\answer{C}
+\begin{tasks}(1)
+\task permanently high inflation
+\task permanently negative inflation
+\task a one-time burst of inflation, then inflation returns to normal
+\task inflation is undefined
+\end{tasks}
+\ExplainChoices{Permanent high inflation means $\pi$ stays high period after period.}{Permanent deflation means $P$ keeps falling.}{Correct: a one-time jump in $P$ implies a one-time inflation spike, then inflation can return to normal.}{Inflation is well-defined as the growth rate of $P$.}
+
+
+\end{Exercise}
+
+\end{document}
