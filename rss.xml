@@ -5,6 +5,62 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Seminar on Macroeconomics, Spring 2026</title>
+<link>https://huijunchen9260.github.io/PhDMacroSpring2026.html</link>
+<guid>https://huijunchen9260.github.io/PhDMacroSpring2026.html</guid>
+<pubDate>Thu, 09 Apr 2026 09:32:20 +0800</pubDate>
+<description><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
+<p>Time: W3W4Wn</p>
+<p>Room: TSMC Building 732</p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.pdf">Syllabus: pdf version</a></p>
+<p><a href="pdf/PhDMacroSpring2026/syllabus.html">Syllabus: html version</a></p>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- vim-markdown-toc Marked -->
+<ul>
+<li><a href="#grade">Grade</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#fun-stuff">Fun stuff</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="grade">Grade</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#grades">Grades</a></p>
+<h2 id="course-schedule">Course Schedule</h2>
+<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Lecture 1: Introduction</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
+<li><a href="pdf/PhDMacroSlides/Lecture4/Lecture4.pdf">Lecture 4: One-side Labor Search Model</a>
+<ul>
+<li><a href="https://www.sas.upenn.edu/~jesusfv/Blessings_JHU.pdf">The Blessings of Overparameterization: Applications in Solving Economic Models</a>
+<ul>
+<li>Amazing Applications in using machine learning to solve the McCall Labor Search Model</li>
+</ul></li>
+</ul></li>
+<li><a href="pdf/PhDMacroSlides/Lecture5/Lecture5.pdf">Lecture 5: Two-side Labor Search Model</a></li>
+<li><a href="pdf/PhDMacroSlides/AssetPricingEndowment/AssetPricingEndowment.pdf">Lecture 6: Asset Pricing in Endowment Economy</a></li>
+<li><a href="pdf/PhDMacroSlides/AssetPricingProduction/AssetPricingProduction.pdf">Lecture 7: Asset Pricing in Production Economy</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>Some of the Dynamic Programming notes come from Fatih Guvenen&#8217;s <a href="https://www.fatihguvenen.com/phd-computational-methods">Computational Method</a></li>
+<li>The models are adopted from the lecture slides by Julia Thomas.</li>
+</ul>
+<h2 id="fun-stuff">Fun stuff</h2>
+<ul>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S016726812300344X">Do looks matter for an academic career in economics?</a>
+<ul>
+<li>Yes, at least partially!</li>
+</ul></li>
+</ul>
+<h2 id="problem-sets">Problem Sets</h2>
+<p>;tags: Teaching</p>]]></description>
+</item>
+<item>
 <title>Macroeconomics (II), Spring 2026</title>
 <link>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</link>
 <guid>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</guid>
@@ -50,60 +106,6 @@
 <ul>
 <li><a href="../pdf/NTHUMacroeconomicsII/ProblemSet1/ProblemSet1_Q.pdf">Problem Set 1</a></li>
 </ul>
-<p>;tags: Teaching</p>]]></description>
-</item>
-<item>
-<title>Seminar on Macroeconomics, Spring 2026</title>
-<link>https://huijunchen9260.github.io/PhDMacroSpring2026.html</link>
-<guid>https://huijunchen9260.github.io/PhDMacroSpring2026.html</guid>
-<pubDate>Mon, 09 Mar 2026 22:51:42 +0800</pubDate>
-<description><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
-<p>Time: W3W4Wn</p>
-<p>Room: TSMC Building 732</p>
-<p><a href="pdf/PhDMacroSpring2026/syllabus.pdf">Syllabus: pdf version</a></p>
-<p><a href="pdf/PhDMacroSpring2026/syllabus.html">Syllabus: html version</a></p>
-<h2 id="table-of-content">Table of Content</h2>
-<!-- vim-markdown-toc Marked -->
-<ul>
-<li><a href="#grade">Grade</a></li>
-<li><a href="#course-schedule">Course Schedule</a></li>
-<li><a href="#lecture-notes">Lecture Notes</a></li>
-<li><a href="#reference">Reference</a></li>
-<li><a href="#fun-stuff">Fun stuff</a></li>
-<li><a href="#problem-sets">Problem Sets</a></li>
-</ul>
-<!-- vim-markdown-toc -->
-<h2 id="grade">Grade</h2>
-<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#grades">Grades</a></p>
-<h2 id="course-schedule">Course Schedule</h2>
-<p>See <a href="pdf/PhDMacroSpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="pdf/PhDMacroSlides/Lecture1/Lecture1.pdf">Lecture 1: Introduction</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture2/Lecture2.pdf">Lecture 2: Three representation</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture3/Lecture3.pdf">Lecture 3: Dynamic Programming</a></li>
-<li><a href="pdf/PhDMacroSlides/Lecture4/Lecture4.pdf">Lecture 4: One-side Labor Search Model</a>
-<ul>
-<li><a href="https://www.sas.upenn.edu/~jesusfv/Blessings_JHU.pdf">The Blessings of Overparameterization: Applications in Solving Economic Models</a>
-<ul>
-<li>Amazing Applications in using machine learning to solve the McCall Labor Search Model</li>
-</ul></li>
-</ul></li>
-<li><a href="pdf/PhDMacroSlides/Lecture5/Lecture5.pdf">Lecture 5: Two-side Labor Search Model</a></li>
-</ul>
-<h2 id="reference">Reference</h2>
-<ul>
-<li>Some of the Dynamic Programming notes come from Fatih Guvenen&#8217;s <a href="https://www.fatihguvenen.com/phd-computational-methods">Computational Method</a></li>
-<li>The models are adopted from the lecture slides by Julia Thomas.</li>
-</ul>
-<h2 id="fun-stuff">Fun stuff</h2>
-<ul>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S016726812300344X">Do looks matter for an academic career in economics?</a>
-<ul>
-<li>Yes, at least partially!</li>
-</ul></li>
-</ul>
-<h2 id="problem-sets">Problem Sets</h2>
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
