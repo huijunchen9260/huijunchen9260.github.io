@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-04-15T13:54:57Z</updated>
+<updated>2026-04-16T07:30:08Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -69,7 +69,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html"/>
 <id>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</id>
 <published>2026-01-31T08:16:14Z</published>
-<updated>2026-04-15T09:39:39Z</updated>
+<updated>2026-04-15T13:54:58Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
 <p>Time: R3R4Rn</p>
@@ -108,8 +108,8 @@
 <ul>
 <li>Formulated by John Richard Hicks, <a href="../pdf/NTHUMacroeconomicsII/Lecture4/Hicks.pdf">Mr. Keynes and the &#8220;Classics&#8221;; A Suggested Interpretation</a></li>
 </ul></li>
-<li><a href="pdf/PhDMacroSlides/Intro_IS_MP_PC.pdf">Lecture 5: Introduction to IS-MP-PC Model (Old-Keynesian)</a></li>
-<li><a href="../pdf/PhDMacroSlides/Analysis_IS_MP_PC.pdf">Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Intro_IS_MP_PC.pdf">Lecture 5: Introduction to IS-MP-PC Model (Old-Keynesian)</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Analysis_IS_MP_PC.pdf">Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)</a></li>
 </ul>
 <!-- - [Lecture 6: Old-Keynesian Inflation Dynamics](../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_Inflation_Dynamics.pdf) -->
 <h2 id="reference">Reference</h2>
