@@ -5,6 +5,61 @@
 <link>https://huijunchen9260.github.io/</link>
 <description>blog</description>
 <item>
+<title>Macroeconomics (II), Spring 2026</title>
+<link>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</link>
+<guid>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</guid>
+<pubDate>Wed, 15 Apr 2026 09:32:46 +0800</pubDate>
+<description><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
+<p>Time: R3R4Rn</p>
+<p>Room: TSMC Building 224</p>
+<p><a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.pdf">Syllabus: pdf version</a></p>
+<p><a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html">Syllabus: html version</a></p>
+<h2 id="table-of-content">Table of Content</h2>
+<!-- vim-markdown-toc Marked -->
+<ul>
+<li><a href="#grade">Grade</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="grade">Grade</h2>
+<p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#grades">Grades</a></p>
+<h2 id="course-schedule">Course Schedule</h2>
+<p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a>
+<ul>
+<li>by John H. Cochrane, a main theme for this lecture. The structure is based on this book.</li>
+</ul></li>
+<li><a href="https://www.johnhcochrane.com/research-all/the-fiscal-theory-of-the-price-level-1">The Fiscal Theory of the Price Level</a>
+<ul>
+<li>by John H. Cochrane, should be the full-blown version of the <a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a> book.</li>
+</ul></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture3/Lecture3_ADAS.pdf">Lecture 3: AS-AD</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_ADAS_Math_ISMP.pdf">Lecture 4: Math Formulation of AS-AD</a>
+<ul>
+<li>Formulated by John Richard Hicks, <a href="../pdf/NTHUMacroeconomicsII/Lecture4/Hicks.pdf">Mr. Keynes and the &#8220;Classics&#8221;; A Suggested Interpretation</a></li>
+</ul></li>
+<li><a href="pdf/PhDMacroSlides/Intro_IS_MP_PC.pdf">Lecture 5: Introduction to IS-MP-PC Model (Old-Keynesian)</a></li>
+<li><a href="../pdf/PhDMacroSlides/Analysis_IS_MP_PC.pdf">Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)</a></li>
+</ul>
+<!-- - [Lecture 6: Old-Keynesian Inflation Dynamics](../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_Inflation_Dynamics.pdf) -->
+<h2 id="reference">Reference</h2>
+<ul>
+<li>I found that <a href="https://www.karlwhelan.com/undergraduate-advanced-macroeconomics/">Karl Whelan&#8217;s macroeconomics course</a> is superior</li>
+</ul>
+<h2 id="problem-sets">Problem Sets</h2>
+<ul>
+<li><a href="../pdf/NTHUMacroeconomicsII/ProblemSet1/ProblemSet1_Q.pdf">Problem Set 1</a></li>
+</ul>
+<p>;tags: Teaching</p>]]></description>
+</item>
+<item>
 <title>Seminar on Macroeconomics, Spring 2026</title>
 <link>https://huijunchen9260.github.io/PhDMacroSpring2026.html</link>
 <guid>https://huijunchen9260.github.io/PhDMacroSpring2026.html</guid>
@@ -58,62 +113,6 @@
 </ul></li>
 </ul>
 <h2 id="problem-sets">Problem Sets</h2>
-<p>;tags: Teaching</p>]]></description>
-</item>
-<item>
-<title>Macroeconomics (II), Spring 2026</title>
-<link>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</link>
-<guid>https://huijunchen9260.github.io/MacroeconomicsIISpring2026.html</guid>
-<pubDate>Thu, 26 Mar 2026 08:35:42 +0800</pubDate>
-<description><![CDATA[<h1 id="macroeconomics-ii-spring-2026">Macroeconomics (II), Spring 2026</h1>
-<p>Time: R3R4Rn</p>
-<p>Room: TSMC Building 224</p>
-<p><a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.pdf">Syllabus: pdf version</a></p>
-<p><a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html">Syllabus: html version</a></p>
-<h2 id="table-of-content">Table of Content</h2>
-<!-- vim-markdown-toc Marked -->
-<ul>
-<li><a href="#grade">Grade</a></li>
-<li><a href="#course-schedule">Course Schedule</a></li>
-<li><a href="#lecture-notes">Lecture Notes</a></li>
-<li><a href="#--%5Blecture-6:-analysis-on-is-mp-pc-model-(old-keynesian)%5D(../pdf/phdmacroslides/analysis_is_mp_pc.pdf)">- [Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)](..&#47;pdf&#47;PhDMacroSlides&#47;Analysis<em>IS</em>MP_PC.pdf)</a></li>
-<li><a href="#reference">Reference</a></li>
-<li><a href="#problem-sets">Problem Sets</a></li>
-</ul>
-<!-- vim-markdown-toc -->
-<h2 id="grade">Grade</h2>
-<p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#grades">Grades</a></p>
-<h2 id="course-schedule">Course Schedule</h2>
-<p>See <a href="pdf/MacroeconomicsIISpring2026/syllabus/syllabus.html#tentative-course-schedule">Course schedule</a></p>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a>
-<ul>
-<li>by John H. Cochrane, a main theme for this lecture. The structure is based on this book.</li>
-</ul></li>
-<li><a href="https://www.johnhcochrane.com/research-all/the-fiscal-theory-of-the-price-level-1">The Fiscal Theory of the Price Level</a>
-<ul>
-<li>by John H. Cochrane, should be the full-blown version of the <a href="https://www.johnhcochrane.com/research-all/inflation">Inflation</a> book.</li>
-</ul></li>
-<li><a href="../pdf/NTHUMacroeconomicsII/Introduction/Introduction.pdf">Lecture 1: Introduction</a></li>
-<li><a href="../pdf/NTHUMacroeconomicsII/Lecture2/Lecture2.pdf">Lecture 2: From RBC to IS-LM</a></li>
-<li><a href="../pdf/NTHUMacroeconomicsII/Lecture3/Lecture3_ADAS.pdf">Lecture 3: AS-AD</a></li>
-<li><a href="../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_ADAS_Math_ISMP.pdf">Lecture 4: Math Formulation of AS-AD</a>
-<ul>
-<li>Formulated by John Richard Hicks, <a href="../pdf/NTHUMacroeconomicsII/Lecture4/Hicks.pdf">Mr. Keynes and the &#8220;Classics&#8221;; A Suggested Interpretation</a></li>
-</ul></li>
-<li><a href="pdf/PhDMacroSlides/Intro_IS_MP_PC.pdf">Lecture 5: Introduction to IS-MP-PC Model (Old-Keynesian)</a></li>
-</ul>
-<h2 id="--lecture-6-analysis-on-is-mp-pc-model-old-keynesian">- <a href="../pdf/PhDMacroSlides/Analysis_IS_MP_PC.pdf">Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)</a></h2>
-<!-- - [Lecture 6: Old-Keynesian Inflation Dynamics](../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_Inflation_Dynamics.pdf) -->
-<h2 id="reference">Reference</h2>
-<ul>
-<li>I found that <a href="https://www.karlwhelan.com/undergraduate-advanced-macroeconomics/">Karl Whelan&#8217;s macroeconomics course</a> is superior</li>
-</ul>
-<h2 id="problem-sets">Problem Sets</h2>
-<ul>
-<li><a href="../pdf/NTHUMacroeconomicsII/ProblemSet1/ProblemSet1_Q.pdf">Problem Set 1</a></li>
-</ul>
 <p>;tags: Teaching</p>]]></description>
 </item>
 <item>
