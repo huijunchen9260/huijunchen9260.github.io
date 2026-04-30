@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hui-Jun Chen's Webpage</title>
 <subtitle type="text">blog</subtitle>
-<updated>2026-04-22T07:49:36Z</updated>
+<updated>2026-04-30T09:02:12Z</updated>
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/"/>
 <id>https://huijunchen9260.github.io/atom.xml</id>
 <link rel="self" type="application/atom+xml" href="https://huijunchen9260.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
 <link rel="alternate" type="text/html" href="https://huijunchen9260.github.io/PhDMacroSpring2026.html"/>
 <id>https://huijunchen9260.github.io/PhDMacroSpring2026.html</id>
 <published>2026-02-23T01:17:31Z</published>
-<updated>2026-04-14T21:27:43Z</updated>
+<updated>2026-04-22T07:49:38Z</updated>
 <author><name>Hui-Jun Chen</name></author>
 <summary type="html"><![CDATA[<h1 id="seminar-on-macroeconomics-spring-2026">Seminar on Macroeconomics, Spring 2026</h1>
 <p>Time: W3W4Wn</p>
@@ -112,6 +112,7 @@
 </ul></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Intro_IS_MP_PC.pdf">Lecture 5: Introduction to IS-MP-PC Model (Old-Keynesian)</a></li>
 <li><a href="../pdf/NTHUMacroeconomicsII/Analysis_IS_MP_PC.pdf">Lecture 6: Analysis on IS-MP-PC Model (Old-Keynesian)</a></li>
+<li><a href="../pdf/NTHUMacroeconomicsII/TaylorRule.pdf">Lecture 7: Taylor Rule</a></li>
 </ul>
 <!-- - [Lecture 6: Old-Keynesian Inflation Dynamics](../pdf/NTHUMacroeconomicsII/Lecture4/Lecture4_Inflation_Dynamics.pdf) -->
 <h2 id="reference">Reference</h2>
