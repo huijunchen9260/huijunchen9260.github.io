@@ -1,0 +1,591 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+
+% --- Fonts (robust fallback) ---
+\IfFontExistsTF{Crimson Pro Light}{
+  \setmainfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+  \setsansfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+}{
+  \setmainfont{HaranoAjiMincho}
+  \setsansfont{HaranoAjiGothic}
+}
+\title{Final Exam}
+\author{Macroeconomics II \\ Hui-Jun Chen}
+
+
+% ------------------------------------------------------------
+% Explanations for each option (only printed when \showAns is enabled)
+% Usage: \ExplainChoices{A}{B}{C}{D}
+% ------------------------------------------------------------
+\newcommand{\ExplainChoices}[4]{%
+\ifthenelse{\boolean{showAns}}{%
+\vspace{0.3em}\noindent\textcolor{red}{\textbf{Explanations.}}
+\begin{itemize}
+\item[(A)] #1
+\item[(B)] #2
+\item[(C)] #3
+\item[(D)] #4
+\end{itemize}
+}{}%
+}
+\begin{document}
+
+\maketitle
+
+% Uncomment to display answers + explanations
+\showAns
+
+\begin{Exercise}
+\section*{Problem 1 (Questions 1--20): Measurement, IS--LM, AD--AS}
+
+\Question \textbf{Units. If CPI increases from 180 to 189 over a year, inflation is closest to}
+\answer{B}
+\begin{tasks}(1)
+\task $2\%$
+\task $5\%$
+\task $9\%$
+\task $-5\%$
+\end{tasks}
+\ExplainChoices{Wrong: too small.}{Correct: $(189-180)/180=0.05$.}{Wrong: 9\% would be 180$\to$196.2.}{Wrong sign.}
+
+\Question \textbf{Approximation. For small changes, $\log(P_t/P_{t-1})$ is approximately}
+\answer{B}
+\begin{tasks}(1)
+\task $P_t-P_{t-1}$
+\task $(P_t-P_{t-1})/P_{t-1}$
+\task $(P_t-P_{t-1})/P_t$
+\task $P_{t-1}/P_t$
+\end{tasks}
+\ExplainChoices{Wrong: not scale-free.}{Correct: first-order approximation.}{Wrong denominator.}{Wrong.}
+
+\Question \textbf{Fisher (numbers). If $i=1.5\%$ and $\mathbb{E}\pi=2.0\%$, the ex-ante real rate is}
+\answer{C}
+\begin{tasks}(1)
+\task $3.5\%$
+\task $0.5\%$
+\task $-0.5\%$
+\task $2.0\%$
+\end{tasks}
+\ExplainChoices{Wrong: adds.}{Wrong sign.}{Correct: $1.5-2.0=-0.5$.}{Wrong: equals expected inflation.}
+
+\Question \textbf{ZLB. If $i=0$ and expected inflation falls from $1\%$ to $-1\%$, the real rate changes by}
+\answer{C}
+\begin{tasks}(1)
+\task $-2$ pp
+\task $0$ pp
+\task $+2$ pp
+\task $+1$ pp
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Wrong: $r=-\mathbb{E}\pi$ at ZLB.}{Correct: real rate rises by 2 percentage points.}{Wrong.}
+
+\Question \textbf{Debt valuation view. The price level tends to rise when expected future primary surpluses}
+\answer{B}
+\begin{tasks}(1)
+\task increase
+\task fall
+\task stay constant
+\task equal current taxes
+\end{tasks}
+\ExplainChoices{Wrong: more backing raises real value.}{Correct: weaker backing raises $P$ to revalue nominal claims.}{Not necessarily.}{Not the key condition.}
+
+\Question \textbf{Okun. If $u-u^n=-0.4x$ and $x=-3\%$, then $u-u^n$ is}
+\answer{B}
+\begin{tasks}(1)
+\task $-1.2\%$
+\task $+1.2\%$
+\task $-0.75\%$
+\task $+0.75\%$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct: $-0.4\times(-3)=+1.2$.}{Wrong.}{Wrong.}
+
+\Question \textbf{Money market numerics. If $M/P=12$, $k=0.8$, $h=4$, and $Y=20$, then $i$ equals}
+\answer{A}
+\begin{tasks}(1)
+\task $1$
+\task $2$
+\task $3$
+\task $4$
+\end{tasks}
+\ExplainChoices{Correct: $i=(k/h)Y-(1/h)(M/P)=(0.2)20-0.25\cdot12=1$.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{IS numerics. If $Y=200-50r$ and $r$ falls by 0.01, then $\Delta Y=$}
+\answer{B}
+\begin{tasks}(1)
+\task $-0.5$
+\task $+0.5$
+\task $+5$
+\task $-5$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct: $-50\times(-0.01)=+0.5$.}{Wrong magnitude.}{Wrong sign/magnitude.}
+
+\Question \textbf{AD slope (IS--LM). With $M$ fixed, $P\uparrow$ leads to $Y\downarrow$ because}
+\answer{B}
+\begin{tasks}(1)
+\task real balances rise
+\task real balances fall and $i$ rises
+\task IS shifts left mechanically
+\task $Y^{FE}$ rises
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{AD--AS numerics. AD: $y=50-2p$, SRAS: $p=1+0.5(y-40)$. Equilibrium output $y$ is}
+\answer{C}
+\begin{tasks}(1)
+\task $40$
+\task $42$
+\task $44$
+\task $46$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct: solve to get $y=44$.}{Wrong.}
+
+\Question \textbf{Using the previous AD--AS system, the equilibrium price level $p$ is}
+\answer{C}
+\begin{tasks}(1)
+\task $1$
+\task $2$
+\task $3$
+\task $4$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct: $p=0.5\cdot44-19=3$.}{Wrong.}
+
+\Question \textbf{Diagnosis. A positive demand shock in AD--AS typically causes}
+\answer{A}
+\begin{tasks}(1)
+\task $y\uparrow,\,p\uparrow$
+\task $y\downarrow,\,p\uparrow$
+\task $y\uparrow,\,p\downarrow$
+\task $y\downarrow,\,p\downarrow$
+\end{tasks}
+\ExplainChoices{Correct.}{Supply shock pattern.}{Wrong.}{Wrong.}
+
+\Question \textbf{Diagnosis. A negative supply shock in AD--AS typically causes}
+\answer{B}
+\begin{tasks}(1)
+\task $y\uparrow,\,p\uparrow$
+\task $y\downarrow,\,p\uparrow$
+\task $y\uparrow,\,p\downarrow$
+\task $y\downarrow,\,p\downarrow$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct (stagflation).}{Wrong.}{Wrong.}
+
+\Question \textbf{Medium run. Output returns toward $y^{FE}$ mainly because}
+\answer{B}
+\begin{tasks}(1)
+\task AD shifts back automatically
+\task expected prices/wages adjust (SRAS shifts)
+\task money supply is constant
+\task productivity always rises
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{IS--LM: a cut in lump-sum taxes (holding $G$ fixed) is typically modeled as}
+\answer{A}
+\begin{tasks}(1)
+\task IS shifts right
+\task LM shifts right
+\task IS shifts left
+\task LM shifts left
+\end{tasks}
+\ExplainChoices{Correct: autonomous demand rises.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{IS--LM: a decrease in nominal money $M$ (holding $P$ fixed) shifts}
+\answer{B}
+\begin{tasks}(1)
+\task LM right/down
+\task LM left/up
+\task IS right
+\task IS left
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Liquidity trap logic. If the money-market-clearing formula implies $i^\ast<0$ and there is a ZLB, then the equilibrium $i$ is}
+\answer{B}
+\begin{tasks}(1)
+\task $i^\ast$
+\task $0$
+\task $|i^\ast|$
+\task undetermined always
+\end{tasks}
+\ExplainChoices{Wrong: violates ZLB.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{One-time jump. If $P$ rises by 6\% once and then stays constant, inflation is}
+\answer{B}
+\begin{tasks}(1)
+\task 6\% forever
+\task 6\% once then 0\%
+\task 0\% forever
+\task -6\% once then 0\%
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong sign.}
+
+\Question \textbf{Anchored expectations means}
+\answer{A}
+\begin{tasks}(1)
+\task $\mathbb{E}\pi$ stays near target after temporary shocks
+\task $\pi=0$ always
+\task $x=0$ always
+\task $i$ never changes
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{IS--MP--PC uses which three blocks?}
+\answer{B}
+\begin{tasks}(1)
+\task IS, LM, Phillips
+\task IS, policy rule, Phillips
+\task AD, money demand, LRAS
+\task budget constraint, money demand, Phillips
+\end{tasks}
+\ExplainChoices{Wrong: LM replaced by a rule.}{Correct.}{Wrong.}{Wrong.}
+
+\vspace{0.6em}\Hrule\vspace{0.8em}
+\section*{Problem 2 (Questions 21--40): IS--MP--PC, Taylor principle, NK}
+
+\Question \textbf{In Whelan’s IS--MP derivation, the key term is $(\beta_\pi-1)$ because the real-rate gap contains}
+\answer{A}
+\begin{tasks}(1)
+\task $i-\pi$
+\task $i+\pi$
+\task $\pi-i$
+\task $i/\pi$
+\end{tasks}
+\ExplainChoices{Correct: $r=i-\pi$ (or $i-\pi^e$).}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Taylor principle. $\beta_\pi>1$ ensures that when inflation rises, the real rate}
+\answer{B}
+\begin{tasks}(1)
+\task falls
+\task rises
+\task is unchanged
+\task must be zero
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\theta=\dfrac{1}{1+\alpha\gamma(\beta_\pi-1)}$ and $\beta_\pi>1$, then}
+\answer{C}
+\begin{tasks}(1)
+\task $\theta>1$
+\task $\theta=1$
+\task $0<\theta<1$
+\task $\theta<0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{Numerics. If $\alpha=1.2$, $\gamma=0.4$, $\beta_\pi=2$, then $\theta$ is closest to}
+\answer{A}
+\begin{tasks}(1)
+\task $0.68$
+\task $0.32$
+\task $1.68$
+\task $0$
+\end{tasks}
+\ExplainChoices{Correct: denom $1+1.2\cdot0.4\cdot1=1.48$.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{A tougher central bank corresponds to}
+\answer{B}
+\begin{tasks}(1)
+\task lower $\beta_\pi$
+\task higher $\beta_\pi$
+\task higher $\gamma$
+\task lower $\alpha$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong: $\gamma$ is Phillips slope.}{Not the toughness definition.}
+
+\Question \textbf{With a tougher CB, a cost-push shock tends to produce}
+\answer{B}
+\begin{tasks}(1)
+\task larger inflation rise, smaller output fall
+\task smaller inflation rise, larger output fall
+\task smaller inflation rise, smaller output fall
+\task no changes
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Explosive region in the TaylorRule discussion: if $1-\frac{1}{\alpha\gamma}<\beta_\pi<1$, then}
+\answer{B}
+\begin{tasks}(1)
+\task IS--MP slopes down and is stable
+\task IS--MP slopes up and can be unstable under adaptive expectations
+\task inflation is pinned at target
+\task Phillips curve becomes vertical
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Boundary. If $\alpha\gamma=0.5$, then $1-\frac{1}{\alpha\gamma}=$}
+\answer{B}
+\begin{tasks}(1)
+\task $0.5$
+\task $-1$
+\task $1$
+\task $2$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct: $1-2=-1$.}{Wrong.}{Wrong.}
+
+\Question \textbf{Two-period NK IS (calculation). With $x_1=0$, $\sigma=1$, $r_0^n=1\%$, $i_0=4\%$, and $\mathbb{E}_0\pi_1=2\%$, $x_0$ is}
+\answer{C}
+\begin{tasks}(1)
+\task $+1\%$
+\task $0\%$
+\task $-1\%$
+\task $-3\%$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Wrong.}{Correct: $4-2-1=1$ so $x_0=-1\%$.}{Wrong.}
+
+\Question \textbf{Forward-looking NKPC is}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_0=\pi_{-1}+\kappa x_0+u_0$
+\task $\pi_0=\beta\mathbb{E}_0\pi_1+\kappa x_0+u_0$
+\task $\pi_0=\kappa x_0$ always
+\task $\pi_0=\beta\pi_0+\kappa x_0$
+\end{tasks}
+\ExplainChoices{Backward-looking.}{Correct.}{Only if expectations and shocks are zero.}{Wrong.}
+
+\Question \textbf{NKPC numerics. If $\beta=0.99$, $\mathbb{E}_0\pi_1=1\%$, $\kappa=0.3$, $x_0=2\%$, $u_0=0$, then $\pi_0$ is}
+\answer{A}
+\begin{tasks}(1)
+\task $1.59\%$
+\task $1.29\%$
+\task $0.99\%$
+\task $0.60\%$
+\end{tasks}
+\ExplainChoices{Correct: $0.99+0.6=1.59$.}{Wrong.}{Wrong: ignores gap term.}{Wrong: gap term only.}
+
+\Question \textbf{Taylor rule numerics. If $i_0=\bar i+\phi_\pi\pi_0$ with $\bar i=1\%$, $\phi_\pi=1.5$, and $\pi_0=3\%$, then $i_0$ is}
+\answer{C}
+\begin{tasks}(1)
+\task $3\%$
+\task $4.5\%$
+\task $5.5\%$
+\task $6\%$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong (missing intercept).}{Correct: $1+4.5=5.5$.}{Wrong.}
+
+\Question \textbf{Two-period Fisher numerics. If $i_0=0\%$ and $\mathbb{E}_0\pi_1=2\%$, then $r_0$ is}
+\answer{C}
+\begin{tasks}(1)
+\task $2\%$
+\task $0\%$
+\task $-2\%$
+\task $-4\%$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{Two-period IS sign. Holding $\mathbb{E}_0\pi_1$ fixed, a decrease in $i_0$ implies}
+\answer{B}
+\begin{tasks}(1)
+\task $x_0$ decreases
+\task $x_0$ increases
+\task $x_0$ unchanged
+\task $\pi_0$ falls one-for-one
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{In NKPC, increasing $u_0$ is best interpreted as}
+\answer{B}
+\begin{tasks}(1)
+\task a right shift in IS
+\task an upward shift in inflation for given $x_0$ and expectations
+\task a fall in $r_0^n$
+\task a decrease in $\kappa$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Two-period closure. If $x_1=0$ and $\pi_1=0$ are imposed, then at $t=0$}
+\answer{A}
+\begin{tasks}(1)
+\task there are no expectations terms
+\task the system is purely backward-looking
+\task policy becomes irrelevant
+\task the LM curve returns
+\end{tasks}
+\ExplainChoices{Correct: $\mathbb{E}_0x_1=\mathbb{E}_0\pi_1=0$.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Determinacy in basic NK. A standard sufficient condition is}
+\answer{B}
+\begin{tasks}(1)
+\task $\phi_\pi<1$
+\task $\phi_\pi>1$
+\task $\kappa=0$
+\task $\sigma=0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct (Taylor principle).}{Wrong.}{Wrong.}
+
+\Question \textbf{Two-period NK IS (calculation). Suppose $x_1=0$, $\sigma=1$, $r_0^n=1\%$, $i_0=3\%$, and $\mathbb{E}_0\pi_1=0\%$. Then $x_0$ is}
+\answer{B}
+\begin{tasks}(1)
+\task $+2\%$
+\task $-2\%$
+\task $-1\%$
+\task $0\%$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct: $3-0-1=2$ so $x_0=-2\%$.}{Wrong.}{Wrong.}
+
+\Question \textbf{IS--MP (calculation). If $\alpha=1.5$ and $\beta_\pi=0.8$, then $-\alpha(\beta_\pi-1)$ equals}
+\answer{B}
+\begin{tasks}(1)
+\task $-0.3$
+\task $+0.3$
+\task $-1.2$
+\task $+1.2$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct: $-1.5(-0.2)=+0.3$.}{Wrong magnitude.}{Wrong magnitude.}
+
+\Question \textbf{IS--MP slope (sign). If $\beta_\pi=0.6$ and $\alpha>0$, then IS--MP in $(y,\pi)$ space is}
+\answer{B}
+\begin{tasks}(1)
+\task downward sloping
+\task upward sloping
+\task vertical
+\task flat
+\end{tasks}
+\ExplainChoices{Wrong: downward requires $\beta_\pi>1$.}{Correct: $\beta_\pi<1$ implies positive slope.}{Wrong.}{Wrong.}
+
+\end{Exercise}
+\end{document}

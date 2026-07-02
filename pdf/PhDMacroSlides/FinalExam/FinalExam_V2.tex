@@ -1,0 +1,257 @@
+
+% !TEX program = pdflatex
+% ============================================================
+%  Final Exam (3 Calculation Questions)
+%  Strictly following notation in:
+%   - Julia K. Thomas E8722 Topic 4 (Endogenous Growth): Slides Topic 04 E8722.pdf
+%   - Aubhik Khan (2019): production1b.pdf
+%
+%  Toggle solutions with \showAnstrue / \showAnsfalse
+% ============================================================
+
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{comment}
+
+% -----------------------
+% Show / hide solutions
+% -----------------------
+\newif\ifshowAns
+% \showAnstrue      % <-- instructor version
+\showAnsfalse       % <-- student version
+
+\ifshowAns
+  \newenvironment{sol}{\par\medskip\noindent\textbf{Solution.}\ }{\par\medskip}
+\else
+  \excludecomment{sol}
+\fi
+
+\newcommand{\pts}[1]{\hfill{\small[#1 pts]}}
+\newcommand{\E}{\mathbb{E}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Final Exam}}\\
+PhD Macro\\
+\medskip
+\end{center}
+\textbf{Instructions.} Show steps. Partial credit for correct intermediate steps.
+
+% ============================================================
+\section*{Question 1: human capital investment using goods \pts{35}}
+
+In the ``human capital investment using goods'' model (Topic 4, Case 4), the planner chooses next-period stocks
+\((K',X')\) and consumption \(C\) subject to
+\[
+C = F(K,X) + (1-\delta)K + (1-\delta_x)X - K' - X',
+\]
+with \(\delta\in(0,1)\) and \(\delta_x\in(0,1)\).
+Assume Cobb--Douglas technology
+\[
+F(K,X)=K^{\alpha}X^{1-\alpha}, \qquad \alpha\in(0,1),
+\]
+and CRRA utility
+\[
+u(C)=\frac{C^{1-\sigma}-1}{1-\sigma},\qquad \sigma>0.
+\]
+Let \(k\equiv K/X\) and write \(F(K,X)=X f(k)\) where \(f(k)=k^{\alpha}\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{BGP condition for \(k^\ast\).} \pts{14}\\
+Using the slide result that an interior BGP with \(K'>0\) and \(X'>0\) implies
+\[
+f'(k_{t+1})-\delta = f(k_{t+1})-k_{t+1}f'(k_{t+1})-\delta_x,
+\]
+and imposing \(k_{t+1}=k_t=k^\ast\) on the BGP, show that \(k^\ast\) solves
+\[
+(1+k)f'(k)-f(k)=\delta-\delta_x.
+\tag{3}
+\]
+For Cobb--Douglas \(f(k)=k^\alpha\), show that when \(\delta=\delta_x\) the unique solution is
+\[
+k^\ast=\frac{\alpha}{1-\alpha}.
+\]
+(If \(\delta\neq \delta_x\), \(k^\ast\) is obtained by solving (3) numerically, as done in the slides.)
+
+\item \textbf{Growth rate of growing series.} \pts{10}\\
+Using the slide formula for the growth rate of growing series,
+\[
+\gamma_Y = \cdots = \gamma_C =
+\left[\beta\left(f'(k^\ast)+1-\delta\right)\right]^{1/\sigma},
+\]
+compute \(\gamma_Y\) for
+\[
+\alpha=0.30,\quad \delta=0.10,\quad \delta_x=0.15,\quad \beta=0.985,\quad \sigma=2,
+\]
+using the slide-reported solution \(k^\ast=0.42857\).
+
+\item \textbf{Interpretation (one line).} \pts{11}\\
+Holding \((\alpha,\beta,\sigma,\delta)\) fixed, what is the direction of change in \(k^\ast\) when \(\delta_x\) increases?
+Briefly explain using equation (3).
+\end{enumerate}
+
+\begin{sol}
+(a) Rearranging the slide equation gives:
+\[
+f'(k_{t+1})+k_{t+1}f'(k_{t+1})-f(k_{t+1})=\delta-\delta_x
+\Rightarrow (1+k_{t+1})f'(k_{t+1})-f(k_{t+1})=\delta-\delta_x.
+\]
+On the BGP, \(k_{t+1}=k_t=k^\ast\), yielding (3).
+For Cobb--Douglas, \(f'(k)=\alpha k^{\alpha-1}\). If \(\delta=\delta_x\), (3) becomes
+\[
+(1+k)\alpha k^{\alpha-1}-k^\alpha=0
+\Rightarrow k^{\alpha-1}\big(\alpha-(1-\alpha)k\big)=0
+\Rightarrow k^\ast=\frac{\alpha}{1-\alpha}.
+\]
+
+(b) With \(k^\ast=0.42857\), \(f'(k^\ast)=\alpha(k^\ast)^{\alpha-1}=0.30\cdot (0.42857)^{-0.70}\approx 0.543\).
+Then \(f'(k^\ast)+1-\delta\approx 0.543+0.90=1.443\).
+So
+\[
+\gamma_Y\approx [0.985\cdot 1.443]^{1/2}\approx [1.421]^{1/2}\approx 1.192.
+\]
+
+(c) Equation (3) has RHS \(\delta-\delta_x\). Increasing \(\delta_x\) lowers RHS.
+In the Cobb--Douglas case, the solution shifts so that \(K/X\) rises: faster depreciation of \(X\) makes \(X\) relatively harder to accumulate,
+so the balanced ratio features higher \(k^\ast=K/X\).
+\end{sol}
+
+% ============================================================
+\section*{Question 2: Lucas (1988) human capital accumulation model \pts{30}}
+
+In the Lucas (1988) model (Topic 4), specialize production to
+\[
+Y_t = K_t^{\alpha} M_t^{1-\alpha}, \qquad \alpha\in(0,1),
+\]
+where \(M_t=\phi_t X_t\), \(X_t\) is the stock of skills, and \(\phi_t\in(0,1)\) is the fraction of unit time endowment spent working.
+The fraction \(1-\phi_t\) is time in education.
+On a balanced growth path with constant \(\phi\), skills grow according to the slide equation:
+\[
+\gamma_X \equiv \frac{X_{t+1}}{X_t} = 1 + A(1-\phi),
+\qquad A>0.
+\]
+Preferences are CRRA with parameter \(\sigma\) and discount factor \(\beta\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{BGP growth rate.} \pts{12}\\
+Using the slide result, state and use the key implication:
+\[
+\gamma_Y = \cdots = \gamma_X = \left[\beta(1+A)\right]^{1/\sigma}.
+\]
+
+\item \textbf{Solve for \(\phi\).} \pts{10}\\
+Combine \(\gamma_X = 1 + A(1-\phi)\) with the BGP growth rate to show:
+\[
+\phi = \frac{1}{A}\left[1+A-\left(\beta(1+A)\right)^{1/\sigma}\right].
+\]
+
+\item \textbf{Numerical.} \pts{8}\\
+Compute \(\phi\), \(\gamma_X\), and \(\gamma_Y\) when
+\[
+\beta=0.96,\quad \sigma=2,\quad A=0.20.
+\]
+\end{enumerate}
+
+\begin{sol}
+(a) Topic 4 derives: \(\gamma_Y=\cdots=\gamma_X=[\beta(1+A)]^{1/\sigma}\).
+
+(b) Solve \(1+A(1-\phi)=[\beta(1+A)]^{1/\sigma}\):
+\[
+A(1-\phi)=[\beta(1+A)]^{1/\sigma}-1
+\Rightarrow
+\phi=\frac{1}{A}\left[1+A-[\beta(1+A)]^{1/\sigma}\right].
+\]
+
+(c) \([\beta(1+A)]^{1/\sigma}=[0.96\cdot 1.20]^{1/2}=[1.152]^{1/2}\approx 1.073.\)
+Then \(\phi=\frac{1}{0.20}(1.20-1.073)=5(0.127)\approx 0.635.\)
+So \(\gamma_X=1+A(1-\phi)=1+0.20(0.365)\approx 1.073\), and \(\gamma_Y=\gamma_X\approx 1.073.\)
+\end{sol}
+
+% ============================================================
+\section*{Question 3: aggregation over heterogenous firms and \(A(\mu)\) \pts{35}}
+
+There is a large number of heterogeneous firms. Production at each firm is
+\[
+y = z\varepsilon k^{\alpha}n^{\nu},
+\tag{1}
+\]
+where \(\alpha\in(0,1)\), \(\nu\in(0,1)\), and \(\alpha+\nu<1\).
+Capital is rented and labor is hired. Profits are
+\[
+\pi(z\varepsilon;r,w)\equiv \max_{k,n}\; z\varepsilon k^{\alpha}n^{\nu}-(r+\delta)k-wn,
+\tag{2}
+\]
+where \(r\) is the real interest rate, \(w\) is the real wage, and \(\delta\in(0,1)\).
+Optimal choices satisfy
+\[
+\alpha z\varepsilon k^{\alpha-1}n^{\nu}=r+\delta,
+\qquad
+\nu z\varepsilon k^{\alpha}n^{\nu-1}=w.
+\]
+Let \(\mu(\varepsilon)\) describe the measure of firms in production over \(\varepsilon\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Firm choices (equations (6)--(8)).} \pts{12}\\
+Dividing (3) by (4) gives equation (6):
+\[
+\frac{\alpha}{\nu}\frac{n}{k}=\frac{r+\delta}{w}.
+\tag{6}
+\]
+Using (6) in (3), show that capital demand is (equation (7) in the slides):
+\[
+k(\varepsilon)=
+\left(
+\frac{z\varepsilon\,\alpha^{1-\nu}\nu^{\nu}}{(r+\delta)^{1-\nu}w^{\nu}}
+\right)^{\frac{1}{1-(\alpha+\nu)}}.
+\tag{7}
+\]
+(You do not need to re-derive the labor demand formula (8).)
+
+\item \textbf{Market clearing and the key moment.} \pts{12}\\
+Using the slide market-clearing equations (10)--(11),
+\[
+K = \kappa_K(z,r+\delta,w)\int \varepsilon^{\frac{1}{1-(\alpha+\nu)}}\,\mu(d\varepsilon),
+\tag{10}
+\]
+\[
+N = \kappa_N(z,r+\delta,w)\int \varepsilon^{\frac{1}{1-(\alpha+\nu)}}\,\mu(d\varepsilon),
+\tag{11}
+\]
+define
+\[
+\mathcal{M}(\mu)\equiv \int \varepsilon^{\frac{1}{1-(\alpha+\nu)}}\,\mu(d\varepsilon).
+\]
+Explain why, holding \((z,r+\delta,w)\) fixed, changes in \(\mu\) affect \(K\) and \(N\) only through \(\mathcal{M}(\mu)\).
+
+\item \textbf{Distribution changes and aggregate productivity.} \pts{11}\\
+Define an ``endogenous TFP'' index
+\[
+A(\mu)\equiv \left(\mathcal{M}(\mu)\right)^{\,1-(\alpha+\nu)}.
+\]
+Let \(\alpha=0.30\), \(\nu=0.50\) so \(1-(\alpha+\nu)=0.20\). Compare:
+\[
+\mu_1:\ \varepsilon=1\ \text{w.p. }1,
+\qquad
+\mu_2:\ \varepsilon=0.5\ \text{w.p. }0.5,\ \varepsilon=1.5\ \text{w.p. }0.5.
+\]
+Compute \(A(\mu_1)\) and \(A(\mu_2)\). Does greater dispersion raise or lower \(A(\mu)\) here?
+\end{enumerate}
+
+\begin{sol}
+(a) This is exactly equation (7) in production1b.
+
+(b) In (10)--(11), both \(K\) and \(N\) depend on \(\mu\) only through the same integral moment \(\mathcal{M}(\mu)\).
+Hence shifts in the distribution that change \(\mathcal{M}(\mu)\) shift aggregate inputs (for fixed prices) and, equivalently,
+shift measured productivity in the aggregate production function.
+
+(c) Here \(\frac{1}{1-(\alpha+\nu)}=\frac{1}{0.20}=5\), so \(\mathcal{M}(\mu)=\E[\varepsilon^5]\) and \(A(\mu)=\mathcal{M}(\mu)^{0.20}\).
+For \(\mu_1\): \(\mathcal{M}=1\Rightarrow A(\mu_1)=1\).
+For \(\mu_2\): \(\mathcal{M}=0.5(0.5^5)+0.5(1.5^5)=0.5(0.03125+7.59375)=3.8125\).
+So \(A(\mu_2)=3.8125^{0.20}\approx e^{0.20\ln 3.8125}\approx e^{0.268}\approx 1.307>1\).
+Thus more dispersion raises \(A(\mu)\) in this example (convexity of \(\varepsilon^5\)).
+\end{sol}
+
+\end{document}

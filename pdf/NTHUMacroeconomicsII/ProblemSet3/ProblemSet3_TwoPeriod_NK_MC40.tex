@@ -1,0 +1,593 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+
+% --- Fonts (robust fallback) ---
+\IfFontExistsTF{Crimson Pro Light}{
+  \setmainfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+  \setsansfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+}{
+  \setmainfont{HaranoAjiMincho}
+  \setsansfont{HaranoAjiGothic}
+}
+\title{Problem Set 3: Two-Period New Keynesian Model}
+\author{Macroeconomics II (Spring 2026) \\ Hui-Jun Chen}
+
+
+
+% ------------------------------------------------------------
+% Explanations for each option (only printed when \showAns is enabled)
+% Usage: \ExplainChoices{A}{B}{C}{D}
+% ------------------------------------------------------------
+\newcommand{\ExplainChoices}[4]{%
+\ifthenelse{\boolean{showAns}}{%
+\vspace{0.3em}\noindent\textcolor{red}{\textbf{Explanations.}}
+\begin{itemize}
+\item[(A)] #1
+\item[(B)] #2
+\item[(C)] #3
+\item[(D)] #4
+\end{itemize}
+}{}%
+}
+
+\begin{document}
+
+\maketitle
+
+% Uncomment to show answers + explanations:
+\showAns
+
+\begin{Exercise}
+
+\section*{Problem 1 (Questions 1--20): IS / Euler block}
+\Question \textbf{Timeline in two-period NK. Which expectation operator is nontrivial?}
+\answer{B}
+\begin{tasks}(1)
+\task $\mathbb{E}_1[\cdot]$ about period 2 variables
+\task $\mathbb{E}_0[\cdot]$ about period 1 variables
+\task $\mathbb{E}_{-1}[\cdot]$ about period 0 variables
+\task No expectations appear in a two-period model
+\end{tasks}
+\ExplainChoices{Wrong: no period 2 exists.}{Correct: only expectations from 0 to 1 matter.}{Wrong: not relevant here.}{Wrong: expectations can matter for period 1.}
+
+\Question \textbf{Fisher relation (ex-ante real rate). Which is correct?}
+\answer{C}
+\begin{tasks}(1)
+\task $r_0=i_0+\mathbb{E}_0\pi_1$
+\task $r_0=\mathbb{E}_0\pi_1-i_0$
+\task $r_0=i_0-\mathbb{E}_0\pi_1$
+\task $r_0=i_0-\pi_0$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Wrong sign.}{Correct.}{Wrong: uses current instead of expected inflation.}
+
+\Question \textbf{NK IS (Euler) equation: pick the standard form.}
+\answer{A}
+\begin{tasks}(1)
+\task $x_0=\mathbb{E}_0 x_1-\frac{1}{\sigma}(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\task $x_0=\mathbb{E}_0 x_1+\frac{1}{\sigma}(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\task $x_0=\frac{1}{\sigma}(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\task $x_0=\mathbb{E}_0 x_1-\sigma(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong sign.}{Missing expectation.}{Wrong coefficient.}
+
+\Question \textbf{Meaning of $\sigma$ in NK IS.}
+\answer{C}
+\begin{tasks}(1)
+\task Policy response to inflation
+\task Price rigidity parameter
+\task Inverse intertemporal elasticity of substitution
+\task Slope of Phillips curve
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{If $x_1=0$ for sure, NK IS implies:}
+\answer{B}
+\begin{tasks}(1)
+\task $x_0=\mathbb{E}_0 x_1$
+\task $x_0=-\frac{1}{\sigma}(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\task $x_0=+\frac{1}{\sigma}(i_0-\mathbb{E}_0\pi_1-r_0^n)$
+\task $x_0=0$ always
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{Numerical IS. $\sigma=2$, $r_0^n=1\%$, $i_0=3\%$, $\mathbb{E}_0\pi_1=1\%$, $x_1=0$. Then $x_0=$}
+\answer{C}
+\begin{tasks}(1)
+\task $+0.5\%$
+\task $0$
+\task $-0.5\%$
+\task $-1\%$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Wrong.}{Correct.}{Wrong: forgot $1/\sigma$.}
+
+\Question \textbf{Natural real rate $r_0^n$ is:}
+\answer{D}
+\begin{tasks}(1)
+\task The nominal policy rate
+\task Inflation target
+\task Real rate consistent with $x_0=0$ under sticky prices
+\task Real rate consistent with $x_0=0$ under flexible prices
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Close but not definition.}{Correct.}
+
+\Question \textbf{Holding $i_0$ fixed, higher $\mathbb{E}_0\pi_1$ implies:}
+\answer{B}
+\begin{tasks}(1)
+\task Higher $r_0$ and lower $x_0$
+\task Lower $r_0$ and higher $x_0$
+\task Lower $r_0$ and lower $x_0$
+\task No effect on $x_0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{ZLB constraint is:}
+\answer{C}
+\begin{tasks}(1)
+\task $r_0\ge0$
+\task $\pi_0\ge0$
+\task $i_0\ge0$
+\task $x_0\ge0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{At ZLB, if expected inflation falls, then:}
+\answer{A}
+\begin{tasks}(1)
+\task Real rate rises and demand falls
+\task Real rate falls and demand rises
+\task Nominal rate rises automatically
+\task NKPC shifts down only
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{NK Phillips curve (NKPC) form is:}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_0=\pi_{-1}+\kappa x_0+u_0$
+\task $\pi_0=\beta\mathbb{E}_0\pi_1+\kappa x_0+u_0$
+\task $\pi_0=\beta\pi_1-\kappa x_0+u_0$
+\task $\pi_0=\kappa x_0+u_0$
+\end{tasks}
+\ExplainChoices{Backward-looking.}{Correct.}{Wrong.}{Missing expectations.}
+
+\Question \textbf{Interpretation of $\beta$ in NKPC:}
+\answer{A}
+\begin{tasks}(1)
+\task Discount factor weight on expected inflation
+\task Policy response to inflation
+\task IS slope parameter
+\task Cost-push shock size
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Interpretation of $u_0$ in NKPC:}
+\answer{A}
+\begin{tasks}(1)
+\task Cost-push/markup shock
+\task Demand shock
+\task Natural rate
+\task Nominal rate
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\mathbb{E}_0\pi_1=0$, NKPC becomes:}
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_0=\kappa x_0+u_0$
+\task $\pi_0=\beta+\kappa x_0+u_0$
+\task $\pi_0=\beta\pi_0+\kappa x_0+u_0$
+\task $\pi_0=u_0$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Taylor rule (simple) is:}
+\answer{A}
+\begin{tasks}(1)
+\task $i_0=\bar i+\phi_\pi\pi_0+\phi_x x_0$
+\task $i_0=r_0^n$
+\task $i_0=\pi_0-\phi_\pi x_0$
+\task $i_0=\mathbb{E}_0\pi_1$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Taylor principle typically requires:}
+\answer{C}
+\begin{tasks}(1)
+\task $\phi_\pi<1$
+\task $\phi_\pi=1$
+\task $\phi_\pi>1$
+\task $\phi_\pi<0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Boundary.}{Correct.}{Wrong.}
+
+\Question \textbf{Determinacy intuition: when inflation rises, real rate should:}
+\answer{A}
+\begin{tasks}(1)
+\task Rise (tighten)
+\task Fall (loosen)
+\task Stay constant
+\task Be undefined
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Demand shock (IS) tends to move:}
+\answer{A}
+\begin{tasks}(1)
+\task $x\uparrow,\pi\uparrow$
+\task $x\downarrow,\pi\uparrow$
+\task $x\uparrow,\pi\downarrow$
+\task $x\downarrow,\pi\downarrow$
+\end{tasks}
+\ExplainChoices{Correct.}{Cost-push.}{Wrong.}{Wrong.}
+
+\Question \textbf{Cost-push shock ($u_0>0$) tends to move:}
+\answer{B}
+\begin{tasks}(1)
+\task $x\uparrow,\pi\uparrow$
+\task $x\downarrow,\pi\uparrow$
+\task $x\uparrow,\pi\downarrow$
+\task $x\downarrow,\pi\downarrow$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Larger $\kappa$ means (holding $x$ fixed):}
+\answer{B}
+\begin{tasks}(1)
+\task Inflation responds less
+\task Inflation responds more
+\task No change
+\task Inflation becomes backward-looking
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\vspace{0.6em}\Hrule\vspace{0.8em}
+\section*{Problem 2 (Questions 21--40): NKPC + Taylor rule}
+\Question \textbf{Numerical NKPC: $\beta=1$, $\mathbb{E}_0\pi_1=1\%$, $\kappa=0.5$, $x_0=2\%$, $u_0=0$. Then $\pi_0=$}
+\answer{B}
+\begin{tasks}(1)
+\task $1\%$
+\task $2\%$
+\task $2\%$
+\task $0.5\%$
+\end{tasks}
+\ExplainChoices{Wrong: forgot gap term.}{Correct: $1\%+0.5	imes2\%=2\%$.}{Duplicate value; treated as distractor.}{Wrong.}
+
+\Question \textbf{Numerical Taylor: $ar i=1\%$, $\phi_\pi=1.5$, $\phi_x=0$, $\pi_0=2\%$. Then $i_0=$}
+\answer{C}
+\begin{tasks}(1)
+\task $2\%$
+\task $3\%$
+\task $4\%$
+\task $1\%$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{Compute real rate: $i_0=4\%$, $\mathbb{E}_0\pi_1=1\%$. Then $r_0=$}
+\answer{A}
+\begin{tasks}(1)
+\task $3\%$
+\task $5\%$
+\task $-3\%$
+\task $1\%$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{If CB raises $i_0$ holding expectations fixed, IS implies $x_0$:}
+\answer{B}
+\begin{tasks}(1)
+\task Increases
+\task Decreases
+\task Unchanged
+\task Undefined
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If terminal conditions are $x_1=0$ and $\pi_1=0$, then:}
+\answer{A}
+\begin{tasks}(1)
+\task $\mathbb{E}_0 x_1=\mathbb{E}_0\pi_1=0$
+\task Expectations become larger
+\task Expectations are indeterminate
+\task Expectations equal current values
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\phi_x$ increases, policy responds more to:}
+\answer{B}
+\begin{tasks}(1)
+\task Inflation only
+\task Output gap (stabilization)
+\task Expected inflation only
+\task Natural rate only
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\phi_\pi=0$ (peg), higher inflation tends to:}
+\answer{B}
+\begin{tasks}(1)
+\task Raise real rate
+\task Lower real rate
+\task Leave real rate unchanged
+\task Stabilize inflation
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{With $\phi_\pi>1$, inflation rise tends to:}
+\answer{B}
+\begin{tasks}(1)
+\task Reduce real rate
+\task Increase real rate
+\task Not change real rate
+\task Set $x_0=0$ always
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If expected inflation rises but rule reacts to current $\pi_0$ only, $i_0$ changes:}
+\answer{B}
+\begin{tasks}(1)
+\task Immediately due to expectations
+\task Only if $\pi_0$ changes
+\task One-for-one always
+\task Never
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Which blocks are forward-looking?}
+\answer{C}
+\begin{tasks}(1)
+\task IS only
+\task NKPC only
+\task Both IS and NKPC
+\task Neither
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{If $u_0>0$ and CB wants lower $\pi_0$, it chooses:}
+\answer{B}
+\begin{tasks}(1)
+\task $x_0>0$
+\task $x_0<0$
+\task $x_0=0$
+\task Any $x_0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\beta$ rises toward 1, NKPC becomes:}
+\answer{B}
+\begin{tasks}(1)
+\task Less forward-looking
+\task More forward-looking
+\task Backward-looking
+\task Unrelated to expectations
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\mathbb{E}_0\pi_1$ rises holding $x_0$ fixed, $\pi_0$ rises by:}
+\answer{B}
+\begin{tasks}(1)
+\task 0
+\task $\beta$ times the change
+\task $(1-\beta)$ times the change
+\task $\kappa$ times the change
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\kappa=0$, then inflation is:}
+\answer{A}
+\begin{tasks}(1)
+\task Independent of $x_0$
+\task More sensitive to $x_0$
+\task Always equal to target
+\task Always zero
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $\sigma$ is very large, IS response to real-rate gap is:}
+\answer{B}
+\begin{tasks}(1)
+\task Strong
+\task Weak
+\task Zero always
+\task Opposite sign
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $r_0^n$ increases holding $i_0$ and expectations fixed, then $x_0$:}
+\answer{B}
+\begin{tasks}(1)
+\task Falls
+\task Rises
+\task Unchanged
+\task Depends only on NKPC
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If CB sets $i_0=r_0^n+\mathbb{E}_0\pi_1$ and $x_1=0$, then $x_0=$}
+\answer{B}
+\begin{tasks}(1)
+\task $>0$
+\task $=0$
+\task $<0$
+\task Undefined
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{If $i_0=0$ and $\mathbb{E}_0\pi_1=-2\%$, then $r_0=$}
+\answer{C}
+\begin{tasks}(1)
+\task $-2\%$
+\task $0\%$
+\task $2\%$
+\task $-4\%$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct.}{Wrong.}
+
+\Question \textbf{A higher $\phi_\pi$ tends to make equilibrium inflation (given shocks):}
+\answer{B}
+\begin{tasks}(1)
+\task More sensitive
+\task Less sensitive
+\task Unchanged
+\task Always zero
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Anchored expectations roughly means:}
+\answer{A}
+\begin{tasks}(1)
+\task $\mathbb{E}_0\pi_1$ stays near target
+\task $\pi_0$ always zero
+\task $x_0$ always zero
+\task $i_0$ never changes
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\end{Exercise}
+
+\end{document}

@@ -1,0 +1,298 @@
+
+% !TEX program = pdflatex
+% ============================================================
+%  PhD Macro (Spring 2026) Midterm 2: Asset Pricing + RBC
+%  NOTATION MATCHED to the lecture slides:
+%   - AssetPricingEndowment.pdf
+%   - AssetPricingProduction.pdf
+%   - RBC_Topic1A_Facts_HP.pdf
+%   - RBC_Topic1BC_RBC_Intro_Growth.pdf
+%
+%  Toggle solutions with \showAnstrue / \showAnsfalse
+% ============================================================
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{comment}
+\usepackage{hyperref}
+
+% -----------------------
+%  Show / hide solutions
+% -----------------------
+\newif\ifshowAns
+% \showAnstrue      % <-- instructor version
+\showAnsfalse   % <-- student version
+
+\ifshowAns
+  \newenvironment{sol}{\par\smallskip\noindent\textbf{Solution.}\ }{\par\medskip}
+\else
+  \excludecomment{sol}
+\fi
+
+\newcommand{\pts}[1]{\hfill{\small[#1 pts]}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\covz}{\operatorname{cov}_z}
+\newcommand{\norminf}[1]{\left\lVert #1 \right\rVert_{\infty}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Midterm Exam 2}}\\
+PhD Macroeconomics (Spring 2026)\\
+\textbf{Instructions.} Show steps. You may explain in words where requested.\\
+\end{center}
+
+% ============================================================
+\section*{Question 1 (Asset pricing in an endowment economy) \pts{40}}
+
+This question uses the notation from \texttt{AssetPricingEndowment.pdf}.
+In each period, the representative household receives fruit/dividend \(z\).
+The household holds shares \(s\) of the fruit tree. The ex-dividend share price is \(p\).
+Next period variables are denoted by primes: \(z'\), \(p'\), \(s'\), \(c'\).
+The household can also trade a one-period treasury bill: hold \(a'\) bought at price \(q\) today and paying \(1\) next period.
+
+\medskip
+\noindent\textbf{Budget constraint (with both assets):}
+\[
+c + p s' + q a' \;\le\; (z+p)s + a.
+\tag{BC}
+\]
+Assume equilibrium goods market clearing implies \(c=z\) and equilibrium share supply implies \(s=1\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Euler equations and returns.} \pts{16}\\
+(i) Show the FOC for the treasury bill implies
+\[
+u'(c)\,q \;=\; \beta\,\E_{z'|z}\!\left[u'(c')\right].
+\tag{E-bond}
+\]
+(ii) Show the FOC for shares implies
+\[
+u'(c)\,p \;=\; \beta\,\E_{z'|z}\!\left[u'(c')\,(z'+p')\right].
+\tag{E-share}
+\]
+(iii) Define the \textbf{gross returns} exactly as in the slides:
+\[
+e(z,z') \equiv \frac{z'+p'}{p},
+\qquad
+R(z)\equiv \frac{1}{q}.
+\]
+Rewrite (E-bond) and (E-share) as \(1=\E_{z'|z}[\text{SDF}\times \text{return}]\) using the slide's SDF.
+
+\item \textbf{Fundamental value (pricing by discounted dividends).} \pts{14}\\
+Starting from (E-share) and using the transversality condition
+\[
+\lim_{j\to\infty}\beta^j \E_t\!\left[u'(c_{t+j})\,p_{t+j}\right]=0,
+\tag{TVC}
+\]
+show that
+\[
+u'(c_t)\,p_t
+=
+\E_t\!\left[\sum_{j=1}^{\infty}\beta^j u'(c_{t+j})\,z_{t+j}\right].
+\tag{FV}
+\]
+Then impose \(c_t=z_t\) and rewrite \(p_t\) in terms of \(\{z_{t+j}\}\) and marginal utilities (as in the slide).
+
+\item \textbf{Risk premium (covariance representation).} \pts{10}\\
+Using the covariance identity from the slides, show that
+\[
+\frac{\E_{z'|z}[e(z,z')] - R(z)}{R(z)}
+\;=\;
+-\covz\!\left(\underbrace{\beta\frac{u'(c')}{u'(c)}}_{\text{SDF}},\;e(z,z')\right).
+\tag{RP}
+\]
+Give a one-sentence interpretation: when is the risk premium positive?
+\end{enumerate}
+
+\begin{sol}
+(a)
+(i) The FOC w.r.t. \(a'\) yields \(u'(c)q=\beta\E_{z'|z}[u'(c')]\).
+
+(ii) The FOC w.r.t. \(s'\) yields \(u'(c)p=\beta\E_{z'|z}[u'(c')(z'+p')]\).
+
+(iii) Define the SDF as in the slides:
+\[
+\text{SDF}\equiv \beta\frac{u'(c')}{u'(c)}.
+\]
+Divide (E-bond) by \(u'(c)q\): \(1=\E_{z'|z}[\text{SDF}\cdot (1/q)]=\E_{z'|z}[\text{SDF}\cdot R(z)]\).
+Divide (E-share) by \(u'(c)p\): \(1=\E_{z'|z}[\text{SDF}\cdot (z'+p')/p]=\E_{z'|z}[\text{SDF}\cdot e(z,z')]\).
+
+(b) Iterating (E-share) forward gives
+\[
+u'(c_t)p_t=\E_t\!\left[\sum_{j=1}^{J}\beta^j u'(c_{t+j})z_{t+j}+\beta^{J}u'(c_{t+J})p_{t+J}\right].
+\]
+Under (TVC), the last term goes to 0 as \(J\to\infty\), yielding (FV).
+With \(c_t=z_t\), divide by \(u'(z_t)\):
+\[
+p_t=\E_t\!\left[\sum_{j=1}^\infty \beta^j \frac{u'(z_{t+j})}{u'(z_t)}\,z_{t+j}\right],
+\]
+which matches the slide expression.
+
+(c) Start from \(1=\E_{z'|z}[\text{SDF}\cdot e]\) and note \(\E_{z'|z}[\text{SDF}]=1/R(z)\) from the bond Euler equation.
+Use \(\E[AB]=\cov(A,B)+\E[A]\E[B]\):
+\[
+1=\E[\text{SDF}\cdot e]=\covz(\text{SDF},e)+\E[\text{SDF}]\E[e]
+=\covz(\text{SDF},e)+\frac{1}{R(z)}\E[e].
+\]
+Rearrange:
+\[
+\frac{\E[e]-R(z)}{R(z)}=-\covz(\text{SDF},e).
+\]
+Risk premium is positive when the asset pays low returns in high-SDF (high marginal utility) states (``bad times'').
+\end{sol}
+
+% ============================================================
+\section*{Question 2 (Asset pricing in a production economy) \pts{30}}
+
+This question uses the notation from \texttt{AssetPricingProduction.pdf}.
+A representative firm has labor-only technology
+\[
+y = z n^{\alpha},\qquad \alpha\in(0,1),
+\]
+chooses labor \(n\), pays wage \(w\), and pays dividend \(d=y-wn\).
+A representative household chooses \((c,n,s')\) and has value function
+\[
+V(s,z)=\max_{c\ge 0,\,s'\ge 0,\,n\ge 0}\Big\{\log c+\psi(1-n)+\beta \E_{z'|z}[V(s',z')]\Big\},
+\]
+subject to
+\[
+c + p s' \le (d+p)s + wn.
+\]
+In equilibrium: goods market clears \(c=y\) and share market clears \(s=1\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Firm: wages and dividends.} \pts{10}\\
+Show the firm FOC implies \(w=\alpha z n^{\alpha-1}\).
+Show the dividend is \(d=(1-\alpha)y\).
+
+\item \textbf{Household FOC for labor.} \pts{8}\\
+Show the household FOC implies
+\[
+\frac{w}{c}=\psi \quad\Rightarrow\quad w=\psi c.
+\tag{L}
+\]
+Use equilibrium \(c=y\) and the firm wage equation to solve for
+\[
+n=\frac{\alpha}{\psi}
+\qquad\text{and}\qquad
+y=z\left(\frac{\alpha}{\psi}\right)^{\alpha}.
+\]
+
+\item \textbf{Share Euler equation and constant \(p/y\).} \pts{12}\\
+From the household FOC for \(s'\), show:
+\[
+\frac{1}{c}\,p
+=
+\beta\,\E_{z'|z}\!\left[\frac{1}{c'}(d'+p')\right].
+\tag{S}
+\]
+Using \(c=y\) and \(d'=(1-\alpha)y'\), show:
+\[
+\frac{p}{y}
+=
+\beta(1-\alpha)+\beta\,\E_{z'|z}\!\left[\frac{p'}{y'}\right].
+\]
+Now guess \(\frac{p}{y}\equiv \Lambda\) is constant and solve for \(\Lambda\).
+State the implied comovement between \(p\) and GDP \(y\).
+\end{enumerate}
+
+\begin{sol}
+(a) Firm chooses \(n\) to maximize \(zn^\alpha-wn\), so \(w=\alpha zn^{\alpha-1}\).
+Wage bill \(wn=\alpha zn^\alpha=\alpha y\). Hence \(d=y-wn=(1-\alpha)y\).
+
+(b) Household intratemporal FOC gives \(w/c=\psi\Rightarrow w=\psi c\).
+With \(c=y=zn^\alpha\), set \(\psi y=\alpha zn^{\alpha-1}\Rightarrow \psi zn^\alpha=\alpha zn^{\alpha-1}\Rightarrow \psi n=\alpha\Rightarrow n=\alpha/\psi\).
+Then \(y=z(\alpha/\psi)^\alpha\).
+
+(c) From (S) and using \(c=y\), \(d'=(1-\alpha)y'\):
+\[
+\frac{p}{y}=\beta\E_{z'|z}\left[\frac{p'}{y'}+(1-\alpha)\right]
+=\beta(1-\alpha)+\beta\E_{z'|z}\left[\frac{p'}{y'}\right].
+\]
+If \(p/y=\Lambda\) constant, \(\Lambda=\beta(1-\alpha)+\beta\Lambda\Rightarrow \Lambda=\frac{\beta(1-\alpha)}{1-\beta}\).
+Thus \(p=\Lambda y\): stock price is procyclical and moves one-for-one with GDP in percentage terms (constant price-output ratio).
+\end{sol}
+
+% ============================================================
+\section*{Question 3 (RBC: facts/HP filter, BGP, deflation, measurement) \pts{30}}
+
+This question uses the notation from the RBC Topic 1A and Topic 1BC slides.
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{HP filter (objective and notation).} \pts{12}\\
+Given data \(\{y_t\}_{t=1}^{T}\), the HP filter chooses a trend \(\{\tau_t\}_{t=1}^{T}\).
+Write the HP minimization problem exactly as in the slides:
+\[
+\min_{\{\tau_t\}_{t=1}^{T}}
+\frac{1}{T}\sum_{t=1}^{T}(y_t-\tau_t)^2
++\frac{\lambda}{T-1}\sum_{t=2}^{T-1}\Big[(\tau_{t+1}-\tau_t)-(\tau_t-\tau_{t-1})\Big]^2,
+\]
+and define the cycle \(\tilde y_t\).
+In one sentence, what does \(\lambda\) control?
+
+\item \textbf{Balanced growth logic.} \pts{8}\\
+In the one-sector growth model with labor-augmenting progress,
+\[
+Y_t = z F(K_t, n_t X_t),\qquad \frac{X_{t+1}}{X_t}=\gamma_x\ge 1,
+\]
+and define gross growth rates \(\gamma_v(t)\equiv v_{t+1}/v_t\).
+Assume \(z\) and \(n_t\) are constant on the BGP.
+Explain briefly why a BGP requires
+\[
+\gamma_y=\gamma_c=\gamma_i=\gamma_k
+\qquad\text{and}\qquad
+\gamma_y=\gamma_k=\gamma_x.
+\]
+
+\item \textbf{Growth-deflated constraints.} \pts{6}\\
+Define detrended (growth-deflated) variables
+\[
+y_t\equiv \frac{Y_t}{X_t},\quad c_t\equiv \frac{C_t}{X_t},\quad i_t\equiv \frac{I_t}{X_t},\quad k_t\equiv \frac{K_t}{X_t}.
+\]
+Write the growth-deflated resource constraint and capital accumulation constraint as in the slides:
+\[
+y_t \ge c_t+i_t,
+\qquad
+\gamma_x k_{t+1}\le (1-\delta)k_t+i_t.
+\]
+
+\item \textbf{Solow residual / TFP measurement.} \pts{4}\\
+With Cobb--Douglas production,
+\[
+Y_t = A_t K_t^{\alpha}(n_t X_t)^{1-\alpha},
+\]
+show that
+\[
+\log A_t = \log Y_t - \alpha \log K_t - (1-\alpha)\log n_t - (1-\alpha)\log X_t.
+\]
+Then compute \(A_t\) for: \(Y_t=100\), \(K_t=300\), \(n_t=0.30\), \(X_t=2\), \(\alpha=0.34\).
+\end{enumerate}
+
+\begin{sol}
+(a) Cycle is \(\tilde y_t\equiv y_t-\tau_t\). Larger \(\lambda\) enforces a smoother trend (penalizes changes in trend growth more).
+
+(b) Resource constraint on BGP: \(Y_t=C_t+I_t\) with each term growing at constant rates implies \(\gamma_y=\gamma_c=\gamma_i\).
+Capital accumulation \(K_{t+1}=(1-\delta)K_t+I_t\) requires \(\gamma_k=\gamma_i=\gamma_y\).
+CRS production implies \(Y_t/X_t=zF(K_t/X_t,n_t)\). With constant \(z\) and \(n_t\), constant \(Y_t/X_t\) requires \(K_t/X_t\) constant,
+so \(\gamma_k=\gamma_x\) and thus \(\gamma_y=\gamma_k=\gamma_x\).
+
+(c) Divide \(Y_t\ge C_t+I_t\) by \(X_t\) to get \(y_t\ge c_t+i_t\).
+Divide \(K_{t+1}\le (1-\delta)K_t+I_t\) by \(X_{t+1}=\gamma_x X_t\) to get
+\(k_{t+1}\le [(1-\delta)k_t+i_t]/\gamma_x\), equivalently \(\gamma_x k_{t+1}\le (1-\delta)k_t+i_t\).
+
+(d) Compute \(\log A_t\) then exponentiate.
+Here: \(\log A = \log 100 -0.34\log 300 -(0.66)\log 0.30 -(0.66)\log 2\).
+Numerically: \(\log 100\approx 4.6052\); \(\log 300\approx 5.7038\); \(\log 0.30\approx -1.2040\); \(\log 2\approx 0.6931\).
+So
+\[
+\log A \approx 4.6052 -0.34(5.7038) -0.66(-1.2040) -0.66(0.6931)
+\approx 4.6052 -1.9393 +0.7946 -0.4574 \approx 3.0031.
+\]
+Thus \(A\approx e^{3.0031}\approx 20.2\).
+\end{sol}
+
+\end{document}

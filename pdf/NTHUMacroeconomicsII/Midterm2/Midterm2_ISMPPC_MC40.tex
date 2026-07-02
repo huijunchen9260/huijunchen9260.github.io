@@ -1,0 +1,691 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+
+% ------------------------------------------------------------
+% Explanations for each option (only printed when \showAns is enabled)
+% Usage: \ExplainChoices{A}{B}{C}{D}
+% ------------------------------------------------------------
+\newcommand{\ExplainChoices}[4]{%
+\ifthenelse{\boolean{showAns}}{%
+\vspace{0.3em}\noindent\textcolor{red}{\textbf{Explanations.}}
+\begin{itemize}
+\item[(A)] #1
+\item[(B)] #2
+\item[(C)] #3
+\item[(D)] #4
+\end{itemize}
+}{}%
+}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+
+% --- Fonts (robust fallback) ---
+\IfFontExistsTF{Crimson Pro Light}{
+  \setmainfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+  \setsansfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+}{
+  \setmainfont{HaranoAjiMincho}
+  \setsansfont{HaranoAjiGothic}
+}
+\title{Midterm 2}
+\author{Macroeconomics II (Spring 2026)\\ Hui-Jun Chen}
+
+
+\begin{document}
+
+\maketitle
+
+% Uncomment to display answers in red:
+% \showAns
+
+\begin{Exercise}
+
+\section*{Instructions}
+\begin{itemize}
+\item 40 multiple-choice questions. Exactly one option is correct for each question.
+\end{itemize}
+
+\vspace{0.6em}
+\Hrule
+\vspace{0.8em}
+
+% ============================================================
+\section*{Problem 1 (Questions 1--20): Building blocks and key derivations}
+% ============================================================
+
+\Question \textbf{Three elements.} The IS--MP--PC model combines:
+\answer{C}
+\begin{tasks}(1)
+\task AD curve, AS curve, and a money demand curve
+\task IS curve, LM curve, and a Phillips curve
+\task Phillips curve, IS curve, and a monetary policy rule
+\task Phillips curve, money supply rule, and a government budget constraint
+\end{tasks}
+\ExplainChoices{Wrong: money demand/L(M/P) belongs to IS–LM; IS–MP replaces money-market closure with a policy rule.}{Wrong: IS–LM includes LM, not MP; IS–MP–PC replaces LM with MP.}{Correct: the model is demand (IS) + policy rule (MP) + inflation block (PC).}{Wrong: a government budget constraint is not one of the three blocks in IS–MP–PC.}
+
+
+
+\Question \textbf{Phillips curve (form).} The baseline Phillips curve is:
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_t=\pi_t^{e}+\gamma (y_t-y_t^\ast)+\varepsilon_t^\pi$
+\task $\pi_t=\pi_t^{e}-\gamma (y_t-y_t^\ast)+\varepsilon_t^\pi$
+\task $\pi_t=\pi^\ast+\gamma (y_t-y_t^\ast)$
+\task $\pi_t=\pi_{t-1}+\gamma(y_t-y_t^\ast)$
+\end{tasks}
+\ExplainChoices{Correct: inflation equals expected inflation + slope×output gap + a cost-push shock.}{Wrong sign: higher output gap should raise inflation, not lower it.}{Wrong: would ignore expectations and shocks, forcing inflation toward target mechanically.}{Wrong: accelerationist/adaptive form; not the baseline expectations-augmented PC.}
+
+
+
+\Question \textbf{Interpretation of $\pi_t^e$.} In the Phillips curve, $\pi_t^e$ represents:
+\answer{B}
+\begin{tasks}(1)
+\task realized inflation last period
+\task expected inflation built into wage/price setting at time $t$
+\task the inflation target set by the central bank
+\task the nominal interest rate
+\end{tasks}
+\ExplainChoices{Wrong: that is realized past inflation only under adaptive expectations.}{Correct: expected inflation built into wage/price setting at time $t$.}{Wrong: $\pi^*$ is the target, not private expectations.}{Wrong: $i_t$ is the nominal rate.}
+
+
+
+\Question \textbf{Transmission mechanism (review emphasis).} A typical chain from inflation to real activity under an inflation-targeting rule is:
+\answer{D}
+\begin{tasks}(1)
+\task $\pi\uparrow \Rightarrow u\downarrow \Rightarrow x\downarrow$
+\task $\pi\uparrow \Rightarrow r\downarrow \Rightarrow x\downarrow$
+\task $\pi\uparrow \Rightarrow y^\ast\uparrow \Rightarrow x\uparrow$
+\task $\pi\uparrow \Rightarrow$ tighter policy $\Rightarrow u\uparrow \Rightarrow x\downarrow$
+\end{tasks}
+\ExplainChoices{Wrong: tightening raises unemployment; it does not fall in the stabilizing story.}{Wrong: with inflation targeting, inflation above target tends to raise the real rate, not lower it.}{Wrong: inflation does not mechanically raise potential output.}{Correct: $\pi\uparrow$ → tighter policy → unemployment up → output gap down.}
+
+
+
+\Question \textbf{Okun connection.} If $u_t-u_t^n\approx -\lambda (y_t-y_t^\ast)$ with $\lambda>0$, then $y_t>y_t^\ast$ implies:
+\answer{A}
+\begin{tasks}(1)
+\task $u_t<u_t^n$
+\task $u_t>u_t^n$
+\task $u_t=u_t^n$
+\task no implication for unemployment
+\end{tasks}
+\ExplainChoices{Correct: positive output gap implies unemployment below natural ($u<u^n$).}{Wrong: that would correspond to a negative output gap.}{Wrong: equality holds only when the gap is zero.}{Wrong: Okun implies a sign relationship when $\lambda>0$.}
+
+
+
+\Question \textbf{IS curve (form).} The IS curve used in the notes is:
+\answer{C}
+\begin{tasks}(1)
+\task $y_t=y_t^\ast+\alpha(i_t-\pi_t-r^\ast)+\varepsilon_t^y$
+\task $y_t=y_t^\ast-\alpha(i_t+\pi_t-r^\ast)+\varepsilon_t^y$
+\task $y_t=y_t^\ast-\alpha(i_t-\pi_t-r^\ast)+\varepsilon_t^y$
+\task $y_t=r^\ast-\alpha(i_t-\pi_t-y_t^\ast)+\varepsilon_t^y$
+\end{tasks}
+\ExplainChoices{Wrong sign: higher real-rate gap should reduce output, not raise it.}{Wrong: uses $i+\pi$ rather than the real rate $i-\pi$.}{Correct: $y=y^* -\alpha(i-\pi-r^*)+\varepsilon^y$.}{Wrong: incorrect rearrangement; not an IS curve.}
+
+
+
+\Question \textbf{What does $\alpha$ measure?} In the IS curve, a larger $\alpha$ means:
+\answer{B}
+\begin{tasks}(1)
+\task output responds less to the real interest rate
+\task output responds more to the real interest rate
+\task inflation responds more to output
+\task the central bank responds more to inflation
+\end{tasks}
+\ExplainChoices{Wrong: larger $\alpha$ means more sensitivity, not less.}{Correct: output responds more to the real interest-rate gap.}{Wrong: inflation sensitivity is $\gamma$ in the Phillips curve.}{Wrong: policy aggressiveness is $\beta_\pi$.}
+
+
+
+\Question \textbf{Monetary policy rule (baseline).} The baseline MP rule is:
+\answer{D}
+\begin{tasks}(1)
+\task $i_t=r^\ast+\pi^\ast-\beta_\pi(\pi_t-\pi^\ast)$
+\task $i_t=\pi_t+\beta_\pi(\pi_t-\pi^\ast)$
+\task $i_t=r^\ast+\pi_t+\beta_\pi(\pi_t-\pi^\ast)$
+\task $i_t=r^\ast+\pi^\ast+\beta_\pi(\pi_t-\pi^\ast)$
+\end{tasks}
+\ExplainChoices{Wrong sign: would cut rates when inflation rises above target.}{Wrong: missing intercept; not the baseline rule.}{Wrong: double-counts inflation level; baseline uses deviation $(\pi-\pi^*)$.}{Correct: $i=r^*+\pi^*+\beta_\pi(\pi-\pi^*)$.}
+
+
+
+\Question \textbf{What does $\beta_\pi$ do?} A higher $\beta_\pi$ implies:
+\answer{A}
+\begin{tasks}(1)
+\task a stronger increase in $i_t$ when inflation rises above target
+\task a weaker increase in $i_t$ when inflation rises above target
+\task a steeper Phillips curve
+\task a higher natural output $y_t^\ast$
+\end{tasks}
+\ExplainChoices{Correct: stronger nominal-rate response to inflation deviations.}{Wrong: weaker response corresponds to smaller $\beta_\pi$.}{Wrong: Phillips slope is $\gamma$.}{Wrong: $y^*$ is supply-side, not set by $\beta_\pi$.}
+
+
+
+\Question \textbf{Special case $\beta_\pi=1$.} Under the baseline MP rule, if $\beta_\pi=1$ then:
+\answer{C}
+\begin{tasks}(1)
+\task the nominal rate does not react to inflation at all
+\task the real rate rises when inflation rises
+\task the real rate is pinned at $r^\ast$ regardless of $\pi_t-\pi^\ast$
+\task the IS--MP curve is downward sloping
+\end{tasks}
+\ExplainChoices{Wrong: $\beta_\pi=1$ still reacts one-for-one; $\beta_\pi=0$ is no reaction.}{Wrong: the real rate does not rise with inflation deviations when $\beta_\pi=1$.}{Correct: $i=r^*+\pi$ so $i-\pi=r^*$ regardless of $(\pi-\pi^*)$.}{Wrong: downward IS–MP slope requires $\beta_\pi>1$.}
+
+
+
+\Question \textbf{Derivation step (review emphasis).} The IS--MP curve is obtained by:
+\answer{B}
+\begin{tasks}(1)
+\task substituting the Phillips curve into the MP rule
+\task substituting the MP rule into the IS curve
+\task substituting money demand into the IS curve
+\task substituting the IS curve into the Phillips curve
+\end{tasks}
+\ExplainChoices{Wrong: does not yield IS–MP.}{Correct: substitute the MP rule into the IS curve to eliminate $i$.}{Wrong: money demand is not part of IS–MP–PC.}{Wrong: this would not isolate output as a function of inflation via policy.}
+
+
+
+\Question \textbf{IS--MP curve (result).} The derived IS--MP curve is:
+\answer{A}
+\begin{tasks}(1)
+\task $y_t=y_t^\ast-\alpha(\beta_\pi-1)(\pi_t-\pi^\ast)+\varepsilon_t^y$
+\task $y_t=y_t^\ast+\alpha(\beta_\pi-1)(\pi_t-\pi^\ast)+\varepsilon_t^y$
+\task $y_t=y_t^\ast-\alpha\beta_\pi(\pi_t-\pi^\ast)+\varepsilon_t^y$
+\task $y_t=y_t^\ast-\alpha(\pi_t-\pi^\ast)+\varepsilon_t^\pi$
+\end{tasks}
+\ExplainChoices{Correct: $y=y^* -\alpha(\beta_\pi-1)(\pi-\pi^*)+\varepsilon^y$.}{Wrong: sign would imply inflation above target raises output in the Taylor-principle case.}{Wrong: should be $(\beta_\pi-1)$ due to real-rate gap algebra.}{Wrong: $\varepsilon^\pi$ belongs to PC, not IS–MP.}
+
+
+
+\Question \textbf{Slope sign.} In a graph with output on the horizontal axis and inflation on the vertical axis, the IS--MP curve slopes down when:
+\answer{D}
+\begin{tasks}(1)
+\task $\beta_\pi<1$
+\task $\beta_\pi=0$
+\task $\beta_\pi<0$
+\task $\beta_\pi>1$
+\end{tasks}
+\ExplainChoices{Wrong: $\beta_\pi<1$ gives upward slope (destabilizing).}{Wrong: $\beta_\pi=0$ is a peg; slope depends on $(\beta_\pi-1)$.}{Wrong: not the relevant case; sign logic is about above/below 1.}{Correct: $\beta_\pi>1$ → real rate rises with inflation → output falls → downward slope.}
+
+
+
+\Question \textbf{Why $\beta_\pi>1$ matters (core intuition).} The Taylor principle is central because when inflation rises it should:
+\answer{B}
+\begin{tasks}(1)
+\task lower the real interest rate, boosting demand
+\task raise the real interest rate, reducing demand
+\task raise natural output $y^\ast$
+\task make the Phillips curve flat
+\end{tasks}
+\ExplainChoices{Wrong: that amplifies inflation by lowering real rates.}{Correct: stabilizing policy requires raising the real rate when inflation rises.}{Wrong: potential output is not pinned by this policy parameter.}{Wrong: policy does not mechanically change the Phillips slope.}
+
+
+
+\Question \textbf{PC shift: higher expected inflation.} Holding $y_t-y_t^\ast$ fixed, an increase in $\pi_t^e$ causes:
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_t$ to rise one-for-one (PC shifts up)
+\task $\pi_t$ to fall one-for-one (PC shifts down)
+\task no change in $\pi_t$
+\task the slope $\gamma$ to fall
+\end{tasks}
+\ExplainChoices{Correct: higher $\pi^e$ raises $\pi$ one-for-one holding the gap fixed.}{Wrong: it does not shift down.}{Wrong: it changes the intercept, so inflation changes.}{Wrong: slope $\gamma$ is unchanged; intercept shifts.}
+
+
+
+\Question \textbf{After $\pi^e$ rises (qualitative result).} If $\pi_t^e$ rises above the target $\pi^\ast$, then in the one-period IS--MP--PC intersection (with $\beta_\pi>1$) we typically get:
+\answer{C}
+\begin{tasks}(1)
+\task higher output and higher inflation, and inflation exceeds expectations
+\task lower output and lower inflation
+\task lower output and higher inflation, but inflation rises less than expectations
+\task higher output and lower inflation
+\end{tasks}
+\ExplainChoices{Wrong: inflation is not typically above expectations in this linear form.}{Wrong: higher $\pi^e$ shifts PC up, so inflation won’t fall.}{Correct: inflation rises and output falls; with $\beta_\pi>1$, $\Delta\pi<\Delta\pi^e$ (partial pass-through).}{Wrong: higher expectations do not lower inflation here.}
+
+
+
+\Question \textbf{Soft vs tough central bank (definition).} In these notes, a ``tough'' central bank corresponds to:
+\answer{B}
+\begin{tasks}(1)
+\task smaller $\beta_\pi$
+\task larger $\beta_\pi$
+\task smaller $\gamma$
+\task larger $\varepsilon_t^\pi$
+\end{tasks}
+\ExplainChoices{Wrong: smaller $\beta_\pi$ is softer.}{Correct: larger $\beta_\pi$ is tougher.}{Wrong: $\gamma$ is Phillips slope.}{Wrong: $\varepsilon^\pi$ is a shock, not policy.}
+
+
+
+\Question \textbf{Tough CB (one-period tradeoff).} When $\beta_\pi$ is higher (tougher CB), a cost-push increase in inflation tends to produce:
+\answer{D}
+\begin{tasks}(1)
+\task a larger rise in inflation and a smaller fall in output
+\task a larger rise in inflation and a larger fall in output
+\task a smaller rise in inflation and a smaller fall in output
+\task a smaller rise in inflation and a larger fall in output
+\end{tasks}
+\ExplainChoices{Wrong: tougher policy tends to reduce the inflation increase, not raise it.}{Wrong: inflation rise is smaller, not larger, under tougher policy.}{Wrong: output loss is typically larger under tougher policy.}{Correct: smaller inflation rise but larger output fall.}
+
+
+
+\Question \textbf{Numerical slope check.} Suppose $\alpha=2$ and $\beta_\pi=2$. The coefficient on $(\pi_t-\pi^\ast)$ in the IS--MP curve is:
+\answer{A}
+\begin{tasks}(1)
+\task $-2$
+\task $-4$
+\task $+2$
+\task $0$
+\end{tasks}
+\ExplainChoices{Correct: $-\alpha(\beta_\pi-1)=-2(1)=-2$.}{Wrong: would require $(\beta_\pi-1)=2$.}{Wrong: sign should be negative when $\beta_\pi>1$.}{Wrong: zero only when $\beta_\pi=1$.}
+
+
+
+\Question \textbf{Interpretation.} In the IS--MP curve, a positive $\varepsilon_t^y$ shifts the curve:
+\answer{B}
+\begin{tasks}(1)
+\task left (lower $y$ for each $\pi$)
+\task right (higher $y$ for each $\pi$)
+\task up (higher $\pi$ for each $y$)
+\task down (lower $\pi$ for each $y$)
+\end{tasks}
+\ExplainChoices{Correct: $(\pi_t-\pi_{t-1})$ is increasing in the output gap (accelerationist).}{Wrong: the level depends on past inflation and shocks, not only gap.}{Wrong: target alone does not govern the change in inflation.}{Wrong: money growth is not in this reduced form.}
+
+
+
+\vspace{0.6em}
+\Hrule
+\vspace{0.8em}
+
+% ============================================================
+\section*{Problem 2 (Questions 21--40): Solving the model and the Taylor principle}
+% ============================================================
+
+\Question \textbf{Solving the two-equation system.} After deriving IS--MP, equilibrium inflation is solved by combining:
+\answer{C}
+\begin{tasks}(1)
+\task IS and MP only
+\task MP and money demand
+\task IS--MP and Phillips curve
+\task Phillips curve and money demand
+\end{tasks}
+\ExplainChoices{Wrong: IS–MP alone does not pin down inflation.}{Wrong: money demand is not in IS–MP–PC.}{Correct: combine IS–MP with the Phillips curve.}{Wrong: money demand is not used here.}
+
+
+
+\Question \textbf{Solve for inflation (structure).} Solving yields a formula of the form:
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_t=\theta\pi_t^e+(1-\theta)\pi^\ast+\theta(\text{shocks})$
+\task $\pi_t=\pi_t^e+\pi^\ast+\theta(\text{shocks})$
+\task $\pi_t=\pi^\ast$ always
+\task $\pi_t=\theta\pi^\ast+(1-\theta)\pi_t^e$
+\end{tasks}
+\ExplainChoices{Correct: convex combination of expectations and target plus shocks.}{Wrong: not additive like that; weights matter.}{Wrong: would eliminate fluctuations.}{Wrong: missing the shock term and correct weights.}
+
+
+
+\Question \textbf{Definition of $\theta$.} In the Taylor principle notes:
+\answer{B}
+\begin{tasks}(1)
+\task $\theta = 1+\alpha\gamma(\beta_\pi-1)$
+\task $\theta = \dfrac{1}{1+\alpha\gamma(\beta_\pi-1)}$
+\task $\theta = \dfrac{1}{1-\alpha\gamma(\beta_\pi-1)}$
+\task $\theta = \alpha\gamma(\beta_\pi-1)$
+\end{tasks}
+\ExplainChoices{Wrong: that is the denominator, not $\theta$.}{Correct: $\theta=1/(1+\alpha\gamma(\beta_\pi-1))$.}{Wrong: sign in denominator is wrong.}{Wrong: that’s only part of the expression.}
+
+
+
+\Question \textbf{Case $\beta_\pi>1$.} If $\beta_\pi>1$ and $\alpha,\gamma>0$, then:
+\answer{C}
+\begin{tasks}(1)
+\task $\theta>1$
+\task $\theta<0$
+\task $0<\theta<1$
+\task $\theta=1$
+\end{tasks}
+\ExplainChoices{Wrong: $\theta>1$ occurs when denominator is between 0 and 1.}{Wrong: $\theta$ is positive here.}{Correct: denominator exceeds 1 so $0<\theta<1$.}{Wrong: $\theta=1$ only if $(\beta_\pi-1)=0$ or $\alpha\gamma=0$.}
+
+
+
+\Question \textbf{Parameter interpretation (review emphasis).} In $\theta=\dfrac{1}{1+\alpha\gamma(\beta_\pi-1)}$, $\theta$ is smaller when:
+\answer{D}
+\begin{tasks}(1)
+\task $\alpha$ is smaller
+\task $\gamma$ is smaller
+\task $\beta_\pi$ is closer to 1
+\task $\alpha$, $\gamma$, or $\beta_\pi$ is larger (with $\beta_\pi>1$)
+\end{tasks}
+\ExplainChoices{Wrong: smaller $\alpha$ increases $\theta$.}{Wrong: smaller $\gamma$ increases $\theta$.}{Wrong: $\beta_\pi$ closer to 1 from above increases $\theta$.}{Correct: larger $\alpha$, $\gamma$, or $\beta_\pi$ (with $\beta_\pi>1$) lowers $\theta$.}
+
+
+
+\Question \textbf{Numerical $\theta$.} Let $\alpha=1$, $\gamma=0.5$, $\beta_\pi=3$. Then $\theta$ equals:
+\answer{B}
+\begin{tasks}(1)
+\task $1/(1+0.5\cdot 3)=0.4$
+\task $1/(1+0.5\cdot 2)=0.5$
+\task $1/(1+0.5\cdot 1)=0.667$
+\task $1/(1-0.5\cdot 2)=\infty$
+\end{tasks}
+\ExplainChoices{Wrong: uses $\beta_\pi$ instead of $(\beta_\pi-1)$.}{Correct: $\theta=1/(1+0.5\cdot2)=0.5$.}{Wrong: would correspond to $(\beta_\pi-1)=1$.}{Wrong: denominator is not zero here.}
+
+
+
+\Question \textbf{Effect of tougher policy on inflation.} With $\beta_\pi>1$, raising $\beta_\pi$ tends to:
+\answer{A}
+\begin{tasks}(1)
+\task reduce $\theta$ and make inflation closer to the target
+\task increase $\theta$ and make inflation closer to expectations
+\task reduce $\gamma$
+\task shift the Phillips curve down permanently
+\end{tasks}
+\ExplainChoices{Correct: higher $\beta_\pi$ lowers $\theta$, anchoring inflation closer to target.}{Wrong: in stable region, $\theta$ falls, not rises.}{Wrong: $\gamma$ is not altered by policy in this reduced form.}{Wrong: policy does not permanently shift the Phillips curve.}
+
+
+
+\Question \textbf{Adaptive expectations.} Under adaptive expectations:
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_t^e=\pi^\ast$
+\task $\pi_t^e=\pi_{t-1}$
+\task $\pi_t^e=\mathbb{E}_t\pi_{t+1}$
+\task $\pi_t^e=0$ always
+\end{tasks}
+\ExplainChoices{Wrong: that is perfectly anchored at target.}{Correct: $\pi_t^e=\pi_{t-1}$.}{Wrong: forward-looking uses $\mathbb{E}_t\pi_{t+1}$.}{Wrong: not the adaptive rule.}
+
+
+
+\Question \textbf{Accelerationist form.} With adaptive expectations, the Phillips curve becomes:
+\answer{C}
+\begin{tasks}(1)
+\task $\pi_t=\pi^\ast+\gamma(y_t-y_t^\ast)+\varepsilon_t^\pi$
+\task $\pi_t=\pi_t^e-\gamma(y_t-y_t^\ast)+\varepsilon_t^\pi$
+\task $\pi_t=\pi_{t-1}+\gamma(y_t-y_t^\ast)+\varepsilon_t^\pi$
+\task $\pi_t=\pi_{t-1}-\gamma(y_t-y_t^\ast)+\varepsilon_t^\pi$
+\end{tasks}
+\ExplainChoices{Wrong: missing lagged inflation term under adaptive expectations.}{Wrong: sign error on gap term.}{Correct: $\pi_t=\pi_{t-1}+\gamma(y-y^*)+\varepsilon^\pi$.}{Wrong: wrong sign on the gap term.}
+
+
+
+\Question \textbf{Interpretation.} Under adaptive expectations, there is a positive relationship between:
+\answer{A}
+\begin{tasks}(1)
+\task the change in inflation $(\pi_t-\pi_{t-1})$ and the output gap
+\task the level of inflation and the output gap only
+\task the output gap and the inflation target only
+\task money growth and the output gap only
+\end{tasks}
+\ExplainChoices{Correct: $(\pi_t-\pi_{t-1})$ is increasing in the output gap (accelerationist).}{Wrong: the level depends on past inflation and shocks, not only gap.}{Wrong: target alone does not govern the change in inflation.}{Wrong: money growth is not in this reduced form.}
+
+
+
+\Question \textbf{Stability under Taylor principle.} If $0<\theta<1$, then inflation dynamics $\pi_t=\theta\pi_{t-1}+\cdots$ are:
+\answer{D}
+\begin{tasks}(1)
+\task explosive
+\task oscillatory with increasing amplitude
+\task a random walk
+\task stable AR(1) mean reversion
+\end{tasks}
+\ExplainChoices{Wrong: explosive would require coefficient >1 in absolute value.}{Wrong: oscillation would require negative coefficient with |.|>1, etc.}{Wrong: random walk corresponds to coefficient 1.}{Correct: $0<\theta<1$ implies stable AR(1) mean reversion.}
+
+
+
+\Question \textbf{When $\beta_\pi<1$.} If $\beta_\pi<1$ (so policy violates Taylor principle), then inflation shocks tend to:
+\answer{B}
+\begin{tasks}(1)
+\task raise the real rate and reduce output, stabilizing inflation
+\task lower the real rate and raise output, amplifying inflation
+\task not affect the real rate
+\task stabilize inflation faster
+\end{tasks}
+\ExplainChoices{Wrong: that is the stabilizing Taylor-principle case.}{Correct: real rate falls when inflation rises → demand increases → amplifies inflation.}{Wrong: real rate changes; it falls in this case.}{Wrong: does not stabilize faster; it destabilizes.}
+
+
+
+\Question \textbf{Boundary emphasized in TaylorRule notes.} The interval producing $\theta>1$ is:
+\answer{A}
+\begin{tasks}(1)
+\task $\left(1-\frac{1}{\alpha\gamma}\right)<\beta_\pi<1$
+\task $\beta_\pi>1$
+\task $\beta_\pi<\left(1-\frac{1}{\alpha\gamma}\right)$
+\task $\beta_\pi=1$
+\end{tasks}
+\ExplainChoices{Correct: $(1-1/(\alpha\gamma),1)$ produces $\theta>1$ (denominator between 0 and 1).}{Wrong: $\beta_\pi>1$ gives $0<\theta<1$.}{Wrong: below $1-1/(\alpha\gamma)$ the denominator becomes negative (different pathology).}{Wrong: $\beta_\pi=1$ gives $\theta=1$.}
+
+
+
+\Question \textbf{Numerical boundary.} If $\alpha=1$ and $\gamma=0.5$, then $1-\frac{1}{\alpha\gamma}$ equals:
+\answer{C}
+\begin{tasks}(1)
+\task $0$
+\task $0.5$
+\task $-1$
+\task $2$
+\end{tasks}
+\ExplainChoices{Wrong: not correct for $\alpha\gamma=0.5$.}{Wrong: not correct; $1-2=-1$.}{Correct: $1-1/0.5=-1$.}{Wrong: sign error.}
+
+
+
+\Question \textbf{Graph logic (review emphasis).} When $\beta_\pi<1$, the IS--MP curve in $(y,\pi)$ space:
+\answer{B}
+\begin{tasks}(1)
+\task slopes down
+\task slopes up
+\task is horizontal
+\task is vertical
+\end{tasks}
+\ExplainChoices{Wrong: downward slope is $\beta_\pi>1$.}{Correct: $\beta_\pi<1$ implies upward-sloping IS–MP in $(y,\pi)$.}{Wrong: not implied.}{Wrong: not implied.}
+
+
+
+\Question \textbf{Condition ``upward and steeper than PC''.} The TaylorRule notes state that IS--MP slopes up and is steeper than PC when:
+\answer{D}
+\begin{tasks}(1)
+\task $\beta_\pi>1$
+\task $\beta_\pi<1-\frac{1}{\alpha\gamma}$
+\task $\beta_\pi=1$
+\task $1-\frac{1}{\alpha\gamma}<\beta_\pi<1$
+\end{tasks}
+\ExplainChoices{Wrong: $\beta_\pi>1$ gives downward IS–MP.}{Wrong: below $1-1/(\alpha\gamma)$ the denominator is negative; not the “steeper than PC” case emphasized.}{Wrong: $\beta_\pi=1$ makes IS–MP vertical in $(y,\pi)$ (output pinned).}{Correct: $1-1/(\alpha\gamma)<\beta_\pi<1$ yields upward IS–MP steeper than PC → explosive dynamics (adaptive expectations).}
+
+
+
+\Question \textbf{Explosive dynamics intuition.} In the explosive region $1-\frac{1}{\alpha\gamma}<\beta_\pi<1$, an increase in expected inflation $\pi_t^e$ tends to:
+\answer{A}
+\begin{tasks}(1)
+\task start a sequence where inflation and output move further away from target over time
+\task reduce inflation and raise output back to natural values
+\task have no effect because expectations do not matter
+\task immediately pin inflation at the target
+\end{tasks}
+\ExplainChoices{Correct: higher expected inflation shifts PC up; with destabilizing IS–MP feedback the economy moves further away over time.}{Wrong: describes stable reversion.}{Wrong: expectations matter via the PC intercept.}{Wrong: inflation is not pinned at target here.}
+
+
+
+\Question \textbf{A puzzling result (TaylorRule slide 11).} When $\beta_\pi<1$, increasing the inflation target $\pi^\ast$ can lead to:
+\answer{C}
+\begin{tasks}(1)
+\task higher inflation and higher output always
+\task no change in nominal interest rates
+\task higher interest rates and lower inflation (counterintuitive outcome)
+\task lower interest rates and higher inflation
+\end{tasks}
+\ExplainChoices{Wrong: not “always”; the slide highlights a paradoxical comparative static under $\beta_\pi<1$.}{Wrong: nominal rates change with the rule/target.}{Correct: the notes highlight a case where raising $\pi^*$ can imply higher rates and lower inflation (counterintuitive).}{Wrong: this is the usual intuition, but the slide emphasizes a reversal can occur.}
+
+
+
+\Question \textbf{Quick computation (IS--MP coefficient).} If $\alpha=1.5$ and $\beta_\pi=0.8$, then $-\alpha(\beta_\pi-1)$ equals:
+\answer{B}
+\begin{tasks}(1)
+\task $-0.3$
+\task $+0.3$
+\task $-1.2$
+\task $+1.2$
+\end{tasks}
+\ExplainChoices{Wrong: sign error.}{Correct: $-1.5(0.8-1)= -1.5(-0.2)=+0.3$.}{Wrong: magnitude incorrect.}{Wrong: magnitude incorrect.}
+
+
+
+\Question \textbf{Policy interpretation.} If $-\alpha(\beta_\pi-1)>0$, then higher inflation is associated with:
+\answer{A}
+\begin{tasks}(1)
+\task higher output along IS--MP (destabilizing feedback)
+\task lower output along IS--MP (stabilizing feedback)
+\task no change in output
+\task lower inflation
+\end{tasks}
+\ExplainChoices{Correct: positive slope means higher inflation is associated with higher output along IS–MP (destabilizing feedback).}{Wrong: stabilizing requires negative slope (higher inflation → lower output).}{Wrong: output changes with inflation when slope ≠ 0.}{Wrong: this is about output response, not a direct statement that inflation falls.}
+
+
+
+\end{Exercise}
+
+\end{document}

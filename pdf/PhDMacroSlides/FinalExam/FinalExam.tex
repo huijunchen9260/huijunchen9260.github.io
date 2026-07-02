@@ -1,0 +1,384 @@
+% !TEX program = pdflatex
+% ============================================================
+%  Final Exam (3 calculation questions)
+%  Coverage: LAST TWO lecture notes
+%   (1) Endogenous Growth: human capital accumulated using resources (goods)
+%   (2) Lucas human capital: time allocation to education
+%   (3) Production heterogeneity: aggregation proof + how distribution affects A(μ)
+%
+%  Toggle solutions with \showAnstrue / \showAnsfalse
+% ============================================================
+
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{comment}
+
+% -----------------------
+% Show / hide solutions
+% -----------------------
+\newif\ifshowAns
+\showAnstrue      % <-- instructor version
+% \showAnsfalse       % <-- student version
+
+\ifshowAns
+  \newenvironment{sol}{\par\medskip\noindent\textbf{Solution.}\ }{\par\medskip}
+\else
+  \excludecomment{sol}
+\fi
+
+\newcommand{\pts}[1]{\hfill{\small[#1 pts]}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Final Exam}\\
+PhD Macro (Spring 2026)\\
+\medskip
+\end{center}
+
+\textbf{Instructions.} Show steps. Partial credit for correct logic and intermediate steps.\\
+
+% ============================================================
+\section*{Question 1: Human capital accumulated using resources (goods) \pts{35}}
+
+Consider a planner economy with two accumulable stocks: physical capital \(K_t\) and human capital \(H_t\).
+Output is produced with constant returns to the \emph{vector} \((K,H)\):
+\[
+Y_t = A K_t^{\alpha} H_t^{1-\alpha},
+\qquad \alpha\in(0,1),\ A>0.
+\]
+The resource constraint is
+\[
+C_t + I^K_t + I^H_t = Y_t.
+\]
+Stocks evolve as
+\[
+K_{t+1} = (1-\delta)K_t + I^K_t,
+\qquad
+H_{t+1} = (1-\delta)H_t + I^H_t,
+\]
+with the \emph{same} depreciation rate \(\delta\in(0,1)\).
+Preferences are CRRA:
+\[
+\sum_{t=0}^{\infty}\beta^t \frac{C_t^{1-\sigma}-1}{1-\sigma},
+\qquad \beta\in(0,1),\ \sigma>0.
+\]
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Static allocation across \(K\) vs \(H\) (one-period condition).} \pts{12}\\
+Show that along an interior optimum (both \(I^K_t>0\) and \(I^H_t>0\)),
+the planner must satisfy
+\[
+MPK_t = MPH_t,
+\]
+where \(MPK_t \equiv \partial Y_t/\partial K_t\) and \(MPH_t \equiv \partial Y_t/\partial H_t\).
+Use this to show the \textbf{balanced-growth ratio} is constant:
+\[
+\frac{K_t}{H_t}=\frac{\alpha}{1-\alpha}.
+\]
+
+\item \textbf{Balanced growth rate.} \pts{13}\\
+Let \(\gamma\equiv C_{t+1}/C_t = K_{t+1}/K_t = H_{t+1}/H_t\) be the common gross growth rate on a balanced growth path (BGP).
+Show that
+\[
+\gamma^{\sigma}=\beta\big(MPK + 1-\delta\big),
+\]
+where \(MPK\) is the (constant) marginal product of capital on the BGP.
+
+\item \textbf{Numerical.} \pts{10}\\
+Take \(\beta=0.96\), \(\sigma=2\), \(\delta=0.08\), \(A=0.25\), \(\alpha=0.40\).
+Compute:
+(i) the BGP ratio \(K/H\);
+(ii) \(MPK\) on the BGP; and
+(iii) the implied \(\gamma\).
+\end{enumerate}
+
+\begin{sol}
+(a) With one unit of resources, the planner can increase next period \(K_{t+1}\) by 1 (via \(I^K_t\)) or increase \(H_{t+1}\) by 1 (via \(I^H_t\)).
+At an interior optimum, the marginal value of investing in either stock must be equal.
+With identical depreciation and same investment good, this implies the gross marginal payoff is equal:
+\[
+MPK_t + 1-\delta = MPH_t + 1-\delta \quad\Rightarrow\quad MPK_t=MPH_t.
+\]
+Now compute marginal products:
+\[
+MPK_t = \alpha A K_t^{\alpha-1}H_t^{1-\alpha},\qquad
+MPH_t = (1-\alpha)A K_t^{\alpha}H_t^{-\alpha}.
+\]
+Set \(MPK_t=MPH_t\):
+\[
+\alpha A K^{\alpha-1}H^{1-\alpha}=(1-\alpha)A K^\alpha H^{-\alpha}
+\Rightarrow \alpha H = (1-\alpha)K
+\Rightarrow \frac{K}{H}=\frac{\alpha}{1-\alpha}.
+\]
+
+(b) Euler equation for investing in \(K\) (standard planner Euler) is:
+\[
+C_t^{-\sigma} = \beta C_{t+1}^{-\sigma}\big(MPK_{t+1}+1-\delta\big).
+\]
+On a BGP, \(C_{t+1}/C_t=\gamma\) and \(MPK_{t+1}=MPK\) is constant because \(K/H\) is constant.
+Thus
+\[
+\left(\frac{C_{t+1}}{C_t}\right)^\sigma = \beta\big(MPK+1-\delta\big)
+\Rightarrow \gamma^\sigma = \beta(MPK+1-\delta).
+\]
+
+(c)
+(i) \(K/H=\alpha/(1-\alpha)=0.40/0.60=2/3\).
+
+(ii) Write \(MPK\) in terms of \(x\equiv K/H\):
+\[
+MPK = \alpha A K^{\alpha-1}H^{1-\alpha}
+= \alpha A (K/H)^{\alpha-1}
+= \alpha A x^{\alpha-1}.
+\]
+Here \(x=2/3\) and \(\alpha-1=-0.60\), so
+\[
+x^{\alpha-1}=(2/3)^{-0.60}=(3/2)^{0.60}\approx e^{0.60\ln(1.5)}\approx e^{0.60\cdot 0.4055}\approx e^{0.2433}\approx 1.275.
+\]
+Hence
+\[
+MPK \approx 0.40\cdot 0.25 \cdot 1.275 = 0.1275.
+\]
+
+(iii) \(\gamma^\sigma=\beta(MPK+1-\delta)=0.96(0.1275+0.92)=0.96(1.0475)=1.0056\).
+With \(\sigma=2\), \(\gamma=\sqrt{1.0056}\approx 1.0028\), i.e. about \(0.28\%\) growth per period.
+\end{sol}
+
+% ============================================================
+\section*{Question 2: Lucas human capital (time allocation) \pts{30}}
+
+Consider a Lucas-style human capital model with no physical capital.
+Human capital evolves according to
+\[
+H_{t+1} = (1-\delta_H)H_t + \phi u_t H_t,
+\qquad \delta_H\in(0,1),\ \phi>0,
+\]
+where \(u_t\in[0,1]\) is the fraction of time spent accumulating human capital (education/training).
+Goods production uses effective labor \((1-u_t)H_t\):
+\[
+Y_t = A(1-u_t)H_t,\qquad A>0.
+\]
+Resource constraint: \(C_t=Y_t\).
+Preferences are log utility:
+\[
+\sum_{t=0}^{\infty}\beta^t \log C_t,\qquad \beta\in(0,1).
+\]
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Constant-\(u\) representation.} \pts{12}\\
+Suppose \(u_t=u\) is constant over time. Show that
+\[
+C_t = A(1-u)H_t,\qquad
+\frac{H_{t+1}}{H_t} = 1-\delta_H+\phi u \equiv \gamma_H(u).
+\]
+Conclude that consumption grows at gross rate \(\gamma_C(u)=\gamma_H(u)\).
+
+\item \textbf{Choose the optimal \(u\) (calculation).} \pts{18}\\
+Under constant \(u\), show the lifetime utility can be written as
+\[
+\sum_{t\ge 0}\beta^t \log C_t
+=
+\text{constant}
++
+\frac{1}{1-\beta}\log(1-u)
++
+\frac{\beta}{(1-\beta)^2}\log\big(\gamma_H(u)\big),
+\]
+up to terms that do not depend on \(u\).
+Derive the FOC characterizing the optimal \(u^\ast\):
+\[
+\frac{1}{1-u^\ast} = \frac{\beta}{1-\beta}\cdot \frac{\phi}{1-\delta_H+\phi u^\ast}.
+\]
+Then compute \(u^\ast\) when \(\beta=0.95\), \(\delta_H=0.02\), \(\phi=0.10\).
+\end{enumerate}
+
+\begin{sol}
+(a) With constant \(u\), output and consumption are \(C_t=A(1-u)H_t\).
+Human capital law of motion becomes \(H_{t+1}=(1-\delta_H+\phi u)H_t\), so
+\(\gamma_H(u)=H_{t+1}/H_t=1-\delta_H+\phi u\).
+Since \(C_t\propto H_t\) with constant proportionality \(A(1-u)\), consumption grows at the same rate:
+\(\gamma_C(u)=\gamma_H(u)\).
+
+(b) Write \(\log C_t = \log A + \log(1-u) + \log H_t\).
+Also \(\log H_t = \log H_0 + t\log\gamma_H(u)\).
+Therefore
+\[
+\sum_{t=0}^\infty \beta^t \log C_t
+=
+\sum_{t=0}^\infty \beta^t \big[\log A + \log(1-u) + \log H_0 + t\log\gamma_H(u)\big].
+\]
+Use \(\sum_{t\ge0}\beta^t=1/(1-\beta)\) and \(\sum_{t\ge0} t\beta^t = \beta/(1-\beta)^2\).
+Terms \(\log A,\log H_0\) do not depend on \(u\), so (up to constants):
+\[
+\frac{1}{1-\beta}\log(1-u) + \frac{\beta}{(1-\beta)^2}\log\gamma_H(u).
+\]
+Differentiate w.r.t. \(u\):
+\[
+-\frac{1}{1-\beta}\cdot \frac{1}{1-u} + \frac{\beta}{(1-\beta)^2}\cdot \frac{1}{\gamma_H(u)}\cdot \phi =0.
+\]
+Multiply by \((1-\beta)^2\):
+\[
+-(1-\beta)\frac{1}{1-u} + \beta \frac{\phi}{\gamma_H(u)}=0
+\Rightarrow
+\frac{1}{1-u} = \frac{\beta}{1-\beta}\cdot \frac{\phi}{1-\delta_H+\phi u}.
+\]
+
+Now plug numbers: \(\beta/(1-\beta)=0.95/0.05=19\).
+So
+\[
+\frac{1}{1-u} = 19\cdot \frac{0.10}{0.98+0.10u}=\frac{1.9}{0.98+0.10u}.
+\]
+Invert:
+\[
+1-u = \frac{0.98+0.10u}{1.9}.
+\]
+Multiply by 1.9:
+\[
+1.9 - 1.9u = 0.98 + 0.10u
+\Rightarrow 0.92 = 2.0u
+\Rightarrow u^\ast=0.46.
+\]
+\end{sol}
+
+% ============================================================
+\section*{Question 3: Production heterogeneity --- aggregation proof and distribution effects \pts{35}}
+
+There is a continuum of firms indexed by idiosyncratic productivity \(\varepsilon>0\), distributed with cdf \(\mu\).
+Each firm has technology
+\[
+y(\varepsilon)= z\,\varepsilon\, k(\varepsilon)^{\alpha} n(\varepsilon)^{\nu},
+\qquad \alpha,\nu\in(0,1),\ \alpha+\nu<1,
+\]
+and rents capital and hires labor at common prices \(r+\delta\) and \(w\).
+Firm profits:
+\[
+\pi(\varepsilon)= z\varepsilon k^\alpha n^\nu - (r+\delta)k - wn.
+\]
+Aggregate inputs are \(K=\int k(\varepsilon)\,d\mu(\varepsilon)\) and \(N=\int n(\varepsilon)\,d\mu(\varepsilon)\).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Firm demands scale with productivity.} \pts{12}\\
+Show that optimal inputs can be written as
+\[
+k(\varepsilon)=\kappa_k \,\varepsilon^{\frac{1}{1-\alpha-\nu}},
+\qquad
+n(\varepsilon)=\kappa_n \,\varepsilon^{\frac{1}{1-\alpha-\nu}},
+\]
+for constants \(\kappa_k,\kappa_n>0\) that depend only on \((z,r+\delta,w,\alpha,\nu)\), not on \(\varepsilon\).
+
+\item \textbf{Aggregation and the productivity index \(A(\mu)\).} \pts{13}\\
+Define the moment
+\[
+M(\mu)\equiv \int \varepsilon^{\frac{1}{1-\alpha-\nu}}\,d\mu(\varepsilon).
+\]
+Show that aggregate output can be written as
+\[
+Y = z\,K^{\alpha}N^{\nu}\,A(\mu),
+\qquad
+A(\mu)\equiv \Big(M(\mu)\Big)^{\,1-\alpha-\nu}.
+\]
+(Interpret \(A(\mu)\) as an ``endogenous TFP'' term.)
+
+\item \textbf{How distribution changes affect aggregate productivity.} \pts{10}\\
+Let \(\alpha=0.30\), \(\nu=0.50\), so \(1-\alpha-\nu=0.20\).
+Consider two distributions with the same mean \(\E[\varepsilon]=1\):
+\[
+\mu_1:\ \varepsilon=1\ \text{w.p. }1,
+\qquad
+\mu_2:\ \varepsilon=0.5\ \text{w.p. }0.5,\ \varepsilon=1.5\ \text{w.p. }0.5.
+\]
+Compute \(A(\mu_1)\) and \(A(\mu_2)\) and compare them.
+(Briefly explain why the more dispersed distribution changes \(A(\mu)\).)
+\end{enumerate}
+
+\begin{sol}
+(a) FOCs:
+\[
+\alpha z\varepsilon k^{\alpha-1}n^\nu=r+\delta,
+\qquad
+\nu z\varepsilon k^\alpha n^{\nu-1}=w.
+\]
+Solve the ratio \(n/k\) from dividing the two:
+\[
+\frac{\alpha}{\nu}\frac{n}{k}=\frac{r+\delta}{w}
+\Rightarrow \frac{n}{k}=\text{constant}\equiv \chi.
+\]
+So \(n=\chi k\). Plug into the first FOC:
+\[
+\alpha z\varepsilon k^{\alpha-1}(\chi k)^\nu
+=\alpha z\varepsilon \chi^\nu k^{\alpha+\nu-1}
+=r+\delta.
+\]
+Thus
+\[
+k^{\alpha+\nu-1}=\frac{r+\delta}{\alpha z\chi^\nu}\cdot \varepsilon^{-1}
+\Rightarrow
+k^{1-\alpha-\nu}=\Big(\frac{\alpha z\chi^\nu}{r+\delta}\Big)\varepsilon.
+\]
+Hence
+\[
+k(\varepsilon)=\kappa_k\,\varepsilon^{\frac{1}{1-\alpha-\nu}},
+\quad
+\kappa_k\equiv \Big(\frac{\alpha z\chi^\nu}{r+\delta}\Big)^{\frac{1}{1-\alpha-\nu}}.
+\]
+And \(n(\varepsilon)=\chi k(\varepsilon)=\kappa_n \varepsilon^{1/(1-\alpha-\nu)}\).
+
+(b) Using the scaling from (a),
+\[
+K=\int k(\varepsilon)\,d\mu = \kappa_k M(\mu),
+\qquad
+N=\int n(\varepsilon)\,d\mu = \kappa_n M(\mu).
+\]
+Aggregate output:
+\[
+Y=\int y(\varepsilon)\,d\mu
+= \int z\varepsilon k(\varepsilon)^\alpha n(\varepsilon)^\nu\,d\mu.
+\]
+Substitute \(k=\kappa_k \varepsilon^{a}\), \(n=\kappa_n \varepsilon^{a}\) where \(a=1/(1-\alpha-\nu)\):
+\[
+y(\varepsilon)= z\varepsilon (\kappa_k^\alpha \kappa_n^\nu)\varepsilon^{a(\alpha+\nu)}
+= z(\kappa_k^\alpha \kappa_n^\nu)\varepsilon^{1+a(\alpha+\nu)}.
+\]
+But \(1+a(\alpha+\nu)=1+\frac{\alpha+\nu}{1-\alpha-\nu}=\frac{1}{1-\alpha-\nu}=a\).
+So \(y(\varepsilon)= z(\kappa_k^\alpha \kappa_n^\nu)\varepsilon^{a}\).
+Integrate:
+\[
+Y=z(\kappa_k^\alpha \kappa_n^\nu) M(\mu).
+\]
+Now rewrite in terms of \(K,N\). Since \(K=\kappa_k M\) and \(N=\kappa_n M\),
+\[
+K^\alpha N^\nu = \kappa_k^\alpha \kappa_n^\nu M^{\alpha+\nu}.
+\]
+Thus
+\[
+zK^\alpha N^\nu A(\mu)
+=
+z(\kappa_k^\alpha \kappa_n^\nu) M^{\alpha+\nu}\cdot M^{1-\alpha-\nu}
+=
+z(\kappa_k^\alpha \kappa_n^\nu)M
+=Y,
+\]
+with \(A(\mu)=M^{1-\alpha-\nu}\).
+
+(c) Here \(1-\alpha-\nu=0.20\Rightarrow a=1/0.20=5\).
+So \(M(\mu)=\E[\varepsilon^5]\) and \(A(\mu)=M(\mu)^{0.20}\).
+
+For \(\mu_1\): \(M(\mu_1)=1^5=1\Rightarrow A(\mu_1)=1^{0.20}=1.\)
+
+For \(\mu_2\): \(M(\mu_2)=0.5\cdot (0.5^5)+0.5\cdot(1.5^5)\).
+Compute: \(0.5^5=1/32=0.03125\). \(1.5^5=7.59375\).
+So \(M(\mu_2)=0.5(0.03125+7.59375)=0.5(7.625)=3.8125.\)
+Then \(A(\mu_2)=3.8125^{0.20}\approx e^{0.20\ln 3.8125}\approx e^{0.20\cdot 1.338}=e^{0.268}\approx 1.307.\)
+
+So \(A(\mu_2)>A(\mu_1)\).
+Reason: \(\varepsilon^{a}\) is convex for \(a>1\), so more dispersion (a mean-preserving spread) increases \(\E[\varepsilon^a]\) by Jensen,
+raising \(A(\mu)\) and thus aggregate output for given \(K,N\).
+\end{sol}
+
+\end{document}

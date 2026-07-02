@@ -1,0 +1,591 @@
+\documentclass[14pt]{extarticle}
+\usepackage{natbib}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\newcommand{\tuple}[1]{ \langle #1 \rangle }
+%\usepackage{automata}
+\usepackage{times}
+\usepackage{ltablex}
+\usepackage{tasks}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{xcolor} % For custom colors
+\usepackage{tikz} % For styling enumerate numbers
+\usepackage{tcolorbox} % For colored box styling
+\usepackage{amsmath, amsfonts, amssymb, amsthm} % Math related
+\usepackage{natbib}
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage[mathscr]{euscript}
+
+%%%%%% Template
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=blue}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
+
+% HOW TO USE THE ABOVE:
+%\setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}{headheight}{headsep}{footheight}{footskip}
+%\raggedbottom
+% paragraphs indent & skip:
+\parindent  0.3cm
+\parskip    -0.01cm
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+
+% hyphenation:
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy
+
+% notes-style paragraph spacing and indentation:
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% let derivations break across pages
+\allowdisplaybreaks
+
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\freq}[1]{{\bf \sf F}(#1)}
+\newcommand{\datafreq}[2]{{{\bf \sf F}_{#1}(#2)}}
+
+\def\qqquad{\quad\qquad}
+\def\qqqquad{\qquad\qquad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fill-in-blank question style, found in https://tex.stackexchange.com/a/505089
+
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{exercise}
+% \usepackage{xcolor}
+
+% Set the Show Answers Boolean
+\newboolean{showAns}
+\setboolean{showAns}{false}
+\newcommand{\showAns}{\setboolean{showAns}{true}}
+
+% The length of the Answer line
+\newlength{\answerlength}
+\newcommand{\anslen}[1]{\settowidth{\answerlength}{#1}}
+
+% ans command that indicates space for an answer or shows the answer in red
+\newcommand{\ans}[1]{\settowidth{\answerlength}{\hspace{2ex}#1\hspace{2ex}}%
+    \ifthenelse{\boolean{showAns}}%
+        {\textcolor{red}{\underline{\hspace{2ex}#1\hspace{2ex}}}}%
+        {\underline{\hspace{\answerlength}}}}%
+
+\newcommand{\details}[1]{\settowidth{\answerlength}{#1}%
+    \ifthenelse{\boolean{showAns}}%
+        {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Solution] #1 \end{tcolorbox}}%
+        {}}%
+
+% Formatting how multiple choices Questions are formated.
+\settasks{label=(\Alph*), label-width=30pt}
+
+
+% Some commands for the Exercise Question package
+\renewcommand{\QuestionNB}{\Large\protect\textcircled{\small\bfseries\arabic{Question}}\ }
+\renewcommand{\ExerciseHeader}{} %no header
+\renewcommand{\QuestionBefore}{3ex} %Space above each Q
+\setlength{\QuestionIndent}{8pt} % Indent after Q number
+
+
+% To create the list of answers with tocloft...
+\newcommand{\listanswername}{Answers}
+\newlistof[Question]{answer}{Answers}{\listanswername}
+
+% Creates a TOC for Answers
+\newcounter{prevQ}
+\newcommand{\answer}[1]{\refstepcounter{answer}%
+\ans{#1}%
+\ifnum\theQuestion=\theprevQ%
+        \addcontentsline{Answers}{answer}{\protect\numberline{}#1}% don't include the Q number
+        \else%
+        \addcontentsline{Answers}{answer}{\protect\numberline{\theQuestion}#1}%
+        \setcounter{prevQ}{\value{Question}}%
+        \fi%
+        }%
+
+% \hyphenpenalty=10000 % no hyphen
+% \exhyphenpenalty=10000 % no hyphen
+\sloppy              % hyphen
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+%tocloft formatting listofanswers
+\renewcommand{\cftAnswerstitlefont}{\bfseries\large}
+\renewcommand{\cftanswerdotsep}{\cftnodots}
+\cftpagenumbersoff{answer}
+\addtolength{\cftanswernumwidth}{10pt}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+  \parindent=0pt% don't indent paragraphs in the title block
+  \centering
+  {\Large \bfseries\textsc{\@title}} \\
+  \vspace{5pt}
+  {\large \textit{\@author}} \\
+  \HRule \\
+  \vspace{1em}
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+
+% --- Fonts (robust fallback) ---
+\IfFontExistsTF{Crimson Pro Light}{
+  \setmainfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+  \setsansfont{Crimson Pro Light}[
+    ItalicFont={* Italic},
+    BoldFont={Crimson Pro Medium},
+    BoldItalicFont={Crimson Pro Medium Italic}]
+}{
+  \setmainfont{HaranoAjiMincho}
+  \setsansfont{HaranoAjiGothic}
+}
+\title{Final Exam}
+\author{Macroeconomics II \\ Hui-Jun Chen}
+
+
+% ------------------------------------------------------------
+% Explanations for each option (only printed when \showAns is enabled)
+% Usage: \ExplainChoices{A}{B}{C}{D}
+% ------------------------------------------------------------
+\newcommand{\ExplainChoices}[4]{%
+\ifthenelse{\boolean{showAns}}{%
+\vspace{0.3em}\noindent\textcolor{red}{\textbf{Explanations.}}
+\begin{itemize}
+\item[(A)] #1
+\item[(B)] #2
+\item[(C)] #3
+\item[(D)] #4
+\end{itemize}
+}{}%
+}
+\begin{document}
+
+\maketitle
+
+% Uncomment to display answers + option-by-option explanations
+% \showAns
+
+\begin{Exercise}
+\section*{Problem 1 (Questions 1--20): Expectations, NKPC, shocks}
+
+\Question \textbf{Definition. If $p_t\equiv\log P_t$, then inflation is}
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_t\equiv p_t-p_{t-1}$
+\task $\pi_t\equiv P_t-P_{t-1}$
+\task $\pi_t\equiv \log P_t$
+\task $\pi_t\equiv p_{t+1}-p_t$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong: depends on units; not the model definition.}{Wrong: that is the log price level.}{Wrong timing.}
+
+\Question \textbf{Three inflation objects. Which pair must be distinguished in NK models?}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_t$ and $i_t$
+\task $\pi_t$ and $\mathbb{E}_t\pi_{t+1}$
+\task $x_t$ and $u_t$
+\task $\beta$ and $\kappa$
+\end{tasks}
+\ExplainChoices{Not the key expectations distinction.}{Correct.}{Different objects, but not the core expectations issue.}{Parameters.}
+
+\Question \textbf{Adaptive expectations. Under adaptive expectations, we set}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_t^e=\mathbb{E}_t\pi_{t+1}$
+\task $\pi_t^e=\pi_{t-1}$
+\task $\pi_t^e=\pi^*$ always
+\task $\pi_t^e=0$ always
+\end{tasks}
+\ExplainChoices{Forward-looking closure.}{Correct.}{Anchored benchmark.}{Not standard.}
+
+\Question \textbf{Forward-looking closure. A convenient NK choice of is}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_t^e=\pi_{t-1}$
+\task $\pi_t^e=\mathbb{E}_t\pi_{t+1}$
+\task $\pi_t^e=\pi_t$
+\task $\pi_t^e=i_t$
+\end{tasks}
+\ExplainChoices{Adaptive.}{Correct.}{Not an expectation.}{Wrong.}
+
+\Question \textbf{NKPC. The New Keynesian Phillips Curve is}
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_t=\beta\,\mathbb{E}_t\pi_{t+1}+\kappa x_t+u_t$
+\task $\pi_t=\pi_{t-1}+\kappa x_t+u_t$
+\task $\pi_t=\kappa x_t+u_t$
+\task $\pi_t=\beta\,\pi_{t-1}-\kappa x_t$
+\end{tasks}
+\ExplainChoices{Correct.}{Backward-looking PC.}{Missing expectations.}{Wrong sign/objects.}
+
+\Question \textbf{Expectations matter even if slack is zero. If $x_t=0$ and $u_t=0$, NKPC implies}
+\answer{B}
+\begin{tasks}(1)
+\task $\pi_t=0$ always
+\task $\pi_t=\beta\,\mathbb{E}_t\pi_{t+1}$
+\task $\pi_t=\pi_{t-1}$
+\task $\pi_t=\kappa$
+\end{tasks}
+\ExplainChoices{Wrong unless expected inflation is zero.}{Correct.}{Adaptive closure.}{Wrong.}
+
+\Question \textbf{Meaning of $x_t$. In this course, the output gap is}
+\answer{B}
+\begin{tasks}(1)
+\task $x_t\equiv y_t+y_t^{FE}$
+\task $x_t\equiv y_t-y_t^{FE}$
+\task $x_t\equiv \pi_t-\pi^*$
+\task $x_t\equiv i_t-\pi_t$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Inflation gap.}{Real-rate object.}
+
+\Question \textbf{Interpretation of $\beta$ in NKPC. A larger $\beta$ means}
+\answer{A}
+\begin{tasks}(1)
+\task more forward-looking inflation (greater weight on expected future inflation)
+\task steeper NKPC (larger response to $x_t$)
+\task tougher monetary policy
+\task larger cost-push shocks
+\end{tasks}
+\ExplainChoices{Correct.}{That is $\kappa$.}{That is $\phi_\pi$.}{That is $u_t$.}
+
+\Question \textbf{Interpretation of $\kappa$ in NKPC. A larger $\kappa$ means}
+\answer{B}
+\begin{tasks}(1)
+\task more weight on expected inflation
+\task inflation responds more to slack $x_t$
+\task the central bank reacts more to inflation
+\task the natural real rate rises
+\end{tasks}
+\ExplainChoices{That is $\beta$.}{Correct.}{That is $\phi_\pi$.}{Not implied.}
+
+\Question \textbf{Cost-push shock. In NKPC, $u_t$ is best interpreted as}
+\answer{B}
+\begin{tasks}(1)
+\task a demand shock moving the IS curve
+\task a markup/energy/bottleneck shock shifting inflation for given $x_t$
+\task the inflation target
+\task the nominal interest rate
+\end{tasks}
+\ExplainChoices{Wrong block.}{Correct.}{Target is $\pi^*$.}{Wrong.}
+
+\Question \textbf{Calvo pricing. Each period, a fraction of firms that can reset prices is}
+\answer{B}
+\begin{tasks}(1)
+\task $\theta$
+\task $1-\theta$
+\task $\beta$
+\task $\kappa$
+\end{tasks}
+\ExplainChoices{Wrong: $\theta$ keep price fixed.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Calvo intuition. A firm that resets at time $t$ chooses $P_t^\#$ to maximize profits while}
+\answer{A}
+\begin{tasks}(1)
+\task the price remains fixed with some probability
+\task money supply is constant
+\task inflation is exactly zero
+\task the output gap is zero
+\end{tasks}
+\ExplainChoices{Correct.}{Not the condition.}{Not the objective.}{Not required.}
+
+\Question \textbf{Shift in NKPC. Holding $x_t$ fixed, an increase in $\mathbb{E}_t\pi_{t+1}$}
+\answer{B}
+\begin{tasks}(1)
+\task lowers $\pi_t$ one-for-one
+\task raises $\pi_t$ by $\beta$ times the change
+\task does not affect $\pi_t$
+\task changes $\kappa$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Demand shock comovement. A positive demand shock (raising $x_t$) tends to generate}
+\answer{A}
+\begin{tasks}(1)
+\task $x_t\uparrow$ and $\pi_t\uparrow$
+\task $x_t\downarrow$ and $\pi_t\uparrow$
+\task $x_t\uparrow$ and $\pi_t\downarrow$
+\task $x_t\downarrow$ and $\pi_t\downarrow$
+\end{tasks}
+\ExplainChoices{Correct.}{Cost-push pattern.}{Wrong.}{Contractionary demand.}
+
+\Question \textbf{Cost-push comovement. A positive cost-push shock $u_t>0$ (with stabilization) tends to generate}
+\answer{B}
+\begin{tasks}(1)
+\task $x_t\uparrow$ and $\pi_t\uparrow$
+\task $x_t\downarrow$ and $\pi_t\uparrow$
+\task $x_t\uparrow$ and $\pi_t\downarrow$
+\task $x_t\downarrow$ and $\pi_t\downarrow$
+\end{tasks}
+\ExplainChoices{Not typical.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Calculation (NKPC). Let $\beta=0.98$, $\mathbb{E}_t\pi_{t+1}=3\%$, $\kappa=0.5$, $x_t=-2\%$, and $u_t=0$. Then $\pi_t$ is}
+\answer{A}
+\begin{tasks}(1)
+\task $1.94\%$
+\task $2.94\%$
+\task $3.94\%$
+\task $0.50\%$
+\end{tasks}
+\ExplainChoices{Correct: $0.98\cdot3-1=1.94$.}{Wrong: ignores $x_t$.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{Calculation (solve for slack). Suppose $\pi_t=3\%$, $\beta=1$, $\mathbb{E}_t\pi_{t+1}=2\%$, $\kappa=0.5$, and $u_t=0$. Then $x_t$ equals}
+\answer{A}
+\begin{tasks}(1)
+\task $2\%$
+\task $1\%$
+\task $0\%$
+\task $-1\%$
+\end{tasks}
+\ExplainChoices{Correct: $3-2=0.5x\Rightarrow x=2$.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Stabilizing a one-time cost-push shock. If $\mathbb{E}_t\pi_{t+1}=\pi^*$ and the central bank wants $\pi_t=\pi^*$ with $u_t=1\%$ and $\kappa=0.25$, then it must set}
+\answer{A}
+\begin{tasks}(1)
+\task $x_t=-4\%$
+\task $x_t=-1\%$
+\task $x_t=+4\%$
+\task $x_t=0\%$
+\end{tasks}
+\ExplainChoices{Correct: $x=-u/\kappa=-4$.}{Wrong magnitude.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{Anchored vs drifting. Expectations are drifting if}
+\answer{B}
+\begin{tasks}(1)
+\task after a one-time shock, $\mathbb{E}_t\pi_{t+1}$ returns to $\pi^*$
+\task after a one-time shock, $\mathbb{E}_t\pi_{t+1}$ stays above $\pi^*$
+\task $x_t=0$ always
+\task $u_t=0$ always
+\end{tasks}
+\ExplainChoices{Anchored.}{Correct.}{Not definition.}{Not definition.}
+
+\Question \textbf{Key contrast. Relative to adaptive expectations, forward-looking expectations make inflation more sensitive to}
+\answer{B}
+\begin{tasks}(1)
+\task last period inflation mechanically
+\task beliefs about future policy (credibility) today
+\task money demand only
+\task the money supply only
+\end{tasks}
+\ExplainChoices{Adaptive feature.}{Correct.}{Wrong.}{Wrong.}
+
+\vspace{0.6em}\Hrule\vspace{0.8em}
+\section*{Problem 2 (Questions 21--40): NK IS, Taylor rule, determinacy, ZLB}
+
+\Question \textbf{Fisher (ex-ante real rate). The expected real policy rate is approximately}
+\answer{B}
+\begin{tasks}(1)
+\task $i_t+\mathbb{E}_t\pi_{t+1}$
+\task $i_t-\mathbb{E}_t\pi_{t+1}$
+\task $\pi_t-i_t$
+\task $i_t-\pi_t$
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct.}{Wrong sign.}{Uses current inflation.}
+
+\Question \textbf{NK IS (Euler) equation. A standard gap-form NK IS is}
+\answer{A}
+\begin{tasks}(1)
+\task $x_t=\mathbb{E}_t x_{t+1}-\frac{1}{\sigma}\left(i_t-\mathbb{E}_t\pi_{t+1}-r_t^n\right)$
+\task $x_t=\mathbb{E}_t x_{t+1}+\frac{1}{\sigma}\left(i_t-\mathbb{E}_t\pi_{t+1}-r_t^n\right)$
+\task $x_t=-\sigma\left(i_t-\mathbb{E}_t\pi_{t+1}-r_t^n\right)$
+\task $x_t=\kappa\left(i_t-\mathbb{E}_t\pi_{t+1}\right)$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong sign.}{Wrong scaling.}{Wrong.}
+
+\Question \textbf{Interpretation of $\sigma$. A larger $\sigma$ implies the output gap responds}
+\answer{B}
+\begin{tasks}(1)
+\task more strongly to the real-rate gap
+\task less strongly to the real-rate gap
+\task only to $u_t$
+\task only to $\kappa$
+\end{tasks}
+\ExplainChoices{Slope is $1/\sigma$.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Natural real rate. $r_t^n$ is best interpreted as}
+\answer{B}
+\begin{tasks}(1)
+\task the nominal policy rate
+\task the flexible-price real rate that would make $x_t=0$
+\task the inflation target
+\task the cost-push shock
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Calculation (NK IS). Suppose $\mathbb{E}_t x_{t+1}=0$, $\sigma=2$, $i_t=4\%$, $\mathbb{E}_t\pi_{t+1}=2\%$, and $r_t^n=1\%$. Then $x_t$ is}
+\answer{A}
+\begin{tasks}(1)
+\task $-0.5\%$
+\task $-1\%$
+\task $+1\%$
+\task $0\%$
+\end{tasks}
+\ExplainChoices{Correct.}{Forgot $1/\sigma$.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{Calculation (real rate). If $i_t=3\%$ and $\mathbb{E}_t\pi_{t+1}=1.5\%$, then the expected real rate is}
+\answer{B}
+\begin{tasks}(1)
+\task $4.5\%$
+\task $1.5\%$
+\task $-1.5\%$
+\task $3\%$
+\end{tasks}
+\ExplainChoices{Adds instead of subtracts.}{Correct.}{Wrong sign.}{Nominal.}
+
+\Question \textbf{Forward guidance channel. Holding $i_t$ fixed, a higher $\mathbb{E}_t\pi_{t+1}$ implies}
+\answer{B}
+\begin{tasks}(1)
+\task higher real rate and lower $x_t$
+\task lower real rate and higher $x_t$
+\task no change in $x_t$
+\task $x_t$ must fall because expectations are higher
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Taylor rule (general form). A standard rule in the NK core is}
+\answer{A}
+\begin{tasks}(1)
+\task $i_t=\bar{i}+\phi_\pi(\pi_t-\pi^*)+\phi_x x_t$
+\task $i_t=\pi_t-\phi_\pi x_t$
+\task $i_t=r_t^n$ always
+\task $i_t=\mathbb{E}_t\pi_{t+1}$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Taylor principle in NK. A standard sufficient condition for determinacy is}
+\answer{B}
+\begin{tasks}(1)
+\task $\phi_\pi<1$
+\task $\phi_\pi>1$
+\task $\phi_x<0$
+\task $\kappa=0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Not the standard condition.}{Not sufficient.}
+
+\Question \textbf{Policy experiment sequence. After a one-time cost-push shock $u_t>0$, the NK logic is}
+\answer{A}
+\begin{tasks}(1)
+\task NKPC pushes $\pi_t\uparrow$; rule raises $i_t$; NK IS yields $x_t\downarrow$; NKPC then helps bring $\pi_t$ down
+\task NKPC pushes $\pi_t\uparrow$; rule lowers $i_t$; $x_t\uparrow$; inflation falls immediately
+\task rule does nothing; inflation returns automatically
+\task NK IS implies $x_t\uparrow$ when $i_t$ rises
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{ZLB constraint is}
+\answer{B}
+\begin{tasks}(1)
+\task $r_t\ge 0$
+\task $i_t\ge 0$
+\task $\pi_t\ge 0$
+\task $x_t\ge 0$
+\end{tasks}
+\ExplainChoices{Wrong.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{ZLB calculation. A rule implies $i_t=-0.5\%$, but ZLB binds so $i_t=0$. If $\mathbb{E}_t\pi_{t+1}=1\%$, then the expected real rate is}
+\answer{B}
+\begin{tasks}(1)
+\task $-1.5\%$
+\task $-1\%$
+\task $0\%$
+\task $+1\%$
+\end{tasks}
+\ExplainChoices{Wrong: use $i=0$.}{Correct: $0-1=-1$.}{Wrong.}{Wrong sign.}
+
+\Question \textbf{ZLB amplification. At the ZLB, a fall in expected inflation tends to}
+\answer{B}
+\begin{tasks}(1)
+\task lower the real rate and raise demand
+\task raise the real rate and lower demand
+\task leave the real rate unchanged
+\task eliminate the NKPC
+\end{tasks}
+\ExplainChoices{Wrong sign.}{Correct.}{Wrong.}{Wrong.}
+
+\Question \textbf{Three-equation NK core consists of}
+\answer{A}
+\begin{tasks}(1)
+\task IS (Euler), NKPC, Taylor rule
+\task IS, LM, SRAS
+\task AD, SRAS, LRAS
+\task budget constraint, money demand, IS
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\Question \textbf{Sacrifice ratio (simple). If expectations are anchored ($\mathbb{E}_t\pi_{t+1}=\pi^*$) and $u_t=0$, then reducing inflation by 1 pp requires}
+\answer{A}
+\begin{tasks}(1)
+\task $x_t=-1/\kappa$ pp
+\task $x_t=-\kappa$ pp
+\task $x_t=+1/\kappa$ pp
+\task $x_t=0$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{Sacrifice ratio (numeric). If $\kappa=0.2$ and you want inflation 0.5 pp lower (anchored expectations, $u_t=0$), required $x_t$ is}
+\answer{A}
+\begin{tasks}(1)
+\task $-2.5\%$
+\task $-0.1\%$
+\task $+2.5\%$
+\task $-10\%$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong sign.}{Wrong.}
+
+\Question \textbf{2-period equilibrium (calc). Suppose $\mathbb{E}_0\pi_1=\pi^*=2\%$, $\mathbb{E}_0x_1=0$, $\beta=1$, $\kappa=0.5$, $u_0=1\%$. Policy: $i_0=r_0^n+\mathbb{E}_0\pi_1+\phi_\pi(\pi_0-\pi^*)+\phi_x x_0$ with $\sigma=1$, $\phi_\pi=2$, $\phi_x=1$. Then $\pi_0$ is closest to}
+\answer{C}
+\begin{tasks}(1)
+\task $2.0\%$
+\task $2.33\%$
+\task $2.67\%$
+\task $3.0\%$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct: $\pi_0\approx2.67\%$.}{Too high.}
+
+\Question \textbf{In the same 2-period equilibrium as previous question, $x_0$ is closest to}
+\answer{C}
+\begin{tasks}(1)
+\task $0.0\%$
+\task $-0.33\%$
+\task $-0.67\%$
+\task $-2.0\%$
+\end{tasks}
+\ExplainChoices{Wrong.}{Wrong.}{Correct: $x_0\approx-0.67\%$.}{Too large.}
+
+\Question \textbf{Determinacy intuition. The Taylor principle helps anchor inflation because it ensures that if $\pi_t$ rises, policy}
+\answer{B}
+\begin{tasks}(1)
+\task lowers the real rate, validating higher inflation
+\task raises the real rate enough to create $x_t<0$, pushing inflation down via NKPC
+\task keeps the real rate fixed at $r_t^n$ regardless of inflation
+\task eliminates cost-push shocks
+\end{tasks}
+\ExplainChoices{Destabilizing.}{Correct.}{That is $\phi_\pi=1$; not anchoring.}{Policy cannot delete shocks.}
+
+\Question \textbf{Old vs new Phillips curve. Relative to the accelerationist PC, the NKPC replaces}
+\answer{A}
+\begin{tasks}(1)
+\task $\pi_{t-1}$ with $\mathbb{E}_t\pi_{t+1}$
+\task $x_t$ with $y_t$
+\task $u_t$ with $i_t$
+\task $\kappa$ with $\beta$
+\end{tasks}
+\ExplainChoices{Correct.}{Wrong.}{Wrong.}{Wrong.}
+
+\end{Exercise}
+\end{document}
